@@ -1,0 +1,178 @@
+import Link from 'next/link';
+import posts from '../../data/posts.json';
+import menuItems from '../../data/menu-items.json';
+import { generatePageSEO } from '../../lib/seo-config';
+import { ArrowRight, Star } from 'lucide-react';
+
+export const metadata = generatePageSEO(
+    "Papa John's Full Menu with Prices 2026",
+    "Explore the complete Papa John's menu with prices for 2026. Classic Pizzas, Super Loaded, Papadias, Sides, and more — all in one place.",
+    "/menus-prices"
+);
+
+const categoryOrder = [
+    "Menu & Prices Guide",
+    "Classic Pizzas",
+    "Specialty Pizzas",
+    "Papadias",
+    "Sides & Dips",
+    "Pizza Delivery",
+];
+
+export default function MenusAndPricesPage() {
+    // 1. Group Blog Posts
+    const groupedBlog: Record<string, typeof posts> = {};
+    for (const cat of categoryOrder) {
+        const catPosts = posts.filter((p) => p.category === cat);
+        if (catPosts.length > 0) groupedBlog[cat] = catPosts;
+    }
+
+    return (
+        <div className="bg-[#fcfaf8] min-h-screen font-sans pb-20">
+            {/* ── PREMIUM HERO BANNER ── */}
+            <div className="bg-[#1A3D17] border-b-8 border-[#cc0000] text-white py-16 md:py-24 text-center relative overflow-hidden mb-16">
+                <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#CCEE18] rounded-full -mr-64 -mt-64 opacity-5 pointer-events-none"></div>
+                <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-[#cc0000] rounded-full -ml-40 -mb-40 opacity-5 pointer-events-none"></div>
+                <div className="container mx-auto px-4 relative z-10">
+                    <span className="inline-block bg-[#CCEE18] text-[#1A3D17] font-black uppercase tracking-[0.4em] text-[10px] px-6 py-2.5 rounded-full mb-6 shadow-lg">
+                        Verified 2026 USA Edition
+                    </span>
+                    <h1
+                        className="text-4xl md:text-7xl font-black uppercase tracking-tighter mb-4"
+                        style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}
+                    >
+                        Menus &amp; <span className="text-[#CCEE18]">Prices</span>
+                    </h1>
+                    <p className="text-xl text-white/80 font-bold max-w-2xl mx-auto tracking-wide mb-10">
+                        The ultimate Papa John's menu directory. Precise pricing, nutritional facts, and direct ordering links for every item.
+                    </p>
+                    
+                    <Link href="#pizza-menu" className="bg-[#cc0000] hover:bg-white hover:text-[#1A3D17] text-white font-black py-4 px-10 rounded-full transition-all uppercase tracking-widest text-xs shadow-xl active:scale-95">
+                        Jump to Menu Items ↓
+                    </Link>
+                </div>
+            </div>
+
+            {/* ── SECTION 1: DYNAMIC MENU ITEMS (New Item-Level SEO) ── */}
+            <section id="pizza-menu" className="max-w-[1280px] mx-auto px-4 mb-24">
+                 <div className="text-center mb-14">
+                    <h2 className="text-3xl md:text-5xl font-black text-[#1A3D17] uppercase tracking-tighter mb-4" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                        Browse Full <span className="text-[#cc0000]">Pizza Menu</span>
+                    </h2>
+                    <p className="text-gray-500 font-bold max-w-xl mx-auto">
+                        Each item below contains detailed pricing for all sizes (Small to XL), calorie counts, and ingredients.
+                    </p>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {menuItems.map((item) => (
+                        <Link 
+                            key={item.id} 
+                            href={`/menus-prices/${item.slug}`}
+                            className="bg-white rounded-[2.5rem] p-8 shadow-md border-2 border-gray-50 hover:border-[#CCEE18] hover:shadow-2xl transition-all group flex flex-col relative overflow-hidden"
+                        >
+                            <div className="absolute top-0 right-0 w-32 h-32 bg-[#CCEE18] rounded-bl-full -mr-16 -mt-16 opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                            
+                            {/* Actual Product Image */}
+                            <div className="aspect-square bg-[#fcfaf8] rounded-2xl mb-6 relative overflow-hidden border border-gray-100 shadow-inner group-hover:shadow-md transition-shadow">
+                                <img 
+                                    src={item.image} 
+                                    alt={item.title} 
+                                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
+                                />
+                            </div>
+
+                            <div className="flex items-center justify-between mb-4">
+                                <span className="bg-[#1A3D17] text-[#CCEE18] font-black text-[10px] px-4 py-1.5 rounded-full uppercase tracking-widest">
+                                    {item.category}
+                                </span>
+                                <div className="flex items-center gap-1 text-yellow-500 text-xs font-black">
+                                    <Star size={12} fill="currentColor" /> {item.rating}
+                                </div>
+                            </div>
+
+                            <h3 className="text-2xl font-black text-[#1A3D17] uppercase leading-tight mb-4 group-hover:text-[#cc0000] transition-colors" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                                {item.slug.split('-').join(' ')}
+                            </h3>
+
+                            <div className="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
+                                <div className="flex flex-col">
+                                    <span className="text-gray-400 text-[10px] font-bold uppercase tracking-widest leading-none mb-1">Price from</span>
+                                    <span className="text-2xl font-black text-[#1A3D17] group-hover:text-[#cc0000] transition-colors">${item.price}</span>
+                                </div>
+                                <div className="bg-[#CCEE18] p-3 rounded-full group-hover:bg-[#cc0000] group-hover:text-white transition-colors">
+                                    <ArrowRight size={20} className="group-hover:translate-x-0.5 transition-transform" />
+                                </div>
+                            </div>
+                        </Link>
+                    ))}
+                    
+                    {/* Placeholder for future items */}
+                    <div className="border-4 border-dashed border-gray-100 rounded-[2.5rem] p-8 flex flex-col items-center justify-center text-center opacity-40">
+                         <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center text-2xl mb-4">＋</div>
+                         <h3 className="font-bold text-gray-400 uppercase text-xs">New Items Added Daily</h3>
+                         <p className="text-[10px] text-gray-300 font-bold max-w-[150px] mt-2">Check back every 24 hours for new menu prices & nutrition facts.</p>
+                    </div>
+                </div>
+            </section>
+
+            {/* ── SECTION 2: BLOG GUIDES ── */}
+            <div className="max-w-[1280px] mx-auto px-4">
+                <div className="text-center mb-14">
+                    <h2 className="text-3xl font-black text-[#1A3D17] uppercase tracking-tighter mb-4" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                        In-Depth <span className="text-[#cc0000]">Menu Guides</span>
+                    </h2>
+                </div>
+                {Object.entries(groupedBlog).map(([category, catPosts]) => (
+                    <section
+                        key={category}
+                        id={category.toLowerCase().replace(/\s+/g, '-')}
+                        className="mb-20"
+                    >
+                        <div className="flex items-center gap-5 mb-10">
+                            <div className="flex-shrink-0">
+                                <div className="bg-[#cc0000] text-white font-black uppercase tracking-[0.25em] text-[11px] px-6 py-2.5 rounded-full shadow-md">
+                                    {category}
+                                </div>
+                            </div>
+                            <div className="flex-1 h-[2px] bg-gradient-to-r from-[#cc0000]/30 to-transparent rounded-full"></div>
+                        </div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            {catPosts.map((post) => (
+                                <Link
+                                    href={`/posts/${post.slug}`}
+                                    key={post.id}
+                                    className="bg-white rounded-[2rem] p-6 shadow-md hover:shadow-2xl hover:border-[#CCEE18] border-2 border-transparent transition-all duration-300 group flex flex-col h-full relative overflow-hidden"
+                                >
+                                    <div className="aspect-[16/9] bg-gray-100 rounded-xl mb-6 relative overflow-hidden shadow-inner">
+                                        <div className="absolute top-3 left-3 z-10 bg-[#cc0000] text-white text-[9px] font-black uppercase tracking-widest px-4 py-1.5 rounded-full shadow-md">
+                                            {post.category}
+                                        </div>
+                                        <img
+                                            src={post.image}
+                                            alt={post.imageAlt || post.title}
+                                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                        />
+                                    </div>
+                                    <h2 className="text-xl font-black text-[#1A3D17] uppercase leading-tight mb-4 group-hover:text-[#cc0000] transition-colors" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                                        {post.title}
+                                    </h2>
+                                    <p className="text-gray-500 text-sm font-medium mb-8 flex-1 leading-relaxed line-clamp-3 italic">
+                                        {post.excerpt}
+                                    </p>
+                                    <div className="mt-auto border-t border-gray-100 pt-5 flex items-center justify-between text-[#1A3D17] text-xs font-black uppercase tracking-widest group-hover:text-[#cc0000] transition-colors">
+                                        Read Category Guide
+                                        <span className="bg-[#CCEE18] text-[#1A3D17] p-2 rounded-full group-hover:bg-[#cc0000] group-hover:text-white transition-colors">
+                                            <ArrowRight size={14} />
+                                        </span>
+                                    </div>
+                                </Link>
+                            ))}
+                        </div>
+                    </section>
+                ))}
+            </div>
+        </div>
+    );
+}

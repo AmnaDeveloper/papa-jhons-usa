@@ -1,0 +1,44 @@
+[
+    {
+        "id": "item-2",
+        "slug": "pepperoni-pizza",
+        "category": "Classic Pizzas",
+        "title": "Papa John's Pepperoni Pizza Menu with Prices 2026",
+        "description": "The definitive guide to Papa John's most popular topping. Explore the 2026 USA price list for Small, Medium, Large, and Extra-Large sizes along with complete nutrition facts and seasoning secrets.",
+        "fullContent": "The Papa John's Pepperoni Pizza is more than just a menu item; it is a global phenomenon and the undisputed king of pizza delivery across the United States. In 2026, it continues to lead the charts as the most ordered classic pizza, loved for its perfect ratio of savory, spicy pepperoni to melted 100% real mozzarella cheese. If you are looking to save on your next order, be sure to check our latest <a href='/coupons' class='text-[#cc0000] underline font-black'>Papa John's Coupons</a> for exclusive deals.<br/><br/>What sets our Pepperoni Pizza apart from the competition starts with the foundation: our original hand-tossed dough. Made with just six simple ingredients, our dough is never frozen and arrives fresh at every <a href='/store-locator' class='text-[#cc0000] underline font-black'>Papa John's location</a> across the USA. This ensures a chewy, golden-brown crust that serves as the perfect canvas for our world-famous signature pizza sauce. Made from vine-ripened tomatoes grown in the sun-drenched valleys of California, our sauce is packed and canned within hours of harvest to lock in that natural sweetness.<br/><br/>As we move to the toppings, we layer a generous amount of premium, high-quality pepperoni slices. These aren't your average pizza toppings; they are specially seasoned to reach a perfect crispiness in our high-heat ovens, releasing just the right amount of spicy oil to meld with the cheese. For those watching their intake, you can review the official <a href='https://www.papajohns.com/nutrition/' target='_blank' rel='nofollow' class='text-[#cc0000] underline font-black'>Papa John's Nutrition Guide</a> which states that a single slice of our standard 14-inch Large original crust pepperoni pizza contains approximately 230-320 calories.<br/><br/>Whether you're ordering a 'Small' for a quick lunch in downtown Manhattan or an 'Extra Large' for a late-night party in Los Angeles, Papa John's ensures regional price consistency with high value. Our 2026 price guide reflects the best value for money in the fast-food industry, especially when you join <a href='/papa-johns-rewards' class='text-[#cc0000] underline font-black'>Papa Rewards®</a> to earn points on every dollar spent. Experience the recipe that defined an era of better ingredients and better pizza.",
+        "price": 17.99,
+        "currency": "USD",
+        "calories": "230 - 320",
+        "rating": 4.8,
+        "reviewCount": 2105,
+        "image": "/classic-pizzas.png",
+        "ingredients": [
+            "Never-Frozen Original Dough",
+            "Signature Vine-Ripened Tomato Sauce",
+            "100% Real Mozzarella Cheese",
+            "Premium Spicy Sliced Pepperoni",
+            "Signature Garlic Dipping Sauce",
+            "Signature Pepperoncini"
+        ],
+        "sizes": [
+            { "size": "Small (10\")", "price": 11.99 },
+            { "size": "Medium (12\")", "price": 14.99 },
+            { "size": "Large (14\")", "price": 17.99 },
+            { "size": "Extra Large (16\")", "price": 20.99 }
+        ],
+        "faqs": [
+            {
+                "question": "How much is a Large Pepperoni Pizza at Papa John's in 2026?",
+                "answer": "As of 2026, a Large (14-inch) Pepperoni Pizza at Papa John's typically costs around **$17.99** in most USA locations. Prices may vary slightly by region (e.g., NYC or LA) and local taxes."
+            },
+            {
+                "question": "How many calories are in a slice of Papa John's Pepperoni Pizza?",
+                "answer": "A slice of a Large hand-tossed Pepperoni Pizza contains approximately **230 to 320 calories**. If you choose the Epic Stuffed Crust or Extra Large size, the calorie count will be higher."
+            },
+            {
+                "question": "Does Papa John's use real cheese on the Pepperoni Pizza?",
+                "answer": "Yes, Papa John's prides itself on using **100% real mozzarella cheese** made from high-quality milk. We never use starch-based fillers or analog cheeses."
+            }
+        ]
+    }
+]

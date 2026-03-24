@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1773816246232,
+        "name": "amna",
+        "message": "\"The new Super Loaded pizza is incredible! Fast delivery and hot.\"",
+        "date": "2026-03-18T06:44:06.232Z",
+        "rating": 4
+    },
+    {
+        "id": 1,
+        "name": "Sarah M.",
+        "message": "The new Super Loaded pizza is incredible! Fast delivery and hot.",
+        "date": "2026-03-17T10:00:00Z",
+        "rating": 5
+    },
+    {
+        "id": 2,
+        "name": "Mike R.",
+        "message": "Great customer service at the Louisville store. Handled my special request perfectly.",
+        "date": "2026-03-17T08:00:00Z",
+        "rating": 4
+    }
+]

@@ -1,0 +1,26 @@
+# Papa John's Menu USA — Robots.txt
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
+
+# Googlebot specific for Rich Snippets
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+
+# Image indexing is a priority for Pizza menus
+User-agent: Googlebot-Image
+Allow: /
+
+# Bing crawler
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://papajohns-menus.us/sitemap.xml

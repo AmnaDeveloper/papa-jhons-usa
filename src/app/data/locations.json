@@ -1,0 +1,252 @@
+[
+    {
+        "city": "New York City",
+        "state": "NY",
+        "slug": "new-york-ny",
+        "title": "Papa John's New York City Menu with Prices 2026",
+        "description": "Find the latest Papa John's menu prices in New York City. Order delivery or carryout from top-rated NYC branches in Manhattan, Brooklyn, and Queens.",
+        "address": "123 Broadway, New York, NY 10001",
+        "phone": "+1 212-555-0199",
+        "hours": "11:00 AM - 1:00 AM"
+    },
+    {
+        "city": "Los Angeles",
+        "state": "CA",
+        "slug": "los-angeles-ca",
+        "title": "Papa John's Los Angeles Menu with Prices 2026",
+        "description": "Hungry in LA? Explore the complete Papa John's menu with prices for Los Angeles. Fast delivery available across Santa Monica, Hollywood, and DTLA.",
+        "address": "456 Sunset Blvd, Los Angeles, CA 90028",
+        "phone": "+1 310-555-0188",
+        "hours": "11:00 AM - 12:00 AM"
+    },
+    {
+        "city": "Chicago",
+        "state": "IL",
+        "slug": "chicago-il",
+        "title": "Papa John's Chicago Menu with Prices 2026",
+        "description": "The best pizza delivery in Chicago. Check out the 2026 Papa John's menu with prices for the Windy City. Order your Epic Stuffed Crust now!",
+        "address": "789 Michigan Ave, Chicago, IL 60611",
+        "phone": "+1 312-555-0177",
+        "hours": "10:30 AM - 11:30 PM"
+    },
+    {
+        "city": "Houston",
+        "state": "TX",
+        "slug": "houston-tx",
+        "title": "Papa John's Houston Menu with Prices 2026",
+        "description": "Get hot Papa John's pizza delivered in Houston. Full menu with updated 2026 prices for Houston, TX. Find your nearest store instantly.",
+        "address": "101 Main St, Houston, TX 77002",
+        "phone": "+1 713-555-0166",
+        "hours": "11:00 AM - 11:00 PM"
+    },
+    {
+        "city": "Phoenix",
+        "state": "AZ",
+        "slug": "phoenix-az",
+        "title": "Papa John's Phoenix Menu with Prices 2026",
+        "description": "Find Papa John's near you in Phoenix, AZ. Complete menu prices, deals, and store hours for all Phoenix pizza delivery branches.",
+        "address": "202 Central Ave, Phoenix, AZ 85003",
+        "phone": "+1 602-555-0155",
+        "hours": "11:00 AM - 12:00 AM"
+    },
+    {
+        "city": "Philadelphia",
+        "state": "PA",
+        "slug": "philadelphia-pa",
+        "title": "Papa John's Philadelphia Menu with Prices 2026",
+        "description": "Explore Papa John's menu with prices for Philadelphia. From Philly Cheesesteak Papadias to classic pizzas — we deliver fresh in Philly.",
+        "address": "303 Market St, Philadelphia, PA 19106",
+        "phone": "+1 215-555-0144",
+        "hours": "11:00 AM - 12:00 AM"
+    },
+    {
+        "city": "Dallas",
+        "state": "TX",
+        "slug": "dallas-tx",
+        "title": "Papa John's Dallas Menu with Prices 2026",
+        "description": "Papa John's Dallas menu prices updated for 2026. Order online for the best pizza deals in Dallas, TX. Fast delivery and carryout options.",
+        "address": "404 Elm St, Dallas, TX 75202",
+        "phone": "+1 214-555-0133",
+        "hours": "11:00 AM - 11:00 PM"
+    },
+    {
+        "city": "San Antonio",
+        "state": "TX",
+        "slug": "san-antonio-tx",
+        "title": "Papa John's San Antonio Menu with Prices 2026",
+        "description": "Delicious Papa John's pizza in San Antonio. Full menu with prices and exclusive Texas deals. Order your favorite pizza today!",
+        "address": "505 River Walk, San Antonio, TX 78205",
+        "phone": "+1 210-555-0122",
+        "hours": "11:00 AM - 11:00 PM"
+    },
+    {
+        "city": "San Diego",
+        "state": "CA",
+        "slug": "san-diego-ca",
+        "title": "Papa John's San Diego Menu with Prices 2026",
+        "description": "Find the closest Papa John's in San Diego. Complete 2026 menu with prices for San Diego, CA. Fresh ingredients, better pizza.",
+        "address": "606 Broadway, San Diego, CA 92101",
+        "phone": "+1 619-555-0111",
+        "hours": "11:00 AM - 12:00 AM"
+    },
+    {
+        "city": "Miami",
+        "state": "FL",
+        "slug": "miami-fl",
+        "title": "Papa John's Miami Menu with Prices 2026",
+        "description": "Hot pizza delivery in Miami. Explore the full Papa John's menu with prices for Miami, FL. Best deals on pizza, sides, and wings.",
+        "address": "707 Biscayne Blvd, Miami, FL 33132",
+        "phone": "+1 305-555-0100",
+        "hours": "11:00 AM - 1:00 AM"
+    },
+    {
+        "city": "Austin",
+        "state": "TX",
+        "slug": "austin-tx",
+        "title": "Papa John's Austin Menu with Prices 2026",
+        "description": "Pizza delivery in Austin, TX. Order Papa John's with updated 2026 menu prices for the Austin area. Fast delivery to downtown and UT Austin.",
+        "address": "808 Congress Ave, Austin, TX 78701",
+        "phone": "+1 512-555-0099",
+        "hours": "11:00 AM - 11:00 PM"
+    },
+    {
+        "city": "Seattle",
+        "state": "WA",
+        "slug": "seattle-wa",
+        "title": "Papa John's Seattle Menu with Prices 2026",
+        "description": "Hungry in Seattle? Check out the Papa John's menu with prices and active promo codes for Seattle, WA. Order online now!",
+        "address": "909 Pike St, Seattle, WA 98101",
+        "phone": "+1 206-555-0088",
+        "hours": "11:00 AM - 12:00 AM"
+    },
+    {
+        "city": "Denver",
+        "state": "CO",
+        "slug": "denver-co",
+        "title": "Papa John's Denver Menu with Prices 2026",
+        "description": "Best pizza in the Mile High City. Explore the full Papa John's menu with prices in Denver, CO. Order delivery or carryout.",
+        "address": "1001 16th St Mall, Denver, CO 80202",
+        "phone": "+1 303-555-0077",
+        "hours": "11:00 AM - 11:00 PM"
+    },
+    {
+        "city": "Washington, D.C.",
+        "state": "DC",
+        "slug": "washington-dc",
+        "title": "Papa John's Washington, D.C. Menu with Prices 2026",
+        "description": "Find Papa John's near you in the nation's capital. Complete menu with prices and localized specials for Washington, D.C.",
+        "address": "1101 Pennsylvania Ave, Washington, DC 20004",
+        "phone": "+1 202-555-0066",
+        "hours": "11:00 AM - 12:00 AM"
+    },
+    {
+        "city": "Boston",
+        "state": "MA",
+        "slug": "boston-ma",
+        "title": "Papa John's Boston Menu with Prices 2026",
+        "description": "Craving pizza in Boston? Explore the Papa John's menu with prices for the Greater Boston area. Deliveries to Back Bay, Beacon Hill, and more.",
+        "address": "1202 Boylston St, Boston, MA 02215",
+        "phone": "+1 617-555-0055",
+        "hours": "11:00 AM - 2:00 AM"
+    },
+    {
+        "city": "Atlanta",
+        "state": "GA",
+        "slug": "atlanta-ga",
+        "title": "Papa John's Atlanta Menu with Prices 2026",
+        "description": "The top-rated Papa John's menu with prices for Atlanta, GA. Fast pizza delivery to Buckhead, Midtown, and Downtown Atlanta.",
+        "address": "1303 Peachtree St NE, Atlanta, GA 30309",
+        "phone": "+1 404-555-0044",
+        "hours": "11:00 AM - 1:00 AM"
+    },
+    {
+        "city": "Las Vegas",
+        "state": "NV",
+        "slug": "las-vegas-nv",
+        "title": "Papa John's Las Vegas Menu with Prices 2026",
+        "description": "Pizza delivery late night on the Vegas Strip. Complete Papa John's menu with prices and 24/7 delivery options in Las Vegas, NV.",
+        "address": "1404 Las Vegas Blvd, Las Vegas, NV 89101",
+        "phone": "+1 702-555-0100",
+        "hours": "Open 24 Hours"
+    },
+    {
+        "city": "San Francisco",
+        "state": "CA",
+        "slug": "san-francisco-ca",
+        "title": "Papa John's San Francisco Menu with Prices 2026",
+        "description": "Looking for Papa John's in SF? Explore the 2026 menu with prices for San Francisco. Delivering fresh pizza in the Bay Area.",
+        "address": "1505 Market St, San Francisco, CA 94103",
+        "phone": "+1 415-555-0033",
+        "hours": "11:00 AM - 12:00 AM"
+    },
+    {
+        "city": "Nashville",
+        "state": "TN",
+        "slug": "nashville-tn",
+        "title": "Papa John's Nashville Menu with Prices 2026",
+        "description": "Music City's favorite pizza delivery. Discover the full Papa John's menu with prices for Nashville, TN. Order your favorite sides today!",
+        "address": "1606 Broadway, Nashville, TN 37203",
+        "phone": "+1 615-555-0022",
+        "hours": "11:00 AM - 12:00 AM"
+    },
+    {
+        "city": "Charlotte",
+        "state": "NC",
+        "slug": "charlotte-nc",
+        "title": "Papa John's Charlotte Menu with Prices 2026",
+        "description": "Hot and fresh pizza in Charlotte, NC. Complete Papa John's menu with prices and coupons specifically for our Charlotte locations.",
+        "address": "1707 Tryon St, Charlotte, NC 28202",
+        "phone": "+1 704-555-0011",
+        "hours": "11:00 AM - 11:00 PM"
+    },
+    {
+        "city": "San Jose",
+        "state": "CA",
+        "slug": "san-jose-ca",
+        "title": "Papa John's San Jose Menu with Prices 2026",
+        "description": "Pizza delivery in Silicon Valley. Order Papa John's with updated 2026 prices for San Jose, CA. Explore the full menu now.",
+        "address": "1808 Santa Clara St, San Jose, CA 95113",
+        "phone": "+1 408-555-0099",
+        "hours": "11:00 AM - 12:00 AM"
+    },
+    {
+        "city": "Indianapolis",
+        "state": "IN",
+        "slug": "indianapolis-in",
+        "title": "Papa John's Indianapolis Menu with Prices 2026",
+        "description": "Hungry in Indy? Find the best Papa John's menu prices and local deals for Indianapolis, IN. Ordering pizza made easy.",
+        "address": "1909 Washington St, Indianapolis, IN 46204",
+        "phone": "+1 317-555-0088",
+        "hours": "11:00 AM - 11:00 PM"
+    },
+    {
+        "city": "Jacksonville",
+        "state": "FL",
+        "slug": "jacksonville-fl",
+        "title": "Papa John's Jacksonville Menu with Prices 2026",
+        "description": "Best pizza delivery in Jacksonville, FL. Explore the 2026 Papa John's menu with prices and exclusive Florida pizza specials.",
+        "address": "2010 Main St N, Jacksonville, FL 32202",
+        "phone": "+1 904-555-0077",
+        "hours": "11:00 AM - 12:00 AM"
+    },
+    {
+        "city": "Columbus",
+        "state": "OH",
+        "slug": "columbus-oh",
+        "title": "Papa John's Columbus Menu with Prices 2026",
+        "description": "Find Papa John's in Columbus, OH. Complete menu prices, rewards, and store hours for pizza delivery in the Columbus area.",
+        "address": "2111 High St, Columbus, OH 43201",
+        "phone": "+1 614-555-0066",
+        "hours": "11:00 AM - 12:00 AM"
+    },
+    {
+        "city": "Fort Worth",
+        "state": "TX",
+        "slug": "fort-worth-tx",
+        "title": "Papa John's Fort Worth Menu with Prices 2026",
+        "description": "Dallas-Fort Worth specialty pizza. Check out the Papa John's menu with prices for Fort Worth, TX. Fresh and hot delivery to your door.",
+        "address": "2212 Main St, Fort Worth, TX 76102",
+        "phone": "+1 817-555-0055",
+        "hours": "11:00 AM - 11:00 PM"
+    }
+]
