@@ -91,10 +91,10 @@ export default function RootLayout({
       {
         "@type": "Restaurant",
         "@id": "https://papajohns-menus.us/#restaurant",
-        "name": "Papa John's Pizza",
-        "description": "Better Ingredients. Better Pizza.® Papa John's is famous for fresh-baked pizzas and delicious signature dipping sauces.",
-        "image": "https://papajohns-menus.us/hero-background.jpeg",
-        "url": "https://papajohns-menus.us",
+        "brand": {
+          "@type": "Brand",
+          "name": "Papa John's"
+        },
         "telephone": "+1 877-547-PAPA",
         "servesCuisine": "Pizza, Italian-American",
         "priceRange": "$$",
@@ -108,8 +108,8 @@ export default function RootLayout({
         },
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": "38.2527",
-          "longitude": "-85.7585"
+          "latitude": 38.2527,
+          "longitude": -85.7585
         },
         "openingHoursSpecification": [
           {
