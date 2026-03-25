@@ -10,9 +10,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const staticPages = [
         { route: '', priority: 1.0, changeFreq: 'always' },
         { route: '/menus-prices', priority: 0.95, changeFreq: 'daily' },
+        { route: '/posts', priority: 0.95, changeFreq: 'daily' }, // All Blogs
         { route: '/coupons', priority: 0.95, changeFreq: 'daily' },
         { route: '/papa-johns-rewards', priority: 0.9, changeFreq: 'weekly' },
         { route: '/store-locator', priority: 0.9, changeFreq: 'weekly' },
+        { route: '/hours', priority: 0.8, changeFreq: 'weekly' }, // Hours Page
         { route: '/contact', priority: 0.7, changeFreq: 'monthly' },
         { route: '/privacy-policy', priority: 0.5, changeFreq: 'monthly' },
         { route: '/terms-conditions', priority: 0.5, changeFreq: 'monthly' },
