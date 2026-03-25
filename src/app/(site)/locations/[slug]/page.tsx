@@ -37,8 +37,62 @@ export default async function LocationPage({ params }: Props) {
 
     if (!location) notFound();
 
+    const baseUrl = 'https://papajohns-menus.us';
+
+    // ── ADVANCED SCHEMA 1: LocalBusiness ──
+    const localBusinessSchema = {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": `Papa John's ${location.city}`,
+        "image": `${baseUrl}/hero-background.jpeg`,
+        "url": `${baseUrl}/locations/${slug}`,
+        "telephone": location.phone,
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": location.address,
+          "addressLocality": location.city,
+          "addressRegion": location.state,
+          "postalCode": location.address.split(', ').pop(),
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 38.2527,
+          "longitude": -85.7585
+        },
+        "servesCuisine": "Pizza, Italian-American",
+        "priceRange": "$$",
+        "openingHours": "Mo-Su 11:00-00:00"
+    };
+
+    // ── ADVANCED SCHEMA 2: FAQ ──
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": `Does Papa John's deliver in ${location.city}?`,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": `Yes, Papa John's offers fast and fresh pizza delivery across **${location.city}, ${location.state}**. You can order online for home delivery or carryout.`
+            }
+          },
+          {
+            "@type": "Question",
+            "name": `What are the Papa John's Hours in ${location.city}?`,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": `The Papa John's branch in ${location.city} is typically open from **${location.hours}**. Store hours may vary on holidays.`
+            }
+          }
+        ]
+    };
+
     return (
         <div className="bg-[#fcfaf8] min-h-screen font-sans pb-20">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             {/* ── LOCATION HERO ── */}
             <div className="bg-[#1A3D17] border-b-8 border-[#cc0000] text-white py-16 md:py-24 text-center relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#CCEE18] rounded-full -mr-64 -mt-64 opacity-5 pointer-events-none"></div>

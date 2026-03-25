@@ -64,7 +64,7 @@ export default async function MenuItemBlogPage({ params }: Props) {
     const faqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        "mainEntity": item.faqs?.map(f => ({
+        "mainEntity": (item.faqs || []).map(f => ({
             "@type": "Question",
             "name": f.question,
             "acceptedAnswer": {
