@@ -48,13 +48,29 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }));
 
     // 5. Dynamic Category Pages (Priority: 0.8)
-    const uniqueCategories = Array.from(new Set(postsData.map(post => post.category)));
-    const categoryPages = uniqueCategories.map((category) => ({
+    const uniqueBlogCategories = Array.from(new Set(postsData.map(post => post.category)));
+    const uniqueMenuCategories = Array.from(new Set(menuItemsData.map(item => item.category)));
+
+    const blogCategoryPages = uniqueBlogCategories.map((category) => ({
         url: `${baseUrl}/categories/${category.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}`,
         lastModified: new Date(),
         changeFrequency: 'weekly' as 'weekly',
         priority: 0.8,
     }));
 
-    return [...staticPages, ...blogPages, ...locationPages, ...menuItemPages, ...categoryPages];
+    const menuCategoryPages = uniqueMenuCategories.map((category) => ({
+        url: `${baseUrl}/menus-prices/categories/${category.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly' as 'weekly',
+        priority: 0.8,
+    }));
+
+    return [
+        ...staticPages, 
+        ...blogPages, 
+        ...locationPages, 
+        ...menuItemPages, 
+        ...blogCategoryPages, 
+        ...menuCategoryPages
+    ];
 }
