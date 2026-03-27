@@ -4,7 +4,7 @@
         "slug": "pepperoni-pizza",
         "category": "Classic Pizzas",
         "title": "Papa John's Pepperoni Pizza Menu with Prices 2026",
-        "description": "The definitive guide to Papa John's most popular topping. Explore the 2026 USA price list for Small, Medium, Large, and Extra-Large sizes along with complete nutrition facts and seasoning secrets.",
+        "description": "Explore the 2026 USA price list for Papa John's Pepperoni Pizza. Includes Small, Medium, Large, and Extra-Large sizes along with complete nutrition facts and seasoning secrets.",
         "fullContent": "The Papa John's Pepperoni Pizza is more than just a menu item; it is a global phenomenon and the undisputed king of pizza delivery across the United States. In 2026, it continues to lead the charts as the most ordered classic pizza, loved for its perfect ratio of savory, spicy pepperoni to melted 100% real mozzarella cheese. If you are looking to save on your next order, be sure to check our latest <a href='/coupons' class='text-[#cc0000] underline font-black'>Papa John's Coupons</a> for exclusive deals.<br/><br/>What sets our Pepperoni Pizza apart from the competition starts with the foundation: our original hand-tossed dough. Made with just six simple ingredients, our dough is never frozen and arrives fresh at every <a href='/store-locator' class='text-[#cc0000] underline font-black'>Papa John's location</a> across the USA. This ensures a chewy, golden-brown crust that serves as the perfect canvas for our world-famous signature pizza sauce. Made from vine-ripened tomatoes grown in the sun-drenched valleys of California, our sauce is packed and canned within hours of harvest to lock in that natural sweetness.<br/><br/>As we move to the toppings, we layer a generous amount of premium, high-quality pepperoni slices. These aren't your average pizza toppings; they are specially seasoned to reach a perfect crispiness in our high-heat ovens, releasing just the right amount of spicy oil to meld with the cheese. For those watching their intake, you can review the official <a href='https://www.papajohns.com/nutrition/' target='_blank' rel='nofollow' class='text-[#cc0000] underline font-black'>Papa John's Nutrition Guide</a> which states that a single slice of our standard 14-inch Large original crust pepperoni pizza contains approximately 230-320 calories.<br/><br/>Whether you're ordering a 'Small' for a quick lunch in downtown Manhattan or an 'Extra Large' for a late-night party in Los Angeles, Papa John's ensures regional price consistency with high value. Our 2026 price guide reflects the best value for money in the fast-food industry, especially when you join <a href='/papa-johns-rewards' class='text-[#cc0000] underline font-black'>Papa Rewards®</a> to earn points on every dollar spent. Experience the recipe that defined an era of better ingredients and better pizza.",
         "price": 17.99,
         "currency": "USD",
@@ -21,19 +21,22 @@
             "Signature Pepperoncini"
         ],
         "sizes": [
-            { "size": "Small (10\")", "price": 11.99 },
-            { "size": "Medium (12\")", "price": 14.99 },
-            { "size": "Large (14\")", "price": 17.99 },
-            { "size": "Extra Large (16\")", "price": 20.99 }
+            { "size": "Small (10\") Original Crust", "price": 11.49 },
+            { "size": "Medium (12\") Original Crust", "price": 14.49 },
+            { "size": "Large (14\") Original Crust", "price": 17.99 },
+            { "size": "Extra Large (16\") Original Crust", "price": 20.99 },
+            { "size": "Large Epic Stuffed Crust Upgrade", "price": 20.99 },
+            { "size": "Small Gluten-Free Crust", "price": 14.99 },
+            { "size": "Garlic Sauce Cup (Extra)", "price": 0.85 }
         ],
         "faqs": [
             {
-                "question": "How much is a Large Pepperoni Pizza at Papa John's in 2026?",
-                "answer": "As of 2026, a Large (14-inch) Pepperoni Pizza at Papa John's typically costs around **$17.99** in most USA locations. Prices may vary slightly by region (e.g., NYC or LA) and local taxes."
+                "question": "How much is a Large Pepperoni Pizza in 2026?",
+                "answer": "As of 2026, a Large (14-inch) Pepperoni Pizza at Papa John's typically costs around **$17.99** in most USA locations. Pricing for the Epic Stuffed Crust version is approximately **$20.99**."
             },
             {
-                "question": "How many calories are in a slice of Papa John's Pepperoni Pizza?",
-                "answer": "A slice of a Large hand-tossed Pepperoni Pizza contains approximately **230 to 320 calories**. If you choose the Epic Stuffed Crust or Extra Large size, the calorie count will be higher."
+                "question": "How many slices are in a Medium vs Large Papa John's pizza?",
+                "answer": "A Medium (12\") pizza comes with **8 slices**, while a Large (14\") pizza is typically cut into **8 larger slices** (but can be square-cut or double-cut upon request)."
             },
             {
                 "question": "Does Papa John's use real cheese on the Pepperoni Pizza?",
@@ -64,23 +67,26 @@
             "100% Real Mozzarella Cheese"
         ],
         "sizes": [
-            { "size": "Small (10\")", "price": 14.99 },
-            { "size": "Medium (12\")", "price": 17.99 },
-            { "size": "Large (14\")", "price": 20.99 },
-            { "size": "Extra Large (16\")", "price": 24.99 }
+            { "size": "Small (10\") Original Crust", "price": 14.49 },
+            { "size": "Medium (12\") Original Crust", "price": 17.49 },
+            { "size": "Large (14\") Original Crust", "price": 20.99 },
+            { "size": "Extra Large (16\") Original Crust", "price": 23.99 },
+            { "size": "Large Epic Stuffed Crust Upgrade", "price": 23.99 },
+            { "size": "Extra Meat Topping (Loaded)", "price": 2.50 },
+            { "size": "Garlic Sauce Cup (Extra)", "price": 0.85 }
         ],
         "faqs": [
             {
-                "question": "What toppings are on Papa John's The Works™ pizza?",
-                "answer": "The Works™ features a massive combination of **8 premium toppings**: Pepperoni, spicy Italian sausage, Canadian bacon, fresh-cut onions, green peppers, mushrooms, and black olives, all on 100% real mozzarella cheese."
+                "question": "What specifically is on Papa John's The Works™ pizza?",
+                "answer": "The Works™ features a massive combination of **8 premium toppings**: Pepperoni, spicy Italian sausage, Canadian bacon, fresh-cut onions, green peppers, mushrooms, and black olives, all on top of 100% real mozzarella cheese."
             },
             {
-                "question": "How much does a Large The Works™ pizza cost in 2026?",
-                "answer": "In 2026, a Large (14-inch) The Works™ pizza typically costs **$20.99** at most USA locations. This price reflects the high volume of meat and vegetable toppings included in the specialty price."
+                "question": "Does Papa John's offer a Thin Crust for The Works™ in 2026?",
+                "answer": "Yes, you can swap the Original Crust for a crispy **Thin Crust** on Large and Extra Large sizes. This often reduces the calorie count per slice compared to the hand-tossed version."
             },
             {
-                "question": "Is The Works™ pizza spicy?",
-                "answer": "While it contains spicy Italian sausage and pepperoni, most customers consider it to have a **medium, savory kick** rather than intense heat. For extra heat, we recommend adding jalapenos or dipping it in our Spicy Garlic Sauce."
+                "question": "Is The Works™ the most calorie-heavy pizza at Papa John's?",
+                "answer": "While it is heavily loaded, 'The Meats' typically has a slightly higher calorie count due to the density of meat toppings. The Works™ provides a better nutritional balance with its mix of 5 vegetables and 3 meats."
             }
         ]
     },
@@ -107,19 +113,22 @@
             "Signature Garlic Dipping Sauce (Side)"
         ],
         "sizes": [
-            { "size": "Standard (One Size)", "price": 7.99 }
+            { "size": "Philly Cheesesteak Papadia (USA)", "price": 7.99 },
+            { "size": "Parmesan Crusted Upgrade", "price": 1.00 },
+            { "size": "Extra Sliced Steak Topping", "price": 2.00 },
+            { "size": "Additional Garlic Sauce Dipper", "price": 0.85 }
         ],
         "faqs": [
             {
                 "question": "What is inside the Philly Cheesesteak Papadia?",
-                "answer": "It is filled with **tender sliced steak**, fresh onions, green peppers, mozzarella cheese, and a creamy garlic sauce, all folded into a toasted flatbread."
+                "answer": "It is filled with **tender sliced steak**, fresh onions, green peppers, mozzarella cheese, and a creamy garlic sauce—but NO traditional pizza sauce—all folded into a toasted flatbread."
             },
             {
-                "question": "How much is a Papadia at Papa John's in 2026?",
-                "answer": "In 2026, most Papadia flavors, including it, are priced at **$7.99** in the USA. This makes it an affordable, high-protein lunch option."
+                "question": "Can I customize a Papa John's Papadia in 2026?",
+                "answer": "Yes! You can add extra toppings like jalapeños or extra steak, and you can även request a **Parmesan Crusted** version which is a popular 2026 specialization."
             },
             {
-                "question": "Does it come with dipping sauce?",
+                "question": "Is the Philly Cheesesteak Papadia served with sauce?",
                 "answer": "Yes, every Philly Cheesesteak Papadia is served with a side of our famous **Special Garlic Dipping Sauce** for the ultimate flavor experience."
             }
         ]
