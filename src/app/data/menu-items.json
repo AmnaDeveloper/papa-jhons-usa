@@ -40,5 +40,88 @@
                 "answer": "Yes, Papa John's prides itself on using **100% real mozzarella cheese** made from high-quality milk. We never use starch-based fillers or analog cheeses."
             }
         ]
+    },
+    {
+        "id": "item-3",
+        "slug": "the-works-pizza",
+        "category": "Super Loaded",
+        "title": "Papa John's The Works™ Pizza Menu with Prices 2026",
+        "description": "Get the complete guide to Papa John's The Works™ pizza. Explore 2026 prices for Small to Extra Large sizes, inclusive of all 8 premium toppings and nutrition facts.",
+        "fullContent": "When you want everything on your pizza, **The Works™ from Papa John's** is the ultimate choice. As one of the most loaded specialty pizzas in the industry, it combines premium meats and fresh-cut vegetables to create a symphony of flavors that has defined 'Better Ingredients' for decades. In 2026, it remains a top-tier choice for families looking for maximum value. Be sure to check our <a href='/coupons' class='text-[#cc0000] underline font-black'>Active Coupons</a> to get The Works at a discount today.<br/><br/>The magic of The Works™ lies in its diversity. We start with our original, never-frozen dough and apply a generous layer of our vine-ripened tomato sauce. Then comes the massive topping load: spicy Italian sausage, premium pepperoni, julienne-cut Canadian bacon, fresh-cut onions, crisp green peppers, mushrooms, and ripe black olives. All of this is smothered in 100% real mozzarella cheese. This pizza is so heavy that we recommend ordering it on our <a href='/posts/classic-pizzas' class='text-[#cc0000] underline font-black'>Original Crust</a> to handle the weight.<br/><br/>From a nutritional standpoint, a single slice of a Large The Works™ pizza contains approximately 290-360 calories. For a full breakdown, the <a href='https://www.papajohns.com/nutrition/' target='_blank' rel='nofollow' class='text-[#cc0000] underline font-black'>Official Papa John's Nutrition Guide</a> provides detailed insights for health-conscious diners. Whether you are ordering a late-night feast in Chicago or a weekend treat in Houston, you can find the nearest branch using our <a href='/store-locator' class='text-[#cc0000] underline font-black'>Store Locator</a>. Join <a href='/papa-johns-rewards' class='text-[#cc0000] underline font-black'>Papa Rewards®</a> to earn points on every 'Works' pizza you order in 2026.",
+        "price": 20.99,
+        "currency": "USD",
+        "calories": "290 - 360",
+        "rating": 4.9,
+        "reviewCount": 3450,
+        "image": "/the-works-pizza.png",
+        "ingredients": [
+            "Never-Frozen Original Dough",
+            "Premium Spicy Italian Sausage",
+            "Signature Pepperoni",
+            "Julienne-cut Canadian Bacon",
+            "Fresh-cut Onions & Green Peppers",
+            "Mushrooms & Black Olives",
+            "100% Real Mozzarella Cheese"
+        ],
+        "sizes": [
+            { "size": "Small (10\")", "price": 14.99 },
+            { "size": "Medium (12\")", "price": 17.99 },
+            { "size": "Large (14\")", "price": 20.99 },
+            { "size": "Extra Large (16\")", "price": 24.99 }
+        ],
+        "faqs": [
+            {
+                "question": "What toppings are on Papa John's The Works™ pizza?",
+                "answer": "The Works™ features a massive combination of **8 premium toppings**: Pepperoni, spicy Italian sausage, Canadian bacon, fresh-cut onions, green peppers, mushrooms, and black olives, all on 100% real mozzarella cheese."
+            },
+            {
+                "question": "How much does a Large The Works™ pizza cost in 2026?",
+                "answer": "In 2026, a Large (14-inch) The Works™ pizza typically costs **$20.99** at most USA locations. This price reflects the high volume of meat and vegetable toppings included in the specialty price."
+            },
+            {
+                "question": "Is The Works™ pizza spicy?",
+                "answer": "While it contains spicy Italian sausage and pepperoni, most customers consider it to have a **medium, savory kick** rather than intense heat. For extra heat, we recommend adding jalapenos or dipping it in our Spicy Garlic Sauce."
+            }
+        ]
+    },
+    {
+        "id": "item-4",
+        "slug": "philly-cheesesteak-papadia",
+        "category": "Sides",
+        "title": "Papa John's Philly Cheesesteak Papadia Price & Review 2026",
+        "description": "Everything you need to know about the Philly Cheesesteak Papadia. Explore 2026 prices, ingredient breakdown, and dipping sauce pairings for this lunch favorite.",
+        "fullContent": "The **Philly Cheesesteak Papadia** is a culinary masterpiece inspired by the classic flavors of Philadelphia, reimagined into a portable flatbread sandwich. Since its launch, it has become a staple for lunch-goers and solo diners across the United States. In 2026, it remains one of the highest-value items on the <a href='/menus-prices' class='text-[#cc0000] underline font-black'>Papa John's Menu</a>. To save even more on your lunch break, view our <a href='/coupons' class='text-[#cc0000] underline font-black'>Daily Deals</a>.<br/><br/>What makes the Philly Papadia stand out is the quality of the fillings. We use tender, sliced steak strips combined with fresh-cut onions and green peppers. Instead of standard pizza sauce, this sandwich features a rich, creamy garlic sauce base and melted mozzarella cheese. It is all folded into a toasted flatbread made from our original signature dough. It is a handheld version of a 'Super Loaded' experience, making it perfect for on-the-go meals in busy cities like New York or Seattle.<br/><br/>According to <a href='https://en.wikipedia.org/wiki/Cheesesteak' target='_blank' class='text-[#cc0000] underline font-black'>Cheesesteak history</a>, the combination of steak and onions is a timeless American tradition, and Papa John's honors this with every Papadia made. One Philly Cheesesteak Papadia contains roughly 810 calories and is served with our iconic Special Garlic dipping sauce. Ensure you are getting the best price in 2026 by using the <a href='/store-locator' class='text-[#cc0000] underline font-black'>Store Locator</a> to find regional pricing at your nearest Papa John's.",
+        "price": 7.99,
+        "currency": "USD",
+        "calories": "810",
+        "rating": 4.7,
+        "reviewCount": 1820,
+        "image": "/philly-papadia.png",
+        "ingredients": [
+            "Original Flatbread Dough",
+            "Sliced Steak Strips",
+            "Creamy Garlic Sauce Base",
+            "Fresh-cut Onions",
+            "Fresh-cut Green Peppers",
+            "100% Real Mozzarella Cheese",
+            "Signature Garlic Dipping Sauce (Side)"
+        ],
+        "sizes": [
+            { "size": "Standard (One Size)", "price": 7.99 }
+        ],
+        "faqs": [
+            {
+                "question": "What is inside the Philly Cheesesteak Papadia?",
+                "answer": "It is filled with **tender sliced steak**, fresh onions, green peppers, mozzarella cheese, and a creamy garlic sauce, all folded into a toasted flatbread."
+            },
+            {
+                "question": "How much is a Papadia at Papa John's in 2026?",
+                "answer": "In 2026, most Papadia flavors, including it, are priced at **$7.99** in the USA. This makes it an affordable, high-protein lunch option."
+            },
+            {
+                "question": "Does it come with dipping sauce?",
+                "answer": "Yes, every Philly Cheesesteak Papadia is served with a side of our famous **Special Garlic Dipping Sauce** for the ultimate flavor experience."
+            }
+        ]
     }
 ]
