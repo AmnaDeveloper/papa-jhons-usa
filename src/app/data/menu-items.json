@@ -13,12 +13,19 @@
         "reviewCount": 2105,
         "image": "/classic-pizzas.png",
         "ingredients": [
-            "Never-Frozen Original Dough",
+            "Never-Frozen Original Dough (Wheat, Barley, Soy)",
             "Signature Vine-Ripened Tomato Sauce",
-            "100% Real Mozzarella Cheese",
-            "Premium Spicy Sliced Pepperoni",
-            "Signature Garlic Dipping Sauce",
+            "100% Real Mozzarella Cheese (Milk)",
+            "Premium Spicy Sliced Pepperoni (Pork, Beef)",
+            "Signature Garlic Dipping Sauce (Soy, Milk)",
             "Signature Pepperoncini"
+        ],
+        "allergens": [
+            { "name": "Milk", "present": true, "note": "Contains 100% real mozzarella cheese." },
+            { "name": "Wheat", "present": true, "note": "Original dough is wheat-based." },
+            { "name": "Soy", "present": true, "note": "Soybean oil used in dough and seasonings." },
+            { "name": "Eggs", "present": false, "note": "The original dough and pepperoni do not contain egg." },
+            { "name": "Nuts", "present": false, "note": "Produced in a facility that may handle nut-based toppings." }
         ],
         "sizes": [
             { "size": "Small (10\") Original Crust", "price": 11.49 },
@@ -82,17 +89,23 @@
         "calories": "290 - 360",
         "rating": 4.9,
         "reviewCount": 3450,
-        "image": "/the-works-pizza.png",
+        "image": "/papajohns-the-works-pizza-menu-prices-2026.jpg",
         "ingredients": [
             "Never-Frozen Original Dough",
             "Premium Spicy Italian Sausage",
             "Signature Pepperoni",
             "Julienne-cut Canadian Bacon",
-            "Fresh-cut Onions",
-            "Crisp Green Peppers",
+            "Fresh-cut Onions & Green Peppers",
             "Fresh Sliced Mushrooms",
             "Ripe Black Olives",
-            "100% Real Mozzarella Cheese"
+            "100% Real Mozzarella Cheese (Milk)"
+        ],
+        "allergens": [
+            { "name": "Milk", "present": true, "note": "Contains cheese and dairy in toppings." },
+            { "name": "Wheat", "present": true, "note": "Dough contains gluten and wheat flour." },
+            { "name": "Soy", "present": true, "note": "Soy used in sauce and pepperoni seasonings." },
+            { "name": "Pork", "present": true, "note": "Contains Italian sausage, pepperoni, and Canadian bacon." },
+            { "name": "Eggs", "present": false, "note": "Toppings are egg-free." }
         ],
         "sizes": [
             { "size": "Small (10\") The Works™", "price": 14.49 },
@@ -155,15 +168,22 @@
         "calories": "810",
         "rating": 4.7,
         "reviewCount": 1820,
-        "image": "/philly-papadia.png",
+        "image": "/papajohns-philly-cheesesteak-papadia-price-review-2026.jpg.png",
         "ingredients": [
-            "Original Flatbread Dough",
+            "Original Flatbread Dough (Wheat)",
             "Tender Sliced Steak Strips",
-            "Creamy Garlic Sauce Base",
+            "Creamy Garlic Sauce Base (Milk, Soy)",
             "Fresh-cut Onions",
             "Fresh-cut Green Peppers",
-            "100% Real Mozzarella Cheese",
+            "100% Real Mozzarella Cheese (Milk)",
             "Special Garlic Dipping Sauce (Side)"
+        ],
+        "allergens": [
+            { "name": "Milk", "present": true, "note": "Contains cheese and garlic sauce dairy." },
+            { "name": "Wheat", "present": true, "note": "Flatbread shell is wheat-based." },
+            { "name": "Soy", "present": true, "note": "Soybean oil found in liquid garlic sauce." },
+            { "name": "Beef", "present": true, "note": "Contains real steak strips." },
+            { "name": "Shellfish", "present": false, "note": "No seafood products included." }
         ],
         "sizes": [
             { "size": "Philly Cheesesteak Papadia (Official)", "price": 7.99 },

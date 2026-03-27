@@ -64,17 +64,17 @@ export default function MenusAndPricesPage() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
                     {menuItems.map((item) => (
                         <Link 
                             key={item.id} 
                             href={`/menus-prices/${item.slug}`}
-                            className="bg-white rounded-[2.5rem] p-8 shadow-md border-2 border-gray-50 hover:border-[#CCEE18] hover:shadow-2xl transition-all group flex flex-col relative overflow-hidden"
+                            className="bg-white rounded-[2rem] p-6 shadow-sm border-2 border-gray-50 hover:border-[#CCEE18] hover:shadow-xl transition-all group flex flex-col relative overflow-hidden"
                         >
-                            <div className="absolute top-0 right-0 w-32 h-32 bg-[#CCEE18] rounded-bl-full -mr-16 -mt-16 opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                            <div className="absolute top-0 right-0 w-24 h-24 bg-[#CCEE18] rounded-bl-full -mr-12 -mt-12 opacity-0 group-hover:opacity-10 transition-opacity"></div>
                             
-                            {/* Actual Product Image */}
-                            <div className="aspect-square bg-[#fcfaf8] rounded-2xl mb-6 relative overflow-hidden border border-gray-100 shadow-inner group-hover:shadow-md transition-shadow">
+                            {/* Actual Product Image (Smaller) */}
+                            <div className="h-48 w-full bg-[#fcfaf8] rounded-2xl mb-5 relative overflow-hidden border border-gray-100 shadow-inner group-hover:shadow-md transition-shadow flex items-center justify-center">
                                 <img 
                                     src={item.image} 
                                     alt={item.title} 
@@ -82,26 +82,26 @@ export default function MenusAndPricesPage() {
                                 />
                             </div>
 
-                            <div className="flex items-center justify-between mb-4">
-                                <span className="bg-[#1A3D17] text-[#CCEE18] font-black text-[10px] px-4 py-1.5 rounded-full uppercase tracking-widest">
+                            <div className="flex items-center justify-between mb-3 text-left">
+                                <span className="bg-[#1A3D17] text-[#CCEE18] font-black text-[9px] px-3 py-1 rounded-full uppercase tracking-widest">
                                     {item.category}
                                 </span>
-                                <div className="flex items-center gap-1 text-yellow-500 text-xs font-black">
-                                    <Star size={12} fill="currentColor" /> {item.rating}
+                                <div className="flex items-center gap-1 text-yellow-500 text-[10px] font-black">
+                                    <Star size={10} fill="currentColor" /> {item.rating}
                                 </div>
                             </div>
 
-                            <h3 className="text-2xl font-black text-[#1A3D17] uppercase leading-tight mb-4 group-hover:text-[#cc0000] transition-colors" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                            <h3 className="text-xl font-black text-[#1A3D17] uppercase leading-tight mb-4 group-hover:text-[#cc0000] transition-colors text-left" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
                                 {item.slug.split('-').join(' ')}
                             </h3>
 
-                            <div className="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
-                                <div className="flex flex-col">
-                                    <span className="text-gray-400 text-[10px] font-bold uppercase tracking-widest leading-none mb-1">Price from</span>
-                                    <span className="text-2xl font-black text-[#1A3D17] group-hover:text-[#cc0000] transition-colors">${item.price}</span>
+                            <div className="mt-auto pt-4 border-t border-gray-50 flex items-center justify-between">
+                                <div className="flex flex-col text-left">
+                                    <span className="text-gray-400 text-[9px] font-bold uppercase tracking-widest leading-none mb-1">Price from</span>
+                                    <span className="text-xl font-black text-[#1A3D17] group-hover:text-[#cc0000] transition-colors">${item.price}</span>
                                 </div>
-                                <div className="bg-[#CCEE18] p-3 rounded-full group-hover:bg-[#cc0000] group-hover:text-white transition-colors">
-                                    <ArrowRight size={20} className="group-hover:translate-x-0.5 transition-transform" />
+                                <div className="bg-[#CCEE18] p-2.5 rounded-full group-hover:bg-[#cc0000] group-hover:text-white transition-colors">
+                                    <ArrowRight size={18} className="group-hover:translate-x-0.5 transition-transform" />
                                 </div>
                             </div>
                         </Link>
