@@ -292,5 +292,34 @@
             { "item": "Special Garlic Sauce Dipper", "price": "$0.85", "calories": "150 / cup", "icon": "🍯" },
             { "item": "Pizza Dipping Sauce", "price": "$0.85", "calories": "20 / cup", "icon": "🍅" }
         ]
+    },
+    {
+        "id": "post-7",
+        "slug": "papa-johns-nutrition-guide",
+        "category": "Nutrition Guide",
+        "title": "Papa Johns Nutrition Guide: Full Calories, Allergens & Healthy Options (2026)",
+        "date": "2026-03-30T00:00:00Z",
+        "author": "Papa John's Editorial Team",
+        "image": "/papa-johns-nutrition-guide.jpg",
+        "imageAlt": "Papa Johns nutrition guide with calories and allergen information",
+        "excerpt": "Looking for complete Papa Johns nutrition info? Get full calories, carbs, protein, allergen data & the healthiest items to order in 2026. Updated guide inside!",
+        "content": "<p>Whether you're counting calories, managing food allergies, or just trying to make smarter choices without giving up great pizza — this complete Papa Johns nutrition guide has everything you need. Papa Johns is one of America's most popular pizza chains, and the good news is that they're also one of the most transparent when it comes to nutritional information.</p><h2>Why Nutrition Matters When Ordering from Papa Johns</h2><p>Pizza has a reputation for being unhealthy — but that reputation isn't entirely fair. The key is knowing what's in your food. Papa Johns makes this easy by providing detailed nutritional information on their website and app, covering calories, fat, carbohydrates, protein, and all major allergens.</p><p>What makes Papa Johns stand out nutritionally? No MSG, fresh never-frozen dough, 100% real mozzarella cheese, and vine-ripened tomato sauce with no artificial flavors.</p><h2>Papa Johns Pizza Calories by Crust Type (Per Slice)</h2><p>The single biggest factor affecting how many calories are in your Papa Johns pizza is the crust. Below you will find a full comparison of all crust types based on one slice of a large (14\") pizza with cheese only. Check our <a href='/posts/classic-pizzas'>Classic Pizzas guide</a> for more topping details.</p><h2>Papa Johns Allergen Guide 2026</h2><p>Papa Johns provides detailed allergen information for all of their menu items. The 9 major allergens tracked include Wheat (Gluten), Milk (Dairy), Eggs, Soy, Fish, Shellfish, Tree Nuts, Peanuts, and Sesame. <strong>Critical Note:</strong> The Pan Crust recipe changed in January 2026 and now contains dairy/milk. If you were previously ordering Pan Crust as a dairy-free option, please switch to NY Style Crust instead.</p><h2>Dairy-Free & Vegan Options (2026)</h2><p>Papa Johns does not offer an official vegan pizza on the U.S. menu, but you can build your own. Choose Original Hand Tossed, Thin Crust, or NY Style (all dairy-free), select original tomato or BBQ sauce, and load up on veggies. Skip the garlic butter and ranch dipping sauces as they contain dairy.</p><h2>Healthiest Items to Order at Papa Johns</h2><p>Yes, you can eat at Papa Johns and stay on track with your health goals! Top strategies include choosing Thin Crust (saves 50-80 calories/slice), going veggie-heavy, and skipping high-calorie dipping sauces like the 150-calorie garlic sauce. For more saving tips, see our <a href='/posts/papa-johns-menu-prices-guide'>Complete Promo Codes guide</a>.</p><h2>Conclusion</h2><p>Knowing your Papa Johns nutrition information puts you in control. Whether you're managing allergies, following a specific diet, or simply trying to be more mindful, customization options allow you to order smartly every single time. Order confidently at <a href='https://www.papajohns.com/nutrition' target='_blank' rel='nofollow'>papajohns.com/nutrition</a>.</p>",
+        "faqs": [
+            { "question": "How many calories are in a slice of Papa Johns pizza?", "answer": "A slice of Papa Johns pizza typically ranges from 180 calories (thin crust cheese) to 320+ calories (Epic Stuffed Crust with meat toppings). For a standard medium Original Crust pepperoni pizza, one slice contains approximately 230 calories." },
+            { "question": "Does Papa Johns have a gluten-free pizza option?", "answer": "Yes, Papa Johns offers a Gluten-Free Crust. However, it is baked in shared ovens, so it is NOT safe for customers with celiac disease. Use our <a href='/store-locator' class='text-[#cc0000] underline'>locator</a> to find stores offering this crust." },
+            { "question": "Is Papa Johns pizza good for weight loss?", "answer": "Yes, when ordered strategically. Choose thin crust, load up on vegetable toppings, skip the dipping sauces, and stick to 2 slices per meal." },
+            { "question": "What are the vegan options at Papa Johns?", "answer": "You can custom-order a vegan pizza by choosing thin crust or original crust (both dairy-free), original tomato sauce, and requested no cheese." },
+            { "question": "Does Papa Johns have dairy-free options?", "answer": "Yes. The Original Hand Tossed, Thin Crust, and NY Style Crust are all dairy-free. Important: The Pan Crust now contains dairy as of 2026." },
+            { "question": "What is the healthiest pizza at Papa Johns?", "answer": "The healthiest option is a thin crust cheese pizza or Garden Fresh pizza, coming in at approximately 180 calories per slice." },
+            { "question": "Where can I find official Papa Johns nutritional info?", "answer": "The official guide is available at <a href='https://www.papajohns.com/nutrition' target='_blank' rel='nofollow' class='text-[#cc0000] underline'>papajohns.com/nutrition</a>." }
+        ],
+        "pricing": [
+            { "item": "Thin Crust Cheese (1 Slice)", "price": "180 cal", "calories": "Best for Diet", "icon": "🥗", "popular": true },
+            { "item": "Original Hand Tossed (1 Slice)", "price": "210 cal", "calories": "Classic", "icon": "🍕" },
+            { "item": "Epic Stuffed Crust (1 Slice)", "price": "320 cal", "calories": "Indulgent", "icon": "🧀" },
+            { "item": "Personal Garden Fresh Pizza", "price": "$9.99", "calories": "180 cal/slice", "icon": "🥦", "popular": true },
+            { "item": "Grilled Chicken Margherita", "price": "$18.99", "calories": "230 cal/slice", "icon": "🍗" },
+            { "item": "Chicken Wings (4 pc)", "price": "$9.49", "calories": "240 cal", "icon": "🍗", "popular": true }
+        ]
     }
 ]
