@@ -159,9 +159,62 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                                 <h2 className="text-3xl font-black text-[#1A3D17] mb-6 uppercase tracking-tighter" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
                                     Papa John's {post.title} - Complete Menu Information
                                 </h2>
-                                <div className="prose prose-lg text-gray-700 leading-relaxed max-w-none">
-                                    <div dangerouslySetInnerHTML={{ __html: post.content }} className="space-y-6" />
+                                <div className="blog-content prose prose-lg text-gray-700 leading-relaxed max-w-none">
+                                    <div dangerouslySetInnerHTML={{ __html: post.content }} className="space-y-8" />
                                 </div>
+                                <style jsx global>{`
+                                    .blog-content h2 {
+                                        font-size: 2.5rem !important;
+                                        font-weight: 900 !important;
+                                        color: #1A3D17 !important;
+                                        line-height: 1.1 !important;
+                                        margin-top: 4.5rem !important;
+                                        margin-bottom: 2rem !important;
+                                        text-transform: uppercase !important;
+                                        letter-spacing: -0.02em !important;
+                                        border-left: 10px solid #CCEE18;
+                                        padding-left: 1.5rem;
+                                        font-family: inherit;
+                                    }
+                                    .blog-content h3 {
+                                        font-size: 1.85rem !important;
+                                        font-weight: 800 !important;
+                                        color: #cc0000 !important;
+                                        margin-top: 3.5rem !important;
+                                        margin-bottom: 1.25rem !important;
+                                        border-bottom: 3px solid #f3f4f6;
+                                        padding-bottom: 0.75rem;
+                                    }
+                                    .blog-content p {
+                                        margin-bottom: 1.75rem !important;
+                                        font-size: 1.15rem !important;
+                                        color: #374151 !important;
+                                        font-weight: 500 !important;
+                                    }
+                                    .blog-content ul, .blog-content ol {
+                                        margin-bottom: 2rem !important;
+                                        padding-left: 1.5rem !important;
+                                        list-style-type: disc !important;
+                                    }
+                                    .blog-content li {
+                                        margin-bottom: 1rem !important;
+                                        font-weight: 700 !important;
+                                        color: #1f2937 !important;
+                                        font-size: 1.05rem !important;
+                                    }
+                                    .blog-content strong {
+                                        color: #111827 !important;
+                                        font-weight: 900 !important;
+                                        background: #CCEE1830;
+                                        padding: 0 4px;
+                                        border-radius: 4px;
+                                    }
+                                    .blog-content a {
+                                        color: #cc0000 !important;
+                                        text-decoration: underline !important;
+                                        font-weight: 800 !important;
+                                    }
+                                `}</style>
                             </div>
 
                             {/* Explore More Box */}
