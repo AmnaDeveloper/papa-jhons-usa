@@ -155,8 +155,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                                 </div>
                                 <div className="relative w-full h-[350px] lg:h-[450px] rounded-3xl overflow-hidden shadow-inner border border-gray-100 text-center">
                                     <img 
-                                        src="/papa-johns-nutrition-guide-2026-calories-allergens.png" 
-                                        alt="Papa Johns Nutrition Guide Calories Allergens 2026"
+                                        src={post.image || '/logo.png'} 
+                                        alt={post.imageAlt || post.title}
                                         className="inline-block w-full h-full object-contain group-hover:scale-105 transition-transform duration-700"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/5 to-transparent pointer-events-none"></div>
@@ -215,7 +215,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                         <div className="lg:w-7/12 space-y-10">
                             <div>
                                 <h2 className="text-3xl font-black text-[#1A3D17] mb-8 uppercase tracking-tighter leading-tight" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
-                                    The Ultimate Papa John's {post.title} — 2026 Edition
+                                    {post.title}
                                 </h2>
                                 <div className="blog-content">
                                     <div dangerouslySetInnerHTML={{ __html: post.content }} />
