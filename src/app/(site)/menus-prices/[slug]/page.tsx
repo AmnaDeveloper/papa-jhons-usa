@@ -40,7 +40,7 @@ export default async function MenuItemBlogPage({ params }: Props) {
     
     const menuItemSchema = {
         "@context": "https://schema.org",
-        "@type": "MenuItem",
+        "@type": "Product",
         "name": item.title,
         "description": item.description,
         "image": `${baseUrl}${item.image}`,

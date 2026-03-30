@@ -47,10 +47,10 @@ export const generateMenuSchema = (sections: Array<{ name: string; url: string; 
     };
 };
 
-export const generateMenuItemSchema = (name: string, price: string, image: string, description: string, url: string) => {
-    return {
+export const generateProductSchema = (name: string, price: string, image: string, description: string, url: string, ratingValue?: number, reviewCount?: number) => {
+    const schema: any = {
         "@context": "https://schema.org",
-        "@type": "MenuItem",
+        "@type": "Product",
         "name": name,
         "description": description,
         "image": image,
@@ -62,6 +62,16 @@ export const generateMenuItemSchema = (name: string, price: string, image: strin
             "availability": "https://schema.org/InStock"
         }
     };
+
+    if (ratingValue && reviewCount) {
+        schema.aggregateRating = {
+            "@type": "AggregateRating",
+            "ratingValue": ratingValue,
+            "reviewCount": reviewCount
+        };
+    }
+
+    return schema;
 };
 
 export const generateFAQSchema = (faqs: Array<{ question: string; answer: string }>) => {
