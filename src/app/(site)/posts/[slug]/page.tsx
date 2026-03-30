@@ -109,8 +109,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                         >
                             {post.title}
                         </h1>
-                        <p className="text-xl md:text-2xl font-bold text-[#CCEE18] mb-2 tracking-wide">
-                            {post.price || '$15.99'} | Updated {formattedDate}
+                        <p className="text-xl md:text-2xl font-bold text-[#CCEE18] mb-2 tracking-wide uppercase">
+                            {post.price || '$15.99'} | LAST UPDATED: MARCH 2026
                         </p>
                         <p className="text-gray-300 font-medium mb-8 max-w-2xl mx-auto italic">
                             {post.excerpt}
@@ -347,40 +347,57 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                                     </p>
                                 </div>
                                 
-                                <div className="bg-white rounded-[2rem] border border-gray-200 shadow-xl overflow-hidden md:mt-8">
-                                    <table className="w-full text-left border-collapse">
-                                        <thead>
-                                            <tr className="bg-[#1A3D17] text-[#CCEE18] uppercase text-[10px] tracking-widest font-black">
-                                                <th className="py-5 px-6 md:px-8">Item / Size</th>
-                                                <th className="py-5 px-6 md:px-8 text-right">Price</th>
-                                                <th className="py-5 px-6 md:px-8 text-center hidden sm:table-cell">Calories</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody className="text-base font-bold divide-y divide-gray-100">
-                                            {post.pricing && post.pricing.map((row: any, idx: number) => (
-                                                <tr key={idx} className={`hover:bg-gray-50 transition-colors ${row.popular ? 'bg-[#CCEE18]/10 group' : ''}`}>
-                                                    <td className={`py-6 px-6 md:px-8 font-bold flex items-center gap-4 ${row.popular ? 'text-[#1A3D17]' : 'text-gray-800'}`}>
-                                                        <span className={`text-2xl p-2 rounded-xl shadow-sm ${row.popular ? 'bg-white group-hover:scale-110 transition-transform' : 'bg-gray-100'}`}>
-                                                            {row.icon || '🍕'}
-                                                        </span> 
-                                                        <div>
-                                                            {row.item}
-                                                            {row.popular && <span className="block text-[10px] text-[#cc0000] uppercase tracking-widest mt-1">Most Popular</span>}
-                                                        </div>
-                                                    </td>
-                                                    <td className="py-6 px-6 md:px-8 font-black text-[#cc0000] text-right text-lg">{row.price}</td>
-                                                    <td className="py-6 px-6 md:px-8 text-gray-400 text-center font-medium hidden sm:table-cell">{row.calories}</td>
-                                                </tr>
-                                            ))}
-                                        </tbody>
-                                        <tfoot className="bg-gray-50 text-[10px] text-gray-400 font-bold text-center border-t border-gray-200">
-                                            <tr>
-                                                <td colSpan={3} className="py-6 px-8 italic">
-                                                    *Prices and calories are estimated and may vary by specific location, taxes, or ingredient customizations.
-                                                </td>
-                                            </tr>
-                                        </tfoot>
-                                    </table>
+                                <div className="w-full bg-[#fcfaf8] rounded-[3rem] p-6 md:p-12 border-2 border-[#1A3D17]/5 relative overflow-hidden">
+                                    <div className="absolute top-0 right-0 w-64 h-64 bg-[#CCEE18]/10 rounded-full -mr-32 -mt-32 blur-3xl"></div>
+                                    
+                                    <div className="relative z-10 overflow-x-auto">
+                                        <div className="min-w-[500px]">
+                                            <div className="flex items-center gap-4 mb-10">
+                                                <div className="w-14 h-14 bg-[#1A3D17] rounded-2xl flex items-center justify-center shadow-lg transform -rotate-3">
+                                                    <span className="text-2xl">📊</span>
+                                                </div>
+                                                <div>
+                                                    <h2 className="text-2xl md:text-3xl font-black text-[#1A3D17] uppercase tracking-tighter leading-none">
+                                                        Data & Insights
+                                                    </h2>
+                                                    <p className="text-[#1A3D17]/60 text-xs font-bold uppercase tracking-widest mt-1">Live Nutrition & Deals</p>
+                                                </div>
+                                            </div>
+                                            <table className="w-full text-left border-collapse">
+                                                <thead>
+                                                    <tr className="bg-[#1A3D17] text-[#CCEE18] uppercase text-[10px] tracking-widest font-black">
+                                                        <th className="py-5 px-6 md:px-8">Item / Size</th>
+                                                        <th className="py-5 px-6 md:px-8 text-right">Price</th>
+                                                        <th className="py-5 px-6 md:px-8 text-center hidden sm:table-cell">Calories</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody className="text-base font-bold divide-y divide-gray-100">
+                                                    {post.pricing && post.pricing.map((row: any, idx: number) => (
+                                                        <tr key={idx} className={`hover:bg-gray-50 transition-colors ${row.popular ? 'bg-[#CCEE18]/10 group' : ''}`}>
+                                                            <td className={`py-6 px-6 md:px-8 font-bold flex items-center gap-4 ${row.popular ? 'text-[#1A3D17]' : 'text-gray-800'}`}>
+                                                                <span className={`text-2xl p-2 rounded-xl shadow-sm ${row.popular ? 'bg-white group-hover:scale-110 transition-transform' : 'bg-gray-100'}`}>
+                                                                    {row.icon || '🍕'}
+                                                                </span> 
+                                                                <div>
+                                                                    {row.item}
+                                                                    {row.popular && <span className="block text-[10px] text-[#cc0000] uppercase tracking-widest mt-1">Most Popular</span>}
+                                                                </div>
+                                                            </td>
+                                                            <td className="py-6 px-6 md:px-8 font-black text-[#cc0000] text-right text-lg">{row.price}</td>
+                                                            <td className="py-6 px-6 md:px-8 text-gray-400 text-center font-medium hidden sm:table-cell">{row.calories}</td>
+                                                        </tr>
+                                                    ))}
+                                                </tbody>
+                                                <tfoot className="bg-gray-50 text-[10px] text-gray-400 font-bold text-center border-t border-gray-200">
+                                                    <tr>
+                                                        <td colSpan={3} className="py-6 px-8 italic">
+                                                            *Prices and calories are estimated and may vary by specific location, taxes, or ingredient customizations.
+                                                        </td>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
