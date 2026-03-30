@@ -6,9 +6,52 @@ import HeroSection from "../components/HeroSection";
 import RestaurantHoursSection from "../components/RestaurantHoursSection";
 import CouponsSection from "../components/CouponsSection";
 
+import { generateFAQSchema } from "../lib/seo/schema";
+
 export default function Home() {
+    const homeFAQs = [
+        {
+            question: "How do I find a Papa John's near me?",
+            answer: "Use our Papa John's Store Locator to instantly find the closest branch. We have multiple locations across Pakistan offering both pizza delivery and carryout.",
+        },
+        {
+            question: "What are the latest Papa John's promo codes and coupons?",
+            answer: "Papa John's Pakistan regularly releases exclusive promo codes and coupon deals through our website and loyalty program.",
+        },
+        {
+            question: "Is Papa John's open now near me?",
+            answer: "Most Papa John's Pakistan locations are open Sunday through Saturday, 11:00 AM to 12:00 AM (midnight).",
+        },
+        {
+            question: "What pizza deals does Papa John's offer?",
+            answer: "Papa John's offers incredible pizza deals including Buy-One-Get-One Free offers, Meal Combos, and Family Deals.",
+        },
+        {
+            question: "What is the Papa John's phone number for delivery?",
+            answer: "You can place a delivery order by calling your nearest branch via numbers listed on our Store Locator page.",
+        },
+        {
+            question: "What is on the Papa John's menu with prices?",
+            answer: "The Papa John's menu includes Classic Pizzas starting from PKR 899, Specialty Pizzas from PKR 1,199, and Papadias from PKR 699.",
+        },
+        {
+            question: "How do I earn free pizza with Papa John's rewards?",
+            answer: "Join Papa Rewards® for free. You earn 1 point for every PKR 100 spent. Accumulate 50 points for free Breadsticks.",
+        },
+        {
+            question: "Does Papa John's offer gluten-free or vegetarian options?",
+            answer: "Yes! Papa John's offers a gluten-free crust on select small pizzas and wide veggie topping choices.",
+        },
+    ];
+
+    const faqSchema = generateFAQSchema(homeFAQs);
+
     return (
         <div className="w-full">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+            />
             <HeroSection />
 
             {/* Complete Menu PDF Viewer */}
@@ -214,6 +257,7 @@ export default function Home() {
                             <div
                                 key={i}
                                 className="bg-[#fcfaf8] hover:bg-[#1A3D17] group transition-colors duration-300 p-7 rounded-3xl shadow-sm border border-gray-100"
+                                itemProp="mainEntity"
                                 itemScope
                                 itemType="https://schema.org/Question"
                             >
@@ -221,7 +265,7 @@ export default function Home() {
                                     <div className="w-10 h-10 shrink-0 bg-[#CCEE18] text-[#1A3D17] rounded-full flex items-center justify-center font-black text-lg shadow-inner">
                                         ?
                                     </div>
-                                    <div>
+                                    <div itemProp="acceptedAnswer" itemScope itemType="https://schema.org/Answer">
                                         <h3
                                             className="font-black text-gray-900 group-hover:text-white transition-colors mb-2 text-base leading-snug"
                                             itemProp="name"
@@ -230,8 +274,6 @@ export default function Home() {
                                         </h3>
                                         <div
                                             className="text-gray-500 group-hover:text-gray-300 transition-colors text-sm leading-relaxed font-medium [&_a]:text-[#cc0000] [&_a]:underline [&_a]:font-bold"
-                                            itemScope
-                                            itemType="https://schema.org/Answer"
                                         >
                                             <p itemProp="text">{faq.a}</p>
                                         </div>

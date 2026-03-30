@@ -68,6 +68,19 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         { name: "Super Hawaiian Pizza", price: "$16.99", cals: "280 cal", img: "/super-hawaiian-pizza.png", alt: "Papa Johns Super Hawaiian Pizza with pineapple and ham" }
     ];
 
+    const faqSchema = post.faqs ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": post.faqs.map((faq: any) => ({
+            "@type": "Question",
+            "name": faq.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer.replace(/<[^>]*>?/gm, '') // Remove HTML tags for cleaner schema
+            }
+        }))
+    } : null;
+
     return (
         <>
             <script
@@ -78,6 +91,12 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
             />
+            {faqSchema && (
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+                />
+            )}
             
             <div className="bg-white min-h-screen font-sans">
                 {/* ── 1. DARK RED HERO BANNER ── */}
