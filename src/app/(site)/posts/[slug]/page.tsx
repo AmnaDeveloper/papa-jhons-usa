@@ -104,7 +104,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                     <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#CCEE18] rounded-full -mr-64 -mt-64 opacity-5 pointer-events-none"></div>
                     <div className="container mx-auto px-4 relative z-10">
                         <h1 
-                            className="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-4" 
+                            className="text-3xl md:text-5xl font-black uppercase tracking-tighter mb-4" 
                             style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}
                         >
                             {post.title}
@@ -155,8 +155,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                                 </div>
                                 <div className="relative w-full h-[350px] lg:h-[450px] rounded-3xl overflow-hidden shadow-inner border border-gray-100 text-center">
                                     <img 
-                                        src={post.image || '/logo.png'} 
-                                        alt={post.imageAlt || post.title}
+                                        src="/papa-johns-nutrition-guide-2026-calories-allergens.png" 
+                                        alt="Papa Johns Nutrition Guide Calories Allergens 2026"
                                         className="inline-block w-full h-full object-contain group-hover:scale-105 transition-transform duration-700"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/5 to-transparent pointer-events-none"></div>
@@ -236,7 +236,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                                     <span className="inline-block bg-[#cc0000]/10 text-[#cc0000] font-black uppercase tracking-[0.3em] text-[10px] px-6 py-2 rounded-full mb-4">
                                         Got Questions?
                                     </span>
-                                    <h2 className="text-3xl md:text-5xl font-black text-[#1A3D17] uppercase tracking-tighter mb-4" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                                    <h2 className="text-2xl md:text-4xl font-black text-[#1A3D17] uppercase tracking-tighter mb-4" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
                                         Frequently Asked Questions
                                     </h2>
                                     <p className="text-gray-500 font-bold text-lg">
@@ -272,7 +272,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                                     <span className="inline-block bg-[#1A3D17]/10 text-[#1A3D17] font-black uppercase tracking-[0.3em] text-[10px] px-6 py-2 rounded-full mb-4">
                                         Menu Value
                                     </span>
-                                    <h2 className="text-3xl md:text-5xl font-black text-[#cc0000] uppercase tracking-tighter mb-4" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                                    <h2 className="text-2xl md:text-4xl font-black text-[#cc0000] uppercase tracking-tighter mb-4" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
                                         Current Pricing
                                     </h2>
                                     <p className="text-gray-500 font-bold text-lg">
