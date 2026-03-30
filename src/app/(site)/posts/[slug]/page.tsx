@@ -143,8 +143,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                 <div className="max-w-[1280px] mx-auto px-4 md:px-8 py-16">
                     <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
                         
-                        {/* LEFT COLUMN: IMAGE & ACTIONS */}
-                        <div className="lg:w-5/12">
+                        {/* LEFT COLUMN: STICKY SIDEBAR */}
+                        <div className="lg:w-5/12 lg:sticky lg:top-32 lg:self-start space-y-8">
+                            {/* Product Image Card */}
                             <div className="bg-white rounded-[2rem] p-3 shadow-2xl relative border border-gray-200 overflow-hidden group">
                                 <div className="absolute top-5 left-5 z-10 bg-[#CCEE18] text-[#1A3D17] text-[10px] font-black uppercase tracking-widest px-4 py-2 rounded-full shadow-lg">
                                     ⭐ Popular
@@ -152,133 +153,72 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                                 <div className="absolute top-5 right-5 z-10 bg-[#cc0000] text-white text-[10px] font-black uppercase tracking-widest px-4 py-2 rounded-full shadow-lg">
                                     New
                                 </div>
-                                <div className="relative w-full h-[350px] lg:h-[450px] rounded-3xl overflow-hidden shadow-inner border border-gray-100">
+                                <div className="relative w-full h-[350px] lg:h-[450px] rounded-3xl overflow-hidden shadow-inner border border-gray-100 text-center">
                                     <img 
                                         src={post.image || '/logo.png'} 
                                         alt={post.imageAlt || post.title}
-                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                        className="inline-block w-full h-full object-contain group-hover:scale-105 transition-transform duration-700"
                                     />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent pointer-events-none"></div>
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/5 to-transparent pointer-events-none"></div>
+                                </div>
+                                
+                                <div className="flex justify-center gap-3 mt-6 p-2">
+                                    <button className="flex-1 bg-gray-50 hover:bg-red-50 text-gray-500 hover:text-[#cc0000] font-black uppercase tracking-widest py-3 rounded-xl transition-all flex items-center justify-center gap-2 border border-gray-100 hover:border-red-100 text-[10px] shadow-sm">
+                                        <Heart size={14} /> Favorite
+                                    </button>
+                                    <button className="flex-1 bg-gray-50 hover:bg-[#CCEE18]/10 text-gray-500 hover:text-[#1A3D17] font-black uppercase tracking-widest py-3 rounded-xl transition-all flex items-center justify-center gap-2 border border-gray-100 hover:border-[#CCEE18]/30 text-[10px] shadow-sm">
+                                        <Share2 size={14} /> Share
+                                    </button>
                                 </div>
                             </div>
-                            
-                            <div className="flex justify-center gap-4 mt-8">
-                                <button className="flex-1 bg-gray-50 hover:bg-red-50 text-gray-500 hover:text-[#cc0000] font-black uppercase tracking-widest py-4 rounded-2xl transition-all flex items-center justify-center gap-3 border border-gray-100 hover:border-red-100 text-xs shadow-sm">
-                                    <Heart size={16} /> Favorite
-                                </button>
-                                <button className="flex-1 bg-gray-50 hover:bg-[#CCEE18]/10 text-gray-500 hover:text-[#1A3D17] font-black uppercase tracking-widest py-4 rounded-2xl transition-all flex items-center justify-center gap-3 border border-gray-100 hover:border-[#CCEE18]/30 text-xs shadow-sm">
-                                    <Share2 size={16} /> Share
-                                </button>
+
+                            {/* Quick Stats Sidebar Box */}
+                            <div className="bg-[#1A3D17] text-white rounded-[2rem] p-8 shadow-xl relative overflow-hidden">
+                                <div className="absolute top-0 right-0 w-32 h-32 bg-[#CCEE18]/10 rounded-full -mr-16 -mt-16"></div>
+                                <h3 className="text-xl font-black uppercase tracking-tighter mb-8 border-b border-white/10 pb-4 flex items-center gap-3">
+                                    <Info size={18} className="text-[#CCEE18]" /> Nutrition Stats
+                                </h3>
+                                <div className="grid grid-cols-2 gap-y-8 gap-x-6">
+                                    <div>
+                                        <span className="text-white/40 uppercase text-[9px] font-black tracking-[0.2em] block mb-1">Calories</span>
+                                        <span className="text-xl font-black text-[#CCEE18]">{post.calories || '670 kcal'}</span>
+                                    </div>
+                                    <div>
+                                        <span className="text-white/40 uppercase text-[9px] font-black tracking-[0.2em] block mb-1">Est. Price</span>
+                                        <span className="text-xl font-black text-white">{post.price || '$15.99'}</span>
+                                    </div>
+                                    <div>
+                                        <span className="text-white/40 uppercase text-[9px] font-black tracking-[0.2em] block mb-1">Serving</span>
+                                        <span className="text-sm font-black text-white/90">Per Portion</span>
+                                    </div>
+                                    <div>
+                                        <span className="text-white/40 uppercase text-[9px] font-black tracking-[0.2em] block mb-1">User Rating</span>
+                                        <div className="flex text-[#CCEE18] text-sm"><Star size={12} fill="currentColor" /><Star size={12} fill="currentColor" /><Star size={12} fill="currentColor" /><Star size={12} fill="currentColor" /><Star size={12} fill="currentColor" /></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Explore More Sidebar Box */}
+                            <div className="bg-[#fcfaf8] border-2 border-dashed border-[#1A3D17]/10 rounded-[2rem] p-8">
+                                <h3 className="text-lg font-black text-[#1A3D17] uppercase tracking-tighter mb-6 flex items-center gap-2">
+                                    <Navigation size={18} className="text-[#cc0000]" /> Related Links
+                                </h3>
+                                <ul className="space-y-4">
+                                    <li><Link href="/store-locator" className="flex items-center justify-between group text-sm font-black text-gray-700 hover:text-[#cc0000] transition-colors uppercase italic"><span>Find Store</span> <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" /></Link></li>
+                                    <li><Link href="/coupons" className="flex items-center justify-between group text-sm font-black text-gray-700 hover:text-[#cc0000] transition-colors uppercase italic"><span>Best Deals</span> <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" /></Link></li>
+                                    <li><Link href="/hours" className="flex items-center justify-between group text-sm font-black text-gray-700 hover:text-[#cc0000] transition-colors uppercase italic"><span>Store Hours</span> <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" /></Link></li>
+                                </ul>
                             </div>
                         </div>
 
-                        {/* RIGHT COLUMN: DETAILS */}
+                        {/* RIGHT COLUMN: MAIN ARTICLE CONTENT */}
                         <div className="lg:w-7/12 space-y-10">
                             <div>
-                                <h2 className="text-3xl font-black text-[#1A3D17] mb-6 uppercase tracking-tighter" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
-                                    Papa John's {post.title} - Complete Menu Information
+                                <h2 className="text-3xl font-black text-[#1A3D17] mb-8 uppercase tracking-tighter leading-tight" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                                    The Ultimate Papa John's {post.title} — 2026 Edition
                                 </h2>
                                 <div className="blog-content">
                                     <div dangerouslySetInnerHTML={{ __html: post.content }} />
-                                </div>
-                            </div>
-
-                            {/* Explore More Box */}
-                            <div className="bg-[#1A3D17]/5 border-2 border-[#1A3D17]/10 rounded-2xl p-8">
-                                <h3 className="text-lg font-black text-[#1A3D17] uppercase tracking-tighter mb-6 flex items-center gap-2">
-                                    <Navigation size={18} className="text-[#CCEE18]" /> Explore More Papa John's Menu Options
-                                </h3>
-                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3">
-                                    <div className="space-y-3 text-sm font-bold text-gray-600">
-                                        <p className="text-[#cc0000] lowercase italic">Popular Menu Categories:</p>
-                                        <ul className="space-y-2 list-disc pl-5 marker:text-[#CCEE18]">
-                                            <li><Link href="/menus-prices/classic-pizzas" className="hover:text-[#1A3D17]">Classic Pizzas</Link></li>
-                                            <li><Link href="/menus-prices/super-loaded" className="hover:text-[#1A3D17]">Super Loaded</Link></li>
-                                            <li><Link href="/menus-prices/sides" className="hover:text-[#1A3D17]">Sides & Dips</Link></li>
-                                        </ul>
-                                    </div>
-                                    <div className="space-y-3 text-sm font-bold text-gray-600 mt-4 sm:mt-0">
-                                        <p className="text-[#cc0000] lowercase italic">More Information:</p>
-                                        <ul className="space-y-2 list-disc pl-5 marker:text-[#CCEE18]">
-                                            <li><Link href="/coupons" className="hover:text-[#1A3D17]">Current Deals</Link></li>
-                                            <li><Link href="/hours" className="hover:text-[#1A3D17]">Store Hours</Link></li>
-                                            <li><Link href="/store-locator" className="hover:text-[#1A3D17]">Find Nearest Location</Link></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* Nutrition Box */}
-                            <div className="bg-white border hover:border-[#CCEE18] transition-colors rounded-2xl p-8 shadow-sm hover:shadow-xl">
-                                <h3 className="text-xl font-black text-[#1A3D17] uppercase tracking-tighter mb-8 border-b border-gray-100 pb-4">
-                                    Quick Details
-                                </h3>
-                                <div className="grid grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-6 text-sm font-bold">
-                                    <div>
-                                        <span className="text-gray-400 uppercase text-[10px] tracking-widest block mb-1">Price</span>
-                                        <span className="text-2xl text-[#cc0000] font-black">{post.price || '$15.99'}</span>
-                                    </div>
-                                    <div>
-                                        <span className="text-gray-400 uppercase text-[10px] tracking-widest block mb-1">Serves</span>
-                                        <span className="text-gray-900">{post.serves || '1-2 Person(s)'}</span>
-                                    </div>
-                                    <div>
-                                        <span className="text-gray-400 uppercase text-[10px] tracking-widest block mb-1">Calories</span>
-                                        <span className="text-gray-900">{post.calories || '670'}</span>
-                                    </div>
-                                    <div>
-                                        <span className="text-gray-400 uppercase text-[10px] tracking-widest block mb-1">Prep Time</span>
-                                        <span className="text-gray-900">{post.prepTime || '10-15 mins'}</span>
-                                    </div>
-                                    <div>
-                                        <span className="text-gray-400 uppercase text-[10px] tracking-widest block mb-1">Category</span>
-                                        <span className="text-gray-900">{post.category}</span>
-                                    </div>
-                                    <div>
-                                        <span className="text-gray-400 uppercase text-[10px] tracking-widest block mb-1">Rating</span>
-                                        <span className="text-[#CCEE18] flex text-lg">★★★★★</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* Ingredients & What's Included Grid */}
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                                <div className="bg-white border rounded-2xl p-8 shadow-sm">
-                                    <h3 className="text-lg font-black text-[#1A3D17] uppercase tracking-tighter mb-6">
-                                        Features & Spotlight
-                                    </h3>
-                                    <div className="space-y-4">
-                                        <div>
-                                            <span className="text-[#cc0000] text-[10px] font-black uppercase tracking-widest block mb-2">Highlights</span>
-                                            <ul className="text-sm font-medium text-gray-600 space-y-1 list-disc pl-4 marker:text-[#CCEE18]">
-                                                {post.ingredients ? (
-                                                    post.ingredients.map((ing: string, idx: number) => <li key={idx}>{ing}</li>)
-                                                ) : (
-                                                    <><li>Fresh dough</li><li>Signature Sauce</li></>
-                                                )}
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="bg-white border rounded-2xl p-8 shadow-sm">
-                                    <h3 className="text-lg font-black text-[#1A3D17] uppercase tracking-tighter mb-6">
-                                        What You'll Discover
-                                    </h3>
-                                    <ul className="space-y-3 list-none">
-                                        {post.included ? (
-                                            post.included.map((item: string, i: number) => (
-                                                <li key={i} className="flex items-start gap-3 text-sm font-medium text-gray-600">
-                                                    <span className="text-[#CCEE18] mt-0.5">✦</span>
-                                                    {item}
-                                                </li>
-                                            ))
-                                        ) : (
-                                            <li className="flex items-start gap-3 text-sm font-medium text-gray-600">
-                                                <span className="text-[#CCEE18] mt-0.5">✦</span>
-                                                Legendary Papa John's Quality
-                                            </li>
-                                        )}
-                                    </ul>
                                 </div>
                             </div>
                         </div>
