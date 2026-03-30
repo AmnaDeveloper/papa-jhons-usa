@@ -203,7 +203,7 @@ export default function Home() {
             <CouponsSection />
 
             {/* ── SEO FAQ SECTION ── */}
-            <section className="py-20 bg-white" itemScope itemType="https://schema.org/FAQPage">
+            <section className="py-20 bg-white">
                 <div className="max-w-[1000px] mx-auto px-4">
                     <div className="text-center mb-14">
                         <span className="inline-block bg-[#cc0000]/10 text-[#cc0000] font-black uppercase tracking-[0.3em] text-[10px] px-6 py-2 rounded-full mb-4">
@@ -257,25 +257,21 @@ export default function Home() {
                             <div
                                 key={i}
                                 className="bg-[#fcfaf8] hover:bg-[#1A3D17] group transition-colors duration-300 p-7 rounded-3xl shadow-sm border border-gray-100"
-                                itemProp="mainEntity"
-                                itemScope
-                                itemType="https://schema.org/Question"
                             >
                                 <div className="flex items-start gap-5">
                                     <div className="w-10 h-10 shrink-0 bg-[#CCEE18] text-[#1A3D17] rounded-full flex items-center justify-center font-black text-lg shadow-inner">
                                         ?
                                     </div>
-                                    <div itemProp="acceptedAnswer" itemScope itemType="https://schema.org/Answer">
+                                    <div>
                                         <h3
                                             className="font-black text-gray-900 group-hover:text-white transition-colors mb-2 text-base leading-snug"
-                                            itemProp="name"
                                         >
                                             {faq.q}
                                         </h3>
                                         <div
                                             className="text-gray-500 group-hover:text-gray-300 transition-colors text-sm leading-relaxed font-medium [&_a]:text-[#cc0000] [&_a]:underline [&_a]:font-bold"
                                         >
-                                            <p itemProp="text">{faq.a}</p>
+                                            <p>{faq.a}</p>
                                         </div>
                                     </div>
                                 </div>
