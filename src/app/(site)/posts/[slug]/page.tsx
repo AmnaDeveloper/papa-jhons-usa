@@ -178,14 +178,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                                 <h2 className="text-3xl font-black text-[#1A3D17] mb-6 uppercase tracking-tighter" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
                                     Papa John's {post.title} - Complete Menu Information
                                 </h2>
-                                <div className="blog-content prose prose-lg !max-w-none 
-                                    text-gray-700 leading-relaxed font-semibold
-                                    prose-h2:text-4xl prose-h2:md:text-5xl prose-h2:font-black prose-h2:text-[#1A3D17] prose-h2:uppercase prose-h2:tracking-tighter prose-h2:mb-8 prose-h2:mt-16 prose-h2:border-l-[12px] prose-h2:border-[#CCEE18] prose-h2:pl-8
-                                    prose-h3:text-2xl prose-h3:font-black prose-h3:text-[#cc0000] prose-h3:uppercase prose-h3:mt-12 prose-h3:mb-6 prose-h3:border-b-2 prose-h3:border-gray-100 prose-h3:pb-4
-                                    prose-p:mb-8 prose-p:text-lg prose-p:leading-8 prose-p:text-gray-600
-                                    prose-li:font-bold prose-li:text-gray-800 prose-li:mb-4
-                                    prose-strong:text-[#111827] prose-strong:font-black prose-strong:bg-[#CCEE18]/30 prose-strong:px-1
-                                    prose-a:text-[#cc0000] prose-a:font-black prose-a:underline hover:prose-a:text-[#1A3D17]">
+                                <div className="blog-content">
                                     <div dangerouslySetInnerHTML={{ __html: post.content }} />
                                 </div>
                             </div>
