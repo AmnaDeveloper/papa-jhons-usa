@@ -71,6 +71,65 @@ body {
   @apply text-gray-600 font-bold leading-relaxed;
 }
 
+/* Blog Content Tables */
+.blog-content div.overflow-x-auto {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  margin: 2rem 0;
+  border: 1px solid #e5e7eb;
+}
+
+.blog-content table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  min-width: 560px;
+  background: #fff;
+}
+
+.blog-content thead tr {
+  background: #1A3D17 !important;
+}
+
+.blog-content thead th {
+  color: #CCEE18 !important;
+  padding: 14px 18px !important;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.78rem;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.blog-content tbody tr {
+  border-bottom: 1px solid #f3f4f6;
+  transition: background 0.15s;
+}
+
+.blog-content tbody tr:hover {
+  background: #f9fbe7 !important;
+}
+
+.blog-content tbody tr:nth-child(even) {
+  background: #f9fafb;
+}
+
+.blog-content tbody td {
+  padding: 13px 18px !important;
+  color: #374151;
+  font-weight: 600;
+  vertical-align: middle;
+  line-height: 1.4;
+}
+
+.blog-content tbody td:first-child {
+  font-weight: 800;
+  color: #1A3D17;
+}
+
 @font-face {
   font-family: "PapaSans-Heavy";
   src: url("/fonts/PapaSans-Heavy.woff2") format("woff2");
