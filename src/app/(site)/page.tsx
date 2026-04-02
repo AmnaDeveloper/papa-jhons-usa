@@ -6,45 +6,135 @@ import HeroSection from "../components/HeroSection";
 import RestaurantHoursSection from "../components/RestaurantHoursSection";
 import CouponsSection from "../components/CouponsSection";
 
-import { generateFAQSchema } from "../lib/seo/schema";
+import { generateFAQSchema } from "../lib/seo/schema"; // kept if needed elsewhere, otherwise safe to ignore
 
 export default function Home() {
-    const homeFAQs = [
+    const faqSchema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
         {
-            question: "How do I find a Papa John's near me?",
-            answer: "Use our Papa John's Store Locator to instantly find the closest branch. We have multiple locations across Pakistan offering both pizza delivery and carryout.",
+          "@type": "Question",
+          "name": "What is on the Papa John's menu with prices in 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Papa John's menu in 2026 includes Classic Pizzas starting from $10.99, Super Loaded Specialty Pizzas from $14.99, Papadias from $8.99, Sides & Dips from $4.99, and Desserts from $5.99. All pizzas are available in Small (10\"), Medium (12\"), Large (14\"), and Extra Large (16\") sizes. You can view the complete Papa John's menu with prices at papajohns-menus.us/menus-prices."
+          }
         },
         {
-            question: "What are the latest Papa John's promo codes and coupons?",
-            answer: "Papa John's Pakistan regularly releases exclusive promo codes and coupon deals through our website and loyalty program.",
+          "@type": "Question",
+          "name": "What are Papa John's hours of operation near me?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most Papa John's locations in the USA are open Monday through Thursday from 10:00 AM to 11:00 PM, and Friday through Saturday from 10:00 AM to 1:00 AM. Sunday hours are typically 10:00 AM to 11:00 PM. Hours vary by location — use the Papa John's store locator to find exact hours near you."
+          }
         },
         {
-            question: "Is Papa John's open now near me?",
-            answer: "Most Papa John's Pakistan locations are open Sunday through Saturday, 11:00 AM to 12:00 AM (midnight).",
+          "@type": "Question",
+          "name": "How do I find a Papa John's near me?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can find the nearest Papa John's location using the Papa John's store locator at papajohns-menus.us/store-locator. Enter your ZIP code or city name to instantly see nearby locations with addresses, phone numbers, hours, and directions. Papa John's currently operates over 3,200 locations across the United States."
+          }
         },
         {
-            question: "What pizza deals does Papa John's offer?",
-            answer: "Papa John's offers incredible pizza deals including Buy-One-Get-One Free offers, Meal Combos, and Family Deals.",
+          "@type": "Question",
+          "name": "What are the latest Papa John's promo codes and deals?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Papa John's regularly offers promo codes including 25% off your entire order, BOGO (Buy One Get One) pizza deals, and $10 off orders over $30. The best way to get active promo codes is to join Papa Rewards, check the Papa John's app, or visit papajohns-menus.us/coupons for verified deals updated daily."
+          }
         },
         {
-            question: "What is the Papa John's phone number for delivery?",
-            answer: "You can place a delivery order by calling your nearest branch via numbers listed on our Store Locator page.",
+          "@type": "Question",
+          "name": "What is the Papa John's delivery fee in the USA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Papa John's delivery fee in the USA typically ranges from $3.99 to $5.99 depending on your location and order total. Papa John's offers free delivery on orders over $40 at most locations. Note that the delivery fee does not go to the driver — tipping separately is recommended."
+          }
         },
         {
-            question: "What is on the Papa John's menu with prices?",
-            answer: "The Papa John's menu includes Classic Pizzas starting from PKR 899, Specialty Pizzas from PKR 1,199, and Papadias from PKR 699.",
+          "@type": "Question",
+          "name": "How does Papa Rewards work at Papa John's?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Papa Rewards is Papa John's free loyalty program. You earn Papa Dough points on every order, which can be redeemed toward free food and pizza. Members also receive a birthday reward (usually a free dessert), exclusive promo codes, and early access to new menu items. Sign up for free at papajohns-menus.us/papa-johns-rewards."
+          }
         },
         {
-            question: "How do I earn free pizza with Papa John's rewards?",
-            answer: "Join Papa Rewards® for free. You earn 1 point for every PKR 100 spent. Accumulate 50 points for free Breadsticks.",
+          "@type": "Question",
+          "name": "Does Papa John's offer a gluten-free pizza crust?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Papa John's offers a gluten-free Ancient Grains crust made with sorghum, teff, amaranth, and quinoa for an additional $2 charge. However, it is prepared in the same kitchen as regular pizzas, so it is not recommended for individuals with Celiac Disease due to potential cross-contamination. It is suitable for those with gluten sensitivity."
+          }
         },
         {
-            question: "Does Papa John's offer gluten-free or vegetarian options?",
-            answer: "Yes! Papa John's offers a gluten-free crust on select small pizzas and wide veggie topping choices.",
+          "@type": "Question",
+          "name": "What crust options are available at Papa John's?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Papa John's offers five crust options in 2026: Original Crust (classic hand-tossed style), Thin Crust (light and crispy), New York Style Crust (large foldable slices), Epic Stuffed Crust (mozzarella cheese baked into the edge, +$3.00), and Garlic Stuffed Crust (garlic herb butter and cheese baked into the edge, +$3.50). Gluten-Free Ancient Grains Crust is also available for an extra charge."
+          }
         },
-    ];
-
-    const faqSchema = generateFAQSchema(homeFAQs);
+        {
+          "@type": "Question",
+          "name": "What are Papa John's most popular pizzas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Papa John's most popular pizzas in 2026 are The Works (pepperoni, sausage, Canadian bacon, onions, green peppers, mushrooms), The Meats (four premium meats), Pepperoni Pizza, BBQ Chicken Bacon, and the Fiery Buffalo Chicken. The Works is consistently the #1 best-seller across all US locations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Papa John's have vegetarian or vegan pizza options?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Papa John's offers several vegetarian pizzas including Garden Fresh Pizza (fresh green peppers, onions, mushrooms, spinach, Roma tomatoes), Fresh Spinach & Tomato Alfredo, and Tuscan Six Cheese Pizza. For vegan options, you can order any pizza without cheese and use the original dough and tomato sauce, which are vegan-friendly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I track my Papa John's delivery order?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can track your Papa John's order in real-time using the Papa Track feature available on the Papa John's website and the Papa John's app (available on iOS and Android). Papa Track shows you every stage of your order — from dough preparation to out for delivery — so you always know exactly when your pizza will arrive."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What payment methods does Papa John's accept?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Papa John's in the USA accepts multiple payment methods including major credit and debit cards (Visa, Mastercard, American Express, Discover), Apple Pay, Google Pay, PayPal, Papa John's gift cards, and cash for carryout orders. Online and app orders support all digital payment options."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Papa John's open on holidays like Christmas and Thanksgiving?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most Papa John's locations are closed on Christmas Day and Thanksgiving Day. On Christmas Eve and New Year's Eve, many locations close earlier than usual. Hours vary significantly by location during holidays — use the Papa John's store locator or call your local branch to confirm holiday hours before ordering."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many calories are in a Papa John's pizza slice?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Calories in a Papa John's pizza slice vary by size and toppings. A large Pepperoni pizza slice has approximately 300 calories, while a Cheese pizza slice has around 260 calories. Super Loaded Pizzas like The Meats range from 360–460 calories per slice. For full nutrition details, visit papajohns-menus.us/posts/papa-johns-nutrition-guide."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I order Papa John's pizza online or through an app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Papa John's offers online ordering through their official website and the Papa Johns Pizza app, available on both iOS (App Store) and Android (Google Play). The app lets you order delivery or carryout, track your order with Papa Track, earn Papa Rewards points, save favorite orders, and access exclusive app-only deals and promo codes."
+          }
+        }
+      ]
+    };
 
     return (
         <div className="w-full">
@@ -222,37 +312,65 @@ export default function Home() {
                     <div className="space-y-5">
                         {[
                             {
+                                q: "What is on the Papa John's menu with prices in 2026?",
+                                a: <>The Papa John's 2026 menu includes Classic Pizzas starting from $10.99, Super Loaded Specialty Pizzas from $14.99, Papadias from $8.99, Sides &amp; Dips from $4.99, and Desserts from $5.99. All pizzas are available in Small (10"), Medium (12"), Large (14"), and Extra Large (16"). <Link href="/menus-prices" className="text-[#cc0000] underline font-bold">View the complete Papa John's menu with prices &rarr;</Link></>,
+                            },
+                            {
+                                q: "What are Papa John's hours of operation near me?",
+                                a: <>Most Papa John's locations in the USA are open:<br/><br/>Monday &ndash; Thursday: 10:00 AM &ndash; 11:00 PM<br/>Friday &ndash; Saturday: 10:00 AM &ndash; 1:00 AM<br/>Sunday: 10:00 AM &ndash; 11:00 PM<br/><br/>Hours vary by location. <Link href="/hours" className="text-[#cc0000] underline font-bold">Find exact hours for your nearest Papa John's &rarr;</Link></>,
+                            },
+                            {
                                 q: "How do I find a Papa John's near me?",
-                                a: <>Use our <Link href="/store-locator" className="text-[#cc0000] underline font-bold">Papa John's Store Locator</Link> to instantly find the closest branch. We have multiple locations across Pakistan offering both pizza delivery and carryout. Simply enter your city or area and get real-time directions, phone numbers, and opening hours.</>,
+                                a: <>Enter your ZIP code or city name in the <Link href="/store-locator" className="text-[#cc0000] underline font-bold">Papa John's Store Locator &rarr;</Link> to instantly find nearby locations with addresses, phone numbers, live hours, and driving directions. Papa John's currently operates over 3,200 locations across the United States.</>,
                             },
                             {
-                                q: "What are the latest Papa John's promo codes and coupons?",
-                                a: <>Papa John's Pakistan regularly releases exclusive <Link href="/coupons" className="text-[#cc0000] underline font-bold">promo codes and coupon deals</Link> through our website and loyalty program. You can also earn free food via <Link href="/papa-johns-rewards" className="text-[#cc0000] underline font-bold">Papa Rewards®</Link> — no code needed. Check the Coupons section above for today's best active Papa Johns promo codes.</>,
+                                q: "What are the latest Papa John's promo codes and deals?",
+                                a: <>Papa John's regularly offers promo codes including 25% off your entire order, BOGO pizza deals, and $10 off orders over $30. The best way to save is to join Papa Rewards, use the Papa John's app, or check our verified <Link href="/coupons" className="text-[#cc0000] underline font-bold">Papa John's coupons page &rarr;</Link> &mdash; updated daily for April 2026.</>,
                             },
                             {
-                                q: "Is Papa John's open now near me?",
-                                a: <>Most Papa John's Pakistan locations are open <strong>Sunday through Saturday, 11:00 AM to 12:00 AM (midnight)</strong>. Exact hours may vary by branch. Use the <Link href="/hours" className="text-[#cc0000] underline font-bold">Papa John's Hours &amp; Locations</Link> page to check live store hours for your nearest restaurant.</>,
+                                q: "What is the Papa John's delivery fee in the USA?",
+                                a: <>The delivery fee at Papa John's typically ranges from $3.99 to $5.99 depending on your location. Many locations offer free delivery on orders over $40. Note that the delivery fee is separate from the driver tip &mdash; tipping your driver directly is always recommended.</>,
                             },
                             {
-                                q: "What pizza deals does Papa John's offer?",
-                                a: <>Papa John's offers incredible <Link href="/coupons" className="text-[#cc0000] underline font-bold">pizza deals</Link> including Buy-One-Get-One Free offers, Meal Combos, Family Deals, and exclusive digital discounts. Browse our <Link href="/menus-prices" className="text-[#cc0000] underline font-bold">full menu with prices</Link> to find the best value options this week.</>,
+                                q: "How does Papa Rewards work?",
+                                a: <>Papa Rewards is Papa John's free loyalty program. Every dollar you spend earns Papa Dough points, which you can redeem toward free pizza, sides, and desserts. Rewards members also get a birthday reward (free dessert), exclusive promo codes, and early access to new menu items. <Link href="/papa-johns-rewards" className="text-[#cc0000] underline font-bold">Join Papa Rewards for free &rarr;</Link></>,
                             },
                             {
-                                q: "What is the Papa John's phone number for delivery?",
-                                a: <>You can place a delivery order by calling your nearest branch via numbers listed on our <Link href="/store-locator" className="text-[#cc0000] underline font-bold">Store Locator page</Link>. Alternatively, order online for the fastest <Link href="/posts/best-pizza-delivery-near-me" className="text-[#cc0000] underline font-bold">pizza delivery experience</Link> with real-time order tracking.</>,
+                                q: "Does Papa John's offer a gluten-free pizza crust?",
+                                a: <>Yes. Papa John's offers an Ancient Grains Gluten-Free Crust made with sorghum, teff, amaranth, and quinoa for an extra $2.00 charge. Note: it is prepared in a shared kitchen and is not recommended for Celiac Disease &mdash; it is best suited for those with general gluten sensitivity.</>,
                             },
                             {
-                                q: "What is on the Papa John's menu with prices?",
-                                a: <>The Papa John's menu includes <Link href="/posts/classic-pizzas" className="text-[#cc0000] underline font-bold">Classic Pizzas</Link> starting from PKR 899, <Link href="/posts/super-loaded" className="text-[#cc0000] underline font-bold">Specialty Pizzas</Link> from PKR 1,199, <Link href="/posts/new-papadias-flavors-2026" className="text-[#cc0000] underline font-bold">Papadias</Link> from PKR 699, and <Link href="/posts/sides" className="text-[#cc0000] underline font-bold">Sides &amp; Dips</Link> from PKR 399. See the <Link href="/posts/papa-johns-menu-prices-guide" className="text-[#cc0000] underline font-bold">complete Papa John's menu guide</Link> for full 2026 pricing.</>,
+                                q: "What crust options does Papa John's offer?",
+                                a: <>Papa John's has 5 crust options in 2026:<br/><br/>Original Crust &mdash; classic hand-tossed (included)<br/>Thin Crust &mdash; light and crispy (included)<br/>New York Style &mdash; large, foldable slices (included)<br/>Epic Stuffed Crust &mdash; mozzarella baked into the edge (+$3.00)<br/>Garlic Stuffed Crust &mdash; garlic herb butter + cheese in the crust (+$3.50)</>,
                             },
                             {
-                                q: "How do I earn free pizza with Papa John's rewards?",
-                                a: <>Join <Link href="/papa-johns-rewards" className="text-[#cc0000] underline font-bold">Papa Rewards®</Link> for free. You earn <strong>1 point for every PKR 100 spent</strong>. Accumulate 50 points for free Breadsticks, or save up to 280 points for a free Large Pizza — Pakistan's best pizza loyalty program!</>,
+                                q: "What are Papa John's most popular pizzas in 2026?",
+                                a: <>The top-selling Papa John's pizzas in 2026 are:<br/><br/>The Works &mdash; pepperoni, sausage, Canadian bacon, onions, green peppers, mushrooms<br/>The Meats &mdash; four premium proteins, extra cheese<br/>Pepperoni Pizza &mdash; the classic crowd favorite<br/>BBQ Chicken Bacon &mdash; smoky and bold with BBQ sauce base<br/>Fiery Buffalo Chicken &mdash; spicy buffalo sauce, grilled chicken, banana peppers<br/><br/><Link href="/posts/classic-pizzas" className="text-[#cc0000] underline font-bold">See all pizzas with prices and reviews &rarr;</Link></>,
                             },
                             {
-                                q: "Does Papa John's offer gluten-free or vegetarian options?",
-                                a: <>Yes! Papa John's offers a gluten-free crust on select small pizzas and wide veggie topping choices. Explore the <Link href="/menus-prices" className="text-[#cc0000] underline font-bold">full menu</Link> to customize your perfect pizza using our Better Ingredients guarantee.</>,
+                                q: "Does Papa John's have vegetarian or vegan options?",
+                                a: <>Yes. Vegetarian options include Garden Fresh Pizza, Fresh Spinach &amp; Tomato Alfredo, and Tuscan Six Cheese Pizza. For vegan orders, request any pizza without cheese &mdash; the original dough and tomato sauce are vegan-friendly. Availability may vary by location.</>,
                             },
+                            {
+                                q: "How do I track my Papa John's delivery order?",
+                                a: <>Use the Papa Track feature on the Papa John's website or app to follow your order in real-time &mdash; from dough preparation through baking, quality check, and out for delivery. The Papa John's app is available free on iOS and Android. <a href="https://www.papajohns.com/order/track" target="_blank" rel="noopener noreferrer" className="text-[#cc0000] underline font-bold">Download the Papa John's app &rarr;</a></>,
+                            },
+                            {
+                                q: "What payment methods does Papa John's accept in the USA?",
+                                a: <>Papa John's accepts Visa, Mastercard, American Express, Discover, Apple Pay, Google Pay, PayPal, Papa John's gift cards, and cash (for carryout orders). All digital payments are supported through the website and app.</>,
+                            },
+                            {
+                                q: "Is Papa John's open on holidays?",
+                                a: <>Papa John's is typically closed on Christmas Day and Thanksgiving Day. Hours are reduced on Christmas Eve and New Year's Eve. Hours vary by location &mdash; always <Link href="/hours" className="text-[#cc0000] underline font-bold">check your local store's hours &rarr;</Link> before ordering on a holiday.</>,
+                            },
+                            {
+                                q: "How many calories are in a Papa John's pizza slice?",
+                                a: <div className="mt-2 text-sm overflow-x-auto"><table className="w-full text-left border-collapse"><thead><tr className="bg-gray-100 text-[#1A3D17]"><th className="p-2 border">Pizza</th><th className="p-2 border">Calories Per Slice (Large)</th></tr></thead><tbody><tr><td className="p-2 border">Cheese Pizza</td><td className="p-2 border">~260 cal</td></tr><tr><td className="p-2 border">Pepperoni Pizza</td><td className="p-2 border">~300 cal</td></tr><tr><td className="p-2 border">The Works</td><td className="p-2 border">~360 cal</td></tr><tr><td className="p-2 border">The Meats</td><td className="p-2 border">~390 cal</td></tr><tr><td className="p-2 border">BBQ Chicken Bacon</td><td className="p-2 border">~310 cal</td></tr><tr><td className="p-2 border">Super Hawaiian</td><td className="p-2 border">~260 cal</td></tr></tbody></table><br/><Link href="/posts/papa-johns-nutrition-guide" className="text-[#cc0000] underline font-bold">View the full Papa John's Nutrition Guide &rarr;</Link></div>,
+                            },
+                            {
+                                q: "Can I order Papa John's online or through an app?",
+                                a: <>Yes. Order delivery or carryout online at papajohns.com or through the free Papa John's app (iOS &amp; Android). App features include Papa Track order tracking, saved favorites, Papa Rewards earning, and exclusive app-only promo codes not available anywhere else.</>,
+                            }
                         ].map((faq, i) => (
                             <div
                                 key={i}
