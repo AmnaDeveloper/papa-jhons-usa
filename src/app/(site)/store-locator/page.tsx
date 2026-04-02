@@ -7,6 +7,53 @@ import InternalLinks from '../../components/seo/InternalLinks';
 import { Search, MapPin, Phone, Clock, Navigation, Zap, Bike } from 'lucide-react';
 
 export default function StoreLocatorPage() {
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How do I find a Papa Johns location near me?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The fastest way to find a Papa Johns is through our store locator at papajohns.com. Enter your city or zip code to see all nearby stores along with their specific address, phone number, and hours."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How many Papa Johns locations are there in the United States?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Papa Johns has over 5,000 locations across the United States. Our store locator covers all 50 states, ensuring you can find your favorite pizza almost anywhere in the country."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How can I check if a Papa Johns store is open right now?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "You can check real-time store hours using the Papa Johns store locator. Each location's status is updated instantly to show if they are currently open for delivery or carryout."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does the store locator show delivery and carryout availability?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, our store locator clearly indicates whether each store offers delivery services, carryout (pickup), or both. Most Papa Johns locations provide both for customer convenience."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I find the phone number for my local Papa Johns?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Use the store locator to find your nearest Papa Johns. The direct phone number for the store is listed in the results so you can call for orders or inquiries directly."
+                }
+            }
+        ]
+    };
+
     const [searchQuery, setSearchQuery] = useState('');
     const [selectedState, setSelectedState] = useState('All States');
 
@@ -37,6 +84,10 @@ export default function StoreLocatorPage() {
 
     return (
         <div className="bg-[#fafafa] min-h-screen">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+            />
             {/* ── Premium Hero Header ── */}
             <div className="bg-[#1A3D17] py-20 md:py-32 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#CCEE18] rounded-full -mr-64 -mt-64 opacity-[0.05] animate-pulse"></div>

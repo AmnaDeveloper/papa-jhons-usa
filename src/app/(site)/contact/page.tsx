@@ -13,8 +13,59 @@ export const metadata: Metadata = generatePageSEO(
 );
 
 export default function ContactPage() {
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How do I contact Papa Johns customer service?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "You can contact Papa Johns customer service by calling their national support line at 1-800-PAPA-JOHNS (1-800-727-2564) or by using the contact form on their official website. Support is available 24/7 for order-related inquiries and feedback."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I report an issue with my Papa Johns order?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "For immediate issues with a current order, it's best to call the specific Papa Johns store where the order was placed. For general feedback or unresolved issues, you can submit a request through the 'Contact Us' page on the Papa Johns website."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I contact Papa Johns directly via the app?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, the Papa Johns mobile app includes a 'Help' or 'Contact Us' section where you can find store phone numbers, track your orders in real-time, and submit feedback directly to the support team."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the phone number for Papa Johns corporate office?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Papa Johns corporate headquarters is located in Louisville, Kentucky. You can reach the corporate offices by calling their main line at 1-800-727-2564 for corporate inquiries, franchising, and high-level support."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I provide feedback on a recent Papa Johns experience?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "You can provide feedback by completing the online survey at papajohns.com/feedback or by filling out the contact form on the 'Contact Us' page. Your feedback helps Papa Johns maintain their 'Better Ingredients. Better Pizza.' standard."
+                }
+            }
+        ]
+    };
+
     return (
         <div className="bg-[#fafafa] min-h-screen">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+            />
             {/* ── Fixed Gap for Sticky Header Removed for Seamless Look ── */}
 
             {/* ── Premium Hero Header ── */}

@@ -12,8 +12,59 @@ export const metadata: Metadata = generatePageSEO(
 );
 
 export default function HoursPage() {
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What are Papa Johns standard opening and closing hours?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Standard Papa Johns hours are from 10:00 AM or 11:00 AM to 11:00 PM on weekdays, and until 12:00 AM or later on Fridays and Saturdays. Closing hours vary by store, but many locations offer delivery until 1:00 AM daily."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is Papa Johns open late on weekends?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, most Papa Johns locations have extended hours on weekends, commonly staying open until midnight or 1:00 AM for delivery and carryout on Fridays and Saturdays."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is Papa Johns open on holidays like Christmas or Thanksgiving?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "While many Papa Johns locations remain open on holidays, hours are typically reduced on Christmas Eve and Thanksgiving. Most stores are closed on Christmas Day. Always check your local store's schedule through the Papa Johns app for holiday-specific hours."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What time does Papa Johns stop delivering?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Papa Johns delivery typically stops at the store's closing time — usually between 11:00 PM and 1:00 AM. It's recommended to place your last delivery order at least 30 minutes before the store's official closing time."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Are Papa Johns carryout hours different from delivery hours?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, carryout services may end 30 minutes to 1 hour earlier than delivery services at some Papa Johns locations. Always verify your local store's specific carryout and delivery windows online or via the app."
+                }
+            }
+        ]
+    };
+
     return (
         <div className="bg-[#fafafa] min-h-screen">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+            />
             {/* ── Premium Hero Header ── */}
             <div className="bg-[#1A3D17] py-20 md:py-32 relative overflow-hidden">
                 {/* Decorative Elements */}

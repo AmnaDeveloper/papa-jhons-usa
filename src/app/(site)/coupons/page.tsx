@@ -4,8 +4,59 @@ import CouponsSection from '../../components/CouponsSection';
 import Link from 'next/link';
 
 export default function CouponsPage() {
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How do I use a Papa Johns promo code?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "To use a Papa Johns promo code, enter the code in the 'Promo Code' box at checkout on the Papa Johns website or app. Click 'Apply' to see your discount reflected in the order total before completing your purchase."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does Papa Johns offer any buy-one-get-one-free (BOGO) deals?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, Papa Johns frequently offers BOGO deals on large and extra-large pizzas. These deals are typically available through specific promo codes or as part of local store specials. Check the 'Specials' tab on the Papa Johns app for current BOGO offers."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Are there any current Papa Johns coupons for free delivery?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Free delivery coupons are occasionally offered to Papa Rewards members and through the Papa Johns mobile app. You can also get free delivery by reaching a certain order minimum at participating locations or by using accumulated Papa Rewards points."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Where can I find the best Papa Johns specials near me?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The best way to find local specials is to enter your delivery address on the Papa Johns website or app. This will show you all deals, coupons, and 'Papa Pairings' specifically available at the store serving your neighborhood."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I use multiple promo codes on one Papa Johns order?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Generally, Papa Johns allows only one promo code per order. However, you can often combine a promo code discount with earned Papa Rewards 'Papa Dough' for maximum savings on a single transaction."
+                }
+            }
+        ]
+    };
+
     return (
         <div className="bg-[#fcfaf8] min-h-screen font-sans pb-20">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+            />
 
             {/* ── HERO BANNER ── */}
             <div className="bg-[#1A3D17] border-b-8 border-[#cc0000] text-white py-16 md:py-24 text-center relative overflow-hidden mb-0">
