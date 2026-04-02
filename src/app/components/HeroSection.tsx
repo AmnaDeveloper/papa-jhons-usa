@@ -58,7 +58,7 @@ export default function HeroSection() {
 
                 {/* Content Paragraph — SEO Optimized */}
                 <p className="text-base md:text-lg lg:text-xl font-bold mb-8 max-w-4xl leading-relaxed text-gray-100 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
-                    Welcome to the ultimate guide for <strong>Papa John's menu deals, promo codes, and prices in Pakistan for 2026</strong>. Whether you're searching for{' '}
+                    Welcome to the ultimate guide for <strong>Papa John's menu deals, promo codes, and prices in USA for 2026</strong>. Whether you're searching for{' '}
                     <Link href="/posts/best-pizza-delivery-near-me" className="text-[#CCEE18] underline font-bold hover:text-white transition-colors">Papa John's pizza delivery near you</Link>,
                     {' '}looking to save with verified{' '}
                     <Link href="/coupons" className="text-[#CCEE18] underline font-bold hover:text-white transition-colors">Papa Johns promo codes</Link>,

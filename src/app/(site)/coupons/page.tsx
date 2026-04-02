@@ -31,7 +31,7 @@ export default function CouponsPage() {
                         <Link href="/posts/sides" className="text-[#CCEE18] underline hover:text-white transition-colors">
                             Sides &amp; Dips
                         </Link>
-                        , and full delivery orders — straight from Pakistan's #1 pizza chain. Use our exclusive{' '}
+                        , and full delivery orders — straight from America's #1 pizza chain. Use our exclusive{' '}
                         <Link href="/papa-johns-rewards" className="text-[#CCEE18] underline hover:text-white transition-colors">
                             Papa Rewards®
                         </Link>{' '}

@@ -1,0 +1,364 @@
+{
+  "classic-pizzas": {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are the classic pizzas at Papa Johns?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Papa Johns classic pizzas include four core offerings: Cheese Pizza, Pepperoni Pizza, Sausage Pizza, and Create Your Own Pizza. They are priced from $10.99 for a small to $16.99+ for an extra-large and available in all six crust types."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does a Papa Johns pepperoni pizza cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Papa Johns Pepperoni Pizza costs $10.99 for a small, $12.99 for a medium, $15.78 for a large, and $16.99 for an extra-large on original crust. Prices vary slightly by location."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many calories are in a Papa Johns pepperoni pizza slice?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "One slice of Papa Johns pepperoni pizza (large, original crust) contains approximately 300-350 calories. Choosing thin crust reduces this to around 200 calories per slice. The Epic Stuffed Crust version has approximately 390-480 calories per slice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many slices are in a Papa Johns pizza?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Papa Johns small pizza is cut into 6 slices, a medium into 8 slices, a large into 8 slices, and an extra-large into 10 slices. Large slices are noticeably bigger than medium even though both are 8 slices."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the best classic pizza at Papa Johns?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Papa Johns Pepperoni Pizza is the best-selling classic pizza and has been #1 every year since 1984. For mild flavor lovers, the Cheese Pizza is excellent due to the Parmesan-Romano blend. The Sausage Pizza is the most underrated option with bold Italian herb flavor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What crust options does Papa Johns offer for classic pizzas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Papa Johns offers 6 crust types: Original Hand Tossed (included), Thin Crust (included), New York Style (included), Epic Stuffed Crust (+$3.00), Garlic Stuffed Crust (+$3.50), and Gluten-Free Ancient Grains Crust (+$2.00)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Papa Johns classic pizza better than Dominos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For ingredient quality, Papa Johns generally outperforms Dominos — using fresh daily dough, thicker-cut pepperoni, 100% real mozzarella with Parmesan-Romano, and vine-ripened tomato sauce. Papa Johns also includes free garlic sauce and pepperoncini with every order."
+      }
+    }
+  ]
+},
+  "super-loaded": {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is on The Works pizza at Papa Johns?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Works pizza at Papa Johns includes pepperoni, julienne-cut Canadian bacon, spicy Italian sausage, fresh-cut onions, crisp green peppers, and mushrooms — six premium toppings total on Papa Johns signature sauce and 100% real mozzarella."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much do Papa Johns Super Loaded Pizzas cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Papa Johns Super Loaded Pizzas start at $14.99 for a Small (10\") and go up to $23.99 for an Extra Large (16\"). Epic Stuffed Crust upgrade adds $3.00 and Garlic Stuffed Crust adds $3.50."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between Super Loaded and Classic Pizzas at Papa Johns?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Super Loaded Pizzas have 4-6 premium toppings versus 1-3 on Classic Pizzas, and cost approximately $4-6 more. Super Loaded Pizzas are specialty pizzas designed for maximum flavor, while Classic Pizzas are simpler crowd-pleasing options."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are Super Loaded Pizzas heavier than regular pizzas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Super Loaded Pizzas contain significantly more toppings by weight and volume than Classic Pizzas. The extra toppings also make them more calorie-dense, ranging from 260-460 calories per slice depending on the specific pizza and size."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the Epic Stuffed Crust at Papa Johns?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Epic Stuffed Crust bakes warm, gooey mozzarella cheese directly into the outer crust of the pizza. It is available as a $3.00 upgrade on any size Super Loaded or Classic Pizza and adds approximately 60 calories per slice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which Papa Johns Super Loaded Pizza has the fewest calories?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Super Hawaiian Pizza has the fewest calories among Super Loaded options at approximately 260 calories per slice on a large. The Fiery Buffalo Chicken follows at around 290 calories per slice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I customize a Super Loaded Pizza at Papa Johns?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, all Papa Johns Super Loaded Pizzas are fully customizable. You can remove or substitute any topping, change the crust type, and add extra cheese or sauce. Customization is available through the Papa Johns website and app order builder."
+      }
+    }
+  ]
+},
+  "sides": {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is the Special Garlic Sauce free with every Papa Johns order?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, the Special Garlic Sauce is complimentary with every Papa Johns order. You can also add extra cups for a small charge through the Dips section when ordering online or via the app."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are Papa Johns breadsticks vegan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Original Breadsticks are naturally vegan and contain no dairy or animal products. However, the Garlic Parmesan Breadsticks contain dairy from parmesan cheese and are not vegan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Papa Johns have bone-in wings?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Papa Johns offers both traditional bone-in wings and premium all-white-meat boneless wings. Both come in multiple flavors including Original, Buffalo, BBQ, and Spicy. Bone-in wings have more flavor and juiciness, while boneless wings are cleaner to eat."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many dipping sauces does Papa Johns offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Papa Johns currently offers 9 dipping sauces: Special Garlic Sauce, Ranch, Cheese Sauce, Spicy Garlic Sauce, Blue Cheese, Buffalo Spicy, BBQ, Honey Mustard, and Original Pizza Sauce. Special Garlic Sauce comes free with every order."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many Garlic Knots come in one order at Papa Johns?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A standard order of Papa Johns Garlic Knots contains 8 pieces, served warm with a choice of dipping sauce. Additional dipping sauce cups are available for a small extra charge."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much do Papa Johns Garlic Knots cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Papa Johns Garlic Knots cost approximately $7.49 for an order of 8 pieces. Prices may vary slightly by location. They contain approximately 110 calories per knot."
+      }
+    }
+  ]
+},
+  "papa-johns-menu-prices-guide": {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the full Papa Johns menu with prices in 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The complete Papa Johns 2026 menu includes Classic Pizzas ($10.99–$16.99), Super Loaded Specialty Pizzas ($14.99–$23.99), Papadias ($8.99–$10.99), Sides like Garlic Knots ($7.49), Wings ($10.99–$14.99), Desserts ($5.99–$8.99), and Drinks. Prices vary slightly by location."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the cheapest item on the Papa Johns menu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The most affordable items on the Papa Johns menu are the dipping sauces at $0.50–$0.75 each. Among food items, small Classic Pizzas start at $10.99. Sides and desserts typically start around $4.99–$5.99."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Papa Johns have a dollar menu or budget options?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Papa Johns does not have a traditional dollar menu, but regularly offers significant savings through promo codes, BOGO deals, and the Papa Pairings combo deals. Joining Papa Rewards also earns free food on every order."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are Papa Johns Papadias and how much do they cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Papadias are Papa Johns folded flatbread sandwiches made with pizza ingredients. Available in flavors including Philly Cheesesteak, BBQ Chicken & Bacon, and Italian. They are priced from approximately $8.99 to $10.99."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are Papa Johns menu prices the same at every location?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Papa Johns menu prices are generally consistent but may vary slightly by location due to local taxes, franchise pricing, and regional differences. Always check your local Papa Johns app or website for exact prices in your area."
+      }
+    }
+  ]
+},
+  "new-papadias-flavors-2026": {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are Papa Johns Papadias?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Papa Johns Papadias are folded flatbread sandwiches made with the same fresh dough and premium ingredients as Papa Johns pizzas. They are pressed flat and grilled, creating a crispy exterior with a warm, cheesy filling. Available in multiple flavors since 2019."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What flavors of Papadias does Papa Johns offer in 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Papa Johns Papadias flavors in 2026 include Philly Cheesesteak (beef, peppers, onions, cheese), BBQ Chicken & Bacon (grilled chicken, bacon, BBQ sauce), Italian (salami, pepperoni, banana peppers), and Grilled Buffalo Chicken & Bacon. Availability may vary by location."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much do Papa Johns Papadias cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Papa Johns Papadias are priced from approximately $8.99 to $10.99 depending on flavor and location. They are a single-serving item and work well as a meal for one person."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many calories are in a Papa Johns Papadia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Papa Johns Papadias range from approximately 620 to 830 calories per full Papadia depending on the flavor. The Philly Cheesesteak is one of the higher-calorie options, while the Grilled Buffalo Chicken tends to be lighter."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are Papa Johns Papadias better than their pizzas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Papadias offer a completely different eating experience from pizzas — more like a gourmet sandwich with a crispy, pressed flatbread exterior. They are ideal when you want pizza flavor in a handheld format, and are great for lunch or solo meals."
+      }
+    }
+  ]
+},
+  "papa-johns-nutrition-guide": {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How many calories are in a Papa Johns pizza?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Papa Johns pizza calories per slice (large, original crust) range from approximately 260 calories for Cheese Pizza to 390 calories for The Meats. Thin crust reduces calories by about 30%. A full large Pepperoni pizza contains approximately 2,400–2,800 total calories."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the lowest calorie pizza at Papa Johns?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The lowest calorie Papa Johns pizza is the Thin Crust Cheese Pizza at approximately 180–200 calories per slice. The Super Hawaiian on thin crust is also a lower-calorie specialty option at around 220 calories per slice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Papa Johns pizza contain MSG?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, Papa Johns standard ingredients do not contain monosodium glutamate (MSG). This is part of the Better Ingredients commitment that Papa Johns has maintained since the company's founding in 1984."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What allergens are in Papa Johns pizza?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Papa Johns pizzas contain wheat (gluten), dairy (cheese), and may contain soy. Some toppings contain additional allergens. Papa Johns provides full allergen information on their official website. Their gluten-free crust is prepared in shared ovens and is not safe for Celiac disease."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much sodium is in Papa Johns pizza?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sodium in Papa Johns pizza ranges from approximately 530mg to 870mg per slice depending on toppings and crust. Thin crust options tend to have lower sodium. The Cheese Pizza on original crust has approximately 580mg of sodium per large slice."
+      }
+    }
+  ]
+},
+  "best-pizza-delivery-near-me": {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How fast is Papa Johns pizza delivery?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Papa Johns average pizza delivery time is approximately 30-45 minutes from order placement. Delivery times vary by location, time of day, and distance. You can track your order in real time using Papa Track on the Papa Johns website or app."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Papa Johns offer contactless delivery?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Papa Johns offers contactless No Contact Delivery by default on all delivery orders. Your order is left at your door and the driver steps back for a safe handoff. This option is available through the Papa Johns website and app."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the minimum order for Papa Johns delivery?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Papa Johns delivery minimum order is typically $15, though this varies by location. Many locations offer free delivery on orders over $40. You can check the minimum order for your specific location through the Papa Johns store locator."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I track my Papa Johns delivery order?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Papa Johns offers Papa Track — a real-time order tracking feature available on their website and app. Papa Track shows you each stage of your order from dough preparation through baking, quality check, and out for delivery."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Papa Johns deliver through DoorDash or Uber Eats?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Papa Johns primarily delivers through their own drivers and platform. Some locations may also be available through third-party services like DoorDash. Ordering directly through Papa Johns website or app is recommended to earn Papa Rewards points and access the best deals."
+      }
+    }
+  ]
+}
+}

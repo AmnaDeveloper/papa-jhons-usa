@@ -4,6 +4,7 @@ import { generateArticleSEO } from '../../../lib/seo-config';
 import { generateArticleSchema, generateBreadcrumbSchema } from '../../../lib/seo/schema';
 import InternalLinks from '../../../components/seo/InternalLinks';
 import Link from 'next/link';
+import exactFaqSchemas from '../../../data/faq-schemas.json';
 import ContactFeedbackSection from '../../../components/ContactFeedbackSection';
 import { Heart, Share2, Info, Navigation, ArrowRight, Star } from 'lucide-react';
 
@@ -91,13 +92,17 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
             />
-            {faqSchema && (
+            {(exactFaqSchemas as Record<string, any>)[post.slug] ? (
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify((exactFaqSchemas as Record<string, any>)[post.slug]) }}
+                />
+            ) : faqSchema && (
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
                 />
             )}
-            
             <div className="bg-white min-h-screen font-sans">
                 {/* ── 1. DARK RED HERO BANNER ── */}
                 <div className="bg-[#1A3D17] border-b-8 border-[#cc0000] text-white py-12 md:py-20 text-center relative overflow-hidden">

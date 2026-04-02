@@ -27,8 +27,59 @@ export default function MenusAndPricesPage() {
         if (catPosts.length > 0) groupedBlog[cat] = catPosts;
     }
 
+    const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is on the Papa Johns full menu in 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Papa Johns full menu in 2026 includes Classic Pizzas, Super Loaded Specialty Pizzas, Papadias, Garlic Knots, Breadsticks, Cheesesticks, Chicken Wings, Papa Bites, Desserts (Chocolate Chip Cookies, Brownies, Cinnamon Pull-Aparts), Drinks, and dipping sauces. All items are customizable."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the Papa Johns pizza prices for 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Papa Johns pizza prices in 2026: Small (10\") from $10.99, Medium (12\") from $12.99, Large (14\") from $14.99, Extra Large (16\") from $16.99 for Classic Pizzas. Super Loaded Specialty Pizzas start at $14.99 for small and go up to $23.99 for extra large."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Papa Johns have a kids menu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Papa Johns does not have a dedicated kids menu, but offers a Junior Pizza section with smaller, simpler options suitable for children. Small Classic Pizzas also work well for kids and are available with mild toppings like Cheese or light Pepperoni."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What desserts does Papa Johns offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Papa Johns desserts in 2026 include Chocolate Chip Cookie ($5.99), Double Chocolate Brownie ($5.99), Cinnamon Pull-Aparts, and Oreo Cookie Papa Bites. All desserts are baked fresh and available for delivery or carryout."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Papa Johns offer pasta or non-pizza items?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Papa Johns offers pasta dishes at select locations, as well as Papadias (flatbread sandwiches), Papa Bowls (pizza toppings over salad base), Chicken Wings, Breadsticks, and various desserts — providing options beyond traditional pizza."
+      }
+    }
+  ]
+};
+
     return (
         <div className="bg-[#fcfaf8] min-h-screen font-sans pb-20">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+            />
             {/* ── PREMIUM HERO BANNER ── */}
             <div className="bg-[#1A3D17] border-b-8 border-[#cc0000] text-white py-16 md:py-24 text-center relative overflow-hidden mb-16">
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#CCEE18] rounded-full -mr-64 -mt-64 opacity-5 pointer-events-none"></div>

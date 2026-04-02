@@ -61,10 +61,59 @@ const howToEarnSteps = [
 ];
 
 export default function PapaRewardsPage() {
+    const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I join Papa John's Rewards program?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Joining Papa Rewards is free. Sign up on the Papa Johns website or through the Papa Johns app with your email address. Once enrolled, you automatically earn Papa Dough points on every qualifying order."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I earn Papa Dough points at Papa Johns?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You earn Papa Dough points on every dollar spent at Papa Johns when ordering through the website or app as a logged-in member. Points accumulate and can be redeemed toward free pizza, sides, and desserts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What can I redeem Papa Rewards points for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Papa Rewards points (Papa Dough) can be redeemed for free menu items including free pizza, free sides like Garlic Knots or Breadsticks, free desserts, and free Papadias. The specific redemption thresholds are shown in your rewards account."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Papa Johns offer a birthday reward?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Papa Rewards members receive a birthday reward — typically a free dessert or discount — during their birthday month. To activate it, you must have your birthday saved in your Papa Rewards account profile."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do Papa Rewards points expire?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Papa Rewards points can expire if your account is inactive for an extended period. It is recommended to place at least one order every 6 months to keep your account active and your points from expiring. Check your account for current expiration details."
+      }
+    }
+  ]
+};
+
     return (
         <div className="bg-[#fcfaf8] min-h-screen font-sans pb-20">
-
-            {/* ── HERO BANNER ── */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+            />            {/* ── HERO BANNER ── */}
             <div className="bg-[#1A3D17] border-b-8 border-[#cc0000] text-white py-16 md:py-24 text-center relative overflow-hidden mb-16">
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#CCEE18] rounded-full -mr-64 -mt-64 opacity-5 pointer-events-none"></div>
                 <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-[#cc0000] rounded-full -ml-40 -mb-40 opacity-5 pointer-events-none"></div>
