@@ -162,7 +162,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                                     <img 
                                         src={post.image || '/logo.png'} 
                                         alt={post.imageAlt || post.title}
-                                        className="inline-block w-full h-full object-contain group-hover:scale-105 transition-transform duration-700"
+                                        className="inline-block w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/5 to-transparent pointer-events-none"></div>
                                 </div>
