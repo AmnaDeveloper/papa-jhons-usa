@@ -145,7 +145,7 @@ export default function Header() {
                             { name: 'Pastas', href: '/menus-prices/pastas' },
                             { name: 'Drinks', href: '/menus-prices/drinks' },
                             { name: 'Junior', href: '/menus-prices/junior' },
-                            { name: 'Desserts', href: '/menus-prices/desserts' },
+                            { name: 'Desserts', href: '/posts/papa-johns-desserts' },
                         ].map((item) => (
                             <Link
                                 key={item.name}
