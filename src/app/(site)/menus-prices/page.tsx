@@ -165,7 +165,7 @@ export default function MenusAndPricesPage() {
                     >
                         <div className="absolute top-0 right-0 w-24 h-24 bg-[#CCEE18] rounded-bl-full -mr-12 -mt-12 opacity-0 group-hover:opacity-10 transition-opacity"></div>
                         <div className="h-48 w-full bg-[#fcfaf8] rounded-2xl mb-5 relative overflow-hidden border border-gray-100 shadow-inner group-hover:shadow-md transition-shadow flex items-center justify-center">
-                            <img src="/honey-chipotle-wings.jpg" alt="Papa Johns Wings" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                            <img src="/papa-johns-wings-flavors.webp" alt="Papa Johns Wings" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                         </div>
                         <div className="flex items-center justify-between mb-3 text-left">
                             <span className="bg-[#1A3D17] text-[#CCEE18] font-black text-[9px] px-3 py-1 rounded-full uppercase tracking-widest">Sides & Dips</span>
