@@ -55,6 +55,7 @@ const nextConfig: NextConfig = {
       { source: "/login", destination: "/", permanent: false },
       { source: "/auth", destination: "/", permanent: false },
       { source: "/admin", destination: "/", permanent: false },
+      { source: '/menus-prices/desserts', destination: '/posts/papa-johns-desserts', permanent: true },
     ];
   },
   experimental: {
