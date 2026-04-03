@@ -2,27 +2,28 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const slides = [
     {
         id: 1,
         image: "/slider-1.jpg", 
         fallbackColor: "bg-[#185F34]",
-        alt: "Create your own pizza",
+        alt: "Create your own pizza at Papa Johns",
         link: "/menus-prices"
     },
     {
         id: 2,
         image: "/slider-2.jpg",
         fallbackColor: "bg-[#185F34]",
-        alt: "Papa rewards",
+        alt: "Papa Rewards loyalty program",
         link: "/papa-johns-rewards"
     },
     {
         id: 3,
         image: "/slider-3.jpg",
         fallbackColor: "bg-[#1f2937]", 
-        alt: "Pizzas, Wings, Desserts",
+        alt: "Pizzas, Wings, Desserts at Papa Johns",
         link: "/menus-prices/pizzas"
     }
 ];
@@ -33,7 +34,7 @@ export default function HeroSlider() {
     useEffect(() => {
         const timer = setInterval(() => {
             setCurrentSlide((prev) => (prev + 1) % slides.length);
-        }, 5000); // Slide every 5 seconds
+        }, 5000);
         return () => clearInterval(timer);
     }, []);
 
@@ -52,17 +53,19 @@ export default function HeroSlider() {
                 className="flex transition-transform duration-500 ease-in-out h-full"
                 style={{ transform: `translateX(-${currentSlide * 100}%)` }}
             >
-                {slides.map((slide) => (
+                {slides.map((slide, index) => (
                     <div key={slide.id} className={`w-full min-w-full h-full shrink-0 relative ${slide.fallbackColor} flex items-center justify-center overflow-hidden`}>
                         <Link href={slide.link} className="absolute inset-0 z-10 w-full h-full cursor-pointer" aria-label={slide.alt}></Link>
                         
-                        <img 
-                            src={slide.image} 
-                            alt={slide.alt} 
-                            className="absolute inset-0 w-full h-full object-cover object-center z-0"
-                            onError={(e) => {
-                                (e.target as HTMLImageElement).style.display = 'none';
-                            }}
+                        <Image
+                            src={slide.image}
+                            alt={slide.alt}
+                            fill
+                            priority={index === 0}
+                            loading={index === 0 ? "eager" : "lazy"}
+                            quality={75}
+                            sizes="100vw"
+                            className="object-cover object-center z-0"
                         />
                     </div>
                 ))}

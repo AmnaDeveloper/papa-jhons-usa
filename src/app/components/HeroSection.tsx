@@ -20,13 +20,15 @@ export default function HeroSection() {
 
     return (
         <section className="relative  w-full  h-full flex items-center justify-center overflow-hidden">
-            {/* Background Image */}
+            {/* Background Image — WebP for max compression, priority for LCP */}
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="/hero-background.jpeg"
-                    alt="Papa Johns Hero Background"
+                    src="/hero-background.webp"
+                    alt="Papa Johns Pizza Menu Hero Background"
                     fill
-                    priority
+                    priority={true}
+                    quality={80}
+                    sizes="100vw"
                     className="object-cover object-center brightness-[0.6]"
                 />
                 {/* Overlay for better readability */}

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import posts from '../../data/posts.json';
 import { generateArticleSEO } from '../../lib/seo-config';
 import InternalLinks from '../../components/seo/InternalLinks';

@@ -6,11 +6,13 @@ import AutoDateUpdater from "../components/AutoDateUpdater";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: "swap",
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const viewport: Viewport = {
@@ -129,6 +131,25 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* ── LCP CRITICAL: Preload hero image with highest priority ── */}
+        <link
+          rel="preload"
+          as="image"
+          href="/hero-background.webp"
+          // @ts-expect-error fetchpriority is valid HTML but not in React types yet
+          fetchpriority="high"
+        />
+        {/* ── Preload custom font to prevent FOIT ── */}
+        <link
+          rel="preload"
+          href="/fonts/PapaSans-Heavy.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        {/* ── DNS prefetch for external resources ── */}
+        <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

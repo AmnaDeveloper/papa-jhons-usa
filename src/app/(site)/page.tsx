@@ -175,6 +175,7 @@ export default function Home() {
                             className="w-full min-h-screen h-[100vh] rounded-lg border-none"
                             style={{ minHeight: '100vh' }}
                             title="Papa Johns Complete Menu PDF"
+                            loading="lazy"
                         />
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10 pb-16">
                             <a href="/papajohns_openbook.pdf" download className="w-full sm:w-auto text-center bg-red-800 hover:bg-red-900 text-white font-bold py-4 px-10 rounded-full transition-all shadow-lg hover:shadow-xl hover:-translate-y-1" style={{ backgroundColor: '#cc0000' }}>
@@ -220,6 +221,7 @@ export default function Home() {
                             className="w-full min-h-screen h-[100vh] rounded-lg border-none"
                             style={{ minHeight: '100vh' }}
                             title="Papa Rewards Booklet PDF"
+                            loading="lazy"
                         />
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10 pb-6">
                             <Link href="/papa-johns-rewards" className="w-full sm:w-auto text-center bg-[#1A3D17] hover:bg-[#112a0f] text-white font-black py-4 px-10 rounded-full transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 uppercase tracking-wider text-sm md:text-base border-2 border-[#1A3D17]">
@@ -257,7 +259,15 @@ export default function Home() {
                                     <div className="absolute top-3 left-3 z-10 bg-[#cc0000] text-white text-[9px] font-black uppercase tracking-widest px-4 py-1.5 rounded-full shadow-md">
                                         {post.category}
                                     </div>
-                                    <img src={post.image} alt={post.imageAlt || post.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                                    <Image
+                                        src={post.image}
+                                        alt={post.imageAlt || post.title}
+                                        fill
+                                        loading="lazy"
+                                        quality={75}
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                        className="object-cover group-hover:scale-110 transition-transform duration-500"
+                                    />
                                 </div>
                                 
                                 <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-3 flex items-center gap-2">
