@@ -326,6 +326,10 @@ export default function Home() {
                                 a: <>The Papa John's 2026 menu includes Classic Pizzas starting from $10.99, Super Loaded Specialty Pizzas from $14.99, Papadias from $8.99, Sides &amp; Dips from $4.99, and Desserts from $5.99. All pizzas are available in Small (10"), Medium (12"), Large (14"), and Extra Large (16"). <Link href="/menus-prices" className="text-[#cc0000] underline font-bold">View the complete Papa John's menu with prices &rarr;</Link></>,
                             },
                             {
+                                q: "What desserts does Papa John's have?",
+                                a: <>Papa John's offers fresh-baked desserts including the famous Chocolate Chip Cookie, Double Chocolate Chip Brownie, Cinnamon Pull Aparts, and Oreo Cookie Papa Bites. <Link href="/posts/papa-johns-desserts" className="text-[#cc0000] underline font-bold">View the full Papa John's Dessert Menu with Prices &rarr;</Link></>,
+                            },
+                            {
                                 q: "What are Papa John's hours of operation near me?",
                                 a: <>Most Papa John's locations in the USA are open:<br/><br/>Monday &ndash; Thursday: 10:00 AM &ndash; 11:00 PM<br/>Friday &ndash; Saturday: 10:00 AM &ndash; 1:00 AM<br/>Sunday: 10:00 AM &ndash; 11:00 PM<br/><br/>Hours vary by location. <Link href="/hours" className="text-[#cc0000] underline font-bold">Find exact hours for your nearest Papa John's &rarr;</Link></>,
                             },
