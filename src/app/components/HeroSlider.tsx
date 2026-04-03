@@ -7,21 +7,21 @@ import Image from 'next/image';
 const slides = [
     {
         id: 1,
-        image: "/slider-1.jpg", 
+        image: "/slider-1.webp", 
         fallbackColor: "bg-[#185F34]",
         alt: "Create your own pizza at Papa Johns",
         link: "/menus-prices"
     },
     {
         id: 2,
-        image: "/slider-2.jpg",
+        image: "/slider-2.webp",
         fallbackColor: "bg-[#185F34]",
         alt: "Papa Rewards loyalty program",
         link: "/papa-johns-rewards"
     },
     {
         id: 3,
-        image: "/slider-3.jpg",
+        image: "/slider-3.webp",
         fallbackColor: "bg-[#1f2937]", 
         alt: "Pizzas, Wings, Desserts at Papa Johns",
         link: "/menus-prices/pizzas"
