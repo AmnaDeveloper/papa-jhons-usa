@@ -1,36 +1,39 @@
-import { NextResponse } from 'next/server';
-import { notifyGoogle } from '../../lib/googleIndexing';
+import { NextRequest, NextResponse } from 'next/server'
+import { submitBatchUrls } from '@/lib/indexing/googleIndex'
 
-export async function GET() {
-    const baseUrl = 'https://papajohns-menus.us';
+// Yeh pages priority pe submit honge
+const PRIORITY_PAGES = [
+  'https://papajohns-menus.us/',
+  'https://papajohns-menus.us/posts/best-pizza-delivery-near-me',
+  'https://papajohns-menus.us/posts/papa-johns-menu-prices-guide',
+  'https://papajohns-menus.us/posts/papa-johns-nutrition-guide',
+  'https://papajohns-menus.us/posts/classic-pizzas',
+  'https://papajohns-menus.us/posts/super-loaded',
+  'https://papajohns-menus.us/posts/sides',
+  'https://papajohns-menus.us/menus-prices',
+  'https://papajohns-menus.us/papa-johns-rewards',
+  'https://papajohns-menus.us/coupons',
+]
 
-    // Example array of priority URLs to auto-index daily/weekly
-    const priorityUrls = [
-        baseUrl,
-        `${baseUrl}/menus-prices`,
-        `${baseUrl}/coupons`,
-        `${baseUrl}/store-locator`,
-        `${baseUrl}/posts`
-    ];
-
-    try {
-        const results = [];
-        for (const url of priorityUrls) {
-            const res = await notifyGoogle(url, 'URL_UPDATED');
-            results.push({ url, status: res.success ? 'Success' : 'Failed', error: res.error });
-        }
-
-        return NextResponse.json({
-            success: true,
-            message: "Batch auto-indexing complete via Vercel Cron",
-            reports: results
-        });
-
-    } catch (error) {
-        console.error('Auto-index error:', error);
-        return NextResponse.json(
-            { success: false, error: 'Internal server error processing auto-index' },
-            { status: 500 }
-        );
-    }
+export async function GET(request: NextRequest) {
+  // Vercel Cron Job authentication
+  const authHeader = request.headers.get('authorization')
+  if (authHeader !== `Bearer ${process.env.CRON_SECRET}`) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+  }
+  
+  try {
+    await submitBatchUrls(PRIORITY_PAGES)
+    
+    return NextResponse.json({
+      success: true,
+      message: `Successfully submitted ${PRIORITY_PAGES.length} URLs`,
+      timestamp: new Date().toISOString()
+    })
+  } catch (error) {
+    return NextResponse.json(
+      { error: 'Cron job failed', details: error },
+      { status: 500 }
+    )
+  }
 }

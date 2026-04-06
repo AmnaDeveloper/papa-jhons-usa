@@ -7,6 +7,9 @@ import Link from 'next/link';
 import exactFaqSchemas from '../../../data/faq-schemas.json';
 import ContactFeedbackSection from '../../../components/ContactFeedbackSection';
 import { Heart, Share2, Info, Navigation, ArrowRight, Star } from 'lucide-react';
+import { getTodayFormatted, getMonthYear } from '../../../../lib/utils/date';
+import LastUpdated from '../../../components/LastUpdated';
+import IndexingButton from '../../../components/IndexingButton';
 
 // Generate static params for all posts
 export async function generateStaticParams() {
@@ -21,13 +24,52 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     const post = posts.find((p) => p.slug === resolvedParams.slug);
     if (!post) return notFound();
 
-    return generateArticleSEO(
-        post.title,
-        post.excerpt,
-        post.slug,
-        post.author
-    );
+    const date = getTodayFormatted();
+    const month = getMonthYear();
+
+    switch (post.slug) {
+        case 'best-pizza-delivery-near-me':
+            return {
+                title: `Best Pizza Delivery Near Me — ${month} Guide`,
+                description: `Find the best pizza delivery near you in ${month}. Papa Johns delivery times, fees, ordering guide & deals — updated ${date}.`,
+            };
+        case 'papa-johns-menu-prices-guide':
+            return {
+                title: `Papa Johns Menu with Prices (${month}): Complete Guide to Every Item`,
+                description: `Full Papa Johns menu with prices updated ${date}. All pizzas, sides, desserts, Papadias & drinks with exact pricing. 2026 deals inside.`,
+            };
+        case 'papa-johns-nutrition-guide':
+            return {
+                title: `Papa Johns Nutrition Guide: Full Calories & Allergens (${month})`,
+                description: `Complete Papa Johns nutrition facts updated ${date}. Calories per slice, protein, sodium, allergens for every menu item.`,
+            };
+        case 'classic-pizzas':
+            return {
+                title: `Papa Johns Classic Pizzas: Every Flavor Ranked & Priced (${month})`,
+                description: `All Papa Johns classic pizzas in ${month} — Pepperoni, Cheese, Sausage. Full prices, calories, honest reviews & which one to order.`,
+            };
+        case 'super-loaded':
+            return {
+                title: `Papa Johns Super Loaded Pizzas: All Flavors & Prices (${month})`,
+                description: `Every Papa Johns Super Loaded Pizza in ${month} — The Works, The Meats, BBQ Chicken Bacon. Full prices, calories & ordering tips.`,
+            };
+        case 'sides':
+            return {
+                title: `Papa Johns Sides & Dips: Complete Guide (${month})`,
+                description: `Every Papa Johns side item in ${month} — Garlic Knots, Breadsticks, Wings, Papa Bites. Full prices, calories & reviews.`,
+            };
+        default:
+            return generateArticleSEO(
+                post.title,
+                post.excerpt,
+                post.slug,
+                post.author
+            );
+    }
 }
+
+export const revalidate = 86400; // 24 hours
+
 
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
     const resolvedParams = await params;
@@ -213,16 +255,18 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                                     <li><Link href="/coupons" className="flex items-center justify-between group text-sm font-black text-gray-700 hover:text-[#cc0000] transition-colors uppercase italic"><span>Best Deals</span> <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" /></Link></li>
                                     <li><Link href="/hours" className="flex items-center justify-between group text-sm font-black text-gray-700 hover:text-[#cc0000] transition-colors uppercase italic"><span>Store Hours</span> <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" /></Link></li>
                                 </ul>
+                                <IndexingButton url={postUrl} />
                             </div>
                         </div>
 
                         {/* RIGHT COLUMN: MAIN ARTICLE CONTENT */}
                         <div className="lg:w-7/12 space-y-10">
                             <div>
-                                <h2 className="text-3xl font-black text-[#1A3D17] mb-8 uppercase tracking-tighter leading-tight" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                                <h2 className="text-3xl font-black text-[#1A3D17] mb-4 uppercase tracking-tighter leading-tight" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
                                     {post.title}
                                 </h2>
-                                <div className="blog-content">
+                                <LastUpdated />
+                                <div className="blog-content mt-4">
                                     <div dangerouslySetInnerHTML={{ __html: post.content }} />
                                 </div>
                             </div>

@@ -7,6 +7,23 @@ import RestaurantHoursSection from "../components/RestaurantHoursSection";
 import CouponsSection from "../components/CouponsSection";
 
 import { generateFAQSchema } from "../lib/seo/schema"; // kept if needed elsewhere, otherwise safe to ignore
+import { getTodayFormatted, getMonthYear } from '@/lib/utils/date';
+
+export const revalidate = 86400; // 24 hours ISR
+
+export async function generateMetadata() {
+  const date = getTodayFormatted()
+  const month = getMonthYear()
+  
+  return {
+    title: `Papa Johns Menu with Prices ${month}: Complete Guide`,
+    description: `Discover the complete Papa Johns menu with prices, updated ${date}. Classic Pizzas from $10.99, Super Loaded from $14.99. Deals, coupons & nutrition guide.`,
+    openGraph: {
+      title: `Papa Johns Menu with Prices ${month}: Complete Guide`,
+      description: `Updated ${date} — Full Papa Johns menu, prices, deals & store locator.`,
+    }
+  }
+}
 
 export default function Home() {
     const faqSchema = {
@@ -246,7 +263,7 @@ export default function Home() {
                             Papa John's <span className="text-[#CCEE18]">Guides & News</span>
                         </h2>
                         <p className="text-gray-500 font-bold max-w-2xl mx-auto">
-                            Explore our complete menu breakdowns, local delivery guides, and latest product releases.
+                            Explore our complete menu breakdowns, <Link href="/posts/best-pizza-delivery-near-me" className="text-[#cc0000] hover:underline">best pizza delivery near me</Link> guides, <Link href="/posts/papa-johns-menu-prices-guide" className="text-[#cc0000] hover:underline">Papa Johns menu with prices 2026</Link>, and the full <Link href="/posts/papa-johns-nutrition-guide" className="text-[#cc0000] hover:underline">Papa Johns nutrition guide</Link>. Check out our <Link href="/menus-prices" className="text-[#cc0000] hover:underline">Papa Johns full menu</Link> and find <Link href="/coupons" className="text-[#cc0000] hover:underline">Papa Johns promo codes 2026</Link>.
                         </p>
                     </div>
 
@@ -285,7 +302,17 @@ export default function Home() {
                                 </p>
                                 
                                 <div className="mt-auto border-t border-gray-100 pt-5 flex items-center justify-between text-[#1A3D17] text-xs font-black uppercase tracking-widest group-hover:text-[#cc0000] transition-colors">
-                                    Read Full Guide 
+                                    {(() => {
+                                        switch(post.slug) {
+                                            case 'best-pizza-delivery-near-me': return "Best Pizza Delivery Near Me — 2026 Guide";
+                                            case 'papa-johns-menu-prices-guide': return "Papa Johns Menu with Prices 2026";
+                                            case 'papa-johns-nutrition-guide': return "Papa Johns Nutrition Guide — Full Calories";
+                                            case 'classic-pizzas': return "Papa Johns Classic Pizzas — Every Flavor Ranked";
+                                            case 'super-loaded': return "Papa Johns Super Loaded Pizzas — All Flavors";
+                                            case 'sides': return "Papa Johns Sides & Dips — Complete Guide";
+                                            default: return "Read Full Guide";
+                                        }
+                                    })()}
                                     <span className="bg-[#CCEE18] text-[#1A3D17] p-2 rounded-full group-hover:bg-[#cc0000] group-hover:text-white transition-colors">
                                         <ArrowRight size={14} className="group-hover:translate-x-0.5 transition-transform" />
                                     </span>
