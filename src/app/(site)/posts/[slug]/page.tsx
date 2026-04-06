@@ -9,7 +9,6 @@ import ContactFeedbackSection from '../../../components/ContactFeedbackSection';
 import { Heart, Share2, Info, Navigation, ArrowRight, Star } from 'lucide-react';
 import { getTodayFormatted, getMonthYear } from '../../../../lib/utils/date';
 import LastUpdated from '../../../components/LastUpdated';
-import IndexingButton from '../../../components/IndexingButton';
 
 // Generate static params for all posts
 export async function generateStaticParams() {
@@ -260,7 +259,6 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                                     <li><Link href="/coupons" className="flex items-center justify-between group text-sm font-black text-gray-700 hover:text-[#cc0000] transition-colors uppercase italic"><span>Best Deals</span> <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" /></Link></li>
                                     <li><Link href="/hours" className="flex items-center justify-between group text-sm font-black text-gray-700 hover:text-[#cc0000] transition-colors uppercase italic"><span>Store Hours</span> <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" /></Link></li>
                                 </ul>
-                                <IndexingButton url={postUrl} />
                             </div>
                         </div>
 
