@@ -1,17 +1,29 @@
 import { GoogleAuth } from 'google-auth-library'
 
-const auth = new GoogleAuth({
-  credentials: {
-    type: 'service_account',
-    project_id: process.env.GOOGLE_PROJECT_ID || 'swift-rite-492505-d2',
-    private_key: (process.env.GOOGLE_PRIVATE_KEY || '').replace(/\\n/g, '\n'),
-    client_email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
-  },
-  scopes: ['https://www.googleapis.com/auth/indexing'],
-})
+// DO NOT INITIALIZE HERE - Initialize inside functions to avoid module-level errors if env vars aren't ready
+function getAuthClient() {
+  const email = process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL;
+  const key = process.env.GOOGLE_PRIVATE_KEY;
+  const projectId = process.env.GOOGLE_PROJECT_ID || 'swift-rite-492505-d2';
+
+  if (!email || !key) {
+    throw new Error(`Missing Credentials: EMAIL=${email ? '✅' : '❌'} KEY=${key ? '✅' : '❌'}`);
+  }
+
+  return new GoogleAuth({
+    credentials: {
+      type: 'service_account',
+      project_id: projectId,
+      private_key: key.replace(/\\n/g, '\n'),
+      client_email: email,
+    },
+    scopes: ['https://www.googleapis.com/auth/indexing'],
+  });
+}
 
 export async function submitUrlToGoogle(url: string): Promise<boolean> {
   try {
+    const auth = getAuthClient();
     const client = await auth.getClient()
     const accessToken = await client.getAccessToken()
     
@@ -30,35 +42,24 @@ export async function submitUrlToGoogle(url: string): Promise<boolean> {
       }
     )
     
-    if (response.ok) {
-      console.log(`✅ Successfully submitted: ${url}`)
-      return true
-    } else {
-      const error = await response.json()
-      console.error(`❌ Failed to submit ${url}:`, error)
-      return false
-    }
+    return response.ok;
   } catch (error) {
     console.error(`❌ Error submitting ${url}:`, error)
     return false
   }
 }
 
-// Batch submit - multiple URLs ek baar mein
+// Batch submit
 export async function submitBatchUrls(urls: string[]): Promise<void> {
-  console.log(`📤 Submitting ${urls.length} URLs to Google...`)
-  
   for (const url of urls) {
     await submitUrlToGoogle(url)
-    // 1 second delay between requests
     await new Promise(resolve => setTimeout(resolve, 1000))
   }
-  
-  console.log('✅ Batch submission complete!')
 }
 
 export async function submitUrlWithDetails(url: string): Promise<{ success: boolean; message: string; error?: string }> {
   try {
+    const auth = getAuthClient();
     const client = await auth.getClient()
     const accessToken = await client.getAccessToken()
     
