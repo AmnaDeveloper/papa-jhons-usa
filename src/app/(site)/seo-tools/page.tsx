@@ -16,7 +16,11 @@ const PRIORITY_PAGES = [
   'https://papajohns-menus.us/posts/papa-johns-desserts',
   'https://papajohns-menus.us/menus-prices',
   'https://papajohns-menus.us/papa-johns-rewards',
-  'https://papajohns-menus.us/coupons',
+  'https://papajohns-menus.us/locations/orlando-fl',
+  'https://papajohns-menus.us/locations/louisville-ky',
+  'https://papajohns-menus.us/locations/baltimore-md',
+  'https://papajohns-menus.us/locations/tucson-az',
+  'https://papajohns-menus.us/locations/oklahoma-city-ok',
 ]
 
 export default function SeoToolsPage() {

@@ -248,5 +248,55 @@
         "address": "2212 Main St, Fort Worth, TX 76102",
         "phone": "+1 817-555-0055",
         "hours": "11:00 AM - 11:00 PM"
+    },
+    {
+        "city": "Orlando",
+        "state": "FL",
+        "slug": "orlando-fl",
+        "title": "Papa John's Orlando Menu with Prices 2026",
+        "description": "Vacationing in Orlando? Get hot Papa John's pizza delivered fast. Full 2026 menu with prices for Orlando, FL. Order online for Disney area delivery.",
+        "address": "201 S Orange Ave, Orlando, FL 32801",
+        "phone": "+1 407-555-0902",
+        "hours": "11:00 AM - 12:00 AM"
+    },
+    {
+        "city": "Louisville",
+        "state": "KY",
+        "slug": "louisville-ky",
+        "title": "Papa John's Louisville Menu with Prices 2026 - Official Home",
+        "description": "Order from the home of Papa John's! Explore the complete Louisville, KY menu with updated 2026 prices. Fast delivery from the brand's headquarters city.",
+        "address": "500 W Jefferson St, Louisville, KY 40202",
+        "phone": "+1 502-555-1701",
+        "hours": "10:30 AM - 12:00 AM"
+    },
+    {
+        "city": "Baltimore",
+        "state": "MD",
+        "slug": "baltimore-md",
+        "title": "Papa John's Baltimore Menu with Prices 2026",
+        "description": "Craving pizza in Charm City? Check out the Papa John's menu with prices for Baltimore, MD. Quick delivery to Inner Harbor, Fells Point, and beyond.",
+        "address": "100 E Pratt St, Baltimore, MD 21202",
+        "phone": "+1 410-555-2001",
+        "hours": "11:00 AM - 11:00 PM"
+    },
+    {
+        "city": "Tucson",
+        "state": "AZ",
+        "slug": "tucson-az",
+        "title": "Papa John's Tucson Menu with Prices 2026",
+        "description": "Best pizza deals in Tucson, AZ. Full Papa John's menu with prices updated for 2026. Fast delivery to University of Arizona and downtown Tucson.",
+        "address": "100 N Stone Ave, Tucson, AZ 85701",
+        "phone": "+1 520-555-0302",
+        "hours": "11:00 AM - 12:00 AM"
+    },
+    {
+        "city": "Oklahoma City",
+        "state": "OK",
+        "slug": "oklahoma-city-ok",
+        "title": "Papa John's Oklahoma City Menu with Prices 2026",
+        "description": "Order hot Papa John's pizza in OKC. Complete menu with prices for 2026 in Oklahoma City, OK. Find your nearest store and current pizza deals.",
+        "address": "200 N Walker Ave, Oklahoma City, OK 73102",
+        "phone": "+1 405-555-3601",
+        "hours": "11:00 AM - 11:00 PM"
     }
 ]
