@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { submitUrlToGoogle } from '@/lib/indexing/googleIndex'
+import { submitUrlToGoogle, submitUrlWithDetails } from '@/lib/indexing/googleIndex'
 
 // Secret key to protect the endpoint
 const API_SECRET = process.env.INDEXING_API_SECRET || 'papa-johns-indexing-secret-2026-v1'
@@ -24,12 +24,13 @@ export async function POST(request: NextRequest) {
       )
     }
     
-    const success = await submitUrlToGoogle(url)
+    const result = await submitUrlWithDetails(url)
     
     return NextResponse.json({
-      success,
+      success: result.success,
       url,
-      message: success ? 'URL submitted to Google' : 'Failed to submit URL'
+      message: result.message,
+      error: result.error
     })
     
   } catch (error) {
