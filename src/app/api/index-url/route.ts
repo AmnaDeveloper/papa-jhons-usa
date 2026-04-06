@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { submitUrlToGoogle } from '@/lib/indexing/googleIndex'
 
 // Secret key to protect the endpoint
-const API_SECRET = process.env.INDEXING_API_SECRET || 'your-secret-key-here'
+const API_SECRET = process.env.INDEXING_API_SECRET || 'papa-johns-indexing-secret-2026-v1'
 
 export async function POST(request: NextRequest) {
   try {
