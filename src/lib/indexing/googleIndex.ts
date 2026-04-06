@@ -3,8 +3,8 @@ import { GoogleAuth } from 'google-auth-library'
 const auth = new GoogleAuth({
   credentials: {
     type: 'service_account',
-    project_id: process.env.GOOGLE_PROJECT_ID,
-    private_key: process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, '\n'),
+    project_id: process.env.GOOGLE_PROJECT_ID || 'swift-rite-492505-d2',
+    private_key: (process.env.GOOGLE_PRIVATE_KEY || '').replace(/\\n/g, '\n'),
     client_email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
   },
   scopes: ['https://www.googleapis.com/auth/indexing'],
