@@ -4,25 +4,37 @@ import Link from 'next/link';
 import locations from '../../../data/locations.json';
 import CouponsSection from '../../../components/CouponsSection';
 
+import { getTodayFormatted, getMonthYear } from '../../../../lib/utils/date';
+
 type Props = {
     params: Promise<{ slug: string }>;
 };
 
-// Generate SEO metadata for each city
+// Generate SEO metadata for each city — Dynamic Logic
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { slug } = await params;
     const location = locations.find((l) => l.slug === slug);
-
     if (!location) return { title: 'Location Not Found' };
 
+    const month = getMonthYear(); // e.g. "April 2026"
+    const date = getTodayFormatted(); // e.g. "April 6, 2026"
+
+    // Dynamic Title: Injecting current Month Year
+    const dynamicTitle = `Papa John's ${location.city} Menu with Prices (${month}): Fast Delivery`;
+    
+    // Dynamic Description: Injecting Today's Date for freshness signal
+    const dynamicDescription = `Check out the latest Papa John's menu prices in ${location.city}, ${location.state} for ${month}. Detailed pricing updated ${date}. Order delivery or carryout today!`;
+
     return {
-        title: location.title,
-        description: location.description,
+        title: dynamicTitle,
+        description: dynamicDescription,
         alternates: {
             canonical: `https://papajohns-menus.us/locations/${slug}`,
         },
     };
 }
+
+export const revalidate = 86400; // 24 hours
 
 // Static regeneration for all locations
 export async function generateStaticParams() {
