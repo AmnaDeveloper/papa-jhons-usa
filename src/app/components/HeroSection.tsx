@@ -83,7 +83,7 @@ export default function HeroSection() {
                 <div className="flex flex-col pb-10 sm:flex-row gap-6 w-full justify-center items-center">
                     <Link
                         href="/store-locator"
-                        className="w-full sm:w-auto text-center bg-[#cc0000] hover:bg-[#990000] text-white font-black py-4 px-10 rounded-full text-sm md:text-lg uppercase tracking-wider transition-all transform hover:-translate-y-1 shadow-[0_8px_20px_rgba(204,0,0,0.4)] hover:shadow-[0_12px_25px_rgba(204,0,0,0.6)] border-2 border-transparent hover:border-white"
+                        className="w-full sm:w-auto text-center bg-[#1A3D17] hover:bg-[#cc0000] text-white font-black py-4 px-10 rounded-full text-sm md:text-lg uppercase tracking-wider transition-all transform hover:-translate-y-1 shadow-[0_8px_20px_rgba(26,61,23,0.4)] hover:shadow-[0_12px_25px_rgba(204,0,0,0.6)] border-2 border-transparent hover:border-white"
                         style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}
                     >
                         Find Papa Johns Near You
@@ -91,7 +91,7 @@ export default function HeroSection() {
 
                     <Link
                         href="/menus-prices"
-                        className="w-full sm:w-auto text-center bg-[#CCEE18] hover:bg-white text-[#1A3D17] font-black py-4 px-10 rounded-full text-sm md:text-lg uppercase tracking-wider transition-all transform hover:-translate-y-1 shadow-[0_8px_20px_rgba(204,238,24,0.3)] hover:shadow-[0_12px_25px_rgba(204,238,24,0.5)] border-2 border-transparent hover:border-[#1A3D17]"
+                        className="w-full sm:w-auto text-center bg-white hover:bg-[#cc0000] hover:text-white text-[#1A3D17] font-black py-4 px-10 rounded-full text-sm md:text-lg uppercase tracking-wider transition-all transform hover:-translate-y-1 shadow-[0_8px_20px_rgba(255,255,255,0.3)] hover:shadow-[0_12px_25px_rgba(204,0,0,0.5)] border-2 border-[#1A3D17] hover:border-white"
                         style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}
                     >
                         View Full Menu

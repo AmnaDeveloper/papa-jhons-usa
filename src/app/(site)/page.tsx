@@ -169,9 +169,9 @@ export default function Home() {
                         <a
                             href="/papajohns_openbook.pdf"
                             download
-                            className="mb-8 inline-flex items-center gap-2 bg-[#CCEE18] text-[#1A3D17] font-black uppercase tracking-[0.1em] text-[10px] md:text-sm py-2.5 px-6 rounded-full shadow-lg transition-all hover:scale-105"
+                            className="mb-8 inline-flex items-center gap-2 bg-[#1A3D17] text-[#CCEE18] font-black uppercase tracking-[0.1em] text-[10px] md:text-sm py-2.5 px-6 rounded-full shadow-lg transition-all hover:bg-[#cc0000] hover:text-white"
                         >
-                            <span className="w-2 h-2 rounded-full bg-red-600 animate-pulse"></span>
+                            <span className="w-2 h-2 rounded-full bg-[#CCEE18] animate-pulse"></span>
                             <span>DOWNLOAD PDF</span>
                         </a>
 
@@ -217,10 +217,10 @@ export default function Home() {
                         </div>
 
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8 md:mt-12 pb-8 px-4">
-                            <a href="/papajohns_openbook.pdf" download className="w-full sm:w-auto text-center bg-[#cc0000] hover:bg-red-800 text-white font-black py-4 px-10 rounded-2xl transition-all shadow-xl uppercase tracking-widest text-[11px]" >
+                            <a href="/papajohns_openbook.pdf" download className="w-full sm:w-auto text-center bg-[#1A3D17] hover:bg-[#cc0000] text-white font-black py-4 px-10 rounded-2xl transition-all shadow-xl uppercase tracking-widest text-[11px]" >
                                 Download Menu PDF
                             </a>
-                            <a href="/papajohns_openbook.pdf#view=FitH" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto text-center bg-white hover:bg-gray-50 text-[#cc0000] font-black py-4 px-10 rounded-2xl transition-all shadow-md border-2 border-[#cc0000] uppercase tracking-widest text-[11px]">
+                            <a href="/papajohns_openbook.pdf#view=FitH" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto text-center bg-white hover:bg-[#cc0000] hover:text-white text-[#1A3D17] font-black py-4 px-10 rounded-2xl transition-all shadow-md border-2 border-[#1A3D17] uppercase tracking-widest text-[11px]">
                                 Read Full View
                             </a>
                         </div>
@@ -235,7 +235,7 @@ export default function Home() {
                         <a
                             href="/papa_rewards_openbook.pdf"
                             download
-                            className="mb-8 inline-flex items-center gap-2 bg-[#1A3D17] text-[#CCEE18] font-black uppercase tracking-[0.1em] text-[10px] md:text-sm py-2.5 px-6 rounded-full shadow-lg transition-all hover:scale-105"
+                            className="mb-8 inline-flex items-center gap-2 bg-[#1A3D17] text-[#CCEE18] font-black uppercase tracking-[0.1em] text-[10px] md:text-sm py-2.5 px-6 rounded-full shadow-lg transition-all hover:bg-[#cc0000] hover:text-white"
                         >
                             <span className="w-2 h-2 rounded-full bg-[#CCEE18] animate-pulse"></span>
                             <span>PAPAS BOOKLET</span>
