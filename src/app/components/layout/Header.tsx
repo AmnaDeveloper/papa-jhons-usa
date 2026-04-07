@@ -1,11 +1,12 @@
 'use client';
 
 import Link from 'next/link';
-import { Mail, ChevronDown } from 'lucide-react';
+import { Mail, ChevronDown, Menu, X } from 'lucide-react';
 import { useState, useRef, useEffect } from 'react';
 
 export default function Header() {
     const [legalOpen, setLegalOpen] = useState(false);
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const legalRef = useRef<HTMLDivElement>(null);
 
     const navLinks = [
@@ -42,19 +43,18 @@ export default function Header() {
     return (
         <header className="sticky top-0 z-50 w-full shadow-2xl font-sans">
             {/* 1. PREMIUM TOP HEADER (Green) */}
-            <div className="w-full bg-[#1A3D17] text-white py-4 border-b-2 border-green-900 shadow-lg">
-                <div className="container mx-auto px-4 flex items-center justify-between gap-6">
+            <div className="w-full bg-[#1A3D17] text-white py-4 border-b-2 border-green-900 shadow-lg px-4 md:px-0">
+                <div className="container mx-auto flex items-center justify-between gap-6">
 
                     {/* Brand Logo */}
                     <Link href="/" className="flex-shrink-0 group">
                         <div className="flex flex-col items-start leading-none">
                             <h1
-                                className="text-2xl md:text-3xl font-black italic tracking-tighter text-white uppercase"
+                                className="text-xl md:text-3xl font-black italic tracking-tighter text-white uppercase"
                                 style={{ ...linkStyle, textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}
                             >
                                 <span className="text-[#CCEE18]">PAPA</span> JOHNS
                             </h1>
-
                         </div>
                     </Link>
 
@@ -89,19 +89,7 @@ export default function Header() {
                             {/* Dropdown Menu */}
                             {legalOpen && (
                                 <div
-                                    style={{
-                                        position: 'absolute',
-                                        top: '100%',
-                                        right: 0,
-                                        marginTop: '12px',
-                                        backgroundColor: '#1A3D17',
-                                        border: '1px solid #2d5a27',
-                                        borderRadius: '8px',
-                                        boxShadow: '0 20px 40px rgba(0,0,0,0.5)',
-                                        padding: '8px 0',
-                                        minWidth: '240px',
-                                        zIndex: 60,
-                                    }}
+                                    className="absolute top-full right-0 mt-3 bg-[#1A3D17] border border-green-800 rounded-lg shadow-2xl p-2 min-w-[240px] z-60"
                                 >
                                     {legalLinks.map((link) => (
                                         <Link
@@ -109,7 +97,7 @@ export default function Header() {
                                             href={link.href}
                                             onClick={() => setLegalOpen(false)}
                                             style={linkStyle}
-                                            className="block px-6 py-3 text-[12px] font-black uppercase tracking-[0.05em] text-white whitespace-nowrap transition-all duration-200 hover:text-[#CCEE18] hover:bg-[#1e5019]"
+                                            className="block px-6 py-3 text-[12px] font-black uppercase tracking-[0.05em] text-white whitespace-nowrap transition-all duration-200 hover:text-[#CCEE18] hover:bg-[#1e5019] rounded-md"
                                         >
                                             {link.name}
                                         </Link>
@@ -119,23 +107,68 @@ export default function Header() {
                         </div>
                     </nav>
 
-                    {/* Contact Button */}
-                    <div className="flex-shrink-0">
+                    {/* Right Action Buttons */}
+                    <div className="flex items-center gap-2 md:gap-4">
+                        {/* Contact Button (Responsive hidden label on mobile) */}
                         <Link
                             href="/contact"
-                            className="bg-[#CCEE18] hover:bg-white text-[#1A3D17] font-black py-2.5 px-6 rounded-full flex items-center gap-2 transition-all transform hover:scale-105 shadow-xl uppercase text-xs md:text-sm border-2 border-[#CCEE18] hover:border-white"
+                            className="bg-[#CCEE18] hover:bg-white text-[#1A3D17] font-black py-2 px-4 md:py-2.5 md:px-6 rounded-full flex items-center gap-2 transition-all transform hover:scale-105 shadow-xl uppercase text-[10px] md:text-sm border-2 border-[#CCEE18] hover:border-white"
                         >
                             <Mail size={16} strokeWidth={3} />
-                            <span>Contact Us</span>
+                            <span className="hidden sm:inline">Contact Us</span>
                         </Link>
+
+                        {/* Mobile Menu Toggle */}
+                        <button 
+                            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                            className="lg:hidden p-2 text-white hover:text-[#CCEE18] transition-colors"
+                        >
+                            {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+                        </button>
                     </div>
                 </div>
             </div>
 
-            {/* 2. RED CATEGORY HEADER */}
+            {/* 2. MOBILE MENU DROPDOWN (Shown on click) */}
+            {mobileMenuOpen && (
+                <div className="lg:hidden w-full bg-[#1A3D17] border-b-2 border-green-900 pb-6 animate-in slide-in-from-top duration-300">
+                    <nav className="flex flex-col px-4 pt-2">
+                        {navLinks.map((link) => (
+                            <Link
+                                key={link.name}
+                                href={link.href}
+                                onClick={() => setMobileMenuOpen(false)}
+                                className="py-4 text-sm font-black uppercase tracking-widest text-white border-b border-green-800/50 flex items-center justify-between"
+                                style={linkStyle}
+                            >
+                                {link.name}
+                                <ArrowRight size={14} className="text-[#CCEE18]" />
+                            </Link>
+                        ))}
+                        {/* Mobile Legal Links Section */}
+                        <div className="mt-4">
+                             <p className="text-[10px] font-black text-green-700 uppercase tracking-[0.3em] mb-4 ml-1">Legal Information</p>
+                             <div className="flex flex-wrap gap-3">
+                                {legalLinks.map((link) => (
+                                    <Link 
+                                        key={link.name}
+                                        href={link.href}
+                                        onClick={() => setMobileMenuOpen(false)}
+                                        className="bg-green-900/30 text-[10px] font-black uppercase text-gray-400 px-4 py-2 rounded-full"
+                                    >
+                                        {link.name}
+                                    </Link>
+                                ))}
+                             </div>
+                        </div>
+                    </nav>
+                </div>
+            )}
+
+            {/* 3. RED CATEGORY HEADER (Scrollable on mobile) */}
             <div className="w-full bg-[#cc0000] border-b-4 border-[#8b0000] py-2">
-                <div className="max-w-[1280px] mx-auto px-4 overflow-x-auto">
-                    <nav className="flex items-center justify-center gap-6 whitespace-nowrap min-w-max h-10">
+                <div className="max-w-[1280px] mx-auto px-4 overflow-x-auto no-scrollbar">
+                    <nav className="flex items-center lg:justify-center gap-6 whitespace-nowrap min-w-max h-10 pr-10 lg:pr-0">
                         {[
                             { name: "Papa's Rewards", href: '/papa-johns-rewards' },
                             { name: 'Super Loaded', href: '/posts/super-loaded' },
@@ -162,3 +195,20 @@ export default function Header() {
         </header>
     );
 }
+
+const ArrowRight = ({ size, className }: { size: number, className?: string }) => (
+    <svg 
+        width={size} 
+        height={size} 
+        viewBox="0 0 24 24" 
+        fill="none" 
+        stroke="currentColor" 
+        strokeWidth="3" 
+        strokeLinecap="round" 
+        strokeLinejoin="round" 
+        className={className}
+    >
+        <path d="M5 12h14" />
+        <path d="m12 5 7 7-7 7" />
+    </svg>
+);

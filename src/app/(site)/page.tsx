@@ -162,43 +162,46 @@ export default function Home() {
             <HeroSection />
 
             {/* Complete Menu PDF Viewer */}
-            <section className="py-16 md:py-24 bg-gray-50 w-full">
-                <div className="w-full max-w-[1400px] mx-auto px-2 md:px-4">
-                    <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-6 md:mb-10 pt-8">
+            <section className="py-12 md:py-24 bg-gray-50 w-full overflow-hidden">
+                <div className="w-full max-w-[1400px] mx-auto px-4">
+                    <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-10 pt-4">
                         {/* Download PDF Button */}
                         <a
                             href="/papajohns_openbook.pdf"
                             download
-                            className="mb-8 inline-flex items-center gap-2 bg-[#CCEE18] text-[#1A3D17] font-black uppercase tracking-[0.1em] text-xs md:text-sm py-2 px-6 rounded-full shadow-[0_0_20px_rgba(204,238,24,0.3)] transition-all hover:scale-105"
+                            className="mb-8 inline-flex items-center gap-2 bg-[#CCEE18] text-[#1A3D17] font-black uppercase tracking-[0.1em] text-[10px] md:text-sm py-2.5 px-6 rounded-full shadow-lg transition-all hover:scale-105"
                         >
-                            <span className="w-2.5 h-2.5 rounded-full bg-red-600 animate-pulse"></span>
+                            <span className="w-2 h-2 rounded-full bg-red-600 animate-pulse"></span>
                             <span>DOWNLOAD PDF</span>
                         </a>
 
                         {/* Updated Heading */}
-                        <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter mb-6" style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif', color: '#cc0000' }}>
-                            OUR FULL MENU PDF
+                        <h2 className="text-3xl md:text-6xl font-black uppercase tracking-tighter mb-6 leading-none px-2" style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif', color: '#cc0000' }}>
+                            OUR FULL <span className="text-[#1A3D17]">MENU PDF</span>
                         </h2>
 
                         {/* SEO Optimized Paragraph */}
-                        <p className="text-gray-700 text-base md:text-lg font-medium leading-relaxed px-4">
-                            Looking for the ultimate <Link href="/menus-prices" className="text-[#cc0000] hover:underline font-bold">Papa John's Full Menu</Link>? You can easily view or download the complete <strong>Papa John's Menu PDF</strong> right here to explore all the delicious choices ranging from our mouth-watering <Link href="/menus-prices/classic-pizzas" className="text-[#cc0000] hover:underline font-bold">Classic Pizzas</Link> and <Link href="/menus-prices/super-loaded" className="text-[#cc0000] hover:underline font-bold">Super Loaded options</Link> to sweet <Link href="/posts/papa-johns-desserts" className="text-[#cc0000] hover:underline font-bold">Desserts</Link> and refreshing drinks. Whether you prefer to print it out for your kitchen fridge or save it directly on your device to plan your meal before ordering through the <a href="https://www.papajohns.com/" target="_blank" rel="noopener noreferrer" className="text-[#cc0000] hover:underline font-bold">official Papa John's platform</a>, our high-quality PDF version guarantees you never miss out on any limited-time deals or hidden menu gems.
+                        <p className="text-gray-700 text-sm md:text-lg font-medium leading-relaxed px-4 max-w-2xl">
+                            Looking for the ultimate <Link href="/menus-prices" className="text-[#cc0000] hover:underline font-bold">Papa John's Full Menu</Link>? View or download the complete <strong>Papa John's Menu PDF</strong> to explore our <Link href="/menus-prices/classic-pizzas" className="text-[#cc0000] hover:underline font-bold">Classic Pizzas</Link> and sweets.
                         </p>
                     </div>
-                    <div className="w-full bg-white rounded-xl shadow-2xl  p-4 md:p-8" style={{ borderColor: '#cc0000' }}>
-                        {/* Huge layout to show PDF full screen before native scrolling */}
-                        <iframe
-                            src="/papajohns_openbook.pdf#view=FitW"
-                            className="w-full min-h-screen h-[100vh] rounded-lg border-none"
-                            style={{ minHeight: '100vh' }}
-                            title="Papa Johns Complete Menu PDF"
-                            loading="lazy"
-                        />
-                        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10 pb-16">
-                            <a href="/papajohns_openbook.pdf" download className="w-full sm:w-auto text-center bg-red-800 hover:bg-red-900 text-white font-bold py-4 px-10 rounded-full transition-all shadow-lg hover:shadow-xl hover:-translate-y-1" style={{ backgroundColor: '#cc0000' }}>
+
+                    <div className="w-full bg-white rounded-3xl shadow-2xl p-2 md:p-8 border border-gray-100">
+                        {/* Responsive PDF Viewer Container */}
+                        <div className="relative w-full aspect-[4/5] md:aspect-auto md:h-[900px] rounded-2xl overflow-hidden bg-gray-200">
+                            <iframe
+                                src="/papajohns_openbook.pdf#view=FitW"
+                                className="absolute inset-0 w-full h-full border-none"
+                                title="Papa Johns Complete Menu PDF"
+                                loading="lazy"
+                            />
+                        </div>
+
+                        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8 md:mt-12 pb-8 px-4">
+                            <a href="/papajohns_openbook.pdf" download className="w-full sm:w-auto text-center bg-[#cc0000] hover:bg-red-800 text-white font-black py-4 px-10 rounded-2xl transition-all shadow-xl uppercase tracking-widest text-[11px]" >
                                 Download Menu PDF
                             </a>
-                            <a href="/papajohns_openbook.pdf" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto text-center bg-white hover:bg-gray-50 text-red-800 font-bold py-4 px-10 rounded-full transition-all shadow-md hover:shadow-lg border-2 border-red-800 hover:-translate-y-1" style={{ color: '#cc0000', borderColor: '#cc0000' }}>
+                            <a href="/papajohns_openbook.pdf" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto text-center bg-white hover:bg-gray-50 text-[#cc0000] font-black py-4 px-10 rounded-2xl transition-all shadow-md border-2 border-[#cc0000] uppercase tracking-widest text-[11px]">
                                 Open Full View
                             </a>
                         </div>
@@ -207,44 +210,41 @@ export default function Home() {
             </section>
 
             {/* Papa Rewards Booklet Viewer */}
-            <section className="py-16 md:py-24 bg-gray-50 w-full">
-                <div className="w-full max-w-[1400px] mx-auto px-2 md:px-4">
-                    {/* Header area - same as first PDF section */}
-                    <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-6 md:mb-10 pt-8">
-                        {/* Download PDF Button */}
+            <section className="py-12 md:py-24 bg-white w-full overflow-hidden">
+                <div className="w-full max-w-[1400px] mx-auto px-4">
+                    <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-10 pt-4">
                         <a
                             href="/papa_rewards_openbook.pdf"
                             download
-                            className="mb-8 inline-flex items-center gap-2 bg-[#CCEE18] text-[#1A3D17] font-black uppercase tracking-[0.1em] text-xs md:text-sm py-2 px-6 rounded-full shadow-[0_0_20px_rgba(204,238,24,0.3)] transition-all hover:scale-105"
+                            className="mb-8 inline-flex items-center gap-2 bg-[#1A3D17] text-[#CCEE18] font-black uppercase tracking-[0.1em] text-[10px] md:text-sm py-2.5 px-6 rounded-full shadow-lg transition-all hover:scale-105"
                         >
-                            <span className="w-2.5 h-2.5 rounded-full bg-red-600 animate-pulse"></span>
-                            <span>DOWNLOAD PDF</span>
+                            <span className="w-2 h-2 rounded-full bg-[#CCEE18] animate-pulse"></span>
+                            <span>PAPAS BOOKLET</span>
                         </a>
 
-                        <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter mb-6" style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif', color: '#cc0000' }}>
-                            PAPA REWARDS
+                        <h2 className="text-3xl md:text-6xl font-black uppercase tracking-tighter mb-6 leading-none px-2" style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif', color: '#1A3D17' }}>
+                            PAPA <span className="text-[#cc0000]">REWARDS</span>
                         </h2>
 
-                        {/* SEO Optimized Paragraph */}
-                        <p className="text-gray-700 text-base md:text-lg font-medium leading-relaxed px-4">
-                            Unlock exclusive savings and earn free food across our entire menu with the <Link href="/papa-johns-rewards" className="text-[#cc0000] hover:underline font-bold">Papa Rewards program</Link>. Every time you enjoy our signature <Link href="/menus-prices/classic-pizzas" className="text-[#cc0000] hover:underline font-bold">Classic Pizzas</Link> or add mouth-watering <Link href="/menus-prices/sides" className="text-[#cc0000] hover:underline font-bold">Sides</Link> to your order, you earn points that add up to Papa Dough. View our detailed rewards guide below or visit the <a href="https://www.papajohns.com/papa-rewards/" target="_blank" rel="noopener noreferrer" className="text-[#cc0000] hover:underline font-bold">Official Papa John's Rewards page</a> to learn everything about earning and redeeming. Don't wait—sign up today and start making every pizza night even more rewarding!
+                        <p className="text-gray-700 text-sm md:text-lg font-medium leading-relaxed px-4 max-w-2xl">
+                            Unlock exclusive savings and earn free food across our entire menu with the <Link href="/papa-johns-rewards" className="text-[#cc0000] hover:underline font-bold">Papa Rewards program</Link>.
                         </p>
                     </div>
 
-                    {/* Card - same as first PDF section */}
-                    <div className="w-full bg-white rounded-xl shadow-2xl p-4 md:p-8">
-                        <iframe
-                            src="/papa_rewards_openbook.pdf#view=FitW"
-                            className="w-full min-h-screen h-[100vh] rounded-lg border-none"
-                            style={{ minHeight: '100vh' }}
-                            title="Papa Rewards Booklet PDF"
-                            loading="lazy"
-                        />
-                        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10 pb-6">
-                            <Link href="/papa-johns-rewards" className="w-full sm:w-auto text-center bg-[#1A3D17] hover:bg-[#112a0f] text-white font-black py-4 px-10 rounded-full transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 uppercase tracking-wider text-sm md:text-base border-2 border-[#1A3D17]">
+                    <div className="w-full bg-[#fcfaf8] rounded-3xl shadow-2xl p-2 md:p-8 border border-gray-100">
+                        <div className="relative w-full aspect-[4/5] md:aspect-auto md:h-[900px] rounded-2xl overflow-hidden bg-gray-200">
+                            <iframe
+                                src="/papa_rewards_openbook.pdf#view=FitW"
+                                className="absolute inset-0 w-full h-full border-none"
+                                title="Papa Rewards Booklet PDF"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8 md:mt-12 pb-8 px-4">
+                            <Link href="/papa-johns-rewards" className="w-full sm:w-auto text-center bg-[#1A3D17] hover:bg-[#112a0f] text-white font-black py-4 px-10 rounded-2xl transition-all shadow-xl uppercase tracking-widest text-[11px]">
                                 Join Now
                             </Link>
-                            <a href="/papa_rewards_openbook.pdf" download className="w-full sm:w-auto text-center bg-[#CCEE18] hover:bg-white text-[#1A3D17] font-black py-4 px-10 rounded-full transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 uppercase tracking-wider text-sm md:text-base border-2 border-transparent hover:border-[#1A3D17]">
+                            <a href="/papa_rewards_openbook.pdf" download className="w-full sm:w-auto text-center bg-[#CCEE18] hover:bg-[#b8d615] text-[#1A3D17] font-black py-4 px-10 rounded-2xl transition-all shadow-xl uppercase tracking-widest text-[11px]">
                                 Download PDF
                             </a>
                         </div>
