@@ -161,7 +161,7 @@ export default function Home() {
             />
             <HeroSection />
 
-            {/* Complete Menu PDF Viewer */}
+            {/* Complete Menu PDF Viewer — Responsive Revamp */}
             <section className="py-12 md:py-24 bg-gray-50 w-full overflow-hidden">
                 <div className="w-full max-w-[1400px] mx-auto px-4">
                     <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-10 pt-4">
@@ -182,13 +182,27 @@ export default function Home() {
 
                         {/* SEO Optimized Paragraph */}
                         <p className="text-gray-700 text-sm md:text-lg font-medium leading-relaxed px-4 max-w-2xl">
-                            Looking for the ultimate <Link href="/menus-prices" className="text-[#cc0000] hover:underline font-bold">Papa John's Full Menu</Link>? View or download the complete <strong>Papa John's Menu PDF</strong> to explore our <Link href="/menus-prices/classic-pizzas" className="text-[#cc0000] hover:underline font-bold">Classic Pizzas</Link> and sweets.
+                            Looking for the ultimate <Link href="/menus-prices" className="text-[#cc0000] hover:underline font-bold">Papa John's Full Menu</Link>? Explore our <Link href="/menus-prices/classic-pizzas" className="text-[#cc0000] hover:underline font-bold">Classic Pizzas</Link> and sweets.
                         </p>
                     </div>
 
                     <div className="w-full bg-white rounded-3xl shadow-2xl p-2 md:p-8 border border-gray-100">
-                        {/* Responsive PDF Viewer Container */}
-                        <div className="relative w-full aspect-[4/5] md:aspect-auto md:h-[900px] rounded-2xl overflow-hidden bg-gray-200">
+                        {/* 📱 MOBILE PREVIEW: Hidden on MD+ */}
+                        <div className="md:hidden block">
+                             <Link href="/papajohns_openbook.pdf" target="_blank" className="relative block aspect-[4/5] rounded-2xl overflow-hidden shadow-inner group">
+                                <Image src="/menu-cover.png" alt="Papa Johns Menu Preview" fill className="object-cover group-active:scale-95 transition-transform" />
+                                <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center p-6 text-center">
+                                    <div className="bg-white/20 backdrop-blur-md p-4 rounded-full mb-4">
+                                        <ArrowRight size={32} className="text-[#CCEE18]" />
+                                    </div>
+                                    <p className="text-white font-black uppercase tracking-widest text-sm text-center">Click to Read Full Menu</p>
+                                    <p className="text-white/60 text-[10px] mt-2 italic">(Best readability on mobile)</p>
+                                </div>
+                             </Link>
+                        </div>
+
+                        {/* 🖥️ DESKTOP VIEWER: Hidden on SM */}
+                        <div className="hidden md:block relative w-full h-[900px] rounded-2xl overflow-hidden bg-gray-200">
                             <iframe
                                 src="/papajohns_openbook.pdf#view=FitW"
                                 className="absolute inset-0 w-full h-full border-none"
@@ -209,7 +223,7 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* Papa Rewards Booklet Viewer */}
+            {/* Papa Rewards Booklet Viewer — Responsive Revamp */}
             <section className="py-12 md:py-24 bg-white w-full overflow-hidden">
                 <div className="w-full max-w-[1400px] mx-auto px-4">
                     <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-10 pt-4">
@@ -227,12 +241,27 @@ export default function Home() {
                         </h2>
 
                         <p className="text-gray-700 text-sm md:text-lg font-medium leading-relaxed px-4 max-w-2xl">
-                            Unlock exclusive savings and earn free food across our entire menu with the <Link href="/papa-johns-rewards" className="text-[#cc0000] hover:underline font-bold">Papa Rewards program</Link>.
+                            Unlock savings with the <Link href="/papa-johns-rewards" className="text-[#cc0000] hover:underline font-bold">Papa Rewards program</Link>.
                         </p>
                     </div>
 
                     <div className="w-full bg-[#fcfaf8] rounded-3xl shadow-2xl p-2 md:p-8 border border-gray-100">
-                        <div className="relative w-full aspect-[4/5] md:aspect-auto md:h-[900px] rounded-2xl overflow-hidden bg-gray-200">
+                        {/* 📱 MOBILE PREVIEW: Hidden on MD+ */}
+                        <div className="md:hidden block">
+                             <Link href="/papa_rewards_openbook.pdf" target="_blank" className="relative block aspect-[4/5] rounded-2xl overflow-hidden shadow-inner group">
+                                <Image src="/rewards-cover.png" alt="Papa Rewards Preview" fill className="object-cover group-active:scale-95 transition-transform" />
+                                <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center p-6 text-center">
+                                    <div className="bg-white/20 backdrop-blur-md p-4 rounded-full mb-4">
+                                        <ArrowRight size={32} className="text-[#CCEE18]" />
+                                    </div>
+                                    <p className="text-white font-black uppercase tracking-widest text-sm text-center">Read Rewards Booklet</p>
+                                    <p className="text-white/60 text-[10px] mt-2 italic">(Native mobile viewer)</p>
+                                </div>
+                             </Link>
+                        </div>
+
+                        {/* 🖥️ DESKTOP VIEWER: Hidden on SM */}
+                        <div className="hidden md:block relative w-full h-[900px] rounded-2xl overflow-hidden bg-gray-200">
                             <iframe
                                 src="/papa_rewards_openbook.pdf#view=FitW"
                                 className="absolute inset-0 w-full h-full border-none"
@@ -240,6 +269,7 @@ export default function Home() {
                                 loading="lazy"
                             />
                         </div>
+                        
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8 md:mt-12 pb-8 px-4">
                             <Link href="/papa-johns-rewards" className="w-full sm:w-auto text-center bg-[#1A3D17] hover:bg-[#112a0f] text-white font-black py-4 px-10 rounded-2xl transition-all shadow-xl uppercase tracking-widest text-[11px]">
                                 Join Now
