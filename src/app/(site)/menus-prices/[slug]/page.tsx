@@ -100,7 +100,7 @@ export default async function MenuItemBlogPage({ params }: Props) {
             {/* ── 2. MAIN CONTENT GRID ── */}
             <div className="max-w-[1280px] mx-auto px-4 md:px-8 py-16">
                 <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
-                    <div className="lg:w-5/12">
+                    <div className="lg:w-5/12 lg:sticky lg:top-32 lg:self-start">
                         <div className="bg-white rounded-[2rem] p-3 shadow-2xl relative border border-gray-100 overflow-hidden group mb-10">
                             <div className="relative w-full h-[350px] lg:h-[450px] rounded-3xl overflow-hidden shadow-inner flex items-center justify-center bg-gray-50">
                                 <img src={item.image} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
@@ -120,9 +120,10 @@ export default async function MenuItemBlogPage({ params }: Props) {
                     <div className="lg:w-7/12 space-y-10 text-left">
                         <div>
                             <h2 className="text-3xl font-black text-[#1A3D17] mb-6 uppercase tracking-tighter">Papa John's {item.slug.replace(/-/g, ' ')} Guide 2026</h2>
-                            <div className="blog-content mt-4">
+                            <div className="prose prose-lg text-gray-700 leading-relaxed max-w-none font-bold space-y-6 blog-content mt-4">
                                 <div dangerouslySetInnerHTML={{ __html: item.fullContent || item.description }} />
-                            </div>                        </div>
+                            </div>
+                        </div>
                         <div className="bg-[#cc0000] rounded-3xl p-8 shadow-2xl text-white">
                              <h3 className="text-2xl font-black text-[#CCEE18] uppercase mb-8 flex items-center gap-3 italic"><Info size={24} /> Current Price List (USD)</h3>
                              <table className="w-full text-left">
