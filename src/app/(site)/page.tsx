@@ -189,22 +189,27 @@ export default function Home() {
                     <div className="w-full bg-white rounded-3xl shadow-2xl p-2 md:p-8 border border-gray-100">
                         {/* 📱 MOBILE PREVIEW: Hidden on MD+ */}
                         <div className="md:hidden block">
-                             <Link href="/papajohns_openbook.pdf" target="_blank" className="relative block aspect-[4/5] rounded-2xl overflow-hidden shadow-inner group">
+                             <a 
+                                href="/papajohns_openbook.pdf#view=FitH" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="relative block aspect-[4/5] rounded-2xl overflow-hidden shadow-inner group"
+                             >
                                 <Image src="/menu-cover.png" alt="Papa Johns Menu Preview" fill className="object-cover group-active:scale-95 transition-transform" />
-                                <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center p-6 text-center">
+                                <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center p-6 text-center">
                                     <div className="bg-white/20 backdrop-blur-md p-4 rounded-full mb-4">
                                         <ArrowRight size={32} className="text-[#CCEE18]" />
                                     </div>
-                                    <p className="text-white font-black uppercase tracking-widest text-sm text-center">Click to Read Full Menu</p>
-                                    <p className="text-white/60 text-[10px] mt-2 italic">(Best readability on mobile)</p>
+                                    <p className="text-white font-black uppercase tracking-widest text-sm text-center">Open Full Page Menu</p>
+                                    <p className="text-[#CCEE18] text-[10px] mt-2 font-bold uppercase tracking-widest">Single Page Mode Enabled</p>
                                 </div>
-                             </Link>
+                             </a>
                         </div>
 
                         {/* 🖥️ DESKTOP VIEWER: Hidden on SM */}
                         <div className="hidden md:block relative w-full h-[900px] rounded-2xl overflow-hidden bg-gray-200">
                             <iframe
-                                src="/papajohns_openbook.pdf#view=FitW"
+                                src="/papajohns_openbook.pdf#view=FitH"
                                 className="absolute inset-0 w-full h-full border-none"
                                 title="Papa Johns Complete Menu PDF"
                                 loading="lazy"
@@ -215,8 +220,8 @@ export default function Home() {
                             <a href="/papajohns_openbook.pdf" download className="w-full sm:w-auto text-center bg-[#cc0000] hover:bg-red-800 text-white font-black py-4 px-10 rounded-2xl transition-all shadow-xl uppercase tracking-widest text-[11px]" >
                                 Download Menu PDF
                             </a>
-                            <a href="/papajohns_openbook.pdf" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto text-center bg-white hover:bg-gray-50 text-[#cc0000] font-black py-4 px-10 rounded-2xl transition-all shadow-md border-2 border-[#cc0000] uppercase tracking-widest text-[11px]">
-                                Open Full View
+                            <a href="/papajohns_openbook.pdf#view=FitH" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto text-center bg-white hover:bg-gray-50 text-[#cc0000] font-black py-4 px-10 rounded-2xl transition-all shadow-md border-2 border-[#cc0000] uppercase tracking-widest text-[11px]">
+                                Read Full View
                             </a>
                         </div>
                     </div>
@@ -248,22 +253,27 @@ export default function Home() {
                     <div className="w-full bg-[#fcfaf8] rounded-3xl shadow-2xl p-2 md:p-8 border border-gray-100">
                         {/* 📱 MOBILE PREVIEW: Hidden on MD+ */}
                         <div className="md:hidden block">
-                             <Link href="/papa_rewards_openbook.pdf" target="_blank" className="relative block aspect-[4/5] rounded-2xl overflow-hidden shadow-inner group">
+                             <a 
+                                href="/papa_rewards_openbook.pdf#view=FitH" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="relative block aspect-[4/5] rounded-2xl overflow-hidden shadow-inner group"
+                             >
                                 <Image src="/rewards-cover.png" alt="Papa Rewards Preview" fill className="object-cover group-active:scale-95 transition-transform" />
-                                <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center p-6 text-center">
+                                <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center p-6 text-center">
                                     <div className="bg-white/20 backdrop-blur-md p-4 rounded-full mb-4">
                                         <ArrowRight size={32} className="text-[#CCEE18]" />
                                     </div>
-                                    <p className="text-white font-black uppercase tracking-widest text-sm text-center">Read Rewards Booklet</p>
-                                    <p className="text-white/60 text-[10px] mt-2 italic">(Native mobile viewer)</p>
+                                    <p className="text-white font-black uppercase tracking-widest text-sm text-center">Open Full Page Rewards</p>
+                                    <p className="text-[#CCEE18] text-[10px] mt-2 font-bold uppercase tracking-widest">Single Page Mode Enabled</p>
                                 </div>
-                             </Link>
+                             </a>
                         </div>
 
                         {/* 🖥️ DESKTOP VIEWER: Hidden on SM */}
                         <div className="hidden md:block relative w-full h-[900px] rounded-2xl overflow-hidden bg-gray-200">
                             <iframe
-                                src="/papa_rewards_openbook.pdf#view=FitW"
+                                src="/papa_rewards_openbook.pdf#view=FitH"
                                 className="absolute inset-0 w-full h-full border-none"
                                 title="Papa Rewards Booklet PDF"
                                 loading="lazy"
@@ -274,8 +284,8 @@ export default function Home() {
                             <Link href="/papa-johns-rewards" className="w-full sm:w-auto text-center bg-[#1A3D17] hover:bg-[#112a0f] text-white font-black py-4 px-10 rounded-2xl transition-all shadow-xl uppercase tracking-widest text-[11px]">
                                 Join Now
                             </Link>
-                            <a href="/papa_rewards_openbook.pdf" download className="w-full sm:w-auto text-center bg-[#CCEE18] hover:bg-[#b8d615] text-[#1A3D17] font-black py-4 px-10 rounded-2xl transition-all shadow-xl uppercase tracking-widest text-[11px]">
-                                Download PDF
+                            <a href="/papa_rewards_openbook.pdf#view=FitH" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto text-center bg-[#CCEE18] hover:bg-[#b8d615] text-[#1A3D17] font-black py-4 px-10 rounded-2xl transition-all shadow-xl uppercase tracking-widest text-[11px]">
+                                Read Full View
                             </a>
                         </div>
                     </div>
