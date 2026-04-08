@@ -4,7 +4,7 @@ import Link from 'next/link';
 import menuItems from '../../../data/menu-items.json';
 import ContactFeedbackSection from '../../../components/ContactFeedbackSection';
 import { Heart, ArrowRight, Info } from 'lucide-react';
-import { getTodayFormatted, getMonthYear } from '../../../lib/utils/date';
+import { getTodayFormatted, getMonthYear } from '../../../../lib/utils/date';
 
 type Props = {
     params: Promise<{ slug: string }>;
