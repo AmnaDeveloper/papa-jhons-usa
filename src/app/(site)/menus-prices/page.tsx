@@ -1,14 +1,19 @@
+import { Metadata } from 'next';
 import Link from 'next/link';
 import posts from '../../data/posts.json';
 import menuItems from '../../data/menu-items.json';
 import { generatePageSEO } from '../../lib/seo-config';
 import { ArrowRight, Star } from 'lucide-react';
+import { getMonthYear } from '../../../lib/utils/date';
 
-export const metadata = generatePageSEO(
-    "Papa John's Full Menu with Prices 2026",
-    "Explore the complete Papa John's menu with prices for 2026. Classic Pizzas, Super Loaded, Papadias, Sides, and more — all in one place.",
-    "/menus-prices"
-);
+export async function generateMetadata(): Promise<Metadata> {
+    const month = getMonthYear();
+    return generatePageSEO(
+        `Papa John's Full Menu with Prices (${month})`,
+        `Explore the complete Papa John's menu with prices for 2026. Updated ${month} with Classic Pizzas, Super Loaded, Papadias, Sides, and more.`,
+        "/menus-prices"
+    );
+}
 
 const categoryOrder = [
     "Menu & Prices Guide",
@@ -20,6 +25,7 @@ const categoryOrder = [
 ];
 
 export default function MenusAndPricesPage() {
+    const month = getMonthYear();
     // 1. Group Blog Posts
     const groupedBlog: Record<string, typeof posts> = {};
     for (const cat of categoryOrder) {
@@ -86,13 +92,13 @@ export default function MenusAndPricesPage() {
                 <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-[#cc0000] rounded-full -ml-40 -mb-40 opacity-5 pointer-events-none"></div>
                 <div className="container mx-auto px-4 relative z-10">
                     <span className="inline-block bg-[#CCEE18] text-[#1A3D17] font-black uppercase tracking-[0.4em] text-[10px] px-6 py-2.5 rounded-full mb-6 shadow-lg">
-                        Verified 2026 USA Edition
+                        Verified {month.split(' ')[1]} USA Edition
                     </span>
                     <h1
                         className="text-4xl md:text-7xl font-black uppercase tracking-tighter mb-4"
                         style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}
                     >
-                        Menus &amp; <span className="text-[#CCEE18]">Prices</span>
+                        Menus &amp; <span className="text-[#CCEE18]">Prices</span> ({month})
                     </h1>
                     <p className="text-xl text-white/80 font-bold max-w-2xl mx-auto tracking-wide mb-10">
                         The ultimate Papa John's menu directory. Precise pricing, nutritional facts, and direct ordering links for every item.

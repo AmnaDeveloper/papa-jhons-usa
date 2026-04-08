@@ -62,6 +62,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
                 title: `Papa Johns Pan Pizza (${month}): Price, Toppings, Calories & Honest Review`,
                 description: `Papa Johns Pan Pizza is back with 6 cheeses & garlic parmesan crust. Full review, price ($11.99), calories per slice, toppings list & Pizza Hut comparison — updated ${date}.`,
             };
+        case 'papa-johns-wings':
+            return {
+                title: `Papa Johns Wings: Flavors, Prices & Review (${month})`,
+                description: `All 8 Papa Johns wings flavors in ${month} — Buffalo, BBQ, Garlic Parm & more. Full pricing, spicy levels, calories & blue cheese pairing — updated ${date}.`,
+            };
         default:
             return generateArticleSEO(
                 post.title,

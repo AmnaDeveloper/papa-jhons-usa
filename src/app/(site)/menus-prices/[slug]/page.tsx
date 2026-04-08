@@ -4,6 +4,7 @@ import Link from 'next/link';
 import menuItems from '../../../data/menu-items.json';
 import ContactFeedbackSection from '../../../components/ContactFeedbackSection';
 import { Heart, ArrowRight, Info } from 'lucide-react';
+import { getTodayFormatted, getMonthYear } from '../../../lib/utils/date';
 
 type Props = {
     params: Promise<{ slug: string }>;
@@ -15,9 +16,34 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
     if (!item) return { title: 'Item Not Found' };
 
+    const date = getTodayFormatted();
+    const month = getMonthYear();
+
+    let dynamicTitle = item.title;
+    let dynamicDescription = item.description;
+
+    // Apply dynamic patterns for the top menu articles
+    if (slug === 'pepperoni-pizza') {
+        dynamicTitle = `Papa Johns Pepperoni Pizza Menu with Prices (${month})`;
+        dynamicDescription = `The definitive guide to Papa Johns Pepperoni Pizza in ${month}. Explore 2026 USA price list, calories, and crust options — updated ${date}.`;
+    } else if (slug === 'cheese-pizza') {
+        dynamicTitle = `Papa Johns Cheese Pizza 2026: Price, Calories & Review (${month})`;
+        dynamicDescription = `Full guide to Papa Johns Cheese Pizza in ${month}. Prices ($11.49–$18.99), calories, vegetarian info & ordering guide — updated ${date}.`;
+    } else if (slug === 'the-works-pizza') {
+        dynamicTitle = `Papa Johns The Works™ Pizza: Prices & Calories (${month})`;
+        dynamicDescription = `Complete guide to The Works™ pizza in ${month}. Prices, ingredient breakdown & comparison with The Meats — updated ${date}.`;
+    } else if (slug === 'philly-cheesesteak-papadia') {
+        dynamicTitle = `Papa Johns Philly Cheesesteak Papadia: Price & Review (${month})`;
+        dynamicDescription = `Everything about the Philly Cheesesteak Papadia in ${month}. Prices, calories, sauce pairings & honest review — updated ${date}.`;
+    } else {
+        // Default dynamic pattern for any other menu items
+        dynamicTitle = `${item.title.split(' 2026')[0]} (${month})`;
+        dynamicDescription = `${item.description.split(' — updated')[0]} — Updated ${date}.`;
+    }
+
     return {
-        title: item.title,
-        description: item.description,
+        title: dynamicTitle,
+        description: dynamicDescription,
         alternates: {
             canonical: `https://papajohns-menus.us/menus-prices/${slug}`,
         },
@@ -71,6 +97,8 @@ export default async function MenuItemBlogPage({ params }: Props) {
         }))
     };
 
+    const month = getMonthYear();
+
     return (
         <div className="bg-[#fcfaf8] min-h-screen font-sans">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(menuItemSchema) }} />
@@ -81,10 +109,10 @@ export default async function MenuItemBlogPage({ params }: Props) {
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#CCEE18] rounded-full -mr-64 -mt-64 opacity-5 pointer-events-none"></div>
                 <div className="container mx-auto px-4 relative z-10">
                     <span className="inline-block bg-[#CCEE18] text-[#1A3D17] font-black uppercase tracking-[0.4em] text-[10px] px-6 py-2.5 rounded-full mb-6">
-                         Verified Menu & Price Guide 2026
+                         Verified Menu & Price Guide {month.split(' ')[1]}
                     </span>
                     <h1 className="text-4xl md:text-7xl font-black uppercase tracking-tighter mb-4" style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}>
-                        {item.title}
+                        {item.title.split(' 2026')[0]} ({month})
                     </h1>
                     <div className="flex flex-wrap items-center justify-center gap-3 mb-10 text-[10px] font-black uppercase tracking-widest text-[#1A3D17]">
                         <span className="bg-white px-4 py-1.5 rounded-full shadow-lg">🔥 Approx {item.calories} Cals</span>
