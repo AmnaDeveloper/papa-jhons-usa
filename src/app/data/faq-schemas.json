@@ -360,5 +360,75 @@
       }
     }
   ]
+},
+  "bbq-chicken-bacon-pizza": {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is on Papa Johns BBQ Chicken Bacon Pizza?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Papa Johns BBQ Chicken Bacon Pizza contains grilled white-meat chicken, hickory-smoked bacon strips, fresh-cut red onions, and 100% real mozzarella cheese, all on a proprietary BBQ sauce base instead of the standard tomato sauce."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does a large Papa Johns BBQ Chicken Bacon Pizza cost in 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Large (14-inch) BBQ Chicken Bacon Pizza with Original Crust is $20.99 in 2026. The Epic Stuffed Crust version is $23.99. Prices vary slightly by location, with a range of $0.50–$2.00 common across US markets."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many calories in a slice of Papa Johns BBQ Chicken Bacon Pizza?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A slice of Large BBQ Chicken Bacon Pizza (Original Crust) contains approximately 310–350 calories. A Small slice has about 230 calories. Thin Crust Large reduces this to approximately 270 calories per slice. The Epic Stuffed Crust version is approximately 400 calories per large slice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Papa Johns BBQ Chicken Bacon Pizza spicy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The BBQ sauce is mild and tangy with no heat. For spice, customers can request banana peppers or jalapeños as additions when ordering, or ask for a buffalo sauce drizzle as a modification."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between Papa Johns BBQ Chicken Bacon and Hawaiian BBQ Chicken Pizza?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Both use BBQ sauce, grilled white-meat chicken, hickory-smoked bacon, and red onions. The Hawaiian BBQ Chicken also adds pineapple tidbits, making it significantly sweeter. BBQ Chicken Bacon has no pineapple and is moderately sweet from the sauce only."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What dipping sauce goes best with Papa Johns BBQ Chicken Bacon Pizza?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ranch is the preferred pairing — the cool, creamy flavor of ranch balances the sweetness of the BBQ sauce and complements the smoky bacon perfectly. The included Special Garlic Sauce also works but is a less natural pairing than with tomato-based pizzas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Papa Johns BBQ Chicken Bacon Pizza available year-round?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Papa Johns BBQ Chicken Bacon Pizza is a permanent menu item available year-round at all US locations, not a seasonal or limited-time offering."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I get Papa Johns BBQ Chicken Bacon Pizza without bacon?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Any topping can be removed when ordering online or through the app at no extra cost. Removing bacon makes it a BBQ Chicken pizza with red onions — a lighter, lower-sodium option."
+      }
+    }
+  ]
 }
 }
