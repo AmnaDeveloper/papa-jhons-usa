@@ -100,9 +100,14 @@ export default function MenusAndPricesPage() {
                     >
                         Menus &amp; <span className="text-[#CCEE18]">Prices</span> ({month})
                     </h1>
-                    <p className="text-xl text-white/80 font-bold max-w-2xl mx-auto tracking-wide mb-10">
-                        The ultimate Papa John's menu directory. Precise pricing, nutritional facts, and direct ordering links for every item.
-                    </p>
+                    <div className="text-xl text-white/90 font-medium max-w-4xl mx-auto tracking-wide mb-10 space-y-6 text-center">
+                        <p>
+                            Welcome to the most complete <Link href="/" className="text-[#CCEE18] underline font-black">Papa Johns menu with prices guide</Link> for the USA — updated April 2026. Whether you're looking for the price of a <Link href="/menus-prices/pepperoni-pizza" className="text-[#CCEE18] underline font-black">Large Pepperoni Pizza</Link>, the calorie count on <Link href="/posts/papa-johns-garlic-knots" className="text-[#CCEE18] underline font-black">Garlic Knots</Link>, or the exact toppings on <Link href="/menus-prices/the-works-pizza" className="text-[#CCEE18] underline font-black">The Works</Link>, every answer is on this page. We cover all eight menu categories — <Link href="/posts/classic-pizzas" className="text-[#CCEE18] underline font-black">Classic Pizzas</Link>, <Link href="/posts/super-loaded" className="text-[#CCEE18] underline font-black">Super Loaded Specialty Pizzas</Link>, <Link href="/menus-prices/philly-cheesesteak-papadia" className="text-[#CCEE18] underline font-black">Papadias</Link>, <Link href="/posts/sides" className="text-[#CCEE18] underline font-black">Sides & Dips</Link>, Desserts, Pastas, Drinks, and the Junior Menu — with verified 2026 prices, per-slice calorie counts, allergen information, and direct ordering links.
+                        </p>
+                        <p>
+                            Prices at Papa Johns vary slightly by location across the United States. A Large Pepperoni Pizza starts at $17.99 in most markets, while specialty pizzas like The Works begin at $20.99. Every price listed on this page reflects the current national standard for April 2026, with regional variation noted where applicable. To save on any order, check our <Link href="/coupons" className="text-[#CCEE18] underline font-black">Papa Johns Coupons page</Link> — updated daily with verified deals. Earn free food on every order by joining <Link href="/papa-johns-rewards" className="text-[#CCEE18] underline font-black">Papa Rewards</Link>, the chain's free loyalty program. Find your nearest location instantly using our <Link href="/store-locator" className="text-[#CCEE18] underline font-black">Store Locator</Link>.
+                        </p>
+                    </div>
                     
                     <Link href="#pizza-menu" className="bg-[#cc0000] hover:bg-white hover:text-[#1A3D17] text-white font-black py-4 px-10 rounded-full transition-all uppercase tracking-widest text-xs shadow-xl active:scale-95">
                         Jump to Menu Items ↓
