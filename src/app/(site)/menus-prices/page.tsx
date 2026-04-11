@@ -190,6 +190,33 @@ export default function MenusAndPricesPage() {
                             </div>
                         </div>
                     </Link>
+
+                    {/* 5th Item Added Manually per request */}
+                    <Link 
+                        href="/posts/papa-johns-bbq-chicken-bacon-pizza"
+                        className="bg-white rounded-[2rem] p-6 shadow-sm border-2 border-gray-50 hover:border-[#CCEE18] hover:shadow-xl transition-all group flex flex-col relative overflow-hidden"
+                    >
+                        <div className="absolute top-0 right-0 w-24 h-24 bg-[#CCEE18] rounded-bl-full -mr-12 -mt-12 opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                        <div className="h-48 w-full bg-[#fcfaf8] rounded-2xl mb-5 relative overflow-hidden border border-gray-100 shadow-inner group-hover:shadow-md transition-shadow flex items-center justify-center">
+                            <img src="/the-works-2026.jpg" alt="Papa Johns BBQ Chicken Bacon Pizza" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                        </div>
+                        <div className="flex items-center justify-between mb-3 text-left">
+                            <span className="bg-[#1A3D17] text-[#CCEE18] font-black text-[9px] px-3 py-1 rounded-full uppercase tracking-widest">Super Loaded Specialty Pizzas</span>
+                            <div className="flex items-center gap-1 text-yellow-500 text-[10px] font-black"><Star size={10} fill="currentColor" /> 4.7</div>
+                        </div>
+                        <h3 className="text-xl font-black text-[#1A3D17] uppercase leading-tight mb-4 group-hover:text-[#cc0000] transition-colors text-left" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                            Papa Johns BBQ Chicken Bacon Pizza
+                        </h3>
+                        <div className="mt-auto pt-4 border-t border-gray-50 flex items-center justify-between">
+                            <div className="flex flex-col text-left">
+                                <span className="text-gray-400 text-[9px] font-bold uppercase tracking-widest leading-none mb-1">Price from</span>
+                                <span className="text-xl font-black text-[#1A3D17] group-hover:text-[#cc0000] transition-colors">$14.49</span>
+                            </div>
+                            <div className="bg-[#CCEE18] p-2.5 rounded-full group-hover:bg-[#cc0000] group-hover:text-white transition-colors">
+                                <ArrowRight size={18} className="group-hover:translate-x-0.5 transition-transform" />
+                            </div>
+                        </div>
+                    </Link>
                 </div>
             </section>
 
