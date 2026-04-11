@@ -67,6 +67,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
                 title: `Papa Johns Wings: Flavors, Prices & Review (${month})`,
                 description: `All 8 Papa Johns wings flavors in ${month} — Buffalo, BBQ, Garlic Parm & more. Full pricing, spicy levels, calories & blue cheese pairing — updated ${date}.`,
             };
+        case 'papa-johns-garlic-knots':
+            return {
+                title: `Papa Johns Garlic Knots (${month}): Price, Calories & Dipping Guide`,
+                description: `Papa Johns Garlic Knots guide updated ${date}. Order of 8 for $6.99, 110 calories per knot, side-by-side breadstick comparison & top 5 dipping sauces ranked.`,
+            };
         default:
             return generateArticleSEO(
                 post.title,
