@@ -114,6 +114,9 @@ export default async function MenuItemBlogPage({ params }: Props) {
                     <h1 className="text-4xl md:text-7xl font-black uppercase tracking-tighter mb-4" style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}>
                         {item.title.split(' 2026')[0]} ({month})
                     </h1>
+                     <p className="text-lg md:text-xl font-bold max-w-3xl mx-auto mb-8 text-white/90">
+                        {item.description}
+                    </p>
                     <div className="flex flex-wrap items-center justify-center gap-3 mb-10 text-[10px] font-black uppercase tracking-widest text-[#1A3D17]">
                         <span className="bg-white px-4 py-1.5 rounded-full shadow-lg">🔥 Approx {item.calories} Cals</span>
                         <span className="bg-[#cc0000] text-white px-4 py-1.5 rounded-full shadow-lg">⭐ {item.rating} Rating</span>
@@ -147,7 +150,7 @@ export default async function MenuItemBlogPage({ params }: Props) {
                     </div>
                     <div className="lg:w-7/12 space-y-10 text-left">
                         <div>
-                            <h2 className="text-3xl font-black text-[#1A3D17] mb-6 uppercase tracking-tighter">Papa John's {item.slug.replace(/-/g, ' ')} Guide 2026</h2>
+                            <h2 className="text-3xl font-black text-[#1A3D17] mb-6 uppercase tracking-tighter">{item.title.split(' 2026')[0]} Guide 2026</h2>
                             <div className="prose prose-lg text-gray-700 leading-relaxed max-w-none font-bold space-y-6 blog-content mt-4">
                                 <div dangerouslySetInnerHTML={{ __html: item.fullContent || item.description }} />
                             </div>
