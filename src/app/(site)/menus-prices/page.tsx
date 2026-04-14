@@ -121,7 +121,7 @@ export default function MenusAndPricesPage() {
     };
 
     return (
-        <div className="bg-[#fcfaf8] min-h-screen font-sans pb-20">
+        <div className="bg-[#fcfaf8] min-h-screen font-sans pb-20 scroll-smooth">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -147,15 +147,15 @@ export default function MenusAndPricesPage() {
                 </div>
             </div>
 
-            {/* ── BANNER DESCRIPTION ── */}
+            {/* ── BANNER DESCRIPTION (Internal Links Restored) ── */}
             <div className="max-w-[1200px] mx-auto px-4 mt-12 mb-12">
                 <div className="bg-white rounded-[40px] p-8 md:p-12 shadow-2xl border border-gray-100 relative -mt-20 z-20">
                     <div className="text-lg text-gray-700 font-medium max-w-4xl mx-auto space-y-6 text-center leading-relaxed">
                         <p>
-                            Welcome to the complete <strong>Papa Johns menu directory</strong> for the USA — updated April 2026. Every pizza, side, drink, and specialty item is listed below with its current price and nutritional profile.
+                            Welcome to the complete <Link href="/" className="text-[#cc0000] underline font-black">Papa Johns menu directory</Link> for the USA — updated April 2026. Every pizza, side, drink, and specialty item is listed below with its current price and nutritional profile.
                         </p>
                         <p>
-                            Our data is verified across 5,000+ US locations to ensure you have the most accurate information before you order. Whether you're checking prices for a <strong>Large Pepperoni Pizza</strong> ($17.99) or the new <strong>Pan Pizza</strong> ($11.99), we have it all.
+                            Our data is verified across 5,000+ US locations to ensure you have the most accurate information before you order. Whether you&apos;re checking prices for a <Link href="/menus-prices/pepperoni-pizza" className="text-[#cc0000] underline font-black">Large Pepperoni Pizza</Link> ($17.99) or the new <Link href="/posts/papa-johns-pan-pizza" className="text-[#cc0000] underline font-black">Pan Pizza</Link> ($11.99), we have it all. Visit our <Link href="/coupons" className="text-[#cc0000] underline font-black">coupons page</Link> for the latest deals.
                         </p>
                     </div>
 
@@ -181,8 +181,8 @@ export default function MenusAndPricesPage() {
                 </div>
             </div>
 
-            {/* ── QUICK NAVIGATION ── */}
-            <div className="max-w-[1200px] mx-auto px-4 mb-20">
+            {/* ── QUICK NAVIGATION (Fixed Anchor Links) ── */}
+            <div className="max-w-[1200px] mx-auto px-4 mb-20 scroll-mt-20">
                 <div className="flex items-center gap-4 mb-6">
                     <div className="bg-[#cc0000] p-2 rounded-lg text-white">
                         <Menu size={20} />
@@ -191,13 +191,13 @@ export default function MenusAndPricesPage() {
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
                     {targetCategories.map((cat) => (
-                        <Link 
+                        <a 
                             key={cat}
                             href={`#${cat.toLowerCase().replace(/\s+/g, '-')}`}
-                            className="bg-white border border-gray-200 hover:border-[#cc0000] hover:text-[#cc0000] text-[#1A3D17] font-black text-xs uppercase py-4 px-2 rounded-2xl text-center transition-all shadow-sm hover:shadow-md active:scale-95"
+                            className="bg-white border border-gray-200 hover:border-[#cc0000] hover:text-[#cc0000] text-[#1A3D17] font-black text-xs uppercase py-4 px-2 rounded-2xl text-center transition-all shadow-sm hover:shadow-md active:scale-95 flex items-center justify-center whitespace-nowrap"
                         >
                             {cat}
-                        </Link>
+                        </a>
                     ))}
                 </div>
             </div>
@@ -220,7 +220,7 @@ export default function MenusAndPricesPage() {
                         <section 
                             key={category} 
                             id={category.toLowerCase().replace(/\s+/g, '-')}
-                            className="mb-16 scroll-mt-10"
+                            className="mb-20 scroll-mt-24"
                         >
                             <div className="flex items-center gap-4 mb-8">
                                 <div className="flex-shrink-0">
