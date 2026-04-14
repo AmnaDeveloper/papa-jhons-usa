@@ -3,16 +3,17 @@ import Link from 'next/link';
 import posts from '../../data/posts.json';
 import menuItems from '../../data/menu-items.json';
 import { generatePageSEO } from '../../lib/seo-config';
-import { ArrowRight, Star } from 'lucide-react';
+import { ArrowRight, Star, Clock, MapPin, Tag, Menu } from 'lucide-react';
 import { getMonthYear } from '../../../lib/utils/date';
 
 export async function generateMetadata(): Promise<Metadata> {
-    const month = getMonthYear();
-    return generatePageSEO(
-        `Papa John's Full Menu with Prices (April 2026)`,
-        `Welcome to the most complete Papa Johns menu with prices guide for the USA — updated April 2026. High-quality guide for Classic Pizzas, Super Loaded, Papadias, Sides & Dips, Desserts, Pastas, Drinks, and the Junior Menu.`,
-        "/menus-prices"
-    );
+    return {
+        title: "Papa Johns Full Menu 2026 — All Items, Prices & Categories | USA Guide",
+        description: "Browse the complete Papa Johns menu for 2026 — all pizzas, wings, Papadias, sides, desserts & drinks with prices. Click any category to see full details. Updated April 2026 for USA.",
+        alternates: {
+            canonical: "https://papajohns-menus.us/posts/papa-johns-menu-prices-guide"
+        }
+    };
 }
 
 // User Defined Categories
@@ -57,7 +58,6 @@ export default function MenusAndPricesPage() {
     // Sort menu items into groups
     menuItems.forEach(item => {
         let targetCat = categoryMap[item.category] || "Papa Menu";
-        // Override for Papadias specifically
         if (item.slug.toLowerCase().includes('papadia')) {
             targetCat = "Papadias";
         }
@@ -69,7 +69,6 @@ export default function MenusAndPricesPage() {
     // Sort blog posts into groups
     posts.forEach(post => {
         let targetCat = categoryMap[post.category] || "Papa Menu";
-        // Force Papadias and others into categories if title/slug matches
         if (post.slug.toLowerCase().includes('papadia')) targetCat = "Papadias";
         if (post.slug.toLowerCase().includes('papa-bites')) targetCat = "Papa Bites";
         if (post.slug.toLowerCase().includes('papa-bowls')) targetCat = "Papa Bowls";
@@ -88,8 +87,35 @@ export default function MenusAndPricesPage() {
                 "name": "What is on the Papa Johns full menu in 2026?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "The Papa Johns full menu in 2026 includes Classic Pizzas, Super Loaded Specialty Pizzas, Papadias, Garlic Knots, Breadsticks, Cheesesticks, Chicken Wings, Papa Bites, Desserts, Papa Bowls, Drinks, and dipping sauces."
+                    "text": "The Papa Johns full menu in 2026 includes Classic Pizzas, Super Loaded Specialty Pizzas, Papadias, Garlic Knots, Breadsticks, Cheesesticks, Chicken Wings, Papa Bites, Desserts, Papa Bowls, Drinks, and the new Pan Pizza."
                 }
+            },
+            {
+                "@type": "Question",
+                "name": "Does Papa Johns serve Coca-Cola or Pepsi?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Papa Johns is a PepsiCo partner as of 2026. They exclusively serve Pepsi, Diet Pepsi, Mountain Dew, Starry, and Aquafina products. Coca-Cola is not available."
+                }
+            }
+        ]
+    };
+
+    const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://papajohns-menus.us/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Menus & Prices",
+                "item": "https://papajohns-menus.us/menus-prices"
             }
         ]
     };
@@ -100,41 +126,79 @@ export default function MenusAndPricesPage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
             />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
             
-            {/* ── SINGLE UNIFIED HERO BANNER ── */}
-            <div className="bg-[#1A3D17] border-b-8 border-[#cc0000] text-white py-16 md:py-24 text-center relative overflow-hidden mb-16">
+            {/* ── HERO SECTION ── */}
+            <div className="bg-[#1A3D17] border-b-8 border-[#cc0000] text-white py-16 md:py-20 text-center relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#CCEE18] rounded-full -mr-64 -mt-64 opacity-5 pointer-events-none"></div>
-                <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-[#cc0000] rounded-full -ml-40 -mb-40 opacity-5 pointer-events-none"></div>
                 <div className="container mx-auto px-4 relative z-10">
                     <span className="inline-block bg-[#CCEE18] text-[#1A3D17] font-black uppercase tracking-[0.4em] text-[10px] px-6 py-2.5 rounded-full mb-6 shadow-lg">
-                        Verified {month.split(' ')[1]} USA Edition
+                        Official 2026 USA Directory
                     </span>
                     <h1
                         className="text-4xl md:text-7xl font-black uppercase tracking-tighter mb-4"
                         style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}
                     >
-                        Menus &amp; <span className="text-[#CCEE18]">Prices</span> ({month})
+                        Menus &amp; <span className="text-[#CCEE18]">Prices</span> (2026)
                     </h1>
-                    <p className="text-xl text-white/80 font-bold max-w-2xl mx-auto tracking-wide mb-10">
-                        The ultimate Papa John's menu directory. Precise pricing, nutritional facts, and direct ordering links for every item.
-                    </p>
-                    <Link href="#pizza-menu" className="bg-[#cc0000] hover:bg-white hover:text-[#1A3D17] text-white font-black py-4 px-10 rounded-full transition-all uppercase tracking-widest text-xs shadow-xl active:scale-95">
-                        Jump to Menu Items ↓
-                    </Link>
                 </div>
             </div>
 
-            {/* ── BANNER DESCRIPTION (Restored Full Version) ── */}
-            <div id="pizza-menu" className="max-w-[1280px] mx-auto px-4 mb-20">
-                <div className="text-center mb-14">
-                    <div className="text-base text-gray-700 font-medium max-w-5xl mx-auto space-y-6 text-center leading-relaxed">
+            {/* ── BANNER DESCRIPTION ── */}
+            <div className="max-w-[1200px] mx-auto px-4 mt-12 mb-12">
+                <div className="bg-white rounded-[40px] p-8 md:p-12 shadow-2xl border border-gray-100 relative -mt-20 z-20">
+                    <div className="text-lg text-gray-700 font-medium max-w-4xl mx-auto space-y-6 text-center leading-relaxed">
                         <p>
-                            Welcome to the most complete <Link href="/" className="text-[#cc0000] underline font-black">Papa Johns menu with prices guide</Link> for the USA — updated April 2026. Whether you're looking for the price of a <Link href="/menus-prices/pepperoni-pizza" className="text-[#cc0000] underline font-black">Large Pepperoni Pizza</Link>, the calorie count on <Link href="/posts/papa-johns-garlic-knots" className="text-[#cc0000] underline font-black">Garlic Knots</Link>, or the exact toppings on <Link href="/menus-prices/the-works-pizza" className="text-[#cc0000] underline font-black">The Works</Link>, every answer is on this page. We cover all menu categories — <Link href="/posts/classic-pizzas" className="text-[#cc0000] underline font-black">Classic Pizzas</Link>, <Link href="/posts/super-loaded" className="text-[#cc0000] underline font-black">Super Loaded Specialty Pizzas</Link>, <Link href="/menus-prices/philly-cheesesteak-papadia" className="text-[#cc0000] underline font-black">Papadias</Link>, <Link href="/posts/sides" className="text-[#cc0000] underline font-black">Sides & Dips</Link>, Papa Bites, Papa Bowls, and Drinks — with verified 2026 prices, per-slice calorie counts, allergen information, and direct ordering links.
+                            Welcome to the complete <strong>Papa Johns menu directory</strong> for the USA — updated April 2026. Every pizza, side, drink, and specialty item is listed below with its current price and nutritional profile.
                         </p>
                         <p>
-                            Prices at Papa Johns vary slightly by location across the United States. A Large Pepperoni Pizza starts at $17.99 in most markets, while specialty pizzas like The Works begin at $20.99. Every price listed on this page reflects the current national standard for {month}, with regional variation noted where applicable. To save on any order, check our <Link href="/coupons" className="text-[#cc0000] underline font-black">Papa Johns Coupons page</Link>. Earn free food on every order by joining <Link href="/papa-johns-rewards" className="text-[#cc0000] underline font-black">Papa Rewards</Link>.
+                            Our data is verified across 5,000+ US locations to ensure you have the most accurate information before you order. Whether you're checking prices for a <strong>Large Pepperoni Pizza</strong> ($17.99) or the new <strong>Pan Pizza</strong> ($11.99), we have it all.
                         </p>
                     </div>
+
+                    {/* ── STATS BAR ── */}
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12 pt-12 border-t border-gray-100">
+                        <div className="flex flex-col items-center">
+                            <span className="text-3xl font-black text-[#cc0000]">100+</span>
+                            <span className="text-[10px] font-bold uppercase tracking-widest text-gray-400">Menu Items</span>
+                        </div>
+                        <div className="flex flex-col items-center">
+                            <span className="text-3xl font-black text-[#1A3D17]">2026</span>
+                            <span className="text-[10px] font-bold uppercase tracking-widest text-gray-400">Price Verified</span>
+                        </div>
+                        <div className="flex flex-col items-center">
+                            <span className="text-3xl font-black text-[#cc0000]">50+</span>
+                            <span className="text-[10px] font-bold uppercase tracking-widest text-gray-400">US Cities</span>
+                        </div>
+                        <div className="flex flex-col items-center">
+                            <span className="text-3xl font-black text-[#1A3D17]">Pepsi</span>
+                            <span className="text-[10px] font-bold uppercase tracking-widest text-gray-400">Exclusive Partner</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* ── QUICK NAVIGATION ── */}
+            <div className="max-w-[1200px] mx-auto px-4 mb-20">
+                <div className="flex items-center gap-4 mb-6">
+                    <div className="bg-[#cc0000] p-2 rounded-lg text-white">
+                        <Menu size={20} />
+                    </div>
+                    <h2 className="text-xl font-black uppercase text-[#1A3D17] tracking-tighter">Browse Categories</h2>
+                </div>
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+                    {targetCategories.map((cat) => (
+                        <Link 
+                            key={cat}
+                            href={`#${cat.toLowerCase().replace(/\s+/g, '-')}`}
+                            className="bg-white border border-gray-200 hover:border-[#cc0000] hover:text-[#cc0000] text-[#1A3D17] font-black text-xs uppercase py-4 px-2 rounded-2xl text-center transition-all shadow-sm hover:shadow-md active:scale-95"
+                        >
+                            {cat}
+                        </Link>
+                    ))}
                 </div>
             </div>
 
@@ -143,7 +207,6 @@ export default function MenusAndPricesPage() {
                 {targetCategories.map((category) => {
                     const { items, posts: catPosts } = groupedContent[category];
                     
-                    // Unified listing: merge items and posts (filtering duplicates)
                     const unifiedContent = [
                         ...items.map(i => ({ ...i, type: 'item' })),
                         ...catPosts
@@ -151,25 +214,23 @@ export default function MenusAndPricesPage() {
                             .map(p => ({ ...p, type: 'post' }))
                     ];
 
-                    // ONLY HIDE IF BOTH ARE EMPTY
                     if (unifiedContent.length === 0) return null;
 
                     return (
                         <section 
                             key={category} 
                             id={category.toLowerCase().replace(/\s+/g, '-')}
-                            className="mb-16"
+                            className="mb-16 scroll-mt-10"
                         >
                             <div className="flex items-center gap-4 mb-8">
                                 <div className="flex-shrink-0">
-                                    <h2 className="bg-[#cc0000] text-white font-black uppercase tracking-[0.2em] text-xs md:text-sm px-6 py-2.5 rounded-full shadow-lg">
-                                        {category}
+                                    <h2 className="bg-[#cc0000] text-white font-black uppercase tracking-[0.2em] text-xs md:text-sm px-6 py-2.5 rounded-full shadow-lg flex items-center gap-2">
+                                        <Tag size={14} /> {category}
                                     </h2>
                                 </div>
                                 <div className="flex-1 h-[2px] bg-gradient-to-r from-[#cc0000]/20 to-transparent rounded-full"></div>
                             </div>
 
-                            {/* Unified Grid: 5 Columns */}
                             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
                                 {unifiedContent.map((item: any) => (
                                     <Link 
