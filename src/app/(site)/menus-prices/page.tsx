@@ -101,7 +101,7 @@ export default function MenusAndPricesPage() {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
             />
             
-            {/* ── SINGLE UNIFIED HERO BANNER ── */}
+            {/* ── SINGLE UNIFIED HERO BANNER (NO DUPLICATES) ── */}
             <div className="bg-[#1A3D17] border-b-8 border-[#cc0000] text-white py-16 md:py-20 text-center relative overflow-hidden mb-12">
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#CCEE18] rounded-full -mr-64 -mt-64 opacity-5 pointer-events-none"></div>
                 <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-[#cc0000] rounded-full -ml-40 -mb-40 opacity-5 pointer-events-none"></div>
@@ -137,6 +137,7 @@ export default function MenusAndPricesPage() {
                             .map(p => ({ ...p, type: 'post' }))
                     ];
 
+                    // ONLY HIDE IF BOTH ARE EMPTY
                     if (unifiedContent.length === 0) return null;
 
                     return (
