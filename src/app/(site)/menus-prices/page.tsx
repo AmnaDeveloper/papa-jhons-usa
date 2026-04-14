@@ -120,7 +120,7 @@ export default function MenusAndPricesPage() {
             </div>
 
             {/* ── PREMIUM HERO BANNER ── */}
-            <div className="bg-[#1A3D17] border-b-8 border-[#cc0000] text-white py-16 md:py-24 text-center relative overflow-hidden mb-16">
+            <div className="bg-[#1A3D17] border-b-8 border-[#cc0000] text-white py-16 md:py-24 text-center relative overflow-hidden mb-12">
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#CCEE18] rounded-full -mr-64 -mt-64 opacity-5 pointer-events-none"></div>
                 <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-[#cc0000] rounded-full -ml-40 -mb-40 opacity-5 pointer-events-none"></div>
                 <div className="container mx-auto px-4 relative z-10">
@@ -136,40 +136,29 @@ export default function MenusAndPricesPage() {
                     <p className="text-xl text-white/80 font-bold max-w-2xl mx-auto tracking-wide mb-10">
                         The ultimate Papa John's menu directory. Precise pricing, nutritional facts, and direct ordering links for every item.
                     </p>
-                    <Link href="#pizza-menu" className="bg-[#cc0000] hover:bg-white hover:text-[#1A3D17] text-white font-black py-4 px-10 rounded-full transition-all uppercase tracking-widest text-xs shadow-xl active:scale-95">
+                    <Link href="#menu-sections" className="bg-[#cc0000] hover:bg-white hover:text-[#1A3D17] text-white font-black py-4 px-10 rounded-full transition-all uppercase tracking-widest text-xs shadow-xl active:scale-95">
                         Jump to Menu Items ↓
                     </Link>
                 </div>
             </div>
 
-            {/* ── BANNER DESCRIPTION (Restored) ── */}
-            <div id="pizza-menu" className="max-w-[1280px] mx-auto px-4 mb-20">
-                <div className="text-center mb-14">
-                    <h2 className="text-3xl md:text-5xl font-black text-[#1A3D17] uppercase tracking-tighter mb-4" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
-                        Browse Full <span className="text-[#cc0000]">Papa Johns Menu</span>
-                    </h2>
-                    <div className="text-base text-gray-700 font-medium max-w-5xl mx-auto space-y-6 text-center leading-relaxed">
-                        <p>
-                            Welcome to the most complete <Link href="/" className="text-[#cc0000] underline font-black">Papa Johns menu with prices guide</Link> for the USA — updated April 2026. Whether you're looking for the price of a <Link href="/menus-prices/pepperoni-pizza" className="text-[#cc0000] underline font-black">Large Pepperoni Pizza</Link>, the calorie count on <Link href="/posts/papa-johns-garlic-knots" className="text-[#cc0000] underline font-black">Garlic Knots</Link>, or the exact toppings on <Link href="/menus-prices/the-works-pizza" className="text-[#cc0000] underline font-black">The Works</Link>, every answer is on this page. We cover all menu categories — <Link href="/posts/classic-pizzas" className="text-[#cc0000] underline font-black">Classic Pizzas</Link>, <Link href="/posts/super-loaded" className="text-[#cc0000] underline font-black">Super Loaded Specialty Pizzas</Link>, <Link href="/menus-prices/philly-cheesesteak-papadia" className="text-[#cc0000] underline font-black">Papadias</Link>, <Link href="/posts/sides" className="text-[#cc0000] underline font-black">Sides & Dips</Link>, Papa Bites, Papa Bowls, and Drinks — with verified 2026 prices, per-slice calorie counts, allergen information, and direct ordering links.
-                        </p>
-                        <p>
-                            Prices at Papa Johns vary slightly by location across the United States. A Large Pepperoni Pizza starts at $17.99 in most markets, while specialty pizzas like The Works begin at $20.99. Every price listed on this page reflects the current national standard for {month}, with regional variation noted where applicable. To save on any order, check our <Link href="/coupons" className="text-[#cc0000] underline font-black">Papa Johns Coupons page</Link> — updated daily with verified deals. Earn free food on every order by joining <Link href="/papa-johns-rewards" className="text-[#cc0000] underline font-black">Papa Rewards</Link>.
-                        </p>
-                    </div>
+            {/* ── BANNER DESCRIPTION (Restored & Cleaned) ── */}
+            <div id="menu-sections" className="max-w-[1280px] mx-auto px-4 mb-20 mt-8">
+                <div className="text-base text-gray-700 font-medium max-w-5xl mx-auto space-y-6 text-center leading-relaxed">
+                    <p>
+                        Welcome to the most complete <Link href="/" className="text-[#cc0000] underline font-black">Papa Johns menu with prices guide</Link> for the USA — updated April 2026. Whether you're looking for the price of a <Link href="/menus-prices/pepperoni-pizza" className="text-[#cc0000] underline font-black">Large Pepperoni Pizza</Link>, the calorie count on <Link href="/posts/papa-johns-garlic-knots" className="text-[#cc0000] underline font-black">Garlic Knots</Link>, or the exact toppings on <Link href="/menus-prices/the-works-pizza" className="text-[#cc0000] underline font-black">The Works</Link>, every answer is on this page. We cover all menu categories — <Link href="/posts/classic-pizzas" className="text-[#cc0000] underline font-black">Classic Pizzas</Link>, <Link href="/posts/super-loaded" className="text-[#cc0000] underline font-black">Super Loaded Specialty Pizzas</Link>, <Link href="/menus-prices/philly-cheesesteak-papadia" className="text-[#cc0000] underline font-black">Papadias</Link>, <Link href="/posts/sides" className="text-[#cc0000] underline font-black">Sides & Dips</Link>, Papa Bites, Papa Bowls, and Drinks — with verified 2026 prices, per-slice calorie counts, allergen information, and direct ordering links.
+                    </p>
+                    <p>
+                        Prices at Papa Johns vary slightly by location across the United States. A Large Pepperoni Pizza starts at $17.99 in most markets, while specialty pizzas like The Works begin at $20.99. Every price listed on this page reflects the current national standard for {month}, with regional variation noted where applicable. To save on any order, check our <Link href="/coupons" className="text-[#cc0000] underline font-black">Papa Johns Coupons page</Link> — updated daily with verified deals. Earn free food on every order by joining <Link href="/papa-johns-rewards" className="text-[#cc0000] underline font-black">Papa Rewards</Link>.
+                    </p>
                 </div>
             </div>
 
-            {/* ── DYNAMIC CATEGORY SECTIONS (5 Cards per Row) ── */}
+            {/* ── DYNAMIC CATEGORY SECTIONS (Menu Items Only) ── */}
             <div className="max-w-[1400px] mx-auto px-4">
                 {targetCategories.map((category) => {
-                    const { items, posts: catPosts } = groupedContent[category];
-                    
-                    // Filter out posts that already exist as items to prevent duplication
-                    const filteredPosts = catPosts.filter(post => 
-                        !items.some(item => item.slug === post.slug)
-                    );
-
-                    if (items.length === 0 && filteredPosts.length === 0) return null;
+                    const { items } = groupedContent[category];
+                    if (items.length === 0) return null;
 
                     return (
                         <section 
@@ -187,77 +176,42 @@ export default function MenusAndPricesPage() {
                             </div>
 
                             {/* Menu Items Grid: 5 Columns */}
-                            {items.length > 0 && (
-                                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-10">
-                                    {items.map((item) => (
-                                        <Link 
-                                            key={item.id} 
-                                            href={`/menus-prices/${item.slug}`}
-                                            className="bg-white rounded-3xl p-4 shadow-sm border border-gray-100 hover:border-[#CCEE18] hover:shadow-lg transition-all group flex flex-col relative overflow-hidden"
-                                        >
-                                            <div className="aspect-video w-full bg-[#fcfaf8] rounded-2xl mb-4 relative overflow-hidden flex items-center justify-center">
-                                                <img 
-                                                    src={item.image} 
-                                                    alt={item.title} 
-                                                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
-                                                />
+                            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                                {items.map((item) => (
+                                    <Link 
+                                        key={item.id} 
+                                        href={`/menus-prices/${item.slug}`}
+                                        className="bg-white rounded-3xl p-4 shadow-sm border border-gray-100 hover:border-[#CCEE18] hover:shadow-lg transition-all group flex flex-col relative overflow-hidden"
+                                    >
+                                        <div className="aspect-video w-full bg-[#fcfaf8] rounded-2xl mb-4 relative overflow-hidden flex items-center justify-center">
+                                            <img 
+                                                src={item.image} 
+                                                alt={item.title} 
+                                                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
+                                            />
+                                        </div>
+                                        <div className="flex items-center justify-between mb-2">
+                                            <span className="text-[#1A3D17] font-black text-[8px] uppercase tracking-widest opacity-60">
+                                                Official
+                                            </span>
+                                            <div className="flex items-center gap-0.5 text-yellow-500 text-[9px] font-black">
+                                                <Star size={8} fill="currentColor" /> {item.rating}
                                             </div>
-                                            <div className="flex items-center justify-between mb-2">
-                                                <span className="text-[#1A3D17] font-black text-[8px] uppercase tracking-widest opacity-60">
-                                                    Official
-                                                </span>
-                                                <div className="flex items-center gap-0.5 text-yellow-500 text-[9px] font-black">
-                                                    <Star size={8} fill="currentColor" /> {item.rating}
-                                                </div>
+                                        </div>
+                                        <h3 className="text-sm font-black text-[#1A3D17] uppercase leading-tight mb-3 group-hover:text-[#cc0000] transition-colors line-clamp-2" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                                            {item.slug.split('-').join(' ')}
+                                        </h3>
+                                        <div className="mt-auto pt-3 border-t border-gray-50 flex items-center justify-between">
+                                            <span className="text-base font-black text-[#1A3D17] group-hover:text-[#cc0000] transition-colors">
+                                                ${typeof item.price === 'number' ? item.price : item.price}
+                                            </span>
+                                            <div className="bg-[#CCEE18] p-1.5 rounded-full group-hover:bg-[#cc0000] group-hover:text-white transition-colors">
+                                                <ArrowRight size={14} className="group-hover:translate-x-0.5 transition-transform" />
                                             </div>
-                                            <h3 className="text-sm font-black text-[#1A3D17] uppercase leading-tight mb-3 group-hover:text-[#cc0000] transition-colors line-clamp-2" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
-                                                {item.slug.split('-').join(' ')}
-                                            </h3>
-                                            <div className="mt-auto pt-3 border-t border-gray-50 flex items-center justify-between">
-                                                <span className="text-base font-black text-[#1A3D17] group-hover:text-[#cc0000] transition-colors">
-                                                    ${typeof item.price === 'number' ? item.price : item.price}
-                                                </span>
-                                                <div className="bg-[#CCEE18] p-1.5 rounded-full group-hover:bg-[#cc0000] group-hover:text-white transition-colors">
-                                                    <ArrowRight size={14} className="group-hover:translate-x-0.5 transition-transform" />
-                                                </div>
-                                            </div>
-                                        </Link>
-                                    ))}
-                                </div>
-                            )}
-
-                            {/* Articles Grid: 5 Columns */}
-                            {filteredPosts.length > 0 && (
-                                <>
-                                    <h4 className="text-[10px] font-black text-[#1A3D17]/40 uppercase tracking-[0.2em] mb-4 pl-1">
-                                        Related Guides
-                                    </h4>
-                                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-                                        {filteredPosts.map((post) => (
-                                            <Link
-                                                href={`/posts/${post.slug}`}
-                                                key={post.id}
-                                                className="bg-white rounded-3xl p-4 shadow-sm border border-transparent hover:border-[#CCEE18] hover:shadow-lg transition-all group flex flex-col h-full relative overflow-hidden"
-                                            >
-                                                <div className="aspect-video bg-gray-50 rounded-2xl mb-4 relative overflow-hidden translate-z-0">
-                                                    <img
-                                                        src={post.image}
-                                                        alt={post.imageAlt || post.title}
-                                                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                                                    />
-                                                </div>
-                                                <h3 className="text-sm font-black text-[#1A3D17] uppercase leading-tight mb-2 group-hover:text-[#cc0000] transition-colors line-clamp-2" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
-                                                    {post.title}
-                                                </h3>
-                                                <div className="mt-auto pt-2 flex items-center justify-between text-[#1A3D17]/40 text-[9px] font-black uppercase tracking-widest group-hover:text-[#cc0000] transition-colors">
-                                                    Read Guide
-                                                    <ArrowRight size={12} />
-                                                </div>
-                                            </Link>
-                                        ))}
-                                    </div>
-                                </>
-                            )}
+                                        </div>
+                                    </Link>
+                                ))}
+                            </div>
                         </section>
                     );
                 })}
