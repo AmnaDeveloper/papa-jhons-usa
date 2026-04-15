@@ -43,11 +43,11 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
     return (
         <div className="bg-[#fcfaf8] min-h-screen font-sans pb-20">
             {/* ── HERO SECTION ── */}
-            <div className="bg-[#1A3D17] border-b-8 border-[#cc0000] text-white py-16 md:py-24 text-center relative overflow-hidden">
+            <section className="bg-[#1A3D17] border-b-8 border-[#cc0000] text-white py-16 md:py-24 text-center relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#CCEE18] rounded-full -mr-64 -mt-64 opacity-5 pointer-events-none"></div>
                 <div className="container mx-auto px-4 relative z-10">
                     <div className="inline-flex items-center gap-2 bg-[#CCEE18] text-[#1A3D17] font-black uppercase tracking-[0.2em] text-[10px] px-6 py-2.5 rounded-full mb-6 shadow-lg">
-                        <CheckCircle2 size={12} /> Verified & Updated Daily — {month}
+                        <CheckCircle2 size={12} /> Verified & Updated Daily — April 2026
                     </div>
                     <h1
                         className="text-4xl md:text-7xl font-black uppercase tracking-tighter mb-4"
@@ -55,11 +55,17 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
                     >
                         Coupons &amp; <span className="text-[#CCEE18]">Deals</span>
                     </h1>
-                    <p className="text-lg text-white/80 font-bold max-w-2xl mx-auto tracking-wide mb-0">
+                    <p className="text-lg text-white/80 font-bold max-w-2xl mx-auto tracking-wide mb-6">
                         18+ verified Papa John's coupon codes updated daily. Save up to 50% on pizzas, sides & delivery orders.
                     </p>
+                    <div className="flex flex-wrap justify-center gap-6 text-sm text-white/70 font-bold uppercase tracking-widest">
+                        <span className="flex items-center gap-1"><Check size={14} className="text-[#CCEE18]" /> 18 Active Codes</span>
+                        <span className="flex items-center gap-1"><Check size={14} className="text-[#CCEE18]" /> Last checked: April 15, 2026</span>
+                        <span className="flex items-center gap-1"><Check size={14} className="text-[#CCEE18]" /> Up to 50% Off</span>
+                        <span className="flex items-center gap-1"><Check size={14} className="text-[#CCEE18]" /> Free Delivery Available</span>
+                    </div>
                 </div>
-            </div>
+            </section>
 
             {/* ── STATS BAR ── */}
             <div className="bg-white border-b border-gray-100 py-6 shadow-sm relative z-20">
@@ -82,7 +88,7 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
 
             {/* ── BREADCRUMB ── */}
             <div className="max-w-[1200px] mx-auto px-4 py-6">
-                <nav className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-gray-400">
+                <nav className="flex items-center gap-2 text-[12px] font-bold text-gray-400">
                     <Link href="/" className="hover:text-[#cc0000] transition-colors">Home</Link>
                     <span>/</span>
                     <span className="text-[#1A3D17]">Coupons & Deals</span>
@@ -92,7 +98,7 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
             <div className="max-w-[1200px] mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-8">
                 
                 {/* ── LEFT COLUMN ── */}
-                <div className="lg:col-span-8">
+                <main className="lg:col-span-8">
                     
                     {/* E-E-A-T Signal */}
                     <div className="bg-green-50 border border-green-100 rounded-2xl p-4 mb-10 flex items-center gap-3">
@@ -168,11 +174,11 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
                         </h2>
                         <div className="space-y-6">
                             {[
-                                { step: 1, text: "Copy your code above — click the code or the 'Copy Code' button. The code is now in your clipboard." },
-                                { step: 2, text: "Build your order — go to PapaJohns.com or the app and add your pizzas, sides and drinks to the cart." },
-                                { step: 3, text: "Proceed to checkout — click the cart icon, then select 'Checkout' to review your order." },
-                                { step: 4, text: "Enter your promo code — find the 'Promo Code' field at the top of the checkout page. Paste your code and click 'Apply'." },
-                                { step: 5, text: "Verify the discount — make sure the discount appears before completing payment." }
+                                { step: 1, text: <><strong>Copy your code above</strong> — click the code or the "Copy Code" button. The code is now in your clipboard.</> },
+                                { step: 2, text: <><strong>Build your order</strong> — go to <a href="https://www.papajohns.com" target="_blank" rel="nofollow noopener" className="text-[#cc0000] underline">PapaJohns.com</a> or the Papa John's app and add your pizzas, sides and drinks to the cart.</> },
+                                { step: 3, text: <><strong>Proceed to checkout</strong> — click the cart icon, then select "Checkout" to review your order.</> },
+                                { step: 4, text: <><strong>Enter your promo code</strong> — find the "Promo Code" field at the top of the checkout page (above the order summary). Paste your code and click "Apply".</> },
+                                { step: 5, text: <><strong>Verify the discount</strong> — make sure the discount appears in your order total before completing payment. If not, check the code terms.</> }
                             ].map((item) => (
                                 <div key={item.step} className="flex gap-6">
                                     <div className="w-10 h-10 rounded-full bg-[#cc0000] text-white flex items-center justify-center font-black flex-shrink-0 shadow-lg">
@@ -186,16 +192,16 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
 
                     {/* ── SAVING TIPS ── */}
                     <section className="mb-16">
-                        <h2 className="text-2xl font-black uppercase text-[#1A3D17] tracking-tighter mb-2">5 Ways to Save More</h2>
+                        <h2 className="text-2xl font-black uppercase text-[#1A3D17] tracking-tighter mb-2">5 Ways to Save More at Papa John's</h2>
                         <p className="text-sm text-gray-500 font-medium mb-8">Stack these strategies with coupon codes for maximum savings.</p>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                             {[
-                                { icon: <Smartphone />, title: "Download the App", desc: "Get exclusive location-based deals not available on the website." },
-                                { icon: <Star />, title: "Join Papa Rewards", desc: "Earn $10 in Papa Dough for every 75 points earned." },
-                                { icon: <Car />, title: "Choose Carryout", desc: "Get 50% off all pizzas automatically on carryout orders." },
-                                { icon: <Mail />, title: "Sign Up for Texts", desc: "Text JOIN to 47272 for exclusive weekly phone discounts." },
-                                { icon: <Gift />, title: "Birthday Reward", desc: "Rewards members get a free dessert on their birthday." },
-                                { icon: <Gamepad2 />, title: "Game Day Bundles", desc: "Special sports-themed bundles during major events." }
+                                { icon: <Smartphone />, title: "Download the App", desc: "The Papa John's app has exclusive location-based deals not available on the website. Check it before every order." },
+                                { icon: <Star />, title: "Join Papa Rewards", desc: "Earn 1 point per $1 spent. Every 75 points = $10 in Papa Dough. Free to join — use your rewards on any order." },
+                                { icon: <Car />, title: "Choose Carryout", desc: "Carryout automatically gets 50% off all pizzas — no code needed. You save on delivery fees too." },
+                                { icon: <Mail />, title: "Sign Up for Texts", desc: "Text JOIN to 47272 to get exclusive weekly discounts sent straight to your phone — not available anywhere else." },
+                                { icon: <Gift />, title: "Birthday Reward", desc: "Papa Rewards members get a free dessert on their birthday. Sign up at least a week before your birthday." },
+                                { icon: <Gamepad2 />, title: "Game Day Bundles", desc: "During major sporting events, Papa John's runs special bundle deals. Two large 2-topping pizzas for just $9.99 each." }
                             ].map((tip, i) => (
                                 <div key={i} className="bg-white p-6 rounded-3xl border border-gray-100 shadow-sm hover:border-[#CCEE18] transition-all">
                                     <div className="text-[#cc0000] mb-4">{tip.icon}</div>
@@ -208,26 +214,57 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
 
                     {/* ── DETAILED CONTENT ── */}
                     <article className="prose max-w-none text-gray-600 font-medium leading-[1.8] space-y-6 mb-16">
-                        <h2 className="text-2xl font-black uppercase text-[#1A3D17] tracking-tighter">Complete Guide to Papa John's Savings in 2026</h2>
+                        <h2 className="text-2xl font-black uppercase text-[#1A3D17] tracking-tighter">Complete Guide to Papa John's Savings in April 2026</h2>
                         <p>
                             Papa John's is one of America's largest pizza chains, operating thousands of locations across the US. Unlike competitors who run random promotions, Papa John's runs a consistent set of deals year-round — meaning savvy customers can almost always find a working promo code or automatic discount before placing their order.
                         </p>
                         <h3 className="text-xl font-black uppercase text-[#1A3D17]">Best Papa John's Deals Right Now</h3>
                         <p>
-                            The standout deal this month is the <strong>BOGO free pizza offer</strong> using code BOGO4U — buy one large pizza and get a second one completely free. If you prefer a percentage discount, PIZZA25 takes 25% off your entire order with no minimum spend.
+                            The standout deal this month is the <strong>BOGO free pizza offer</strong> using code BOGO4U — buy one large pizza and get a second one completely free. This is one of the best-value offers Papa John's runs and it comes around several times a year. If you prefer a simpler percentage discount, PIZZA25 takes 25% off your entire order with no minimum spend.
                         </p>
                         <p>
-                            For carryout customers, the <strong>50% off all pizzas</strong> deal is the most consistent saving available — it requires no coupon code and applies automatically when you select carryout at checkout.
+                            For carryout customers, the <strong>50% off all pizzas</strong> deal is the most consistent saving available — it requires no coupon code and applies automatically when you select carryout at checkout. On a large specialty pizza priced at $16.99, that's over $8 saved instantly.
+                        </p>
+                        <h3 className="text-xl font-black uppercase text-[#1A3D17]">How Papa Rewards Works</h3>
+                        <p>
+                            Papa Rewards is Papa John's free loyalty program and one of the smartest ways to save on regular orders. For every dollar you spend, you earn one Papa Rewards point. Once you reach 75 points, you receive $10 in Papa Dough — a credit that can be applied to any order. That's effectively a 13% return on all spending for loyal customers.
+                        </p>
+                        <p>
+                            Rewards members also receive a free dessert on their birthday, early access to new menu items, and exclusive promo codes not available to non-members. You can join Papa Rewards for free on the <a href="https://www.papajohns.com" rel="nofollow noopener" target="_blank" className="text-[#cc0000] underline">official Papa John's website</a> or through the app.
+                        </p>
+                        <h3 className="text-xl font-black uppercase text-[#1A3D17]">Papa John's App — Hidden Deals</h3>
+                        <p>
+                            The Papa John's mobile app is arguably the best source of exclusive deals. When you log in and select your local store, the app surfaces location-specific offers that are often not advertised anywhere else. These include carryout-only specials, large order discounts, and limited-time promotions run by individual franchise locations.
+                        </p>
+                        <p>
+                            The app also sends push notifications for flash sales — deals that might only last a few hours. Turning on notifications for the Papa John's app is one of the easiest ways to catch a 40–50% off deal before it expires.
+                        </p>
+                        <h3 className="text-xl font-black uppercase text-[#1A3D17]">Seasonal Deals and Holiday Promos</h3>
+                        <p>
+                            Papa John's runs especially strong promotions around major US sporting events, including the NFL season, the Super Bowl, and college football playoffs. The Game Day bundle — two large 2-topping pizzas at $9.99 each — typically appears during these periods. Back-to-school season (August–September) and the holiday shopping period (November–December) also tend to bring larger-than-usual sitewide discounts.
                         </p>
                         <h3 className="text-xl font-black uppercase text-[#1A3D17]">Delivery vs. Carryout — Which Saves More?</h3>
                         <p>
-                            Choosing carryout over delivery almost always saves you more money at Papa John's. The carryout deal gives you 50% off all pizzas automatically. On top of that, you avoid the delivery fee of $3.99–$5.99 and you are not expected to tip a driver. On a $25 pizza order, switching from delivery to carryout could save $16–$18 in total.
+                            Choosing carryout over delivery almost always saves you more money at Papa John's. Here is why: the carryout deal gives you 50% off all pizzas automatically. On top of that, you avoid the delivery fee of $3.99–$5.99 and you are not expected to tip a driver. On a $25 pizza order, switching from delivery to carryout could save $16–$18 in total.
+                        </p>
+                        <p>
+                            If you do need delivery, make sure your order reaches $40 to trigger free delivery. Below that threshold, the delivery fee applies in full.
+                        </p>
+                        <h3 className="text-xl font-black uppercase text-[#1A3D17]">Can I Stack Papa John's Coupons?</h3>
+                        <p>
+                            Officially, Papa John's only allows one promo code per order. If you enter a second code, only the most recently entered code is applied. However, you can combine a promo code with Papa Rewards Papa Dough in most cases — this is the closest thing to stacking deals available. Choose the code that gives you the highest percentage discount for your specific cart before applying.
+                        </p>
+                        <p>
+                            We verify every code on this page before publishing and update our list daily. If a code has stopped working, refresh this page — we'll have updated the listing. You can also check the <Link href="/papa-johns-rewards" className="text-[#cc0000] underline">Papa Rewards page</Link> or the <Link href="/menus-prices" className="text-[#cc0000] underline">full menu with prices</Link> for more information.
                         </p>
                     </article>
 
                     {/* ── FAQs ── */}
                     <section className="mb-16">
-                        <h2 className="text-2xl font-black uppercase text-[#1A3D17] tracking-tighter mb-8">Frequently Asked Questions</h2>
+                        <section className="mb-8">
+                            <h2 className="text-2xl font-black uppercase text-[#1A3D17] tracking-tighter">Frequently Asked Questions</h2>
+                            <p className="text-sm text-gray-500 font-medium">Everything you need to know about Papa John's coupons and deals.</p>
+                        </section>
                         <div className="space-y-3">
                             {faqs.map((faq, i) => (
                                 <div key={i} className="bg-white rounded-3xl border border-gray-100 overflow-hidden shadow-sm">
@@ -262,7 +299,7 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
                         </div>
                     </div>
 
-                </div>
+                </main>
 
                 {/* ── RIGHT COLUMN: SIDEBAR ── */}
                 <aside className="lg:col-span-4 space-y-6">
@@ -273,28 +310,29 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
                              Papa Rewards
                         </h3>
                         <p className="text-sm font-bold text-white/80 mb-8 leading-relaxed">
-                            Earn $10 Papa Dough for every 75 points. 1 point per $1 spent. Free birthday dessert included!
+                            Earn $10 Papa Dough for every 75 points. 1 point per $1 spent. Free birthday dessert included.
                         </p>
                         <Link 
                             href="/papa-johns-rewards"
                             className="block w-full bg-white text-[#cc0000] font-black uppercase tracking-widest text-xs py-4 rounded-2xl text-center transition-all hover:bg-[#CCEE18] hover:text-[#1A3D17]"
                         >
-                            Learn More →
+                            Learn About Papa Rewards →
                         </Link>
                     </div>
 
                     <div className="bg-white rounded-[32px] p-8 border border-gray-100 shadow-sm">
-                        <h3 className="text-sm font-black text-[#1A3D17] uppercase tracking-widest mb-6">Today's Best Values</h3>
+                        <h3 className="text-sm font-black text-[#1A3D17] uppercase tracking-widest mb-6">Today's Best Deals</h3>
                         <div className="space-y-4">
                             {[
-                                { name: "BOGO Pizza Deal", val: "50% Off" },
-                                { name: "Carryout Special", val: "50% Off" },
-                                { name: "Code PIZZA25", val: "25% Off" },
-                                { name: "Code SAVE10", val: "$10 off" },
+                                { name: "BOGO Pizza", val: "50% off" },
+                                { name: "Code PIZZA25", val: "25% off" },
+                                { name: "Carryout Special", val: "50% off" },
                                 { name: "Free Delivery", val: "On $40+" },
+                                { name: "Code SAVE10", val: "$10 off $40" },
+                                { name: "Code HOTEL25", val: "30% off" },
                             ].map((deal, i) => (
                                 <div key={i} className="flex items-center justify-between py-2 border-b border-gray-50 last:border-0">
-                                    <span className="text-xs font-bold text-gray-500">{deal.name}</span>
+                                    <span className="text-xs font-bold text-gray-700">{deal.name}</span>
                                     <span className="text-xs font-black text-[#1A3D17]">{deal.val}</span>
                                 </div>
                             ))}
@@ -305,21 +343,35 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
                         <h3 className="text-sm font-black text-[#1A3D17] uppercase tracking-widest mb-6">Quick Links</h3>
                         <div className="space-y-2">
                             {[
-                                { label: "Full Menu", href: "/menus-prices", icon: <Tag size={12} /> },
-                                { label: "Store Locator", href: "/store-locator", icon: <MapPin size={12} /> },
-                                { label: "Opening Hours", href: "/hours", icon: <Clock size={12} /> },
-                                { label: "Classic Pizzas", href: "/posts/classic-pizzas", icon: <Zap size={12} /> },
+                                { label: "🍕 Full Menu & Prices", href: "/menus-prices" },
+                                { label: "📍 Find a Store Near Me", href: "/store-locator" },
+                                { label: "🕐 Store Hours", href: "/hours" },
+                                { label: "⭐ Papa Rewards Program", href: "/papa-johns-rewards" },
+                                { label: "🍕 Classic Pizzas", href: "/posts/classic-pizzas" },
+                                { label: "🍗 Sides & Dips", href: "/posts/sides" },
+                                { label: "🥤 Drinks", href: "/menus-prices/drinks" },
+                                { label: "🍰 Desserts", href: "/posts/papa-johns-desserts" },
                             ].map((link, i) => (
                                 <Link 
                                     key={i}
                                     href={link.href}
                                     className="flex items-center gap-3 p-3 rounded-2xl hover:bg-gray-50 transition-all text-xs font-bold text-gray-600 hover:text-[#cc0000]"
                                 >
-                                    <span className="text-gray-300">{link.icon}</span>
                                     {link.label}
                                 </Link>
                             ))}
                         </div>
+                    </div>
+
+                    <div className="bg-white rounded-[32px] p-8 border border-gray-100 shadow-sm">
+                        <h3 className="text-sm font-black text-[#1A3D17] uppercase tracking-widest mb-4">How Coupons Work</h3>
+                        <p className="text-[12px] text-gray-600 font-medium leading-relaxed">
+                            1. Copy a code above<br/>
+                            2. Add items to cart<br/>
+                            3. Paste at checkout<br/>
+                            4. Click Apply<br/>
+                            5. Only one code per order
+                        </p>
                     </div>
 
                 </aside>

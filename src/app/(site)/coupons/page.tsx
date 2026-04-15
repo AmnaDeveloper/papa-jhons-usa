@@ -5,8 +5,30 @@ import { getMonthYear } from '../../../lib/utils/date';
 export const metadata: Metadata = {
     title: "Papa John's Coupons & Promo Codes April 2026 – Up to 50% Off | PapaJohns-Menus.us",
     description: "Save big with 18+ verified Papa John's coupon codes for April 2026. Get 25% off, BOGO pizza deals, free delivery codes & carryout specials — updated daily by our deals team.",
+    keywords: "papa johns coupons, papa johns promo codes, papa johns discount code, papa johns deals 2026, papa johns coupon code today, papa johns free delivery code, papa johns bogo deal",
+    authors: [{ name: "PapaJohns-Menus.us Deals Team" }],
+    robots: "index, follow",
     alternates: {
         canonical: "https://papajohns-menus.us/coupons"
+    },
+    openGraph: {
+        title: "Papa John's Coupons & Promo Codes April 2026 – Up to 50% Off",
+        description: "18+ verified Papa John's coupon codes updated daily. BOGO deals, 25% off, free delivery codes for April 2026.",
+        url: "https://papajohns-menus.us/coupons",
+        type: "website",
+        images: [
+            {
+                url: "https://papajohns-menus.us/og-coupons.jpg",
+                width: 1200,
+                height: 630,
+                alt: "Papa John's Coupons 2026"
+            }
+        ]
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Papa John's Coupons & Promo Codes April 2026 – Up to 50% Off",
+        description: "18+ verified Papa John's coupon codes updated daily. Get BOGO, 25% off & free delivery codes.",
     }
 };
 
@@ -113,23 +135,47 @@ export default function CouponsPage() {
     const faqs = [
         {
             q: "How do I use a Papa John's promo code?",
-            a: "Go to PapaJohns.com or the app, add items to your cart, and proceed to checkout. Find the 'Promo Code' or 'Coupon Code' field at the top of the checkout page, enter your code, and click 'Apply'. The discount is deducted from your total before payment."
+            a: "To use a Papa John's promo code: 1) Add your items to the cart on PapaJohns.com or the app. 2) Go to checkout. 3) Find the 'Promo Code' or 'Coupon Code' field at the top of the checkout page. 4) Enter your code and click 'Apply'. 5) Your discount will be applied automatically before payment."
         },
         {
-            q: "Can I use multiple Papa John's coupon codes?",
-            a: "No — Papa John's only allows one promo code per order. Choose the code that gives you the highest savings. However, you can use a promo code together with Papa Rewards Papa Dough on most orders, which is effectively combining two discounts."
+            q: "Can I use multiple Papa John's coupon codes at once?",
+            a: "No, Papa John's only allows one promo code per order. Choose the code that gives you the highest savings. However, you can combine a promo code with Papa Rewards points (Papa Dough) on most orders."
         },
         {
             q: "What is the best Papa John's coupon code right now?",
-            a: "For April 2026, the best codes are: BOGO4U (buy one large pizza, get one free), PIZZA25 (25% off entire order), and HOTEL25 (30% off with a minimum spend). The no-code 50% carryout deal is also outstanding if you can pick up your order."
+            a: "The best Papa John's deals for April 2026 are: BOGO4U for buy one get one free pizza, PIZZA25 for 25% off your entire order, and the 50% off carryout deal which applies automatically with no code needed. We update our codes daily."
         },
         {
             q: "Does Papa John's have a free delivery code?",
-            a: "Yes — free delivery is automatically applied on orders of $40 or more. The standard delivery fee is $3.99–$5.99. You can also receive exclusive free delivery promo codes by signing up for Papa John's email newsletter or text alerts (text JOIN to 47272)."
+            a: "Yes! Papa John's offers free delivery on orders of $40 or more — no code needed, it applies automatically. The standard delivery fee is $3.99–$5.99. You can also get exclusive free delivery codes by signing up for Papa John's email or text alerts."
         },
         {
-            q: "What is Papa Rewards and is it worth joining?",
-            a: "Papa Rewards is Papa John's free loyalty program. You earn 1 point for every $1 spent, and 75 points converts to $10 in Papa Dough (a spending credit). Members also get a free birthday dessert and access to member-only deals. It is completely free to join and absolutely worth it for regular customers."
+            q: "What is Papa Rewards and is it worth it?",
+            a: "Papa Rewards is Papa John's free loyalty program. You earn 1 point for every $1 spent. After 75 points you get $10 in Papa Dough to spend on any order. You also get a free birthday dessert and early access to exclusive deals. For regular customers, it is absolutely worth joining."
+        },
+        {
+            q: "How do I get Papa John's app-only deals?",
+            a: "Download the Papa John's app from the App Store or Google Play. Log in, select your local store, and you'll see exclusive app-only deals tailored to your area. App deals often include bigger discounts than the main website and change regularly."
+        },
+        {
+            q: "Does Papa John's do BOGO (Buy One Get One) deals?",
+            a: "Yes! Papa John's regularly offers BOGO deals. The current BOGO deal lets you buy one large pizza at full price and get a second large pizza free using code BOGO4U. These offers are limited-time so check back often."
+        },
+        {
+            q: "What is the Papa John's carryout special?",
+            a: "Papa John's carryout deal gives you 50% off all regular menu-price pizzas when you order for carryout — regardless of size, crust, or toppings. No coupon code needed, the discount applies automatically when you select 'carryout' at checkout."
+        },
+        {
+            q: "Why is my Papa John's coupon code not working?",
+            a: "Common reasons a Papa John's code may not work: 1) The code has expired. 2) Your order doesn't meet the minimum spend requirement. 3) The code only applies to specific items. 4) You already have another promo applied (only one per order). 5) Typo in the code — always copy-paste. Check the terms on each coupon carefully."
+        },
+        {
+            q: "Does Papa John's offer a student or military discount?",
+            a: "Papa John's offers a military discount at participating locations — availability and discount amount vary by store. There is no official nationwide student discount, but you can sign up for Papa John's text alerts (text JOIN to 47272) to receive exclusive discounts not available elsewhere."
+        },
+        {
+            q: "Can I use Papa John's promo codes on third-party delivery apps?",
+            a: "No. Papa John's promo codes can only be applied when ordering directly through PapaJohns.com or the official Papa John's app. If you order through DoorDash, Grubhub or Uber Eats, Papa John's promo codes will not work. Order directly for the best prices and full access to deals."
         }
     ];
 
@@ -152,6 +198,17 @@ export default function CouponsPage() {
                 }
             },
             {
+                "@type": "Organization",
+                "name": "Papa John's Pizza",
+                "url": "https://www.papajohns.com",
+                "logo": "https://papajohns-menus.us/papajohns-logo.png",
+                "sameAs": [
+                    "https://www.facebook.com/papajohns",
+                    "https://twitter.com/papajohns",
+                    "https://www.instagram.com/papajohns"
+                ]
+            },
+            {
                 "@type": "ItemList",
                 "name": "Papa John's Coupon Codes April 2026",
                 "description": "Active Papa John's promo codes and deals",
@@ -167,6 +224,17 @@ export default function CouponsPage() {
                         "validThrough": "2026-04-30",
                         "url": "https://www.papajohns.com",
                         "seller": { "@type": "Organization", "name": "Papa John's Pizza" }
+                    }
+                }))
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": faqs.map(faq => ({
+                    "@type": "Question",
+                    "name": faq.q,
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": faq.a
                     }
                 }))
             }
