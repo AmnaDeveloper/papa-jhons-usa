@@ -109,9 +109,17 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
                         </p>
                     </div>
 
-                    <div className="mb-10">
+                    <div className="mb-6">
                         <h2 className="text-2xl font-black uppercase text-[#1A3D17] tracking-tighter mb-2">Active Papa John's Coupon Codes</h2>
                         <p className="text-sm text-gray-500 font-medium">Click any code to copy it. Paste at checkout on PapaJohns.com or the app.</p>
+                    </div>
+
+                    {/* Disclaimer Notice */}
+                    <div className="bg-amber-50 border border-amber-200 rounded-2xl px-5 py-4 mb-8 flex gap-3 items-start">
+                        <span className="text-amber-500 text-lg mt-0.5">ℹ️</span>
+                        <p className="text-xs text-amber-800 font-medium leading-relaxed">
+                            <strong>Heads up:</strong> Papa John's promo codes are location-specific and change frequently. Enter any code at checkout to verify it works for your store. No-code deals (marked Auto-Applied) apply automatically when you select carryout or meet the minimum order — no code needed.
+                        </p>
                     </div>
 
                     {/* ── COUPON GRID ── */}
@@ -160,6 +168,9 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
                                                 Expires: {coupon.expiry}
                                             </div>
                                         </div>
+                                        <p className="text-[10px] text-gray-400 mt-3 font-medium">
+                                            ⚠️ Availability may vary by location. Enter code at checkout to verify.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
