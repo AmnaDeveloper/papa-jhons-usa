@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { 
-    Tag, 
     Check, 
     Clock, 
     Copy, 
@@ -53,7 +52,7 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
                         className="text-4xl md:text-7xl font-black uppercase tracking-tighter mb-4"
                         style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}
                     >
-                        Coupons &amp; <span className="text-[#CCEE18]">Deals</span>
+                        Papa John's <span className="text-[#CCEE18]">Coupons &amp; Promo Codes</span>
                     </h1>
                     <p className="text-lg text-white/80 font-bold max-w-2xl mx-auto tracking-wide mb-6">
                         18+ verified Papa John's coupon codes updated daily. Save up to 50% on pizzas, sides & delivery orders.
@@ -88,10 +87,10 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
 
             {/* ── BREADCRUMB ── */}
             <div className="max-w-[1200px] mx-auto px-4 py-6">
-                <nav className="flex items-center gap-2 text-[12px] font-bold text-gray-400">
+                <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-[12px] font-bold text-gray-400">
                     <Link href="/" className="hover:text-[#cc0000] transition-colors">Home</Link>
-                    <span>/</span>
-                    <span className="text-[#1A3D17]">Coupons & Deals</span>
+                    <span aria-hidden="true">/</span>
+                    <span className="text-[#1A3D17]" aria-current="page">Coupons & Deals</span>
                 </nav>
             </div>
 
@@ -261,10 +260,10 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
 
                     {/* ── FAQs ── */}
                     <section className="mb-16">
-                        <section className="mb-8">
+                        <div className="mb-8">
                             <h2 className="text-2xl font-black uppercase text-[#1A3D17] tracking-tighter">Frequently Asked Questions</h2>
                             <p className="text-sm text-gray-500 font-medium">Everything you need to know about Papa John's coupons and deals.</p>
-                        </section>
+                        </div>
                         <div className="space-y-3">
                             {faqs.map((faq, i) => (
                                 <div key={i} className="bg-white rounded-3xl border border-gray-100 overflow-hidden shadow-sm">

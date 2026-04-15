@@ -188,7 +188,8 @@ export default function CouponsPage() {
                 "name": "Papa John's Coupons & Promo Codes April 2026",
                 "description": "18+ verified Papa John's coupon codes and promo codes for April 2026. Updated daily by our deals team.",
                 "url": "https://papajohns-menus.us/coupons",
-                "dateModified": "2026-04-15",
+                "datePublished": "2026-01-01",
+                "dateModified": new Date().toISOString().split('T')[0],
                 "breadcrumb": {
                     "@type": "BreadcrumbList",
                     "itemListElement": [
