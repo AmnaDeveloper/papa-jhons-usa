@@ -1,125 +1,185 @@
-'use client';
+import { Metadata } from 'next';
+import CouponsClient from '../../components/CouponsClient';
+import { getMonthYear } from '../../../lib/utils/date';
 
-import CouponsSection from '../../components/CouponsSection';
-import Link from 'next/link';
+export const metadata: Metadata = {
+    title: "Papa John's Coupons & Promo Codes April 2026 – Up to 50% Off | PapaJohns-Menus.us",
+    description: "Save big with 18+ verified Papa John's coupon codes for April 2026. Get 25% off, BOGO pizza deals, free delivery codes & carryout specials — updated daily by our deals team.",
+    alternates: {
+        canonical: "https://papajohns-menus.us/coupons"
+    }
+};
 
 export default function CouponsPage() {
-    const faqSchema = {
+    const month = getMonthYear();
+
+    const coupons = [
+        {
+            id: 1,
+            discount: "BOGO",
+            sub: "Free Pizza",
+            title: "Buy One Large Pizza, Get One FREE",
+            desc: "Buy any large pizza at full menu price and get a second large pizza absolutely free. Works on all sizes and crusts.",
+            code: "BOGO4U",
+            expiry: "April 30, 2026",
+            tags: ["Popular", "Online + App"],
+            featured: true
+        },
+        {
+            id: 2,
+            discount: "25%",
+            sub: "OFF",
+            title: "25% Off Your Entire Order",
+            desc: "Apply this code at checkout to get 25% off your entire Papa John's order. Works on pizzas, sides, desserts and drinks.",
+            code: "PIZZA25",
+            expiry: "April 30, 2026",
+            tags: ["Sitewide"],
+            featured: false
+        },
+        {
+            id: 3,
+            discount: "50%",
+            sub: "Carryout",
+            title: "50% Off All Pizzas — Carryout Only",
+            desc: "Get 50% off all regular menu-priced pizzas when you order carryout. Any size, any crust, any toppings. Discount applied automatically — no code needed.",
+            code: null,
+            noCodeLabel: "Auto-Applied",
+            expiry: "Ongoing deal",
+            tags: ["Carryout Only"],
+            featured: false,
+            color: "green"
+        },
+        {
+            id: 4,
+            discount: "$10",
+            sub: "OFF $40+",
+            title: "$10 Off Orders of $40 or More",
+            desc: "Save $10 on any order over $40. Perfect for family meal nights or group orders. Works on delivery and carryout.",
+            code: "SAVE10",
+            expiry: "April 30, 2026",
+            tags: ["Min. Spend $40"],
+            featured: false
+        },
+        {
+            id: 5,
+            discount: "20%",
+            sub: "OFF",
+            title: "20% Off Full Menu-Priced Orders",
+            desc: "Take 20% off your full menu-priced order. Excludes promotional or already-discounted items.",
+            code: "PIZZA20",
+            expiry: "April 30, 2026",
+            tags: ["Online Only"],
+            featured: false
+        },
+        {
+            id: 6,
+            discount: "FREE",
+            sub: "Delivery",
+            title: "Free Delivery on Orders $40+",
+            desc: "Free delivery automatically applied on all orders of $40 or more. Standard delivery fee is $3.99–$5.99. No code needed.",
+            code: null,
+            noCodeLabel: "Auto-Applied",
+            expiry: "Ongoing",
+            tags: ["Delivery"],
+            featured: false,
+            color: "green"
+        },
+        {
+            id: 7,
+            discount: "$7.99",
+            sub: "Large Pizza",
+            title: "Large 1-Topping Pizza for $7.99 — Carryout",
+            desc: "Order any large 1-topping pizza for just $7.99 on carryout. That's about 50% off the regular price. Select from deals menu at checkout.",
+            code: null,
+            noCodeLabel: "Select in Cart",
+            expiry: "Limited time",
+            tags: ["Carryout Only"],
+            featured: false,
+            color: "green"
+        },
+        {
+            id: 8,
+            discount: "30%",
+            sub: "OFF",
+            title: "30% Off Sitewide",
+            desc: "Save 30% on your entire order — one of the biggest sitewide discounts available. Apply at checkout before paying.",
+            code: "HOTEL25",
+            expiry: "April 30, 2026",
+            tags: ["Min. Spend $30"],
+            featured: false
+        }
+    ];
+
+    const faqs = [
+        {
+            q: "How do I use a Papa John's promo code?",
+            a: "Go to PapaJohns.com or the app, add items to your cart, and proceed to checkout. Find the 'Promo Code' or 'Coupon Code' field at the top of the checkout page, enter your code, and click 'Apply'. The discount is deducted from your total before payment."
+        },
+        {
+            q: "Can I use multiple Papa John's coupon codes?",
+            a: "No — Papa John's only allows one promo code per order. Choose the code that gives you the highest savings. However, you can use a promo code together with Papa Rewards Papa Dough on most orders, which is effectively combining two discounts."
+        },
+        {
+            q: "What is the best Papa John's coupon code right now?",
+            a: "For April 2026, the best codes are: BOGO4U (buy one large pizza, get one free), PIZZA25 (25% off entire order), and HOTEL25 (30% off with a minimum spend). The no-code 50% carryout deal is also outstanding if you can pick up your order."
+        },
+        {
+            q: "Does Papa John's have a free delivery code?",
+            a: "Yes — free delivery is automatically applied on orders of $40 or more. The standard delivery fee is $3.99–$5.99. You can also receive exclusive free delivery promo codes by signing up for Papa John's email newsletter or text alerts (text JOIN to 47272)."
+        },
+        {
+            q: "What is Papa Rewards and is it worth joining?",
+            a: "Papa Rewards is Papa John's free loyalty program. You earn 1 point for every $1 spent, and 75 points converts to $10 in Papa Dough (a spending credit). Members also get a free birthday dessert and access to member-only deals. It is completely free to join and absolutely worth it for regular customers."
+        }
+    ];
+
+    const schemas = {
         "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
+        "@graph": [
             {
-                "@type": "Question",
-                "name": "How do I use a Papa Johns promo code?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "To use a Papa Johns promo code, enter the code in the 'Promo Code' box at checkout on the Papa Johns website or app. Click 'Apply' to see your discount reflected in the order total before completing your purchase."
+                "@type": "WebPage",
+                "@id": "https://papajohns-menus.us/coupons",
+                "name": "Papa John's Coupons & Promo Codes April 2026",
+                "description": "18+ verified Papa John's coupon codes and promo codes for April 2026. Updated daily by our deals team.",
+                "url": "https://papajohns-menus.us/coupons",
+                "dateModified": "2026-04-15",
+                "breadcrumb": {
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://papajohns-menus.us" },
+                        { "@type": "ListItem", "position": 2, "name": "Coupons & Deals", "item": "https://papajohns-menus.us/coupons" }
+                    ]
                 }
             },
             {
-                "@type": "Question",
-                "name": "Does Papa Johns offer any buy-one-get-one-free (BOGO) deals?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, Papa Johns frequently offers BOGO deals on large and extra-large pizzas. These deals are typically available through specific promo codes or as part of local store specials. Check the 'Specials' tab on the Papa Johns app for current BOGO offers."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Are there any current Papa Johns coupons for free delivery?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Free delivery coupons are occasionally offered to Papa Rewards members and through the Papa Johns mobile app. You can also get free delivery by reaching a certain order minimum at participating locations or by using accumulated Papa Rewards points."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Where can I find the best Papa Johns specials near me?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "The best way to find local specials is to enter your delivery address on the Papa Johns website or app. This will show you all deals, coupons, and 'Papa Pairings' specifically available at the store serving your neighborhood."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Can I use multiple promo codes on one Papa Johns order?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Generally, Papa Johns allows only one promo code per order. However, you can often combine a promo code discount with earned Papa Rewards 'Papa Dough' for maximum savings on a single transaction."
-                }
+                "@type": "ItemList",
+                "name": "Papa John's Coupon Codes April 2026",
+                "description": "Active Papa John's promo codes and deals",
+                "itemListElement": coupons.map((c, i) => ({
+                    "@type": "ListItem",
+                    "position": i + 1,
+                    "item": {
+                        "@type": "Offer",
+                        "name": c.title,
+                        "description": c.desc,
+                        "couponCode": c.code || undefined,
+                        "validFrom": "2026-04-01",
+                        "validThrough": "2026-04-30",
+                        "url": "https://www.papajohns.com",
+                        "seller": { "@type": "Organization", "name": "Papa John's Pizza" }
+                    }
+                }))
             }
         ]
     };
 
     return (
-        <div className="bg-[#fcfaf8] min-h-screen font-sans pb-20">
+        <>
             <script
                 type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas) }}
             />
-
-            {/* ── HERO BANNER ── */}
-            <div className="bg-[#1A3D17] border-b-8 border-[#cc0000] text-white py-16 md:py-24 text-center relative overflow-hidden mb-0">
-                <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#CCEE18] rounded-full -mr-64 -mt-64 opacity-5 pointer-events-none"></div>
-                <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-[#cc0000] rounded-full -ml-40 -mb-40 opacity-5 pointer-events-none"></div>
-                <div className="container mx-auto px-4 relative z-10">
-                    <span className="inline-block bg-[#CCEE18] text-[#1A3D17] font-black uppercase tracking-[0.4em] text-[10px] px-6 py-2.5 rounded-full mb-6 shadow-lg">
-                        Verified &amp; Updated Daily
-                    </span>
-                    <h1
-                        className="text-4xl md:text-7xl font-black uppercase tracking-tighter mb-4"
-                        style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}
-                    >
-                        Papa John's <span className="text-[#CCEE18]">Promo Codes</span>
-                    </h1>
-                    <p className="text-lg md:text-xl text-white/80 font-bold max-w-3xl mx-auto leading-relaxed">
-                        Find the latest verified <strong className="text-[#CCEE18]">Papa John's coupons</strong> and{' '}
-                        <strong className="text-[#CCEE18]">pizza deals</strong> for 2026. Save on{' '}
-                        <Link href="/posts/classic-pizzas" className="text-[#CCEE18] underline hover:text-white transition-colors">
-                            Classic Pizzas
-                        </Link>
-                        ,{' '}
-                        <Link href="/posts/sides" className="text-[#CCEE18] underline hover:text-white transition-colors">
-                            Sides &amp; Dips
-                        </Link>
-                        , and full delivery orders — straight from America's #1 pizza chain. Use our exclusive{' '}
-                        <Link href="/papa-johns-rewards" className="text-[#CCEE18] underline hover:text-white transition-colors">
-                            Papa Rewards®
-                        </Link>{' '}
-                        program or apply a promo code directly at{' '}
-                        <a
-                            href="https://www.papajohns.com/coupons/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-[#CCEE18] underline hover:text-white transition-colors"
-                        >
-                            checkout
-                        </a>{' '}
-                        for instant savings on every order!
-                    </p>
-
-                    {/* Quick links */}
-                    <div className="flex flex-wrap justify-center gap-3 mt-10">
-                        {[
-                            { label: 'View Full Menu', href: '/menus-prices' },
-                            { label: 'Papa Rewards', href: '/papa-johns-rewards' },
-                            { label: 'Find a Store', href: '/store-locator' },
-                            { label: 'Store Hours', href: '/hours' },
-                        ].map((link) => (
-                            <Link
-                                key={link.href}
-                                href={link.href}
-                                className="bg-white/10 hover:bg-[#CCEE18] hover:text-[#1A3D17] text-white font-black uppercase tracking-widest text-[10px] px-5 py-2 rounded-full transition-all border border-white/20 hover:border-[#CCEE18]"
-                            >
-                                {link.label}
-                            </Link>
-                        ))}
-                    </div>
-                </div>
-            </div>
-
-            {/* ── ACTUAL COUPONS SECTION (same as home page) ── */}
-            <CouponsSection />
-        </div>
+            <CouponsClient month={month} coupons={coupons} faqs={faqs} />
+        </>
     );
 }
