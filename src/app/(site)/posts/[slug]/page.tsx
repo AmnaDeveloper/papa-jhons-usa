@@ -72,6 +72,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
                 title: `Papa Johns Garlic Knots (${month}): Price, Calories & Dipping Guide`,
                 description: `Papa Johns Garlic Knots guide updated ${date}. Order of 8 for $6.99, 110 calories per knot, side-by-side breadstick comparison & top 5 dipping sauces ranked.`,
             };
+        case 'papa-johns-vs-dominos':
+            return {
+                title: `Papa Johns vs Dominos (${month}): Which Pizza Chain Is Actually Better?`,
+                description: `Papa Johns vs Dominos comparison updated ${date}. We compare crust, sauce, price, delivery speed, app experience & rewards.`,
+            };
         default:
             return generateArticleSEO(
                 post.title,
