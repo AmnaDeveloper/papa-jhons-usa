@@ -244,11 +244,11 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                                 <div className="absolute top-5 right-5 z-10 bg-[#cc0000] text-white text-[10px] font-black uppercase tracking-widest px-4 py-2 rounded-full shadow-lg">
                                     New
                                 </div>
-                                <div className="relative w-full h-[350px] lg:h-[550px] rounded-3xl overflow-hidden shadow-inner border border-gray-100 text-center bg-gray-50">
+                                <div className="relative w-full h-auto rounded-3xl overflow-hidden shadow-inner border border-gray-100 text-center bg-gray-50">
                                     <img 
                                         src={post.image || '/logo.png'} 
                                         alt={post.imageAlt || post.title}
-                                        className="inline-block w-full h-full object-contain group-hover:scale-105 transition-transform duration-700"
+                                        className="inline-block w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/5 to-transparent pointer-events-none"></div>
                                 </div>
