@@ -360,5 +360,51 @@
         }
       }
     ]
+  },
+  "papa-johns-spicy-italian-pizza": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is on the Papa Johns Spicy Italian Pizza?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Spicy Italian Pizza is loaded with a three meat combination of spicy Italian sausage, salami, and pepperoni, served over Papa Johns original tomato sauce and 100% real mozzarella cheese."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Papa Johns Spicy Italian Pizza very spicy?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It has a moderate kick. The heat primarily comes from the spicy Italian sausage and the pepperoni. On a scale of 1 10, most customers rate it at a 4 5 for spice level."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many calories are in a slice of Spicy Italian Pizza?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A slice of a large Spicy Italian Pizza on original crust contains approximately 380 calories. A small slice is around 240 calories, while a medium slice is 260 calories."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the best crust for the Spicy Italian Pizza?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Original Hand Tossed crust is the best choice as it provides a sturdy base for the heavy meat toppings. However, the Epic Stuffed Crust is a popular upgrade for those who want a cheesier finish."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does the Spicy Italian Pizza cost at Papa Johns?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Prices start at $13.99 for a small and go up to $20.99 for an extra large. A large typically costs $18.99. You can often find it for $14.99 during specialty pizza promotions."
+        }
+      }
+    ]
   }
 }

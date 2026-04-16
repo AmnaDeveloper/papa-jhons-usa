@@ -102,6 +102,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
                 title: `Papa Johns Stuffed Crust Pizza: Price, Calories & Review (${month})`,
                 description: `Everything about Papa Johns Stuffed Crust Pizza in ${month} — Epic vs Garlic vs Cheesy Calzone, exact prices, calories per slice, review... updated ${date}.`,
             };
+        case 'papa-johns-spicy-italian-pizza':
+            return {
+                title: `Papa Johns Spicy Italian Pizza: Price, Calories & Review 2026`,
+                description: `Full guide to Papa Johns Spicy Italian Pizza 2026 toppings, exact prices by size, calories per slice, spice level, honest review & best crust to order it on.`,
+            };
 default:
             return generateArticleSEO(
                 post.title,
