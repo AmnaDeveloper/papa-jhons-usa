@@ -201,7 +201,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                             {post.title}
                         </h1>
                         <p className="text-xl md:text-2xl font-bold text-[#CCEE18] mb-2 tracking-wide uppercase">
-                            {post.price || '$15.99'} | LAST UPDATED: MARCH 2026
+                            {post.price || '$15.99'} | LAST UPDATED: {getMonthYear().toUpperCase()}
                         </p>
                         <p className="text-gray-300 font-medium mb-8 max-w-2xl mx-auto italic">
                             {post.excerpt}
