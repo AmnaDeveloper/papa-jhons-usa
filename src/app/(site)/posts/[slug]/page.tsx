@@ -104,8 +104,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
             };
         case 'papa-johns-spicy-italian-pizza':
             return {
-                title: `Papa Johns Spicy Italian Pizza: Price, Calories & Review 2026`,
-                description: `Full guide to Papa Johns Spicy Italian Pizza 2026 toppings, exact prices by size, calories per slice, spice level, honest review & best crust to order it on.`,
+                title: `Papa Johns Spicy Italian Pizza: Price, Calories & Review (${month})`,
+                description: `Full guide to Papa Johns Spicy Italian Pizza ${month} toppings, exact prices by size, calories per slice, spice level, honest review & best crust to order it on. Updated ${date}.`,
             };
 default:
             return generateArticleSEO(
