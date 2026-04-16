@@ -235,7 +235,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                     <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
                         
                         {/* LEFT COLUMN: STICKY SIDEBAR */}
-                        <div className="lg:w-5/12 lg:sticky lg:top-32 lg:self-start space-y-8">
+                        <div className="lg:w-[48%] lg:sticky lg:top-32 lg:self-start space-y-8">
                             {/* Product Image Card */}
                             <div className="bg-white rounded-[2rem] p-3 shadow-2xl relative border border-gray-200 overflow-hidden group">
                                 <div className="absolute top-5 left-5 z-10 bg-[#CCEE18] text-[#1A3D17] text-[10px] font-black uppercase tracking-widest px-4 py-2 rounded-full shadow-lg">
@@ -244,11 +244,11 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                                 <div className="absolute top-5 right-5 z-10 bg-[#cc0000] text-white text-[10px] font-black uppercase tracking-widest px-4 py-2 rounded-full shadow-lg">
                                     New
                                 </div>
-                                <div className="relative w-full h-[350px] lg:h-[450px] rounded-3xl overflow-hidden shadow-inner border border-gray-100 text-center">
+                                <div className="relative w-full h-[350px] lg:h-[550px] rounded-3xl overflow-hidden shadow-inner border border-gray-100 text-center bg-gray-50">
                                     <img 
                                         src={post.image || '/logo.png'} 
                                         alt={post.imageAlt || post.title}
-                                        className="inline-block w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                        className="inline-block w-full h-full object-contain group-hover:scale-105 transition-transform duration-700"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/5 to-transparent pointer-events-none"></div>
                                 </div>
@@ -303,7 +303,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                         </div>
 
                         {/* RIGHT COLUMN: MAIN ARTICLE CONTENT */}
-                        <div className="lg:w-7/12 space-y-10">
+                        <div className="lg:w-[52%] space-y-10">
                             <div>
                                 <h2 className="text-3xl font-black text-[#1A3D17] mb-4 uppercase tracking-tighter leading-tight" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
                                     {post.title}
