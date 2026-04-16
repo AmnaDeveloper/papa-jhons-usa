@@ -77,7 +77,22 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
                 title: `Papa Johns vs Dominos (${month}): Which Pizza Chain Is Actually Better?`,
                 description: `Papa Johns vs Dominos comparison updated ${date}. We compare crust, sauce, price, delivery speed, app experience & rewards.`,
             };
-        default:
+                case 'papa-johns-bbq-chicken-bacon-pizza':
+            return {
+                title: `Papa Johns BBQ Chicken Bacon Pizza (${month}): Toppings, Price, Calories & Honest Review`,
+                description: `Full guide to the sweet and smoky Papa Johns BBQ Chicken Bacon Pizza. Exact prices, calorie comparisons, ingredient breakdown, and best crus... updated ${date}.`,
+            };
+        case 'papa-johns-desserts':
+            return {
+                title: `Papa Johns Desserts Menu: Every Sweet Treat, Price & Calorie ((${month}))`,
+                description: `Discover every Papa Johns dessert in ${month}   Chocolate Chip Cookie, Double Chocolate Brownie, Cinnamon Pull Aparts & Oreo Papa Bites. Pri... updated ${date}.`,
+            };
+        case 'new-papadias-flavors-2026':
+            return {
+                title: `Papa Johns Papadias: All Flavors, Prices & Which One to Order in (${month})`,
+                description: `Our famous flatbread sandwiches just got a massive upgrade. Explore the mouth-watering Papadias flavors launching this year.... updated ${date}.`,
+            };
+default:
             return generateArticleSEO(
                 post.title,
                 post.excerpt,
