@@ -97,6 +97,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
                 title: `Papa Johns Order Online (${month}) — Delivery, Carryout & App Guide`,
                 description: `Learn exactly how to place a Papa Johns order in ${month} — online, via app, phone, or DoorDash. Compare delivery vs carryout... updated ${date}.`,
             };
+        case 'papa-johns-stuffed-crust-pizza':
+            return {
+                title: `Papa Johns Stuffed Crust Pizza: Price, Calories & Review (${month})`,
+                description: `Everything about Papa Johns Stuffed Crust Pizza in ${month} — Epic vs Garlic vs Cheesy Calzone, exact prices, calories per slice, review... updated ${date}.`,
+            };
 default:
             return generateArticleSEO(
                 post.title,
