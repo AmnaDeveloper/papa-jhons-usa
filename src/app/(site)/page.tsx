@@ -5,6 +5,8 @@ import { ArrowRight } from "lucide-react";
 import HeroSection from "../components/HeroSection";
 import RestaurantHoursSection from "../components/RestaurantHoursSection";
 import CouponsSection from "../components/CouponsSection";
+import MenuGuideSection from "../components/MenuGuideSection";
+
 
 import { generateFAQSchema } from "../lib/seo/schema"; // kept if needed elsewhere, otherwise safe to ignore
 import { getTodayFormatted, getMonthYear } from '@/lib/utils/date';
@@ -160,6 +162,8 @@ export default function Home() {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
             />
             <HeroSection />
+            <MenuGuideSection />
+
 
             {/* Complete Menu PDF Viewer — Responsive Revamp */}
             <section className="py-12 md:py-24 bg-gray-50 w-full overflow-hidden">
