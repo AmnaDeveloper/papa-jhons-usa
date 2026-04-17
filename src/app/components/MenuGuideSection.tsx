@@ -12,31 +12,32 @@ const MenuGuideSection = () => {
                     }
                     .menu-guide-container h2 { 
                         font-family: "PapaSans-Heavy", "Arial Black", sans-serif;
-                        font-size: 26px; 
+                        font-size: 28px; 
                         color: #fff; 
-                        background: #1A3D17; 
+                        background: #cc0000; 
                         padding: 15px 25px; 
                         margin: 50px 0 0; 
                         border-radius: 12px 12px 0 0;
                         text-transform: uppercase;
+                        letter-spacing: -0.02em;
                     }
                     .menu-guide-container h3 { 
                         font-family: "PapaSans-Heavy", sans-serif;
-                        font-size: 16px; 
-                        color: #cc0000; 
-                        background: #fcfaf8; 
-                        padding: 12px 25px; 
+                        font-size: 18px; 
+                        color: #1A3D17; 
+                        background: #f4f6f4; 
+                        padding: 14px 25px; 
                         margin: 0; 
-                        border-left: 6px solid #cc0000;
+                        border-left: 6px solid #1A3D17;
                         text-transform: uppercase;
-                        border-bottom: 1px solid #eee;
+                        border-bottom: 2px solid #e2e8e2;
                     }
                     .menu-guide-container .table-outer {
-                        border: 1px solid #ddd;
-                        border-radius: 0 0 12px 12px;
+                        border: 2px solid #1A3D17;
+                        border-radius: 0 0 16px 16px;
                         overflow: hidden;
-                        margin-bottom: 30px;
-                        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+                        margin-bottom: 35px;
+                        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
                     }
                     .menu-guide-container table { 
                         width: 100%; 
@@ -44,84 +45,99 @@ const MenuGuideSection = () => {
                         background: #fff;
                     }
                     .menu-guide-container thead th { 
-                        background: #333; 
-                        color: #fff; 
-                        padding: 12px 20px; 
+                        background: #1A3D17; 
+                        color: #CCEE18; 
+                        padding: 14px 20px; 
                         text-align: left; 
                         font-size: 11px;
                         text-transform: uppercase;
-                        letter-spacing: 0.05em;
-                        font-weight: bold;
+                        letter-spacing: 0.1em;
+                        font-family: "PapaSans-Heavy", sans-serif;
+                        font-weight: 900;
                     }
-                    .menu-guide-container tbody tr:nth-child(even) { background: #f9f9f9; }
-                    .menu-guide-container tbody tr:hover { background: #fff1f1; }
+                    .menu-guide-container tbody tr:nth-child(even) { background: #fcfcfc; }
+                    .menu-guide-container tbody tr:hover { background: #f4f6f4; }
                     .menu-guide-container td { 
-                        padding: 12px 20px; 
-                        border-bottom: 1px solid #eee; 
+                        padding: 14px 20px; 
+                        border-bottom: 1px solid #f0f0f0; 
                         font-size: 14px;
-                        vertical-align: top;
+                        vertical-align: middle;
+                        font-weight: 600;
                     }
                     .menu-guide-container td.price { 
-                        font-weight: bold; 
+                        font-weight: 900; 
                         color: #cc0000; 
                         white-space: nowrap; 
-                        font-size: 15px;
+                        font-size: 16px;
+                        font-family: "PapaSans-Heavy", sans-serif;
                     }
                     .menu-guide-container td.cal { 
                         color: #888; 
                         font-size: 12px; 
                         white-space: nowrap; 
+                        font-weight: 800;
                     }
                     .menu-guide-container td.desc { 
                         color: #555; 
                         font-size: 13px; 
+                        font-weight: 500;
                     }
                     .menu-guide-container .note { 
                         background: #fff8e1; 
                         border: 1px solid #ffe082; 
-                        padding: 12px 25px; 
+                        padding: 14px 25px; 
                         font-size: 13px; 
-                        color: #666; 
+                        color: #7a5f00; 
                         margin: 10px 0;
-                        border-radius: 4px;
+                        border-radius: 8px;
+                        font-weight: 700;
                     }
                     .menu-guide-header {
                         text-align: center;
                         margin-bottom: 60px;
-                        border-bottom: 3px solid #cc0000;
                         padding-bottom: 30px;
                     }
                     .menu-guide-header h1 {
                         font-family: "PapaSans-Heavy", sans-serif;
-                        font-size: 36px;
+                        font-size: clamp(32px, 5vw, 42px);
                         color: #1A3D17;
                         margin-bottom: 10px;
                         text-transform: uppercase;
+                        font-weight: 900;
+                        letter-spacing: -0.03em;
+                        line-height: 1;
+                    }
+                    .menu-guide-header p {
+                        font-family: "PapaSans-Heavy", sans-serif;
+                        font-weight: 900;
+                        color: #cc0000;
+                        text-transform: uppercase;
+                        letter-spacing: 0.1em;
+                        font-size: 13px;
                     }
                     .price-disclaimer {
                         margin-top: 60px;
                         padding: 30px;
-                        background: #f5f5f5;
-                        border-left: 5px solid #cc0000;
+                        background: #fdfdfd;
+                        border: 2px solid #f0f0f0;
                         font-size: 13px;
-                        color: #444;
+                        color: #666;
                         line-height: 1.6;
-                        border-radius: 0 8px 8px 0;
+                        border-radius: 20px;
                     }
                     @media (max-width: 768px) {
                         .menu-guide-container td, .menu-guide-container thead th {
-                            padding: 10px;
+                            padding: 12px 10px;
                             font-size: 12px;
                         }
                         .menu-guide-header h1 { font-size: 28px; }
-                        /* Optional: Make tables scrollable on small screens */
                         .table-outer { overflow-x: auto; }
                     }
                 ` }} />
 
                 <div className="menu-guide-header">
-                    <h1>Papa Johns Complete Menu with Prices 2026</h1>
-                    <p className="text-gray-500 font-bold">Last Updated: April 2026 | All prices in USD | papajohns-menus.us</p>
+                    <h1>Papa Johns Complete Menu <br/><span className="text-[#cc0000]">with Prices 2026</span></h1>
+                    <p>Last Updated: April 2026 | All prices in USD | papajohns-menus.us</p>
                 </div>
 
                 {/* 1. PIZZAS */}
@@ -301,38 +317,7 @@ const MenuGuideSection = () => {
                     </table>
                 </div>
 
-                {/* 8. DRINKS */}
-                <h2>🥤 8. Drinks Menu</h2>
-                <div className="table-outer">
-                    <table>
-                        <thead>
-                            <tr><th>Drink</th><th>Price</th><th>Size</th><th>Description</th></tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>Pepsi / Diet Pepsi</td><td className="price">$3.99</td><td className="desc">20 oz bottle</td><td className="cal">150 / 0 cal</td></tr>
-                            <tr><td>Pepsi Zero Sugar</td><td className="price">$3.99</td><td className="desc">20 oz bottle</td><td className="cal">0 cal</td></tr>
-                            <tr><td>Mountain Dew</td><td className="price">$3.99</td><td className="desc">20 oz bottle</td><td className="cal">170 cal</td></tr>
-                            <tr><td>Starry / Starry Zero</td><td className="price">$3.99 / $2.99</td><td className="desc">20 oz bottle</td><td className="cal">150 / 10 cal</td></tr>
-                            <tr><td>Aquafina Water</td><td className="price">$2.99</td><td className="desc">Bottled</td><td className="cal">0 cal</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                {/* 11. DEALS */}
-                <h2>💰 11. Current Deals & Combo Offers 2026</h2>
-                <div className="table-outer">
-                    <table>
-                        <thead>
-                            <tr><th>Deal Name</th><th>Price</th><th>What's Included</th></tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>Large 2-Topping Pizza</td><td className="price">$10.99</td><td className="desc">Order via app — large 2-topping any crust</td></tr>
-                            <tr><td>40% Off All Pizzas</td><td className="price">40% OFF</td><td className="desc">Select days via app — all regular menu pizzas</td></tr>
-                            <tr><td>Family Night Bundle</td><td className="price">~$29.99</td><td className="desc">Two large pizzas + breadsticks + 2-liter drink</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-
+                {/* disclaimer */}
                 <div className="price-disclaimer">
                     <strong>Price Disclaimer:</strong> All prices shown are average US prices for 2026. Actual prices may vary by location, city, state, and delivery vs. carryout. Prices are subject to change. Delivery fees ($3.99–$5.99) and taxes are not included. Always verify current prices at your local Papa Johns or at papajohns.com. | <strong>papajohns-menus.us is an independent fan guide — not affiliated with or endorsed by Papa John's International.</strong>
                 </div>
