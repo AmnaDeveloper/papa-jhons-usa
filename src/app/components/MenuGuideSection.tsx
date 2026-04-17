@@ -25,24 +25,22 @@ const MenuGuideSection = () => {
                         font-family: "PapaSans-Heavy", sans-serif;
                         font-size: 18px; 
                         color: #1A3D17; 
-                        background: #f4f6f4; 
+                        background: #fcfaf8; 
                         padding: 14px 25px; 
                         margin: 0; 
                         border-left: 6px solid #1A3D17;
                         text-transform: uppercase;
-                        border-bottom: 2px solid #e2e8e2;
                     }
                     .menu-guide-container .table-outer {
-                        border: 2px solid #1A3D17;
-                        border-radius: 0 0 16px 16px;
+                        border: none;
                         overflow: hidden;
                         margin-bottom: 35px;
-                        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
                     }
                     .menu-guide-container table { 
                         width: 100%; 
                         border-collapse: collapse; 
                         background: #fff;
+                        border: none;
                     }
                     .menu-guide-container thead th { 
                         background: #1A3D17; 
@@ -54,12 +52,13 @@ const MenuGuideSection = () => {
                         letter-spacing: 0.1em;
                         font-family: "PapaSans-Heavy", sans-serif;
                         font-weight: 900;
+                        border: none;
                     }
-                    .menu-guide-container tbody tr:nth-child(even) { background: #fcfcfc; }
-                    .menu-guide-container tbody tr:hover { background: #f4f6f4; }
+                    .menu-guide-container tbody tr:nth-child(even) { background: #f9f9f9; }
+                    .menu-guide-container tbody tr:hover { background: #fff1f1; }
                     .menu-guide-container td { 
                         padding: 14px 20px; 
-                        border-bottom: 1px solid #f0f0f0; 
+                        border: none; 
                         font-size: 14px;
                         vertical-align: middle;
                         font-weight: 600;
@@ -119,7 +118,7 @@ const MenuGuideSection = () => {
                         margin-top: 60px;
                         padding: 30px;
                         background: #fdfdfd;
-                        border: 2px solid #f0f0f0;
+                        border: 2px solid #eeeeee;
                         font-size: 13px;
                         color: #666;
                         line-height: 1.6;
@@ -317,7 +316,6 @@ const MenuGuideSection = () => {
                     </table>
                 </div>
 
-                {/* disclaimer */}
                 <div className="price-disclaimer">
                     <strong>Price Disclaimer:</strong> All prices shown are average US prices for 2026. Actual prices may vary by location, city, state, and delivery vs. carryout. Prices are subject to change. Delivery fees ($3.99–$5.99) and taxes are not included. Always verify current prices at your local Papa Johns or at papajohns.com. | <strong>papajohns-menus.us is an independent fan guide — not affiliated with or endorsed by Papa John's International.</strong>
                 </div>
