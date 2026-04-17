@@ -34,7 +34,9 @@ const MenuGuideSection = () => {
                     .menu-guide-container .table-outer {
                         border: none;
                         overflow: hidden;
-                        margin-bottom: 35px;
+                        margin-bottom: 40px;
+                        box-shadow: 0 10px 40px rgba(0,0,0,0.07);
+                        border-radius: 0 0 16px 16px;
                     }
                     .menu-guide-container table { 
                         width: 100%; 
@@ -54,7 +56,7 @@ const MenuGuideSection = () => {
                         font-weight: 900;
                         border: none;
                     }
-                    .menu-guide-container tbody tr:nth-child(even) { background: #f9f9f9; }
+                    .menu-guide-container tbody tr:nth-child(even) { background: #fcfcfc; }
                     .menu-guide-container tbody tr:hover { background: #fff1f1; }
                     .menu-guide-container td { 
                         padding: 14px 20px; 
