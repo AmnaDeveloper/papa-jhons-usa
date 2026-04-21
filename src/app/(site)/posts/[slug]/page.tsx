@@ -107,6 +107,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
                 title: `Papa Johns Spicy Italian Pizza: Price, Calories & Review (${month})`,
                 description: `Full guide to Papa Johns Spicy Italian Pizza ${month} toppings, exact prices by size, calories per slice, spice level, honest review & best crust to order it on. Updated ${date}.`,
             };
+        case 'papa-johns-mountain-dew':
+            return {
+                title: `Papa Johns Mountain Dew Guide 2026: Price, Calories & Pairings (${month})`,
+                description: `Discover everything about Papa Johns Mountain Dew in ${month}. Complete price list for 20 oz and 2-Liter bottles, calories, caffeine content & best pizza pairings.`,
+            };
 default:
             return generateArticleSEO(
                 post.title,
