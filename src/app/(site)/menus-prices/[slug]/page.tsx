@@ -161,6 +161,27 @@ export default async function MenuItemBlogPage({ params }: Props) {
                                         </span>
                                     </div>
                                 </Link>
+                                <Link href="/posts/papa-johns-pepsi-drink" className="mt-8 bg-white rounded-[2rem] p-6 shadow-md hover:shadow-2xl hover:border-[#CCEE18] border-2 border-dashed border-[#1A3D17]/10 transition-all duration-300 group flex flex-col relative overflow-hidden bg-gradient-to-br from-white to-[#fcfaf8]">
+                                    <div className="absolute top-0 right-0 w-32 h-32 bg-[#CCEE18] rounded-bl-full -mr-16 -mt-16 opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                                    <div className="aspect-[16/9] bg-gray-100 rounded-xl mb-6 flex items-center justify-center relative overflow-hidden shadow-inner font-sans">
+                                        <div className="absolute top-3 left-3 z-10 bg-[#cc0000] text-white text-[9px] font-black uppercase tracking-widest px-4 py-1.5 rounded-full shadow-md">
+                                            Fan Favorite
+                                        </div>
+                                        <img src="/papa-johns-pepsi.png" alt="Papa Johns Pepsi Guide" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                                    </div>
+                                    <h3 className="text-xl font-black text-[#1A3D17] uppercase leading-tight mb-2 group-hover:text-[#cc0000] transition-colors">
+                                        Papa Johns Pepsi Guide 2026
+                                    </h3>
+                                    <p className="text-gray-500 text-xs font-bold mb-4 leading-relaxed tracking-tight underline decoration-[#CCEE18] decoration-2 underline-offset-4">
+                                        Prices, Calories, Pizza Pairings & Nutrition. The complete guide to the most ordered drink at Papa Johns.
+                                    </p>
+                                    <div className="border-t border-gray-100 pt-4 flex items-center justify-between text-[#1A3D17] text-[10px] font-black uppercase tracking-widest group-hover:text-[#cc0000] transition-colors">
+                                        Read Article
+                                        <span className="bg-[#CCEE18] text-[#1A3D17] p-2 rounded-full group-hover:bg-[#cc0000] group-hover:text-white transition-colors">
+                                            <ArrowRight size={14} />
+                                        </span>
+                                    </div>
+                                </Link>
                             </div>
                         )}
                         <div className="bg-white border hover:border-[#CCEE18] transition-colors rounded-2xl p-8 shadow-sm mb-10">

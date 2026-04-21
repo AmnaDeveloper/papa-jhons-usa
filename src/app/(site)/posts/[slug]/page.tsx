@@ -112,6 +112,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
                 title: `Papa Johns Mountain Dew Guide 2026: Price, Calories & Review (${month})`,
                 description: `Discover everything about Papa Johns Mountain Dew in ${month}. Complete price list for 20 oz and 2-Liter bottles, calories, caffeine content & best pizza pairings — updated ${date}.`,
             };
+        case 'papa-johns-pepsi-drink':
+            return {
+                title: `Papa Johns Pepsi Guide 2026: Price, Calories & Review (${month})`,
+                description: `Everything you need to know about Papa Johns Pepsi in ${month}. Price list for 20 oz and 2-Liter bottles, calories, caffeine & best pizza pairings — updated ${date}.`,
+            };
 default:
             return generateArticleSEO(
                 post.title,

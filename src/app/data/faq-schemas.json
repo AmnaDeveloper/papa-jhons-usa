@@ -492,5 +492,59 @@
         }
       }
     ]
+  },
+  "papa-johns-pepsi-drink": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much is Pepsi at Papa Johns?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pepsi at Papa Johns costs $2.99 for a 20 oz bottle and $3.49 for a 2-Liter bottle in 2026. Prices may vary by up to $0.50 depending on your region. Third-party delivery apps like DoorDash and Uber Eats charge slightly more than ordering directly through papajohns.com."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many calories in Papa Johns Pepsi?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A 20 oz bottle of Pepsi at Papa Johns contains 250 calories. Per 12 oz serving, Pepsi has 150 calories and 41g of sugar. For zero-calorie options, Papa Johns carries Diet Pepsi and Pepsi Zero Sugar."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Papa Johns have Pepsi or Coke?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Papa Johns exclusively serves Pepsi products. Papa Johns is an official PepsiCo partner and does not carry Coca-Cola, Sprite, or Fanta at any US location. This partnership began in 2019."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Papa Johns Pepsi have caffeine?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Pepsi at Papa Johns contains 38mg of caffeine per 12 oz, or approximately 63mg in a 20 oz bottle. This is similar to Diet Pepsi (36mg) but less than Mountain Dew (55mg)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What sizes does Papa Johns Pepsi come in?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Papa Johns carries Pepsi in two sizes: 20 oz bottle ($2.99) and 2-Liter bottle ($3.49). The 2-Liter yields approximately 5–6 standard 12 oz servings."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What pizza goes best with Pepsi at Papa Johns?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pepsi pairs best with meat-topped and cheese-heavy pizzas like Pepperoni Pizza, The Works, and The Meats. The caramel sweetness and carbonation cut through the savory richness effectively."
+        }
+      }
+    ]
   }
 }
