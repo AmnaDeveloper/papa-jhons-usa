@@ -140,7 +140,7 @@ export default async function MenuItemBlogPage({ params }: Props) {
 
                         {slug === 'drinks' && (
                             <div className="mt-0 mb-10">
-                                <Link href="/posts/papa-johns-mountain-dew" className="bg-white rounded-[2rem] p-6 shadow-md hover:shadow-2xl hover:border-[#CCEE18] border-2 border-dashed border-[#1A3D17]/10 transition-all duration-300 group flex flex-col relative overflow-hidden bg-gradient-to-br from-white to-[#fcfaf8]">
+                                <Link href="/posts/papa-johns-mountain-dew-drink" className="bg-white rounded-[2rem] p-6 shadow-md hover:shadow-2xl hover:border-[#CCEE18] border-2 border-dashed border-[#1A3D17]/10 transition-all duration-300 group flex flex-col relative overflow-hidden bg-gradient-to-br from-white to-[#fcfaf8]">
                                     <div className="absolute top-0 right-0 w-32 h-32 bg-[#CCEE18] rounded-bl-full -mr-16 -mt-16 opacity-0 group-hover:opacity-10 transition-opacity"></div>
                                     <div className="aspect-[16/9] bg-gray-100 rounded-xl mb-6 flex items-center justify-center relative overflow-hidden shadow-inner font-sans">
                                         <div className="absolute top-3 left-3 z-10 bg-[#cc0000] text-white text-[9px] font-black uppercase tracking-widest px-4 py-1.5 rounded-full shadow-md">
