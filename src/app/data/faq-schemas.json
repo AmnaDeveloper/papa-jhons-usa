@@ -406,5 +406,91 @@
         }
       }
     ]
+  },
+  "papa-johns-mountain-dew-drink": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much is Mountain Dew at Papa Johns?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Mountain Dew at Papa Johns costs $2.99 for a 20 oz bottle and $3.49 for a 2-Liter bottle in 2026. Prices may vary by up to $0.50 depending on your region. Third-party delivery apps like DoorDash and Uber Eats charge slightly more than ordering directly through papajohns.com."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many calories in Papa Johns Mountain Dew?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A 20 oz bottle of Mountain Dew at Papa Johns contains 290 calories. Per 12 oz serving, Mountain Dew has 170 calories, 46g of sugar, and 55mg of caffeine."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Papa Johns Mountain Dew have caffeine?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Mountain Dew at Papa Johns contains approximately 55mg of caffeine per 12 oz, or roughly 91mg in a 20 oz bottle. This is higher than regular Pepsi (38mg per 12 oz). Mountain Dew Zero Sugar contains even more caffeine at 68mg per 12 oz."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Papa Johns have Mountain Dew Zero Sugar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Mountain Dew Zero Sugar is available at Papa Johns for $2.99 for a 20 oz bottle. It has 0 calories, 0g sugar, and uses sucralose and acesulfame potassium as sweeteners. Note that Mountain Dew Zero Sugar contains slightly more caffeine (68mg per 12 oz) than regular Mountain Dew (55mg per 12 oz)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What size Mountain Dew does Papa Johns have?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Papa Johns carries Mountain Dew in two sizes: 20 oz bottle for $2.99 and 2-Liter bottle for $3.49. The 2-Liter provides approximately 5 to 6 servings of 12 oz and is the best value for orders feeding 3 or more people."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What pizza goes best with Mountain Dew at Papa Johns?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Mountain Dew pairs best with spicy and bold-flavored pizzas. The Fiery Buffalo Chicken Pizza, Pepperoni Pizza, and spicy wing orders are the top pairings. The citrus acids in Mountain Dew provide contrast to capsaicin heat, resetting your palate between bites. For milder or veggie-based pizzas, Pepsi or Aquafina are better choices."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I order just Mountain Dew from Papa Johns without food?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Papa Johns allows standalone drink orders via their website, app, and delivery partners like DoorDash and Uber Eats. You can order Mountain Dew without adding any food items to your cart, though delivery fees still apply."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Mountain Dew gluten-free and vegan at Papa Johns?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes on both counts. Mountain Dew contains no gluten-containing ingredients and no animal-derived ingredients. It is suitable for customers with celiac disease, gluten sensitivity, or vegan diets."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Mountain Dew the most popular drink at Papa Johns?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pepsi is the highest-volume drink at Papa Johns nationally. However, Mountain Dew has a dedicated fan base particularly among customers who order spicy or meat-heavy pizzas. The 2025 Papa Johns x Mountain Dew Cini Dirty Soda collaboration demonstrated the strong cultural connection between this drink and the Papa Johns brand."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Papa Johns still have Mountain Dew in 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Mountain Dew is a permanent item on the Papa Johns drinks menu in 2026 and is available at all US locations. Papa Johns is an official PepsiCo partner, which means Mountain Dew is part of the standard national menu alongside Pepsi, Diet Pepsi, Starry, and Aquafina."
+        }
+      }
+    ]
   }
 }
