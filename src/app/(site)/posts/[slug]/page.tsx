@@ -114,8 +114,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
             };
         case 'papa-johns-pepsi-drink':
             return {
-                title: `Papa Johns Pepsi Guide 2026: Price, Calories & Review (${month})`,
-                description: `Everything you need to know about Papa Johns Pepsi in ${month}. Price list for 20 oz and 2-Liter bottles, calories, caffeine & best pizza pairings — updated ${date}.`,
+                title: `Papa Johns Pepsi Price 2026: $2.99 | Calories, Sizes & Review (${month})`,
+                description: `Papa Johns Pepsi costs $2.99 (20oz) or $3.49-$3.99 (2L) in 2026. Full nutrition facts, 250 calories, caffeine content, allergen info, and best pizza pairings. Updated ${date}.`,
             };
 default:
             return generateArticleSEO(
