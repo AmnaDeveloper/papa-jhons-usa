@@ -554,5 +554,43 @@
         }
       }
     ]
+  },
+  "papa-johns-papadias-discontinued-2026": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Are Papa Johns Papadias discontinued in 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Papa Johns officially announced on February 27, 2026 that Papadias would be discontinued in Q2 2026. The removal began rolling out from March 2026 onwards alongside the launch of the new Oven-Toasted Sandwiches."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why did Papa Johns discontinue Papadias?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Papa Johns discontinued Papadias for three main reasons: (1) they disrupted kitchen operations and slowed down pizza orders, (2) the company needed menu simplification as part of its 2026 transformation plan, and (3) the brand was cutting costs while closing 300 underperforming stores."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What replaced Papadias at Papa Johns?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Papa Johns launched three new Oven-Toasted Sandwiches in March 2026 as the replacement: Philly Cheesesteak, Chicken Bacon Ranch, and Steak & Mushroom. These are served on ciabatta bread at $7.99 each."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much did Papadias cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Papadias were originally priced at $6 when launched in 2020. By 2024-2026, the price had increased to $8.99. A Parmesan Crust upgrade was available for an additional $1."
+        }
+      }
+    ]
   }
 }

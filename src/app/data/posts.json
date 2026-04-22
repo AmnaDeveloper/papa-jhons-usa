@@ -13,7 +13,56 @@
         "tags": [
             "Papadias",
             "Discontinued"
-        ]
+        ],
+        "faqs": [
+            {
+                "question": "Are Papa Johns Papadias discontinued in 2026?",
+                "answer": "Yes. Papa Johns officially announced on February 27, 2026 that Papadias would be discontinued in Q2 2026. The removal began rolling out from March 2026 onwards."
+            },
+            {
+                "question": "Why did Papa Johns discontinue Papadias?",
+                "answer": "They were discontinued to simplify kitchen operations, improve service speed, and focus on core pizza products. CEO Todd Penegor noted that Papadias disrupted the kitchen rhythm during peak times."
+            },
+            {
+                "question": "What replaced Papadias at Papa Johns?",
+                "answer": "They were replaced by three new Oven-Toasted Sandwiches: Philly Cheesesteak, Chicken Bacon Ranch, and Steak & Mushroom, all served on ciabatta bread."
+            },
+            {
+                "question": "How much did Papadias cost?",
+                "answer": "Papadias were originally priced at $6 in 2020 and increased to $7.99–$8.99 by 2026."
+            }
+        ],
+        "pricing": [
+            {
+                "item": "Philly Cheesesteak Sandwich",
+                "price": "$7.99",
+                "calories": "750 cal",
+                "icon": "🥖",
+                "popular": true
+            },
+            {
+                "item": "Chicken Bacon Ranch Sandwich",
+                "price": "$7.99",
+                "calories": "820 cal",
+                "icon": "🥓"
+            },
+            {
+                "item": "Steak & Mushroom Sandwich",
+                "price": "$7.99",
+                "calories": "780 cal",
+                "icon": "🍄"
+            },
+            {
+                "item": "Papa Pairings Deal (2+ items)",
+                "price": "$6.99 ea",
+                "calories": "Varies",
+                "icon": "🎯",
+                "popular": true
+            }
+        ],
+        "rating": 4.9,
+        "calories": "750 - 820 kcal",
+        "price": "$7.99"
     },
     {
         "id": 13,

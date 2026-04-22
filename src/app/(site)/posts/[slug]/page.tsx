@@ -117,6 +117,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
                 title: `Papa Johns Pepsi Price 2026: $2.99 | Calories, Sizes & Review (${month})`,
                 description: `Papa Johns Pepsi costs $2.99 (20oz) or $3.49-$3.99 (2L) in 2026. Full nutrition facts, 250 calories, caffeine content, allergen info, and best pizza pairings. Updated ${date}.`,
             };
+        case 'papa-johns-papadias-discontinued-2026':
+            return {
+                title: `PAPA JOHNS PAPADIAS DISCONTINUED 2026: Why They Were Removed & Fan Reactions (${month})`,
+                description: `Papa Johns discontinued Papadias in ${month} 2026. Discover why they were removed, what replaced them, and fan reactions — updated ${date}.`,
+            };
 default:
             return generateArticleSEO(
                 post.title,
