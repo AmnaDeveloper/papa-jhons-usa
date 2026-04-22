@@ -544,6 +544,14 @@
           "@type": "Answer",
           "text": "Pepsi pairs best with meat-topped and cheese-heavy pizzas like Pepperoni Pizza, The Works, and The Meats. The caramel sweetness and carbonation cut through the savory richness effectively."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I order just Pepsi from Papa Johns without food?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Papa Johns allows standalone drink orders via their website, app, and delivery partners like DoorDash and Uber Eats. You can order Pepsi without adding any food items to your cart, though delivery fees still apply. Ordering directly through papajohns.com or the Papa Johns app is recommended to earn Papa Rewards points."
+        }
       }
     ]
   }

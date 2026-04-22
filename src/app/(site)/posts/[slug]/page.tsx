@@ -454,38 +454,77 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                             <p className="text-gray-400 font-bold text-sm">Discover other delicious options in this category</p>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                            <Link href="/posts/classic-pizzas" className="bg-white rounded-[2rem] p-6 shadow-md border hover:border-[#CCEE18] transition-all group hover:shadow-xl">
-                                <div className="aspect-video bg-gray-100 rounded-xl mb-4 overflow-hidden relative">
-                                    <img src="/best-pizza-delivery-near-me.jpg" alt="Classic Pizzas" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                                </div>
-                                <h4 className="font-black text-[#1A3D17] uppercase text-xl mb-2">Classic Pizzas</h4>
-                                <div className="flex justify-between items-center text-sm font-bold text-gray-500">
-                                    <span>From $10.99</span>
-                                    <span className="text-[#cc0000] flex items-center gap-1">View Details <ArrowRight size={14} /></span>
-                                </div>
-                            </Link>
+                            {post.category === 'Drinks' ? (
+                                <>
+                                    <Link href="/posts/papa-johns-mountain-dew-drink" className="bg-white rounded-[2rem] p-6 shadow-md border hover:border-[#CCEE18] transition-all group hover:shadow-xl">
+                                        <div className="aspect-video bg-gray-100 rounded-xl mb-4 overflow-hidden relative">
+                                            <img src="/papa-johns-mountain-dew.png" alt="Papa Johns Mountain Dew Price and Calories 2026" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                        </div>
+                                        <h4 className="font-black text-[#1A3D17] uppercase text-xl mb-2">Mountain Dew</h4>
+                                        <div className="flex justify-between items-center text-sm font-bold text-gray-500">
+                                            <span>From $2.99</span>
+                                            <span className="text-[#cc0000] flex items-center gap-1">View Details <ArrowRight size={14} /></span>
+                                        </div>
+                                    </Link>
 
-                            <Link href="/posts/super-loaded" className="bg-white rounded-[2rem] p-6 shadow-md border hover:border-[#CCEE18] transition-all group hover:shadow-xl">
-                                <div className="aspect-video bg-gray-100 rounded-xl mb-4 overflow-hidden relative">
-                                    <img src="/papa-johns-menu-prices-guide.png" alt="Super Loaded Pizzas" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                                </div>
-                                <h4 className="font-black text-[#1A3D17] uppercase text-xl mb-2">Super Loaded</h4>
-                                <div className="flex justify-between items-center text-sm font-bold text-gray-500">
-                                    <span>From $15.99</span>
-                                    <span className="text-[#cc0000] flex items-center gap-1">View Details <ArrowRight size={14} /></span>
-                                </div>
-                            </Link>
-                            
-                            <Link href="/posts/sides" className="bg-white rounded-[2rem] p-6 shadow-md border hover:border-[#CCEE18] transition-all group hover:shadow-xl">
-                                <div className="aspect-video bg-gray-100 rounded-xl mb-4 overflow-hidden relative">
-                                    <img src="/new-papadias-flavors-2026.jpg" alt="Sides and Dips" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                                </div>
-                                <h4 className="font-black text-[#1A3D17] uppercase text-xl mb-2">Sides & Dips</h4>
-                                <div className="flex justify-between items-center text-sm font-bold text-gray-500">
-                                    <span>From $4.99</span>
-                                    <span className="text-[#cc0000] flex items-center gap-1">View Details <ArrowRight size={14} /></span>
-                                </div>
-                            </Link>
+                                    <Link href="/menus-prices/drinks" className="bg-white rounded-[2rem] p-6 shadow-md border hover:border-[#CCEE18] transition-all group hover:shadow-xl">
+                                        <div className="aspect-video bg-gray-100 rounded-xl mb-4 overflow-hidden relative">
+                                            <img src="/papa-johns-drinks-menu.png" alt="Papa Johns Drinks Menu 2026 all beverages" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                        </div>
+                                        <h4 className="font-black text-[#1A3D17] uppercase text-xl mb-2">All Drinks Menu</h4>
+                                        <div className="flex justify-between items-center text-sm font-bold text-gray-500">
+                                            <span>From $2.99</span>
+                                            <span className="text-[#cc0000] flex items-center gap-1">View Details <ArrowRight size={14} /></span>
+                                        </div>
+                                    </Link>
+
+                                    <Link href="/posts/classic-pizzas" className="bg-white rounded-[2rem] p-6 shadow-md border hover:border-[#CCEE18] transition-all group hover:shadow-xl">
+                                        <div className="aspect-video bg-gray-100 rounded-xl mb-4 overflow-hidden relative">
+                                            <img src="/best-pizza-delivery-near-me.jpg" alt="Papa Johns Classic Pizzas to pair with drinks" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                        </div>
+                                        <h4 className="font-black text-[#1A3D17] uppercase text-xl mb-2">Classic Pizzas</h4>
+                                        <div className="flex justify-between items-center text-sm font-bold text-gray-500">
+                                            <span>From $10.99</span>
+                                            <span className="text-[#cc0000] flex items-center gap-1">View Details <ArrowRight size={14} /></span>
+                                        </div>
+                                    </Link>
+                                </>
+                            ) : (
+                                <>
+                                    <Link href="/posts/classic-pizzas" className="bg-white rounded-[2rem] p-6 shadow-md border hover:border-[#CCEE18] transition-all group hover:shadow-xl">
+                                        <div className="aspect-video bg-gray-100 rounded-xl mb-4 overflow-hidden relative">
+                                            <img src="/best-pizza-delivery-near-me.jpg" alt="Classic Pizzas" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                        </div>
+                                        <h4 className="font-black text-[#1A3D17] uppercase text-xl mb-2">Classic Pizzas</h4>
+                                        <div className="flex justify-between items-center text-sm font-bold text-gray-500">
+                                            <span>From $10.99</span>
+                                            <span className="text-[#cc0000] flex items-center gap-1">View Details <ArrowRight size={14} /></span>
+                                        </div>
+                                    </Link>
+
+                                    <Link href="/posts/super-loaded" className="bg-white rounded-[2rem] p-6 shadow-md border hover:border-[#CCEE18] transition-all group hover:shadow-xl">
+                                        <div className="aspect-video bg-gray-100 rounded-xl mb-4 overflow-hidden relative">
+                                            <img src="/papa-johns-menu-prices-guide.png" alt="Super Loaded Pizzas" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                        </div>
+                                        <h4 className="font-black text-[#1A3D17] uppercase text-xl mb-2">Super Loaded</h4>
+                                        <div className="flex justify-between items-center text-sm font-bold text-gray-500">
+                                            <span>From $15.99</span>
+                                            <span className="text-[#cc0000] flex items-center gap-1">View Details <ArrowRight size={14} /></span>
+                                        </div>
+                                    </Link>
+                                    
+                                    <Link href="/posts/sides" className="bg-white rounded-[2rem] p-6 shadow-md border hover:border-[#CCEE18] transition-all group hover:shadow-xl">
+                                        <div className="aspect-video bg-gray-100 rounded-xl mb-4 overflow-hidden relative">
+                                            <img src="/new-papadias-flavors-2026.jpg" alt="Sides and Dips" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                        </div>
+                                        <h4 className="font-black text-[#1A3D17] uppercase text-xl mb-2">Sides & Dips</h4>
+                                        <div className="flex justify-between items-center text-sm font-bold text-gray-500">
+                                            <span>From $4.99</span>
+                                            <span className="text-[#cc0000] flex items-center gap-1">View Details <ArrowRight size={14} /></span>
+                                        </div>
+                                    </Link>
+                                </>
+                            )}
                         </div>
                     </div>
 
