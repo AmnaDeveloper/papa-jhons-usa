@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import AutoDateUpdater from "../components/AutoDateUpdater";
+import Script from "next/script";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -51,6 +53,7 @@ export const metadata: Metadata = {
     google: "BA_YyQGxZ_qvZBAEzi1HZl1jEGLKpUMuucXxvFAc4jM",
   },
 };
+
 
 export default function RootLayout({
   children,
@@ -131,6 +134,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3533142117898792"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
         {/* ── LCP CRITICAL: Preload hero image with highest priority ── */}
         <link
           rel="preload"
@@ -165,3 +174,4 @@ export default function RootLayout({
     </html>
   );
 }
+
