@@ -585,10 +585,58 @@
       },
       {
         "@type": "Question",
+        "name": "When were Papadias removed from the menu?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Papadias began disappearing from US locations in late March/early April 2026 following the launch of the new Oven-Toasted Sandwiches on March 30, 2026. Full removal was scheduled for Q2 2026."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are Papadias still available in Canada?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Reports suggest Papadias may still be available at some Canadian Papa Johns locations as of April 2026. Check your local Canadian Papa Johns app for current menu availability."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What were all the Papadia flavors?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The permanent Papadia flavors were: Italian, Philly Cheesesteak, Grilled BBQ Chicken & Bacon, Meatball Pepperoni, and Grilled Buffalo Chicken. Limited-time flavors included Doritos Cool Ranch (chicken, beef, steak) and Double Cheeseburger."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "How much did Papadias cost?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Papadias were originally priced at $6 when launched in 2020. By 2024-2026, the price had increased to $8.99. A Parmesan Crust upgrade was available for an additional $1."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are the new toasted sandwiches as good as Papadias?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "This depends on personal preference. Papadias were unique for using Papa Johns' pizza dough, creating a hybrid pizza-sandwich experience. The new Oven-Toasted Sandwiches use ciabatta bread and are more of a classic sandwich format. Many fans prefer the Papadia style, while others appreciate the more straightforward toasted sandwich."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will Papadias come back as a limited-time item?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "As of April 2026, Papa Johns has not announced any plans to bring Papadias back — even as a limited-time offer. However, Papa Johns has previously brought back discontinued LTO items, so a temporary return is possible in the future."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What were Papa Bites?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Papa Bites were bite-sized, oven-baked pockets of fresh pizza dough filled with various ingredients. They were introduced around 2022 and discontinued alongside Papadias in Q2 2026 for the same operational efficiency reasons."
         }
       }
     ]
