@@ -472,7 +472,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                                         </div>
                                     </Link>
 
-                                    <Link href="/menus-prices/drinks" className="bg-white rounded-[2rem] p-6 shadow-md border hover:border-[#CCEE18] transition-all group hover:shadow-xl">
+                                    <Link href="/drinks" className="bg-white rounded-[2rem] p-6 shadow-md border hover:border-[#CCEE18] transition-all group hover:shadow-xl">
                                         <div className="aspect-video bg-gray-100 rounded-xl mb-4 overflow-hidden relative">
                                             <img src="/papa-johns-drinks-menu.png" alt="Papa Johns Drinks Menu 2026 all beverages" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                                         </div>

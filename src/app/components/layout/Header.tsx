@@ -176,7 +176,7 @@ export default function Header() {
                             { name: 'Sides', href: '/posts/sides' },
                             { name: 'Dips', href: '/menus-prices/dips' },
                             { name: 'Pastas', href: '/menus-prices/pastas' },
-                            { name: 'Drinks', href: '/menus-prices/drinks' },
+                            { name: 'Drinks', href: '/drinks' },
                             { name: 'Junior', href: '/menus-prices/junior' },
                             { name: 'Desserts', href: '/posts/papa-johns-desserts' },
                         ].map((item) => (

@@ -359,7 +359,7 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
                                 { label: "⭐ Papa Rewards Program", href: "/papa-johns-rewards" },
                                 { label: "🍕 Classic Pizzas", href: "/posts/classic-pizzas" },
                                 { label: "🍗 Sides & Dips", href: "/posts/sides" },
-                                { label: "🥤 Drinks", href: "/menus-prices/drinks" },
+                                { label: "🥤 Drinks", href: "/drinks" },
                                 { label: "🍰 Desserts", href: "/posts/papa-johns-desserts" },
                             ].map((link, i) => (
                                 <Link 
