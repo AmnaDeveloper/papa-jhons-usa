@@ -191,7 +191,7 @@ export default function PapaRewardsPage() {
                         </h2>
                         <p className="text-gray-500 font-bold max-w-2xl mx-auto leading-relaxed">
                             Earning Papa Rewards® points is incredibly simple. Every time you order{' '}
-                            <Link href="/posts/best-pizza-delivery-near-me" className="text-[#cc0000] underline font-bold">pizza delivery</Link>{' '}
+                            <Link href="/best-pizza-delivery-near-me" className="text-[#cc0000] underline font-bold">pizza delivery</Link>{' '}
                             or carryout in the US, points are added automatically to your account.
                         </p>
                     </div>

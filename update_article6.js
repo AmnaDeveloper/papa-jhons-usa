@@ -236,7 +236,7 @@ const htmlContent = `
 <p>The price premium over <a href="/posts/classic-pizzas">Classic Pizzas</a> is real, but so is the difference in eating experience. Super Loaded Pizzas are built for occasions when you want a pizza that actually impresses — whether that's a family dinner, a game-night order, or simply a moment when only maximum flavor will do.</p>
 <p>If you've never tried one, start with The Works on the Original Crust with Epic Stuffed Crust upgrade. It's the definitive Super Loaded experience and the reason these pizzas have become one of the most-ordered categories on the entire Papa Johns menu.</p>
 <p>Ready to order? Find your nearest <a href="/store-locator">Papa Johns store locator</a> and explore the <a href="/posts/papa-johns-menu-prices-guide">Papa Johns Full Menu with Prices</a> — hot, fresh, and ready when you are.</p>
-<p>👉 Looking for <a href="/posts/best-pizza-delivery-near-me">best pizza delivery near you</a>?</p>
+<p>👉 Looking for <a href="/best-pizza-delivery-near-me">best pizza delivery near you</a>?</p>
 <p><em>Prices and calorie counts are estimates and may vary by location and date. For the most current pricing, visit the Papa Johns official menu.</em></p>
 `;
 

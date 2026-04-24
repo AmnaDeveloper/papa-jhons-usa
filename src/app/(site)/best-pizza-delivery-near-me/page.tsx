@@ -1,147 +1,36 @@
-import posts from '../../../data/posts.json';
+import posts from '../../data/posts.json';
 import { notFound } from 'next/navigation';
-import { generateArticleSEO } from '../../../lib/seo-config';
-import { generateArticleSchema, generateBreadcrumbSchema } from '../../../lib/seo/schema';
-import InternalLinks from '../../../components/seo/InternalLinks';
+import { generateArticleSEO } from '../../lib/seo-config';
+import { generateArticleSchema, generateBreadcrumbSchema } from '../../lib/seo/schema';
 import Link from 'next/link';
-import exactFaqSchemas from '../../../data/faq-schemas.json';
-import ContactFeedbackSection from '../../../components/ContactFeedbackSection';
+import exactFaqSchemas from '../../data/faq-schemas.json';
+import ContactFeedbackSection from '../../components/ContactFeedbackSection';
 import { Heart, Share2, Info, Navigation, ArrowRight, Star } from 'lucide-react';
-import { getTodayFormatted, getMonthYear } from '../../../../lib/utils/date';
-import LastUpdated from '../../../components/LastUpdated';
+import { getTodayFormatted, getMonthYear } from '../../../lib/utils/date';
+import LastUpdated from '../../components/LastUpdated';
 
-// Generate static params for all posts
-export async function generateStaticParams() {
-    return posts.map((post) => ({
-        slug: post.slug,
-    }));
-}
+const SLUG = 'best-pizza-delivery-near-me';
 
 // Generate SEO metadata dynamically for the post
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
-    const resolvedParams = await params;
-    const post = posts.find((p) => p.slug === resolvedParams.slug);
-    if (!post) return notFound();
+export async function generateMetadata() {
+    const post = posts.find((p) => p.slug === SLUG);
+    if (!post) return {};
 
     const date = getTodayFormatted();
     const month = getMonthYear();
 
-    switch (post.slug) {
-        case 'best-pizza-delivery-near-me':
-            return {
-                title: `Best Pizza Delivery Near Me — ${month} Guide`,
-                description: `Find the best pizza delivery near you in ${month}. Papa Johns delivery times, fees, ordering guide & deals — updated ${date}.`,
-            };
-        case 'papa-johns-menu-prices-guide':
-            return {
-                title: `Papa Johns Menu with Prices (${month}): Complete Guide to Every Item`,
-                description: `Full Papa Johns menu with prices updated ${date}. All pizzas, sides, desserts, Papadias & drinks with exact pricing. 2026 deals inside.`,
-            };
-        case 'papa-johns-nutrition-guide':
-            return {
-                title: `Papa Johns Nutrition Guide: Full Calories & Allergens (${month})`,
-                description: `Complete Papa Johns nutrition facts updated ${date}. Calories per slice, protein, sodium, allergens for every menu item.`,
-            };
-        case 'classic-pizzas':
-            return {
-                title: `Papa Johns Classic Pizzas: Every Flavor Ranked & Priced (${month})`,
-                description: `All Papa Johns classic pizzas in ${month} — Pepperoni, Cheese, Sausage. Full prices, calories, honest reviews & which one to order.`,
-            };
-        case 'super-loaded':
-            return {
-                title: `Papa Johns Super Loaded Pizzas: All Flavors & Prices (${month})`,
-                description: `Every Papa Johns Super Loaded Pizza in ${month} — The Works, The Meats, BBQ Chicken Bacon. Full prices, calories & ordering tips.`,
-            };
-        case 'sides':
-            return {
-                title: `Papa Johns Sides & Dips: Complete Guide (${month})`,
-                description: `Every Papa Johns side item in ${month} — Garlic Knots, Breadsticks, Wings, Papa Bites. Full prices, calories & reviews.`,
-            };
-        case 'papa-johns-pan-pizza':
-            return {
-                title: `Papa Johns Pan Pizza (${month}): Price, Toppings, Calories & Honest Review`,
-                description: `Papa Johns Pan Pizza is back with 6 cheeses & garlic parmesan crust. Full review, price ($11.99), calories per slice, toppings list & Pizza Hut comparison — updated ${date}.`,
-            };
-        case 'papa-johns-wings':
-            return {
-                title: `Papa Johns Wings: Flavors, Prices & Review (${month})`,
-                description: `All 8 Papa Johns wings flavors in ${month} — Buffalo, BBQ, Garlic Parm & more. Full pricing, spicy levels, calories & blue cheese pairing — updated ${date}.`,
-            };
-        case 'papa-johns-garlic-knots':
-            return {
-                title: `Papa Johns Garlic Knots (${month}): Price, Calories & Dipping Guide`,
-                description: `Papa Johns Garlic Knots guide updated ${date}. Order of 8 for $6.99, 110 calories per knot, side-by-side breadstick comparison & top 5 dipping sauces ranked.`,
-            };
-        case 'papa-johns-vs-dominos':
-            return {
-                title: `Papa Johns vs Dominos (${month}): Which Pizza Chain Is Actually Better?`,
-                description: `Papa Johns vs Dominos comparison updated ${date}. We compare crust, sauce, price, delivery speed, app experience & rewards.`,
-            };
-                case 'papa-johns-bbq-chicken-bacon-pizza':
-            return {
-                title: `Papa Johns BBQ Chicken Bacon Pizza (${month}): Toppings, Price, Calories & Honest Review`,
-                description: `Full guide to the sweet and smoky Papa Johns BBQ Chicken Bacon Pizza. Exact prices, calorie comparisons, ingredient breakdown, and best crus... updated ${date}.`,
-            };
-        case 'papa-johns-desserts':
-            return {
-                title: `Papa Johns Desserts Menu: Every Sweet Treat, Price & Calorie ((${month}))`,
-                description: `Discover every Papa Johns dessert in ${month}   Chocolate Chip Cookie, Double Chocolate Brownie, Cinnamon Pull Aparts & Oreo Papa Bites. Pri... updated ${date}.`,
-            };
-        case 'new-papadias-flavors-2026':
-            return {
-                title: `Papa Johns Papadias: All Flavors, Prices & Which One to Order in (${month})`,
-                description: `Our famous flatbread sandwiches just got a massive upgrade. Explore the mouth-watering Papadias flavors launching this year.... updated ${date}.`,
-            };
-        case 'papa-johns-order':
-            return {
-                title: `Papa Johns Order Online (${month}) — Delivery, Carryout & App Guide`,
-                description: `Learn exactly how to place a Papa Johns order in ${month} — online, via app, phone, or DoorDash. Compare delivery vs carryout... updated ${date}.`,
-            };
-        case 'papa-johns-stuffed-crust-pizza':
-            return {
-                title: `Papa Johns Stuffed Crust Pizza: Price, Calories & Review (${month})`,
-                description: `Everything about Papa Johns Stuffed Crust Pizza in ${month} — Epic vs Garlic vs Cheesy Calzone, exact prices, calories per slice, review... updated ${date}.`,
-            };
-        case 'papa-johns-spicy-italian-pizza':
-            return {
-                title: `Papa Johns Spicy Italian Pizza: Price, Calories & Review (${month})`,
-                description: `Full guide to Papa Johns Spicy Italian Pizza ${month} toppings, exact prices by size, calories per slice, spice level, honest review & best crust to order it on. Updated ${date}.`,
-            };
-        case 'papa-johns-mountain-dew-drink':
-            return {
-                title: `Papa Johns Mountain Dew Guide 2026: Price, Calories & Review (${month})`,
-                description: `Discover everything about Papa Johns Mountain Dew in ${month}. Complete price list for 20 oz and 2-Liter bottles, calories, caffeine content & best pizza pairings — updated ${date}.`,
-            };
-        case 'papa-johns-pepsi-drink':
-            return {
-                title: `Papa Johns Pepsi Price 2026: $2.99 | Calories, Sizes & Review (${month})`,
-                description: `Papa Johns Pepsi costs $2.99 (20oz) or $3.49-$3.99 (2L) in 2026. Full nutrition facts, 250 calories, caffeine content, allergen info, and best pizza pairings. Updated ${date}.`,
-            };
-        case 'papa-johns-papadias-discontinued-2026':
-            return {
-                title: `PAPA JOHNS PAPADIAS DISCONTINUED 2026: Why They Were Removed & Fan Reactions (${month})`,
-                description: `Papa Johns discontinued Papadias in ${month} 2026. Discover why they were removed, what replaced them, and fan reactions — updated ${date}.`,
-            };
-default:
-            return generateArticleSEO(
-                post.title,
-                post.excerpt,
-                post.slug,
-                post.author
-            );
-    }
+    return {
+        title: `Best Pizza Delivery Near Me — ${month} Guide`,
+        description: `Find the best pizza delivery near you in ${month}. Papa Johns delivery times, fees, ordering guide & deals — updated ${date}.`,
+    };
 }
 
-export const revalidate = 86400; // 24 hours
-
-
-export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
-    const resolvedParams = await params;
-    const post = posts.find((p) => p.slug === resolvedParams.slug);
+export default async function BestPizzaDeliveryPage() {
+    const post = posts.find((p) => p.slug === SLUG);
     if (!post) return notFound();
 
     const baseUrl = 'https://papajohns-menus.us';
-    const postUrl = `${baseUrl}/posts/${post.slug}`;
+    const postUrl = `${baseUrl}/${post.slug}`; // Note: Removed /posts/ from URL
 
     // Format Date
     const formattedDate = new Date(post.date).toLocaleDateString('en-US', {
@@ -459,77 +348,38 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                             <p className="text-gray-400 font-bold text-sm">Discover other delicious options in this category</p>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                            {post.category === 'Drinks' ? (
-                                <>
-                                    <Link href="/posts/papa-johns-mountain-dew-drink" className="bg-white rounded-[2rem] p-6 shadow-md border hover:border-[#CCEE18] transition-all group hover:shadow-xl">
-                                        <div className="aspect-video bg-gray-100 rounded-xl mb-4 overflow-hidden relative">
-                                            <img src="/papa-johns-mountain-dew.png" alt="Papa Johns Mountain Dew Price and Calories 2026" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                                        </div>
-                                        <h4 className="font-black text-[#1A3D17] uppercase text-xl mb-2">Mountain Dew</h4>
-                                        <div className="flex justify-between items-center text-sm font-bold text-gray-500">
-                                            <span>From $2.99</span>
-                                            <span className="text-[#cc0000] flex items-center gap-1">View Details <ArrowRight size={14} /></span>
-                                        </div>
-                                    </Link>
+                            <Link href="/posts/classic-pizzas" className="bg-white rounded-[2rem] p-6 shadow-md border hover:border-[#CCEE18] transition-all group hover:shadow-xl">
+                                <div className="aspect-video bg-gray-100 rounded-xl mb-4 overflow-hidden relative">
+                                    <img src="/best-pizza-delivery-near-me.jpg" alt="Classic Pizzas" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                </div>
+                                <h4 className="font-black text-[#1A3D17] uppercase text-xl mb-2">Classic Pizzas</h4>
+                                <div className="flex justify-between items-center text-sm font-bold text-gray-500">
+                                    <span>From $10.99</span>
+                                    <span className="text-[#cc0000] flex items-center gap-1">View Details <ArrowRight size={14} /></span>
+                                </div>
+                            </Link>
 
-                                    <Link href="/drinks" className="bg-white rounded-[2rem] p-6 shadow-md border hover:border-[#CCEE18] transition-all group hover:shadow-xl">
-                                        <div className="aspect-video bg-gray-100 rounded-xl mb-4 overflow-hidden relative">
-                                            <img src="/papa-johns-drinks-menu.png" alt="Papa Johns Drinks Menu 2026 all beverages" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                                        </div>
-                                        <h4 className="font-black text-[#1A3D17] uppercase text-xl mb-2">All Drinks Menu</h4>
-                                        <div className="flex justify-between items-center text-sm font-bold text-gray-500">
-                                            <span>From $2.99</span>
-                                            <span className="text-[#cc0000] flex items-center gap-1">View Details <ArrowRight size={14} /></span>
-                                        </div>
-                                    </Link>
-
-                                    <Link href="/posts/classic-pizzas" className="bg-white rounded-[2rem] p-6 shadow-md border hover:border-[#CCEE18] transition-all group hover:shadow-xl">
-                                        <div className="aspect-video bg-gray-100 rounded-xl mb-4 overflow-hidden relative">
-                                            <img src="/best-pizza-delivery-near-me.jpg" alt="Papa Johns Classic Pizzas to pair with drinks" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                                        </div>
-                                        <h4 className="font-black text-[#1A3D17] uppercase text-xl mb-2">Classic Pizzas</h4>
-                                        <div className="flex justify-between items-center text-sm font-bold text-gray-500">
-                                            <span>From $10.99</span>
-                                            <span className="text-[#cc0000] flex items-center gap-1">View Details <ArrowRight size={14} /></span>
-                                        </div>
-                                    </Link>
-                                </>
-                            ) : (
-                                <>
-                                    <Link href="/posts/classic-pizzas" className="bg-white rounded-[2rem] p-6 shadow-md border hover:border-[#CCEE18] transition-all group hover:shadow-xl">
-                                        <div className="aspect-video bg-gray-100 rounded-xl mb-4 overflow-hidden relative">
-                                            <img src="/best-pizza-delivery-near-me.jpg" alt="Classic Pizzas" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                                        </div>
-                                        <h4 className="font-black text-[#1A3D17] uppercase text-xl mb-2">Classic Pizzas</h4>
-                                        <div className="flex justify-between items-center text-sm font-bold text-gray-500">
-                                            <span>From $10.99</span>
-                                            <span className="text-[#cc0000] flex items-center gap-1">View Details <ArrowRight size={14} /></span>
-                                        </div>
-                                    </Link>
-
-                                    <Link href="/posts/super-loaded" className="bg-white rounded-[2rem] p-6 shadow-md border hover:border-[#CCEE18] transition-all group hover:shadow-xl">
-                                        <div className="aspect-video bg-gray-100 rounded-xl mb-4 overflow-hidden relative">
-                                            <img src="/papa-johns-menu-prices-guide.png" alt="Super Loaded Pizzas" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                                        </div>
-                                        <h4 className="font-black text-[#1A3D17] uppercase text-xl mb-2">Super Loaded</h4>
-                                        <div className="flex justify-between items-center text-sm font-bold text-gray-500">
-                                            <span>From $15.99</span>
-                                            <span className="text-[#cc0000] flex items-center gap-1">View Details <ArrowRight size={14} /></span>
-                                        </div>
-                                    </Link>
-                                    
-                                    <Link href="/posts/sides" className="bg-white rounded-[2rem] p-6 shadow-md border hover:border-[#CCEE18] transition-all group hover:shadow-xl">
-                                        <div className="aspect-video bg-gray-100 rounded-xl mb-4 overflow-hidden relative">
-                                            <img src="/new-papadias-flavors-2026.jpg" alt="Sides and Dips" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                                        </div>
-                                        <h4 className="font-black text-[#1A3D17] uppercase text-xl mb-2">Sides & Dips</h4>
-                                        <div className="flex justify-between items-center text-sm font-bold text-gray-500">
-                                            <span>From $4.99</span>
-                                            <span className="text-[#cc0000] flex items-center gap-1">View Details <ArrowRight size={14} /></span>
-                                        </div>
-                                    </Link>
-                                </>
-                            )}
+                            <Link href="/posts/super-loaded" className="bg-white rounded-[2rem] p-6 shadow-md border hover:border-[#CCEE18] transition-all group hover:shadow-xl">
+                                <div className="aspect-video bg-gray-100 rounded-xl mb-4 overflow-hidden relative">
+                                    <img src="/papa-johns-menu-prices-guide.png" alt="Super Loaded Pizzas" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                </div>
+                                <h4 className="font-black text-[#1A3D17] uppercase text-xl mb-2">Super Loaded</h4>
+                                <div className="flex justify-between items-center text-sm font-bold text-gray-500">
+                                    <span>From $15.99</span>
+                                    <span className="text-[#cc0000] flex items-center gap-1">View Details <ArrowRight size={14} /></span>
+                                </div>
+                            </Link>
+                            
+                            <Link href="/posts/sides" className="bg-white rounded-[2rem] p-6 shadow-md border hover:border-[#CCEE18] transition-all group hover:shadow-xl">
+                                <div className="aspect-video bg-gray-100 rounded-xl mb-4 overflow-hidden relative">
+                                    <img src="/new-papadias-flavors-2026.jpg" alt="Sides and Dips" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                </div>
+                                <h4 className="font-black text-[#1A3D17] uppercase text-xl mb-2">Sides & Dips</h4>
+                                <div className="flex justify-between items-center text-sm font-bold text-gray-500">
+                                    <span>From $4.99</span>
+                                    <span className="text-[#cc0000] flex items-center gap-1">View Details <ArrowRight size={14} /></span>
+                                </div>
+                            </Link>
                         </div>
                     </div>
 
@@ -598,7 +448,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                         <p className="text-gray-500 font-bold mb-12">Discover more helpful guides and insider tips.</p>
 
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left mb-12">
-                            {posts.slice(0, 3).map((guide) => (
+                            {posts.filter(p => p.slug !== SLUG).slice(0, 3).map((guide) => (
                                 <Link href={guide.slug === 'best-pizza-delivery-near-me' ? `/${guide.slug}` : `/posts/${guide.slug}`} key={guide.id} className="bg-white rounded-[2rem] p-6 shadow-md hover:shadow-xl transition-shadow group flex flex-col h-full">
                                     <div className="aspect-[16/9] bg-gray-200 rounded-xl mb-6 flex items-center justify-center relative overflow-hidden">
                                         <div className="absolute top-3 left-3 z-10 bg-[#cc0000] text-white text-[9px] font-black uppercase tracking-widest px-3 py-1 rounded-full shadow">{guide.category}</div>

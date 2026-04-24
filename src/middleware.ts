@@ -12,7 +12,12 @@ export function middleware(request: NextRequest) {
     // 3. Add X-Request-Time header
     response.headers.set("X-Request-Time", now);
 
-    // 4. Handle CORS headers for /api/* routes
+    // 4. Redirect for best-pizza-delivery-near-me
+    if (request.nextUrl.pathname === "/posts/best-pizza-delivery-near-me") {
+        return NextResponse.redirect(new URL("/best-pizza-delivery-near-me", request.url), 301);
+    }
+
+    // 5. Handle CORS headers for /api/* routes
     if (request.nextUrl.pathname.startsWith("/api/")) {
         response.headers.set("Access-Control-Allow-Origin", "*");
         response.headers.set(

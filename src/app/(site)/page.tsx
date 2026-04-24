@@ -307,13 +307,13 @@ export default function Home() {
                             Papa John's <span className="text-[#CCEE18]">Guides & News</span>
                         </h2>
                         <p className="text-gray-500 font-bold max-w-2xl mx-auto">
-                            Explore our complete menu breakdowns, <Link href="/posts/best-pizza-delivery-near-me" className="text-[#cc0000] hover:underline">best pizza delivery near me</Link> guides, <Link href="/posts/papa-johns-menu-prices-guide" className="text-[#cc0000] hover:underline">Papa Johns menu with prices 2026</Link>, and the full <Link href="/posts/papa-johns-nutrition-guide" className="text-[#cc0000] hover:underline">Papa Johns nutrition guide</Link>. Check out our <Link href="/menus-prices" className="text-[#cc0000] hover:underline">Papa Johns full menu</Link> and find <Link href="/coupons" className="text-[#cc0000] hover:underline">Papa Johns promo codes 2026</Link>.
+                            Explore our complete menu breakdowns, <Link href="/best-pizza-delivery-near-me" className="text-[#cc0000] hover:underline">best pizza delivery near me</Link> guides, <Link href="/posts/papa-johns-menu-prices-guide" className="text-[#cc0000] hover:underline">Papa Johns menu with prices 2026</Link>, and the full <Link href="/posts/papa-johns-nutrition-guide" className="text-[#cc0000] hover:underline">Papa Johns nutrition guide</Link>. Check out our <Link href="/menus-prices" className="text-[#cc0000] hover:underline">Papa Johns full menu</Link> and find <Link href="/coupons" className="text-[#cc0000] hover:underline">Papa Johns promo codes 2026</Link>.
                         </p>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
                         {posts.map((post) => (
-                            <Link href={`/posts/${post.slug}`} key={post.id} className="bg-white rounded-[2rem] p-6 shadow-md hover:shadow-2xl hover:border-[#CCEE18] border-2 border-transparent transition-all duration-300 group flex flex-col h-full relative overflow-hidden">
+                            <Link href={post.slug === 'best-pizza-delivery-near-me' ? `/${post.slug}` : `/posts/${post.slug}`} key={post.id} className="bg-white rounded-[2rem] p-6 shadow-md hover:shadow-2xl hover:border-[#CCEE18] border-2 border-transparent transition-all duration-300 group flex flex-col h-full relative overflow-hidden">
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-[#CCEE18] rounded-bl-full -mr-16 -mt-16 opacity-0 group-hover:opacity-10 transition-opacity"></div>
                                 
                                 <div className="aspect-[16/9] bg-gray-100 rounded-xl mb-6 flex items-center justify-center relative overflow-hidden shadow-inner">

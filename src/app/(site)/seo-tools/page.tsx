@@ -5,7 +5,7 @@ import { Send, CheckCircle2, XCircle, Loader2, RefreshCw } from 'lucide-react'
 
 const PRIORITY_PAGES = [
   'https://papajohns-menus.us/',
-  'https://papajohns-menus.us/posts/best-pizza-delivery-near-me',
+  'https://papajohns-menus.us/best-pizza-delivery-near-me',
   'https://papajohns-menus.us/posts/papa-johns-menu-prices-guide',
   'https://papajohns-menus.us/posts/papa-johns-nutrition-guide',
   'https://papajohns-menus.us/posts/classic-pizzas',

@@ -210,7 +210,7 @@ const htmlContent = `
 <p>And the dipping sauces? The Special Garlic Sauce alone has inspired millions of loyalties. Add in the versatility of Ranch, the richness of Cheese Sauce, and the bold options like Blue Cheese and Buffalo Spicy, and you have one of the best sauce lineups in the fast food pizza world.</p>
 <p>Whether you're building the perfect pizza night spread or just grabbing a quick side with your order, this guide gives you everything you need to choose confidently.</p>
 <p>👉 View the complete <a href="/posts/papa-johns-menu-prices-guide">Papa Johns full menu with prices</a>.</p>
-<p>👉 Find the <a href="/posts/best-pizza-delivery-near-me">best pizza delivery near you</a>.</p>
+<p>👉 Find the <a href="/best-pizza-delivery-near-me">best pizza delivery near you</a>.</p>
 <p>👉 Learn about the <a href="/posts/new-papadias-flavors-2026">Papa Johns Papadias flavors</a>.</p>
 <p>👉 Read our guide to <a href="/posts/classic-pizzas">Papa Johns Classic Pizzas</a>.</p>
 <p>👉 Locate a store using the <a href="/store-locator">Papa Johns store locator</a>.</p>
