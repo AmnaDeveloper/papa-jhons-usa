@@ -186,73 +186,151 @@ export const locationRichContent: Record<string, RichLocationData> = {
     },
     "atlanta-ga": {
         slug: "atlanta-ga",
-        title: "Papa Johns Atlanta GA 2026: Menu, Prices & Locations",
-        metaDesc: "Papa Johns Atlanta, GA — full 2026 menu with prices, all Atlanta locations, delivery areas, hours & local deals. Find the nearest Papa Johns in Atlanta now.",
-        h1: "Papa John's Atlanta, GA — Menu, Prices & Locations (2026)",
-        intro: "Looking for Papa John's in Atlanta, Georgia? This guide covers the complete **Papa Johns menu with prices** for Atlanta — every pizza, side, dessert, and drink available in 2026 — plus the Atlanta Papa Johns location with verified address, phone number, and hours. Whether you are ordering delivery to Downtown, South Downtown, or anywhere across Atlanta, this page has everything you need before you order.\n\nPrices in Atlanta match the national 2026 standard, and the Atlanta location offers both delivery and carryout seven days a week. For the fastest ordering experience, use the Papa Johns app — it includes Papa Track real-time order tracking from dough prep through your door.",
+        title: "Papa Johns Atlanta GA — Menu, Prices & All Locations (2026)",
+        metaDesc: "Find all Papa Johns locations in Atlanta, GA. Full 2026 menu with prices, verified store hours, phone numbers, and delivery areas for every Atlanta location.",
+        h1: "Papa Johns Atlanta, GA — Menu, Prices & All Locations",
+        intro: "Complete guide to every Papa Johns in Atlanta — real addresses, verified phone numbers, current hours, and the full 2026 menu with prices.",
         stats: {
             deliveryTime: "30–45 min",
-            startingPrice: "$17.99",
+            startingPrice: "$11.49",
             verifiedYear: "2026"
         },
         locationDetails: {
-            address: "190 Marietta St NW, Atlanta, GA 30303",
-            phone: "(404) 555-1001",
-            hours: "Mon–Thu 11:00 AM – 11:00 PM | Fri–Sat 11:00 AM – 1:00 AM | Sun 11:00 AM – 11:00 PM",
-            deliveryAreas: "Downtown, South Downtown, Castleberry Hill, Sweet Auburn",
-            mapUrl: "https://maps.google.com/?q=190+Marietta+St+NW,+Atlanta,+GA+30303"
+            address: "990 State Street NW, Atlanta, GA 30318",
+            phone: "(404) 872-5252",
+            hours: "Mon–Thu 10:00 AM – 1:00 AM | Fri–Sat 10:00 AM – 2:00 AM | Sun 10:00 AM – 1:00 AM",
+            deliveryAreas: "Georgia Tech, GSU, Castleberry Hill, English Ave",
+            mapUrl: "https://maps.google.com/?q=990+State+Street+NW,+Atlanta,+GA+30318",
+            additionalLocations: [
+                { title: "Ponce De Leon Ave NE — Midtown", address: "468 Ponce De Leon Ave NE, Atlanta, GA 30308", phone: "(404) 205-8393", hours: "Mon–Thu 10:00 AM – 1:00 AM | Fri–Sat 10:00 AM – 2:00 AM | Sun 10:00 AM – 1:00 AM", deliveryAreas: "Midtown, Ponce City Market area, Old Fourth Ward" },
+                { title: "Piedmont Ave NE — Virginia-Highland", address: "1874 Piedmont Ave NE, Suite 2, Atlanta, GA 30324", phone: "(404) 607-1229", hours: "Mon–Thu 10:00 AM – 12:00 AM | Fri–Sat 10:00 AM – 1:00 AM | Sun 10:00 AM – 12:00 AM", deliveryAreas: "Virginia-Highland, Ansley Park, Morningside" },
+                { title: "Cascade Ave SW — Southwest Atlanta", address: "590 Cascade Ave SW, Suite 3, Atlanta, GA 30310", phone: "(678) 500-7400", hours: "Mon–Thu 10:00 AM – 12:00 AM | Fri–Sat 10:00 AM – 1:00 AM | Sun 10:00 AM – 12:00 AM", deliveryAreas: "Southwest Atlanta, Cascade Heights, Adair Park" },
+                { title: "Peachtree Road — Buckhead", address: "2900 Peachtree Road, Atlanta, GA 30305", phone: "Call store for hours", hours: "Mon–Thu 10:00 AM – 1:00 AM | Fri–Sat 10:00 AM – 2:00 AM | Sun 10:00 AM – 1:00 AM", deliveryAreas: "Buckhead, Brookhaven, Garden Hills" },
+                { title: "Moreland Ave — East Atlanta", address: "1098 Moreland Ave, Atlanta, GA 30316", phone: "Call store for hours", hours: "Mon–Thu 10:00 AM – 12:00 AM | Fri–Sat 10:00 AM – 1:00 AM | Sun 10:00 AM – 12:00 AM", deliveryAreas: "East Atlanta Village, Edgewood, Kirkwood" }
+            ]
         },
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
             { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
-            { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
+            { name: "Garden Fresh", s: "$13.49", m: "$16.49", l: "$19.99", xl: "$22.99" },
+            { name: "Spicy Italian", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "New York Style", s: "—", m: "—", l: "$17.99", xl: "—" },
+            { name: "Epic Stuffed Crust", s: "—", m: "—", l: "$19.99", xl: "—" }
         ],
         menuSides: [
-            { name: "Garlic Knots (8 pieces)", price: "$6.99" },
-            { name: "Wings (8 pieces)", price: "$8.49" },
             { name: "Garlic Parmesan Breadsticks", price: "$7.99" },
+            { name: "Garlic Knots (8 pieces)", price: "$6.99" },
+            { name: "Wings — Traditional (8 pc)", price: "$8.49" },
+            { name: "Wings — Boneless (8 pc)", price: "$8.49" },
             { name: "Cheesesticks", price: "$7.99" },
-            { name: "Chocolate Chip Cookie", price: "$5.99" }
+            { name: "Chocolate Chip Cookie", price: "$5.99" },
+            { name: "Papa Bites (Oreo)", price: "$5.99" }
         ],
         neighborhoodContent: [
-            {
-                title: "Ordering Papa Johns Near Georgia Tech",
-                text: "Papa Johns is a popular delivery choice for students and faculty at Georgia Tech / GSU / Emory. Delivery to on-campus and near-campus addresses typically takes 25–40 minutes during non-peak hours. For large group orders of 5+ pizzas for campus events, call your nearest Atlanta location directly to confirm timing and any available group pricing. The Papa Pairings deal — any two qualifying items for $6.99 each — is one of the best value options for student budgets."
-            },
-            {
-                title: "Ordering Papa Johns on Falcons / Hawks / Braves / Atlanta United Game Days",
-                text: "Falcons / Hawks / Braves / Atlanta United games are among the busiest ordering times at Papa Johns Atlanta locations. During Falcons game days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. The Works Pizza, Pepperoni Pizza, and Garlic Knots are consistently the top-ordered combination during game nights in Atlanta."
-            },
-            {
-                title: "Best Neighborhoods for Papa Johns Delivery in Atlanta",
-                text: "Papa Johns Atlanta delivers across Downtown Atlanta, Midtown, Buckhead, Inman Park, Virginia-Highland, East Atlanta. The Downtown area is the primary delivery zone for the 190 Marietta St NW location. For same-neighborhood delivery, expect 25–35 minutes during non-peak hours (2–5 PM on weekdays). Evening weekend delivery (6–10 PM) may take 35–50 minutes depending on order volume."
-            }
+            { title: "🏈 Game Day Orders", text: "During Atlanta Falcons, Hawks, Braves, and Atlanta United game days, expect delivery times of 45–60 minutes. Order at least 45 minutes before kickoff. The Works Pizza, Pepperoni, and Garlic Knots are top game-day picks. Call your nearest location for large group orders of 5+ pizzas." },
+            { title: "🎓 Georgia Tech & GSU", text: "The State St NW location (404-872-5252) serves Georgia Tech and Georgia State. Delivery to on-campus addresses takes 25–40 minutes during non-peak hours. The Papa Pairings deal — two qualifying items at $6.99 each — is the best value for student budgets." },
+            { title: "🌙 Late Night Pizza Atlanta", text: "Most Atlanta Papa Johns locations are open until 1:00 AM on weekdays and 2:00 AM on Fridays and Saturdays — some of the latest hours of any pizza chain in Atlanta. Check the app for real-time availability at each location." },
+            { title: "🗺️ Delivery Areas in Atlanta", text: "Papa Johns delivers across these Atlanta neighborhoods (coverage varies by location): Downtown Atlanta, Midtown, Buckhead, Virginia-Highland, Inman Park, East Atlanta Village, Little Five Points, Old Fourth Ward, Ponce City Market, Castleberry Hill, Grant Park, Edgewood, Kirkwood, Ansley Park, Morningside, Druid Hills, Cascade Heights, Southwest Atlanta, Georgia Tech Area, and Brookhaven." }
         ],
         faq: [
-            { q: "Where is Papa Johns in Atlanta, Georgia?", a: "Papa Johns Atlanta is located at 190 Marietta St NW, Atlanta, GA 30303. Call (404) 555-1001 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Atlanta, GA?", a: "Papa Johns Atlanta is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays — call (404) 555-1001 to confirm." },
-            { q: "Does Papa Johns deliver in Atlanta?", a: "Yes. Papa Johns Atlanta delivers to Downtown, South Downtown, Castleberry Hill, Sweet Auburn. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
-            { q: "What is the cheapest Papa Johns pizza in Atlanta?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Atlanta deals." }
+            { q: "How many Papa Johns locations are in Atlanta, GA?", a: "There are 12 Papa Johns locations in Atlanta, Georgia. Major locations include 990 State St NW (near Georgia Tech), 468 Ponce De Leon Ave NE (Midtown), 1874 Piedmont Ave NE (Virginia-Highland), 590 Cascade Ave SW, 2900 Peachtree Road (Buckhead), and 1098 Moreland Ave (East Atlanta). Use the store locator to find the one closest to you." },
+            { q: "What are Papa Johns hours in Atlanta, GA?", a: "Most Papa Johns Atlanta locations open at 10:00 AM daily. Weekday (Mon–Thu) closing is typically 1:00 AM. Fridays and Saturdays most stores close at 2:00 AM. Sunday hours are 10:00 AM–1:00 AM. Hours vary slightly by location — check the full hours guide or call your nearest store." },
+            { q: "Does Papa Johns deliver in Atlanta?", a: "Yes. Papa Johns delivers across Atlanta including Downtown, Midtown, Buckhead, Virginia-Highland, Inman Park, East Atlanta, Little Five Points, Old Fourth Ward, Grant Park, Edgewood, Kirkwood, Cascade Heights, and many more neighborhoods. Enter your address on papajohns.com or the Papa Johns app to confirm delivery to your specific address." },
+            { q: "What is the cheapest Papa Johns pizza in Atlanta?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. The Papa Pairings deal allows two qualifying medium items for $6.99 each — the best value option. Check the coupons page for current Atlanta deals and promo codes." },
+            { q: "Which Papa Johns in Atlanta is closest to Georgia Tech?", a: "The Papa Johns at 990 State St NW, Atlanta, GA 30318 — phone (404) 872-5252 — is the closest location to Georgia Tech and Georgia State University. Delivery to on-campus addresses typically takes 25–40 minutes during non-peak hours." },
+            { q: "Does Papa Johns Atlanta have gluten-free pizza?", a: "Yes. Papa Johns offers a Gluten-Free Crust at Atlanta locations (~150 cal/slice). Important: it is prepared in a shared kitchen with regular pizzas, so it may not be suitable for those with severe gluten allergies or celiac disease. Always inform the store of dietary requirements when ordering." },
+            { q: "How do I track my Papa Johns order in Atlanta?", a: "Papa Track is Papa Johns' real-time order tracking tool, available in the Papa Johns app and on papajohns.com after you place your order. It shows your order moving through dough preparation, quality check, and delivery — all the way to your door." },
+            { q: "What is the Papa Johns number near Midtown Atlanta?", a: "For Midtown Atlanta, the two best options are: 468 Ponce De Leon Ave NE — (404) 205-8393 — and 1874 Piedmont Ave NE, Suite 2 — (404) 607-1229. Both serve the Midtown, Virginia-Highland and Ansley Park areas." }
         ],
         schema: {
           "@context": "https://schema.org",
-          "@type": "FastFoodRestaurant",
-          "name": "Papa Johns Pizza Atlanta",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "190 Marietta St NW",
-            "addressLocality": "Atlanta",
-            "addressRegion": "GA",
-            "postalCode": "30303",
-            "addressCountry": "US"
-          },
-          "telephone": "(404) 555-1001",
-          "openingHours": ["Mo-Th 11:00 AM-11:00 PM", "Fr-Sa 11:00 AM-1:00 AM", "Su 11:00 AM-11:00 PM"],
-          "servesCuisine": "Pizza",
-          "priceRange": "$$",
-          "url": "https://papajohns-menus.us/locations/atlanta-ga"
+          "@type": "ItemList",
+          "name": "Papa Johns Locations in Atlanta GA",
+          "description": "All verified Papa Johns pizza restaurant locations in Atlanta, Georgia",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@type": "Restaurant",
+                "name": "Papa Johns Pizza — State St NW",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "990 State Street NW",
+                  "addressLocality": "Atlanta",
+                  "addressRegion": "GA",
+                  "postalCode": "30318",
+                  "addressCountry": "US"
+                },
+                "telephone": "+14048725252",
+                "openingHours": ["Mo-Th 10:00-01:00", "Fr-Sa 10:00-02:00", "Su 10:00-01:00"],
+                "servesCuisine": "Pizza",
+                "url": "https://papajohns-menus.us/locations/atlanta-ga"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "item": {
+                "@type": "Restaurant",
+                "name": "Papa Johns Pizza — Ponce De Leon Ave NE",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "468 Ponce De Leon Ave NE",
+                  "addressLocality": "Atlanta",
+                  "addressRegion": "GA",
+                  "postalCode": "30308",
+                  "addressCountry": "US"
+                },
+                "telephone": "+14042058393",
+                "openingHours": ["Mo-Th 10:00-01:00", "Fr-Sa 10:00-02:00", "Su 10:00-01:00"],
+                "servesCuisine": "Pizza",
+                "url": "https://papajohns-menus.us/locations/atlanta-ga"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "item": {
+                "@type": "Restaurant",
+                "name": "Papa Johns Pizza — Piedmont Ave NE",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "1874 Piedmont Ave NE, Suite 2",
+                  "addressLocality": "Atlanta",
+                  "addressRegion": "GA",
+                  "postalCode": "30324",
+                  "addressCountry": "US"
+                },
+                "telephone": "+14046071229",
+                "openingHours": ["Mo-Th 10:00-00:00", "Fr-Sa 10:00-01:00", "Su 10:00-00:00"],
+                "servesCuisine": "Pizza",
+                "url": "https://papajohns-menus.us/locations/atlanta-ga"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "item": {
+                "@type": "Restaurant",
+                "name": "Papa Johns Pizza — Cascade Ave SW",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "590 Cascade Ave SW, Suite 3",
+                  "addressLocality": "Atlanta",
+                  "addressRegion": "GA",
+                  "postalCode": "30310",
+                  "addressCountry": "US"
+                },
+                "telephone": "+16785007400",
+                "openingHours": ["Mo-Th 10:00-00:00", "Fr-Sa 10:00-01:00", "Su 10:00-00:00"],
+                "servesCuisine": "Pizza",
+                "url": "https://papajohns-menus.us/locations/atlanta-ga"
+              }
+            }
+          ]
         }
     },
     "austin-tx": {
