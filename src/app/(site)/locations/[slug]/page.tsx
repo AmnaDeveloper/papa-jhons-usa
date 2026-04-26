@@ -294,7 +294,9 @@ function RichTemplate({ data, month }: { data: RichLocationData; month: string }
             <section className="py-24 bg-[#fcfaf8]">
                 <div className="container mx-auto px-4 max-w-5xl">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-black text-[#1A3D17] uppercase mb-4 tracking-tighter">Menu & <span className="text-[#cc0000]">Prices</span></h2>
+                        <h2 className="text-4xl font-black text-[#1A3D17] uppercase mb-4 tracking-tighter">
+                            Papa Johns Menu & <span className="text-[#cc0000]">Prices</span> in {data.slug.split('-')[0].replace(/^\w/, c => c.toUpperCase())}
+                        </h2>
                         <p className="text-gray-500 font-bold uppercase tracking-widest text-[10px]">Verified 2026 pricing for this location</p>
                     </div>
                     
