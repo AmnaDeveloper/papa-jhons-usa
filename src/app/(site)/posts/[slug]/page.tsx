@@ -97,6 +97,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
                 title: `Papa Johns Order Online (${month}) — Delivery, Carryout & App Guide`,
                 description: `Learn exactly how to place a Papa Johns order in ${month} — online, via app, phone, or DoorDash. Compare delivery vs carryout... updated ${date}.`,
             };
+        case 'papa-johns-small-pizza':
+            return {
+                title: `Papa Johns Small Pizza Price 2026: Cost, Size & Is It Worth It? (${month})`,
+                description: `Papa Johns small pizza (10") costs $8.99–$12.99 in ${month} 2026. Get exact prices by topping, calories per slice, size comparison vs medium & large, and best deals.`,
+            };
         case 'papa-johns-stuffed-crust-pizza':
             return {
                 title: `Papa Johns Stuffed Crust Pizza: Price, Calories & Review (${month})`,
