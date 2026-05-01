@@ -252,3 +252,6 @@ export default function CouponsPage() {
         </>
     );
 }
+
+
+export const revalidate = 86400; // 24 hours ISR

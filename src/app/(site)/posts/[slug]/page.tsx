@@ -129,8 +129,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
             };
 default:
             return generateArticleSEO(
-                post.title,
-                post.excerpt,
+                `${post.title} (${month})`,
+                `${post.excerpt} — updated ${date}.`,
                 post.slug,
                 post.author
             );

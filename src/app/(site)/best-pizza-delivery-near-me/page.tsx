@@ -488,3 +488,6 @@ export default async function BestPizzaDeliveryPage() {
         </>
     );
 }
+
+
+export const revalidate = 86400; // 24 hours ISR

@@ -290,3 +290,6 @@ export default async function MenuItemBlogPage({ params }: Props) {
         </div>
     );
 }
+
+
+export const revalidate = 86400; // 24 hours ISR

@@ -310,3 +310,6 @@ export default async function DrinksPage() {
         </div>
     );
 }
+
+
+export const revalidate = 86400; // 24 hours ISR

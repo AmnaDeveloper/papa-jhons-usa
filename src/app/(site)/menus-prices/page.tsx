@@ -276,3 +276,6 @@ export default function MenusAndPricesPage() {
         </div>
     );
 }
+
+
+export const revalidate = 86400; // 24 hours ISR
