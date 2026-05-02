@@ -348,7 +348,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                 </div>
 
                 {/* ── 3. FAQs & PRICING SECTION ── */}
-                <div className="bg-gray-50 py-24 border-y border-gray-200">
+                <div id="faq" className="bg-gray-50 py-24 border-y border-gray-200">
                     <div className="max-w-[1280px] mx-auto px-4 lg:px-8">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
                             
