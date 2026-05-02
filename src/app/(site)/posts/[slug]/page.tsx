@@ -127,6 +127,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
                 title: `PAPA JOHNS PAPADIAS DISCONTINUED 2026: Why They Were Removed & Fan Reactions (${month})`,
                 description: `Papa Johns discontinued Papadias in ${month} 2026. Discover why they were removed, what replaced them, and fan reactions — updated ${date}.`,
             };
+        case 'papa-johns-50-off-deal':
+            return {
+                title: `Papa Johns 50% Off Deal — How to Get It Today (${month})`,
+                description: `Get Papa Johns 50% off deals today — carryout special, BOGO pizza, promo codes, and every way to save 50% on your order right now. Updated daily.`,
+            };
 default:
             return generateArticleSEO(
                 `${post.title} (${month})`,
