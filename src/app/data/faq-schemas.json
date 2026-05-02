@@ -734,5 +734,75 @@
         }
       }
     ]
+  },
+  "papa-johns-50-off-deal": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is there a Papa Johns 50% off deal today?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — the Papa Johns carryout special gives you 50% off all regular menu-priced pizzas automatically when you choose carryout at checkout. No code needed. This deal is available every day at most US locations. For delivery orders, use the BOGO code BOGO4U for equivalent savings on two pizzas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the Papa Johns 50% off carryout code?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No code is needed for the Papa Johns 50% off carryout deal. Simply select Carryout as your order type on PapaJohns.com or the app, add your pizzas, and the 50% discount applies automatically at checkout."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does the Papa Johns 50% off deal work on all pizzas?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The carryout 50% off deal applies to all regular menu-priced pizzas of any size or crust type. It does not apply to already-discounted bundles or promotional combo items. Sides, drinks, and desserts are not included in the 50% off discount."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I get 50% off Papa Johns on delivery?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The automatic 50% off deal only applies to carryout orders. For delivery, the best equivalent deal is the BOGO offer using code BOGO4U, which gives you a second large pizza free — effectively 50% off when ordering two pizzas. Orders of $40 or more also get free delivery, which reduces the overall cost significantly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Papa Johns do 50% off every day?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — the carryout 50% off special is an ongoing everyday deal at most Papa Johns locations in the US. It is not limited to specific days of the week. The old Thursday deals that Papa Johns used to run have been replaced by this everyday carryout special."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I get Papa Johns 50% off in the UK?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Papa Johns UK runs separate promotions from the US. For UK 50% off deals, visit the official Papa Johns UK website at papajohns.co.uk or check the Papa Johns UK app, which shows location-specific deals for UK addresses. US promo codes will not work on UK orders."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can students get 50% off at Papa Johns?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "There is no permanent nationwide Papa Johns student discount at 50% off. Students can access deals through UNiDAYS, local franchise promotions, and the standard carryout 50% off special which is available to all customers regardless of student status."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Papa Johns offer 50% off for veterans?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Papa Johns offers a military and veterans discount at participating locations, typically ranging from 10% to 25% off. This is separate from the standard 50% off carryout deal. Show a valid military ID or veteran card at the counter for carryout orders. The carryout 50% off special is available to all customers including veterans and requires no verification."
+        }
+      }
+    ]
   }
 }
