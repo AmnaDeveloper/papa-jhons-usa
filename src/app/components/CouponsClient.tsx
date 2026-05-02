@@ -46,7 +46,7 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#CCEE18] rounded-full -mr-64 -mt-64 opacity-5 pointer-events-none"></div>
                 <div className="container mx-auto px-4 relative z-10">
                     <div className="inline-flex items-center gap-2 bg-[#CCEE18] text-[#1A3D17] font-black uppercase tracking-[0.2em] text-[10px] px-6 py-2.5 rounded-full mb-6 shadow-lg">
-                        <CheckCircle2 size={12} /> Verified & Updated Daily — April 2026
+                        <CheckCircle2 size={12} /> Verified & Updated Daily — May 2026
                     </div>
                     <h1
                         className="text-4xl md:text-7xl font-black uppercase tracking-tighter mb-4"
@@ -55,11 +55,11 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
                         Papa John's <span className="text-[#CCEE18]">Coupons &amp; Promo Codes</span>
                     </h1>
                     <p className="text-lg text-white/80 font-bold max-w-2xl mx-auto tracking-wide mb-6">
-                        18+ verified Papa John's coupon codes updated daily. Save up to 50% on pizzas, sides & delivery orders.
+                        19+ verified Papa John's coupon codes updated daily. Save up to 50% on pizzas, sides & delivery orders.
                     </p>
                     <div className="flex flex-wrap justify-center gap-6 text-sm text-white/70 font-bold uppercase tracking-widest">
-                        <span className="flex items-center gap-1"><Check size={14} className="text-[#CCEE18]" /> 18 Active Codes</span>
-                        <span className="flex items-center gap-1"><Check size={14} className="text-[#CCEE18]" /> Last checked: April 15, 2026</span>
+                        <span className="flex items-center gap-1"><Check size={14} className="text-[#CCEE18]" /> 19 Active Codes</span>
+                        <span className="flex items-center gap-1"><Check size={14} className="text-[#CCEE18]" /> Last checked: May 2, 2026</span>
                         <span className="flex items-center gap-1"><Check size={14} className="text-[#CCEE18]" /> Up to 50% Off</span>
                         <span className="flex items-center gap-1"><Check size={14} className="text-[#CCEE18]" /> Free Delivery Available</span>
                     </div>
@@ -71,7 +71,7 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
                 <div className="max-w-[1200px] mx-auto px-4">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                         {[
-                            { label: "Active Codes", val: "18", color: "text-[#cc0000]" },
+                            { label: "Active Codes", val: "19", color: "text-[#cc0000]" },
                             { label: "Max Discount", val: "50%", color: "text-[#1A3D17]" },
                             { label: "Best Deal", val: "BOGO", color: "text-[#cc0000]" },
                             { label: "Delivery", val: "Free", color: "text-[#1A3D17]" },
@@ -105,7 +105,7 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
                             <Check size={16} strokeWidth={3} />
                         </div>
                         <p className="text-xs font-bold text-[#1A3D17]">
-                            Last verified: April 15, 2026 — reviewed by our dedicated deals team
+                            Last verified: May 2, 2026 — reviewed by our dedicated deals team
                         </p>
                     </div>
 
@@ -224,7 +224,7 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
 
                     {/* ── DETAILED CONTENT ── */}
                     <article className="prose max-w-none text-gray-600 font-medium leading-[1.8] space-y-6 mb-16">
-                        <h2 className="text-2xl font-black uppercase text-[#1A3D17] tracking-tighter">Complete Guide to Papa John's Savings in April 2026</h2>
+                        <h2 className="text-2xl font-black uppercase text-[#1A3D17] tracking-tighter">Complete Guide to Papa John's Savings in May 2026</h2>
                         <p>
                             Papa John's is one of America's largest pizza chains, operating thousands of locations across the US. Unlike competitors who run random promotions, Papa John's runs a consistent set of deals year-round — meaning savvy customers can almost always find a working promo code or automatic discount before placing their order.
                         </p>

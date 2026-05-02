@@ -3,8 +3,8 @@ import CouponsClient from '../../components/CouponsClient';
 import { getMonthYear } from '../../../lib/utils/date';
 
 export const metadata: Metadata = {
-    title: "Papa John's Coupons & Promo Codes April 2026 – Up to 50% Off | PapaJohns-Menus.us",
-    description: "Save big with 18+ verified Papa John's coupon codes for April 2026. Get 25% off, BOGO pizza deals, free delivery codes & carryout specials — updated daily by our deals team.",
+    title: "Papa John's Coupons & Promo Codes May 2026 – Up to 50% Off | PapaJohns-Menus.us",
+    description: "19+ verified Papa John's coupon codes updated daily for May 2026. Save up to 50% with working promo codes, BOGO deals, and free delivery codes.",
     keywords: "papa johns coupons, papa johns promo codes, papa johns discount code, papa johns deals 2026, papa johns coupon code today, papa johns free delivery code, papa johns bogo deal",
     authors: [{ name: "PapaJohns-Menus.us Deals Team" }],
     robots: "index, follow",
@@ -12,8 +12,8 @@ export const metadata: Metadata = {
         canonical: "https://papajohns-menus.us/coupons"
     },
     openGraph: {
-        title: "Papa John's Coupons & Promo Codes April 2026 – Up to 50% Off",
-        description: "18+ verified Papa John's coupon codes updated daily. BOGO deals, 25% off, free delivery codes for April 2026.",
+        title: "Papa John's Coupons & Promo Codes May 2026 – Up to 50% Off",
+        description: "19+ verified Papa John's coupon codes updated daily. BOGO deals, 25% off, free delivery codes for May 2026.",
         url: "https://papajohns-menus.us/coupons",
         type: "website",
         images: [
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Papa John's Coupons & Promo Codes April 2026 – Up to 50% Off",
-        description: "18+ verified Papa John's coupon codes updated daily. Get BOGO, 25% off & free delivery codes.",
+        title: "Papa John's Coupons & Promo Codes May 2026 – Up to 50% Off",
+        description: "19+ verified Papa John's coupon codes updated daily. Get BOGO, 25% off & free delivery codes.",
     }
 };
 
@@ -43,7 +43,7 @@ export default function CouponsPage() {
             title: "Buy One Large Pizza, Get One FREE",
             desc: "Buy any large pizza at full menu price and get a second large pizza absolutely free. Works on all sizes and crusts.",
             code: "BOGO4U",
-            expiry: "April 30, 2026",
+            expiry: "May 31, 2026",
             tags: ["Popular", "Online + App"],
             featured: true
         },
@@ -54,7 +54,7 @@ export default function CouponsPage() {
             title: "25% Off Your Entire Order",
             desc: "Apply this code at checkout to get 25% off your entire Papa John's order. Works on pizzas, sides, desserts and drinks.",
             code: "PIZZA25",
-            expiry: "April 30, 2026",
+            expiry: "May 31, 2026",
             tags: ["Sitewide"],
             featured: false
         },
@@ -78,7 +78,7 @@ export default function CouponsPage() {
             title: "$10 Off Orders of $40 or More",
             desc: "Save $10 on any order over $40. Perfect for family meal nights or group orders. Works on delivery and carryout.",
             code: "SAVE10",
-            expiry: "April 30, 2026",
+            expiry: "May 31, 2026",
             tags: ["Min. Spend $40"],
             featured: false
         },
@@ -89,7 +89,7 @@ export default function CouponsPage() {
             title: "20% Off Full Menu-Priced Orders",
             desc: "Take 20% off your full menu-priced order. Excludes promotional or already-discounted items.",
             code: "PIZZA20",
-            expiry: "April 30, 2026",
+            expiry: "May 31, 2026",
             tags: ["Online Only"],
             featured: false
         },
@@ -126,7 +126,7 @@ export default function CouponsPage() {
             title: "30% Off Sitewide",
             desc: "Save 30% on your entire order — one of the biggest sitewide discounts available. Apply at checkout before paying.",
             code: "HOTEL25",
-            expiry: "April 30, 2026",
+            expiry: "May 31, 2026",
             tags: ["Min. Spend $30"],
             featured: false
         }
@@ -143,7 +143,7 @@ export default function CouponsPage() {
         },
         {
             q: "What is the best Papa John's coupon code right now?",
-            a: "The best Papa John's deals for April 2026 are: BOGO4U for buy one get one free pizza, PIZZA25 for 25% off your entire order, and the 50% off carryout deal which applies automatically with no code needed. We update our codes daily."
+            a: "The best Papa John's deals for May 2026 are: BOGO4U for buy one get one free pizza, PIZZA25 for 25% off your entire order, and the 50% off carryout deal which applies automatically with no code needed. We update our codes daily."
         },
         {
             q: "Does Papa John's have a free delivery code?",
@@ -185,8 +185,8 @@ export default function CouponsPage() {
             {
                 "@type": "WebPage",
                 "@id": "https://papajohns-menus.us/coupons",
-                "name": "Papa John's Coupons & Promo Codes April 2026",
-                "description": "18+ verified Papa John's coupon codes and promo codes for April 2026. Updated daily by our deals team.",
+                "name": "Papa John's Coupons & Promo Codes May 2026",
+                "description": "19+ verified Papa John's coupon codes and promo codes for May 2026. Updated daily by our deals team.",
                 "url": "https://papajohns-menus.us/coupons",
                 "datePublished": "2026-01-01",
                 "dateModified": new Date().toISOString().split('T')[0],
@@ -211,7 +211,7 @@ export default function CouponsPage() {
             },
             {
                 "@type": "ItemList",
-                "name": "Papa John's Coupon Codes April 2026",
+                "name": "Papa John's Coupon Codes May 2026",
                 "description": "Active Papa John's promo codes and deals",
                 "itemListElement": coupons.map((c, i) => ({
                     "@type": "ListItem",
@@ -221,8 +221,8 @@ export default function CouponsPage() {
                         "name": c.title,
                         "description": c.desc,
                         "couponCode": c.code || undefined,
-                        "validFrom": "2026-04-01",
-                        "validThrough": "2026-04-30",
+                        "validFrom": "2026-05-01",
+                        "validThrough": "2026-05-31",
                         "url": "https://www.papajohns.com",
                         "seller": { "@type": "Organization", "name": "Papa John's Pizza" }
                     }
