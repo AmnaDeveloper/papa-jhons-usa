@@ -258,7 +258,7 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
                             Choosing carryout over delivery almost always saves you more money at Papa John's. Here is why: the carryout deal gives you 50% off all pizzas automatically. On top of that, you avoid the delivery fee of $3.99–$5.99 and you are not expected to tip a driver. On a $25 pizza order, switching from delivery to carryout could save $16–$18 in total.
                         </p>
                         <p>
-                            If you do need delivery, make sure your order reaches $40 to trigger free delivery. Below that threshold, the delivery fee applies in full.
+                            If you do need delivery, make sure your order reaches $40 to trigger free delivery or use a <Link href="/papa-johns-free-delivery" className="text-[#cc0000] underline">Papa Johns free delivery code</Link>. Below that threshold, the delivery fee applies in full.
                         </p>
                         <h3 className="text-xl font-black uppercase text-[#1A3D17]">Can I Stack Papa John's Coupons?</h3>
                         <p>
@@ -361,6 +361,7 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
                                 { label: "🍗 Sides & Dips", href: "/posts/sides" },
                                 { label: "🥤 Drinks", href: "/drinks" },
                                 { label: "🍰 Desserts", href: "/posts/papa-johns-desserts" },
+                                { label: "🚚 Free Delivery Codes", href: "/papa-johns-free-delivery" },
                             ].map((link, i) => (
                                 <Link 
                                     key={i}
