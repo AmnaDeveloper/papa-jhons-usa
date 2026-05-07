@@ -1,7 +1,9 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import AutoDateUpdater from "../components/AutoDateUpdater";
+import Script from "next/script";
 
 
 const geistSans = Geist({
@@ -15,6 +17,14 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
   display: "swap",
 });
+
+// const papaSans = localFont({
+//   src: "../../public/fonts/PapaSans-Heavy.woff2",
+//   variable: "--font-papa-sans",
+//   display: "swap",
+//   weight: "900",
+// });
+const papaSans = { variable: "" }; // Fallback to avoid breaking variable usage
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -134,19 +144,57 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* Google tag (gtag.js) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-R9S73NBFKL"></script>
-        <script
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-R9S73NBFKL"
+          strategy="lazyOnload"
+        />
+        <Script
+          id="google-analytics"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', 'G-R9S73NBFKL');
-            `
+            `,
           }}
         />
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3533142117898792"
-     crossOrigin="anonymous"></script>
+        {/* Delay AdSense until user interaction */}
+        <Script
+          id="adsense-loader"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                var adsLoaded = false;
+                function loadAds() {
+                  if (adsLoaded) return;
+                  adsLoaded = true;
+                  
+                  // Load AdSense
+                  var script = document.createElement('script');
+                  script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3533142117898792';
+                  script.async = true;
+                  script.crossOrigin = 'anonymous';
+                  document.head.appendChild(script);
+                  
+                  // Clean up events
+                  window.removeEventListener('scroll', loadAds);
+                  window.removeEventListener('mousemove', loadAds);
+                  window.removeEventListener('touchstart', loadAds);
+                }
+                
+                window.addEventListener('scroll', loadAds, { passive: true });
+                window.addEventListener('mousemove', loadAds, { passive: true });
+                window.addEventListener('touchstart', loadAds, { passive: true });
+                
+                // Fallback for very slow interactions
+                setTimeout(loadAds, 5000);
+              })();
+            `,
+          }}
+        />
         {/* ── LCP CRITICAL: Preload hero image with highest priority ── */}
         <link
           rel="preload"
@@ -155,17 +203,10 @@ export default function RootLayout({
           // @ts-expect-error fetchpriority is valid HTML but not in React types yet
           fetchpriority="high"
         />
-        {/* ── Preload custom font to prevent FOIT ── */}
-        <link
-          rel="preload"
-          href="/fonts/PapaSans-Heavy.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-        {/* ── DNS prefetch for external resources ── */}
-        <link rel="dns-prefetch" href="//fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
+
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

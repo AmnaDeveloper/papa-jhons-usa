@@ -3,9 +3,8 @@ import Link from "next/link";
 import posts from "../data/posts.json";
 import { ArrowRight } from "lucide-react";
 import HeroSection from "../components/HeroSection";
-import RestaurantHoursSection from "../components/RestaurantHoursSection";
-import CouponsSection from "../components/CouponsSection";
-import MenuGuideSection from "../components/MenuGuideSection";
+import dynamic from "next/dynamic";
+import DynamicSections from "../components/DynamicSections";
 
 
 import { generateFAQSchema } from "../lib/seo/schema"; // kept if needed elsewhere, otherwise safe to ignore
@@ -162,7 +161,6 @@ export default function Home() {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
             />
             <HeroSection />
-            <MenuGuideSection />
 
 
             {/* Complete Menu PDF Viewer — Responsive Revamp */}
@@ -190,34 +188,25 @@ export default function Home() {
                         </p>
                     </div>
 
-                    <div className="w-full bg-white rounded-3xl shadow-2xl p-2 md:p-8 border border-gray-100">
-                        {/* 📱 MOBILE PREVIEW: Hidden on MD+ */}
-                        <div className="md:hidden block">
-                             <a 
-                                href="/papajohns_openbook.pdf#view=FitH" 
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                                className="relative block aspect-[4/5] rounded-2xl overflow-hidden shadow-inner group"
-                             >
-                                <Image src="/menu-cover.png" alt="Papa Johns Menu Preview" fill className="object-cover group-active:scale-95 transition-transform" />
-                                <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center p-6 text-center">
-                                    <div className="bg-white/20 backdrop-blur-md p-4 rounded-full mb-4">
-                                        <ArrowRight size={32} className="text-[#CCEE18]" />
-                                    </div>
-                                    <p className="text-white font-black uppercase tracking-widest text-sm text-center">Open Full Page Menu</p>
-                                    <p className="text-[#CCEE18] text-[10px] mt-2 font-bold uppercase tracking-widest">Single Page Mode Enabled</p>
-                                </div>
-                             </a>
-                        </div>
-
-                        {/* 🖥️ DESKTOP VIEWER: Hidden on SM */}
-                        <div className="hidden md:block relative w-full h-[900px] rounded-2xl overflow-hidden bg-gray-200">
-                            <iframe
+                    <div className="w-full bg-white rounded-3xl shadow-2xl p-2 md:p-8 border border-gray-100 overflow-hidden">
+                        {/* 📱 Mobile Preview & 🖥️ Desktop Viewer Integrated */}
+                        <div className="relative w-full aspect-[4/5] md:aspect-auto md:h-[900px] rounded-2xl overflow-hidden bg-gray-200">
+                             <div className="md:hidden absolute inset-0 z-0">
+                                <Image src="/menu-cover.png" alt="Papa Johns Menu Preview" fill className="object-cover" />
+                             </div>
+                             <iframe
                                 src="/papajohns_openbook.pdf#view=FitH"
-                                className="absolute inset-0 w-full h-full border-none"
+                                className="absolute inset-0 w-full h-full border-none z-10 md:z-auto"
                                 title="Papa Johns Complete Menu PDF"
                                 loading="lazy"
-                            />
+                             />
+                             {/* Mobile Overlay (Only visible on mobile over the iframe if iframe doesn't load/render well) */}
+                             <div className="md:hidden absolute inset-0 bg-black/40 z-20 flex flex-col items-center justify-center p-6 text-center pointer-events-none">
+                                <div className="bg-white/20 backdrop-blur-md p-4 rounded-full mb-4">
+                                    <ArrowRight size={32} className="text-[#CCEE18]" />
+                                </div>
+                                <p className="text-white font-black uppercase tracking-widest text-sm">Tap to View Menu</p>
+                             </div>
                         </div>
 
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8 md:mt-12 pb-8 px-4">
@@ -254,34 +243,25 @@ export default function Home() {
                         </p>
                     </div>
 
-                    <div className="w-full bg-[#fcfaf8] rounded-3xl shadow-2xl p-2 md:p-8 border border-gray-100">
-                        {/* 📱 MOBILE PREVIEW: Hidden on MD+ */}
-                        <div className="md:hidden block">
-                             <a 
-                                href="/papa_rewards_openbook.pdf#view=FitH" 
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                                className="relative block aspect-[4/5] rounded-2xl overflow-hidden shadow-inner group"
-                             >
-                                <Image src="/rewards-cover.png" alt="Papa Rewards Preview" fill className="object-cover group-active:scale-95 transition-transform" />
-                                <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center p-6 text-center">
-                                    <div className="bg-white/20 backdrop-blur-md p-4 rounded-full mb-4">
-                                        <ArrowRight size={32} className="text-[#CCEE18]" />
-                                    </div>
-                                    <p className="text-white font-black uppercase tracking-widest text-sm text-center">Open Full Page Rewards</p>
-                                    <p className="text-[#CCEE18] text-[10px] mt-2 font-bold uppercase tracking-widest">Single Page Mode Enabled</p>
-                                </div>
-                             </a>
-                        </div>
-
-                        {/* 🖥️ DESKTOP VIEWER: Hidden on SM */}
-                        <div className="hidden md:block relative w-full h-[900px] rounded-2xl overflow-hidden bg-gray-200">
-                            <iframe
+                    <div className="w-full bg-[#fcfaf8] rounded-3xl shadow-2xl p-2 md:p-8 border border-gray-100 overflow-hidden">
+                        {/* 📱 Mobile Preview & 🖥️ Desktop Viewer Integrated */}
+                        <div className="relative w-full aspect-[4/5] md:aspect-auto md:h-[900px] rounded-2xl overflow-hidden bg-gray-200">
+                             <div className="md:hidden absolute inset-0 z-0">
+                                <Image src="/rewards-cover.png" alt="Papa Rewards Preview" fill className="object-cover" />
+                             </div>
+                             <iframe
                                 src="/papa_rewards_openbook.pdf#view=FitH"
-                                className="absolute inset-0 w-full h-full border-none"
+                                className="absolute inset-0 w-full h-full border-none z-10 md:z-auto"
                                 title="Papa Rewards Booklet PDF"
                                 loading="lazy"
-                            />
+                             />
+                             {/* Mobile Overlay */}
+                             <div className="md:hidden absolute inset-0 bg-black/40 z-20 flex flex-col items-center justify-center p-6 text-center pointer-events-none">
+                                <div className="bg-white/20 backdrop-blur-md p-4 rounded-full mb-4">
+                                    <ArrowRight size={32} className="text-[#CCEE18]" />
+                                </div>
+                                <p className="text-white font-black uppercase tracking-widest text-sm">Tap to View Rewards</p>
+                             </div>
                         </div>
                         
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8 md:mt-12 pb-8 px-4">
@@ -312,7 +292,7 @@ export default function Home() {
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
-                        {posts.map((post) => (
+                        {posts.slice(0, 6).map((post) => (
                             <Link href={post.slug === 'best-pizza-delivery-near-me' ? `/${post.slug}` : `/posts/${post.slug}`} key={post.id} className="bg-white rounded-[2rem] p-6 shadow-md hover:shadow-2xl hover:border-[#CCEE18] border-2 border-transparent transition-all duration-300 group flex flex-col h-full relative overflow-hidden">
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-[#CCEE18] rounded-bl-full -mr-16 -mt-16 opacity-0 group-hover:opacity-10 transition-opacity"></div>
                                 
@@ -367,11 +347,8 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* Restaurant Hours Section */}
-            <RestaurantHoursSection />
-
-            {/* Papa Johns Coupon Section */}
-            <CouponsSection />
+            {/* Dynamic Sections (Menu, Hours, Coupons) */}
+            <DynamicSections />
 
             {/* ── SEO FAQ SECTION ── */}
             <section className="py-20 bg-white">
@@ -450,13 +427,23 @@ export default function Home() {
                             },
                             {
                                 q: "How many calories are in a Papa John's pizza slice?",
-                                a: <div className="mt-2 text-sm overflow-x-auto"><table className="w-full text-left border-collapse"><thead><tr className="bg-gray-100 text-[#1A3D17]"><th className="p-2 border">Pizza</th><th className="p-2 border">Calories Per Slice (Large)</th></tr></thead><tbody><tr><td className="p-2 border">Cheese Pizza</td><td className="p-2 border">~260 cal</td></tr><tr><td className="p-2 border">Pepperoni Pizza</td><td className="p-2 border">~300 cal</td></tr><tr><td className="p-2 border">The Works</td><td className="p-2 border">~360 cal</td></tr><tr><td className="p-2 border">The Meats</td><td className="p-2 border">~390 cal</td></tr><tr><td className="p-2 border">BBQ Chicken Bacon</td><td className="p-2 border">~310 cal</td></tr><tr><td className="p-2 border">Super Hawaiian</td><td className="p-2 border">~260 cal</td></tr></tbody></table><br/><Link href="/posts/papa-johns-nutrition-guide" className="text-[#cc0000] underline font-bold">View the full Papa John's Nutrition Guide &rarr;</Link></div>,
+                                a: <div className="mt-2 text-sm">
+                                    <div className="grid grid-cols-2 gap-2 bg-white/50 p-4 rounded-xl border border-gray-100 mb-4">
+                                        <div className="font-bold">Cheese Pizza</div><div className="text-right">~260 cal</div>
+                                        <div className="font-bold">Pepperoni Pizza</div><div className="text-right">~300 cal</div>
+                                        <div className="font-bold">The Works</div><div className="text-right">~360 cal</div>
+                                        <div className="font-bold">The Meats</div><div className="text-right">~390 cal</div>
+                                        <div className="font-bold">BBQ Chicken Bacon</div><div className="text-right">~310 cal</div>
+                                        <div className="font-bold">Super Hawaiian</div><div className="text-right">~260 cal</div>
+                                    </div>
+                                    <Link href="/posts/papa-johns-nutrition-guide" className="text-[#cc0000] underline font-bold">View the full Papa John's Nutrition Guide &rarr;</Link>
+                                 </div>,
                             },
                             {
                                 q: "Can I order Papa John's online or through an app?",
                                 a: <>Yes. Order delivery or carryout online at papajohns.com or through the free Papa John's app (iOS &amp; Android). App features include Papa Track order tracking, saved favorites, Papa Rewards earning, and exclusive app-only promo codes not available anywhere else.</>,
                             }
-                        ].map((faq, i) => (
+                        ].slice(0, 8).map((faq, i) => (
                             <div
                                 key={i}
                                 className="bg-[#fcfaf8] hover:bg-[#1A3D17] group transition-colors duration-300 p-7 rounded-3xl shadow-sm border border-gray-100"

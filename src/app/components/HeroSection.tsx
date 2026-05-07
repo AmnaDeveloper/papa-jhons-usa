@@ -1,22 +1,9 @@
-'use client';
-
 import Image from 'next/image';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { getTodayFormatted } from '@/lib/utils/date';
 
 export default function HeroSection() {
-    const [mounted, setMounted] = useState(false);
-    const [currentDate, setCurrentDate] = useState('');
-
-    useEffect(() => {
-        setMounted(true);
-        const options: Intl.DateTimeFormatOptions = {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric'
-        };
-        setCurrentDate(new Date().toLocaleDateString('en-US', options));
-    }, []);
+    const currentDate = getTodayFormatted();
 
     return (
         <section className="relative  w-full  h-full flex items-center justify-center overflow-hidden">
@@ -43,7 +30,7 @@ export default function HeroSection() {
                     className="mb-8 inline-flex items-center gap-2 bg-[#CCEE18] text-[#1A3D17] font-black uppercase tracking-[0.15em] text-xs md:text-sm py-2 px-6 rounded-full shadow-[0_0_20px_rgba(204,238,24,0.3)] transition-all hover:scale-105 cursor-default"
                 >
                     <span className="w-2.5 h-2.5 rounded-full bg-red-600 animate-pulse"></span>
-                    <span>UPDATED AT: {mounted ? currentDate : '...'}</span>
+                    <span>UPDATED AT: {currentDate}</span>
                 </div>
 
                 {/* Main Heading */}

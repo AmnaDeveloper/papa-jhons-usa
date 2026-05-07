@@ -11,6 +11,7 @@
   --color-accent: #CCEE18;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-papa: var(--font-papa-sans);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -43,12 +44,12 @@ body {
 /* Blog Content Premium Typography */
 .blog-content h2 {
   @apply text-2xl md:text-3xl font-black text-[#1A3D17] uppercase tracking-tighter mb-8 mt-16 border-l-[8px] border-[#CCEE18] pl-5 leading-tight;
-  font-family: "PapaSans-Heavy", "Arial Black", sans-serif;
+  font-family: var(--font-papa), "Arial Black", sans-serif;
 }
 
 .blog-content h3 {
   @apply text-lg md:text-xl font-black text-[#cc0000] uppercase mt-10 mb-5 border-b border-gray-100 pb-2;
-  font-family: "PapaSans-Heavy", "Arial Black", sans-serif;
+  font-family: var(--font-papa), "Arial Black", sans-serif;
 }
 
 .blog-content p {
@@ -130,10 +131,4 @@ body {
   color: #1A3D17;
 }
 
-@font-face {
-  font-family: "PapaSans-Heavy";
-  src: url("/fonts/PapaSans-Heavy.woff2") format("woff2");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
+

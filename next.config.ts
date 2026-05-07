@@ -43,6 +43,12 @@ const nextConfig: NextConfig = {
           { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
         ],
       },
+      {
+        source: "/:all*(svg|jpg|jpeg|png|webp|avif|ico|woff2|pdf)",
+        headers: [
+          { key: "Cache-Control", value: "public, max-age=31536000, stale-while-revalidate=31536000" },
+        ],
+      },
     ];
   },
   async redirects() {
@@ -59,8 +65,12 @@ const nextConfig: NextConfig = {
       { source: '/menus-prices/drinks', destination: '/drinks', permanent: true },
     ];
   },
+  compiler: {
+    removeConsole: process.env.NODE_ENV === "production",
+  },
   experimental: {
-    optimizeCss: false, // Turn on in prod for experimental optimization
+    optimizeCss: true, // Inlines critical CSS to reduce request chains
+    optimizePackageImports: ["lucide-react", "@mui/material", "@emotion/react", "@emotion/styled"],
   },
 };
 
