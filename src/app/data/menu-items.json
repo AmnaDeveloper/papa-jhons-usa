@@ -11,7 +11,7 @@
         "calories": "230 - 320",
         "rating": 4.8,
         "reviewCount": 2105,
-        "image": "/classic-pizzas.png",
+        "image": "/classic-pizzas.webp",
         "ingredients": [
             "Never-Frozen Original Dough (Wheat, Barley, Soy)",
             "Signature Vine-Ripened Tomato Sauce",
@@ -160,7 +160,7 @@
         "calories": "230 - 370",
         "rating": 4.7,
         "reviewCount": 2341,
-        "image": "/the-works-2026.jpg",
+        "image": "/the-works-2026.webp",
         "ingredients": [
             "Never-Frozen Original Dough (Wheat)",
             "Proprietary BBQ Sauce (Molasses, Tomato Paste, Vinegar, Spices)",
@@ -301,7 +301,7 @@
         "calories": "810",
         "rating": 4.7,
         "reviewCount": 1820,
-        "image": "/philly-papadia-2026.png",
+        "image": "/philly-papadia-2026.webp",
         "ingredients": [
             "Original Flatbread Dough (Wheat)",
             "Tender Sliced Steak Strips",

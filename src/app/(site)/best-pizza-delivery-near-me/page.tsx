@@ -58,10 +58,10 @@ export default async function BestPizzaDeliveryPage() {
 
     // Mock Data for "Popular Items"
     const popularItems = [
-        { name: "Epic Stuffed Crust", price: "$18.99", cals: "350 cal", img: "/epic-stuffed-crust-pizza.png", alt: "Papa Johns Epic Stuffed Crust Pizza with gooey cheese" },
-        { name: "Garlic Parmesan Breadsticks", price: "$6.99", cals: "150 cal", img: "/garlic-parmesan-breadsticks.png", alt: "Papa Johns Garlic Parmesan Breadsticks baked golden brown" },
-        { name: "Oreo Cookie Papa Bites", price: "$5.99", cals: "110 cal", img: "/oreo-cookie-papa-bites.png", alt: "Papa Johns Oreo Cookie Papa Bites sweet dessert" },
-        { name: "Super Hawaiian Pizza", price: "$16.99", cals: "280 cal", img: "/super-hawaiian-pizza.png", alt: "Papa Johns Super Hawaiian Pizza with pineapple and ham" }
+        { name: "Epic Stuffed Crust", price: "$18.99", cals: "350 cal", img: "/epic-stuffed-crust-pizza.webp", alt: "Papa Johns Epic Stuffed Crust Pizza with gooey cheese" },
+        { name: "Garlic Parmesan Breadsticks", price: "$6.99", cals: "150 cal", img: "/garlic-parmesan-breadsticks.webp", alt: "Papa Johns Garlic Parmesan Breadsticks baked golden brown" },
+        { name: "Oreo Cookie Papa Bites", price: "$5.99", cals: "110 cal", img: "/oreo-cookie-papa-bites.webp", alt: "Papa Johns Oreo Cookie Papa Bites sweet dessert" },
+        { name: "Super Hawaiian Pizza", price: "$16.99", cals: "280 cal", img: "/super-hawaiian-pizza.webp", alt: "Papa Johns Super Hawaiian Pizza with pineapple and ham" }
     ];
 
     const faqSchema = post.faqs ? {
@@ -155,7 +155,7 @@ export default async function BestPizzaDeliveryPage() {
                                 </div>
                                 <div className="relative w-full h-auto rounded-3xl overflow-hidden shadow-inner border border-gray-100 text-center bg-gray-50">
                                     <img 
-                                        src={post.image || '/logo.png'} 
+                                        src={post.image || '/logo.webp'} 
                                         alt={post.imageAlt || post.title}
                                         className="inline-block w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
                                     />
@@ -350,7 +350,7 @@ export default async function BestPizzaDeliveryPage() {
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                             <Link href="/posts/classic-pizzas" className="bg-white rounded-[2rem] p-6 shadow-md border hover:border-[#CCEE18] transition-all group hover:shadow-xl">
                                 <div className="aspect-video bg-gray-100 rounded-xl mb-4 overflow-hidden relative">
-                                    <img src="/best-pizza-delivery-near-me.jpg" alt="Classic Pizzas" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                    <img src="/best-pizza-delivery-near-me.webp" alt="Classic Pizzas" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                                 </div>
                                 <h4 className="font-black text-[#1A3D17] uppercase text-xl mb-2">Classic Pizzas</h4>
                                 <div className="flex justify-between items-center text-sm font-bold text-gray-500">
@@ -361,7 +361,7 @@ export default async function BestPizzaDeliveryPage() {
 
                             <Link href="/posts/super-loaded" className="bg-white rounded-[2rem] p-6 shadow-md border hover:border-[#CCEE18] transition-all group hover:shadow-xl">
                                 <div className="aspect-video bg-gray-100 rounded-xl mb-4 overflow-hidden relative">
-                                    <img src="/papa-johns-menu-prices-guide.png" alt="Super Loaded Pizzas" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                    <img src="/papa-johns-menu-prices-guide.webp" alt="Super Loaded Pizzas" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                                 </div>
                                 <h4 className="font-black text-[#1A3D17] uppercase text-xl mb-2">Super Loaded</h4>
                                 <div className="flex justify-between items-center text-sm font-bold text-gray-500">
@@ -372,7 +372,7 @@ export default async function BestPizzaDeliveryPage() {
                             
                             <Link href="/posts/sides" className="bg-white rounded-[2rem] p-6 shadow-md border hover:border-[#CCEE18] transition-all group hover:shadow-xl">
                                 <div className="aspect-video bg-gray-100 rounded-xl mb-4 overflow-hidden relative">
-                                    <img src="/new-papadias-flavors-2026.jpg" alt="Sides and Dips" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                    <img src="/new-papadias-flavors-2026.webp" alt="Sides and Dips" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                                 </div>
                                 <h4 className="font-black text-[#1A3D17] uppercase text-xl mb-2">Sides & Dips</h4>
                                 <div className="flex justify-between items-center text-sm font-bold text-gray-500">

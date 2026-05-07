@@ -124,7 +124,7 @@ export default async function DrinksPage() {
                                     <div className="absolute top-3 left-3 z-10 bg-[#cc0000] text-white text-[9px] font-black uppercase tracking-widest px-4 py-1.5 rounded-full shadow-md">
                                         Featured Guide
                                     </div>
-                                    <img src="/papa-johns-mountain-dew.png" alt="Papa Johns Mountain Dew Guide" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                                    <img src="/papa-johns-mountain-dew.webp" alt="Papa Johns Mountain Dew Guide" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                                 </div>
                                 <h3 className="text-xl font-black text-[#1A3D17] uppercase leading-tight mb-2 group-hover:text-[#cc0000] transition-colors">
                                     Mountain Dew Guide 2026
@@ -146,7 +146,7 @@ export default async function DrinksPage() {
                                     <div className="absolute top-3 left-3 z-10 bg-[#cc0000] text-white text-[9px] font-black uppercase tracking-widest px-4 py-1.5 rounded-full shadow-md">
                                         Fan Favorite
                                     </div>
-                                    <img src="/papa-johns-pepsi.png" alt="Papa Johns Pepsi Guide" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                                    <img src="/papa-johns-pepsi.webp" alt="Papa Johns Pepsi Guide" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                                 </div>
                                 <h3 className="text-xl font-black text-[#1A3D17] uppercase leading-tight mb-2 group-hover:text-[#cc0000] transition-colors">
                                     Pepsi Guide 2026

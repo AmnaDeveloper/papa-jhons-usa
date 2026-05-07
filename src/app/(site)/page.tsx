@@ -192,7 +192,7 @@ export default function Home() {
                         {/* 📱 Mobile Preview & 🖥️ Desktop Viewer Integrated */}
                         <div className="relative w-full aspect-[4/5] md:aspect-auto md:h-[900px] rounded-2xl overflow-hidden bg-gray-200">
                              <div className="md:hidden absolute inset-0 z-0">
-                                <Image src="/menu-cover.png" alt="Papa Johns Menu Preview" fill className="object-cover" />
+                                <Image src="/menu-cover.webp" alt="Papa Johns Menu Preview" fill className="object-cover" />
                              </div>
                              <iframe
                                 src="/papajohns_openbook.pdf#view=FitH"
@@ -247,7 +247,7 @@ export default function Home() {
                         {/* 📱 Mobile Preview & 🖥️ Desktop Viewer Integrated */}
                         <div className="relative w-full aspect-[4/5] md:aspect-auto md:h-[900px] rounded-2xl overflow-hidden bg-gray-200">
                              <div className="md:hidden absolute inset-0 z-0">
-                                <Image src="/rewards-cover.png" alt="Papa Rewards Preview" fill className="object-cover" />
+                                <Image src="/rewards-cover.webp" alt="Papa Rewards Preview" fill className="object-cover" />
                              </div>
                              <iframe
                                 src="/papa_rewards_openbook.pdf#view=FitH"
