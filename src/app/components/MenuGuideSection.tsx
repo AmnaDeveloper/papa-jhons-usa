@@ -73,7 +73,7 @@ const MenuGuideSection = () => {
                         font-family: "PapaSans-Heavy", sans-serif;
                     }
                     .menu-guide-container td.cal { 
-                        color: #888; 
+                        color: #666; 
                         font-size: 12px; 
                         white-space: nowrap; 
                         font-weight: 800;

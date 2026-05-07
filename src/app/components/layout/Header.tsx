@@ -49,12 +49,12 @@ export default function Header() {
                     {/* Brand Logo */}
                     <Link href="/" className="flex-shrink-0 group">
                         <div className="flex flex-col items-start leading-none">
-                            <h1
+                            <div
                                 className="text-xl md:text-3xl font-black italic tracking-tighter text-white uppercase"
                                 style={{ ...linkStyle, textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}
                             >
                                 <span className="text-[#CCEE18]">PAPA</span> JOHNS
-                            </h1>
+                            </div>
                         </div>
                     </Link>
 
@@ -122,6 +122,8 @@ export default function Header() {
                         <button 
                             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                             className="lg:hidden p-2 text-white hover:text-[#CCEE18] transition-colors"
+                            aria-label={mobileMenuOpen ? "Close mobile menu" : "Open mobile menu"}
+                            aria-expanded={mobileMenuOpen}
                         >
                             {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
                         </button>

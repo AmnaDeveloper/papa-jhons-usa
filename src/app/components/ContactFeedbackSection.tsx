@@ -84,8 +84,9 @@ export default function ContactFeedbackSection() {
                         <form onSubmit={handleSubmit} className="space-y-6">
                             <div className="grid grid-cols-2 gap-6">
                                 <div>
-                                    <label className="block text-[10px] font-black text-gray-400 uppercase tracking-widest mb-2 ml-1">Your Name</label>
+                                    <label htmlFor="fb-name" className="block text-[10px] font-black text-gray-600 uppercase tracking-widest mb-2 ml-1">Your Name</label>
                                     <input 
+                                        id="fb-name"
                                         type="text" 
                                         placeholder="Full Name"
                                         className="w-full px-5 py-4 rounded-2xl bg-gray-50 border-2 border-transparent focus:border-[#CCEE18] focus:bg-white outline-none font-bold text-sm transition-all"
@@ -95,9 +96,10 @@ export default function ContactFeedbackSection() {
                                     />
                                 </div>
                                 <div>
-                                    <label className="block text-[10px] font-black text-gray-400 uppercase tracking-widest mb-2 ml-1">Rating</label>
+                                    <label htmlFor="fb-rating" className="block text-[10px] font-black text-gray-600 uppercase tracking-widest mb-2 ml-1">Rating</label>
                                     <div className="relative">
                                         <select 
+                                            id="fb-rating"
                                             className="w-full px-5 py-4 rounded-2xl bg-gray-50 border-2 border-transparent focus:border-[#CCEE18] focus:bg-white outline-none font-bold text-sm transition-all appearance-none cursor-pointer"
                                             value={rating}
                                             onChange={(e) => setRating(parseInt(e.target.value))}
@@ -108,13 +110,14 @@ export default function ContactFeedbackSection() {
                                             <option value="2">2 Stars ★★</option>
                                             <option value="1">1 Star ★</option>
                                         </select>
-                                        <div className="absolute right-5 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400">▼</div>
+                                        <div className="absolute right-5 top-1/2 -translate-y-1/2 pointer-events-none text-gray-600">▼</div>
                                     </div>
                                 </div>
                             </div>
                             <div>
-                                <label className="block text-[10px] font-black text-gray-400 uppercase tracking-widest mb-2 ml-1">Your Experience</label>
+                                <label htmlFor="fb-message" className="block text-[10px] font-black text-gray-600 uppercase tracking-widest mb-2 ml-1">Your Experience</label>
                                 <textarea 
+                                    id="fb-message"
                                     placeholder="What's your feedback? We'd love to hear it!"
                                     rows={4}
                                     className="w-full px-5 py-4 rounded-2xl bg-gray-50 border-2 border-transparent focus:border-[#CCEE18] focus:bg-white outline-none font-bold text-sm transition-all resize-none"
@@ -138,7 +141,7 @@ export default function ContactFeedbackSection() {
                 {/* Database-Connected Feed */}
                 <div className="space-y-6 max-h-[600px] overflow-y-auto pr-3 custom-scrollbar scroll-smooth">
                     {isLoading ? (
-                        <div className="flex flex-col items-center justify-center py-20 bg-white rounded-3xl border-2 border-dashed border-gray-100 italic text-gray-400 text-sm">
+                        <div className="flex flex-col items-center justify-center py-20 bg-white rounded-3xl border-2 border-dashed border-gray-100 italic text-gray-600 text-sm">
                             🍕 Fetching latest feedbacks...
                         </div>
                     ) : (
@@ -161,7 +164,7 @@ export default function ContactFeedbackSection() {
                                             </div>
                                         </div>
                                     </div>
-                                    <span className="text-[10px] font-bold text-gray-400 uppercase bg-gray-50 px-3 py-1.5 rounded-full border border-gray-100">
+                                    <span className="text-[10px] font-bold text-gray-600 uppercase bg-gray-50 px-3 py-1.5 rounded-full border border-gray-100">
                                         {new Date(fb.date).toLocaleDateString()}
                                     </span>
                                 </div>

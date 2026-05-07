@@ -95,7 +95,9 @@ export default function RestaurantHoursSection() {
                         </div>
 
                         <div className="relative">
+                            <label htmlFor="state-filter" className="sr-only">Filter locations by state</label>
                             <select
+                                id="state-filter"
                                 value={selectedState}
                                 onChange={e => setSelectedState(e.target.value)}
                                 className="w-full appearance-none rounded-xl px-4 py-3 text-gray-900 font-bold focus:outline-none cursor-pointer text-sm pr-10"

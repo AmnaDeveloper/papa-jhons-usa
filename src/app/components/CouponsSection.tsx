@@ -196,7 +196,7 @@ export default function CouponsSection() {
                                             <div className="flex-1 p-8">
                                                 <div className="flex items-center gap-2 mb-3">
                                                      <span className="bg-[#1A3D17] text-[#CCEE18] text-[9px] font-black px-2 py-0.5 rounded-sm tracking-widest uppercase">Verified Deal</span>
-                                                     <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest leading-none">Official Promo</span>
+                                                     <span className="text-[10px] font-bold text-gray-600 uppercase tracking-widest leading-none">Official Promo</span>
                                                 </div>
                                                 <h4 className="text-2xl font-black text-[#1A3D17] leading-tight mb-3" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
                                                     {coupon.title}
@@ -220,7 +220,7 @@ export default function CouponsSection() {
                                                     ) : (
                                                         <>
                                                             <span className="font-black text-sm uppercase tracking-widest">Show Coupon Code</span>
-                                                            <div className="flex gap-1 mt-1 opacity-40">
+                                                            <div className="flex gap-1 mt-1">
                                                                 {[...Array(4)].map((_, i) => (
                                                                     <div key={i} className="w-1.5 h-1.5 rounded-full bg-white"></div>
                                                                 ))}
@@ -238,7 +238,7 @@ export default function CouponsSection() {
                                                 <span className="inline-flex h-2 w-2 rounded-full bg-[#1A3D17]"></span>
                                                 Verified Success: Someone just saved <span className="text-[#cc0000] font-black">{coupon.amountSaved}</span> using this Papa Johns promo code, {mins} minutes ago!
                                             </p>
-                                            <button className="text-[10px] font-black text-[#1A3D17]/40 uppercase tracking-widest hover:text-[#cc0000] transition-colors">See Details →</button>
+                                            <button className="text-[10px] font-black text-[#1A3D17] uppercase tracking-widest hover:text-[#cc0000] transition-colors">See Details →</button>
                                         </div>
                                     </div>
                                 );

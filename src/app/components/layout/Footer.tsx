@@ -58,11 +58,14 @@ export default function Footer() {
                                         Get the latest menu updates, special offers, and food news delivered to your inbox.
                                     </p>
                                     <form className="space-y-3 w-max-[320px] max-w-sm" onSubmit={handleSubscribe}>
+                                        <label htmlFor="footer-email" className="sr-only">Email address</label>
                                         <input
+                                            id="footer-email"
                                             type="email"
                                             placeholder="Enter your email"
-                                            className="w-full bg-[#878787] text-white placeholder-gray-300 px-4 py-3 rounded-md border border-transparent focus:outline-none focus:border-[#CCEE18] transition-colors"
+                                            className="w-full bg-gray-800 text-white placeholder-gray-400 px-4 py-3 rounded-md border border-transparent focus:outline-none focus:border-[#CCEE18] transition-colors"
                                             required
+                                            aria-label="Email address for newsletter"
                                             disabled={subscribeStatus === 'loading'}
                                         />
                                         <button
@@ -156,7 +159,7 @@ export default function Footer() {
                         <div className="bg-[#241a14] border border-[#36271e] p-5 rounded-md text-[11px] text-gray-300 max-w-xl flex items-start gap-3">
                             <AlertTriangle size={14} className="text-[#f39c12] flex-shrink-0 mt-0.5" />
                             <p className="leading-relaxed">
-                                <span className="text-[#f39c12]">Disclaimer:</span> Papa John's Menu is an independent informational site. We are <span className="text-gray-500">not affiliated with or endorsed by Papa John's.</span> All menu items, prices, and nutritional information are for reference only.
+                                <span className="text-[#f39c12]">Disclaimer:</span> Papa John's Menu is an independent informational site. We are <span className="text-gray-300">not affiliated with or endorsed by Papa John's.</span> All menu items, prices, and nutritional information are for reference only.
                             </p>
                         </div>
                     </div>

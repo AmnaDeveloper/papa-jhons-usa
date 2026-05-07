@@ -121,10 +121,11 @@ export default function StoreLocatorPage() {
                         </div>
                         
                         <div className="lg:col-span-6">
-                            <label className="block text-[10px] font-black text-gray-400 uppercase tracking-widest mb-3 ml-2">Location Search</label>
+                            <label htmlFor="loc-search" className="block text-[10px] font-black text-gray-600 uppercase tracking-widest mb-3 ml-2">Location Search</label>
                             <div className="relative group">
                                 <Search className="absolute left-6 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-[#1A3D17] transition-colors" size={20} />
                                 <input
+                                    id="loc-search"
                                     type="text"
                                     placeholder="City, Zip Code, or Address..."
                                     className="w-full pl-16 pr-6 py-5 rounded-[1.5rem] bg-gray-50 border-2 border-transparent focus:border-[#CCEE18] focus:bg-white outline-none transition-all text-gray-900 font-bold shadow-inner"
@@ -135,9 +136,10 @@ export default function StoreLocatorPage() {
                         </div>
 
                         <div className="lg:col-span-4">
-                            <label className="block text-[10px] font-black text-gray-400 uppercase tracking-widest mb-3 ml-2">Filter by State</label>
+                            <label htmlFor="state-select" className="block text-[10px] font-black text-gray-600 uppercase tracking-widest mb-3 ml-2">Filter by State</label>
                             <div className="relative">
                                 <select
+                                    id="state-select"
                                     className="w-full px-6 py-5 rounded-[1.5rem] bg-gray-50 border-2 border-transparent focus:border-[#CCEE18] focus:bg-white outline-none transition-all text-gray-900 font-bold appearance-none cursor-pointer shadow-inner"
                                     value={selectedState}
                                     onChange={(e) => setSelectedState(e.target.value)}
@@ -203,14 +205,14 @@ export default function StoreLocatorPage() {
                                         <div className="flex items-center justify-between p-4 rounded-2xl bg-gray-50 group-hover:bg-[#CCEE18]/10 transition-colors border border-transparent group-hover:border-[#CCEE18]/20">
                                             <div className="flex items-center gap-3">
                                                 <Phone size={16} className="text-[#1A3D17]" />
-                                                <span className="text-[10px] font-black text-gray-500 uppercase tracking-widest">Call Store</span>
+                                                <span className="text-[10px] font-black text-gray-600 uppercase tracking-widest">Call Store</span>
                                             </div>
                                             <a href={`tel:${loc.phone}`} className="text-sm font-black text-[#1A3D17] hover:text-[#cc0000]">{loc.phone}</a>
                                         </div>
                                         <div className="flex items-center justify-between p-4 rounded-2xl bg-gray-50 group-hover:bg-[#CCEE18]/10 transition-colors border border-transparent group-hover:border-[#CCEE18]/20">
                                             <div className="flex items-center gap-3">
                                                 <Clock size={16} className="text-[#1A3D17]" />
-                                                <span className="text-[10px] font-black text-gray-500 uppercase tracking-widest">Today's Hours</span>
+                                                <span className="text-[10px] font-black text-gray-600 uppercase tracking-widest">Today's Hours</span>
                                             </div>
                                             <span className="text-sm font-black text-[#1A3D17]">{loc.hours}</span>
                                         </div>

@@ -284,9 +284,9 @@ export default function Home() {
                             Discover More
                         </span>
                         <h2 className="text-3xl md:text-5xl font-black text-[#1A3D17] uppercase tracking-tighter mb-4" style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}>
-                            Papa John's <span className="text-[#CCEE18]">Guides & News</span>
+                            Papa John's <span className="text-[#cc0000]">Guides & News</span>
                         </h2>
-                        <p className="text-gray-500 font-bold max-w-2xl mx-auto">
+                        <p className="text-gray-700 font-bold max-w-2xl mx-auto">
                             Explore our complete menu breakdowns, <Link href="/best-pizza-delivery-near-me" className="text-[#cc0000] hover:underline">best pizza delivery near me</Link> guides, <Link href="/posts/papa-johns-menu-prices-guide" className="text-[#cc0000] hover:underline">Papa Johns menu with prices 2026</Link>, and the full <Link href="/posts/papa-johns-nutrition-guide" className="text-[#cc0000] hover:underline">Papa Johns nutrition guide</Link>. Check out our <Link href="/menus-prices" className="text-[#cc0000] hover:underline">Papa Johns full menu</Link> and find <Link href="/coupons" className="text-[#cc0000] hover:underline">Papa Johns promo codes 2026</Link>.
                         </p>
                     </div>
@@ -311,7 +311,7 @@ export default function Home() {
                                     />
                                 </div>
                                 
-                                <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-3 flex items-center gap-2">
+                                <div className="text-[10px] font-black text-gray-600 uppercase tracking-widest mb-3 flex items-center gap-2">
                                     <span>⏰ {new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</span>
                                     <span>•</span>
                                     <span>{post.author}</span>
@@ -321,7 +321,7 @@ export default function Home() {
                                     {post.title}
                                 </h2>
                                 
-                                <p className="text-gray-500 text-sm font-medium mb-8 flex-1 leading-relaxed line-clamp-3">
+                                <p className="text-gray-600 text-sm font-medium mb-8 flex-1 leading-relaxed line-clamp-3">
                                     {post.excerpt}
                                 </p>
                                 
