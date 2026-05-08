@@ -73,6 +73,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.3,
     },
     {
+      url: `${baseUrl}/ads.txt`,
+      lastModified: '2026-05-08T00:00:00.000Z',
+      changeFrequency: 'monthly',
+      priority: 0.5,
+    },
+    {
       url: `${baseUrl}/terms-conditions`,
       lastModified: defaultLastMod,
       changeFrequency: 'monthly',
