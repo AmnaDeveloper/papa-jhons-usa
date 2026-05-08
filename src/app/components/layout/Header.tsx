@@ -13,7 +13,6 @@ export default function Header() {
         { name: 'Home', href: '/' },
         { name: 'Menu & Prices', href: '/menus-prices' },
         { name: 'Store Locator', href: '/store-locator' },
-        { name: 'Meal Planner', href: '/meal-planner' },
         { name: 'All Blogs', href: '/posts' },
         { name: 'Hours', href: '/hours' },
         { name: 'Contact', href: '/contact' },
@@ -176,10 +175,7 @@ export default function Header() {
                             { name: 'Super Loaded', href: '/posts/super-loaded' },
                             { name: 'Classic Pizzas', href: '/posts/classic-pizzas' },
                             { name: 'Sides', href: '/posts/sides' },
-                            { name: 'Dips', href: '/menus-prices/dips' },
-                            { name: 'Pastas', href: '/menus-prices/pastas' },
                             { name: 'Drinks', href: '/drinks' },
-                            { name: 'Junior', href: '/menus-prices/junior' },
                             { name: 'Desserts', href: '/posts/papa-johns-desserts' },
                         ].map((item) => (
                             <Link

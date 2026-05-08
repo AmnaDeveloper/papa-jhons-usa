@@ -92,7 +92,6 @@ export default function Footer() {
                             <li><Link href="/menus-prices/classic-pizzas" className="hover:text-white transition-colors">Classic Pizzas</Link></li>
                             <li><Link href="/menus-prices/super-loaded" className="hover:text-white transition-colors">Super Loaded</Link></li>
                             <li><Link href="/menus-prices/sides" className="hover:text-white transition-colors">Sides & Dips</Link></li>
-                            <li><Link href="/menus-prices/pastas" className="hover:text-white transition-colors">Pastas</Link></li>
                             <li><Link href="/drinks" className="hover:text-white transition-colors">Drinks</Link></li>
                             <li><Link href="/posts/papa-johns-desserts" className="hover:text-white transition-colors">Desserts</Link></li>
                         </ul>

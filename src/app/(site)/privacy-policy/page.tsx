@@ -91,7 +91,7 @@ export default function PrivacyPolicyPage() {
                             We may use cookies and similar tracking technologies (like web beacons and pixels) to access or store information. Specific information about how we use such technologies and how you can refuse certain cookies is set out in our Cookie Policy.
                         </p>
                         <p className="bg-gray-50 p-6 rounded-2xl border border-gray-100 italic">
-                            By using our site, you agree to our use of cookies to enhance your experience, especially when using our [Meal Planner](/#meal-planner) or viewing local restaurant hours.
+                            By using our site, you agree to our use of cookies to enhance your experience, especially when viewing local restaurant hours or using our [Store Locator](/store-locator).
                         </p>
                     </section>
 
