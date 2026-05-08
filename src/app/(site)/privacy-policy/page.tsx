@@ -93,6 +93,10 @@ export default function PrivacyPolicyPage() {
                         <p className="bg-gray-50 p-6 rounded-2xl border border-gray-100 italic">
                             By using our site, you agree to our use of cookies to enhance your experience, especially when viewing local restaurant hours or using our [Store Locator](/store-locator).
                         </p>
+                        <div className="bg-blue-50 p-6 rounded-2xl border border-blue-100 text-sm">
+                            <p className="font-bold mb-2">Google AdSense Disclosure:</p>
+                            <p>This site uses Google AdSense advertising. Google may use cookies to serve ads based on your prior visits to this website or other websites. Users may opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-blue-700 underline">google.com/settings/ads</a>.</p>
+                        </div>
                     </section>
 
                     <section>

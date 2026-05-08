@@ -101,7 +101,7 @@ export default function Footer() {
                     <div className="md:col-span-2 lg:col-span-2">
                         <h3 className="text-[#CCEE18] text-lg font-bold mb-6">Company</h3>
                         <ul className="space-y-4 text-[13px]">
-                            <li><Link href="/contact" className="hover:text-white transition-colors">About Us</Link></li>
+                            <li><Link href="/about" className="hover:text-white transition-colors">About Us</Link></li>
                             <li><Link href="/store-locator" className="hover:text-white transition-colors">Store Locator</Link></li>
                             <li><Link href="/hours" className="hover:text-white transition-colors">Store Hours</Link></li>
                             <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>

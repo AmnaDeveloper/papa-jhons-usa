@@ -15,6 +15,7 @@ export default function Header() {
         { name: 'Store Locator', href: '/store-locator' },
         { name: 'All Blogs', href: '/posts' },
         { name: 'Hours', href: '/hours' },
+        { name: 'About Us', href: '/about' },
         { name: 'Contact', href: '/contact' },
     ];
 
