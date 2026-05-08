@@ -11,7 +11,7 @@ export async function generateMetadata(): Promise<Metadata> {
         title: "Papa Johns Full Menu 2026 — All Items, Prices & Categories | USA Guide",
         description: "Browse the complete Papa Johns menu for 2026 — all pizzas, wings, Papadias, sides, desserts & drinks with prices. Click any category to see full details. Updated April 2026 for USA.",
         alternates: {
-            canonical: "https://papajohns-menus.us/posts/papa-johns-menu-prices-guide"
+            canonical: "https://papajohns-menus.us/menus-prices"
         }
     };
 }

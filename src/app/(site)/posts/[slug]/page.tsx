@@ -26,113 +26,136 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     const date = getTodayFormatted();
     const month = getMonthYear();
 
+    let meta: any = {};
+
     switch (post.slug) {
         case 'best-pizza-delivery-near-me':
-            return {
+            meta = {
                 title: `Best Pizza Delivery Near Me — ${month} Guide`,
                 description: `Find the best pizza delivery near you in ${month}. Papa Johns delivery times, fees, ordering guide & deals — updated ${date}.`,
             };
+            break;
         case 'papa-johns-menu-prices-guide':
-            return {
+            meta = {
                 title: `Papa Johns Menu with Prices (${month}): Complete Guide to Every Item`,
                 description: `Full Papa Johns menu with prices updated ${date}. All pizzas, sides, desserts, Papadias & drinks with exact pricing. 2026 deals inside.`,
             };
+            break;
         case 'papa-johns-nutrition-guide':
-            return {
+            meta = {
                 title: `Papa Johns Nutrition Guide: Full Calories & Allergens (${month})`,
                 description: `Complete Papa Johns nutrition facts updated ${date}. Calories per slice, protein, sodium, allergens for every menu item.`,
             };
+            break;
         case 'classic-pizzas':
-            return {
+            meta = {
                 title: `Papa Johns Classic Pizzas: Every Flavor Ranked & Priced (${month})`,
                 description: `All Papa Johns classic pizzas in ${month} — Pepperoni, Cheese, Sausage. Full prices, calories, honest reviews & which one to order.`,
             };
+            break;
         case 'super-loaded':
-            return {
+            meta = {
                 title: `Papa Johns Super Loaded Pizzas: All Flavors & Prices (${month})`,
                 description: `Every Papa Johns Super Loaded Pizza in ${month} — The Works, The Meats, BBQ Chicken Bacon. Full prices, calories & ordering tips.`,
             };
+            break;
         case 'sides':
-            return {
+            meta = {
                 title: `Papa Johns Sides & Dips: Complete Guide (${month})`,
                 description: `Every Papa Johns side item in ${month} — Garlic Knots, Breadsticks, Wings, Papa Bites. Full prices, calories & reviews.`,
             };
+            break;
         case 'papa-johns-pan-pizza':
-            return {
+            meta = {
                 title: `Papa Johns Pan Pizza (${month}): Price, Toppings, Calories & Honest Review`,
                 description: `Papa Johns Pan Pizza is back with 6 cheeses & garlic parmesan crust. Full review, price ($11.99), calories per slice, toppings list & Pizza Hut comparison — updated ${date}.`,
             };
+            break;
         case 'papa-johns-wings':
-            return {
+            meta = {
                 title: `Papa Johns Wings: Flavors, Prices & Review (${month})`,
                 description: `All 8 Papa Johns wings flavors in ${month} — Buffalo, BBQ, Garlic Parm & more. Full pricing, spicy levels, calories & blue cheese pairing — updated ${date}.`,
             };
+            break;
         case 'papa-johns-garlic-knots':
-            return {
+            meta = {
                 title: `Papa Johns Garlic Knots (${month}): Price, Calories & Dipping Guide`,
                 description: `Papa Johns Garlic Knots guide updated ${date}. Order of 8 for $6.99, 110 calories per knot, side-by-side breadstick comparison & top 5 dipping sauces ranked.`,
             };
+            break;
         case 'papa-johns-vs-dominos':
-            return {
+            meta = {
                 title: `Papa Johns vs Dominos (${month}): Which Pizza Chain Is Actually Better?`,
                 description: `Papa Johns vs Dominos comparison updated ${date}. We compare crust, sauce, price, delivery speed, app experience & rewards.`,
             };
-                case 'papa-johns-bbq-chicken-bacon-pizza':
-            return {
+            break;
+        case 'papa-johns-bbq-chicken-bacon-pizza':
+            meta = {
                 title: `Papa Johns BBQ Chicken Bacon Pizza (${month}): Toppings, Price, Calories & Honest Review`,
                 description: `Full guide to the sweet and smoky Papa Johns BBQ Chicken Bacon Pizza. Exact prices, calorie comparisons, ingredient breakdown, and best crus... updated ${date}.`,
             };
+            break;
         case 'papa-johns-desserts':
-            return {
+            meta = {
                 title: `Papa Johns Desserts Menu: Every Sweet Treat, Price & Calorie ((${month}))`,
                 description: `Discover every Papa Johns dessert in ${month}   Chocolate Chip Cookie, Double Chocolate Brownie, Cinnamon Pull Aparts & Oreo Papa Bites. Pri... updated ${date}.`,
             };
+            break;
         case 'new-papadias-flavors-2026':
-            return {
+            meta = {
                 title: `Papa Johns Papadias: All Flavors, Prices & Which One to Order in (${month})`,
                 description: `Our famous flatbread sandwiches just got a massive upgrade. Explore the mouth-watering Papadias flavors launching this year.... updated ${date}.`,
             };
+            break;
         case 'papa-johns-order':
-            return {
+            meta = {
                 title: `Papa Johns Order Online (${month}) — Delivery, Carryout & App Guide`,
                 description: `Learn exactly how to place a Papa Johns order in ${month} — online, via app, phone, or DoorDash. Compare delivery vs carryout... updated ${date}.`,
             };
+            break;
         case 'papa-johns-small-pizza':
-            return {
+            meta = {
                 title: `Papa Johns Small Pizza Price 2026: Cost, Size & Is It Worth It? (${month})`,
                 description: `Papa Johns small pizza (10") costs $8.99–$12.99 in ${month} 2026. Get exact prices by topping, calories per slice, size comparison vs medium & large, and best deals.`,
             };
+            break;
         case 'papa-johns-stuffed-crust-pizza':
-            return {
+            meta = {
                 title: `Papa Johns Stuffed Crust Pizza: Price, Calories & Review (${month})`,
                 description: `Everything about Papa Johns Stuffed Crust Pizza in ${month} — Epic vs Garlic vs Cheesy Calzone, exact prices, calories per slice, review... updated ${date}.`,
             };
+            break;
         case 'papa-johns-spicy-italian-pizza':
-            return {
+            meta = {
                 title: `Papa Johns Spicy Italian Pizza: Price, Calories & Review (${month})`,
                 description: `Full guide to Papa Johns Spicy Italian Pizza ${month} toppings, exact prices by size, calories per slice, spice level, honest review & best crust to order it on. Updated ${date}.`,
             };
+            break;
         case 'papa-johns-mountain-dew-drink':
-            return {
+            meta = {
                 title: `Papa Johns Mountain Dew Guide 2026: Price, Calories & Review (${month})`,
                 description: `Discover everything about Papa Johns Mountain Dew in ${month}. Complete price list for 20 oz and 2-Liter bottles, calories, caffeine content & best pizza pairings — updated ${date}.`,
             };
+            break;
         case 'papa-johns-pepsi-drink':
-            return {
+            meta = {
                 title: `Papa Johns Pepsi Price 2026: $2.99 | Calories, Sizes & Review (${month})`,
                 description: `Papa Johns Pepsi costs $2.99 (20oz) or $3.49-$3.99 (2L) in 2026. Full nutrition facts, 250 calories, caffeine content, allergen info, and best pizza pairings. Updated ${date}.`,
             };
+            break;
         case 'papa-johns-papadias-discontinued-2026':
-            return {
+            meta = {
                 title: `PAPA JOHNS PAPADIAS DISCONTINUED 2026: Why They Were Removed & Fan Reactions (${month})`,
                 description: `Papa Johns discontinued Papadias in ${month} 2026. Discover why they were removed, what replaced them, and fan reactions — updated ${date}.`,
             };
+            break;
         case 'papa-johns-50-off-deal':
-            return {
+            meta = {
                 title: `Papa Johns 50% Off Deal — How to Get It Today (${month})`,
                 description: `Get Papa Johns 50% off deals today — carryout special, BOGO pizza, promo codes, and every way to save 50% on your order right now. Updated daily.`,
             };
-default:
+            break;
+        default:
             return generateArticleSEO(
                 `${post.title} (${month})`,
                 `${post.excerpt} — updated ${date}.`,
@@ -140,6 +163,15 @@ default:
                 post.author
             );
     }
+
+    return {
+        ...meta,
+        alternates: {
+            canonical: post.slug === 'best-pizza-delivery-near-me' 
+                ? `https://papajohns-menus.us/${post.slug}` 
+                : `https://papajohns-menus.us/posts/${post.slug}`,
+        }
+    };
 }
 
 export const revalidate = 86400; // 24 hours

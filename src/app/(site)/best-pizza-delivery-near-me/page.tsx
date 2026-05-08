@@ -22,6 +22,9 @@ export async function generateMetadata() {
     return {
         title: `Best Pizza Delivery Near Me — ${month} Guide`,
         description: `Find the best pizza delivery near you in ${month}. Papa Johns delivery times, fees, ordering guide & deals — updated ${date}.`,
+        alternates: {
+            canonical: `https://papajohns-menus.us/${SLUG}`
+        }
     };
 }
 

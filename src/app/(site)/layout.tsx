@@ -26,9 +26,6 @@ export const metadata: Metadata = {
         description: "Explore the complete Papa John's menu with prices.",
         images: ["https://papajohns-menus.us/twitter-image.jpg"],
     },
-    alternates: {
-        canonical: "https://papajohns-menus.us",
-    },
 };
 
 export default function SiteLayout({
