@@ -156,6 +156,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
                 description: `Get Papa Johns 50% off deals today — carryout special, BOGO pizza, promo codes, and every way to save 50% on your order right now. Updated daily.`,
             };
             break;
+        case 'papa-johns-closing-stores-2026':
+            meta = {
+                title: `Papa Johns Closing Stores 2026: How Many & Why?`,
+                description: `Papa Johns is closing 200+ stores in 2026. Find out how many locations are closing, why it's happening, which stores are at risk & what it means for you.`,
+            };
+            break;
         default:
             return generateArticleSEO(
                 `${post.title} (${month})`,

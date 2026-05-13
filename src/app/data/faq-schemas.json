@@ -1,4 +1,90 @@
 {
+  "papa-johns-closing-stores-2026": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How many Papa Johns stores are closing in 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Papa Johns confirmed it plans to close approximately 200 North American stores in 2026, with additional closures bringing the total to up to 300 by end of 2027. This represents roughly 9% of Papa Johns' approximately 3,500 North American locations as of end of 2025."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is Papa Johns closing stores in 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Papa Johns is closing underperforming franchise locations that are not meeting brand expectations or lack a clear path to sustainable financial improvement. The closures follow seven of eight quarters of same-store sales declines in North America, a 62% drop in net income for 2025, and a difficult consumer environment marked by inflation and reduced discretionary spending."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Papa Johns going out of business?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Papa Johns is not going out of business. Closing 300 of its 6,000+ global locations is a portfolio optimization, not a shutdown. The company's international business grew 5% in 2025, its balance sheet is strong, and it is actively investing in new menu categories and technology. Papa Johns remains the world's third-largest pizza delivery chain."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which Papa Johns locations are closing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Papa Johns has not released a specific list of closing locations. Closures will focus on franchise-owned stores that are more than 10 years old, have consistently low sales, or are located too close to other Papa Johns locations. To check your local store's status, use the Papa Johns Store Locator, call the store directly, or check availability in the Papa Johns app."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When will Papa Johns stores close?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Papa Johns expects to close approximately 200 stores by the end of 2026, with the remaining closures completing by end of 2027. No specific timeline has been given for individual store closures. Stores scheduled for closure may be removed from the ordering system before the physical closure date."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many Papa Johns locations are left after closures?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Papa Johns had approximately 3,500 North American locations at end of 2025. After closing approximately 300 stores, roughly 3,200 North American locations will remain. Globally, Papa Johns operates more than 6,000 restaurants across approximately 50 countries and territories."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are Papa Johns corporate stores or franchise stores closing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The majority of closing stores are franchise-owned locations. Papa Johns CFO Ravi Thanawala specified that closing stores are primarily franchisee-owned and not meeting brand expectations. Corporate-owned locations are largely not part of the closure plan."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Did Papa Johns also lay off employees in 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Alongside the store closure announcement, Papa Johns disclosed it had cut approximately 7% of its corporate workforce, roughly 49 people from its approximately 700-person corporate staff. These were corporate office positions, not store-level employees."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Pizza Hut also closing stores in 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Pizza Hut announced plans to close approximately 250 underperforming U.S. locations in the first half of 2026 for nearly identical reasons to Papa Johns. Both chains are responding to the same difficult consumer environment, increased competition from Domino's, and the need to rationalize underperforming franchise portfolios."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is Papa Johns doing to recover from store closures?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Papa Johns is pursuing a multi-pronged recovery strategy: launching new menu items including Oven-Toasted Sandwiches and Pan Pizza, recalibrating ovens for improved food quality, simplifying the menu by cutting Papadias and Papa Bites, investing in digital technology including its Lou AI ordering assistant, and focusing on international expansion where growth remains strong."
+        }
+      }
+    ]
+  },
   "classic-pizzas": {
     "@context": "https://schema.org",
     "@type": "FAQPage",
