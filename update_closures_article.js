@@ -155,7 +155,7 @@ const htmlContent = `
 
 <p>The closures are necessary and probably overdue. Papa Johns spent years expanding aggressively, and some of those locations never found their footing. Carrying 300 underperforming stores creates drag on franchisee morale, average unit economics, and brand perception. Cutting them is the right call.</p>
 
-<p>The more interesting question is whether the menu innovation will work. The Oven-Toasted Sandwiches are a genuinely good product - read my <a href="/posts/papa-johns-sandwiches">full review here</a> - and the Pan Pizza has been well received. But launching new items while simultaneously closing 200 stores creates noise that is hard to manage from a brand messaging standpoint.</p>
+<p>The more interesting question is whether the menu innovation will work. The Oven-Toasted Sandwiches are a genuinely good product - read my <a href="/posts/new-papadias-flavors-2026">full review here</a> - and the Pan Pizza has been well received. But launching new items while simultaneously closing 200 stores creates noise that is hard to manage from a brand messaging standpoint.</p>
 
 <p>The real risk for Papa Johns is not the closures themselves - it is whether the remaining stores can hold their customer base as Domino's continues its aggressive push. Domino's operational advantage in delivery logistics is real, and 11% buyer penetration versus 34% is a gap that new sandwiches alone will not close. Check out our <a href="/posts/papa-johns-desserts">Papa Johns desserts</a> guide to see if their sweets can help bridge the gap.</p>
 
@@ -203,7 +203,7 @@ const htmlContent = `
 <p>👉 <strong><a href="/store-locator">Find Your Nearest Papa Johns -></a></strong><br/>
 👉 <strong><a href="/coupons">Check Today's Papa Johns Coupons & Deals -></a></strong><br/>
 👉 <strong><a href="/menus-prices">View Full Papa Johns Menu with Prices -></a></strong><br/>
-👉 <strong><a href="/posts/papa-johns-sandwiches">Read: Papa Johns Oven-Toasted Sandwiches Review -></a></strong></p>
+👉 <strong><a href="/posts/new-papadias-flavors-2026">Read: Papa Johns Oven-Toasted Sandwiches Review -></a></strong></p>
 
 <p><em>Content on papajohns-menus.us is independently maintained and updated. We are not affiliated with Papa Johns International, Inc. Store closure information is based on publicly available company statements and news reports. Individual store closure dates have not been confirmed by Papa Johns.</em></p>
 `;
