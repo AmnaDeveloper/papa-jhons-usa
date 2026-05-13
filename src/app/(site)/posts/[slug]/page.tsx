@@ -9,6 +9,7 @@ import ContactFeedbackSection from '../../../components/ContactFeedbackSection';
 import { Heart, Share2, Info, Navigation, ArrowRight, Star } from 'lucide-react';
 import { getTodayFormatted, getMonthYear } from '../../../../lib/utils/date';
 import LastUpdated from '../../../components/LastUpdated';
+import AuthorBio from '../../../components/AuthorBio';
 
 // Generate static params for all posts
 export async function generateStaticParams() {
@@ -31,13 +32,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     switch (post.slug) {
         case 'best-pizza-delivery-near-me':
             meta = {
-                title: `Best Pizza Delivery Near Me — ${month} Guide`,
+                title: `Best Pizza Delivery Near Me — ${month} Guide | ${siteName}`,
                 description: `Find the best pizza delivery near you in ${month}. Papa Johns delivery times, fees, ordering guide & deals — updated ${date}.`,
             };
             break;
         case 'papa-johns-menu-prices-guide':
             meta = {
-                title: `Papa Johns Menu with Prices (${month}): Complete Guide to Every Item`,
+                title: `Papa Johns Menu with Prices (${month}): Complete Guide to Every Item | ${siteName}`,
                 description: `Full Papa Johns menu with prices updated ${date}. All pizzas, sides, desserts, Papadias & drinks with exact pricing. 2026 deals inside.`,
             };
             break;
@@ -374,6 +375,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                                 <div className="blog-content mt-4">
                                     <div dangerouslySetInnerHTML={{ __html: post.content }} />
                                 </div>
+                                <AuthorBio authorName={post.author} />
                             </div>
                         </div>
                     </div>

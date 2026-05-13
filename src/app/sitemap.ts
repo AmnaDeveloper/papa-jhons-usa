@@ -67,6 +67,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.5,
     },
     {
+      url: `${baseUrl}/team`,
+      lastModified: defaultLastMod,
+      changeFrequency: 'monthly',
+      priority: 0.5,
+    },
+    {
       url: `${baseUrl}/privacy-policy`,
       lastModified: defaultLastMod,
       changeFrequency: 'monthly',
@@ -79,7 +85,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.5,
     },
     {
-      url: `${baseUrl}/terms-conditions`,
+      url: `${baseUrl}/terms`,
+      lastModified: defaultLastMod,
+      changeFrequency: 'monthly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/cookies`,
       lastModified: defaultLastMod,
       changeFrequency: 'monthly',
       priority: 0.3,

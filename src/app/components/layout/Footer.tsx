@@ -102,10 +102,23 @@ export default function Footer() {
                         <h3 className="text-[#CCEE18] text-lg font-bold mb-6">Company</h3>
                         <ul className="space-y-4 text-[13px]">
                             <li><Link href="/about" className="hover:text-white transition-colors">About Us</Link></li>
+                            <li><Link href="/team" className="hover:text-white transition-colors">Editorial Team</Link></li>
                             <li><Link href="/store-locator" className="hover:text-white transition-colors">Store Locator</Link></li>
                             <li><Link href="/hours" className="hover:text-white transition-colors">Store Hours</Link></li>
                             <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
                             <li><Link href="/coupons" className="hover:text-white transition-colors">Coupons & Deals</Link></li>
+                        </ul>
+                    </div>
+
+                    {/* Locations Links (Added for Indexing) */}
+                    <div className="md:col-span-2 lg:col-span-2">
+                        <h3 className="text-[#CCEE18] text-lg font-bold mb-6">Top Locations</h3>
+                        <ul className="space-y-4 text-[13px]">
+                            <li><Link href="/locations/new-york-ny" className="hover:text-white transition-colors">New York, NY</Link></li>
+                            <li><Link href="/locations/los-angeles-ca" className="hover:text-white transition-colors">Los Angeles, CA</Link></li>
+                            <li><Link href="/locations/chicago-il" className="hover:text-white transition-colors">Chicago, IL</Link></li>
+                            <li><Link href="/locations/houston-tx" className="hover:text-white transition-colors">Houston, TX</Link></li>
+                            <li><Link href="/store-locator" className="text-[#CCEE18] font-bold hover:underline">View All Locations</Link></li>
                         </ul>
                     </div>
 

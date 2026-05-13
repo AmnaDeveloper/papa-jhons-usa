@@ -38,7 +38,7 @@ export default function PrivacyPolicyPage() {
                             1. Introduction
                         </h2>
                         <p>
-                            Welcome to the <strong>Papa John's Menu & Promotions</strong> website. We are committed to protecting your personal data and your right to privacy. If you have any questions or concerns about our policy, or our practices with regards to your personal information, please <Link href="/contact" className="text-[#cc0000] font-bold hover:underline">contact us</Link>.
+                            Welcome to <strong>papajohns-menus.us</strong> — an independent, unofficial fan guide. We are committed to protecting your personal data and your right to privacy. If you have any questions or concerns about our policy, or our practices with regards to your personal information, please <Link href="/contact" className="text-[#cc0000] font-bold hover:underline">contact us</Link>.
                         </p>
                         <p>
                             When you visit our website and use our services, you trust us with your personal information. We take your privacy very seriously. In this privacy notice, we describe our privacy policy. We seek to explain to you in the clearest way possible what information we collect, how we use it and what rights you have in relation to it.
@@ -122,7 +122,7 @@ export default function PrivacyPolicyPage() {
                             8. Contact Us
                         </h2>
                         <p>
-                            If you have questions or comments about this policy, you may email us at <strong>privacy@papajohns.com</strong> or contact us via our <Link href="/contact" className="text-[#cc0000] font-bold hover:underline">Contact Form</Link>.
+                            If you have questions or comments about this policy, you may email us at <strong>contact@papajohns-menus.us</strong> or contact us via our <Link href="/contact" className="text-[#cc0000] font-bold hover:underline">Contact Form</Link>.
                         </p>
                     </section>
                 </div>

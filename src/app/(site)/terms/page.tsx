@@ -106,7 +106,7 @@ export default function TermsPage() {
                             8. Contact Information
                         </h2>
                         <p>
-                            For any questions regarding these terms, please visit our <Link href="/contact" className="text-[#cc0000] font-bold hover:underline">Support Page</Link> or email us at legal@papajohns.com.
+                            For any questions regarding these terms, please visit our <Link href="/contact" className="text-[#cc0000] font-bold hover:underline">Support Page</Link> or email us at contact@papajohns-menus.us.
                         </p>
                     </section>
                 </div>

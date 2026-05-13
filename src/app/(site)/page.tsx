@@ -347,6 +347,51 @@ export default function Home() {
                 </div>
             </section>
 
+            {/* Papa Johns Near You — Locations Section for Indexing */}
+            <section className="py-20 bg-white border-t border-gray-100">
+                <div className="max-w-[1280px] mx-auto px-4">
+                    <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+                        <div>
+                            <span className="inline-block bg-[#1A3D17] text-[#CCEE18] font-black uppercase tracking-[0.3em] text-[10px] px-5 py-2 rounded-full mb-4">
+                                Local Store Guide
+                            </span>
+                            <h2 className="text-3xl md:text-5xl font-black text-[#1A3D17] uppercase tracking-tighter" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                                Papa Johns <span className="text-[#cc0000]">Near You</span>
+                            </h2>
+                        </div>
+                        <Link href="/store-locator" className="text-[#cc0000] font-black uppercase tracking-widest text-xs border-b-2 border-[#cc0000] pb-1 hover:text-[#1A3D17] hover:border-[#1A3D17] transition-all">
+                            View All 3,200+ Locations &rarr;
+                        </Link>
+                    </div>
+
+                    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                        {[
+                            { name: 'New York, NY', slug: 'new-york-ny' },
+                            { name: 'Los Angeles, CA', slug: 'los-angeles-ca' },
+                            { name: 'Chicago, IL', slug: 'chicago-il' },
+                            { name: 'Houston, TX', slug: 'houston-tx' },
+                            { name: 'Phoenix, AZ', slug: 'phoenix-az' },
+                            { name: 'Philadelphia, PA', slug: 'philadelphia-pa' },
+                            { name: 'San Antonio, TX', slug: 'san-antonio-tx' },
+                            { name: 'San Diego, CA', slug: 'san-diego-ca' },
+                            { name: 'Dallas, TX', slug: 'dallas-tx' },
+                            { name: 'Austin, TX', slug: 'austin-tx' },
+                            { name: 'Miami, FL', slug: 'miami-fl' },
+                            { name: 'Seattle, WA', slug: 'seattle-wa' },
+                        ].map((loc) => (
+                            <Link 
+                                key={loc.slug} 
+                                href={`/locations/${loc.slug}`}
+                                className="bg-[#fcfaf8] p-4 rounded-2xl border border-gray-100 text-center hover:bg-[#1A3D17] hover:text-white transition-all group shadow-sm"
+                            >
+                                <span className="block text-[10px] font-black uppercase tracking-widest text-gray-400 group-hover:text-[#CCEE18] mb-1">Menu & Prices</span>
+                                <span className="font-bold text-[#1A3D17] group-hover:text-white text-sm">{loc.name}</span>
+                            </Link>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
             {/* Dynamic Sections (Menu, Hours, Coupons) */}
             <DynamicSections />
 
