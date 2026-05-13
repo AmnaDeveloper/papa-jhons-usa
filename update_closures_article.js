@@ -14,13 +14,13 @@ if (articleIndex === -1) {
 const htmlContent = `
 <p><span style="background:#CCEE18;color:#1A3D17;font-weight:900;padding:4px 10px;border-radius:6px;display:inline-block;margin-bottom:8px;">Last Updated: May 2026</span> | <strong>papajohns-menus.us</strong></p>
 
-<p>If you've been hearing rumors about Papa Johns shutting down locations near you — they're true. In February 2026, Papa Johns officially confirmed it is closing <strong>up to 300 North American stores</strong> by the end of 2027, with roughly <strong>200 of those closures happening by the end of 2026</strong>.</p>
+<p>If you've been hearing rumors about Papa Johns shutting down locations near you - they're true. In February 2026, Papa Johns officially confirmed it is closing <strong>up to 300 North American stores</strong> by the end of 2027, with roughly <strong>200 of those closures happening by the end of 2026</strong>.</p>
 
 <p>This is the biggest contraction in Papa Johns' history. And if you're a regular customer, the question on your mind is simple: is my local store closing?</p>
 
-<p>This guide covers everything confirmed — exactly how many stores are closing, why it's happening, which types of locations are most at risk, what Papa Johns says about the future, and how to check if your nearest store is affected.</p>
+<p>This guide covers everything confirmed - exactly how many stores are closing, why it's happening, which types of locations are most at risk, what Papa Johns says about the future, and how to check if your nearest store is affected.</p>
 
-<h2 class="text-2xl font-black text-[#1A3D17] uppercase mt-10 mb-6">The Numbers — How Many Papa Johns Are Closing?</h2>
+<h2 class="text-2xl font-black text-[#1A3D17] uppercase mt-10 mb-6">The Numbers - How Many Papa Johns Are Closing?</h2>
 
 <p>Here is what Papa Johns has officially confirmed, based on the company's February 26, 2026 earnings call and subsequent filings:</p>
 
@@ -43,7 +43,7 @@ const htmlContent = `
 </table>
 </div>
 
-<p>To put that in perspective: closing 9% of your locations is significant but not catastrophic. Papa Johns will still have approximately 3,200 North American locations after the closures are complete — still one of the largest pizza delivery chains in the country.</p>
+<p>To put that in perspective: closing 9% of your locations is significant but not catastrophic. Papa Johns will still have approximately 3,200 North American locations after the closures are complete - still one of the largest pizza delivery chains in the country.</p>
 
 <h2 class="text-2xl font-black text-[#1A3D17] uppercase mt-10 mb-6">Why Is Papa Johns Closing Stores?</h2>
 
@@ -53,7 +53,7 @@ const htmlContent = `
 
 <h3 class="text-xl font-black text-[#1A3D17] mt-8 mb-4">1. Seven Straight Quarters of Sales Declines</h3>
 
-<p>Papa Johns reported a <strong>5.4% decline in same-store sales in North America</strong> in Q4 2025 — the fourth quarter ended December 28, 2025. That followed similarly weak results across seven of the previous eight quarters. When sales decline quarter after quarter, underperforming locations become mathematically unsustainable.</p>
+<p>Papa Johns reported a <strong>5.4% decline in same-store sales in North America</strong> in Q4 2025 - the fourth quarter ended December 28, 2025. That followed similarly weak results across seven of the previous eight quarters. When sales decline quarter after quarter, underperforming locations become mathematically unsustainable.</p>
 
 <h3 class="text-xl font-black text-[#1A3D17] mt-8 mb-4">2. Net Income Collapsed</h3>
 
@@ -68,11 +68,11 @@ const htmlContent = `
 
 <h3 class="text-xl font-black text-[#1A3D17] mt-8 mb-4">3. The Weak Consumer Environment</h3>
 
-<p>CEO Todd Penegor acknowledged the results "reflected a weak consumer backdrop and elevated promotional environment." In plain terms: consumers are spending less on pizza delivery, and every chain has been discounting heavily to compete — which compresses margins. Inflation-weary customers are making fewer impulse orders.</p>
+<p>CEO Todd Penegor acknowledged the results "reflected a weak consumer backdrop and elevated promotional environment." In plain terms: consumers are spending less on pizza delivery, and every chain has been discounting heavily to compete - which compresses margins. Inflation-weary customers are making fewer impulse orders.</p>
 
 <h3 class="text-xl font-black text-[#1A3D17] mt-8 mb-4">4. Domino's Is Dominating</h3>
 
-<p>The competitive context matters here. Domino's has <strong>34% buyer penetration</strong> in the U.S. QSR pizza market according to Circana's 2026 Definitive Restaurant Rankings. Papa Johns has just <strong>11%</strong>. Domino's is actively targeting <strong>50% market share</strong> — and it is executing on that goal. Papa Johns is fighting for relevance in a category increasingly dominated by one player.</p>
+<p>The competitive context matters here. Domino's has <strong>34% buyer penetration</strong> in the U.S. QSR pizza market according to Circana's 2026 Definitive Restaurant Rankings. Papa Johns has just <strong>11%</strong>. Domino's is actively targeting <strong>50% market share</strong> - and it is executing on that goal. Papa Johns is fighting for relevance in a category increasingly dominated by one player.</p>
 
 <h3 class="text-xl font-black text-[#1A3D17] mt-8 mb-4">5. Old, Underperforming Franchise Locations</h3>
 
@@ -80,7 +80,7 @@ const htmlContent = `
 
 <h2 class="text-2xl font-black text-[#1A3D17] uppercase mt-10 mb-6">Which Stores Are Closing? Is There a List?</h2>
 
-<p>This is the question everyone wants answered — and the honest answer is: <strong>Papa Johns has not released a specific list of closing locations.</strong></p>
+<p>This is the question everyone wants answered - and the honest answer is: <strong>Papa Johns has not released a specific list of closing locations.</strong></p>
 
 <p>Multiple major outlets including Fast Company, CNN, and USA TODAY have requested the list directly from Papa Johns. The company has declined to provide one.</p>
 
@@ -102,13 +102,13 @@ const htmlContent = `
 
 <p><strong>Step 2:</strong> Call the store directly and ask. Staff typically know their store's status.</p>
 
-<p><strong>Step 3:</strong> Check the Papa Johns app — stores that have been scheduled for closure are sometimes removed from the ordering system before the physical closure.</p>
+<p><strong>Step 3:</strong> Check the Papa Johns app - stores that have been scheduled for closure are sometimes removed from the ordering system before the physical closure.</p>
 
-<p><strong>Step 4:</strong> Watch for local news coverage in your city — regional outlets have been tracking specific closures as they happen.</p>
+<p><strong>Step 4:</strong> Watch for local news coverage in your city - regional outlets have been tracking specific closures as they happen.</p>
 
 <h2 class="text-2xl font-black text-[#1A3D17] uppercase mt-10 mb-6">What Papa Johns Says About the Future</h2>
 
-<p>Despite the scale of the closures, Papa Johns leadership is framing this as a strategic cleanup rather than a retreat — and there is some data to support that position.</p>
+<p>Despite the scale of the closures, Papa Johns leadership is framing this as a strategic cleanup rather than a retreat - and there is some data to support that position.</p>
 
 <p>CFO Thanawala stated the closures are expected to <strong>increase average unit volumes by at least 3%</strong> by removing underperforming stores that drag down system-wide averages. When weak locations close, customers often migrate to nearby locations, boosting the remaining stores' numbers.</p>
 
@@ -116,30 +116,30 @@ const htmlContent = `
 
 <blockquote>"In 2026, we are focused on continuing our transformation work to best position Papa Johns to win in a dynamic QSR category. Our strong balance sheet is supporting investment in these initiatives, which we believe will deliver high returns. We look forward with confidence in our ability to generate sustainable, profitable growth, and value creation."</blockquote>
 
-<p>Papa Johns has also committed to <strong>opening 180 to 220 gross new restaurants internationally in 2026</strong> — focused on markets where growth is still strong. International same-store sales actually grew 5% in 2025, while North America struggled. The international business is the bright spot.</p>
+<p>Papa Johns has also committed to <strong>opening 180 to 220 gross new restaurants internationally in 2026</strong> - focused on markets where growth is still strong. International same-store sales actually grew 5% in 2025, while North America struggled. The international business is the bright spot.</p>
 
 <h2 class="text-2xl font-black text-[#1A3D17] uppercase mt-10 mb-6">What Papa Johns Is Doing to Turn Things Around</h2>
 
-<p>The closures are not happening in isolation — they are part of a broader transformation plan under CEO Todd Penegor. Several parallel moves are underway:</p>
+<p>The closures are not happening in isolation - they are part of a broader transformation plan under CEO Todd Penegor. Several parallel moves are underway:</p>
 
 <h3 class="text-xl font-black text-[#1A3D17] mt-8 mb-4">New Menu Items</h3>
-<p>Papa Johns launched its <strong>Oven-Toasted Sandwiches</strong> in March 2026 — three flavors built on ciabatta bread and brushed with garlic sauce. These replaced the discontinued Papadias and Papa Bites, which were cut to simplify operations. The new <a href="/posts/papa-johns-pan-pizza">Pan Pizza</a> was also a major 2025-2026 launch.</p>
+<p>Papa Johns launched its <strong>Oven-Toasted Sandwiches</strong> in March 2026 - three flavors built on ciabatta bread and brushed with garlic sauce. These replaced the discontinued Papadias and Papa Bites, which were cut to simplify operations. The new <a href="/posts/papa-johns-pan-pizza">Pan Pizza</a> was also a major 2025-2026 launch.</p>
 
 <h3 class="text-xl font-black text-[#1A3D17] mt-8 mb-4">Oven Recalibration</h3>
-<p>Penegor recalibrated ovens across all locations to improve cooking consistency — one of the most fundamental product quality moves the chain has made in years.</p>
+<p>Penegor recalibrated ovens across all locations to improve cooking consistency - one of the most fundamental product quality moves the chain has made in years.</p>
 
 <h3 class="text-xl font-black text-[#1A3D17] mt-8 mb-4">Menu Simplification</h3>
 <p>By cutting Papadias and Papa Bites, Papa Johns reduced operational complexity that was slowing down kitchen times and disrupting normal workflows. Simpler menus mean faster service and fewer mistakes.</p>
 
 <h3 class="text-xl font-black text-[#1A3D17] mt-8 mb-4">Technology Investment</h3>
-<p>Papa Johns launched <strong>"Lou AI"</strong> in April 2026 — a digital pizza assistant designed to help groups navigate ordering decisions and reduce order friction. The chain is betting that better digital experiences will capture more online orders.</p>
+<p>Papa Johns launched <strong>"Lou AI"</strong> in April 2026 - a digital pizza assistant designed to help groups navigate ordering decisions and reduce order friction. The chain is betting that better digital experiences will capture more online orders.</p>
 
 <h3 class="text-xl font-black text-[#1A3D17] mt-8 mb-4">Chicken Innovation Coming</h3>
 <p>Papa Johns is testing chicken tenders with dipping sauces in the U.K. market with plans to bring the concept to North America. This would expand the menu into a category Domino's and Pizza Hut have not fully owned.</p>
 
 <h2 class="text-2xl font-black text-[#1A3D17] uppercase mt-10 mb-6">Is Papa Johns Going Out of Business?</h2>
 
-<p>No. This question has come up repeatedly since the closure announcement — and the answer is clearly no.</p>
+<p>No. This question has come up repeatedly since the closure announcement - and the answer is clearly no.</p>
 
 <p>Closing 300 locations out of 6,000+ worldwide is a portfolio optimization, not a collapse. Papa Johns still operates in approximately 50 countries and territories and remains the world's third-largest pizza delivery company. Its international business is growing. Its balance sheet is described as strong.</p>
 
@@ -149,23 +149,23 @@ const htmlContent = `
 
 <p>Papa Johns is not going out of business. It is getting smaller to get stronger.</p>
 
-<h2 class="text-2xl font-black text-[#1A3D17] uppercase mt-10 mb-6">My Analysis — What This Really Means</h2>
+<h2 class="text-2xl font-black text-[#1A3D17] uppercase mt-10 mb-6">My Analysis - What This Really Means</h2>
 
 <p>Having tracked the Papa Johns story closely, here is an honest read of the situation:</p>
 
 <p>The closures are necessary and probably overdue. Papa Johns spent years expanding aggressively, and some of those locations never found their footing. Carrying 300 underperforming stores creates drag on franchisee morale, average unit economics, and brand perception. Cutting them is the right call.</p>
 
-<p>The more interesting question is whether the menu innovation will work. The Oven-Toasted Sandwiches are a genuinely good product — read my <a href="/posts/papa-johns-sandwiches">full review here</a> — and the Pan Pizza has been well received. But launching new items while simultaneously closing 200 stores creates noise that is hard to manage from a brand messaging standpoint.</p>
+<p>The more interesting question is whether the menu innovation will work. The Oven-Toasted Sandwiches are a genuinely good product - read my <a href="/posts/papa-johns-sandwiches">full review here</a> - and the Pan Pizza has been well received. But launching new items while simultaneously closing 200 stores creates noise that is hard to manage from a brand messaging standpoint.</p>
 
-<p>The real risk for Papa Johns is not the closures themselves — it is whether the remaining stores can hold their customer base as Domino's continues its aggressive push. Domino's operational advantage in delivery logistics is real, and 11% buyer penetration versus 34% is a gap that new sandwiches alone will not close.</p>
+<p>The real risk for Papa Johns is not the closures themselves - it is whether the remaining stores can hold their customer base as Domino's continues its aggressive push. Domino's operational advantage in delivery logistics is real, and 11% buyer penetration versus 34% is a gap that new sandwiches alone will not close.</p>
 
-<p><strong>Short-term forecast:</strong> 2026 will be a rough year by Papa Johns' own admission — they have guided for North American same-store sales to drop 2-4% this year. Expect more promotional activity, more deal-heavy ordering, and continued pressure.</p>
+<p><strong>Short-term forecast:</strong> 2026 will be a rough year by Papa Johns' own admission - they have guided for North American same-store sales to drop 2-4% this year. Expect more promotional activity, more deal-heavy ordering, and continued pressure.</p>
 
 <p><strong>Medium-term forecast:</strong> If the menu simplification and oven recalibration genuinely improve quality consistency, and if the new items attract new customer types, Papa Johns could exit 2026-2027 as a leaner, more focused chain. The international growth story is real and underappreciated.</p>
 
 <p><strong>For customers:</strong> If your local store is not on the closure list, your experience should improve as operational focus concentrates on fewer, healthier locations.</p>
 
-<h2 class="text-2xl font-black text-[#1A3D17] uppercase mt-10 mb-6">Papa Johns Closures vs Competitors — Industry Context</h2>
+<h2 class="text-2xl font-black text-[#1A3D17] uppercase mt-10 mb-6">Papa Johns Closures vs Competitors - Industry Context</h2>
 
 <p>Papa Johns is not alone. The entire fast casual pizza sector is under pressure:</p>
 
@@ -195,15 +195,15 @@ const htmlContent = `
 <ul>
     <li><strong>Online:</strong> <a href="/store-locator">Papa Johns Store Locator</a></li>
     <li><strong>App:</strong> The Papa Johns app shows real-time store availability for delivery and carryout</li>
-    <li><strong>Phone:</strong> Call your local store directly — the number is listed in the store locator</li>
+    <li><strong>Phone:</strong> Call your local store directly - the number is listed in the store locator</li>
 </ul>
 
 <p>If your usual location has closed, the app and website will automatically show the next nearest available store.</p>
 
-<p>👉 <strong><a href="/store-locator">Find Your Nearest Papa Johns →</a></strong><br/>
-👉 <strong><a href="/coupons">Check Today's Papa Johns Coupons & Deals →</a></strong><br/>
-👉 <strong><a href="/menus-prices">View Full Papa Johns Menu with Prices →</a></strong><br/>
-👉 <strong><a href="/posts/papa-johns-sandwiches">Read: Papa Johns Oven-Toasted Sandwiches Review →</a></strong></p>
+<p>👉 <strong><a href="/store-locator">Find Your Nearest Papa Johns -></a></strong><br/>
+👉 <strong><a href="/coupons">Check Today's Papa Johns Coupons & Deals -></a></strong><br/>
+👉 <strong><a href="/menus-prices">View Full Papa Johns Menu with Prices -></a></strong><br/>
+👉 <strong><a href="/posts/papa-johns-sandwiches">Read: Papa Johns Oven-Toasted Sandwiches Review -></a></strong></p>
 
 <p><em>Content on papajohns-menus.us is independently maintained and updated. We are not affiliated with Papa Johns International, Inc. Store closure information is based on publicly available company statements and news reports. Individual store closure dates have not been confirmed by Papa Johns.</em></p>
 `;
