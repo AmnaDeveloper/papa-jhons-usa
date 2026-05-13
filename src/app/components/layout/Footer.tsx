@@ -81,9 +81,6 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    {/* Spacer for large screens */}
-                    <div className="hidden lg:block lg:col-span-1"></div>
-
                     {/* Menu Links */}
                     <div className="md:col-span-3 lg:col-span-2">
                         <h3 className=" text-[#CCEE18] text-lg font-bold mb-6">Menu</h3>
