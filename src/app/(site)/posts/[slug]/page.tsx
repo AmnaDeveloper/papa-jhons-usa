@@ -1,6 +1,6 @@
 import posts from '../../../data/posts.json';
 import { notFound } from 'next/navigation';
-import { generateArticleSEO } from '../../../lib/seo-config';
+import { generateArticleSEO, siteName } from '../../../lib/seo-config';
 import { generateArticleSchema, generateBreadcrumbSchema } from '../../../lib/seo/schema';
 import InternalLinks from '../../../components/seo/InternalLinks';
 import Link from 'next/link';

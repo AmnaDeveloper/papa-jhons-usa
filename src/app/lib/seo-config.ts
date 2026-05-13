@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 
-const siteName = "Unofficial Papa John's Menu Fan Guide";
+export const siteName = "Unofficial Papa John's Menu Fan Guide";
 const defaultUrl = 'https://papajohns-menus.us';
 
 export function generatePageSEO(
