@@ -165,7 +165,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         case 'papa-johns-sandwiches':
             meta = {
                 title: `Papa Johns Sandwiches (${month}): All 3 Reviewed, Prices & Calories`,
-                description: `Papa Johns launched 3 Oven-Toasted Sandwiches in 2026 starting at $7.99. We reviewed all three — Philly Cheesesteak, Chicken Bacon Ranch & Steak & Mushroom. Honest verdict inside. Updated ${date}.`,
+                description: `Papa Johns launched 3 Oven-Toasted Sandwiches in 2026 starting at $7.99. We reviewed all three, Philly Cheesesteak, Chicken Bacon Ranch & Steak & Mushroom. Honest verdict inside. Updated ${date}.`,
             };
             break;
         default:
