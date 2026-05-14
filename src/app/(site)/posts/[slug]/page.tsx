@@ -162,6 +162,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
                 description: `Papa Johns is closing 200+ stores in 2026. Find out how many locations are closing, why it's happening, which stores are at risk & what it means for you.`,
             };
             break;
+        case 'papa-johns-sandwiches':
+            meta = {
+                title: `Papa Johns Sandwiches (${month}): All 3 Reviewed, Prices & Calories`,
+                description: `Papa Johns launched 3 Oven-Toasted Sandwiches in 2026 starting at $7.99. We reviewed all three — Philly Cheesesteak, Chicken Bacon Ranch & Steak & Mushroom. Honest verdict inside. Updated ${date}.`,
+            };
+            break;
         default:
             return generateArticleSEO(
                 `${post.title} (${month})`,
