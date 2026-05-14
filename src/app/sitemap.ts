@@ -117,6 +117,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.95,
     },
     {
+      url: `${baseUrl}/posts/papa-johns-closing-stores-2026`,
+      lastModified: '2026-05-13T00:00:00.000Z',
+      changeFrequency: 'daily',
+      priority: 0.95,
+    },
+    {
       url: `${baseUrl}/posts/papa-johns-small-pizza`,
       lastModified: '2026-04-29T10:00:00.000Z',
       changeFrequency: 'weekly',
