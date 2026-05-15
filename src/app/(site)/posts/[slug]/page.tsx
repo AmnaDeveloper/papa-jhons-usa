@@ -168,6 +168,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
                 description: `Papa Johns launched 3 Oven-Toasted Sandwiches in 2026 starting at $7.99. We reviewed all three, Philly Cheesesteak, Chicken Bacon Ranch & Steak & Mushroom. Honest verdict inside. Updated ${date}.`,
             };
             break;
+        case 'papa-johns-vs-pizza-hut':
+            meta = {
+                title: `Papa Johns vs Pizza Hut 2026: Which Chain Is Actually Better? (${month})`,
+                description: `Papa Johns or Pizza Hut in 2026? We compare price, dough quality, stuffed crust, delivery, and value — with real data and honest opinions. Updated ${date}.`,
+            };
+            break;
         default:
             return generateArticleSEO(
                 `${post.title} (${month})`,

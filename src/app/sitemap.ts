@@ -99,6 +99,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // ==================== BLOG / POSTS ====================
     {
+      url: `${baseUrl}/posts/papa-johns-vs-pizza-hut`,
+      lastModified: '2026-05-15T00:00:00.000Z',
+      changeFrequency: 'daily',
+      priority: 0.95,
+    },
+    {
       url: `${baseUrl}/posts/papa-johns-sandwiches`,
       lastModified: '2026-05-14T00:00:00.000Z',
       changeFrequency: 'daily',
