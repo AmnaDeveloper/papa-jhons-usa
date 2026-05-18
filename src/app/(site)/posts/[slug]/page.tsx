@@ -68,8 +68,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
             break;
         case 'papa-johns-pan-pizza':
             meta = {
-                title: `Papa Johns Pan Pizza (${month}): Price, Toppings, Calories & Honest Review`,
-                description: `Papa Johns Pan Pizza is back with 6 cheeses & garlic parmesan crust. Full review, price ($11.99), calories per slice, toppings list & Pizza Hut comparison — updated ${date}.`,
+                title: `Papa Johns Pan Pizza 2026: Price, Calories & Honest Review`,
+                description: `Papa Johns Pan Pizza costs $11.99 for a medium. Six-cheese blend, crispy garlic parmesan crust, 350 cal/slice. Full review, toppings list & Pizza Hut comparison.`,
             };
             break;
         case 'papa-johns-wings':

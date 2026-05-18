@@ -1070,5 +1070,107 @@
         }
       }
     ]
+  },
+  "papa-johns-pan-pizza": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Papa Johns Pan Pizza?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Papa Johns Pan Pizza is a thick-crust pizza baked directly in a metal pan, giving it a fluffy airy interior with a crispy caramelized bottom. It features a six-cheese blend of mozzarella, provolone, fontina, asiago, parmesan, and romano spread edge-to-edge, with parmesan and Special Garlic Sauce baked into the crust bottom. It was relaunched in January 2026 as a permanent menu item after previous versions in 2005 and 2016 were discontinued."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does Papa Johns Pan Pizza cost in 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Papa Johns Pan Pizza starts at $11.99 for a medium one-topping pizza. It is only available in medium size (12 inches, 8 slices). Additional toppings cost extra and vary by location. The $11.99 is the national suggested retail price — your local store may vary slightly. Always check the Papa Johns coupons page before ordering as percentage-off promo codes regularly apply to Pan Pizza."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many calories are in Papa Johns Pan Pizza?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "One slice of Papa Johns Pan Pizza contains 350 calories, 20g total fat, 8g saturated fat, 40mg cholesterol, 960mg sodium, 27g carbohydrates, 3g sugar, and 17g protein. The full medium pizza with 8 slices totals approximately 2,800 calories. Sodium is high at 960mg per slice — four slices brings you close to the full recommended daily limit of 2,300mg."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What cheeses are in Papa Johns Pan Pizza?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Papa Johns Pan Pizza uses a six-cheese blend: mozzarella for melt and stretch, provolone for added depth, fontina for buttery creaminess, asiago for sharp flavor intensity, parmesan for crust caramelization, and romano for bold finishing sharpness. The parmesan is baked directly into the garlic parmesan crust bottom, creating the caramelized edge that distinguishes this pizza from standard chain pan pizzas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What size is Papa Johns Pan Pizza available in?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Papa Johns Pan Pizza is currently only available in medium size — 12 inches, cut into 8 slices. It is not available in small, large, or extra-large. This medium-only limitation is intentional — Papa Johns launched in one size to maintain consistent execution quality across its franchise network before potentially expanding to other sizes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Papa Johns Pan Pizza better than Pizza Hut's?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Papa Johns Pan Pizza is technically more impressive than Pizza Hut's Original Pan — it uses a six-cheese blend versus Pizza Hut's standard mozzarella, has a superior garlic parmesan caramelized bottom crust, and benefits from Papa Johns' fresh never-frozen dough. Pizza Hut's Original Pan has been around since 1980 and carries strong nostalgia and familiarity. Both are good pan pizzas. Papa Johns wins on ingredient quality and complexity; Pizza Hut wins on size variety and consistency across locations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What toppings work best on Papa Johns Pan Pizza?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Classic pepperoni, mushrooms, and Italian sausage work best on Papa Johns Pan Pizza. The six-cheese base is already heavily flavored, so simpler toppings with original pizza sauce are the right approach. Avoid BBQ or Buffalo sauce bases as they compete with the parmesan notes in the crust. The plain cheese pan pizza is an excellent order on its own. Pan Pizza can hold up to 7 toppings without the crust becoming soggy."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Papa Johns Pan Pizza permanent or limited time?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Papa Johns has confirmed Pan Pizza as a permanent addition to their core menu as of 2026 — not a limited-time offer. This is significant because the two previous versions (2005 Perfect Pan and 2016 Pan Pizza) were both discontinued after failing to gain lasting traction. The 2026 version is described by Papa Johns as nearly a decade in development and is intended to stay on the menu long-term. Location availability may vary during the ongoing nationwide rollout."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is Papa Johns Pan Pizza only available in medium?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Papa Johns launched Pan Pizza in medium-only as a quality control decision. Maintaining consistent results across different sizes is significantly harder with pan pizza than with flat crust styles — the baking time, pan temperature, and dough proofing all need adjustment for each size. Starting with one size lets Papa Johns stabilize franchise execution before expanding to large or small. Whether they eventually offer it in other sizes has not been announced."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Papa Johns Pan Pizza the same as Detroit-style pizza?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Papa Johns Pan Pizza shares characteristics with Detroit-style pizza — specifically the caramelized cheese crown along the edges and the crispy bottom — but it is not identical to authentic Detroit-style. True Detroit-style pizza is significantly taller with a more pronounced rectangular shape and a deeper, more oil-infused crust. Papa Johns' version is inspired by Detroit-style elements but uses their own fresh hand-tossed dough recipe adapted for pan baking."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does Papa Johns Pan Pizza compare to the 2016 version?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The 2026 Papa Johns Pan Pizza is significantly better than the 2016 version. The 2016 version was discontinued due to inconsistent franchise execution and a product that lacked clear differentiation from the category. The 2026 version adds a six-cheese blend, a specifically engineered garlic parmesan crust bottom, edge-to-edge cheese coverage, and nearly a decade of development time. The caramelized cheese crown and crispy bottom that the 2016 version delivered inconsistently are now more reliably produced."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I customize Papa Johns Pan Pizza?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. All standard Papa Johns toppings are available on Pan Pizza, and you can fully customize sauce, cheese amount, and toppings through the Papa Johns app or website. The garlic parmesan bottom crust is baked in by default as a structural part of the cooking process and cannot be removed. For milder flavor, choose Original Pizza Sauce as your base. Square piece cuts are also available as a free customization option."
+        }
+      }
+    ]
   }
 }
