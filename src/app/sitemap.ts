@@ -129,6 +129,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.95,
     },
     {
+      url: `${baseUrl}/posts/complete-garlic-sauce-guide`,
+      lastModified: '2026-05-19T00:00:00.000Z',
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/posts/papa-johns-small-pizza`,
       lastModified: '2026-04-29T10:00:00.000Z',
       changeFrequency: 'weekly',
