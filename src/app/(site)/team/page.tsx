@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { Mail, ShieldCheck, Award, Users, CheckCircle, Clock } from 'lucide-react';
+import Image from 'next/image';
+import { Mail, ShieldCheck, CheckCircle, Clock } from 'lucide-react';
 
 export const metadata: Metadata = {
     title: "Meet Our Editorial Team — PapaJohns-Menus.us",
@@ -12,7 +13,10 @@ export default function TeamPage() {
         {
             name: "Sarah Jenkins",
             role: "Editor in Chief",
-            emoji: "👩‍💼",
+            image: "/sarah-jenkins.png",
+            alt: "Sarah Jenkins, Editor in Chief",
+            accentFrom: "#cc0000",
+            accentTo: "#ff4d4d",
             bio: "Sarah has been writing about food, restaurants, and consumer deals for over 6 years. Based in Austin, Texas, she has personally visited and reviewed dozens of Papa Johns locations across the United States.",
             detail: "Sarah leads our editorial team and sets the quality standards for every article published on this site. Before launching PapaJohns-Menus.us, she contributed food reviews to several regional lifestyle publications and ran a personal food blog for 4 years.",
             specialties: ["Menu Analysis", "Editorial Standards", "Food Quality Reviews", "Site Accuracy"],
@@ -21,7 +25,10 @@ export default function TeamPage() {
         {
             name: "Marcus Webb",
             role: "Deals & Coupons Researcher",
-            emoji: "💰",
+            image: "/marcus-webb.png",
+            alt: "Marcus Webb, Deals and Coupons Researcher",
+            accentFrom: "#1A3D17",
+            accentTo: "#2e6e29",
             bio: "Marcus joined our team in 2024 with one obsession: saving people money on food. He monitors Papa Johns promotions, app-exclusive deals, loyalty program updates, and limited-time offers on a daily basis.",
             detail: "Before joining PapaJohns-Menus.us, Marcus spent 3 years running a coupon and cashback blog where he helped thousands of families reduce their grocery and food delivery bills. He personally tests every coupon code before it goes live on our Deals page.",
             specialties: ["Coupon Verification", "Price Tracking", "Loyalty Programs", "Deal Analysis"],
@@ -30,7 +37,10 @@ export default function TeamPage() {
         {
             name: "Linda Torres",
             role: "Nutrition & Menu Specialist",
-            emoji: "🥗",
+            image: "/linda-torres.png",
+            alt: "Linda Torres, Nutrition and Menu Specialist",
+            accentFrom: "#CCEE18",
+            accentTo: "#99b312",
             bio: "Linda brings a background in nutrition science to our team. She is responsible for reviewing all calorie counts, macro breakdowns, and allergen information published on PapaJohns-Menus.us.",
             detail: "Linda understands that many pizza lovers have specific dietary needs — whether managing calories, avoiding allergens, or making health-conscious choices. Her goal is to make sure every reader has the nutritional facts they need before placing an order.",
             specialties: ["Nutritional Analysis", "Allergen Information", "Macro Tracking", "Dietary Guides"],
@@ -68,10 +78,17 @@ export default function TeamPage() {
                     {team.map((member, i) => (
                         <div
                             key={i}
-                            className="flex flex-col md:flex-row gap-10 items-start bg-white border-2 border-gray-100 rounded-[2.5rem] p-8 md:p-12 hover:border-[#CCEE18] transition-all shadow-sm"
+                            className="flex flex-col md:flex-row gap-10 items-start bg-white border-2 border-gray-100 rounded-[2.5rem] p-8 md:p-12 hover:border-[#CCEE18] transition-all shadow-sm relative overflow-hidden"
                         >
-                            <div className="w-28 h-28 md:w-36 md:h-36 bg-gray-50 rounded-[1.5rem] flex items-center justify-center text-5xl shadow-inner shrink-0">
-                                {member.emoji}
+                            <div className="absolute top-0 left-0 w-full h-2" style={{ background: `linear-gradient(to right, ${member.accentFrom}, ${member.accentTo})` }}></div>
+                            <div className="w-28 h-28 md:w-36 md:h-36 rounded-[1.5rem] overflow-hidden shadow-md shrink-0 mt-2">
+                                <Image
+                                    src={member.image}
+                                    alt={member.alt}
+                                    width={144}
+                                    height={144}
+                                    className="w-full h-full object-cover"
+                                />
                             </div>
                             <div className="flex-1">
                                 <span className="text-[#cc0000] font-black uppercase tracking-widest text-xs mb-1 block">
