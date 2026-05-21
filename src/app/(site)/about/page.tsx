@@ -4,162 +4,264 @@ import InternalLinks from '../../components/seo/InternalLinks';
 import Link from 'next/link';
 
 export const metadata: Metadata = generatePageSEO(
-    "About Us - Your #1 Unofficial Guide to Papa Johns Menu, Prices & Deals",
-    "Welcome to papajohns-menus.us — an independent, unofficial fan website dedicated to helping Papa Johns customers across the United States find accurate menu information.",
+    "About Us — The Team Behind PapaJohns-Menus.us",
+    "Meet the real people behind papajohns-menus.us — an independent pizza guide run by food writers and deal hunters helping Americans save money on every Papa Johns order since 2024.",
     "/about",
-    "About Papa Johns menu, independent fan site, pizza menu guide, Papa Johns unofficial"
+    "About Papa Johns menu, independent fan site, pizza menu guide, Papa Johns unofficial, team behind"
 );
 
 export default function AboutPage() {
     return (
         <div className="bg-white min-h-screen">
             {/* Page Header */}
-            <div className="bg-[#1A3D17] py-16 md:py-24 text-center px-4">
-                <div className="max-w-4xl mx-auto">
+            <div className="bg-[#1A3D17] py-16 md:py-24 text-center px-4 relative overflow-hidden">
+                <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#CCEE18_1px,transparent_1px)] [background-size:16px_16px]"></div>
+                <div className="max-w-4xl mx-auto relative z-10">
                     <h1 className="text-[#CCEE18] text-4xl md:text-6xl font-black uppercase tracking-tighter mb-4" style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}>
                         About Us
                     </h1>
-                    <p className="text-white text-lg md:text-xl font-medium opacity-90 italic">
-                        Your #1 Unofficial Guide to Papa Johns Menu, Prices & Deals in the USA
+                    <p className="text-white text-xl md:text-2xl font-bold uppercase tracking-tight max-w-2xl mx-auto mb-6">
+                        About Us — The Team Behind PapaJohns-Menus.us
                     </p>
-                    <div className="mt-6 flex justify-center items-center gap-2 text-[#CCEE18] text-sm font-bold tracking-widest uppercase">
+                    <div className="flex justify-center items-center gap-2 text-[#CCEE18] text-sm font-bold tracking-widest uppercase">
                         <span>Last Updated:</span>
-                        <span className="bg-white/10 px-3 py-1 rounded-full">May 2026</span>
+                        <span className="bg-white/10 px-3 py-1 rounded-full text-white">May 2026</span>
                     </div>
                 </div>
             </div>
 
             {/* Content Section */}
             <div className="max-w-[1000px] mx-auto px-4 md:px-8 py-16">
-                <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-12">
+                <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-16">
                     
-                    <section>
-                        <h2 className="text-3xl font-black text-[#1A3D17] uppercase tracking-tight mb-6 border-l-4 border-[#cc0000] pl-4">
-                            Who We Are
+                    {/* Why We Built This Site */}
+                    <section className="bg-gradient-to-br from-[#1A3D17]/5 to-[#CCEE18]/5 p-8 md:p-12 rounded-[2.5rem] border border-[#1A3D17]/10">
+                        <h2 className="text-3xl font-black text-[#1A3D17] uppercase tracking-tight mb-6 flex items-center gap-3">
+                            <span className="text-[#cc0000]">💡</span> Why We Built This Site
                         </h2>
-                        <p>
-                            Welcome to <strong>papajohns-menus.us</strong> — an independent, unofficial fan website dedicated to helping Papa Johns customers across the United States find accurate menu information, updated prices, current deals, and nutritional details all in one place.
-                        </p>
-                        <p>
-                            We are pizza lovers, just like you. We built this site because finding up-to-date Papa Johns menu prices, current coupons, and nutritional information was scattered and time-consuming. Our goal is simple: give every Papa Johns fan a fast, reliable, and easy-to-use resource — for free.
-                        </p>
+                        <div className="space-y-4 text-lg">
+                            <p className="font-semibold text-gray-800">
+                                If you've ever opened the Papa Johns app at 7 PM trying to find the best deal — only to end up confused by expired coupons, outdated prices, and scattered information — you know exactly why we built this site.
+                            </p>
+                            <p>
+                                <strong>PapaJohns-Menus.us</strong> was started in 2024 by a small team of food writers, budget-conscious families, and pizza obsessives who were tired of one thing: not being able to quickly find accurate Papa Johns menu prices, working promo codes, and honest reviews in one place.
+                            </p>
+                            <p className="font-medium text-[#1A3D17]">
+                                So we built it ourselves.
+                            </p>
+                        </div>
                     </section>
 
-                    <section className="bg-gray-50 p-8 rounded-[2rem] border border-gray-100">
-                        <h2 className="text-3xl font-black text-[#1A3D17] uppercase tracking-tight mb-8">
-                            What We Offer
-                        </h2>
+                    {/* Who We Are */}
+                    <section>
+                        <div className="text-center max-w-2xl mx-auto mb-12">
+                            <h2 className="text-3xl font-black text-[#1A3D17] uppercase tracking-tight mb-4">
+                                Who We Are
+                            </h2>
+                            <p className="text-gray-600 text-lg">
+                                We are an independent editorial team — not affiliated with Papa Johns International in any way. We are everyday Americans who genuinely love pizza and believe that finding good food at a fair price should be simple.
+                            </p>
+                        </div>
+                        
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            {/* Sarah */}
+                            <div className="bg-white rounded-3xl p-6 border border-gray-100 shadow-xl shadow-gray-100/50 hover:shadow-2xl hover:shadow-gray-200/50 transition-all duration-300 flex flex-col h-full relative overflow-hidden group">
+                                <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-[#cc0000] to-[#ff4d4d]"></div>
+                                <div className="flex items-center gap-4 mb-6">
+                                    <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#cc0000] to-[#ff4d4d] flex items-center justify-center text-white font-black text-xl shadow-md">
+                                        SJ
+                                    </div>
+                                    <div>
+                                        <h3 className="font-black text-gray-900 text-lg leading-tight group-hover:text-[#cc0000] transition-colors">Sarah Jenkins</h3>
+                                        <span className="text-[#cc0000] text-xs font-bold uppercase tracking-wider">Editor in Chief</span>
+                                    </div>
+                                </div>
+                                <p className="text-gray-600 text-sm leading-relaxed flex-grow">
+                                    Sarah has been writing about food, restaurants, and consumer deals for over 6 years. Based in Austin, Texas, she has personally visited and reviewed dozens of Papa Johns locations across the country. She leads our editorial team and ensures every article meets our quality and accuracy standards.
+                                </p>
+                            </div>
+
+                            {/* Marcus */}
+                            <div className="bg-white rounded-3xl p-6 border border-gray-100 shadow-xl shadow-gray-100/50 hover:shadow-2xl hover:shadow-gray-200/50 transition-all duration-300 flex flex-col h-full relative overflow-hidden group">
+                                <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-[#1A3D17] to-[#2e6e29]"></div>
+                                <div className="flex items-center gap-4 mb-6">
+                                    <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#1A3D17] to-[#2e6e29] flex items-center justify-center text-white font-black text-xl shadow-md">
+                                        MW
+                                    </div>
+                                    <div>
+                                        <h3 className="font-black text-gray-900 text-lg leading-tight group-hover:text-[#1A3D17] transition-colors">Marcus Webb</h3>
+                                        <span className="text-[#1A3D17] text-xs font-bold uppercase tracking-wider">Deals & Coupons</span>
+                                    </div>
+                                </div>
+                                <p className="text-gray-600 text-sm leading-relaxed flex-grow">
+                                    Marcus is obsessed with saving money on food. He monitors Papa Johns promotions, app deals, and loyalty program updates daily. If there's a working promo code out there, Marcus has already found it.
+                                </p>
+                            </div>
+
+                            {/* Linda */}
+                            <div className="bg-white rounded-3xl p-6 border border-gray-100 shadow-xl shadow-gray-100/50 hover:shadow-2xl hover:shadow-gray-200/50 transition-all duration-300 flex flex-col h-full relative overflow-hidden group">
+                                <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-[#CCEE18] to-[#99b312]"></div>
+                                <div className="flex items-center gap-4 mb-6">
+                                    <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#CCEE18] to-[#99b312] flex items-center justify-center text-gray-900 font-black text-xl shadow-md">
+                                        LT
+                                    </div>
+                                    <div>
+                                        <h3 className="font-black text-gray-900 text-lg leading-tight group-hover:text-[#99b312] transition-colors">Linda Torres</h3>
+                                        <span className="text-gray-500 text-xs font-bold uppercase tracking-wider">Nutrition & Menu</span>
+                                    </div>
+                                </div>
+                                <p className="text-gray-600 text-sm leading-relaxed flex-grow">
+                                    Linda holds a background in nutrition science and reviews all calorie, macro, and allergen information on our site. She makes sure health-conscious pizza lovers have the facts they need before every order.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* What Makes Us Different */}
+                    <section className="bg-gray-50 p-8 md:p-12 rounded-[2.5rem] border border-gray-100">
+                        <div className="text-center max-w-2xl mx-auto mb-10">
+                            <h2 className="text-3xl font-black text-[#1A3D17] uppercase tracking-tight mb-3">
+                                What Makes Us Different
+                            </h2>
+                            <p className="text-gray-600">
+                                There are dozens of menu listing sites out there. Here is what sets us apart:
+                            </p>
+                        </div>
+
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div className="flex items-start gap-3">
-                                <span className="text-2xl">🍕</span>
+                            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm flex items-start gap-4">
+                                <div className="text-2xl bg-green-50 p-3 rounded-xl text-green-600">✅</div>
                                 <div>
-                                    <strong className="block text-[#1A3D17] uppercase text-sm">Complete Menu</strong>
-                                    <p className="text-sm">Papa Johns Menu with Prices — updated regularly for 2026</p>
+                                    <h3 className="font-bold text-gray-900 text-lg uppercase mb-1">We Update Daily</h3>
+                                    <p className="text-gray-600 text-sm">
+                                        Prices, deals, and menu items change constantly. Our team checks for updates every single day — especially coupons and limited-time offers.
+                                    </p>
                                 </div>
                             </div>
-                            <div className="flex items-start gap-3">
-                                <span className="text-2xl">💰</span>
+
+                            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm flex items-start gap-4">
+                                <div className="text-2xl bg-green-50 p-3 rounded-xl text-green-600">✅</div>
                                 <div>
-                                    <strong className="block text-[#1A3D17] uppercase text-sm">Coupons & Deals</strong>
-                                    <p className="text-sm">Verified deals updated daily by our team</p>
+                                    <h3 className="font-bold text-gray-900 text-lg uppercase mb-1">We Are Honest</h3>
+                                    <p className="text-gray-600 text-sm">
+                                        We do not get paid by Papa Johns. We write honest comparisons, real reviews, and genuine opinions. If something is not worth your money, we will say so.
+                                    </p>
                                 </div>
                             </div>
-                            <div className="flex items-start gap-3">
-                                <span className="text-2xl">🏪</span>
+
+                            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm flex items-start gap-4">
+                                <div className="text-2xl bg-green-50 p-3 rounded-xl text-green-600">✅</div>
                                 <div>
-                                    <strong className="block text-[#1A3D17] uppercase text-sm">Store Locator</strong>
-                                    <p className="text-sm">Find your nearest Papa Johns location instantly</p>
+                                    <h3 className="font-bold text-gray-900 text-lg uppercase mb-1">We Are Independent</h3>
+                                    <p className="text-gray-600 text-sm">
+                                        This is a fan-run informational guide. We have no business relationship with Papa Johns International. Our only loyalty is to our readers.
+                                    </p>
                                 </div>
                             </div>
-                            <div className="flex items-start gap-3">
-                                <span className="text-2xl">🥗</span>
+
+                            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm flex items-start gap-4">
+                                <div className="text-2xl bg-green-50 p-3 rounded-xl text-green-600">✅</div>
                                 <div>
-                                    <strong className="block text-[#1A3D17] uppercase text-sm">Nutrition Guide</strong>
-                                    <p className="text-sm">Full calories, macros, and allergen information</p>
-                                </div>
-                            </div>
-                            <div className="flex items-start gap-3">
-                                <span className="text-2xl">⭐</span>
-                                <div>
-                                    <strong className="block text-[#1A3D17] uppercase text-sm">Honest Reviews</strong>
-                                    <p className="text-sm">Real breakdowns of every popular menu item</p>
-                                </div>
-                            </div>
-                            <div className="flex items-start gap-3">
-                                <span className="text-2xl">📍</span>
-                                <div>
-                                    <strong className="block text-[#1A3D17] uppercase text-sm">Location Guides</strong>
-                                    <p className="text-sm">City-specific information across the USA</p>
+                                    <h3 className="font-bold text-gray-900 text-lg uppercase mb-1">We Research Thoroughly</h3>
+                                    <p className="text-gray-600 text-sm">
+                                        Every article is written after real research — visiting locations, checking the official app, comparing competitor pricing, and reading customer feedback from real users.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </section>
 
-                    <section>
-                        <h2 className="text-3xl font-black text-[#1A3D17] uppercase tracking-tight mb-6 border-l-4 border-[#cc0000] pl-4">
-                            Our Mission
-                        </h2>
-                        <p>
-                            Our mission is to save Papa Johns customers time and money. Whether you want to know the price of a large pepperoni pizza, find a working promo code before checkout, or check the calories in your favorite wings — we have it all in one place, always updated.
-                        </p>
-                    </section>
-
-                    <section className="bg-[#fff5f5] p-8 rounded-[2rem] border border-[#ffcccc]">
-                        <h2 className="text-2xl font-black text-[#cc0000] uppercase tracking-tight mb-4">
-                            Important Disclaimer
-                        </h2>
-                        <div className="text-sm space-y-4 text-gray-700 font-medium">
-                            <p>
-                                <strong>papajohns-menus.us</strong> is an independent fan website and is not affiliated with, endorsed by, sponsored by, or officially connected to Papa Johns International, Inc. in any way.
-                            </p>
-                            <p>
-                                All Papa Johns trademarks, logos, and brand names are the property of Papa Johns International, Inc. and its subsidiaries. All other trademarks are the property of their respective owners.
-                            </p>
-                            <p>
-                                Menu prices, availability, and deals listed on this site are estimates based on publicly available information and may vary by location. For the most accurate and current pricing, please visit the official Papa Johns website at <a href="https://www.papajohns.com" target="_blank" rel="noopener noreferrer" className="text-[#cc0000] underline">papajohns.com</a>.
+                    {/* Our Editorial Standards */}
+                    <section className="border-l-4 border-[#cc0000] pl-6 md:pl-8 space-y-6">
+                        <div>
+                            <h2 className="text-3xl font-black text-[#1A3D17] uppercase tracking-tight mb-2">
+                                Our Editorial Standards
+                            </h2>
+                            <p className="text-gray-600 text-lg">
+                                We take accuracy seriously. Here is how we maintain quality:
                             </p>
                         </div>
-                    </section>
-
-                    <section>
-                        <h2 className="text-3xl font-black text-[#1A3D17] uppercase tracking-tight mb-6 border-l-4 border-[#cc0000] pl-4">
-                            Our Content Standards
-                        </h2>
-                        <ul className="list-disc pl-6 space-y-4 font-medium">
-                            <li><strong>Regularly updated:</strong> We review and update prices and menu items monthly.</li>
-                            <li><strong>Independently researched:</strong> Our team verifies information from multiple sources.</li>
-                            <li><strong>Honest:</strong> We give real reviews and comparisons, not paid promotions.</li>
+                        <ul className="space-y-4">
+                            {[
+                                "All menu prices are verified against the official Papa Johns app and website before publishing",
+                                "Nutritional information is cross-checked with official Papa Johns nutrition data",
+                                "Coupon codes are tested before being listed on our Deals page",
+                                "Articles are reviewed and updated at least once per month",
+                                "Any significant price changes are updated within 48 hours of being confirmed"
+                            ].map((standard, index) => (
+                                <li key={index} className="flex items-start gap-3 text-gray-700 font-medium">
+                                    <span className="text-[#cc0000] font-black text-lg mt-0.5">•</span>
+                                    <span>{standard}</span>
+                                </li>
+                            ))}
                         </ul>
                     </section>
 
-                    <section>
-                        <h2 className="text-3xl font-black text-[#1A3D17] uppercase tracking-tight mb-6 border-l-4 border-[#cc0000] pl-4">
-                            Privacy & Advertising
-                        </h2>
-                        <p>
-                            This website uses <strong>Google AdSense</strong> to display advertisements. Google AdSense may use cookies to serve ads based on your prior visits to this website or other websites. You can opt out of personalized advertising by visiting Google's Ads Settings.
-                        </p>
-                        <p>
-                            For full details on how we collect and use data, please read our <Link href="/privacy-policy" className="text-[#cc0000] font-bold hover:underline">Privacy Policy</Link>.
-                        </p>
-                    </section>
-
-                    <section className="border-2 border-dashed border-gray-200 p-8 rounded-[2rem]">
-                        <h2 className="text-3xl font-black text-[#1A3D17] uppercase tracking-tight mb-6">
-                            Contact Us
-                        </h2>
-                        <p className="mb-6">
-                            Have a question, found incorrect information, or want to suggest a correction? We'd love to hear from you.
-                        </p>
-                        <div className="space-y-3 font-bold">
-                            <p className="flex items-center gap-3">📧 Email: <span className="text-[#cc0000]">contact@papajohns-menus.us</span></p>
-                            <p className="flex items-center gap-3">🌐 Website: <Link href="/" className="text-[#cc0000]">papajohns-menus.us</Link></p>
+                    {/* Our Mission */}
+                    <section className="bg-[#1A3D17] text-white p-8 md:p-12 rounded-[2.5rem] relative overflow-hidden">
+                        <div className="absolute inset-0 opacity-5 bg-[radial-gradient(white_1px,transparent_1px)] [background-size:16px_16px]"></div>
+                        <div className="relative z-10 space-y-6">
+                            <h2 className="text-3xl font-black text-[#CCEE18] uppercase tracking-tight">
+                                Our Mission
+                            </h2>
+                            <p className="text-2xl font-black leading-tight border-b border-white/10 pb-6">
+                                To save every Papa Johns customer time, money, and frustration — by putting everything they need in one honest, well-researched, and easy-to-use place.
+                            </p>
+                            <p className="text-lg text-white/90">
+                                Whether you are a daily pizza lover, a parent planning a birthday party, or someone just trying to find the cheapest large pizza deal this weekend — this site is for you.
+                            </p>
                         </div>
-                        <p className="mt-6 text-sm italic text-gray-500">
-                            We aim to respond to all inquiries within 48 hours.
-                        </p>
                     </section>
 
+                    {/* Important Disclaimer */}
+                    <section className="bg-[#fff5f5] p-8 rounded-3xl border border-[#ffcccc]">
+                        <h2 className="text-xl font-black text-[#cc0000] uppercase tracking-tight mb-4 flex items-center gap-2">
+                            ⚠️ Important Disclaimer
+                        </h2>
+                        <div className="text-sm space-y-4 text-gray-700 font-medium">
+                            <p>
+                                <strong>PapaJohns-Menus.us</strong> is an independent informational website. We are not affiliated with, endorsed by, sponsored by, or officially connected to Papa Johns International, Inc. in any way.
+                            </p>
+                            <p>
+                                All Papa Johns trademarks, logos, and brand names are the property of Papa Johns International, Inc. Menu prices, availability, and deals listed on this site are based on publicly available information and may vary by location. For official and legally binding information, please visit <a href="https://www.papajohns.com" target="_blank" rel="noopener noreferrer" className="text-[#cc0000] underline font-bold hover:text-[#990000] transition-colors">papajohns.com</a>.
+                            </p>
+                        </div>
+                    </section>
+
+                    {/* Get In Touch */}
+                    <section className="border-2 border-dashed border-gray-200 p-8 rounded-[2.5rem] bg-gray-50/50">
+                        <h2 className="text-3xl font-black text-[#1A3D17] uppercase tracking-tight mb-4">
+                            Get In Touch
+                        </h2>
+                        <p className="text-gray-600 mb-6 font-medium">
+                            We love hearing from our readers. Whether you spotted an error, want to suggest a topic, or just want to say hello — reach out anytime.
+                        </p>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 font-bold text-gray-800">
+                            <div className="bg-white p-5 rounded-2xl border border-gray-100 flex items-center gap-3">
+                                <span className="text-2xl">📧</span>
+                                <div>
+                                    <span className="block text-xs uppercase text-gray-400 font-bold">Email</span>
+                                    <a href="mailto:contact@papajohns-menus.us" className="text-[#cc0000] hover:underline">contact@papajohns-menus.us</a>
+                                </div>
+                            </div>
+                            <div className="bg-white p-5 rounded-2xl border border-gray-100 flex items-center gap-3">
+                                <span className="text-2xl">🌐</span>
+                                <div>
+                                    <span className="block text-xs uppercase text-gray-400 font-bold">Website</span>
+                                    <Link href="/" className="text-[#cc0000] hover:underline">papajohns-menus.us</Link>
+                                </div>
+                            </div>
+                            <div className="bg-white p-5 rounded-2xl border border-gray-100 flex items-center gap-3">
+                                <span className="text-2xl">⏱️</span>
+                                <div>
+                                    <span className="block text-xs uppercase text-gray-400 font-bold">Response Time</span>
+                                    <span className="text-gray-700">Within 48 hours</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* Most Popular Guides */}
                     <section>
                         <h3 className="text-2xl font-black text-[#1A3D17] uppercase tracking-tight mb-8">
                             Most Popular Guides
