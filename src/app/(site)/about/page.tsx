@@ -2,10 +2,11 @@ import { Metadata } from 'next';
 import { generatePageSEO } from '../../lib/seo-config';
 import InternalLinks from '../../components/seo/InternalLinks';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata: Metadata = generatePageSEO(
-    "About Us — The Team Behind PapaJohns-Menus.us",
-    "Meet the real people behind papajohns-menus.us — an independent pizza guide run by food writers and deal hunters helping Americans save money on every Papa Johns order since 2024.",
+    "About Us: The Team Behind PapaJohns-Menus.us",
+    "Meet the real people behind papajohns-menus.us, an independent pizza guide run by food writers and deal hunters helping Americans save money on every Papa Johns order since 2024.",
     "/about",
     "About Papa Johns menu, independent fan site, pizza menu guide, Papa Johns unofficial, team behind"
 );
@@ -21,7 +22,7 @@ export default function AboutPage() {
                         About Us
                     </h1>
                     <p className="text-white text-xl md:text-2xl font-bold uppercase tracking-tight max-w-2xl mx-auto mb-6">
-                        About Us — The Team Behind PapaJohns-Menus.us
+                        The Team Behind PapaJohns-Menus.us
                     </p>
                     <div className="flex justify-center items-center gap-2 text-[#CCEE18] text-sm font-bold tracking-widest uppercase">
                         <span>Last Updated:</span>
@@ -41,7 +42,7 @@ export default function AboutPage() {
                         </h2>
                         <div className="space-y-4 text-lg">
                             <p className="font-semibold text-gray-800">
-                                If you've ever opened the Papa Johns app at 7 PM trying to find the best deal — only to end up confused by expired coupons, outdated prices, and scattered information — you know exactly why we built this site.
+                                If you have ever opened the Papa Johns app at 7 PM trying to find the best deal, only to end up confused by expired coupons, outdated prices, and scattered information, you know exactly why we built this site.
                             </p>
                             <p>
                                 <strong>PapaJohns-Menus.us</strong> was started in 2024 by a small team of food writers, budget-conscious families, and pizza obsessives who were tired of one thing: not being able to quickly find accurate Papa Johns menu prices, working promo codes, and honest reviews in one place.
@@ -59,7 +60,7 @@ export default function AboutPage() {
                                 Who We Are
                             </h2>
                             <p className="text-gray-600 text-lg">
-                                We are an independent editorial team — not affiliated with Papa Johns International in any way. We are everyday Americans who genuinely love pizza and believe that finding good food at a fair price should be simple.
+                                We are an independent editorial team, not affiliated with Papa Johns International in any way. We are everyday Americans who genuinely love pizza and believe that finding good food at a fair price should be simple.
                             </p>
                         </div>
                         
@@ -67,9 +68,15 @@ export default function AboutPage() {
                             {/* Sarah */}
                             <div className="bg-white rounded-3xl p-6 border border-gray-100 shadow-xl shadow-gray-100/50 hover:shadow-2xl hover:shadow-gray-200/50 transition-all duration-300 flex flex-col h-full relative overflow-hidden group">
                                 <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-[#cc0000] to-[#ff4d4d]"></div>
-                                <div className="flex items-center gap-4 mb-6">
-                                    <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#cc0000] to-[#ff4d4d] flex items-center justify-center text-white font-black text-xl shadow-md">
-                                        SJ
+                                <div className="flex items-center gap-4 mb-6 mt-2">
+                                    <div className="w-16 h-16 rounded-2xl overflow-hidden shadow-md flex-shrink-0">
+                                        <Image
+                                            src="/sarah-jenkins.png"
+                                            alt="Sarah Jenkins, Editor in Chief"
+                                            width={64}
+                                            height={64}
+                                            className="w-full h-full object-cover"
+                                        />
                                     </div>
                                     <div>
                                         <h3 className="font-black text-gray-900 text-lg leading-tight group-hover:text-[#cc0000] transition-colors">Sarah Jenkins</h3>
@@ -84,30 +91,42 @@ export default function AboutPage() {
                             {/* Marcus */}
                             <div className="bg-white rounded-3xl p-6 border border-gray-100 shadow-xl shadow-gray-100/50 hover:shadow-2xl hover:shadow-gray-200/50 transition-all duration-300 flex flex-col h-full relative overflow-hidden group">
                                 <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-[#1A3D17] to-[#2e6e29]"></div>
-                                <div className="flex items-center gap-4 mb-6">
-                                    <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#1A3D17] to-[#2e6e29] flex items-center justify-center text-white font-black text-xl shadow-md">
-                                        MW
+                                <div className="flex items-center gap-4 mb-6 mt-2">
+                                    <div className="w-16 h-16 rounded-2xl overflow-hidden shadow-md flex-shrink-0">
+                                        <Image
+                                            src="/marcus-webb.png"
+                                            alt="Marcus Webb, Deals and Coupons Researcher"
+                                            width={64}
+                                            height={64}
+                                            className="w-full h-full object-cover"
+                                        />
                                     </div>
                                     <div>
                                         <h3 className="font-black text-gray-900 text-lg leading-tight group-hover:text-[#1A3D17] transition-colors">Marcus Webb</h3>
-                                        <span className="text-[#1A3D17] text-xs font-bold uppercase tracking-wider">Deals & Coupons</span>
+                                        <span className="text-[#1A3D17] text-xs font-bold uppercase tracking-wider">Deals and Coupons</span>
                                     </div>
                                 </div>
                                 <p className="text-gray-600 text-sm leading-relaxed flex-grow">
-                                    Marcus is obsessed with saving money on food. He monitors Papa Johns promotions, app deals, and loyalty program updates daily. If there's a working promo code out there, Marcus has already found it.
+                                    Marcus is obsessed with saving money on food. He monitors Papa Johns promotions, app deals, and loyalty program updates daily. If there is a working promo code out there, Marcus has already found it.
                                 </p>
                             </div>
 
                             {/* Linda */}
                             <div className="bg-white rounded-3xl p-6 border border-gray-100 shadow-xl shadow-gray-100/50 hover:shadow-2xl hover:shadow-gray-200/50 transition-all duration-300 flex flex-col h-full relative overflow-hidden group">
                                 <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-[#CCEE18] to-[#99b312]"></div>
-                                <div className="flex items-center gap-4 mb-6">
-                                    <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#CCEE18] to-[#99b312] flex items-center justify-center text-gray-900 font-black text-xl shadow-md">
-                                        LT
+                                <div className="flex items-center gap-4 mb-6 mt-2">
+                                    <div className="w-16 h-16 rounded-2xl overflow-hidden shadow-md flex-shrink-0">
+                                        <Image
+                                            src="/linda-torres.png"
+                                            alt="Linda Torres, Nutrition and Menu Specialist"
+                                            width={64}
+                                            height={64}
+                                            className="w-full h-full object-cover"
+                                        />
                                     </div>
                                     <div>
                                         <h3 className="font-black text-gray-900 text-lg leading-tight group-hover:text-[#99b312] transition-colors">Linda Torres</h3>
-                                        <span className="text-gray-500 text-xs font-bold uppercase tracking-wider">Nutrition & Menu</span>
+                                        <span className="text-gray-500 text-xs font-bold uppercase tracking-wider">Nutrition and Menu</span>
                                     </div>
                                 </div>
                                 <p className="text-gray-600 text-sm leading-relaxed flex-grow">
@@ -134,7 +153,7 @@ export default function AboutPage() {
                                 <div>
                                     <h3 className="font-bold text-gray-900 text-lg uppercase mb-1">We Update Daily</h3>
                                     <p className="text-gray-600 text-sm">
-                                        Prices, deals, and menu items change constantly. Our team checks for updates every single day — especially coupons and limited-time offers.
+                                        Prices, deals, and menu items change constantly. Our team checks for updates every single day, especially coupons and limited-time offers.
                                     </p>
                                 </div>
                             </div>
@@ -164,7 +183,7 @@ export default function AboutPage() {
                                 <div>
                                     <h3 className="font-bold text-gray-900 text-lg uppercase mb-1">We Research Thoroughly</h3>
                                     <p className="text-gray-600 text-sm">
-                                        Every article is written after real research — visiting locations, checking the official app, comparing competitor pricing, and reading customer feedback from real users.
+                                        Every article is written after real research, visiting locations, checking the official app, comparing competitor pricing, and reading customer feedback from real users.
                                     </p>
                                 </div>
                             </div>
@@ -205,10 +224,10 @@ export default function AboutPage() {
                                 Our Mission
                             </h2>
                             <p className="text-2xl font-black leading-tight border-b border-white/10 pb-6">
-                                To save every Papa Johns customer time, money, and frustration — by putting everything they need in one honest, well-researched, and easy-to-use place.
+                                To save every Papa Johns customer time, money, and frustration by putting everything they need in one honest, well-researched, and easy-to-use place.
                             </p>
                             <p className="text-lg text-white/90">
-                                Whether you are a daily pizza lover, a parent planning a birthday party, or someone just trying to find the cheapest large pizza deal this weekend — this site is for you.
+                                Whether you are a daily pizza lover, a parent planning a birthday party, or someone just trying to find the cheapest large pizza deal this weekend, this site is for you.
                             </p>
                         </div>
                     </section>
@@ -234,7 +253,7 @@ export default function AboutPage() {
                             Get In Touch
                         </h2>
                         <p className="text-gray-600 mb-6 font-medium">
-                            We love hearing from our readers. Whether you spotted an error, want to suggest a topic, or just want to say hello — reach out anytime.
+                            We love hearing from our readers. Whether you spotted an error, want to suggest a topic, or just want to say hello, reach out anytime.
                         </p>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 font-bold text-gray-800">
                             <div className="bg-white p-5 rounded-2xl border border-gray-100 flex items-center gap-3">
@@ -267,8 +286,8 @@ export default function AboutPage() {
                             Most Popular Guides
                         </h3>
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                            <Link href="/menus-prices" className="bg-gray-50 p-4 rounded-xl text-[10px] font-black uppercase text-center hover:bg-[#CCEE18] transition-colors">Menu & Prices</Link>
-                            <Link href="/coupons" className="bg-gray-50 p-4 rounded-xl text-[10px] font-black uppercase text-center hover:bg-[#CCEE18] transition-colors">Coupons & Deals</Link>
+                            <Link href="/menus-prices" className="bg-gray-50 p-4 rounded-xl text-[10px] font-black uppercase text-center hover:bg-[#CCEE18] transition-colors">Menu and Prices</Link>
+                            <Link href="/coupons" className="bg-gray-50 p-4 rounded-xl text-[10px] font-black uppercase text-center hover:bg-[#CCEE18] transition-colors">Coupons and Deals</Link>
                             <Link href="/store-locator" className="bg-gray-50 p-4 rounded-xl text-[10px] font-black uppercase text-center hover:bg-[#CCEE18] transition-colors">Store Locator</Link>
                             <Link href="/posts/papa-johns-nutrition-guide" className="bg-gray-50 p-4 rounded-xl text-[10px] font-black uppercase text-center hover:bg-[#CCEE18] transition-colors">Nutrition Guide</Link>
                             <Link href="/posts/papa-johns-wings" className="bg-gray-50 p-4 rounded-xl text-[10px] font-black uppercase text-center hover:bg-[#CCEE18] transition-colors">Wings Menu</Link>
@@ -288,7 +307,7 @@ export default function AboutPage() {
             <div className="bg-[#1A3D17] text-white py-12 px-4 text-center">
                 <p className="mb-4 font-bold text-[#CCEE18] uppercase tracking-widest text-sm">Hungry for something else?</p>
                 <Link href="/menus-prices" className="inline-block bg-[#cc0000] text-white font-black px-8 py-3 rounded-full hover:bg-white hover:text-[#1A3D17] transition-all shadow-lg transform hover:scale-105">
-                    Explore Full Menu →
+                    Explore Full Menu
                 </Link>
             </div>
         </div>
