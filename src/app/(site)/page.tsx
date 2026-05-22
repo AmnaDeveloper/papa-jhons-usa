@@ -184,7 +184,7 @@ export default function Home() {
 
                         {/* SEO Optimized Paragraph */}
                         <p className="text-gray-700 text-sm md:text-lg font-medium leading-relaxed px-4 max-w-2xl">
-                            We are not Papa Johns. We are an independent team of food writers and deal researchers who built this site with one goal — to save you time and money every time you order. Every menu price is verified against the Papa Johns app. Every coupon code is personally tested before publishing. Every article is written by a real person on our editorial team. Updated daily. Always free. Completely independent.
+                            We are not Papa Johns. We are an independent team of food writers and deal researchers who built this site with one goal — to save you time and money every time you order. Every <Link href="/menus-prices" className="text-[#cc0000] hover:underline font-bold">menu price</Link> is verified against the Papa Johns app. Every <Link href="/coupons" className="text-[#cc0000] hover:underline font-bold">coupon code</Link> is personally tested before publishing. Every article is written by a real person on our <Link href="/team" className="text-[#cc0000] hover:underline font-bold">editorial team</Link>. Updated daily. Always free. Completely independent.
                         </p>
                     </div>
 
