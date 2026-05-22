@@ -184,7 +184,16 @@ export default function Home() {
 
                         {/* SEO Optimized Paragraph */}
                         <p className="text-gray-700 text-sm md:text-lg font-medium leading-relaxed px-4 max-w-2xl">
-                            Looking for the ultimate <Link href="/menus-prices" className="text-[#cc0000] hover:underline font-bold">Papa John's Full Menu</Link>? Explore our <Link href="/menus-prices/classic-pizzas" className="text-[#cc0000] hover:underline font-bold">Classic Pizzas</Link> and sweets.
+                            Welcome to PapaJohns-Menus.us — the most complete, independently researched resource for Papa Johns customers across the United States.
+                        </p>
+                        <p className="text-gray-700 text-sm md:text-lg font-medium leading-relaxed px-4 max-w-2xl mt-4">
+                            We are not Papa Johns. We are a team of food writers and deal researchers who built this site with one goal: to save you time and money every time you order. Whether you want current prices before you call, a working promo code before checkout, or honest nutrition facts before you decide — we have done the research so you do not have to.
+                        </p>
+                        <p className="text-gray-700 text-sm md:text-lg font-medium leading-relaxed px-4 max-w-2xl mt-4">
+                            Every price on this site is verified against the Papa Johns app. Every coupon is tested before we publish it. Every article is written by a real person on our team — not auto-generated, not copied.
+                        </p>
+                        <p className="text-gray-600 text-sm font-bold leading-relaxed px-4 max-w-2xl mt-4">
+                            Updated daily. Always free. Completely independent.
                         </p>
                     </div>
 
@@ -394,6 +403,35 @@ export default function Home() {
 
             {/* Dynamic Sections (Menu, Hours, Coupons) */}
             <DynamicSections />
+
+            {/* Why People Use This Site */}
+            <section className="py-16 bg-[#fcfaf8] border-t border-gray-100">
+                <div className="max-w-[1000px] mx-auto px-4">
+                    <div className="text-center mb-10">
+                        <span className="inline-block bg-[#1A3D17] text-[#CCEE18] font-black uppercase tracking-[0.2em] text-[10px] px-6 py-2 rounded-full mb-4 shadow-md">
+                            Why This Site
+                        </span>
+                        <h2 className="text-3xl md:text-5xl font-black text-[#1A3D17] uppercase tracking-tighter mb-4" style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}>
+                            Why People <span className="text-[#cc0000]">Use This Site</span>
+                        </h2>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {[
+                            { icon: "🍕", title: "Accurate Prices", desc: "We check Papa Johns prices weekly across multiple US locations so you always know what to expect before ordering." },
+                            { icon: "💰", title: "Working Deals Only", desc: "No expired coupons. Our deals researcher Marcus Webb personally tests every promo code before it goes live." },
+                            { icon: "🥗", title: "Real Nutrition Info", desc: "Calories, macros, and allergen details for every menu item — reviewed by our nutrition specialist Linda Torres." },
+                            { icon: "📍", title: "Local Store Info", desc: "Find your nearest Papa Johns with hours, address, and current local deals in seconds." },
+                            { icon: "⭐", title: "Honest Reviews", desc: "We compare Papa Johns to competitors, break down value, and tell you what is actually worth ordering." },
+                        ].map((item, i) => (
+                            <div key={i} className="bg-white rounded-3xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                                <div className="text-3xl mb-3">{item.icon}</div>
+                                <h3 className="font-black text-[#1A3D17] text-lg mb-2">{item.title}</h3>
+                                <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
 
             {/* ── SEO FAQ SECTION ── */}
             <section className="py-20 bg-white">

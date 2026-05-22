@@ -61,9 +61,6 @@ export default function HeroSection() {
                     <Link href="/posts/new-papadias-flavors-2026" className="text-[#CCEE18] underline font-bold hover:text-white transition-colors">Papadias Flavors 2026</Link>,
                     {' '}or locate your nearest branch instantly on the{' '}
                     <Link href="/store-locator" className="text-[#CCEE18] underline font-bold hover:text-white transition-colors">Papa John's Store Locator</Link>.
-                    {' '}With{' '}
-                    <a href="https://www.papajohns.com/" target="_blank" rel="noopener noreferrer" className="text-[#CCEE18] underline font-bold hover:text-white transition-colors">Better Ingredients. Better Pizza.®</a>
-                    {' '}as our promise, every bite is a special occasion.
                 </p>
 
                 {/* Two Large Buttons */}
