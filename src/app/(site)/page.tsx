@@ -184,16 +184,7 @@ export default function Home() {
 
                         {/* SEO Optimized Paragraph */}
                         <p className="text-gray-700 text-sm md:text-lg font-medium leading-relaxed px-4 max-w-2xl">
-                            Welcome to PapaJohns-Menus.us — the most complete, independently researched resource for Papa Johns customers across the United States.
-                        </p>
-                        <p className="text-gray-700 text-sm md:text-lg font-medium leading-relaxed px-4 max-w-2xl mt-4">
-                            We are not Papa Johns. We are a team of food writers and deal researchers who built this site with one goal: to save you time and money every time you order. Whether you want current prices before you call, a working promo code before checkout, or honest nutrition facts before you decide — we have done the research so you do not have to.
-                        </p>
-                        <p className="text-gray-700 text-sm md:text-lg font-medium leading-relaxed px-4 max-w-2xl mt-4">
-                            Every price on this site is verified against the Papa Johns app. Every coupon is tested before we publish it. Every article is written by a real person on our team — not auto-generated, not copied.
-                        </p>
-                        <p className="text-gray-600 text-sm font-bold leading-relaxed px-4 max-w-2xl mt-4">
-                            Updated daily. Always free. Completely independent.
+                            We are not Papa Johns. We are an independent team of food writers and deal researchers who built this site with one goal — to save you time and money every time you order. Every menu price is verified against the Papa Johns app. Every coupon code is personally tested before publishing. Every article is written by a real person on our editorial team. Updated daily. Always free. Completely independent.
                         </p>
                     </div>
 
