@@ -280,12 +280,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 0.85,
     },
-    {
-      url: `${baseUrl}/menus-prices/drinks`,
-      lastModified: defaultLastMod,
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
+
 
     // ==================== LOCATION PAGES ====================
     ...[
