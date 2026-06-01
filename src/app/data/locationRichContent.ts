@@ -4164,4 +4164,142 @@ export const locationRichContent: Record<string, RichLocationData> = {
           "url": "https://papajohns-menus.us/locations/portland-me"
         }
     },
+    "tucson-az": {
+        slug: "tucson-az",
+        title: "Papa Johns Tucson AZ 2026: All 8 Locations, Hours & Delivery Guide",
+        metaDesc: "Papa Johns Tucson has 8 locations including late night hours until 4 AM near UA. Find all addresses, monsoon delivery tips, game day guide & 2026 menu prices.",
+        h1: "Papa Johns Tucson AZ 2026 Menu, Prices & Delivery Guide",
+        intro: "Tucson is a city that does its own thing. In a state known for Phoenix's sprawling suburban energy, Tucson kept its desert character a mid sized college city with real cultural depth, strong local food, and a climate that makes delivery a year round habit for completely different reasons than anywhere else in the country. Summer monsoon season brings flash floods and wall of dust haboobs that make going out for food genuinely inadvisable. Winter evenings are mild by most standards but cold enough that delivery from a warm couch makes sense.<br/><br/>Papa Johns has seven verified locations in Tucson and Pima County. That's a meaningful footprint for a city of 550,000 enough coverage that most Tucson zip codes sit within reasonable delivery range of at least one location, often two. This guide covers every verified store, real addresses and hours, neighborhood by neighborhood delivery context, <a href='https://arizonawildcats.com/' target='_blank' rel='noopener noreferrer' class='text-[#cc0000] hover:underline font-bold'>University of Arizona</a> ordering tips, and the deals that consistently bring the price down.",
+        stats: {
+            deliveryTime: "30 to 45 min",
+            startingPrice: "$11.49",
+            verifiedYear: "2026"
+        },
+        locationDetails: {
+            address: "2545 E Speedway Blvd, Ste 165, Tucson, AZ 85716",
+            phone: "(520) 325-7272",
+            hours: "Mon to Thu 10:00 AM to 3:00 AM | Fri to Sat 10:00 AM to 4:00 AM | Sun 10:00 AM to 3:00 AM",
+            deliveryAreas: "University of Arizona, Midtown, Sam Hughes, Armory Park",
+            mapUrl: "https://maps.google.com/?q=2545+E+Speedway+Blvd,+Tucson,+AZ+85716",
+            additionalLocations: [
+                {
+                    title: "E 22nd Street",
+                    address: "6462 E 22nd St, Tucson, AZ 85710",
+                    deliveryAreas: "East Tucson, Midvale Park, Craycroft area"
+                },
+                {
+                    title: "E Broadway Blvd",
+                    address: "9505 E Broadway Blvd, Tucson, AZ 85748",
+                    deliveryAreas: "East Tucson, Rita Ranch, Vail adjacent"
+                },
+                {
+                    title: "W Valencia Road",
+                    address: "1610 W Valencia Rd, Ste 110, Tucson, AZ 85746",
+                    deliveryAreas: "South Tucson, Drexel Heights, Sahuarita adjacent"
+                },
+                {
+                    title: "N La Canada",
+                    address: "5095 N La Canada, Tucson, AZ",
+                    deliveryAreas: "Northwest Tucson, Oro Valley adjacent, Marana adjacent"
+                },
+                {
+                    title: "N Thornydale Road",
+                    address: "7089 N Thornydale Rd, Ste 109, Tucson, AZ",
+                    deliveryAreas: "Northwest Tucson, Marana, Dove Mountain area"
+                },
+                {
+                    title: "E Irvington Road",
+                    address: "2071 E Irvington Rd, Ste 117, Tucson, AZ 85714",
+                    deliveryAreas: "South Tucson, Midvale Park, Irvington corridor"
+                },
+                {
+                    title: "S Houghton Road",
+                    address: "8270 S Houghton Rd, Ste 110, Tucson, AZ",
+                    deliveryAreas: "Far East Tucson, Saguaro Ranch, Houghton Town Center area"
+                }
+            ]
+        },
+        menuPizzas: [
+            { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
+            { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "Ultimate Pepperoni", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "Tuscan Six Cheese", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "Spicy Italian", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "Pan Pizza (NEW 2026)", s: "", m: "$11.99", l: "", xl: "" }
+        ],
+        menuSides: [
+            { name: "Garlic Knots (8 pieces)", price: "$6.99" },
+            { name: "Wings (8 pieces)", price: "$8.49" },
+            { name: "Garlic Parmesan Breadsticks", price: "$7.99" },
+            { name: "Cheesesticks", price: "$7.99" },
+            { name: "Oven Toasted Sandwiches (NEW 2026)", price: "$7.99" },
+            { name: "Chocolate Chip Cookie", price: "$5.99" },
+            { name: "Double Chocolate Brownie", price: "$5.99" },
+            { name: "Cinnamon Pull Aparts", price: "$6.99" },
+            { name: "20 oz Pepsi (any variety)", price: "$2.49" },
+            { name: "2 Liter Pepsi", price: "$3.99" }
+        ],
+        neighborhoodContent: [
+            {
+                title: "University of Arizona / Fourth Avenue / Sam Hughes",
+                text: "The Speedway Blvd location is the clear anchor for the entire UA community. University of Arizona has 47,000 students, a massive residential population in the surrounding neighborhoods, and the kind of late night ordering culture that explains why that location stays open until 4 AM on weekends.<br/><br/>Delivery to on campus addresses and the Fourth Avenue corridor typically runs 25 to 40 minutes during non peak hours. During finals week and move in/move out periods, expect 45 to 60 minutes. The Papa Pairings deal any two qualifying items for $6.99 each is practically designed for the student budget situation. Two large pizzas for two people at $13.98 total is a hard deal to beat anywhere in Tucson.<br/><br/>Now here's the thing about UA late night ordering: the Speedway location's 3 to 4 AM hours exist specifically because the demand is there. If you're ordering after midnight on a weekend, you're going to wait longer not because the location is slow, but because half the dorms are ordering simultaneously. Plan accordingly."
+            },
+            {
+                title: "Midtown and East Tucson Delivery Guide",
+                text: "<strong>Midtown Tucson</strong><br/>Midtown Tucson sits between the University and the more suburban east side a mix of older neighborhoods, apartments, and established residential areas. The Speedway location handles most of Midtown delivery. Standard delivery here runs 30 to 45 minutes during evening hours. Midtown is one of the better Tucson areas for carryout parking is generally available near the Speedway location, and carryout orders at Papa Johns are typically ready in 15 to 20 minutes.<br/><br/><strong>East Tucson Broadway Corridor and Beyond</strong><br/>East Tucson is where a significant portion of Tucson's population lives, and Papa Johns covers it with two locations the E 22nd Street store and the E Broadway Blvd location for the farther east neighborhoods like Rita Ranch. Delivery in core East Tucson typically runs 30 to 45 minutes. The far east neighborhoods near Houghton Road get served by the S Houghton Road location, which brings delivery time for that corridor to a more reasonable range."
+            },
+            {
+                title: "South Tucson and Northwest Tucson",
+                text: "<strong>South Tucson</strong><br/>South Tucson and the Irvington corridor have the E Irvington Road location as their primary Papa Johns. This area has consistent delivery demand from residential neighborhoods along the south side of the city. Delivery typically runs 30 to 40 minutes. The Valencia Road location also serves parts of South Tucson, particularly for addresses in the Drexel Heights and South Mountain area.<br/><br/><strong>Northwest Tucson / Marana / Oro Valley</strong><br/>Northwest Tucson has grown dramatically in the last decade the Marana and Oro Valley suburban expansion has created a new population center that wasn't really on the map 15 years ago. Papa Johns answered with two northwest locations: N La Canada and N Thornydale Road. Delivery to Marana addresses typically comes from the Thornydale location, Oro Valley from La Canada. Both run 30 to 45 minutes for most northwest Tucson addresses."
+            },
+            {
+                title: "Monsoon Season and Summer Heat Delivery Tips",
+                text: "<strong>Monsoon Season (June to September)</strong><br/>This is the most Tucson specific thing in this entire guide. Tucson's summer monsoon season produces dramatic afternoon and evening thunderstorms sometimes accompanied by haboobs (dust storms) that reduce visibility to near zero in minutes. During active monsoon weather, Papa Johns drivers slow down significantly for safety. Delivery times during storm events can double or more.<br/><br/>The practical advice: if you see a dark wall approaching on the horizon at 5 PM in July, order your pizza immediately before the storm hits rather than waiting. The 20 minute head start gets your order placed before the surge. Alternatively, go carryout, pick up before the storm, and you're set.<br/><br/><strong>Summer Heat and Delivery Quality</strong><br/>Tucson's summer high temperatures regularly reach 105 to 110 degrees in June and July. That heat affects delivery quality in a specific way: your pizza box is going from a roughly 450 degree oven into 108 degree outdoor air, and then traveling to your door. The thermal differential is smaller than in a cold climate city, which means Tucson summer deliveries often arrive at a lower temperature than you'd expect from the delivery time alone."
+            },
+            {
+                title: "UA Game Days Arizona Wildcats Ordering Guide",
+                text: "University of Arizona athletic events create the most predictable demand spikes for Tucson Papa Johns, particularly the Speedway location. Wildcats football games at Arizona Stadium which holds 55,000 create enormous ordering demand before kickoff and during halftime for residents watching at home. <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are the top game day picks.<br/><br/>Basketball at McKale Center is a more concentrated, season long pattern games run from November through March, and the combination of a passionate fanbase and a late game schedule (most weeknight games tip off at 7 to 8 PM) means Tuesday and Thursday evenings during basketball season are busier than they'd otherwise be.<br/><br/>For game days: order at least one hour before kickoff or tip off. The Speedway location handles most UA adjacent orders and it fills up fast. Carryout on game days is noticeably faster than delivery."
+            },
+            {
+                title: "How to Get the Best Papa Johns Deal in Tucson",
+                text: "The <a href='/coupons' class='text-[#cc0000] underline font-bold'>Papa Johns coupons page</a> is the first place to check before every order. Percentage off codes of 20 to 40% appear regularly and apply to most Tucson menu items. On a $17.99 large <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>pepperoni</a>, a 30% off code saves $5.40 meaningful when you're ordering multiple times a month.<br/><br/>Papa Pairings drops any two qualifying items to $6.99 each the most consistent everyday value on the menu. Two large pizzas, a pizza and <a href='/posts/papa-johns-wings' class='text-[#cc0000] hover:underline font-bold'>wings</a>, a pizza and the new Oven Toasted Sandwich any combination works. For UA students and Tucson families ordering for groups, this deal is the one to build your order around.<br/><br/><a href='/papa-johns-rewards' class='text-[#cc0000] hover:underline font-bold'>Papa Rewards</a> earns 1 point per dollar spent. Your first reward unlocks at 75 points, which means $75 in spending gets you a free menu item. For the UA student population ordering twice a week during the semester, that threshold hits within a few weeks."
+            },
+            {
+                title: "Papa Johns Tucson vs Local Pizza Options",
+                text: "Tucson has a real local pizza scene that's worth being honest about. <a href='https://www.magpiespizza.com/' target='_blank' rel='noopener noreferrer' class='text-[#cc0000] hover:underline font-bold'>Magpies Pizza</a> on East 6th Street has a devoted following and does creative toppings that no chain touches. Vivace at Campbell and Pima offers upscale Italian influenced pies. Frog & Firkin on 4th Avenue occasionally does late night pizza events. These are genuinely good options.<br/><br/>But here's the reality: local pizza in Tucson is mostly carryout or dine in. Delivery coverage from local spots is limited, wait times are often longer, and late night availability (especially past midnight) is essentially nonexistent outside the chain options. Papa Johns wins specifically on delivery logistics, late night hours at the Speedway location, and the combination of price and consistency that makes it the practical default for a Tuesday night order.<br/><br/>Neither option replaces the other. For a weekend dinner with intention, Magpies is the better experience. For a Wednesday night at home during monsoon season when you don't want to go outside, Papa Johns is the call."
+            }
+        ],
+        faq: [
+            { q: "How many Papa Johns locations are in Tucson, AZ?", a: "Tucson and Pima County have eight verified Papa Johns locations as of 2026: E Speedway Blvd, E 22nd St, E Broadway Blvd, W Valencia Rd, N La Canada, N Thornydale Rd, E Irvington Rd, and S Houghton Rd. The Papa Johns app automatically routes your order to the nearest available store when you enter your delivery address." },
+            { q: "What are Papa Johns hours in Tucson, AZ?", a: "Hours vary significantly by location. The E Speedway Blvd location near the University of Arizona is open until 3 AM Monday through Thursday and Sunday, and 4 AM on Friday and Saturday. The W Valencia Road location is open until 11:30 PM on weekdays and 12:30 AM on weekends. The E Irvington Road location is open until 11 PM daily. Check the Papa Johns app for real time hours at your specific nearest location." },
+            { q: "Does Papa Johns deliver to University of Arizona in Tucson?", a: "Yes. The E Speedway Blvd location is the primary Papa Johns for University of Arizona, handling delivery to on campus addresses, dorms, and the surrounding Fourth Avenue and Sam Hughes neighborhoods. Delivery to UA campus typically runs 25 to 40 minutes during non peak hours and 45 to 60 minutes during busy periods like finals week, game days, and weekend evenings." },
+            { q: "How does Tucson monsoon season affect Papa Johns delivery?", a: "During active monsoon weather afternoon and evening thunderstorms that are common from June through September Papa Johns delivery times can double or more as drivers slow down for safety. Flash flooding and haboobs (dust storms) can also cause temporary delays or closures. If you see monsoon weather approaching, place your order before the storm hits rather than waiting. Carryout pickup before a storm is always faster than delivery during one." },
+            { q: "What is the cheapest Papa Johns pizza in Tucson?", a: "A small <a href='/menus-prices/cheese-pizza' class='text-[#cc0000] hover:underline'>Cheese</a> or <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline'>Pepperoni Pizza</a> starts at $11.49 at Tucson locations. Through the Papa Pairings deal, two qualifying items drop to $6.99 each making two medium pizzas $13.98 total. Checking the Papa Johns coupons page before ordering can reduce prices further with active promo codes." },
+            { q: "Is Papa Johns Pan Pizza available in Tucson?", a: "Yes. The <a href='/posts/papa-johns-pan-pizza' class='text-[#cc0000] hover:underline'>Papa Johns Pan Pizza</a> launched nationwide in January 2026 is available at Tucson locations at $11.99 for medium size. It features a six cheese blend with a garlic parmesan baked in crust bottom and is available in medium only. It's one of the better thick crust delivery options currently available in Tucson." },
+            { q: "How long does Papa Johns delivery take in Tucson?", a: "Standard delivery in Tucson runs 30 to 45 minutes during non peak hours from most locations. During UA game days, finals week, and monsoon weather events, expect 45 to 70 minutes. The S Houghton Road and far east Tucson locations have slightly longer delivery times due to distance from the city center. Carryout is consistently ready in 15 to 20 minutes." },
+            { q: "Does Papa Johns deliver to Marana and Oro Valley from Tucson?", a: "Yes. The N Thornydale Road location primarily serves Marana, and the N La Canada location serves Oro Valley and the northwest Tucson suburbs. Both are Tucson area Papa Johns locations. Enter your specific Marana or Oro Valley address in the Papa Johns app to confirm delivery availability and routing." },
+            { q: "Can I get Papa Johns delivered during Wildcats game days in Tucson?", a: "Yes, but plan ahead. University of Arizona football and basketball game days especially home football at Arizona Stadium and basketball at McKale Center create significant delivery demand at the Speedway Blvd location. Order at least one hour before kickoff or tip off, or choose carryout to guarantee your pizza arrives when you want it." },
+            { q: "Is there a Papa Johns near the Tucson airport?", a: "The W Valencia Road location (1610 W Valencia Rd) is the closest Papa Johns to Tucson International Airport, approximately 5 to 7 minutes by car. It's available for both delivery and carryout. This is also the primary location for South Tucson and Drexel Heights neighborhoods." }
+        ],
+        schema: {
+            "@context": "https://schema.org",
+            "@type": "FastFoodRestaurant",
+            "name": "Papa Johns Pizza Tucson",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "2545 E Speedway Blvd, Ste 165",
+                "addressLocality": "Tucson",
+                "addressRegion": "AZ",
+                "postalCode": "85716",
+                "addressCountry": "US"
+            },
+            "telephone": "(520) 325-7272",
+            "openingHours": ["Mo-Th 10:00-03:00", "Fr-Sa 10:00-04:00", "Su 10:00-03:00"],
+            "servesCuisine": "Pizza",
+            "priceRange": "$$",
+            "url": "https://papajohns-menus.us/locations/tucson-az"
+        }
+    },
 };
