@@ -383,8 +383,8 @@ function RichTemplate({ data, month }: { data: RichLocationData; month: string }
                 <div className="container mx-auto px-4">
                     <h3 className="text-2xl font-black uppercase text-center mb-12 tracking-tighter">Explore More <span className="text-[#CCEE18]">Menu Details</span></h3>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto text-center">
-                        <Link href="/posts/papa-johns-pepperoni-pizza" className="bg-white/5 border border-white/10 p-6 rounded-2xl hover:bg-[#CCEE18] hover:text-[#1A3D17] transition-all font-black uppercase text-[10px] tracking-widest">Pepperoni Pizza</Link>
-                        <Link href="/posts/papa-johns-the-works-pizza" className="bg-white/5 border border-white/10 p-6 rounded-2xl hover:bg-[#CCEE18] hover:text-[#1A3D17] transition-all font-black uppercase text-[10px] tracking-widest">The Works™</Link>
+                        <Link href="/menus-prices/pepperoni-pizza" className="bg-white/5 border border-white/10 p-6 rounded-2xl hover:bg-[#CCEE18] hover:text-[#1A3D17] transition-all font-black uppercase text-[10px] tracking-widest">Pepperoni Pizza</Link>
+                        <Link href="/menus-prices/the-works-pizza" className="bg-white/5 border border-white/10 p-6 rounded-2xl hover:bg-[#CCEE18] hover:text-[#1A3D17] transition-all font-black uppercase text-[10px] tracking-widest">The Works™</Link>
                         <Link href="/posts/papa-johns-garlic-knots" className="bg-white/5 border border-white/10 p-6 rounded-2xl hover:bg-[#CCEE18] hover:text-[#1A3D17] transition-all font-black uppercase text-[10px] tracking-widest">Garlic Knots</Link>
                         <Link href="/posts/papa-johns-nutrition-guide" className="bg-white/5 border border-white/10 p-6 rounded-2xl hover:bg-[#CCEE18] hover:text-[#1A3D17] transition-all font-black uppercase text-[10px] tracking-widest">Nutrition Guide</Link>
                     </div>
