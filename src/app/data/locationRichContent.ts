@@ -85,7 +85,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "Ordering Papa Johns on New Mexico Lobos Game Days",
-                text: "New Mexico Lobos games are among the busiest ordering times at Papa Johns Albuquerque locations. During Balloon Fiesta week, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in Albuquerque."
+                text: "New Mexico Lobos games are among the busiest ordering times at Papa Johns Albuquerque locations. During Balloon Fiesta week, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Albuquerque."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in Albuquerque",
@@ -381,7 +381,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "Ordering Papa Johns on Texas Longhorns / Austin FC Game Days",
-                text: "Texas Longhorns / Austin FC games are among the busiest ordering times at Papa Johns Austin locations. During Longhorns game days and SXSW week, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in Austin."
+                text: "Texas Longhorns / Austin FC games are among the busiest ordering times at Papa Johns Austin locations. During Longhorns game days and SXSW week, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Austin."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in Austin",
@@ -452,7 +452,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "Ordering Papa Johns on Ravens / Orioles Game Days",
-                text: "Ravens / Orioles games are among the busiest ordering times at Papa Johns Baltimore locations. During Ravens game days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in Baltimore."
+                text: "Ravens / Orioles games are among the busiest ordering times at Papa Johns Baltimore locations. During Ravens game days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Baltimore."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in Baltimore",
@@ -523,7 +523,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "Ordering Papa Johns on Montana State Billings Yellowjackets Game Days",
-                text: "Montana State Billings Yellowjackets games are among the busiest ordering times at Papa Johns Billings locations. During weekend evenings, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in Billings."
+                text: "Montana State Billings Yellowjackets games are among the busiest ordering times at Papa Johns Billings locations. During weekend evenings, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Billings."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in Billings",
@@ -590,7 +590,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         neighborhoodContent: [
             {
                 title: "Ordering Papa Johns on Alabama Crimson Tide Game Days",
-                text: "Alabama Crimson Tide games are among the busiest ordering times at Papa Johns Birmingham locations. During game days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in Birmingham."
+                text: "Alabama Crimson Tide games are among the busiest ordering times at Papa Johns Birmingham locations. During game days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Birmingham."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in Birmingham",
@@ -661,7 +661,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "Ordering Papa Johns on Boise State Broncos Game Days",
-                text: "Boise State Broncos games are among the busiest ordering times at Papa Johns Boise locations. During Boise State game days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in Boise."
+                text: "Boise State Broncos games are among the busiest ordering times at Papa Johns Boise locations. During Boise State game days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Boise."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in Boise",
@@ -732,7 +732,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "Ordering Papa Johns on Red Sox / Celtics / Bruins Game Days",
-                text: "Red Sox / Celtics / Bruins games are among the busiest ordering times at Papa Johns Boston locations. During game days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in Boston."
+                text: "Red Sox / Celtics / Bruins games are among the busiest ordering times at Papa Johns Boston locations. During game days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Boston."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in Boston",
@@ -1118,7 +1118,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "Ordering Papa Johns on Wyoming Cowboys Game Days",
-                text: "Wyoming Cowboys games are among the busiest ordering times at Papa Johns Cheyenne locations. During Cheyenne Frontier Days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in Cheyenne."
+                text: "Wyoming Cowboys games are among the busiest ordering times at Papa Johns Cheyenne locations. During Cheyenne Frontier Days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Cheyenne."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in Cheyenne",
@@ -1193,7 +1193,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "Ordering Papa Johns on Bears / Bulls / Cubs / White Sox / Blackhawks Game Days",
-                text: "Bears / Bulls / Cubs / White Sox / Blackhawks games are among the busiest ordering times at Papa Johns Chicago locations. During Cubs game days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in Chicago."
+                text: "Bears / Bulls / Cubs / White Sox / Blackhawks games are among the busiest ordering times at Papa Johns Chicago locations. During Cubs game days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Chicago."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in Chicago",
@@ -1268,7 +1268,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "Ordering Papa Johns on Browns / Guardians / Cavaliers Game Days",
-                text: "Browns / Guardians / Cavaliers games are among the busiest ordering times at Papa Johns Cleveland locations. During Browns game days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in Cleveland."
+                text: "Browns / Guardians / Cavaliers games are among the busiest ordering times at Papa Johns Cleveland locations. During Browns game days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Cleveland."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in Cleveland",
@@ -1414,7 +1414,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "Ordering Papa Johns on South Carolina Gamecocks Game Days",
-                text: "South Carolina Gamecocks games are among the busiest ordering times at Papa Johns Columbia locations. During Gamecocks game days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in Columbia."
+                text: "South Carolina Gamecocks games are among the busiest ordering times at Papa Johns Columbia locations. During Gamecocks game days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Columbia."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in Columbia",
@@ -1489,7 +1489,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "Ordering Papa Johns on Ohio State Buckeyes / Blue Jackets / Crew SC Game Days",
-                text: "Ohio State Buckeyes / Blue Jackets / Crew SC games are among the busiest ordering times at Papa Johns Columbus locations. During Ohio State game days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in Columbus."
+                text: "Ohio State Buckeyes / Blue Jackets / Crew SC games are among the busiest ordering times at Papa Johns Columbus locations. During Ohio State game days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Columbus."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in Columbus",
@@ -1564,7 +1564,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "Ordering Papa Johns on Cowboys / Rangers / Mavericks / Stars Game Days",
-                text: "Cowboys / Rangers / Mavericks / Stars games are among the busiest ordering times at Papa Johns Dallas locations. During Cowboys game days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in Dallas."
+                text: "Cowboys / Rangers / Mavericks / Stars games are among the busiest ordering times at Papa Johns Dallas locations. During Cowboys game days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Dallas."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in Dallas",
@@ -1639,7 +1639,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "Ordering Papa Johns on Broncos / Nuggets / Rockies Game Days",
-                text: "Broncos / Nuggets / Rockies games are among the busiest ordering times at Papa Johns Denver locations. During Broncos game days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in Denver."
+                text: "Broncos / Nuggets / Rockies games are among the busiest ordering times at Papa Johns Denver locations. During Broncos game days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Denver."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in Denver",
@@ -1714,7 +1714,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "Ordering Papa Johns on Iowa Hawkeyes Game Days",
-                text: "Iowa Hawkeyes games are among the busiest ordering times at Papa Johns Des Moines locations. During Iowa State Fair week, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in Des Moines."
+                text: "Iowa Hawkeyes games are among the busiest ordering times at Papa Johns Des Moines locations. During Iowa State Fair week, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Des Moines."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in Des Moines",
@@ -1789,7 +1789,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "Ordering Papa Johns on Lions / Tigers / Pistons / Red Wings Game Days",
-                text: "Lions / Tigers / Pistons / Red Wings games are among the busiest ordering times at Papa Johns Detroit locations. During Lions game days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in Detroit."
+                text: "Lions / Tigers / Pistons / Red Wings games are among the busiest ordering times at Papa Johns Detroit locations. During Lions game days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Detroit."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in Detroit",
@@ -1864,7 +1864,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "Ordering Papa Johns on NDSU Bison Game Days",
-                text: "NDSU Bison games are among the busiest ordering times at Papa Johns Fargo locations. During Bison game days and Fargo Film Festival, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in Fargo."
+                text: "NDSU Bison games are among the busiest ordering times at Papa Johns Fargo locations. During Bison game days and Fargo Film Festival, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Fargo."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in Fargo",
@@ -1939,7 +1939,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "Ordering Papa Johns on Grand Rapids Griffins Game Days",
-                text: "Grand Rapids Griffins games are among the busiest ordering times at Papa Johns Grand Rapids locations. During ArtPrize season, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in Grand Rapids."
+                text: "Grand Rapids Griffins games are among the busiest ordering times at Papa Johns Grand Rapids locations. During ArtPrize season, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Grand Rapids."
             },
             {
                 title: "Best Neighborhood for Papa Johns Delivery in Grand Rapids",
@@ -2014,7 +2014,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "Ordering Papa Johns on UConn Huskies Game Days",
-                text: "UConn Huskies games are among the busiest ordering times at Papa Johns Hartford locations. During UConn game nights, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in Hartford."
+                text: "UConn Huskies games are among the busiest ordering times at Papa Johns Hartford locations. During UConn game nights, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Hartford."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in Hartford",
@@ -2089,7 +2089,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "Ordering Papa Johns on Hawaii Warriors Game Days",
-                text: "Hawaii Warriors games are among the busiest ordering times at Papa Johns Honolulu locations. During Hawaii Warriors game days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in Honolulu."
+                text: "Hawaii Warriors games are among the busiest ordering times at Papa Johns Honolulu locations. During Hawaii Warriors game days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Honolulu."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in Honolulu",
@@ -2164,7 +2164,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "Ordering Papa Johns on Texans / Astros / Rockets / Dynamo Game Days",
-                text: "Texans / Astros / Rockets / Dynamo games are among the busiest ordering times at Papa Johns Houston locations. During Texans game days and Rodeo season, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in Houston."
+                text: "Texans / Astros / Rockets / Dynamo games are among the busiest ordering times at Papa Johns Houston locations. During Texans game days and Rodeo season, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Houston."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in Houston",
@@ -2239,7 +2239,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "Ordering Papa Johns on Colts / Pacers Game Days",
-                text: "Colts / Pacers games are among the busiest ordering times at Papa Johns Indianapolis locations. During Colts game days and Indy 500 weekend, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in Indianapolis."
+                text: "Colts / Pacers games are among the busiest ordering times at Papa Johns Indianapolis locations. During Colts game days and Indy 500 weekend, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Indianapolis."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in Indianapolis",
@@ -2314,7 +2314,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "Ordering Papa Johns on Jackson State Tigers Game Days",
-                text: "Jackson State Tigers games are among the busiest ordering times at Papa Johns Jackson locations. During football season weekends, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in Jackson."
+                text: "Jackson State Tigers games are among the busiest ordering times at Papa Johns Jackson locations. During football season weekends, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Jackson."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in Jackson",
@@ -2389,7 +2389,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "Ordering Papa Johns on Chiefs / Royals / Sporting KC Game Days",
-                text: "Chiefs / Royals / Sporting KC games are among the busiest ordering times at Papa Johns Kansas City locations. During Chiefs game days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in Kansas City."
+                text: "Chiefs / Royals / Sporting KC games are among the busiest ordering times at Papa Johns Kansas City locations. During Chiefs game days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Kansas City."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in Kansas City",
@@ -2464,7 +2464,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "Ordering Papa Johns on Tennessee Volunteers Game Days",
-                text: "Tennessee Volunteers games are among the busiest ordering times at Papa Johns Knoxville locations. During Vols game days - biggest in East Tennessee, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in Knoxville."
+                text: "Tennessee Volunteers games are among the busiest ordering times at Papa Johns Knoxville locations. During Vols game days - biggest in East Tennessee, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Knoxville."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in Knoxville",
@@ -2539,7 +2539,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "Ordering Papa Johns on Golden Knights / Raiders / Aces Game Days",
-                text: "Golden Knights / Raiders / Aces games are among the busiest ordering times at Papa Johns Las Vegas locations. During every night - Las Vegas never sleeps, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in Las Vegas."
+                text: "Golden Knights / Raiders / Aces games are among the busiest ordering times at Papa Johns Las Vegas locations. During every night - Las Vegas never sleeps, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Las Vegas."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in Las Vegas",
@@ -2610,7 +2610,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         neighborhoodContent: [
             {
                 title: "Ordering Papa Johns on Arkansas Razorbacks Game Days",
-                text: "Arkansas Razorbacks games are among the busiest ordering times at Papa Johns Little Rock locations. During Razorbacks game days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in Little Rock."
+                text: "Arkansas Razorbacks games are among the busiest ordering times at Papa Johns Little Rock locations. During Razorbacks game days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Little Rock."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in Little Rock",
@@ -2685,7 +2685,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "Ordering Papa Johns on Lakers / Rams / Dodgers Game Days",
-                text: "Lakers / Rams / Dodgers games are among the busiest ordering times at Papa Johns Los Angeles locations. During game days and late nights, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in Los Angeles."
+                text: "Lakers / Rams / Dodgers games are among the busiest ordering times at Papa Johns Los Angeles locations. During game days and late nights, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Los Angeles."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in Los Angeles",
@@ -2760,7 +2760,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "Ordering Papa Johns on Louisville Cardinals Game Days",
-                text: "Louisville Cardinals games are among the busiest ordering times at Papa Johns Louisville locations. During Kentucky Derby weekend, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in Louisville."
+                text: "Louisville Cardinals games are among the busiest ordering times at Papa Johns Louisville locations. During Kentucky Derby weekend, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Louisville."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in Louisville",
@@ -2835,7 +2835,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "Ordering Papa Johns on Manchester Monarchs Game Days",
-                text: "Manchester Monarchs games are among the busiest ordering times at Papa Johns Manchester locations. During primary election season and Monarchs games, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in Manchester."
+                text: "Manchester Monarchs games are among the busiest ordering times at Papa Johns Manchester locations. During primary election season and Monarchs games, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Manchester."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in Manchester",
@@ -2910,7 +2910,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "Ordering Papa Johns on Memphis Grizzlies / Tigers Game Days",
-                text: "Memphis Grizzlies / Tigers games are among the busiest ordering times at Papa Johns Memphis locations. During Grizzlies game nights, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in Memphis."
+                text: "Memphis Grizzlies / Tigers games are among the busiest ordering times at Papa Johns Memphis locations. During Grizzlies game nights, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Memphis."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in Memphis",
@@ -2985,7 +2985,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "Ordering Papa Johns on Heat / Dolphins / Marlins Game Days",
-                text: "Heat / Dolphins / Marlins games are among the busiest ordering times at Papa Johns Miami locations. During Heat game nights, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in Miami."
+                text: "Heat / Dolphins / Marlins games are among the busiest ordering times at Papa Johns Miami locations. During Heat game nights, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Miami."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in Miami",
@@ -3060,7 +3060,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "Ordering Papa Johns on Brewers / Bucks / Packers nearby Game Days",
-                text: "Brewers / Bucks / Packers nearby games are among the busiest ordering times at Papa Johns Milwaukee locations. During Summerfest and Bucks game nights, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in Milwaukee."
+                text: "Brewers / Bucks / Packers nearby games are among the busiest ordering times at Papa Johns Milwaukee locations. During Summerfest and Bucks game nights, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Milwaukee."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in Milwaukee",
@@ -3135,7 +3135,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "Ordering Papa Johns on Vikings / Twins / Timberwolves / Wild Game Days",
-                text: "Vikings / Twins / Timberwolves / Wild games are among the busiest ordering times at Papa Johns Minneapolis locations. During Vikings game days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in Minneapolis."
+                text: "Vikings / Twins / Timberwolves / Wild games are among the busiest ordering times at Papa Johns Minneapolis locations. During Vikings game days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Minneapolis."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in Minneapolis",
@@ -3348,7 +3348,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "Ordering Papa Johns on Titans / Predators / Nashville SC Game Days",
-                text: "Titans / Predators / Nashville SC games are among the busiest ordering times at Papa Johns Nashville locations. During Titans game days and CMA Fest week, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in Nashville."
+                text: "Titans / Predators / Nashville SC games are among the busiest ordering times at Papa Johns Nashville locations. During Titans game days and CMA Fest week, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Nashville."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in Nashville",
@@ -3423,7 +3423,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "Ordering Papa Johns on Saints / Pelicans Game Days",
-                text: "Saints / Pelicans games are among the busiest ordering times at Papa Johns New Orleans locations. During Mardi Gras and Saints game days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in New Orleans."
+                text: "Saints / Pelicans games are among the busiest ordering times at Papa Johns New Orleans locations. During Mardi Gras and Saints game days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in New Orleans."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in New Orleans",
@@ -3498,7 +3498,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "Ordering Papa Johns on Giants / Jets / Yankees / Mets / Knicks / Rangers Game Days",
-                text: "Giants / Jets / Yankees / Mets / Knicks / Rangers games are among the busiest ordering times at Papa Johns New York locations. During year-round - city never sleeps, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in New York."
+                text: "Giants / Jets / Yankees / Mets / Knicks / Rangers games are among the busiest ordering times at Papa Johns New York locations. During year-round - city never sleeps, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in New York."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in New York",
@@ -3573,7 +3573,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "Ordering Papa Johns on NJ Devils / NY Red Bulls Game Days",
-                text: "NJ Devils / NY Red Bulls games are among the busiest ordering times at Papa Johns Newark locations. During Devils game nights, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in Newark."
+                text: "NJ Devils / NY Red Bulls games are among the busiest ordering times at Papa Johns Newark locations. During Devils game nights, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Newark."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in Newark",
@@ -3648,7 +3648,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "Ordering Papa Johns on Oklahoma City Thunder Game Days",
-                text: "Oklahoma City Thunder games are among the busiest ordering times at Papa Johns Oklahoma City locations. During Thunder game nights, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in Oklahoma City."
+                text: "Oklahoma City Thunder games are among the busiest ordering times at Papa Johns Oklahoma City locations. During Thunder game nights, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Oklahoma City."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in Oklahoma City",
@@ -3865,7 +3865,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "Ordering Papa Johns on Eagles / Phillies / Flyers / 76ers Game Days",
-                text: "Eagles / Phillies / Flyers / 76ers games are among the busiest ordering times at Papa Johns Philadelphia locations. During Eagles game days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in Philadelphia."
+                text: "Eagles / Phillies / Flyers / 76ers games are among the busiest ordering times at Papa Johns Philadelphia locations. During Eagles game days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Philadelphia."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in Philadelphia",
@@ -3940,7 +3940,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "Ordering Papa Johns on Cardinals / Suns / Diamondbacks Game Days",
-                text: "Cardinals / Suns / Diamondbacks games are among the busiest ordering times at Papa Johns Phoenix locations. During Suns game nights, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in Phoenix."
+                text: "Cardinals / Suns / Diamondbacks games are among the busiest ordering times at Papa Johns Phoenix locations. During Suns game nights, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Phoenix."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in Phoenix",
@@ -4015,7 +4015,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "Ordering Papa Johns on Steelers / Pirates / Penguins Game Days",
-                text: "Steelers / Pirates / Penguins games are among the busiest ordering times at Papa Johns Pittsburgh locations. During Steelers game days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href="/menus-prices/the-works-pizza" class="text-[#cc0000] hover:underline font-bold">The Works Pizza</a>, <a href="/menus-prices/pepperoni-pizza" class="text-[#cc0000] hover:underline font-bold">Pepperoni Pizza</a>, and <a href="/posts/papa-johns-garlic-knots" class="text-[#cc0000] hover:underline font-bold">Garlic Knots</a> are consistently the top-ordered combination during game nights in Pittsburgh."
+                text: "Steelers / Pirates / Penguins games are among the busiest ordering times at Papa Johns Pittsburgh locations. During Steelers game days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Pittsburgh."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in Pittsburgh",
