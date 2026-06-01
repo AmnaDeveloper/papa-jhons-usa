@@ -13,7 +13,7 @@ export default function NashvilleLocationPage() {
     return (
         <div className="bg-[#fcfaf8] min-h-screen font-sans pb-20 pt-10">
             <div className="container mx-auto px-4 max-w-4xl bg-white p-8 md:p-12 rounded-[2.5rem] shadow-sm border border-gray-100">
-                <article className="prose prose-lg max-w-none prose-headings:font-black prose-headings:text-[#1A3D17] prose-headings:uppercase prose-a:text-[#cc0000] hover:prose-a:text-[#1A3D17] prose-table:w-full prose-table:border-collapse prose-th:bg-[#1A3D17] prose-th:text-[#CCEE18] prose-th:p-4 prose-td:p-4 prose-td:border-b prose-td:border-gray-200">
+                <article className="prose prose-lg max-w-none text-gray-800 prose-p:text-gray-800 prose-strong:text-[#1A3D17] prose-li:text-gray-800 prose-blockquote:text-gray-600 prose-headings:font-black prose-headings:text-[#1A3D17] prose-headings:uppercase prose-a:text-[#cc0000] hover:prose-a:text-[#1A3D17] prose-table:w-full prose-table:border-collapse prose-th:bg-[#1A3D17] prose-th:text-[#CCEE18] prose-th:p-4 prose-td:p-4 prose-td:border-b prose-td:border-gray-200 prose-td:text-gray-800">
                     
                     <h1>Papa Johns Nashville TN 2026: All Locations, Menu, Prices & Delivery Guide</h1>
                     <p><strong>Last Updated:</strong> May 2026 | <strong>papajohns-menus.us</strong></p>
