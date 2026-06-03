@@ -98,13 +98,13 @@ export default function StoreLocatorPage() {
                         Find Us Nearby
                     </span>
                     <h1 
-                        className="text-4xl md:text-7xl font-black text-white uppercase tracking-tighter mb-8 leading-[0.9]"
+                        className="text-4xl md:text-6xl font-black text-white uppercase tracking-tighter mb-8 leading-[1.1]"
                         style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}
                     >
-                        Store <span className="text-[#CCEE18]">Locator</span>
+                        Find Papa John's Near Me — <span className="text-[#CCEE18]">Store Locator</span>
                     </h1>
-                    <p className="text-white/70 text-lg md:text-2xl max-w-3xl mx-auto leading-relaxed font-bold tracking-tight">
-                        Fresh pizza is just around the corner. Explore over 5,000 locations serving the ingredients you love.
+                    <p className="text-white/90 text-base md:text-lg max-w-4xl mx-auto leading-relaxed font-medium">
+                        Looking for Papa John's near me? You've come to the right place. Use our Papa Johns store locator to quickly find Papa Johns locations across the United States. Whether you're searching for papa johns delivery near me or want to carry out your favorite pizza, we've got every location covered. From big cities to small towns, finding your nearest Papa Johns has never been easier. Simply browse by state or search your city below to find papa johns near me, check store hours, get directions, and place your order today.
                     </p>
                 </div>
             </div>
