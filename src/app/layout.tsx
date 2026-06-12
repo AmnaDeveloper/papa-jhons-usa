@@ -161,7 +161,7 @@ export default function RootLayout({
             `,
           }}
         />
-        {/* Delay AdSense until user interaction */}
+        {/* Delay AdSense until user interaction or load instantly for bots */}
         <Script
           id="adsense-loader"
           strategy="afterInteractive"
@@ -186,12 +186,20 @@ export default function RootLayout({
                   window.removeEventListener('touchstart', loadAds);
                 }
                 
-                window.addEventListener('scroll', loadAds, { passive: true });
-                window.addEventListener('mousemove', loadAds, { passive: true });
-                window.addEventListener('touchstart', loadAds, { passive: true });
+                // Check if user agent is a search crawler or AdSense bot to load immediately
+                var ua = navigator.userAgent || '';
+                var isBot = /googlebot|mediapartners-google|adsbot-google|bingbot|yandexbot|duckduckbot/i.test(ua);
                 
-                // Fallback for very slow interactions
-                setTimeout(loadAds, 5000);
+                if (isBot) {
+                  loadAds();
+                } else {
+                  window.addEventListener('scroll', loadAds, { passive: true });
+                  window.addEventListener('mousemove', loadAds, { passive: true });
+                  window.addEventListener('touchstart', loadAds, { passive: true });
+                  
+                  // Fallback for slower interactions
+                  setTimeout(loadAds, 5000);
+                }
               })();
             `,
           }}
@@ -207,6 +215,12 @@ export default function RootLayout({
 
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
+        <link rel="preconnect" href="https://adservice.google.com" />
+        <link rel="preconnect" href="https://googleads.g.doubleclick.net" />
+        <link rel="preconnect" href="https://tpc.googlesyndication.com" />
+        <link rel="dns-prefetch" href="https://adservice.google.com" />
+        <link rel="dns-prefetch" href="https://googleads.g.doubleclick.net" />
+        <link rel="dns-prefetch" href="https://tpc.googlesyndication.com" />
 
         <script
           type="application/ld+json"
