@@ -1,6 +1,17 @@
 # Papa John's Menu USA — Robots.txt
+
+# Google AdSense and AdWords Crawlers
+User-agent: Mediapartners-Google
+Allow: /
+Allow: /ads.txt
+
+User-agent: AdsBot-Google
+Allow: /
+Allow: /ads.txt
+
 User-agent: *
 Allow: /
+Allow: /ads.txt
 Disallow: /admin/
 Disallow: /api/
 Disallow: /_next/
@@ -9,16 +20,19 @@ Disallow: /private/
 # Googlebot specific for Rich Snippets
 User-agent: Googlebot
 Allow: /
+Allow: /ads.txt
 Disallow: /admin/
 Disallow: /api/
 
 # Image indexing is a priority for Pizza menus
 User-agent: Googlebot-Image
 Allow: /
+Allow: /ads.txt
 
 # Bing crawler
 User-agent: Bingbot
 Allow: /
+Allow: /ads.txt
 Disallow: /admin/
 Disallow: /api/
 
