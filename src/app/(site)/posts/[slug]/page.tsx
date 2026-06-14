@@ -11,6 +11,7 @@ import { getTodayFormatted, getMonthYear } from '../../../../lib/utils/date';
 import LastUpdated from '../../../components/LastUpdated';
 import AuthorBio from '../../../components/AuthorBio';
 import SaveMoneyClient from '../how-to-save-money-at-papa-johns/SaveMoneyClient';
+import FamilyPizzaClient from '../best-papa-johns-pizzas-for-families/FamilyPizzaClient';
 
 const saveMoneySlug = 'how-to-save-money-at-papa-johns';
 const saveMoneyTitle = 'How to Save Money at Papa Johns (Without Hunting for Fake Codes)';
@@ -19,6 +20,12 @@ const saveMoneyAuthor = 'Marcus Webb';
 const saveMoneyDate = '2026-06-01T00:00:00Z';
 const saveMoneyDateModified = '2026-06-14T00:00:00Z';
 const saveMoneyImage = '/how-to-save-money-at-papa-johns.png';
+const familyPizzaSlug = 'best-papa-johns-pizzas-for-families';
+const familyPizzaTitle = 'Best Papa Johns Pizzas for Families (June 2026)';
+const familyPizzaExcerpt = "Sarah Jenkins shares what she would actually order for family pizza night, from The Works and build-your-own pies to stuffed crust and sides that stretch the meal.";
+const familyPizzaAuthor = 'Sarah Jenkins';
+const familyPizzaDate = '2026-06-14T00:00:00Z';
+const familyPizzaImage = '/classic-pizzas.png';
 
 // Generate static params for all posts
 export async function generateStaticParams() {
@@ -85,6 +92,58 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
                 title: `How to Save Money at Papa Johns (${month})`,
                 description: `Real tested money-saving strategies at Papa Johns. Forget fake promo code lists and learn the habits that actually lower the bill.`,
                 images: [`https://papajohns-menus.us${saveMoneyImage}`],
+            }
+        };
+    }
+
+    if (post.slug === familyPizzaSlug) {
+        return {
+            title: `Best Papa Johns Pizzas for Families (${month})`,
+            description: `Sarah Jenkins shares the best Papa Johns pizzas for family orders in ${month}: The Works, build-your-own, stuffed crust, specialty pizzas, and sides.`,
+            keywords: [
+                'best Papa Johns pizzas for families',
+                'Papa Johns family order',
+                'Papa Johns The Works',
+                'Papa Johns stuffed crust family',
+                'Papa Johns pizza for picky eaters'
+            ],
+            authors: [{ name: familyPizzaAuthor, url: 'https://papajohns-menus.us/team' }],
+            robots: {
+                index: true,
+                follow: true,
+                googleBot: {
+                    index: true,
+                    follow: true,
+                    'max-image-preview': 'large',
+                    'max-snippet': -1,
+                    'max-video-preview': -1,
+                },
+            },
+            alternates: {
+                canonical: `https://papajohns-menus.us/posts/${familyPizzaSlug}`,
+            },
+            openGraph: {
+                title: `Best Papa Johns Pizzas for Families (${month})`,
+                description: familyPizzaExcerpt,
+                url: `https://papajohns-menus.us/posts/${familyPizzaSlug}`,
+                images: [
+                    {
+                        url: `https://papajohns-menus.us${familyPizzaImage}`,
+                        width: 1200,
+                        height: 1200,
+                        alt: familyPizzaTitle
+                    }
+                ],
+                type: 'article',
+                publishedTime: familyPizzaDate,
+                modifiedTime: familyPizzaDate,
+                authors: ['https://papajohns-menus.us/team'],
+            },
+            twitter: {
+                card: 'summary_large_image',
+                title: `Best Papa Johns Pizzas for Families (${month})`,
+                description: familyPizzaExcerpt,
+                images: [`https://papajohns-menus.us${familyPizzaImage}`],
             }
         };
     }
@@ -356,6 +415,100 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
                 />
                 <SaveMoneyClient />
+            </>
+        );
+    }
+
+    if (post.slug === familyPizzaSlug) {
+        const articleSchema = {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": familyPizzaTitle,
+            "description": familyPizzaExcerpt,
+            "image": [
+                `${baseUrl}${familyPizzaImage}`
+            ],
+            "datePublished": familyPizzaDate,
+            "dateModified": familyPizzaDate,
+            "author": {
+                "@type": "Person",
+                "name": familyPizzaAuthor,
+                "url": `${baseUrl}/team`
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "PapaJohns-Menus.us",
+                "url": baseUrl,
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": `${baseUrl}/favicon.png`
+                }
+            },
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": postUrl
+            },
+            "about": [
+                "Papa Johns family pizza",
+                "Papa Johns menu guide",
+                "Family pizza order",
+                "Pizza for picky eaters"
+            ]
+        };
+
+        const breadcrumbSchema = generateBreadcrumbSchema([
+            { name: "Home", url: baseUrl },
+            { name: "Blog", url: `${baseUrl}/posts` },
+            { name: "Menu Guides", url: `${baseUrl}/posts` },
+            { name: familyPizzaTitle, url: postUrl }
+        ]);
+
+        const faqSchema = {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "What's the best Papa Johns pizza for a family with picky eaters?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "A simple build-your-own cheese or pepperoni pizza tends to work best for picky eaters, since it avoids the toppings that often cause complaints. Pairing it with a more loaded pizza like The Works for the rest of the family is a good middle ground."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Is stuffed crust worth it for families?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "If your family includes teenagers or bigger appetites, stuffed crust can make the meal go further since people are more likely to eat the entire slice, including the crust. For smaller portions or younger kids, regular crust is usually fine."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Should I order sides for a family pizza order?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes — adding breadsticks or cheesesticks to a larger family order can help stretch the meal further, often working out more cost-effective per person than ordering an additional pizza."
+                    }
+                }
+            ]
+        };
+
+        return (
+            <>
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+                />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+                />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+                />
+                <FamilyPizzaClient />
             </>
         );
     }

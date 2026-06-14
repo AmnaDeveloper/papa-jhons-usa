@@ -1,5 +1,58 @@
 [
   {
+    "id": "post-best-papa-johns-pizzas-for-families",
+    "title": "Best Papa Johns Pizzas for Families (June 2026)",
+    "slug": "best-papa-johns-pizzas-for-families",
+    "date": "2026-06-14T00:00:00Z",
+    "category": "Menu Guides",
+    "image": "/classic-pizzas.png",
+    "imageAlt": "Best Papa Johns Pizzas for Families",
+    "excerpt": "Sarah Jenkins shares what she would actually order for family pizza night, from The Works and build-your-own pies to stuffed crust and sides that stretch the meal.",
+    "author": "Sarah Jenkins",
+    "content": "<p>I have three kids, and if you've ever tried to order pizza for a family where one person is \"allergic to vegetables\" (he's not, he's six), another only eats the crust, and your partner wants something with actual flavor on it — you know that ordering family pizza is basically a small negotiation every single time.</p><p>I've ordered from Papa Johns more times than I'd like to admit while researching this site, and a few things have become pretty clear about which pizzas actually hold up for a table full of different appetites and which ones look great on the menu photo but disappear in two bites because everyone wanted \"just one slice\" of it.</p><p>Here's what I'd actually order if I were feeding a family tonight.</p><h2>The Safe Bet: The Works</h2><p>If you're not sure what anyone wants — and let's be real, that's most weeknights — The Works is the pizza that ends the fewest arguments. Pepperoni, sausage, onions, green peppers, mushrooms, and black olives all on one pie means there's something for almost everyone, and the kids who don't like a topping can just pick it off (which, yes, they will do, all over the table, but that's a different problem).</p><p>The downside? If you've got a picky eater who treats vegetables like they're personally offensive, The Works might end up being \"the pizza with the weird stuff on it\" in their world. For that situation, I'd pair it with one smaller plain cheese or pepperoni pizza on the side rather than trying to make one pizza do everything.</p><h2>For Picky Eaters: Build Your Own, Keep It Simple</h2><p>I know \"create your own\" feels like the boring choice, and in a way it is — but that's actually the point. When my youngest goes through phases where literally anything green on a pizza is treated like an attack, a simple cheese or pepperoni build-your-own means nobody's having a meltdown at the dinner table.</p><p>The thing I'd add here: don't underestimate how much a kid's mood can be saved by just letting them \"choose\" their own pizza, even if it's basically the same as what you'd order anyway. My daughter went from refusing pizza night entirely to genuinely excited about it just because she got to \"pick the toppings\" — which were cheese and, fine, more cheese.</p><h2>For Bigger Appetites: Epic Stuffed Crust</h2><p>If you've got teenagers, or honestly any adult who considers two regular slices a \"starter,\" the stuffed crust pizzas hit different. The cheese baked into the crust edge means even the part of the pizza people usually leave behind (the crust) actually gets eaten — which, from a \"did everyone get enough food\" standpoint, matters more than you'd think.</p><p>I'd lean toward the Epic Stuffed Crust Pepperoni for families specifically because pepperoni is about as close to a universally accepted topping as you're going to get. Cheese-only stuffed crust is good too, but if you're already paying the upcharge for stuffed crust, pepperoni gives you more flavor per dollar in my opinion.</p><h2>For the \"We Want Something Different Tonight\" Nights</h2><p>Every family has those nights where pizza is on the table but everyone's a little bored of the usual order. This is where I'd actually recommend trying one of the specialty pizzas — BBQ Chicken Bacon or Fiery Buffalo Chicken tend to be a hit if your family likes a bit of sauce variety, though I'd keep the buffalo one on the milder side of expectations if you've got younger kids at the table. It's not \"spicy\" in a scary way, but it's noticeably different from a plain cheese pizza, and some younger kids notice that difference immediately and aren't fans.</p><p>If your family leans more toward \"let's try something new but nothing too adventurous,\" Super Hawaiian (ham and pineapple) is honestly a safer bet than people expect. I was surprised how often it ends up being the first pizza gone at gatherings — there's something about the sweet-and-savory combo that works for a wider range of ages than I initially assumed.</p><h2>Don't Skip the Sides — They Stretch the Meal Further</h2><p>Here's something I didn't think about enough before researching this: adding a side of breadsticks or cheesesticks to a family order isn't just \"extra food,\" it actually changes how far the pizza goes. If you're feeding four or more people, one extra pizza-sized item (sides count) means everyone gets a bit more without needing to order a whole additional pizza, which usually works out cheaper per person than scaling up pizza size alone.</p><p>Garlic Parmesan Breadsticks specifically tend to disappear fast in my house — faster than I'd like to admit, honestly. If you're ordering for a family gathering rather than just your immediate household, I'd budget for at least one side per three to four people.</p><h2>What I'd Personally Order for a Family of Four</h2><p>If you put me on the spot and asked what I'd actually order tonight for my own family, here's roughly where I'd land: one Large The Works (because it covers the most ground), one Large Build Your Own Cheese or Pepperoni (for the picky ones), and a side of Garlic Parmesan Breadsticks. That combination has worked for us more often than not, and leftovers — if there are any — tend to get eaten the next day without complaint, which in my house is basically the highest compliment a meal can get.</p><h2>The Bottom Line</h2><p>There's no single \"best family pizza\" because every family's idea of a good dinner looks different. But if I had to generalize: go for variety over trying to please everyone with one pizza. A combination of one \"safe\" option and one \"everyone can build their own\" option tends to cause a lot less friction at the table than betting everything on one specialty pizza that half the family won't touch.</p>",
+    "faqs": [
+      {
+        "question": "What's the best Papa Johns pizza for a family with picky eaters?",
+        "answer": "A simple build-your-own cheese or pepperoni pizza tends to work best for picky eaters, since it avoids the toppings that often cause complaints. Pairing it with a more loaded pizza like The Works for the rest of the family is a good middle ground."
+      },
+      {
+        "question": "Is stuffed crust worth it for families?",
+        "answer": "If your family includes teenagers or bigger appetites, stuffed crust can make the meal go further since people are more likely to eat the entire slice, including the crust. For smaller portions or younger kids, regular crust is usually fine."
+      },
+      {
+        "question": "Should I order sides for a family pizza order?",
+        "answer": "Yes — adding breadsticks or cheesesticks to a larger family order can help stretch the meal further, often working out more cost-effective per person than ordering an additional pizza."
+      }
+    ],
+    "pricing": [
+      {
+        "icon": "🍕",
+        "item": "Large The Works",
+        "price": "Specialty pricing varies",
+        "calories": "Varies",
+        "popular": true
+      },
+      {
+        "icon": "🧀",
+        "item": "Large Build Your Own Cheese or Pepperoni",
+        "price": "Menu price varies",
+        "calories": "Varies",
+        "popular": true
+      },
+      {
+        "icon": "🥖",
+        "item": "Garlic Parmesan Breadsticks",
+        "price": "Side pricing varies",
+        "calories": "Varies",
+        "popular": false
+      }
+    ],
+    "metaTitle": "Best Papa Johns Pizzas for Families (June 2026)",
+    "metaDescription": "A practical family pizza ordering guide from Sarah Jenkins: The Works, build-your-own, stuffed crust, specialty pizzas, and sides that stretch the meal.",
+    "price": "Family Guide",
+    "calories": "Varies"
+  },
+  {
     "id": "post-how-to-save-money-at-papa-johns",
     "title": "How to Save Money at Papa Johns (Without Hunting for Fake Codes)",
     "slug": "how-to-save-money-at-papa-johns",

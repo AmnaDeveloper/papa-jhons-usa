@@ -94,6 +94,7 @@ export default function SaveMoneyClient() {
     ];
 
     const relatedGuides = [
+        { label: "Best Pizzas for Families", href: "/posts/best-papa-johns-pizzas-for-families", text: "Sarah Jenkins shares the family pizza order that handles picky eaters, big appetites, and sides." },
         { label: "Papa Johns Coupons", href: "/coupons", text: "Check active coupon and deal pages before checkout." },
         { label: "Papa Rewards Guide", href: "/papa-johns-rewards", text: "Learn how Papa Dough and member rewards work." },
         { label: "Menu Prices Guide", href: "/posts/papa-johns-menu-prices-guide", text: "Compare current menu prices before choosing a bundle." },
