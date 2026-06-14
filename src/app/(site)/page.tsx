@@ -173,39 +173,11 @@ export default function Home() {
                             Discover More
                         </span>
                         <h2 className="text-3xl md:text-5xl font-black text-[#1A3D17] uppercase tracking-tighter mb-4" style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}>
-                            Beyond the Menu: <span className="text-[#cc0000]">Guides, Comparisons &amp; Money-Saving Tips</span>
+                            Papa John's <span className="text-[#cc0000]">Guides & News</span>
                         </h2>
-                        <div className="text-gray-700 font-bold max-w-3xl mx-auto space-y-4">
-                            <p>
-                                Anyone can list prices and call it a menu page. We wanted to go{" "}
-                                further. Our team has spent hours testing carryout deals against{" "}
-                                delivery orders, comparing Papa Johns side-by-side with other{" "}
-                                major pizza chains, digging into the{" "}
-                                <Link href="/papa-johns-rewards" className="text-[#cc0000] hover:underline">
-                                    Papa Rewards
-                                </Link>{" "}
-                                program to see if it's actually worth signing up for, and{" "}
-                                breaking down the{" "}
-                                <Link href="/posts/papa-johns-nutrition-guide" className="text-[#cc0000] hover:underline">
-                                    nutrition info
-                                </Link>{" "}
-                                so you know exactly what you're eating before you order.
-                            </p>
-                            <p>
-                                These guides are written by real people on our team — Marcus{" "}
-                                handles deals and pricing breakdowns, Sarah covers comparisons{" "}
-                                and family-focused guides, and Linda takes care of nutrition and{" "}
-                                dietary information. Every article below is based on our own{" "}
-                                research, real order tests, and the questions readers actually{" "}
-                                ask us.
-                            </p>
-                            <p>
-                                Whether you're trying to stretch a tight budget, feeding a{" "}
-                                hungry family, managing dietary needs, or just curious how Papa{" "}
-                                Johns stacks up against the competition — there's a guide below{" "}
-                                for you.
-                            </p>
-                        </div>
+                        <p className="text-gray-700 font-bold max-w-2xl mx-auto">
+                            Explore our complete menu breakdowns, <Link href="/best-pizza-delivery-near-me" className="text-[#cc0000] hover:underline">best pizza delivery near me</Link> guides, <Link href="/posts/papa-johns-menu-prices-guide" className="text-[#cc0000] hover:underline">Papa Johns menu with prices 2026</Link>, and the full <Link href="/posts/papa-johns-nutrition-guide" className="text-[#cc0000] hover:underline">Papa Johns nutrition guide</Link>. Check out our <Link href="/menus-prices" className="text-[#cc0000] hover:underline">Papa Johns full menu</Link> and find <Link href="/coupons" className="text-[#cc0000] hover:underline">Papa Johns promo codes 2026</Link>.
+                        </p>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
