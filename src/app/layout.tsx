@@ -209,8 +209,7 @@ export default function RootLayout({
           rel="preload"
           as="image"
           href="/hero-background.webp"
-          // @ts-expect-error fetchpriority is valid HTML but not in React types yet
-          fetchpriority="high"
+          fetchPriority="high"
         />
 
         <link rel="preconnect" href="https://www.googletagmanager.com" />
@@ -237,4 +236,3 @@ export default function RootLayout({
     </html>
   );
 }
-

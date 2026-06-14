@@ -3,9 +3,10 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { 
-    Heart, Share2, Info, ArrowRight, Star, 
-    Percent, Clock, User, DollarSign, CheckCircle2, 
-    ChevronDown, ChevronUp, Calculator, ShieldAlert, Award
+    ArrowRight, Star, 
+    Percent, Clock, DollarSign, CheckCircle2, 
+    ChevronDown, ChevronUp, Calculator, ShieldAlert, Award,
+    ExternalLink, ClipboardCheck, ReceiptText
 } from 'lucide-react';
 
 export default function SaveMoneyClient() {
@@ -70,26 +71,43 @@ export default function SaveMoneyClient() {
         }
     ];
 
+    const savingsExampleRows = [
+        { label: "Large specialty pizza menu price", delivery: "$18.91", carryout: "$8.99", note: "Example pricing from this guide; real store prices can vary." },
+        { label: "Estimated delivery fee", delivery: "$4.99", carryout: "$0.00", note: "Delivery fees vary by store, platform, and distance." },
+        { label: "Estimated 15% tip", delivery: "$2.84", carryout: "$0.00", note: "Tip amount is optional and depends on your order." },
+        { label: "Estimated total before tax", delivery: "$26.74", carryout: "$8.99", note: "Tax and local fees are not included." },
+    ];
+
+    const verificationSteps = [
+        "Check the Papa Johns app or website first because deals can be regional.",
+        "Compare the same pizza as delivery and carryout before you pay.",
+        "Open the Deals section before building a custom cart from scratch.",
+        "Sign in to Papa Rewards so available Papa Dough can apply at checkout.",
+        "Confirm taxes, fees, and final total on the checkout screen."
+    ];
+
+    const officialResources = [
+        { label: "Official Papa Johns Deals", href: "https://www.papajohns.com/deals/" },
+        { label: "Official Papa Rewards", href: "https://www.papajohns.com/rewards/" },
+        { label: "Official Nutrition Info", href: "https://www.papajohns.com/nutrition/" },
+    ];
+
     const toggleFaq = (idx: number) => {
         setOpenFaq(openFaq === idx ? null : idx);
     };
 
     return (
-        <div className="bg-[#FAF8F5] min-h-screen text-[#1A3D17]">
+        <div className="bg-[#f7f4ee] min-h-screen text-[#143414]">
             {/* Reading Progress Bar */}
-            <div className="fixed top-0 left-0 w-full h-1 bg-gray-200 z-50">
+            <div className="fixed top-0 left-0 w-full h-1 bg-white/70 z-50">
                 <div className="bg-[#cc0000] h-full" style={{ width: '100%' }}></div>
             </div>
 
-            {/* Premium Header/Hero */}
-            <header className="relative bg-[#1A3D17] text-white pt-16 pb-24 px-4 overflow-hidden border-b-8 border-[#cc0000]">
-                {/* Decorative Elements */}
-                <div className="absolute top-0 right-0 w-96 h-96 bg-[#CCEE18]/5 rounded-full -mr-32 -mt-32 pointer-events-none"></div>
-                <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#cc0000]/5 rounded-full -ml-64 -mb-64 pointer-events-none"></div>
-
-                <div className="max-w-6xl mx-auto">
+            <header className="relative bg-[#143414] text-white px-4 pt-16 pb-8 overflow-hidden">
+                <div className="absolute inset-0 opacity-[0.08] bg-[linear-gradient(135deg,#ffffff_0_1px,transparent_1px_24px)] pointer-events-none"></div>
+                <div className="max-w-6xl mx-auto relative z-10">
                     {/* Breadcrumbs */}
-                    <nav className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-gray-400 mb-8">
+                    <nav className="flex flex-wrap items-center gap-2 text-xs font-bold uppercase text-white/60 mb-8">
                         <Link href="/" className="hover:text-[#CCEE18] transition-colors">Home</Link>
                         <span>/</span>
                         <Link href="/posts" className="hover:text-[#CCEE18] transition-colors">Guides</Link>
@@ -99,38 +117,59 @@ export default function SaveMoneyClient() {
 
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                         <div className="lg:col-span-7 space-y-6">
-                            <span className="inline-flex items-center gap-2 bg-[#CCEE18] text-[#1A3D17] text-xs font-extrabold uppercase px-4 py-1.5 rounded-full shadow-md">
+                            <span className="inline-flex items-center gap-2 bg-[#CCEE18] text-[#143414] text-xs font-extrabold uppercase px-4 py-2 rounded-full shadow-md">
                                 <Percent size={14} /> Coupons &amp; Deals
                             </span>
 
-                            <h1 className="text-3xl md:text-5xl lg:text-6xl font-black uppercase tracking-tighter leading-none" style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}>
+                            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black uppercase leading-[0.95]" style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}>
                                 How to Save Money at Papa Johns <span className="text-[#CCEE18] block mt-2">(Without Hunting for Fake Codes)</span>
                             </h1>
 
-                            <p className="text-lg md:text-xl text-gray-300 font-medium leading-relaxed max-w-2xl">
+                            <p className="text-lg md:text-xl text-white/80 font-medium leading-relaxed max-w-2xl">
                                 Let's be honest — most &quot;how to save money&quot; articles are full of expired codes. Here is the actual guide on how to slash your bill every single time.
                             </p>
 
+                            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-2xl">
+                                <div className="bg-white/10 border border-white/15 rounded-2xl p-4">
+                                    <DollarSign className="text-[#CCEE18] mb-2" size={20} />
+                                    <p className="text-2xl font-black">Up to 50%</p>
+                                    <p className="text-xs font-bold text-white/60 uppercase">Carryout savings</p>
+                                </div>
+                                <div className="bg-white/10 border border-white/15 rounded-2xl p-4">
+                                    <CheckCircle2 className="text-[#CCEE18] mb-2" size={20} />
+                                    <p className="text-2xl font-black">5</p>
+                                    <p className="text-xs font-bold text-white/60 uppercase">Tested habits</p>
+                                </div>
+                                <div className="bg-white/10 border border-white/15 rounded-2xl p-4">
+                                    <Clock className="text-[#CCEE18] mb-2" size={20} />
+                                    <p className="text-2xl font-black">June 2026</p>
+                                    <p className="text-xs font-bold text-white/60 uppercase">Updated guide</p>
+                                </div>
+                            </div>
+
                             {/* Author Card */}
-                            <div className="flex items-center gap-4 pt-4 border-t border-white/10">
-                                <div className="w-14 h-14 bg-[#CCEE18] rounded-full flex items-center justify-center text-[#1A3D17] font-black text-xl border-2 border-white shadow-lg">
+                            <div className="flex items-center gap-4 pt-4">
+                                <div className="w-14 h-14 bg-[#CCEE18] rounded-full flex items-center justify-center text-[#143414] font-black text-xl border-2 border-white shadow-lg">
                                     MW
                                 </div>
                                 <div>
-                                    <p className="text-sm text-gray-400 font-bold uppercase tracking-widest">Written By</p>
+                                    <p className="text-sm text-white/50 font-bold uppercase">Written By</p>
                                     <p className="text-lg font-extrabold text-white">Marcus Webb</p>
                                     <p className="text-xs text-[#CCEE18] font-bold">Deals &amp; Coupons Researcher • Updated June 2026</p>
+                                    <Link href="/team" className="text-xs text-white/70 hover:text-[#CCEE18] font-bold underline underline-offset-4 mt-1 inline-block">
+                                        View editorial team
+                                    </Link>
                                 </div>
                             </div>
                         </div>
 
                         {/* Hero Image */}
                         <div className="lg:col-span-5">
-                            <div className="bg-white p-3 rounded-[2.5rem] shadow-2xl border border-white/10 relative transform hover:rotate-1 transition-all duration-500">
-                                <div className="absolute top-6 left-6 z-10 bg-[#cc0000] text-white text-[10px] font-black uppercase tracking-widest px-4 py-2 rounded-full shadow-lg">
-                                    ★ Featured Guide
+                            <div className="bg-white p-3 rounded-[2rem] shadow-2xl border border-white/10 relative">
+                                <div className="absolute top-6 left-6 z-10 bg-[#cc0000] text-white text-[10px] font-black uppercase px-4 py-2 rounded-full shadow-lg flex items-center gap-1">
+                                    <Star size={12} fill="currentColor" /> Featured Guide
                                 </div>
-                                <div className="rounded-[2rem] overflow-hidden aspect-square relative bg-gray-50 border border-gray-100">
+                                <div className="rounded-[1.5rem] overflow-hidden aspect-square relative bg-gray-50 border border-gray-100">
                                     <img 
                                         src="/how-to-save-money-at-papa-johns.png" 
                                         alt="How to Save Money at Papa Johns Pizza" 
@@ -145,17 +184,16 @@ export default function SaveMoneyClient() {
             </header>
 
             {/* Main Content Grid */}
-            <main className="max-w-6xl mx-auto px-4 py-16">
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            <main className="max-w-6xl mx-auto px-4 py-12 md:py-16">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
                     
                     {/* Left side: Interactive Calculator & Sidebar (Sticky) */}
-                    <div className="lg:col-span-4 lg:order-2 space-y-8">
+                    <div className="lg:col-span-4 lg:order-2 space-y-6 lg:sticky lg:top-8 self-start">
                         
                         {/* 1. Interactive Savings Calculator */}
-                        <div className="bg-white rounded-[2rem] p-6 shadow-xl border border-gray-100 relative overflow-hidden">
-                            <div className="absolute top-0 right-0 w-24 h-24 bg-[#CCEE18]/10 rounded-full -mr-12 -mt-12"></div>
-                            
-                            <h3 className="text-lg font-black uppercase tracking-tighter mb-6 flex items-center gap-2 border-b border-gray-100 pb-3">
+                        <div className="bg-white rounded-[1.5rem] p-6 shadow-xl border border-black/5 relative overflow-hidden">
+                            <div className="absolute inset-x-0 top-0 h-1.5 bg-[#cc0000]"></div>
+                            <h3 className="text-lg font-black uppercase mb-6 flex items-center gap-2 border-b border-gray-100 pb-3">
                                 <Calculator className="text-[#cc0000]" size={20} /> Live Savings Calculator
                             </h3>
 
@@ -163,16 +201,16 @@ export default function SaveMoneyClient() {
                                 {/* Order Type */}
                                 <div>
                                     <label className="block text-xs font-extrabold uppercase tracking-wider text-gray-500 mb-2">Order Method</label>
-                                    <div className="grid grid-cols-2 gap-2">
+                                    <div className="grid grid-cols-2 gap-2 bg-gray-100 p-1 rounded-2xl">
                                         <button 
                                             onClick={() => setOrderType('carryout')}
-                                            className={`py-3 px-4 rounded-xl font-extrabold text-xs uppercase transition-all shadow-sm ${orderType === 'carryout' ? 'bg-[#1A3D17] text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
+                                            className={`py-3 px-4 rounded-xl font-extrabold text-xs uppercase transition-all ${orderType === 'carryout' ? 'bg-[#143414] text-white shadow-sm' : 'text-gray-600 hover:bg-white/70'}`}
                                         >
                                             Carryout
                                         </button>
                                         <button 
                                             onClick={() => setOrderType('delivery')}
-                                            className={`py-3 px-4 rounded-xl font-extrabold text-xs uppercase transition-all shadow-sm ${orderType === 'delivery' ? 'bg-[#1A3D17] text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
+                                            className={`py-3 px-4 rounded-xl font-extrabold text-xs uppercase transition-all ${orderType === 'delivery' ? 'bg-[#143414] text-white shadow-sm' : 'text-gray-600 hover:bg-white/70'}`}
                                         >
                                             Delivery
                                         </button>
@@ -183,7 +221,7 @@ export default function SaveMoneyClient() {
                                 <div>
                                     <div className="flex justify-between items-center mb-2">
                                         <label className="text-xs font-extrabold uppercase tracking-wider text-gray-500">Order Subtotal</label>
-                                        <span className="text-sm font-black text-[#1A3D17] bg-[#CCEE18]/30 px-3 py-0.5 rounded-full">${subtotal}</span>
+                                        <span className="text-sm font-black text-[#143414] bg-[#CCEE18]/40 px-3 py-0.5 rounded-full">${subtotal}</span>
                                     </div>
                                     <input 
                                         type="range" 
@@ -202,7 +240,7 @@ export default function SaveMoneyClient() {
                                 </div>
 
                                 {/* Papa Rewards Toggle */}
-                                <div className="flex items-center justify-between p-4 bg-gray-50 rounded-2xl border border-gray-100">
+                                <div className="flex items-center justify-between p-4 bg-[#f7f4ee] rounded-2xl border border-black/5">
                                     <div>
                                         <span className="block text-xs font-black uppercase text-gray-700">Papa Rewards Member</span>
                                         <span className="text-[10px] text-gray-400 font-bold block">Earn points on every order</span>
@@ -216,7 +254,7 @@ export default function SaveMoneyClient() {
                                 </div>
 
                                 {/* Savings Result Display */}
-                                <div className="bg-[#1A3D17] text-white rounded-2xl p-6 text-center shadow-lg relative overflow-hidden">
+                                <div className="bg-[#143414] text-white rounded-2xl p-6 text-center shadow-lg relative overflow-hidden">
                                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,_var(--tw-gradient-stops))] from-white/5 via-transparent to-transparent pointer-events-none"></div>
                                     <span className="block text-xs uppercase tracking-widest text-[#CCEE18] font-black">Estimated Savings</span>
                                     <span className="block text-4xl md:text-5xl font-black text-white my-2 tracking-tight">${savingsData.total}</span>
@@ -250,21 +288,35 @@ export default function SaveMoneyClient() {
                         </div>
 
                         {/* 2. Author Trust Box */}
-                        <div className="bg-[#FAF4EE] border-2 border-dashed border-[#1A3D17]/10 rounded-[2rem] p-6 space-y-4">
-                            <h3 className="text-base font-black uppercase text-[#1A3D17] tracking-tight flex items-center gap-2">
+                        <div className="bg-white border border-black/5 rounded-[1.5rem] p-6 space-y-4 shadow-sm">
+                            <h3 className="text-base font-black uppercase text-[#143414] flex items-center gap-2">
                                 <Award className="text-[#cc0000]" size={18} /> Editorial Guarantee
                             </h3>
                             <p className="text-xs text-gray-600 font-bold leading-relaxed">
                                 Our deals researcher, Marcus Webb, manually tests orders at Papa Johns every week. We receive no sponsorship from Papa Johns. Every tip shared here is based on real purchase tests.
                             </p>
                         </div>
+
+                        <div className="bg-[#143414] text-white rounded-[1.5rem] p-6 shadow-lg">
+                            <h3 className="text-sm font-black uppercase mb-4">Quick Jump</h3>
+                            <div className="space-y-3 text-sm font-bold text-white/80">
+                                <a href="#quick-answer" className="flex items-center justify-between hover:text-[#CCEE18] transition-colors">Quick Answer <ArrowRight size={14} /></a>
+                                <a href="#savings-math" className="flex items-center justify-between hover:text-[#CCEE18] transition-colors">Savings Math <ArrowRight size={14} /></a>
+                                <a href="#carryout" className="flex items-center justify-between hover:text-[#CCEE18] transition-colors">Carryout Discount <ArrowRight size={14} /></a>
+                                <a href="#sides" className="flex items-center justify-between hover:text-[#CCEE18] transition-colors">Order Sides Together <ArrowRight size={14} /></a>
+                                <a href="#rewards" className="flex items-center justify-between hover:text-[#CCEE18] transition-colors">Papa Rewards <ArrowRight size={14} /></a>
+                                <a href="#bundles" className="flex items-center justify-between hover:text-[#CCEE18] transition-colors">Bundle Deals <ArrowRight size={14} /></a>
+                                <a href="#off-peak" className="flex items-center justify-between hover:text-[#CCEE18] transition-colors">Off-Peak Orders <ArrowRight size={14} /></a>
+                                <a href="#faq" className="flex items-center justify-between hover:text-[#CCEE18] transition-colors">FAQs <ArrowRight size={14} /></a>
+                            </div>
+                        </div>
                     </div>
 
                     {/* Right side: Main Article Content (Structured Layout) */}
-                    <div className="lg:col-span-8 lg:order-1 space-y-12">
+                    <div className="lg:col-span-8 lg:order-1 space-y-8">
                         
                         {/* Article Intro */}
-                        <div className="bg-white rounded-[2rem] p-8 shadow-md border border-gray-100 relative">
+                        <div className="bg-white rounded-[1.5rem] p-7 md:p-8 shadow-md border border-black/5 relative overflow-hidden">
                             {/* Quote Icon Background */}
                             <div className="absolute top-6 right-8 text-gray-100 font-serif text-8xl leading-none select-none pointer-events-none">“</div>
                             
@@ -276,13 +328,145 @@ export default function SaveMoneyClient() {
                             </p>
                         </div>
 
-                        {/* Section 1: Carryout */}
-                        <div className="space-y-6">
+                        <section id="quick-answer" className="bg-white rounded-[1.5rem] p-7 md:p-8 shadow-sm border border-black/5 space-y-6">
                             <div className="flex items-start gap-4">
-                                <div className="w-10 h-10 rounded-full bg-[#1A3D17] text-white font-black flex items-center justify-center text-lg shadow">
+                                <div className="w-10 h-10 rounded-full bg-[#cc0000] text-white font-black flex items-center justify-center shadow shrink-0">
+                                    <CheckCircle2 size={20} />
+                                </div>
+                                <div>
+                                    <span className="text-[#cc0000] text-xs font-black uppercase">Fastest answer</span>
+                                    <h2 className="text-2xl md:text-3xl font-black uppercase leading-tight mt-1" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                                        The Cheapest Papa Johns Order Path
+                                    </h2>
+                                </div>
+                            </div>
+
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <div className="bg-[#f7f4ee] rounded-2xl p-5 border border-black/5">
+                                    <p className="text-sm font-black text-[#143414] uppercase mb-2">1. Start With Carryout</p>
+                                    <p className="text-sm text-gray-600 font-bold leading-relaxed">
+                                        Compare carryout first because it can remove delivery fees and often unlock lower pizza pricing.
+                                    </p>
+                                </div>
+                                <div className="bg-[#f7f4ee] rounded-2xl p-5 border border-black/5">
+                                    <p className="text-sm font-black text-[#143414] uppercase mb-2">2. Check Deals Before Cart</p>
+                                    <p className="text-sm text-gray-600 font-bold leading-relaxed">
+                                        The app&apos;s Deals section can be cheaper than building the same pizza item by item.
+                                    </p>
+                                </div>
+                                <div className="bg-[#f7f4ee] rounded-2xl p-5 border border-black/5">
+                                    <p className="text-sm font-black text-[#143414] uppercase mb-2">3. Use Papa Rewards</p>
+                                    <p className="text-sm text-gray-600 font-bold leading-relaxed">
+                                        Sign in before checkout so any eligible Papa Dough or member-only offer is visible.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="flex flex-wrap gap-3 pt-2">
+                                <Link href="/coupons" className="inline-flex items-center gap-2 bg-[#143414] text-white font-black text-xs uppercase px-5 py-3 rounded-full hover:bg-[#cc0000] transition-colors">
+                                    Active Coupons <ArrowRight size={14} />
+                                </Link>
+                                <Link href="/papa-johns-rewards" className="inline-flex items-center gap-2 bg-[#CCEE18] text-[#143414] font-black text-xs uppercase px-5 py-3 rounded-full hover:bg-white transition-colors border border-[#143414]/10">
+                                    Papa Rewards Guide <ArrowRight size={14} />
+                                </Link>
+                            </div>
+                        </section>
+
+                        <section id="savings-math" className="bg-white rounded-[1.5rem] p-7 md:p-8 shadow-sm border border-black/5 space-y-6">
+                            <div className="flex items-start gap-4">
+                                <div className="w-10 h-10 rounded-full bg-[#143414] text-[#CCEE18] font-black flex items-center justify-center shadow shrink-0">
+                                    <ReceiptText size={20} />
+                                </div>
+                                <div>
+                                    <span className="text-[#cc0000] text-xs font-black uppercase">Transparent estimate</span>
+                                    <h2 className="text-2xl md:text-3xl font-black uppercase leading-tight mt-1" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                                        Example Delivery vs Carryout Savings Math
+                                    </h2>
+                                </div>
+                            </div>
+
+                            <p className="text-gray-600 font-bold leading-relaxed">
+                                This is an example calculation based on the pricing pattern discussed in this guide. Papa Johns prices, delivery fees, taxes, and promotions vary by store, city, and checkout time, so always confirm the final total before placing your order.
+                            </p>
+
+                            <div className="overflow-x-auto rounded-2xl border border-black/10">
+                                <table className="w-full text-left text-sm bg-white min-w-[640px]">
+                                    <thead className="bg-[#143414] text-[#CCEE18] uppercase">
+                                        <tr>
+                                            <th className="p-4">Cost Item</th>
+                                            <th className="p-4">Delivery Example</th>
+                                            <th className="p-4">Carryout Example</th>
+                                            <th className="p-4">Accuracy Note</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {savingsExampleRows.map((row, idx) => (
+                                            <tr key={row.label} className={idx % 2 === 0 ? "border-b border-gray-100" : "border-b border-gray-100 bg-[#f7f4ee]"}>
+                                                <td className="p-4 font-black text-[#143414]">{row.label}</td>
+                                                <td className="p-4 font-bold text-gray-700">{row.delivery}</td>
+                                                <td className="p-4 font-bold text-[#cc0000]">{row.carryout}</td>
+                                                <td className="p-4 text-gray-500 font-medium">{row.note}</td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div className="bg-[#CCEE18]/30 border border-[#CCEE18] rounded-2xl p-5">
+                                <p className="text-[#143414] font-black uppercase text-sm mb-1">Estimated difference before tax</p>
+                                <p className="text-gray-700 font-bold text-sm leading-relaxed">
+                                    In this example, carryout is about <strong>$17.75 cheaper</strong> before tax. Your actual result may be higher or lower depending on local menu pricing, active deals, delivery fees, and tip.
+                                </p>
+                            </div>
+                        </section>
+
+                        <section className="bg-white rounded-[1.5rem] p-7 md:p-8 shadow-sm border border-black/5 space-y-6">
+                            <div className="flex items-start gap-4">
+                                <div className="w-10 h-10 rounded-full bg-[#143414] text-[#CCEE18] font-black flex items-center justify-center shadow shrink-0">
+                                    <ClipboardCheck size={20} />
+                                </div>
+                                <div>
+                                    <span className="text-[#cc0000] text-xs font-black uppercase">How we keep this useful</span>
+                                    <h2 className="text-2xl md:text-3xl font-black uppercase leading-tight mt-1" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                                        How to Verify the Best Deal Before You Order
+                                    </h2>
+                                </div>
+                            </div>
+
+                            <ol className="space-y-3">
+                                {verificationSteps.map((step, idx) => (
+                                    <li key={step} className="flex items-start gap-3 text-gray-700 font-bold leading-relaxed">
+                                        <span className="w-7 h-7 rounded-full bg-[#CCEE18] text-[#143414] flex items-center justify-center text-xs font-black shrink-0 mt-0.5">
+                                            {idx + 1}
+                                        </span>
+                                        <span>{step}</span>
+                                    </li>
+                                ))}
+                            </ol>
+
+                            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                                {officialResources.map((resource) => (
+                                    <a
+                                        key={resource.href}
+                                        href={resource.href}
+                                        target="_blank"
+                                        rel="noopener noreferrer nofollow"
+                                        className="flex items-center justify-between gap-3 rounded-2xl border border-black/10 bg-[#f7f4ee] p-4 text-sm font-black text-[#143414] hover:border-[#cc0000] hover:text-[#cc0000] transition-colors"
+                                    >
+                                        {resource.label}
+                                        <ExternalLink size={15} />
+                                    </a>
+                                ))}
+                            </div>
+                        </section>
+
+                        {/* Section 1: Carryout */}
+                        <section id="carryout" className="bg-white rounded-[1.5rem] p-7 md:p-8 shadow-sm border border-black/5 space-y-6">
+                            <div className="flex items-start gap-4">
+                                <div className="w-10 h-10 rounded-full bg-[#143414] text-white font-black flex items-center justify-center text-lg shadow shrink-0">
                                     1
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight leading-none pt-1" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                                <h2 className="text-2xl md:text-3xl font-black uppercase leading-tight pt-1" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
                                     The Carryout Discount Is the One Thing Most People Skip
                                 </h2>
                             </div>
@@ -305,15 +489,15 @@ export default function SaveMoneyClient() {
                                     If saving money is genuinely your priority and you've got the time to swing by, carryout is the move. It's not flashy, but it works every single time.
                                 </p>
                             </div>
-                        </div>
+                        </section>
 
                         {/* Section 2: Sides */}
-                        <div className="space-y-6">
+                        <section id="sides" className="bg-white rounded-[1.5rem] p-7 md:p-8 shadow-sm border border-black/5 space-y-6">
                             <div className="flex items-start gap-4">
-                                <div className="w-10 h-10 rounded-full bg-[#1A3D17] text-white font-black flex items-center justify-center text-lg shadow">
+                                <div className="w-10 h-10 rounded-full bg-[#143414] text-white font-black flex items-center justify-center text-lg shadow shrink-0">
                                     2
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight leading-none pt-1" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                                <h2 className="text-2xl md:text-3xl font-black uppercase leading-tight pt-1" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
                                     Stop Ordering Sides Separately
                                 </h2>
                             </div>
@@ -326,15 +510,15 @@ export default function SaveMoneyClient() {
                                     Don't do that. Every time you place a separate order, you're paying a separate delivery fee — and depending on where you live, that's anywhere from four to six bucks just to get a side dish to your door. If you know you want breadsticks, add them to the same cart. It sounds obvious when I say it out loud, but I've watched people in my own family do this exact thing more times than I can count.
                                 </p>
                             </div>
-                        </div>
+                        </section>
 
                         {/* Section 3: Loyalty Program */}
-                        <div className="space-y-6">
+                        <section id="rewards" className="bg-white rounded-[1.5rem] p-7 md:p-8 shadow-sm border border-black/5 space-y-6">
                             <div className="flex items-start gap-4">
-                                <div className="w-10 h-10 rounded-full bg-[#1A3D17] text-white font-black flex items-center justify-center text-lg shadow">
+                                <div className="w-10 h-10 rounded-full bg-[#143414] text-white font-black flex items-center justify-center text-lg shadow shrink-0">
                                     3
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight leading-none pt-1" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                                <h2 className="text-2xl md:text-3xl font-black uppercase leading-tight pt-1" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
                                     Papa Rewards Is Actually Worth Signing Up For
                                 </h2>
                             </div>
@@ -350,15 +534,15 @@ export default function SaveMoneyClient() {
                                     There's also a birthday perk. It's not life-changing, but hey, free dessert on your birthday is free dessert on your birthday.
                                 </p>
                             </div>
-                        </div>
+                        </section>
 
                         {/* Section 4: Bundles */}
-                        <div className="space-y-6">
+                        <section id="bundles" className="bg-white rounded-[1.5rem] p-7 md:p-8 shadow-sm border border-black/5 space-y-6">
                             <div className="flex items-start gap-4">
-                                <div className="w-10 h-10 rounded-full bg-[#1A3D17] text-white font-black flex items-center justify-center text-lg shadow">
+                                <div className="w-10 h-10 rounded-full bg-[#143414] text-white font-black flex items-center justify-center text-lg shadow shrink-0">
                                     4
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight leading-none pt-1" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                                <h2 className="text-2xl md:text-3xl font-black uppercase leading-tight pt-1" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
                                     Watch for Limited-Time Bundle Deals (Not the Same as Codes)
                                 </h2>
                             </div>
@@ -371,15 +555,15 @@ export default function SaveMoneyClient() {
                                     But Papa Johns also runs bundle-style deals that show up directly in the app or on the website — things like a large pizza plus a side and a drink for one combined price. These tend to be more stable than individual promo codes because they're built into the ordering flow itself, not something you have to remember to type in. Before you build your order from scratch, it's worth scrolling through the &quot;Deals&quot; section in the app first. Sometimes the bundle ends up cheaper than building the same order item-by-item, even without any code at all.
                                 </p>
                             </div>
-                        </div>
+                        </section>
 
                         {/* Section 5: Off-Peak Times */}
-                        <div className="space-y-6">
+                        <section id="off-peak" className="bg-white rounded-[1.5rem] p-7 md:p-8 shadow-sm border border-black/5 space-y-6">
                             <div className="flex items-start gap-4">
-                                <div className="w-10 h-10 rounded-full bg-[#1A3D17] text-white font-black flex items-center justify-center text-lg shadow">
+                                <div className="w-10 h-10 rounded-full bg-[#143414] text-white font-black flex items-center justify-center text-lg shadow shrink-0">
                                     5
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight leading-none pt-1" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                                <h2 className="text-2xl md:text-3xl font-black uppercase leading-tight pt-1" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
                                     Order During Off-Peak Times If You Can
                                 </h2>
                             </div>
@@ -392,29 +576,49 @@ export default function SaveMoneyClient() {
                                     If your schedule is flexible at all, ordering a little earlier — say 4 or 5 PM — can mean a smoother experience and sometimes a slightly lower delivery cost, depending on your area.
                                 </p>
                             </div>
-                        </div>
+                        </section>
 
                         {/* Section 6: Bottom Line */}
-                        <div className="space-y-6 border-t border-gray-200 pt-10">
-                            <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                        <section className="bg-[#143414] text-white rounded-[1.5rem] p-7 md:p-8 shadow-xl space-y-6">
+                            <h2 className="text-2xl md:text-3xl font-black uppercase" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
                                 The Bottom Line
                             </h2>
-                            <div className="space-y-6 text-gray-600 font-bold text-base leading-relaxed">
+                            <div className="space-y-6 text-white/80 font-bold text-base leading-relaxed">
                                 <p>
-                                    If I had to boil this down to one piece of advice, it'd be this: **carryout plus Papa Rewards is the combination that actually moves the needle.** Everything else — codes, bundles, timing — is more of a bonus layer on top.
+                                    If I had to boil this down to one piece of advice, it'd be this: <strong>carryout plus Papa Rewards is the combination that actually moves the needle.</strong> Everything else — codes, bundles, timing — is more of a bonus layer on top.
                                 </p>
                                 <p>
                                     I'll keep updating this guide as I come across new patterns worth sharing, but the core advice above has held up consistently every time I've tested it. If you've found something that's worked well for you, feel free to reach out — I genuinely read every email that comes through our contact page, and reader tips are honestly one of the best sources for this kind of content.
                                 </p>
                             </div>
-                        </div>
+                        </section>
+
+                        <section className="bg-white rounded-[1.5rem] p-7 md:p-8 shadow-sm border border-black/5 space-y-5">
+                            <h2 className="text-2xl md:text-3xl font-black uppercase text-[#143414]" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                                Editorial Note and Independence
+                            </h2>
+                            <p className="text-gray-600 font-bold leading-relaxed">
+                                PapaJohns-Menus.us is an independent informational guide and is not affiliated with, endorsed by, or sponsored by Papa Johns International. Prices, fees, rewards, and promotions can change by location and time, so this guide is meant to help you compare options before checkout rather than replace the official ordering screen.
+                            </p>
+                            <div className="flex flex-wrap gap-3">
+                                <Link href="/about" className="inline-flex items-center gap-2 text-[#143414] bg-[#f7f4ee] border border-black/10 font-black text-xs uppercase px-5 py-3 rounded-full hover:border-[#cc0000] hover:text-[#cc0000] transition-colors">
+                                    About Our Site <ArrowRight size={14} />
+                                </Link>
+                                <Link href="/team" className="inline-flex items-center gap-2 text-[#143414] bg-[#f7f4ee] border border-black/10 font-black text-xs uppercase px-5 py-3 rounded-full hover:border-[#cc0000] hover:text-[#cc0000] transition-colors">
+                                    Editorial Team <ArrowRight size={14} />
+                                </Link>
+                                <Link href="/privacy-policy" className="inline-flex items-center gap-2 text-[#143414] bg-[#f7f4ee] border border-black/10 font-black text-xs uppercase px-5 py-3 rounded-full hover:border-[#cc0000] hover:text-[#cc0000] transition-colors">
+                                    Privacy Policy <ArrowRight size={14} />
+                                </Link>
+                            </div>
+                        </section>
 
                         {/* ── 3. FAQs SECTION (Interactive Accordion) ── */}
-                        <div id="faq" className="bg-white rounded-[2.5rem] p-8 md:p-12 shadow-xl border border-gray-100">
+                        <div id="faq" className="bg-white rounded-[1.5rem] p-7 md:p-10 shadow-xl border border-black/5">
                             <span className="inline-block bg-[#cc0000]/10 text-[#cc0000] font-extrabold uppercase tracking-[0.2em] text-[10px] px-6 py-2 rounded-full mb-4">
                                 Frequently Asked Questions
                             </span>
-                            <h2 className="text-2xl md:text-4xl font-black uppercase tracking-tighter mb-8" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                            <h2 className="text-2xl md:text-4xl font-black uppercase mb-8" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
                                 Money-Saving FAQs
                             </h2>
                             
@@ -449,11 +653,9 @@ export default function SaveMoneyClient() {
                         </div>
 
                         {/* Call to action card */}
-                        <div className="bg-[#cc0000] rounded-[2.5rem] p-8 md:p-12 text-center text-white relative overflow-hidden shadow-2xl">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-black/10 rounded-full blur-3xl"></div>
-                            
+                        <div className="bg-[#cc0000] rounded-[1.5rem] p-8 md:p-12 text-center text-white relative overflow-hidden shadow-2xl">
                             <div className="relative z-10 space-y-6">
-                                <h3 className="text-2xl md:text-4xl font-black uppercase tracking-tight" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                                <h3 className="text-2xl md:text-4xl font-black uppercase" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
                                     Ready to Order and Save?
                                 </h3>
                                 <p className="text-white/80 font-bold max-w-xl mx-auto text-sm md:text-base">

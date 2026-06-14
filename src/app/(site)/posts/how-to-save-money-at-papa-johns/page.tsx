@@ -1,6 +1,5 @@
 import { Metadata } from 'next';
-import { generateArticleSEO } from '../../../lib/seo-config';
-import { generateArticleSchema, generateBreadcrumbSchema } from '../../../lib/seo/schema';
+import { generateBreadcrumbSchema } from '../../../lib/seo/schema';
 import { getTodayFormatted, getMonthYear } from '../../../../lib/utils/date';
 import SaveMoneyClient from './SaveMoneyClient';
 
@@ -9,6 +8,7 @@ const title = 'How to Save Money at Papa Johns (Without Hunting for Fake Codes)'
 const excerpt = "Let's be honest — most 'how to save money' articles list fake codes. Marcus Webb shares the real strategies to slash your Papa Johns bill every time.";
 const author = 'Marcus Webb';
 const date = '2026-06-01T00:00:00Z';
+const dateModified = '2026-06-14T00:00:00Z';
 const image = '/how-to-save-money-at-papa-johns.png';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -18,6 +18,26 @@ export async function generateMetadata(): Promise<Metadata> {
     return {
         title: `How to Save Money at Papa Johns (${month}) — Without Fake Codes`,
         description: `Slash your Papa Johns bill by up to 50% with real, tested strategies. Marcus Webb reveals carryout hacks, rewards tricks, and bundle deals. Updated ${today}.`,
+        keywords: [
+            'how to save money at Papa Johns',
+            'Papa Johns coupons',
+            'Papa Johns deals',
+            'Papa Rewards',
+            'Papa Johns carryout discount',
+            'Papa Johns promo codes'
+        ],
+        authors: [{ name: author, url: 'https://papajohns-menus.us/team' }],
+        robots: {
+            index: true,
+            follow: true,
+            googleBot: {
+                index: true,
+                follow: true,
+                'max-image-preview': 'large',
+                'max-snippet': -1,
+                'max-video-preview': -1,
+            },
+        },
         alternates: {
             canonical: `https://papajohns-menus.us/posts/${slug}`,
         },
@@ -34,6 +54,15 @@ export async function generateMetadata(): Promise<Metadata> {
                 }
             ],
             type: 'article',
+            publishedTime: date,
+            modifiedTime: dateModified,
+            authors: ['https://papajohns-menus.us/team'],
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title: `How to Save Money at Papa Johns (${month})`,
+            description: `Real tested money-saving strategies at Papa Johns. Forget fake promo code lists and learn the habits that actually lower the bill.`,
+            images: [`https://papajohns-menus.us${image}`],
         }
     };
 }
@@ -42,14 +71,41 @@ export default function Page() {
     const baseUrl = 'https://papajohns-menus.us';
     const postUrl = `${baseUrl}/posts/${slug}`;
 
-    const articleSchema = generateArticleSchema(
-        title,
-        excerpt,
-        `${baseUrl}${image}`,
-        date,
-        author,
-        postUrl
-    );
+    const articleSchema = {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": title,
+        "description": excerpt,
+        "image": [
+            `${baseUrl}${image}`
+        ],
+        "datePublished": date,
+        "dateModified": dateModified,
+        "author": {
+            "@type": "Person",
+            "name": author,
+            "url": `${baseUrl}/team`
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "PapaJohns-Menus.us",
+            "url": baseUrl,
+            "logo": {
+                "@type": "ImageObject",
+                "url": `${baseUrl}/favicon.png`
+            }
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": postUrl
+        },
+        "about": [
+            "Papa Johns coupons",
+            "Papa Johns deals",
+            "Papa Rewards",
+            "Pizza savings"
+        ]
+    };
 
     const breadcrumbSchema = generateBreadcrumbSchema([
         { name: "Home", url: baseUrl },
