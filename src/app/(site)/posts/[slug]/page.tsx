@@ -452,7 +452,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                 "Papa Johns family pizza",
                 "Papa Johns menu guide",
                 "Family pizza order",
-                "Pizza for picky eaters"
+                "Pizza for picky eaters",
+                "Papa Johns stuffed crust",
+                "Papa Johns sides"
             ]
         };
 
@@ -489,6 +491,38 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                     "acceptedAnswer": {
                         "@type": "Answer",
                         "text": "Yes — adding breadsticks or cheesesticks to a larger family order can help stretch the meal further, often working out more cost-effective per person than ordering an additional pizza."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How many large Papa Johns pizzas do I need for a family of four?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "For two adults and two younger kids, one large pizza plus a side can work. For older kids, teenagers, or anyone who wants leftovers, two large pizzas is the safer family order."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What Papa Johns pizza is best for kids?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Cheese, pepperoni, or a simple build-your-own pizza is usually best for kids because it avoids surprise toppings. If your kids are flexible, The Works can be paired with a plain pizza for balance."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Is The Works good for families?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "The Works is good for mixed family appetites because it has meat and vegetables on one pizza. It is less ideal for very picky eaters, so pairing it with a plain cheese or pepperoni pizza is usually smarter."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Is it cheaper to order another pizza or add sides?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "For many family orders, adding breadsticks or cheesesticks is cheaper than ordering another full pizza. If you need a full second meal or leftovers, another pizza may still be the better value."
                     }
                 }
             ]
