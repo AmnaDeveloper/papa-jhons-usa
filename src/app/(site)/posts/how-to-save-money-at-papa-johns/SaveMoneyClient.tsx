@@ -90,6 +90,16 @@ export default function SaveMoneyClient() {
         { label: "Official Papa Johns Deals", href: "https://www.papajohns.com/deals/" },
         { label: "Official Papa Rewards", href: "https://www.papajohns.com/rewards/" },
         { label: "Official Nutrition Info", href: "https://www.papajohns.com/nutrition/" },
+        { label: "Official Papa Johns Home", href: "https://www.papajohns.com/" },
+    ];
+
+    const relatedGuides = [
+        { label: "Papa Johns Coupons", href: "/coupons", text: "Check active coupon and deal pages before checkout." },
+        { label: "Papa Rewards Guide", href: "/papa-johns-rewards", text: "Learn how Papa Dough and member rewards work." },
+        { label: "Menu Prices Guide", href: "/posts/papa-johns-menu-prices-guide", text: "Compare current menu prices before choosing a bundle." },
+        { label: "Free Delivery Codes", href: "/posts/papa-johns-free-delivery", text: "See what to know before chasing delivery-code lists." },
+        { label: "Nutrition Guide", href: "/posts/papa-johns-nutrition-guide", text: "Check calories and allergens before ordering." },
+        { label: "Store Locator", href: "/store-locator", text: "Find nearby stores when carryout is the cheaper option." },
     ];
 
     const toggleFaq = (idx: number) => {
@@ -345,19 +355,19 @@ export default function SaveMoneyClient() {
                                 <div className="bg-[#f7f4ee] rounded-2xl p-5 border border-black/5">
                                     <p className="text-sm font-black text-[#143414] uppercase mb-2">1. Start With Carryout</p>
                                     <p className="text-sm text-gray-600 font-bold leading-relaxed">
-                                        Compare carryout first because it can remove delivery fees and often unlock lower pizza pricing.
+                                        Compare carryout first because it can remove delivery fees and often unlock lower pizza pricing. If you are checking nearby options, use our <Link href="/store-locator" className="text-[#cc0000] underline font-black">Papa Johns store locator</Link>.
                                     </p>
                                 </div>
                                 <div className="bg-[#f7f4ee] rounded-2xl p-5 border border-black/5">
                                     <p className="text-sm font-black text-[#143414] uppercase mb-2">2. Check Deals Before Cart</p>
                                     <p className="text-sm text-gray-600 font-bold leading-relaxed">
-                                        The app&apos;s Deals section can be cheaper than building the same pizza item by item.
+                                        The app&apos;s Deals section can be cheaper than building the same pizza item by item. You can also compare our <Link href="/coupons" className="text-[#cc0000] underline font-black">Papa Johns coupons</Link> page before checkout.
                                     </p>
                                 </div>
                                 <div className="bg-[#f7f4ee] rounded-2xl p-5 border border-black/5">
                                     <p className="text-sm font-black text-[#143414] uppercase mb-2">3. Use Papa Rewards</p>
                                     <p className="text-sm text-gray-600 font-bold leading-relaxed">
-                                        Sign in before checkout so any eligible Papa Dough or member-only offer is visible.
+                                        Sign in before checkout so any eligible Papa Dough or member-only offer is visible. Our <Link href="/papa-johns-rewards" className="text-[#cc0000] underline font-black">Papa Rewards guide</Link> explains how points and Papa Dough work.
                                     </p>
                                 </div>
                             </div>
@@ -386,7 +396,7 @@ export default function SaveMoneyClient() {
                             </div>
 
                             <p className="text-gray-600 font-bold leading-relaxed">
-                                This is an example calculation based on the pricing pattern discussed in this guide. Papa Johns prices, delivery fees, taxes, and promotions vary by store, city, and checkout time, so always confirm the final total before placing your order.
+                                This is an example calculation based on the pricing pattern discussed in this guide. Papa Johns prices, delivery fees, taxes, and promotions vary by store, city, and checkout time, so compare the final cart total with our <Link href="/posts/papa-johns-menu-prices-guide" className="text-[#cc0000] underline font-black">Papa Johns menu prices guide</Link> before placing your order.
                             </p>
 
                             <div className="overflow-x-auto rounded-2xl border border-black/10">
@@ -444,7 +454,7 @@ export default function SaveMoneyClient() {
                                 ))}
                             </ol>
 
-                            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                                 {officialResources.map((resource) => (
                                     <a
                                         key={resource.href}
@@ -456,6 +466,40 @@ export default function SaveMoneyClient() {
                                         {resource.label}
                                         <ExternalLink size={15} />
                                     </a>
+                                ))}
+                            </div>
+                        </section>
+
+                        <section className="bg-white rounded-[1.5rem] p-7 md:p-8 shadow-sm border border-black/5 space-y-6">
+                            <div className="flex items-start gap-4">
+                                <div className="w-10 h-10 rounded-full bg-[#cc0000] text-white font-black flex items-center justify-center shadow shrink-0">
+                                    <ArrowRight size={20} />
+                                </div>
+                                <div>
+                                    <span className="text-[#cc0000] text-xs font-black uppercase">Related internal guides</span>
+                                    <h2 className="text-2xl md:text-3xl font-black uppercase leading-tight mt-1" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                                        Helpful Pages to Check Before Ordering
+                                    </h2>
+                                </div>
+                            </div>
+
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                {relatedGuides.map((guide) => (
+                                    <Link
+                                        key={guide.href}
+                                        href={guide.href}
+                                        className="group rounded-2xl border border-black/10 bg-[#f7f4ee] p-5 hover:border-[#cc0000] hover:bg-white transition-colors"
+                                    >
+                                        <div className="flex items-center justify-between gap-3 mb-2">
+                                            <h3 className="text-sm font-black uppercase text-[#143414] group-hover:text-[#cc0000] transition-colors">
+                                                {guide.label}
+                                            </h3>
+                                            <ArrowRight size={16} className="text-[#cc0000]" />
+                                        </div>
+                                        <p className="text-sm text-gray-600 font-bold leading-relaxed">
+                                            {guide.text}
+                                        </p>
+                                    </Link>
                                 ))}
                             </div>
                         </section>
@@ -473,7 +517,7 @@ export default function SaveMoneyClient() {
                             
                             <div className="pl-0 md:pl-14 space-y-6 text-gray-600 font-bold text-base leading-relaxed">
                                 <p>
-                                    Here's the thing nobody really talks about enough: if you choose carryout instead of delivery, Papa Johns automatically knocks the price down on regular menu-priced pizzas. No code, no app gymnastics, nothing to type in. You just pick &quot;carryout&quot; when you're checking out and the discount shows up on its own.
+                                    Here's the thing nobody really talks about enough: if you choose carryout instead of delivery, Papa Johns automatically knocks the price down on regular menu-priced pizzas. No code, no app gymnastics, nothing to type in. You just pick &quot;carryout&quot; when you're checking out and the discount shows up on its own. For more location planning, use our <Link href="/store-locator" className="text-[#cc0000] underline font-black">store locator</Link> before you order.
                                 </p>
                                 
                                 <div className="bg-red-50 border-l-4 border-[#cc0000] p-6 rounded-r-2xl my-6">
@@ -507,7 +551,7 @@ export default function SaveMoneyClient() {
                                     This one drives me a little crazy because it's such an easy fix. A lot of people order their pizza, then go back later (or the next day) and order breadsticks or cheesesticks separately because they forgot, or because they wanted to &quot;keep the order simple.&quot;
                                 </p>
                                 <p>
-                                    Don't do that. Every time you place a separate order, you're paying a separate delivery fee — and depending on where you live, that's anywhere from four to six bucks just to get a side dish to your door. If you know you want breadsticks, add them to the same cart. It sounds obvious when I say it out loud, but I've watched people in my own family do this exact thing more times than I can count.
+                                    Don't do that. Every time you place a separate order, you're paying a separate delivery fee — and depending on where you live, that's anywhere from four to six bucks just to get a side dish to your door. If you know you want breadsticks, add them to the same cart. You can compare side options in our <Link href="/posts/sides" className="text-[#cc0000] underline font-black">Papa Johns sides guide</Link>. It sounds obvious when I say it out loud, but I've watched people in my own family do this exact thing more times than I can count.
                                 </p>
                             </div>
                         </section>
@@ -528,7 +572,7 @@ export default function SaveMoneyClient() {
                                     I'll admit, loyalty programs usually feel like a waste of time. You sign up, you forget about it, six months later you delete the app because it's just sitting there taking up space on your phone.
                                 </p>
                                 <p>
-                                    Papa Rewards is a little different, mainly because there's zero cost to join and the points actually add up faster than you'd expect. Every dollar you spend earns points (Papa Johns calls this &quot;Papa Dough&quot;), and once you hit a certain threshold, you can redeem it for free pizza, sides, or desserts. If you're already ordering Papa Johns once or twice a month — and let's face it, if you're reading this, you probably are — you're leaving free food on the table by not signing up.
+                                    Papa Rewards is a little different, mainly because there's zero cost to join and the points actually add up faster than you'd expect. Every dollar you spend earns points (Papa Johns calls this &quot;Papa Dough&quot;), and once you hit a certain threshold, you can redeem it for free pizza, sides, or desserts. If you're already ordering Papa Johns once or twice a month — and let's face it, if you're reading this, you probably are — you're leaving free food on the table by not signing up. You can also read our full <Link href="/papa-johns-rewards" className="text-[#cc0000] underline font-black">Papa Rewards breakdown</Link>.
                                 </p>
                                 <p>
                                     There's also a birthday perk. It's not life-changing, but hey, free dessert on your birthday is free dessert on your birthday.
@@ -552,7 +596,7 @@ export default function SaveMoneyClient() {
                                     This is a distinction that trips a lot of people up. Promo codes come and go constantly, and honestly, tracking every single one is a losing battle — they're often regional, they expire fast, and what works in one city might not work in another.
                                 </p>
                                 <p>
-                                    But Papa Johns also runs bundle-style deals that show up directly in the app or on the website — things like a large pizza plus a side and a drink for one combined price. These tend to be more stable than individual promo codes because they're built into the ordering flow itself, not something you have to remember to type in. Before you build your order from scratch, it's worth scrolling through the &quot;Deals&quot; section in the app first. Sometimes the bundle ends up cheaper than building the same order item-by-item, even without any code at all.
+                                    But Papa Johns also runs bundle-style deals that show up directly in the app or on the website — things like a large pizza plus a side and a drink for one combined price. These tend to be more stable than individual promo codes because they're built into the ordering flow itself, not something you have to remember to type in. Before you build your order from scratch, it's worth scrolling through the &quot;Deals&quot; section in the app first, then checking our <Link href="/coupons" className="text-[#cc0000] underline font-black">active coupons page</Link>. Sometimes the bundle ends up cheaper than building the same order item-by-item, even without any code at all.
                                 </p>
                             </div>
                         </section>
@@ -570,7 +614,7 @@ export default function SaveMoneyClient() {
 
                             <div className="pl-0 md:pl-14 space-y-6 text-gray-600 font-bold text-base leading-relaxed">
                                 <p>
-                                    This won't save you money directly, but it indirectly helps — especially with delivery. Ordering during peak dinner rush (think Friday and Saturday evenings between 6 and 8 PM) often means longer wait times, and in my experience, that's also when delivery fees tend to be on the higher end due to demand-based pricing that some delivery platforms use.
+                                    This won't save you money directly, but it indirectly helps — especially with delivery. Ordering during peak dinner rush (think Friday and Saturday evenings between 6 and 8 PM) often means longer wait times, and in my experience, that's also when delivery fees tend to be on the higher end due to demand-based pricing that some delivery platforms use. If timing matters, our <Link href="/hours" className="text-[#cc0000] underline font-black">Papa Johns hours guide</Link> can help you plan earlier pickup.
                                 </p>
                                 <p>
                                     If your schedule is flexible at all, ordering a little earlier — say 4 or 5 PM — can mean a smoother experience and sometimes a slightly lower delivery cost, depending on your area.
@@ -585,7 +629,7 @@ export default function SaveMoneyClient() {
                             </h2>
                             <div className="space-y-6 text-white/80 font-bold text-base leading-relaxed">
                                 <p>
-                                    If I had to boil this down to one piece of advice, it'd be this: <strong>carryout plus Papa Rewards is the combination that actually moves the needle.</strong> Everything else — codes, bundles, timing — is more of a bonus layer on top.
+                                    If I had to boil this down to one piece of advice, it'd be this: <strong>carryout plus Papa Rewards is the combination that actually moves the needle.</strong> Everything else — codes, bundles, timing — is more of a bonus layer on top. For a broader price check, see our <Link href="/posts/papa-johns-menu-prices-guide" className="text-[#CCEE18] underline font-black">complete Papa Johns menu prices guide</Link>.
                                 </p>
                                 <p>
                                     I'll keep updating this guide as I come across new patterns worth sharing, but the core advice above has held up consistently every time I've tested it. If you've found something that's worked well for you, feel free to reach out — I genuinely read every email that comes through our contact page, and reader tips are honestly one of the best sources for this kind of content.

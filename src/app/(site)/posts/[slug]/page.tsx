@@ -10,25 +10,84 @@ import { Heart, Share2, Info, Navigation, ArrowRight, Star } from 'lucide-react'
 import { getTodayFormatted, getMonthYear } from '../../../../lib/utils/date';
 import LastUpdated from '../../../components/LastUpdated';
 import AuthorBio from '../../../components/AuthorBio';
+import SaveMoneyClient from '../how-to-save-money-at-papa-johns/SaveMoneyClient';
+
+const saveMoneySlug = 'how-to-save-money-at-papa-johns';
+const saveMoneyTitle = 'How to Save Money at Papa Johns (Without Hunting for Fake Codes)';
+const saveMoneyExcerpt = "Let's be honest — most 'how to save money' articles list fake codes. Marcus Webb shares the real strategies to slash your Papa Johns bill every time.";
+const saveMoneyAuthor = 'Marcus Webb';
+const saveMoneyDate = '2026-06-01T00:00:00Z';
+const saveMoneyDateModified = '2026-06-14T00:00:00Z';
+const saveMoneyImage = '/how-to-save-money-at-papa-johns.png';
 
 // Generate static params for all posts
 export async function generateStaticParams() {
-    return posts
-        .filter((post) => post.slug !== 'how-to-save-money-at-papa-johns')
-        .map((post) => ({
-            slug: post.slug,
-        }));
+    return posts.map((post) => ({
+        slug: post.slug,
+    }));
 }
 
 // Generate SEO metadata dynamically for the post
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
     const resolvedParams = await params;
-    if (resolvedParams.slug === 'how-to-save-money-at-papa-johns') return notFound();
     const post = posts.find((p) => p.slug === resolvedParams.slug);
     if (!post) return notFound();
 
     const date = getTodayFormatted();
     const month = getMonthYear();
+
+    if (post.slug === saveMoneySlug) {
+        return {
+            title: `How to Save Money at Papa Johns (${month}) — Without Fake Codes`,
+            description: `Slash your Papa Johns bill by up to 50% with real, tested strategies. Marcus Webb reveals carryout hacks, rewards tricks, and bundle deals. Updated ${date}.`,
+            keywords: [
+                'how to save money at Papa Johns',
+                'Papa Johns coupons',
+                'Papa Johns deals',
+                'Papa Rewards',
+                'Papa Johns carryout discount',
+                'Papa Johns promo codes'
+            ],
+            authors: [{ name: saveMoneyAuthor, url: 'https://papajohns-menus.us/team' }],
+            robots: {
+                index: true,
+                follow: true,
+                googleBot: {
+                    index: true,
+                    follow: true,
+                    'max-image-preview': 'large',
+                    'max-snippet': -1,
+                    'max-video-preview': -1,
+                },
+            },
+            alternates: {
+                canonical: `https://papajohns-menus.us/posts/${saveMoneySlug}`,
+            },
+            openGraph: {
+                title: `How to Save Money at Papa Johns (${month})`,
+                description: `Real tested money-saving strategies at Papa Johns. Forget fake promo codes. Carryout discounts, rewards secrets & bundle hacks.`,
+                url: `https://papajohns-menus.us/posts/${saveMoneySlug}`,
+                images: [
+                    {
+                        url: `https://papajohns-menus.us${saveMoneyImage}`,
+                        width: 1200,
+                        height: 1200,
+                        alt: saveMoneyTitle
+                    }
+                ],
+                type: 'article',
+                publishedTime: saveMoneyDate,
+                modifiedTime: saveMoneyDateModified,
+                authors: ['https://papajohns-menus.us/team'],
+            },
+            twitter: {
+                card: 'summary_large_image',
+                title: `How to Save Money at Papa Johns (${month})`,
+                description: `Real tested money-saving strategies at Papa Johns. Forget fake promo code lists and learn the habits that actually lower the bill.`,
+                images: [`https://papajohns-menus.us${saveMoneyImage}`],
+            }
+        };
+    }
 
     let meta: any = {};
 
@@ -201,12 +260,105 @@ export const revalidate = 86400; // 24 hours
 
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
     const resolvedParams = await params;
-    if (resolvedParams.slug === 'how-to-save-money-at-papa-johns') return notFound();
     const post = posts.find((p) => p.slug === resolvedParams.slug);
     if (!post) return notFound();
 
     const baseUrl = 'https://papajohns-menus.us';
     const postUrl = `${baseUrl}/posts/${post.slug}`;
+
+    if (post.slug === saveMoneySlug) {
+        const articleSchema = {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": saveMoneyTitle,
+            "description": saveMoneyExcerpt,
+            "image": [
+                `${baseUrl}${saveMoneyImage}`
+            ],
+            "datePublished": saveMoneyDate,
+            "dateModified": saveMoneyDateModified,
+            "author": {
+                "@type": "Person",
+                "name": saveMoneyAuthor,
+                "url": `${baseUrl}/team`
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "PapaJohns-Menus.us",
+                "url": baseUrl,
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": `${baseUrl}/favicon.png`
+                }
+            },
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": postUrl
+            },
+            "about": [
+                "Papa Johns coupons",
+                "Papa Johns deals",
+                "Papa Rewards",
+                "Pizza savings"
+            ]
+        };
+
+        const breadcrumbSchema = generateBreadcrumbSchema([
+            { name: "Home", url: baseUrl },
+            { name: "Blog", url: `${baseUrl}/posts` },
+            { name: "Coupons & Deals", url: `${baseUrl}/posts` },
+            { name: saveMoneyTitle, url: postUrl }
+        ]);
+
+        const faqSchema = {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Does Papa Johns always offer a carryout discount?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "In most locations, yes — the carryout discount on regular menu-priced pizzas is a standing offer, not a limited-time promo. That said, availability can vary slightly by franchise location, so it's worth checking at checkout before you finalize your order."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Is Papa Rewards free to join?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, there's no cost to sign up. You earn points based on how much you spend, and those points can be redeemed for free menu items down the line."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Do bundle deals change often?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, bundle offers in the app rotate fairly regularly. Checking the Deals section before placing your order takes about ten seconds and can occasionally turn up a better deal than you'd get building the order manually."
+                    }
+                }
+            ]
+        };
+
+        return (
+            <>
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+                />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+                />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+                />
+                <SaveMoneyClient />
+            </>
+        );
+    }
 
     // Format Date
     const formattedDate = new Date(post.date).toLocaleDateString('en-US', {
