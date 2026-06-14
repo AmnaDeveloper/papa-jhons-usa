@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import posts from "../data/posts.json";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Calculator, Percent } from "lucide-react";
 import HeroSection from "../components/HeroSection";
 import dynamic from "next/dynamic";
 import DynamicSections from "../components/DynamicSections";
@@ -208,8 +208,62 @@ export default function Home() {
                         </div>
                     </div>
 
+                    {/* Featured Money-Saving Guide Card */}
+                    <div className="max-w-4xl mx-auto mt-10 mb-16 bg-white border border-gray-100 rounded-[2.5rem] p-6 md:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 relative overflow-hidden group">
+                        <div className="absolute top-0 right-0 w-48 h-48 bg-[#CCEE18]/10 rounded-full -mr-20 -mt-20 pointer-events-none"></div>
+                        <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#cc0000]/5 rounded-full -ml-20 -mb-20 pointer-events-none"></div>
+                        
+                        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center relative z-10">
+                            {/* Image */}
+                            <div className="md:col-span-5 aspect-[4/3] w-full rounded-2xl overflow-hidden relative shadow-md bg-gray-50 border border-gray-100">
+                                <div className="absolute top-3 left-3 z-10 bg-[#cc0000] text-white text-[9px] font-black uppercase tracking-widest px-4 py-1.5 rounded-full shadow">
+                                    Featured Guide
+                                </div>
+                                <Image
+                                    src="/how-to-save-money-at-papa-johns.png"
+                                    alt="How to Save Money at Papa Johns"
+                                    fill
+                                    sizes="(max-width: 768px) 100vw, 30vw"
+                                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                                />
+                            </div>
+                            
+                            {/* Text Details */}
+                            <div className="md:col-span-7 space-y-4">
+                                <div className="flex flex-wrap gap-2 text-[10px] font-black uppercase tracking-widest text-[#1A3D17]">
+                                    <span className="bg-[#CCEE18]/30 px-3 py-1 rounded-full flex items-center gap-1">
+                                        <Percent size={12} /> Coupons &amp; Deals
+                                    </span>
+                                    <span className="bg-[#1A3D17]/10 px-3 py-1 rounded-full flex items-center gap-1">
+                                        <Calculator size={12} /> Interactive Calculator
+                                    </span>
+                                </div>
+                                
+                                <h3 className="text-xl md:text-2xl font-black text-[#1A3D17] uppercase tracking-tight leading-tight group-hover:text-[#cc0000] transition-colors" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                                    How to Save Money at Papa Johns (Without Hunting for Fake Codes)
+                                </h3>
+                                
+                                <p className="text-gray-500 font-bold text-sm leading-relaxed">
+                                    Let's be honest — most online coupon lists are full of expired codes. Deals Researcher Marcus Webb shares the real, tested habits that cut your bill in half. Try our live savings calculator inside!
+                                </p>
+                                
+                                <div className="flex items-center justify-between pt-2">
+                                    <span className="text-[10px] text-gray-400 font-black uppercase tracking-widest">
+                                        By Marcus Webb • Updated June 2026
+                                    </span>
+                                    <Link 
+                                        href="/posts/how-to-save-money-at-papa-johns" 
+                                        className="inline-flex items-center gap-2 bg-[#1A3D17] hover:bg-[#cc0000] text-white font-black py-3 px-6 rounded-full transition-colors uppercase tracking-wider text-[10px] shadow active:scale-95"
+                                    >
+                                        Read Guide <ArrowRight size={12} />
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
-                        {posts.slice(0, 6).map((post) => (
+                        {posts.filter(p => p.slug !== 'how-to-save-money-at-papa-johns').slice(0, 6).map((post) => (
                             <Link href={post.slug === 'best-pizza-delivery-near-me' ? `/${post.slug}` : `/posts/${post.slug}`} key={post.id} className="bg-white rounded-[2rem] p-6 shadow-md hover:shadow-2xl hover:border-[#CCEE18] border-2 border-transparent transition-all duration-300 group flex flex-col h-full relative overflow-hidden">
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-[#CCEE18] rounded-bl-full -mr-16 -mt-16 opacity-0 group-hover:opacity-10 transition-opacity"></div>
                                 

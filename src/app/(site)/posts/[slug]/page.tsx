@@ -13,14 +13,17 @@ import AuthorBio from '../../../components/AuthorBio';
 
 // Generate static params for all posts
 export async function generateStaticParams() {
-    return posts.map((post) => ({
-        slug: post.slug,
-    }));
+    return posts
+        .filter((post) => post.slug !== 'how-to-save-money-at-papa-johns')
+        .map((post) => ({
+            slug: post.slug,
+        }));
 }
 
 // Generate SEO metadata dynamically for the post
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
     const resolvedParams = await params;
+    if (resolvedParams.slug === 'how-to-save-money-at-papa-johns') return notFound();
     const post = posts.find((p) => p.slug === resolvedParams.slug);
     if (!post) return notFound();
 
@@ -198,6 +201,7 @@ export const revalidate = 86400; // 24 hours
 
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
     const resolvedParams = await params;
+    if (resolvedParams.slug === 'how-to-save-money-at-papa-johns') return notFound();
     const post = posts.find((p) => p.slug === resolvedParams.slug);
     if (!post) return notFound();
 
