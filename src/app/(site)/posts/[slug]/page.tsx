@@ -592,6 +592,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         }))
     } : null;
 
+    const isGlutenFreeGuide = post.slug === 'papa-johns-gluten-free-guide';
+
     return (
         <>
             <script
@@ -632,9 +634,13 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                         </p>
 
                         <div className="flex flex-wrap items-center justify-center gap-3 mb-10 text-[10px] font-black uppercase tracking-widest text-[#1A3D17]">
-                            <span className="bg-[#CCEE18] px-4 py-1.5 rounded-full shadow-lg">🔥 Popular Choice</span>
+                            <span className="bg-[#CCEE18] px-4 py-1.5 rounded-full shadow-lg">
+                                {isGlutenFreeGuide ? '⚠️ Cross-Contact Warning' : '🔥 Popular Choice'}
+                            </span>
                             <span className="bg-white px-4 py-1.5 rounded-full shadow-lg">⚡ {post.calories || '670 Calories'}</span>
-                            <span className="bg-[#cc0000] text-white px-4 py-1.5 rounded-full shadow-lg">⭐ Top Rated</span>
+                            <span className="bg-[#cc0000] text-white px-4 py-1.5 rounded-full shadow-lg">
+                                {isGlutenFreeGuide ? 'Not for Celiac Disease' : '⭐ Top Rated'}
+                            </span>
                         </div>
 
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -663,10 +669,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                             {/* Product Image Card */}
                             <div className="bg-white rounded-[2rem] p-3 shadow-2xl relative border border-gray-200 overflow-hidden group">
                                 <div className="absolute top-5 left-5 z-10 bg-[#CCEE18] text-[#1A3D17] text-[10px] font-black uppercase tracking-widest px-4 py-2 rounded-full shadow-lg">
-                                    ⭐ Popular
+                                    {isGlutenFreeGuide ? 'Safety Guide' : '⭐ Popular'}
                                 </div>
                                 <div className="absolute top-5 right-5 z-10 bg-[#cc0000] text-white text-[10px] font-black uppercase tracking-widest px-4 py-2 rounded-full shadow-lg">
-                                    New
+                                    {isGlutenFreeGuide ? 'June 2026' : 'New'}
                                 </div>
                                 <div className="relative w-full h-auto rounded-3xl overflow-hidden shadow-inner border border-gray-100 text-center bg-gray-50">
                                     <img 
@@ -691,7 +697,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                             <div className="bg-[#1A3D17] text-white rounded-[2rem] p-8 shadow-xl relative overflow-hidden">
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-[#CCEE18]/10 rounded-full -mr-16 -mt-16"></div>
                                 <h3 className="text-xl font-black uppercase tracking-tighter mb-8 border-b border-white/10 pb-4 flex items-center gap-3">
-                                    <Info size={18} className="text-[#CCEE18]" /> Nutrition Stats
+                                    <Info size={18} className="text-[#CCEE18]" /> {isGlutenFreeGuide ? 'Safety Snapshot' : 'Nutrition Stats'}
                                 </h3>
                                 <div className="grid grid-cols-2 gap-y-8 gap-x-6">
                                     <div>
@@ -707,8 +713,14 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                                         <span className="text-sm font-black text-white/90">Per Portion</span>
                                     </div>
                                     <div>
-                                        <span className="text-white/40 uppercase text-[9px] font-black tracking-[0.2em] block mb-1">User Rating</span>
-                                        <div className="flex text-[#CCEE18] text-sm"><Star size={12} fill="currentColor" /><Star size={12} fill="currentColor" /><Star size={12} fill="currentColor" /><Star size={12} fill="currentColor" /><Star size={12} fill="currentColor" /></div>
+                                        <span className="text-white/40 uppercase text-[9px] font-black tracking-[0.2em] block mb-1">
+                                            {isGlutenFreeGuide ? 'Celiac Fit' : 'User Rating'}
+                                        </span>
+                                        {isGlutenFreeGuide ? (
+                                            <span className="text-sm font-black text-white/90">Not Recommended</span>
+                                        ) : (
+                                            <div className="flex text-[#CCEE18] text-sm"><Star size={12} fill="currentColor" /><Star size={12} fill="currentColor" /><Star size={12} fill="currentColor" /><Star size={12} fill="currentColor" /><Star size={12} fill="currentColor" /></div>
+                                        )}
                                     </div>
                                 </div>
                             </div>
@@ -719,9 +731,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                                     <Navigation size={18} className="text-[#cc0000]" /> Related Links
                                 </h3>
                                 <ul className="space-y-4">
-                                    <li><Link href="/store-locator" className="flex items-center justify-between group text-sm font-black text-gray-700 hover:text-[#cc0000] transition-colors uppercase italic"><span>Find Store</span> <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" /></Link></li>
-                                    <li><Link href="/coupons" className="flex items-center justify-between group text-sm font-black text-gray-700 hover:text-[#cc0000] transition-colors uppercase italic"><span>Best Deals</span> <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" /></Link></li>
-                                    <li><Link href="/hours" className="flex items-center justify-between group text-sm font-black text-gray-700 hover:text-[#cc0000] transition-colors uppercase italic"><span>Store Hours</span> <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" /></Link></li>
+                                    <li><Link href={isGlutenFreeGuide ? '/posts/papa-johns-nutrition-guide' : '/store-locator'} className="flex items-center justify-between group text-sm font-black text-gray-700 hover:text-[#cc0000] transition-colors uppercase italic"><span>{isGlutenFreeGuide ? 'Nutrition Guide' : 'Find Store'}</span> <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" /></Link></li>
+                                    <li><Link href={isGlutenFreeGuide ? '/menus-prices/cheese-pizza' : '/coupons'} className="flex items-center justify-between group text-sm font-black text-gray-700 hover:text-[#cc0000] transition-colors uppercase italic"><span>{isGlutenFreeGuide ? 'Cheese Pizza' : 'Best Deals'}</span> <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" /></Link></li>
+                                    <li><Link href="/store-locator" className="flex items-center justify-between group text-sm font-black text-gray-700 hover:text-[#cc0000] transition-colors uppercase italic"><span>{isGlutenFreeGuide ? 'Call Local Store' : 'Store Hours'}</span> <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" /></Link></li>
                                 </ul>
                             </div>
                         </div>
