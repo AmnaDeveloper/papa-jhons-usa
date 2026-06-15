@@ -4,7 +4,6 @@ import { generateArticleSEO } from '../../lib/seo-config';
 import { generateArticleSchema, generateBreadcrumbSchema } from '../../lib/seo/schema';
 import Link from 'next/link';
 import exactFaqSchemas from '../../data/faq-schemas.json';
-import ContactFeedbackSection from '../../components/ContactFeedbackSection';
 import { Heart, Share2, Info, Navigation, ArrowRight, Star } from 'lucide-react';
 import { getTodayFormatted, getMonthYear } from '../../../lib/utils/date';
 import LastUpdated from '../../components/LastUpdated';
@@ -480,11 +479,6 @@ export default async function BestPizzaDeliveryPage() {
                             View All Important Guides <ArrowRight size={14} />
                         </Link>
                     </div>
-                </div>
-
-                {/* ── 7. CUSTOMER REVIEWS/FEEDBACK ── */}
-                <div className="max-w-[1000px] mx-auto px-4 pb-20 pt-10">
-                    <ContactFeedbackSection />
                 </div>
             </div>
             

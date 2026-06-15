@@ -2,7 +2,6 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import menuItems from '../../../data/menu-items.json';
-import ContactFeedbackSection from '../../../components/ContactFeedbackSection';
 import { Heart, ArrowRight, Info } from 'lucide-react';
 import { getTodayFormatted, getMonthYear } from '../../../../lib/utils/date';
 
@@ -287,8 +286,6 @@ export default async function MenuItemBlogPage({ params }: Props) {
                     </div>
                 </div>
             </section>
-
-            <div className="max-w-[1000px] mx-auto px-4 pb-20"><ContactFeedbackSection /></div>
         </div>
     );
 }

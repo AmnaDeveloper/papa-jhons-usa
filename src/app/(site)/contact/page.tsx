@@ -2,7 +2,6 @@ import { Metadata } from 'next';
 import { generatePageSEO } from '../../lib/seo-config';
 import InternalLinks from '../../components/seo/InternalLinks';
 import ContactForm from '../../components/ContactForm';
-import ContactFeedbackSection from '../../components/ContactFeedbackSection';
 import Link from 'next/link';
 
 export const metadata: Metadata = generatePageSEO(
@@ -170,14 +169,9 @@ export default function ContactPage() {
                         </div>
                     </div>
 
-                    {/* RIGHT: Contact Form & Feedback Feed */}
+                    {/* RIGHT: Contact Form */}
                     <div className="lg:col-span-8 space-y-16">
                         <ContactForm />
-
-                        {/* ── REAL-TIME COMMENTS & FEEDBACK SECTION ── */}
-                        <div className="bg-white rounded-[3rem] p-4 md:p-8 shadow-2xl border-2 border-gray-100">
-                            <ContactFeedbackSection />
-                        </div>
                     </div>
                 </div>
 
