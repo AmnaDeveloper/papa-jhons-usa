@@ -4,6 +4,7 @@ import Link from 'next/link';
 import menuItems from '../../data/menu-items.json';
 import { Heart, ArrowRight, Info, Coffee, Droplets, Zap, Sparkles } from 'lucide-react';
 import { getTodayFormatted, getMonthYear } from '../../../lib/utils/date';
+import PageComments from '../../components/PageComments';
 
 export async function generateMetadata(): Promise<Metadata> {
     const item = menuItems.find((i) => i.slug === 'drinks');
@@ -304,6 +305,7 @@ export default async function DrinksPage() {
                     </div>
                 </div>
             </section>
+            <PageComments pagePath="/drinks" />
         </div>
     );
 }

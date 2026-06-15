@@ -11,6 +11,7 @@ import LastUpdated from '../../../components/LastUpdated';
 import AuthorBio from '../../../components/AuthorBio';
 import SaveMoneyClient from '../how-to-save-money-at-papa-johns/SaveMoneyClient';
 import FamilyPizzaClient from '../best-papa-johns-pizzas-for-families/FamilyPizzaClient';
+import PageComments from '../../../components/PageComments';
 
 const saveMoneySlug = 'how-to-save-money-at-papa-johns';
 const saveMoneyTitle = 'How to Save Money at Papa Johns (Without Hunting for Fake Codes)';
@@ -1044,6 +1045,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                         </Link>
                     </div>
                 </div>
+                <PageComments pagePath={`/posts/${post.slug}`} />
             </div>
             
         </>

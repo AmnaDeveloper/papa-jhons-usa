@@ -4,6 +4,7 @@ import Link from 'next/link';
 import menuItems from '../../../data/menu-items.json';
 import { Heart, ArrowRight, Info } from 'lucide-react';
 import { getTodayFormatted, getMonthYear } from '../../../../lib/utils/date';
+import PageComments from '../../../components/PageComments';
 
 type Props = {
     params: Promise<{ slug: string }>;
@@ -286,6 +287,7 @@ export default async function MenuItemBlogPage({ params }: Props) {
                     </div>
                 </div>
             </section>
+            <PageComments pagePath={`/menus-prices/${slug}`} />
         </div>
     );
 }

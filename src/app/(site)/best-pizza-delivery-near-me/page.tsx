@@ -7,6 +7,7 @@ import exactFaqSchemas from '../../data/faq-schemas.json';
 import { Heart, Share2, Info, Navigation, ArrowRight, Star } from 'lucide-react';
 import { getTodayFormatted, getMonthYear } from '../../../lib/utils/date';
 import LastUpdated from '../../components/LastUpdated';
+import PageComments from '../../components/PageComments';
 
 const SLUG = 'best-pizza-delivery-near-me';
 
@@ -480,6 +481,7 @@ export default async function BestPizzaDeliveryPage() {
                         </Link>
                     </div>
                 </div>
+                <PageComments pagePath="/best-pizza-delivery-near-me" />
             </div>
             
         </>
