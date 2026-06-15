@@ -112,7 +112,7 @@ export default function PageComments({ pagePath }: PageCommentsProps) {
                                 value={name}
                                 onChange={(event) => setName(event.target.value)}
                                 maxLength={60}
-                                className="w-full rounded-2xl bg-white border border-gray-200 px-4 py-3 text-sm font-bold outline-none focus:border-[#CCEE18]"
+                                className="w-full rounded-2xl bg-white border border-gray-200 px-4 py-3 text-sm font-bold text-[#1A3D17] placeholder:text-gray-400 caret-[#1A3D17] outline-none focus:border-[#CCEE18]"
                                 placeholder="Your name"
                             />
                         </div>
@@ -126,7 +126,7 @@ export default function PageComments({ pagePath }: PageCommentsProps) {
                                 onChange={(event) => setMessage(event.target.value)}
                                 maxLength={1000}
                                 rows={3}
-                                className="w-full rounded-2xl bg-white border border-gray-200 px-4 py-3 text-sm font-bold outline-none focus:border-[#CCEE18] resize-none"
+                                className="w-full rounded-2xl bg-white border border-gray-200 px-4 py-3 text-sm font-bold text-[#1A3D17] placeholder:text-gray-400 caret-[#1A3D17] outline-none focus:border-[#CCEE18] resize-none"
                                 placeholder="Write a helpful comment for readers..."
                             />
                         </div>
