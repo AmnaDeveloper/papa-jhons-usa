@@ -17,7 +17,12 @@ export function middleware(request: NextRequest) {
         return NextResponse.redirect(new URL("/best-pizza-delivery-near-me", request.url), 301);
     }
 
-    // 5. Handle CORS headers for /api/* routes
+    // 5. Redirect legacy drinks menu alias to the canonical drinks page
+    if (request.nextUrl.pathname === "/menus-prices/drinks") {
+        return NextResponse.redirect(new URL("/drinks", request.url), 301);
+    }
+
+    // 6. Handle CORS headers for /api/* routes
     if (request.nextUrl.pathname.startsWith("/api/")) {
         response.headers.set("Access-Control-Allow-Origin", "*");
         response.headers.set(

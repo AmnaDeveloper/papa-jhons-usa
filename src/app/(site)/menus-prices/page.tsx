@@ -44,6 +44,12 @@ const categoryMap: Record<string, string> = {
     "Papa Bowls": "Papa Bowls"
 };
 
+const getContentHref = (item: any) => {
+    if (item.type === 'post') return `/posts/${item.slug}`;
+    if (item.slug === 'drinks') return '/drinks';
+    return `/menus-prices/${item.slug}`;
+};
+
 export default function MenusAndPricesPage() {
     const month = getMonthYear();
 
@@ -235,7 +241,7 @@ export default function MenusAndPricesPage() {
                                 {unifiedContent.map((item: any) => (
                                     <Link 
                                         key={item.id} 
-                                        href={item.type === 'item' ? `/menus-prices/${item.slug}` : `/posts/${item.slug}`}
+                                        href={getContentHref(item)}
                                         className="bg-white rounded-3xl p-4 shadow-sm border border-gray-100 hover:border-[#CCEE18] hover:shadow-lg transition-all group flex flex-col relative overflow-hidden"
                                     >
                                         <div className="aspect-video w-full bg-[#fcfaf8] rounded-2xl mb-4 relative overflow-hidden flex items-center justify-center">

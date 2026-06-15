@@ -99,6 +99,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // ==================== BLOG / POSTS ====================
     {
+      url: `${baseUrl}/posts/papa-johns-gluten-free-guide`,
+      lastModified: '2026-06-15T00:00:00.000Z',
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/posts/papa-johns-vs-pizza-hut`,
       lastModified: '2026-05-15T00:00:00.000Z',
       changeFrequency: 'daily',

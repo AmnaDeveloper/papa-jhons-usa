@@ -51,9 +51,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export async function generateStaticParams() {
-    return menuItems.map((item) => ({
-        slug: item.slug,
-    }));
+    return menuItems
+        .filter((item) => item.slug !== 'drinks')
+        .map((item) => ({
+            slug: item.slug,
+        }));
 }
 
 export default async function MenuItemBlogPage({ params }: Props) {

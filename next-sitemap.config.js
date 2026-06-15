@@ -3,7 +3,7 @@ module.exports = {
     siteUrl: 'https://papajohns-menus.us',
     generateRobotsTxt: false,
     generateIndexSitemap: false,
-    exclude: ['/admin/*', '/api/*', '/onesignal-debug', '/push-test', '/guestpost/*'],
+    exclude: ['/admin/*', '/api/*', '/onesignal-debug', '/push-test', '/guestpost/*', '/menus-prices/drinks'],
     transform: async (config, path) => {
         // Custom Priority logic matching TR setup
         let priority = config.priority;

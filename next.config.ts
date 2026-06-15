@@ -112,7 +112,6 @@ const nextConfig: NextConfig = {
       { source: "/auth", destination: "/", permanent: false },
       { source: "/admin", destination: "/", permanent: false },
       { source: '/menus-prices/desserts', destination: '/posts/papa-johns-desserts', permanent: true },
-      { source: '/menus-prices/drinks', destination: '/drinks', permanent: true },
     ];
   },
   compiler: {
@@ -125,4 +124,3 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
-
