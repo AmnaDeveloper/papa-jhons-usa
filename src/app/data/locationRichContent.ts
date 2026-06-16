@@ -415,55 +415,63 @@ export const locationRichContent: Record<string, RichLocationData> = {
     },
     "baltimore-md": {
         slug: "baltimore-md",
-        title: "Papa Johns Baltimore MD 2026: Menu, Prices & Locations",
-        metaDesc: "Papa Johns Baltimore, MD — full 2026 menu with prices, all Baltimore locations, delivery areas, hours & local deals. Find the nearest Papa Johns in Baltimore now.",
-        h1: "Papa John's Baltimore, MD — Menu, Prices & Locations (2026)",
-        intro: "Looking for Papa John's in Baltimore, Maryland? This guide covers the complete **Papa Johns menu with prices** for Baltimore — every pizza, side, dessert, and drink available in 2026 — plus the Baltimore Papa Johns location with verified address, phone number, and hours. Whether you are ordering delivery to Downtown, Harbor East, or anywhere across Baltimore, this page has everything you need before you order.\n\nPrices in Baltimore match the national 2026 standard, and the Baltimore location offers both delivery and carryout seven days a week. For the fastest ordering experience, use the Papa Johns app — it includes Papa Track real-time order tracking from dough prep through your door.",
+        title: "Papa Johns Baltimore MD: Menu Prices, Hours & Local Ordering Guide 2026",
+        metaDesc: "Plan a Papa Johns order in Baltimore, MD with local hours, phone, delivery notes, popular menu prices, carryout tips, and neighborhood ordering advice for 2026.",
+        h1: "Papa Johns Baltimore, MD — Menu Prices, Hours & Local Ordering Guide",
+        intro: "Need Papa Johns in Baltimore before a Ravens night, Orioles watch party, student study session, or quick Federal Hill carryout run? This local guide gives you the useful details in one place: the Baltimore store address, phone number, typical hours, delivery-area notes, popular pizza prices, and practical ways to avoid late-night delays.\n\nThe page is written for people comparing <a href=\"/menus-prices\" class=\"underline text-[#CCEE18] hover:text-white\">Papa Johns menu prices</a> before ordering in Baltimore, not for coupon-code hunting. Prices and hours can vary by franchise, delivery platform, day, and active promo, so use this guide as a planning reference and confirm the final total in the Papa Johns app or website before checkout.",
         stats: {
-            deliveryTime: "30–45 min",
-            startingPrice: "$17.99",
+            deliveryTime: "30–50 min",
+            startingPrice: "$15.99",
             verifiedYear: "2026"
         },
         locationDetails: {
-            address: "100 E Pratt St, Baltimore, MD 21202",
-            phone: "(410) 555-2001",
-            hours: "Mon–Thu 11:00 AM – 11:00 PM | Fri–Sat 11:00 AM – 1:00 AM | Sun 11:00 AM – 11:00 PM",
-            deliveryAreas: "Downtown, Harbor East, Little Italy, Jonestown",
-            mapUrl: "https://maps.google.com/?q=100+E+Pratt+St,+Baltimore,+MD+21202"
+            address: "1200 S Hanover St, Ste 103, Baltimore, MD 21230",
+            phone: "(410) 783-7272",
+            hours: "Mon–Thu 10:00 AM – 2:00 AM | Fri–Sat 10:00 AM – 4:00 AM | Sun 10:00 AM – 2:00 AM",
+            deliveryAreas: "Federal Hill, Riverside, Locust Point, Inner Harbor, South Baltimore, Sharp-Leadenhall",
+            mapUrl: "https://maps.google.com/?q=1200+S+Hanover+St,+Ste+103,+Baltimore,+MD+21230"
         },
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
             { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
-            { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
+            { name: "Epic Stuffed Crust", s: "—", m: "—", l: "$19.99", xl: "—" },
+            { name: "Pan Pizza", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
         menuSides: [
             { name: "Garlic Knots (8 pieces)", price: "$6.99" },
             { name: "Wings (8 pieces)", price: "$8.49" },
             { name: "Garlic Parmesan Breadsticks", price: "$7.99" },
             { name: "Cheesesticks", price: "$7.99" },
-            { name: "Chocolate Chip Cookie", price: "$5.99" }
+            { name: "Chocolate Chip Cookie", price: "$5.99" },
+            { name: "2-Liter Pepsi Product", price: "$3.99" }
         ],
         neighborhoodContent: [
             {
-                title: "Ordering Papa Johns Near Johns Hopkins",
-                text: "Papa Johns is a popular delivery choice for students and faculty at Johns Hopkins / University of Maryland Baltimore. Delivery to on-campus and near-campus addresses typically takes 25–40 minutes during non-peak hours. For large group orders of 5+ pizzas for campus events, call your nearest Baltimore location directly to confirm timing and any available group pricing. The Papa Pairings deal — any two qualifying items for $6.99 each — is one of the best value options for student budgets."
+                title: "Best Times to Order Papa Johns in Baltimore",
+                text: "For the fastest Baltimore Papa Johns delivery, order outside the 6:00 PM to 8:30 PM dinner rush or choose carryout from the S Hanover St store. Federal Hill, Riverside, Locust Point, and South Baltimore addresses are usually the easiest trips from this location, while Inner Harbor or event-night orders can take longer because of traffic, parking, and stadium crowds. If your order is for a meeting, dorm floor, or office lunch, place it at least 60 minutes ahead and call the store for large orders of five pizzas or more."
             },
             {
-                title: "Ordering Papa Johns on Ravens / Orioles Game Days",
-                text: "Ravens / Orioles games are among the busiest ordering times at Papa Johns Baltimore locations. During Ravens game days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Baltimore."
+                title: "Ravens, Orioles, and Stadium-Area Ordering Tips",
+                text: "Baltimore game days are the times when a normal pizza order can become slow quickly. M&T Bank Stadium and Oriole Park at Camden Yards both affect traffic around downtown and South Baltimore, so delivery estimates may stretch beyond the usual range before kickoff, after games, and during Friday or Saturday night events. For watch parties, a practical order is one <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, one <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, and a side such as <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> or wings. Carryout is often the safer choice if you are close to Federal Hill or the Inner Harbor."
             },
             {
-                title: "Best Neighborhoods for Papa Johns Delivery in Baltimore",
-                text: "Papa Johns Baltimore delivers across Downtown Baltimore, Inner Harbor, Fells Point, Canton, Federal Hill, Station North. The Downtown area is the primary delivery zone for the 100 E Pratt St location. For same-neighborhood delivery, expect 25–35 minutes during non-peak hours (2–5 PM on weekdays). Evening weekend delivery (6–10 PM) may take 35–50 minutes depending on order volume."
+                title: "Carryout vs Delivery: Which Is Better in Baltimore?",
+                text: "Carryout is usually the better value if you are near S Hanover St, especially because it avoids delivery fees, service charges, and weather delays. Delivery makes more sense for office orders, late-night orders, or addresses where parking is difficult. Before paying, compare the final delivery total against carryout pricing, then check the <a href='/coupons' class='text-[#cc0000] hover:underline font-bold'>Papa Johns coupons page</a> and the <a href='/papa-johns-rewards' class='text-[#cc0000] hover:underline font-bold'>Papa Rewards guide</a> to see whether a deal, reward, or Papa Pairings item lowers the total."
+            },
+            {
+                title: "What Makes This Page More Useful Than a Basic Store Listing",
+                text: "A basic store listing gives you an address and a button. This guide adds the ordering context Baltimore customers usually need before checkout: late-night hours, realistic delivery timing, game-day delays, menu price ranges, delivery-area notes, and links to related menu pages. It is independent from Papa Johns and should be used as a planning guide; always confirm live item availability, allergens, and final prices with the official Papa Johns ordering system."
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Baltimore, Maryland?", a: "Papa Johns Baltimore is located at 100 E Pratt St, Baltimore, MD 21202. Call (410) 555-2001 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Baltimore, MD?", a: "Papa Johns Baltimore is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays — call (410) 555-2001 to confirm." },
-            { q: "Does Papa Johns deliver in Baltimore?", a: "Yes. Papa Johns Baltimore delivers to Downtown, Harbor East, Little Italy, Jonestown. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
-            { q: "What is the cheapest Papa Johns pizza in Baltimore?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Baltimore deals." }
+            { q: "Where is Papa Johns in Baltimore, Maryland?", a: "The Baltimore Papa Johns listing on this page is at 1200 S Hanover St, Ste 103, Baltimore, MD 21230. The store phone number is (410) 783-7272. Use the official Papa Johns app or website to confirm whether this store serves your exact address." },
+            { q: "What are Papa Johns hours in Baltimore, MD?", a: "The Baltimore listing shows extended hours: Monday through Thursday 10:00 AM to 2:00 AM, Friday and Saturday 10:00 AM to 4:00 AM, and Sunday 10:00 AM to 2:00 AM. Holiday hours, severe weather, and franchise updates can change availability, so confirm before placing a late-night order." },
+            { q: "Does Papa Johns deliver to Federal Hill and the Inner Harbor?", a: "Papa Johns delivery coverage depends on the exact address entered at checkout. The S Hanover St location is positioned for Federal Hill, Riverside, Locust Point, South Baltimore, and nearby downtown areas, but the official app is the final source for delivery eligibility." },
+            { q: "What is the cheapest Papa Johns pizza in Baltimore?", a: "A small Cheese or Pepperoni Pizza is usually one of the lowest-priced regular menu pizzas, while Papa Pairings can make qualifying medium items cheaper when you buy two. Prices vary by store and promotion, so compare the menu total before checkout." },
+            { q: "Is carryout cheaper than delivery in Baltimore?", a: "Carryout is often cheaper because it avoids delivery fees, service charges, and driver tip. If you are near S Hanover St or already traveling through South Baltimore, compare carryout against delivery before you order." },
+            { q: "Can I use Papa Johns coupons in Baltimore?", a: "Yes, most online Papa Johns coupons and Papa Rewards offers can be used in Baltimore when the item and store qualify. Some deals are location-specific, so the official checkout page will show which discounts apply to your order." }
         ],
         schema: {
           "@context": "https://schema.org",
@@ -471,14 +479,14 @@ export const locationRichContent: Record<string, RichLocationData> = {
           "name": "Papa Johns Pizza Baltimore",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "100 E Pratt St",
+            "streetAddress": "1200 S Hanover St, Ste 103",
             "addressLocality": "Baltimore",
             "addressRegion": "MD",
-            "postalCode": "21202",
+            "postalCode": "21230",
             "addressCountry": "US"
           },
-          "telephone": "(410) 555-2001",
-          "openingHours": ["Mo-Th 11:00 AM-11:00 PM", "Fr-Sa 11:00 AM-1:00 AM", "Su 11:00 AM-11:00 PM"],
+          "telephone": "(410) 783-7272",
+          "openingHours": ["Mo-Th 10:00 AM-2:00 AM", "Fr-Sa 10:00 AM-4:00 AM", "Su 10:00 AM-2:00 AM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
           "url": "https://papajohns-menus.us/locations/baltimore-md"
