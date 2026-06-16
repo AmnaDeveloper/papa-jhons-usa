@@ -2,11 +2,31 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Mail, ShieldCheck, CheckCircle, Clock } from 'lucide-react';
+import FAQJsonLd from '../../components/FAQJsonLd';
 
 export const metadata: Metadata = {
     title: "Meet Our Editorial Team — PapaJohns-Menus.us",
     description: "Meet the real people behind papajohns-menus.us — food writers, deal hunters, and nutrition experts helping Americans save money on Papa Johns since 2024.",
 };
+
+const teamFaqs = [
+    {
+        question: "Who reviews content on PapaJohns-Menus.us?",
+        answer: "Content is reviewed by the site's editorial team, including writers focused on menu accuracy, coupon verification, nutrition information, and restaurant ordering guides.",
+    },
+    {
+        question: "Is the editorial team paid by Papa Johns?",
+        answer: "No. PapaJohns-Menus.us is independent and does not receive sponsorship, payment, or editorial direction from Papa Johns International.",
+    },
+    {
+        question: "How can readers report an error?",
+        answer: "Readers can report an error through the contact page or by emailing contact@papajohns-menus.us. The team reviews corrections and updates confirmed information.",
+    },
+    {
+        question: "How often does the team review menu and coupon information?",
+        answer: "Menu, coupon, and nutrition guides are reviewed regularly, with major confirmed changes updated as quickly as possible.",
+    },
+];
 
 export default function TeamPage() {
     const team = [
@@ -58,6 +78,7 @@ export default function TeamPage() {
 
     return (
         <div className="bg-white min-h-screen">
+            <FAQJsonLd faqs={teamFaqs} />
             {/* Hero */}
             <div className="bg-[#1A3D17] py-20 text-center px-4">
                 <h1 className="text-[#CCEE18] text-4xl md:text-6xl font-black uppercase tracking-tighter mb-4">
@@ -159,6 +180,21 @@ export default function TeamPage() {
                     <p className="text-gray-700 text-sm leading-relaxed font-medium">
                         PapaJohns-Menus.us is a completely independent informational website. Our team receives no payment, sponsorship, or benefit from Papa Johns International in any form. Every review, comparison, and recommendation on this site reflects our team&apos;s honest, independent research and opinion.
                     </p>
+                </div>
+
+                {/* Contact CTA */}
+                <div className="mb-16 bg-white border border-gray-100 rounded-[2rem] p-10 shadow-sm">
+                    <h2 className="text-2xl font-black uppercase text-[#1A3D17] tracking-tighter mb-8">
+                        Editorial Team FAQs
+                    </h2>
+                    <div className="space-y-6">
+                        {teamFaqs.map((faq) => (
+                            <div key={faq.question} className="border-b border-gray-100 pb-5 last:border-0 last:pb-0">
+                                <h3 className="text-lg font-black text-[#1A3D17] mb-2">{faq.question}</h3>
+                                <p className="text-gray-600 font-medium leading-relaxed">{faq.answer}</p>
+                            </div>
+                        ))}
+                    </div>
                 </div>
 
                 {/* Contact CTA */}

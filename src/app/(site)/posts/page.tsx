@@ -4,6 +4,7 @@ import posts from '../../data/posts.json';
 import { generateArticleSEO } from '../../lib/seo-config';
 import InternalLinks from '../../components/seo/InternalLinks';
 import { ArrowRight } from 'lucide-react';
+import FAQJsonLd from '../../components/FAQJsonLd';
 
 export const metadata = generateArticleSEO(
     "Papa John's Blog & News",
@@ -11,9 +12,29 @@ export const metadata = generateArticleSEO(
     "posts"
 );
 
+const blogFaqs = [
+    {
+        question: "What kind of Papa Johns articles are listed on this blog?",
+        answer: "The blog includes Papa Johns menu guides, price updates, nutrition explainers, coupon guides, ordering tips, and comparisons with other pizza chains.",
+    },
+    {
+        question: "Are the Papa Johns blog articles updated?",
+        answer: "Yes. Important articles are reviewed and updated when menu prices, products, deals, or ordering details change.",
+    },
+    {
+        question: "Are these blog posts official Papa Johns content?",
+        answer: "No. The articles are independently written by PapaJohns-Menus.us and are not official Papa Johns content.",
+    },
+    {
+        question: "Which blog post should I read first?",
+        answer: "Start with the full menu prices guide if you are planning an order, the coupons guide if you want to save money, or the nutrition guide if you are comparing calories and allergens.",
+    },
+];
+
 export default function BlogListingPage() {
     return (
         <div className="bg-[#fcfaf8] min-h-screen font-sans pb-20">
+            <FAQJsonLd faqs={blogFaqs} />
             {/* ── PREMIUM HERO BANNER ── */}
             <div className="bg-[#1A3D17] border-b-8 border-[#cc0000] text-white py-16 md:py-24 text-center relative overflow-hidden mb-16">
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#CCEE18] rounded-full -mr-64 -mt-64 opacity-5 pointer-events-none"></div>
@@ -75,6 +96,20 @@ export default function BlogListingPage() {
                 <div className="mt-16 border-t-2 border-gray-100 pt-16">
                     <InternalLinks />
                 </div>
+
+                <section className="mt-16 bg-white rounded-[2rem] p-8 md:p-10 border border-gray-100 shadow-sm">
+                    <h2 className="text-3xl font-black text-[#1A3D17] uppercase tracking-tighter mb-8">
+                        Blog FAQs
+                    </h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        {blogFaqs.map((faq) => (
+                            <div key={faq.question} className="bg-[#fcfaf8] rounded-2xl p-6 border border-gray-100">
+                                <h3 className="font-black text-[#1A3D17] mb-2">{faq.question}</h3>
+                                <p className="text-gray-600 text-sm font-medium leading-relaxed">{faq.answer}</p>
+                            </div>
+                        ))}
+                    </div>
+                </section>
             </div>
         </div>
     );

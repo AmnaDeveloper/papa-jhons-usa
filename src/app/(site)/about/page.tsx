@@ -3,6 +3,7 @@ import { generatePageSEO } from '../../lib/seo-config';
 import InternalLinks from '../../components/seo/InternalLinks';
 import Link from 'next/link';
 import Image from 'next/image';
+import FAQJsonLd from '../../components/FAQJsonLd';
 
 export const metadata: Metadata = generatePageSEO(
     "About Us: The Team Behind PapaJohns-Menus.us",
@@ -11,9 +12,29 @@ export const metadata: Metadata = generatePageSEO(
     "About Papa Johns menu, independent fan site, pizza menu guide, Papa Johns unofficial, team behind"
 );
 
+const aboutFaqs = [
+    {
+        question: "Is PapaJohns-Menus.us affiliated with Papa Johns?",
+        answer: "No. PapaJohns-Menus.us is an independent informational guide and is not affiliated with, endorsed by, or sponsored by Papa Johns International, Inc.",
+    },
+    {
+        question: "How does this site verify Papa Johns menu prices?",
+        answer: "Our team checks prices against public menu information, the official ordering flow, location pages, and reader reports. Final prices can still vary by store, delivery type, tax, and promotion.",
+    },
+    {
+        question: "Who writes the Papa Johns guides on this site?",
+        answer: "The site is written by an independent editorial team focused on menu research, coupon verification, nutrition notes, and practical ordering advice.",
+    },
+    {
+        question: "How often is PapaJohns-Menus.us updated?",
+        answer: "Major menu guides and coupon pages are reviewed regularly, with important price, availability, and deal changes updated when confirmed.",
+    },
+];
+
 export default function AboutPage() {
     return (
         <div className="bg-white min-h-screen">
+            <FAQJsonLd faqs={aboutFaqs} />
             {/* Page Header */}
             <div className="bg-[#1A3D17] py-16 md:py-24 text-center px-4 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#CCEE18_1px,transparent_1px)] [background-size:16px_16px]"></div>
@@ -294,6 +315,20 @@ export default function AboutPage() {
                             <Link href="/posts/papa-johns-stuffed-crust-pizza" className="bg-gray-50 p-4 rounded-xl text-[10px] font-black uppercase text-center hover:bg-[#CCEE18] transition-colors">Stuffed Crust</Link>
                             <Link href="/posts/papa-johns-desserts" className="bg-gray-50 p-4 rounded-xl text-[10px] font-black uppercase text-center hover:bg-[#CCEE18] transition-colors">Desserts Menu</Link>
                             <Link href="/papa-johns-rewards" className="bg-gray-50 p-4 rounded-xl text-[10px] font-black uppercase text-center hover:bg-[#CCEE18] transition-colors">Rewards Program</Link>
+                        </div>
+                    </section>
+
+                    <section className="bg-white border border-gray-100 rounded-[2rem] p-8 shadow-sm">
+                        <h2 className="text-3xl font-black text-[#1A3D17] uppercase tracking-tight mb-8">
+                            About This Site FAQs
+                        </h2>
+                        <div className="space-y-6">
+                            {aboutFaqs.map((faq) => (
+                                <div key={faq.question} className="border-b border-gray-100 pb-5 last:border-0 last:pb-0">
+                                    <h3 className="text-lg font-black text-[#1A3D17] mb-2">{faq.question}</h3>
+                                    <p className="text-gray-600 font-medium">{faq.answer}</p>
+                                </div>
+                            ))}
                         </div>
                     </section>
                 </div>

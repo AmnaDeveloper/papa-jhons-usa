@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import { generatePageSEO } from '../../lib/seo-config';
 import InternalLinks from '../../components/seo/InternalLinks';
 import Link from 'next/link';
+import FAQJsonLd from '../../components/FAQJsonLd';
 
 export const metadata: Metadata = generatePageSEO(
     "Terms and Conditions - Papa John's Menu & Specials",
@@ -10,9 +11,29 @@ export const metadata: Metadata = generatePageSEO(
     "Papa Johns terms and conditions, pizza menu terms, promo code rules, legal terms"
 );
 
+const termsFaqs = [
+    {
+        question: "Is PapaJohns-Menus.us an official Papa Johns website?",
+        answer: "No. PapaJohns-Menus.us is an independent informational website and is not affiliated with Papa Johns International, Inc.",
+    },
+    {
+        question: "Are prices and coupons on this site guaranteed?",
+        answer: "No. Prices, coupons, and availability can change by location and time. Always confirm final pricing and promo eligibility in the official Papa Johns checkout flow.",
+    },
+    {
+        question: "Can I place a Papa Johns order directly on this site?",
+        answer: "No. This site provides menu, price, coupon, and ordering information. Actual orders must be placed through official Papa Johns channels or participating delivery platforms.",
+    },
+    {
+        question: "Who should I contact about these terms?",
+        answer: "For questions about these terms, use the contact page or email contact@papajohns-menus.us.",
+    },
+];
+
 export default function TermsPage() {
     return (
         <div className="bg-white min-h-screen">
+            <FAQJsonLd faqs={termsFaqs} />
             {/* Page Header */}
             <div className="bg-[#1A3D17] py-16 md:py-24 text-center px-4">
                 <div className="max-w-4xl mx-auto">
@@ -108,6 +129,20 @@ export default function TermsPage() {
                         <p>
                             For any questions regarding these terms, please visit our <Link href="/contact" className="text-[#cc0000] font-bold hover:underline">Support Page</Link> or email us at contact@papajohns-menus.us.
                         </p>
+                    </section>
+
+                    <section className="bg-gray-50 rounded-[2rem] p-8 border border-gray-100">
+                        <h2 className="text-3xl font-black text-[#1A3D17] uppercase tracking-tight mb-8">
+                            Terms FAQs
+                        </h2>
+                        <div className="space-y-6">
+                            {termsFaqs.map((faq) => (
+                                <div key={faq.question} className="border-b border-gray-200 pb-5 last:border-0 last:pb-0">
+                                    <h3 className="text-lg font-black text-[#1A3D17] mb-2">{faq.question}</h3>
+                                    <p className="text-gray-600 font-medium">{faq.answer}</p>
+                                </div>
+                            ))}
+                        </div>
                     </section>
                 </div>
 

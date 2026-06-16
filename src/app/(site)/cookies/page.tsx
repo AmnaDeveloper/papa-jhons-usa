@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import { generatePageSEO } from '../../lib/seo-config';
 import InternalLinks from '../../components/seo/InternalLinks';
 import Link from 'next/link';
+import FAQJsonLd from '../../components/FAQJsonLd';
 
 export const metadata: Metadata = generatePageSEO(
     "Cookie Policy - Papa John's Menu & User Preferences",
@@ -10,9 +11,29 @@ export const metadata: Metadata = generatePageSEO(
     "Papa Johns cookie policy, tracking technologies, browser cookies, pizza website data"
 );
 
+const cookieFaqs = [
+    {
+        question: "What are cookies on PapaJohns-Menus.us?",
+        answer: "Cookies are small browser files that help the site understand usage, remember basic preferences, and support analytics or advertising features.",
+    },
+    {
+        question: "Can I disable cookies?",
+        answer: "Yes. You can block or delete cookies through your browser settings. Some site features or ad preferences may work differently when cookies are disabled.",
+    },
+    {
+        question: "Does this cookie policy apply to PapaJohns.com?",
+        answer: "No. This policy applies only to PapaJohns-Menus.us. Official Papa Johns websites and ordering platforms have their own cookie and privacy policies.",
+    },
+    {
+        question: "Why does this site use advertising cookies?",
+        answer: "Advertising cookies may help show more relevant ads and support the free informational content on the site.",
+    },
+];
+
 export default function CookiesPage() {
     return (
         <div className="bg-white min-h-screen">
+            <FAQJsonLd faqs={cookieFaqs} />
             {/* Page Header */}
             <div className="bg-[#1A3D17] py-16 md:py-24 text-center px-4">
                 <div className="max-w-4xl mx-auto">
@@ -98,6 +119,20 @@ export default function CookiesPage() {
                         <p>
                             If you have any questions about our use of cookies or other technologies, please <Link href="/contact" className="text-[#cc0000] font-bold hover:underline">Contact Us</Link> or refer to our full <Link href="/privacy-policy" className="text-[#cc0000] font-bold hover:underline">Privacy Policy</Link>.
                         </p>
+                    </section>
+
+                    <section className="bg-gray-50 rounded-[2rem] p-8 border border-gray-100">
+                        <h2 className="text-3xl font-black text-[#1A3D17] uppercase tracking-tight mb-8">
+                            Cookie FAQs
+                        </h2>
+                        <div className="space-y-6">
+                            {cookieFaqs.map((faq) => (
+                                <div key={faq.question} className="border-b border-gray-200 pb-5 last:border-0 last:pb-0">
+                                    <h3 className="text-lg font-black text-[#1A3D17] mb-2">{faq.question}</h3>
+                                    <p className="text-gray-600 font-medium">{faq.answer}</p>
+                                </div>
+                            ))}
+                        </div>
                     </section>
                 </div>
 

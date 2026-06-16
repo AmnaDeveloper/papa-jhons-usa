@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import { generatePageSEO } from '../../lib/seo-config';
 import InternalLinks from '../../components/seo/InternalLinks';
 import Link from 'next/link';
+import FAQJsonLd from '../../components/FAQJsonLd';
 
 export const metadata: Metadata = generatePageSEO(
     "Privacy Policy - Official Papa John's Menu & Promotions",
@@ -10,9 +11,29 @@ export const metadata: Metadata = generatePageSEO(
     "Papa Johns privacy policy, data protection, pizza menu privacy, customer information"
 );
 
+const privacyFaqs = [
+    {
+        question: "Does PapaJohns-Menus.us collect payment information?",
+        answer: "No. PapaJohns-Menus.us is an informational guide and does not process Papa Johns orders or collect payment card details for pizza purchases.",
+    },
+    {
+        question: "Does this site use cookies?",
+        answer: "Yes. The site may use cookies for analytics, advertising, and basic site functionality. You can manage cookies in your browser settings.",
+    },
+    {
+        question: "Does this site share personal information with Papa Johns?",
+        answer: "No. PapaJohns-Menus.us is independent from Papa Johns and does not share reader contact messages or analytics data with Papa Johns International.",
+    },
+    {
+        question: "How can I contact the site about privacy questions?",
+        answer: "You can contact the site through the contact page or by emailing contact@papajohns-menus.us.",
+    },
+];
+
 export default function PrivacyPolicyPage() {
     return (
         <div className="bg-white min-h-screen">
+            <FAQJsonLd faqs={privacyFaqs} />
             {/* Page Header */}
             <div className="bg-[#1A3D17] py-16 md:py-24 text-center px-4">
                 <div className="max-w-4xl mx-auto">
@@ -124,6 +145,20 @@ export default function PrivacyPolicyPage() {
                         <p>
                             If you have questions or comments about this policy, you may email us at <strong>contact@papajohns-menus.us</strong> or contact us via our <Link href="/contact" className="text-[#cc0000] font-bold hover:underline">Contact Form</Link>.
                         </p>
+                    </section>
+
+                    <section className="bg-gray-50 rounded-[2rem] p-8 border border-gray-100">
+                        <h2 className="text-3xl font-black text-[#1A3D17] uppercase tracking-tight mb-8">
+                            Privacy FAQs
+                        </h2>
+                        <div className="space-y-6">
+                            {privacyFaqs.map((faq) => (
+                                <div key={faq.question} className="border-b border-gray-200 pb-5 last:border-0 last:pb-0">
+                                    <h3 className="text-lg font-black text-[#1A3D17] mb-2">{faq.question}</h3>
+                                    <p className="text-gray-600 font-medium">{faq.answer}</p>
+                                </div>
+                            ))}
+                        </div>
                     </section>
                 </div>
 

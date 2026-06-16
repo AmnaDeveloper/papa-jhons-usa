@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { Send, CheckCircle2, XCircle, Loader2, RefreshCw } from 'lucide-react'
+import FAQJsonLd from '../../components/FAQJsonLd'
 
 const PRIORITY_PAGES = [
   'https://papajohns-menus.us/',
@@ -21,6 +22,25 @@ const PRIORITY_PAGES = [
   'https://papajohns-menus.us/locations/baltimore-md',
   'https://papajohns-menus.us/locations/tucson-az',
   'https://papajohns-menus.us/locations/oklahoma-city-ok',
+]
+
+const seoToolFaqs = [
+  {
+    question: 'What does the SEO indexing tools page do?',
+    answer: 'This internal page helps submit priority URLs from papajohns-menus.us to the indexing API for faster recrawl requests.',
+  },
+  {
+    question: 'Does submitting a URL guarantee Google indexing?',
+    answer: 'No. Submission can request discovery or recrawl, but Google decides whether and when a page is indexed.',
+  },
+  {
+    question: 'Which pages should be submitted first?',
+    answer: 'Priority should go to updated menu pages, high-value guides, location pages, and pages recently improved for content quality.',
+  },
+  {
+    question: 'Should this page be shared publicly?',
+    answer: 'No. This page is intended for site administration and should not be shared with regular visitors.',
+  },
 ]
 
 export default function SeoToolsPage() {
@@ -54,6 +74,7 @@ export default function SeoToolsPage() {
 
   return (
     <div className="min-h-screen bg-[#1A3D17] py-16 px-4">
+      <FAQJsonLd faqs={seoToolFaqs} />
       <div className="max-w-3xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
@@ -130,6 +151,18 @@ export default function SeoToolsPage() {
         <p className="text-center text-white/30 text-xs font-bold mt-8 uppercase tracking-widest">
           Ye page sirf aapke liye he — kisi ko share mat karo 🔒
         </p>
+
+        <div className="mt-8 bg-white/10 rounded-3xl p-8 border border-white/10">
+          <h2 className="text-white font-black uppercase tracking-tighter text-xl mb-6">Indexing Tool FAQs</h2>
+          <div className="space-y-5">
+            {seoToolFaqs.map((faq) => (
+              <div key={faq.question} className="border-b border-white/10 pb-4 last:border-0 last:pb-0">
+                <h3 className="text-[#CCEE18] font-black text-sm mb-2">{faq.question}</h3>
+                <p className="text-white/60 text-sm font-medium leading-relaxed">{faq.answer}</p>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   )
