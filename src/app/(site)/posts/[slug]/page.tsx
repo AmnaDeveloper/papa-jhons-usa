@@ -231,8 +231,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
             break;
         case 'papa-johns-order':
             meta = {
-                title: `Papa Johns Order Online (${month}) — Delivery, Carryout & App Guide`,
-                description: `Learn exactly how to place a Papa Johns order in ${month} — online, via app, phone, or DoorDash. Compare delivery vs carryout... updated ${date}.`,
+                title: `How to Place a Papa Johns Order Online (${month}): App, Delivery, Carryout & Tracking`,
+                description: `Step-by-step Papa Johns order guide updated ${date}. Compare app, website, delivery, carryout, tracking, cancellations, fees, coupons, and Papa Rewards.`,
             };
             break;
         case 'papa-johns-small-pizza':
