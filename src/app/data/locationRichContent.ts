@@ -583,6 +583,180 @@ export const locationRichContent: Record<string, RichLocationData> = {
           }
         }
     },
+    "seattle-wa": {
+        slug: "seattle-wa",
+        title: "Papa Johns Seattle WA: Menu Prices, Delivery Areas & Ordering Guide 2026",
+        metaDesc: "Seattle Papa Johns ordering guide with 2026 menu prices, delivery and carryout tips, neighborhood notes, apartment ordering advice, coupons, FAQs, and store verification.",
+        h1: "Papa Johns Seattle, WA - Menu Prices, Delivery & Carryout Guide",
+        intro: "Ordering Papa Johns in Seattle is different from ordering in a smaller city. Hills, bridges, apartment buildings, downtown traffic, event crowds, and neighborhood-by-neighborhood store assignments can all affect the final delivery time and price. A customer in Capitol Hill, Belltown, Ballard, the University District, West Seattle, or South Lake Union may see a different assigned store, different fees, and a different pickup estimate.\n\nThis independent Seattle guide helps readers plan a smarter Papa Johns order before checkout. It covers 2026 menu price ranges, common pizza and side choices, carryout versus delivery decisions, apartment and office delivery tips, game-day ordering notes, neighborhood timing guidance, and the safest way to verify the exact Papa Johns store serving your address. We do not publish a fake Seattle phone number or claim one store serves the full city. Always confirm live hours, coupons, allergens, availability, and final prices in the official Papa Johns app or website before paying.",
+        stats: {
+            deliveryTime: "30-55 min",
+            startingPrice: "$15.99",
+            verifiedYear: "2026"
+        },
+        locationDetails: {
+            address: "Seattle, WA - enter your street address in the official Papa Johns app to confirm the assigned store",
+            phone: "Use the phone number shown for your selected store at checkout",
+            hours: "Most Seattle-area stores open late morning and close late evening; downtown, campus, and late-night hours vary by franchise",
+            deliveryAreas: "Downtown Seattle, Capitol Hill, Belltown, South Lake Union, Queen Anne, Ballard, Fremont, University District, West Seattle, and nearby neighborhoods where a participating store serves the address",
+            mapUrl: "https://www.papajohns.com/locations"
+        },
+        menuPizzas: [
+            { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
+            { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "Epic Stuffed Crust", s: "-", m: "-", l: "$19.99", xl: "-" },
+            { name: "Pan Pizza", s: "-", m: "$11.99", l: "-", xl: "-" }
+        ],
+        menuSides: [
+            { name: "Garlic Knots (8 pieces)", price: "$6.99" },
+            { name: "Garlic Parmesan Breadsticks", price: "$7.99" },
+            { name: "Cheesesticks", price: "$7.99" },
+            { name: "Wings (8 pieces)", price: "$8.49" },
+            { name: "Chocolate Chip Cookie", price: "$5.99" },
+            { name: "2-Liter Pepsi Product", price: "$3.99" }
+        ],
+        neighborhoodContent: [
+            {
+                title: "How to Find the Right Papa Johns Store in Seattle",
+                text: "Seattle has enough hills, water crossings, and dense neighborhoods that the nearest-looking store is not always the store assigned to your address. Enter your full street address in the official Papa Johns app or website, then check the store, pickup estimate, delivery fee, and final arrival window before building a large order. For carryout, compare the pickup time with parking and drive time. For delivery, make sure your apartment, office, or dorm address includes the building name, unit number, callbox notes, and a reachable phone number."
+            },
+            {
+                title: "Downtown, Belltown, South Lake Union, and Capitol Hill Tips",
+                text: "Downtown Seattle, Belltown, South Lake Union, and Capitol Hill can be slower during weekday lunch, tech-office dinner orders, concerts, conventions, and Friday or Saturday nights. If you are ordering to a high-rise apartment, hotel, office, or hospital, lobby pickup usually works better than asking a driver to find short-term parking. When the delivery estimate looks long, carryout can keep pizzas like <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a> and <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a> hotter and more consistent."
+            },
+            {
+                title: "University District, Fremont, Ballard, and Queen Anne Ordering Notes",
+                text: "The University District and nearby student housing can create sharp dinner rushes, especially during school terms and weekend nights. Fremont, Ballard, and Queen Anne can have parking and traffic slowdowns even when the mileage is short. For students, roommates, and small office groups, a practical order is one simple pizza, one specialty pizza, and a shareable side like <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> or cheesesticks. Check <a href='/coupons' class='text-[#cc0000] hover:underline font-bold'>Papa Johns coupons</a> before checkout because delivery fees can make a small order feel expensive."
+            },
+            {
+                title: "West Seattle, Rainy Nights, and Bridge-Aware Delivery",
+                text: "West Seattle orders can be affected by bridge traffic, weather, and neighborhood routing. On rainy evenings, game nights, and weekend dinner rushes, delivery estimates may rise quickly even if your address is not far from a store. If the app shows a long delivery time, choose carryout when possible or order earlier than usual. For family orders, add drinks and sides at checkout instead of placing a second order later, because a second delivery fee can erase the value of a coupon."
+            },
+            {
+                title: "Seattle Price and Quality Checklist",
+                text: "Before paying, review the full Seattle order total: menu price, delivery fee, service fee, tax, tip, premium crust charges, extra toppings, and any coupon restrictions. A carryout deal may be the best value for one or two pizzas, while delivery can still be worth it for hotels, office meetings, families, late-night orders, and groups without easy parking. Keep addresses and driver notes clear so your order does not lose heat while the driver searches for the entrance."
+            },
+            {
+                title: "Why This Seattle Page Is Built for Trust",
+                text: "This page is designed as a useful local ordering guide, not a fake store listing. It avoids invented phone numbers, avoids pretending that one Seattle location serves every neighborhood, and tells readers how to verify live details through the official ordering system. It also adds local context and internal menu resources so the page provides more original value than a thin city page."
+            }
+        ],
+        faq: [
+            { q: "Where is Papa Johns in Seattle, Washington?", a: "Papa Johns service in Seattle depends on your exact address. Enter your street address in the official Papa Johns app or website to see the assigned delivery or carryout store." },
+            { q: "Does Papa Johns deliver to downtown Seattle apartments and hotels?", a: "Delivery may be available to many downtown Seattle addresses, but building access, traffic, parking, and lobby rules can affect timing. Add clear delivery notes and a reachable phone number at checkout." },
+            { q: "Does Papa Johns deliver to the University District?", a: "Delivery availability depends on the exact address and assigned store. Student housing and campus-area orders can get busy during dinner, weekends, and school events." },
+            { q: "What is the cheapest Papa Johns pizza in Seattle?", a: "A Cheese or Pepperoni Pizza is usually one of the lowest-priced regular menu options. Papa Pairings, carryout offers, and online coupons can reduce the final price when they apply." },
+            { q: "Is carryout better than delivery in Seattle?", a: "Carryout is often better if you are close to the assigned store, want to avoid delivery fees, or are in an area with difficult parking. Delivery is better for hotels, offices, families, rainy nights, and large group orders." },
+            { q: "What are Papa Johns hours in Seattle?", a: "Hours vary by franchise location. Most stores open around late morning and close late evening, but late-night service differs by neighborhood. Confirm current hours in the official ordering flow." },
+            { q: "Can I use Papa Johns coupons in Seattle?", a: "Yes, eligible online coupons and Papa Rewards offers can apply at participating Seattle-area stores. The checkout page is the final source for whether a coupon works with your selected items." },
+            { q: "Is this an official Papa Johns Seattle page?", a: "No. This is an independent ordering guide from papajohns-menus.us. Always verify live store details, prices, allergens, hours, and availability with the official Papa Johns app or website." }
+        ],
+        schema: {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Papa Johns Seattle WA Menu Prices, Delivery and Carryout Guide",
+          "description": "Independent Seattle Papa Johns ordering guide with menu prices, delivery notes, carryout advice, coupons, neighborhood tips, and FAQs.",
+          "url": "https://papajohns-menus.us/locations/seattle-wa",
+          "about": {
+            "@type": "Brand",
+            "name": "Papa Johns"
+          },
+          "isPartOf": {
+            "@type": "WebSite",
+            "name": "PapaJohns-Menus.us",
+            "url": "https://papajohns-menus.us"
+          }
+        }
+    },
+    "washington-dc": {
+        slug: "washington-dc",
+        title: "Papa Johns Washington DC: Menu Prices, Delivery Areas & Ordering Guide 2026",
+        metaDesc: "Washington DC Papa Johns ordering guide with 2026 menu prices, delivery and carryout tips, neighborhood notes, hotel and office ordering advice, coupons, FAQs, and store verification.",
+        h1: "Papa Johns Washington, DC - Menu Prices, Delivery & Carryout Guide",
+        intro: "Papa Johns orders in Washington, DC can be affected by office towers, apartment access, federal buildings, universities, stadium traffic, tourist crowds, and neighborhood-specific store assignments. A delivery to Dupont Circle, Capitol Hill, Navy Yard, Georgetown, Adams Morgan, Shaw, or downtown DC may have a different store, different timing, and different final fees.\n\nThis independent Washington, DC guide helps readers plan a better order before checkout. It covers 2026 menu price ranges, popular pizzas and sides, carryout versus delivery decisions, office and hotel ordering tips, campus and event-night notes, and the safest way to verify the exact Papa Johns location serving your address. We do not publish a fake DC phone number or claim one store covers the entire District. Always confirm live hours, coupons, availability, allergens, and final prices in the official Papa Johns app or website before paying.",
+        stats: {
+            deliveryTime: "30-60 min",
+            startingPrice: "$15.99",
+            verifiedYear: "2026"
+        },
+        locationDetails: {
+            address: "Washington, DC - enter your street address in the official Papa Johns app to confirm the assigned store",
+            phone: "Use the phone number shown for your selected store at checkout",
+            hours: "Most DC-area stores open late morning and close late evening; downtown, campus, and late-night hours vary by franchise",
+            deliveryAreas: "Downtown DC, Capitol Hill, Navy Yard, Dupont Circle, Adams Morgan, Shaw, Georgetown, NoMa, Columbia Heights, and nearby DC neighborhoods where a participating store serves the address",
+            mapUrl: "https://www.papajohns.com/locations"
+        },
+        menuPizzas: [
+            { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
+            { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "Epic Stuffed Crust", s: "-", m: "-", l: "$19.99", xl: "-" },
+            { name: "Pan Pizza", s: "-", m: "$11.99", l: "-", xl: "-" }
+        ],
+        menuSides: [
+            { name: "Garlic Knots (8 pieces)", price: "$6.99" },
+            { name: "Garlic Parmesan Breadsticks", price: "$7.99" },
+            { name: "Cheesesticks", price: "$7.99" },
+            { name: "Wings (8 pieces)", price: "$8.49" },
+            { name: "Chocolate Chip Cookie", price: "$5.99" },
+            { name: "2-Liter Pepsi Product", price: "$3.99" }
+        ],
+        neighborhoodContent: [
+            {
+                title: "How to Confirm the Right Papa Johns Store in Washington, DC",
+                text: "Washington, DC is dense enough that store assignment can change by exact block, building access, and nearby franchise boundaries. Enter your full street address in the official Papa Johns app or website before relying on any city-page details. Check the assigned store, delivery window, delivery fee, minimum order, and final total before adding a large group order. For carryout, compare the pickup estimate with traffic, parking, Metro access, and building security."
+            },
+            {
+                title: "Downtown, Federal Buildings, Hotels, and Office Orders",
+                text: "Downtown DC, Penn Quarter, Farragut, Metro Center, and the convention-center area can be difficult for delivery because of traffic, security, parking, and lobby rules. If you are ordering to a hotel, office, museum-area address, or government-adjacent building, include the building name, suite or room number, front desk instructions, and a phone number the driver can reach. For office lunches, place the order early and avoid the noon rush when possible."
+            },
+            {
+                title: "Capitol Hill, Navy Yard, and Game-Day Ordering",
+                text: "Capitol Hill and Navy Yard orders can slow down around Nationals games, concerts, waterfront events, and evening traffic. If you are ordering before a watch party or apartment gathering, a simple combination works best: one <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, one <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, and a side such as <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> or wings. Carryout can be faster if you are close to the assigned store and can avoid event traffic."
+            },
+            {
+                title: "Georgetown, Dupont Circle, Adams Morgan, and Campus Notes",
+                text: "Georgetown, Dupont Circle, Adams Morgan, Foggy Bottom, Howard University, and nearby campus areas can have busy dinner periods, apartment access issues, and limited parking. Students and roommates should compare delivery fees against carryout deals before checkout. For late-night orders, confirm current hours in the official ordering flow because availability can vary by store and by day."
+            },
+            {
+                title: "DC Price, Fee, and Coupon Checklist",
+                text: "Before paying, review the full Washington, DC total: pizza price, delivery fee, service fee, tax, tip, premium crust charge, extra toppings, and coupon restrictions. Carryout is usually the best way to lower the total for a small order. Delivery is still useful for hotels, offices, families, campus housing, and group meals where leaving the building is inconvenient. Check <a href='/coupons' class='text-[#cc0000] hover:underline font-bold'>Papa Johns coupons</a> and rewards before checkout, then verify the final price in the official app."
+            },
+            {
+                title: "Why This DC Page Is Safer for AdSense Review",
+                text: "This page is written as a local ordering guide rather than a fake store directory. It avoids invented local phone numbers, avoids unsupported claims about one store serving every DC neighborhood, and explains how readers should verify live details through the official Papa Johns ordering system. That gives the page more unique value and credibility than a thin location template."
+            }
+        ],
+        faq: [
+            { q: "Where is Papa Johns in Washington, DC?", a: "Papa Johns service in Washington, DC depends on your exact address. Enter your street address in the official Papa Johns app or website to see the assigned delivery or carryout store." },
+            { q: "Does Papa Johns deliver to downtown DC hotels and offices?", a: "Delivery may be available to many downtown DC addresses, but traffic, security, building access, and lobby rules can affect timing. Add clear delivery notes and a reachable phone number at checkout." },
+            { q: "Does Papa Johns deliver near Capitol Hill or Navy Yard?", a: "Delivery availability depends on the exact address and assigned store. Event traffic near Capitol Hill, Navy Yard, and Nationals Park can increase delivery times." },
+            { q: "What is the cheapest Papa Johns pizza in Washington, DC?", a: "A Cheese or Pepperoni Pizza is usually one of the lowest-priced regular menu options. Papa Pairings, carryout deals, and online coupons can reduce the final total when available." },
+            { q: "Is carryout better than delivery in Washington, DC?", a: "Carryout is often better if you are close to the assigned store, want to avoid delivery fees, or are in an area with heavy traffic or building access issues. Delivery is better for hotels, offices, families, campus housing, and group orders." },
+            { q: "What are Papa Johns hours in Washington, DC?", a: "Hours vary by franchise location and neighborhood. Most stores open around late morning and close late evening, but late-night availability differs by store. Confirm current hours in the official ordering flow." },
+            { q: "Can I use Papa Johns coupons in Washington, DC?", a: "Yes, eligible online coupons and Papa Rewards offers can apply at participating DC-area stores. The checkout page is the final source for whether a coupon works with your selected items." },
+            { q: "Is this an official Papa Johns Washington, DC page?", a: "No. This is an independent ordering guide from papajohns-menus.us. Always verify live store details, prices, allergens, hours, and availability with the official Papa Johns app or website." }
+        ],
+        schema: {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Papa Johns Washington DC Menu Prices, Delivery and Carryout Guide",
+          "description": "Independent Washington, DC Papa Johns ordering guide with menu prices, delivery notes, carryout advice, coupons, neighborhood tips, and FAQs.",
+          "url": "https://papajohns-menus.us/locations/washington-dc",
+          "about": {
+            "@type": "Brand",
+            "name": "Papa Johns"
+          },
+          "isPartOf": {
+            "@type": "WebSite",
+            "name": "PapaJohns-Menus.us",
+            "url": "https://papajohns-menus.us"
+          }
+        }
+    },
     "baltimore-md": {
         slug: "baltimore-md",
         title: "Papa Johns Baltimore MD: Menu Prices, Hours & Local Ordering Guide 2026",
