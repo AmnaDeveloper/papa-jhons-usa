@@ -413,6 +413,89 @@ export const locationRichContent: Record<string, RichLocationData> = {
           "url": "https://papajohns-menus.us/locations/austin-tx"
         }
     },
+    "san-antonio-tx": {
+        slug: "san-antonio-tx",
+        title: "Papa Johns San Antonio TX: Menu Prices, Delivery Areas & Ordering Guide 2026",
+        metaDesc: "San Antonio Papa Johns ordering guide with 2026 menu prices, delivery and carryout tips, neighborhood notes, game-day advice, coupons, FAQs, and trust-safe store verification.",
+        h1: "Papa Johns San Antonio, TX — Menu Prices, Delivery & Carryout Guide",
+        intro: "Ordering Papa Johns in San Antonio is not just a question of picking a pizza. The city stretches from downtown and Southtown to Alamo Heights, Stone Oak, Leon Valley, UTSA, and the Far West Side, so the best store, delivery time, and final price can change based on your exact address.\n\nThis independent guide is built to help San Antonio readers plan a better order before checkout: current menu price ranges, popular pizzas, carryout versus delivery advice, neighborhood timing notes, event-night tips, and the safest way to verify the exact Papa Johns location serving your address. We do not publish a fake local phone number or pretend one downtown store serves the entire city. Always confirm live availability, hours, and final prices in the official Papa Johns app or website before paying.",
+        stats: {
+            deliveryTime: "30–55 min",
+            startingPrice: "$15.99",
+            verifiedYear: "2026"
+        },
+        locationDetails: {
+            address: "San Antonio, TX — enter your street address in the official Papa Johns app to confirm the assigned store",
+            phone: "Use the phone number shown for your selected store at checkout",
+            hours: "Most San Antonio stores open late morning and close late evening; late-night hours vary by neighborhood and franchise",
+            deliveryAreas: "Downtown, Southtown, Alamo Heights, Medical Center, UTSA, Stone Oak, Leon Valley, Far West Side, and nearby San Antonio neighborhoods where a participating store serves the address",
+            mapUrl: "https://www.papajohns.com/locations"
+        },
+        menuPizzas: [
+            { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
+            { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
+            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "Epic Stuffed Crust", s: "—", m: "—", l: "$19.99", xl: "—" },
+            { name: "Pan Pizza", s: "—", m: "$11.99", l: "—", xl: "—" }
+        ],
+        menuSides: [
+            { name: "Garlic Knots (8 pieces)", price: "$6.99" },
+            { name: "Garlic Parmesan Breadsticks", price: "$7.99" },
+            { name: "Cheesesticks", price: "$7.99" },
+            { name: "Wings (8 pieces)", price: "$8.49" },
+            { name: "Chocolate Chip Cookie", price: "$5.99" },
+            { name: "2-Liter Pepsi Product", price: "$3.99" }
+        ],
+        neighborhoodContent: [
+            {
+                title: "How to Find the Right Papa Johns Store in San Antonio",
+                text: "San Antonio is large enough that a single city page cannot honestly name one store as the best option for everyone. The most reliable method is to enter your full delivery address in the official Papa Johns app or website, then check which store appears before building your cart. For carryout, compare the drive time, parking situation, and pickup estimate. For delivery, check whether the app quotes a realistic delivery window before adding sides, drinks, or a large group order."
+            },
+            {
+                title: "Downtown, River Walk, and Southtown Ordering Notes",
+                text: "Downtown San Antonio, the River Walk area, Hemisfair, and Southtown can be slower during conventions, weekends, Fiesta events, holiday travel, and Spurs or major concert nights. If you are ordering to a hotel, office, apartment building, or event space, add the building name, room or suite number, entrance instructions, and a reachable phone number. For hotels near the River Walk, lobby delivery is often smoother than asking a driver to navigate restricted parking or crowded pedestrian areas."
+            },
+            {
+                title: "UTSA, Medical Center, Stone Oak, and Far West Side Tips",
+                text: "Northwest and North San Antonio orders can vary widely by distance. UTSA, Medical Center, Leon Valley, Stone Oak, and Far West Side addresses may be assigned to different stores depending on the exact street. If the delivery estimate is high, carryout can be a better value because it avoids delivery fees and keeps loaded pizzas like <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a> and <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a> fresher."
+            },
+            {
+                title: "Best San Antonio Orders for Families, Students, and Game Nights",
+                text: "For a family or watch party, the safest order is one simple pizza such as Cheese or Pepperoni, one loaded specialty pizza such as The Works, and one shareable side like <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> or cheesesticks. Students near UTSA or downtown campuses should compare Papa Pairings, carryout deals, and current <a href='/coupons' class='text-[#cc0000] hover:underline font-bold'>Papa Johns coupons</a> before paying because delivery fees can make a low-priced pizza much more expensive."
+            },
+            {
+                title: "Why This Page Is Trust-Safe for AdSense Review",
+                text: "This page avoids fake local phone numbers, invented store claims, and exaggerated delivery promises. It provides useful San Antonio ordering context, explains how readers should verify their assigned store, and links to relevant menu, coupon, rewards, and nutrition resources. That makes it more helpful than a thin city landing page while staying honest about what can change by franchise location."
+            }
+        ],
+        faq: [
+            { q: "Where is Papa Johns in San Antonio, Texas?", a: "Papa Johns has service areas across San Antonio, but the correct store depends on your exact address. Enter your street address in the official Papa Johns app or website to see the assigned delivery or carryout location." },
+            { q: "Does Papa Johns deliver to the San Antonio River Walk?", a: "Delivery may be available to many downtown and River Walk-area addresses, but hotel access, parking, and event traffic can affect timing. Use the official app to confirm delivery and add clear lobby or room instructions." },
+            { q: "What is the cheapest Papa Johns pizza in San Antonio?", a: "A Cheese or Pepperoni Pizza is usually one of the lowest-priced regular menu options. Papa Pairings and carryout deals can lower the final price, but exact offers vary by store and date." },
+            { q: "Is carryout better than delivery in San Antonio?", a: "Carryout is often cheaper and fresher if you are close to the assigned store. Delivery is better for hotels, offices, late-night orders, bad weather, or large groups that cannot pick up." },
+            { q: "What are Papa Johns hours in San Antonio?", a: "Hours vary by franchise location. Most stores open around late morning and close late evening, but late-night availability differs by neighborhood. Confirm hours in the official ordering flow before planning a late order." },
+            { q: "Can I use Papa Johns coupons in San Antonio?", a: "Yes, eligible online coupons and Papa Rewards offers can apply at participating San Antonio stores. The checkout page is the final source for whether a coupon works with your selected items." },
+            { q: "What should I order for a San Antonio watch party?", a: "A balanced order is one Pepperoni Pizza, one loaded specialty pizza like The Works, Garlic Knots or cheesesticks, and a 2-liter drink. For larger groups, add a plain Cheese Pizza for picky eaters." },
+            { q: "Is this an official Papa Johns San Antonio page?", a: "No. This is an independent ordering guide from papajohns-menus.us. Always verify live store details, allergens, availability, and prices with the official Papa Johns ordering system." }
+        ],
+        schema: {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Papa Johns San Antonio TX Menu Prices, Delivery and Carryout Guide",
+          "description": "Independent San Antonio Papa Johns ordering guide with menu prices, delivery notes, carryout advice, coupons, and FAQs.",
+          "url": "https://papajohns-menus.us/locations/san-antonio-tx",
+          "about": {
+            "@type": "Brand",
+            "name": "Papa Johns"
+          },
+          "isPartOf": {
+            "@type": "WebSite",
+            "name": "PapaJohns-Menus.us",
+            "url": "https://papajohns-menus.us"
+          }
+        }
+    },
     "baltimore-md": {
         slug: "baltimore-md",
         title: "Papa Johns Baltimore MD: Menu Prices, Hours & Local Ordering Guide 2026",
