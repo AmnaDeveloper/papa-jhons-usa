@@ -496,6 +496,93 @@ export const locationRichContent: Record<string, RichLocationData> = {
           }
         }
     },
+    "san-diego-ca": {
+        slug: "san-diego-ca",
+        title: "Papa Johns San Diego CA: Menu Prices, Delivery Areas & Ordering Guide 2026",
+        metaDesc: "San Diego Papa Johns ordering guide with 2026 menu prices, delivery and carryout tips, neighborhood notes, hotel ordering advice, coupons, FAQs, and store verification.",
+        h1: "Papa Johns San Diego, CA — Menu Prices, Delivery & Carryout Guide",
+        intro: "Papa Johns orders in San Diego can look simple at first, but the final experience depends heavily on where you are ordering from. Downtown hotels, Gaslamp restaurants, beach neighborhoods, college areas, military housing, and inland suburbs can all have different delivery estimates, fees, parking challenges, and store assignments.\n\nThis independent San Diego guide is written to help readers plan a better Papa Johns order before checkout. It covers 2026 menu price ranges, popular pizzas and sides, carryout versus delivery decisions, hotel and beach-area ordering tips, neighborhood timing notes, and the safest way to confirm the exact store serving your address. We do not publish a fake local phone number or claim one San Diego location serves the whole city. Always confirm live availability, hours, coupons, allergens, and final prices in the official Papa Johns app or website before paying.",
+        stats: {
+            deliveryTime: "30–55 min",
+            startingPrice: "$15.99",
+            verifiedYear: "2026"
+        },
+        locationDetails: {
+            address: "San Diego, CA — enter your street address in the official Papa Johns app to confirm the assigned store",
+            phone: "Use the phone number shown for your selected store at checkout",
+            hours: "Most San Diego-area stores open late morning and close late evening; beach, downtown, and campus-area hours can vary by franchise",
+            deliveryAreas: "Downtown San Diego, Gaslamp Quarter, North Park, Hillcrest, Mission Valley, Pacific Beach, La Jolla, College Area, Clairemont, and nearby neighborhoods where a participating store serves the address",
+            mapUrl: "https://www.papajohns.com/locations"
+        },
+        menuPizzas: [
+            { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
+            { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
+            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "Epic Stuffed Crust", s: "—", m: "—", l: "$19.99", xl: "—" },
+            { name: "Pan Pizza", s: "—", m: "$11.99", l: "—", xl: "—" }
+        ],
+        menuSides: [
+            { name: "Garlic Knots (8 pieces)", price: "$6.99" },
+            { name: "Garlic Parmesan Breadsticks", price: "$7.99" },
+            { name: "Cheesesticks", price: "$7.99" },
+            { name: "Wings (8 pieces)", price: "$8.49" },
+            { name: "Chocolate Chip Cookie", price: "$5.99" },
+            { name: "2-Liter Pepsi Product", price: "$3.99" }
+        ],
+        neighborhoodContent: [
+            {
+                title: "How to Confirm the Right Papa Johns Store in San Diego",
+                text: "San Diego is spread across coastal, downtown, college, and inland neighborhoods, so the correct Papa Johns store can change by only a few streets. The safest method is to enter your full address in the official Papa Johns app or website before choosing items. For delivery, review the estimated arrival time, delivery fee, service fee, and minimum order before adding extra sides. For carryout, compare the pickup estimate with the real drive time and parking situation near the store."
+            },
+            {
+                title: "Downtown, Gaslamp, and Convention-Area Ordering Tips",
+                text: "Downtown San Diego, the Gaslamp Quarter, Little Italy, East Village, and the convention-center area can slow down during Padres games, Comic-Con week, concerts, cruise arrivals, and weekend nightlife. If you are ordering to a hotel, office tower, apartment building, or event space, include the building name, room or suite number, front-desk instructions, and a phone number the driver can reach. Lobby pickup is often smoother than asking a driver to find street parking near a busy downtown entrance."
+            },
+            {
+                title: "Beach Neighborhoods and Coastal Delivery Notes",
+                text: "Pacific Beach, Mission Beach, Ocean Beach, La Jolla, and nearby coastal areas can have slower delivery on sunny weekends, summer evenings, and holiday periods because traffic and parking are unpredictable. If you are close enough to the assigned store, carryout can protect food quality and reduce fees. Loaded pizzas such as <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a> or an <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a> usually travel better when the pickup or delivery distance is short."
+            },
+            {
+                title: "College, Military, and Group Ordering in San Diego",
+                text: "San Diego has many orders tied to student housing, military families, office lunches, and group events. Around SDSU, UC San Diego, Mission Valley, Kearny Mesa, and Clairemont, delivery estimates can move quickly during dinner hours. For a practical group order, choose one simple pizza such as Cheese or Pepperoni, one specialty pizza such as BBQ Chicken Bacon or The Works, and one shareable side like <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> or cheesesticks. Check <a href='/coupons' class='text-[#cc0000] hover:underline font-bold'>Papa Johns coupons</a> and Papa Pairings before checkout because deals can make a large order much cheaper."
+            },
+            {
+                title: "San Diego Price and Fee Checklist Before Checkout",
+                text: "The menu price is only part of the final total. Before paying, check whether your San Diego order includes a delivery fee, service fee, local tax, tip, premium crust charge, extra toppings, or drink substitutions. Carryout is usually the easiest way to reduce the total if you can pick up safely. Delivery is still worth it for hotels, offices, late-night orders, families without a car, and beach-area groups that do not want to leave their spot."
+            },
+            {
+                title: "Why This Page Is Built for Reader Trust",
+                text: "This page does not invent a San Diego phone number, promise exact delivery times, or list one store as if it covers every neighborhood. Instead, it explains how readers should verify their assigned store, what local conditions can affect delivery, and which menu and deal pages are useful before checkout. That gives the page more original value than a thin city landing page and makes it safer for AdSense review."
+            }
+        ],
+        faq: [
+            { q: "Where is Papa Johns in San Diego, California?", a: "Papa Johns service in San Diego depends on your exact address. Enter your street address in the official Papa Johns app or website to see the assigned delivery or carryout store." },
+            { q: "Does Papa Johns deliver to downtown San Diego hotels?", a: "Delivery may be available to many downtown hotels, but access, parking, events, and lobby rules can affect timing. Add the hotel name, room number, lobby instructions, and a reachable phone number at checkout." },
+            { q: "Does Papa Johns deliver to Pacific Beach or Mission Beach?", a: "Delivery availability depends on the specific address and the store assigned by the official ordering system. Beach traffic and parking can slow delivery, especially on weekends and summer evenings." },
+            { q: "What is the cheapest Papa Johns pizza in San Diego?", a: "A Cheese or Pepperoni Pizza is usually one of the lowest-priced regular menu options. Papa Pairings, carryout deals, and online coupons can reduce the final total when available at the selected store." },
+            { q: "Is carryout better than delivery in San Diego?", a: "Carryout is often better when you are close to the assigned store, want to avoid delivery fees, or are in a beach or downtown area with difficult parking. Delivery is better for hotels, offices, family nights, and large group orders." },
+            { q: "What are Papa Johns hours in San Diego?", a: "Hours vary by franchise location and neighborhood. Most stores open around late morning and close late evening, but late-night availability can differ. Confirm current hours in the official Papa Johns ordering flow." },
+            { q: "Can I use Papa Johns coupons in San Diego?", a: "Yes, eligible online offers and Papa Rewards deals can apply at participating San Diego-area stores. The checkout page is the final source for whether a coupon works with your selected items." },
+            { q: "Is this an official Papa Johns San Diego page?", a: "No. This is an independent ordering guide from papajohns-menus.us. Always verify live store details, prices, allergens, hours, and availability with the official Papa Johns app or website." }
+        ],
+        schema: {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Papa Johns San Diego CA Menu Prices, Delivery and Carryout Guide",
+          "description": "Independent San Diego Papa Johns ordering guide with menu prices, delivery notes, carryout advice, coupons, neighborhood tips, and FAQs.",
+          "url": "https://papajohns-menus.us/locations/san-diego-ca",
+          "about": {
+            "@type": "Brand",
+            "name": "Papa Johns"
+          },
+          "isPartOf": {
+            "@type": "WebSite",
+            "name": "PapaJohns-Menus.us",
+            "url": "https://papajohns-menus.us"
+          }
+        }
+    },
     "baltimore-md": {
         slug: "baltimore-md",
         title: "Papa Johns Baltimore MD: Menu Prices, Hours & Local Ordering Guide 2026",
