@@ -16,6 +16,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { slug } = await params;
     const richData = locationRichContent[slug];
     const location = locations.find((l) => l.slug === slug);
+    const canonicalUrl = `https://papajohns-menus.us/locations/${slug}`;
+    const ogImage = "https://papajohns-menus.us/og-image.jpg";
     
     if (!location && !richData) return { title: 'Location Not Found' };
 
@@ -24,7 +26,29 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             title: richData.title,
             description: richData.metaDesc,
             alternates: {
-                canonical: `https://papajohns-menus.us/locations/${slug}`,
+                canonical: canonicalUrl,
+            },
+            openGraph: {
+                title: richData.title,
+                description: richData.metaDesc,
+                url: canonicalUrl,
+                siteName: "Papa John's Menus",
+                locale: "en_US",
+                type: "website",
+                images: [
+                    {
+                        url: ogImage,
+                        width: 1200,
+                        height: 630,
+                        alt: richData.h1,
+                    },
+                ],
+            },
+            twitter: {
+                card: "summary_large_image",
+                title: richData.title,
+                description: richData.metaDesc,
+                images: [ogImage],
             },
         };
     }
@@ -40,7 +64,29 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         title: dynamicTitle,
         description: dynamicDescription,
         alternates: {
-            canonical: `https://papajohns-menus.us/locations/${slug}`,
+            canonical: canonicalUrl,
+        },
+        openGraph: {
+            title: dynamicTitle,
+            description: dynamicDescription,
+            url: canonicalUrl,
+            siteName: "Papa John's Menus",
+            locale: "en_US",
+            type: "website",
+            images: [
+                {
+                    url: ogImage,
+                    width: 1200,
+                    height: 630,
+                    alt: `Papa John's ${location?.city} menu and prices`,
+                },
+            ],
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: dynamicTitle,
+            description: dynamicDescription,
+            images: [ogImage],
         },
     };
 }
