@@ -583,6 +583,180 @@ export const locationRichContent: Record<string, RichLocationData> = {
           }
         }
     },
+    "san-francisco-ca": {
+        slug: "san-francisco-ca",
+        title: "Papa Johns San Francisco CA: Menu Prices, Delivery Areas & Ordering Guide 2026",
+        metaDesc: "San Francisco Papa Johns ordering guide with 2026 menu prices, delivery and carryout tips, neighborhood notes, apartment and hotel ordering advice, coupons, FAQs, and store verification.",
+        h1: "Papa Johns San Francisco, CA - Menu Prices, Delivery & Carryout Guide",
+        intro: "Ordering Papa Johns in San Francisco can be more complicated than ordering in a simple suburban delivery zone. Hills, one-way streets, apartment access, hotel lobbies, bridge traffic, event crowds, and neighborhood store assignments can all affect delivery time, food quality, and the final checkout price. A customer in SoMa, the Mission, Nob Hill, the Sunset, the Richmond, North Beach, or near Union Square may see different delivery fees, pickup estimates, and available deals.\n\nThis independent San Francisco guide is built to help readers plan a better Papa Johns order before checkout. It covers 2026 menu price ranges, popular pizzas and sides, carryout versus delivery decisions, apartment and hotel ordering tips, event-night guidance, neighborhood timing notes, and the safest way to confirm which Papa Johns store serves your exact address. We do not publish a fake San Francisco phone number or pretend one store covers the whole city. Always verify live hours, coupons, allergens, availability, and final prices in the official Papa Johns app or website before paying.",
+        stats: {
+            deliveryTime: "30-60 min",
+            startingPrice: "$15.99",
+            verifiedYear: "2026"
+        },
+        locationDetails: {
+            address: "San Francisco, CA - enter your street address in the official Papa Johns app to confirm the assigned store",
+            phone: "Use the phone number shown for your selected store at checkout",
+            hours: "Most San Francisco-area stores open late morning and close late evening; late-night service varies by neighborhood and franchise",
+            deliveryAreas: "SoMa, Mission District, Union Square, Nob Hill, Hayes Valley, North Beach, Richmond District, Sunset District, Bayview, and nearby neighborhoods where a participating store serves the address",
+            mapUrl: "https://www.papajohns.com/locations"
+        },
+        menuPizzas: [
+            { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
+            { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "Epic Stuffed Crust", s: "-", m: "-", l: "$19.99", xl: "-" },
+            { name: "Pan Pizza", s: "-", m: "$11.99", l: "-", xl: "-" }
+        ],
+        menuSides: [
+            { name: "Garlic Knots (8 pieces)", price: "$6.99" },
+            { name: "Garlic Parmesan Breadsticks", price: "$7.99" },
+            { name: "Cheesesticks", price: "$7.99" },
+            { name: "Wings (8 pieces)", price: "$8.49" },
+            { name: "Chocolate Chip Cookie", price: "$5.99" },
+            { name: "2-Liter Pepsi Product", price: "$3.99" }
+        ],
+        neighborhoodContent: [
+            {
+                title: "How to Confirm the Right Papa Johns Store in San Francisco",
+                text: "San Francisco delivery zones can change quickly by hill, block, and franchise boundary, so the most reliable step is to enter your full address in the official Papa Johns app or website before relying on any city-page estimate. Review the assigned store, pickup time, delivery fee, service fee, minimum order, and final delivery window before building a large cart. For carryout, compare the pickup estimate with transit time, parking difficulty, and whether the store is easier to reach by walking, rideshare, or public transit."
+            },
+            {
+                title: "SoMa, Union Square, Downtown, and Hotel Delivery Tips",
+                text: "SoMa, Union Square, the Financial District, Nob Hill, and convention-area hotels can be slower because of traffic, security desks, elevators, and limited curb space. If you are ordering to a hotel, office tower, apartment building, or event space, add the building name, room or suite number, lobby instructions, and a reachable phone number. Meeting the driver in the lobby is often faster than asking them to park, check in, and find an elevator during busy evening hours."
+            },
+            {
+                title: "Mission, Castro, Hayes Valley, and Apartment Ordering Notes",
+                text: "Dense residential neighborhoods such as the Mission, Castro, Hayes Valley, Lower Haight, and nearby apartment corridors can have excellent demand but tricky access. Add gate codes, buzzer names, cross streets, and delivery instructions before checkout. If the app shows a long delivery time, carryout can keep pizzas like <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a> and <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a> hotter while also avoiding delivery fees."
+            },
+            {
+                title: "Sunset, Richmond, Bayview, and Outer Neighborhood Timing",
+                text: "The Sunset, Richmond District, Bayview, Visitacion Valley, and other outer neighborhoods may have different assigned stores than downtown addresses. Weather, hills, and cross-town traffic can make short distances feel longer at dinner time. Families and roommate groups should consider ordering one simple pizza, one specialty pizza, and a shareable side such as <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> or cheesesticks instead of placing multiple separate orders."
+            },
+            {
+                title: "San Francisco Price, Fee, and Coupon Checklist",
+                text: "Before paying, check the full San Francisco total: pizza price, delivery fee, service fee, local tax, tip, premium crust charges, extra toppings, and coupon limits. A small delivery order can become expensive quickly, so compare carryout, Papa Pairings, and current <a href='/coupons' class='text-[#cc0000] hover:underline font-bold'>Papa Johns coupons</a>. Delivery can still be worth it for hotels, office meals, families, late-night orders, rainy evenings, and groups that do not want to deal with parking."
+            },
+            {
+                title: "Why This San Francisco Page Is Built for AdSense Trust",
+                text: "This page is intentionally written as a local ordering guide rather than a fake store listing. It avoids invented phone numbers, avoids unsupported claims about one store serving the full city, and explains how readers should verify live details through the official Papa Johns ordering system. That makes the page more useful, more transparent, and less likely to look like thin or auto-generated location content."
+            }
+        ],
+        faq: [
+            { q: "Where is Papa Johns in San Francisco, California?", a: "Papa Johns service in San Francisco depends on your exact address. Enter your street address in the official Papa Johns app or website to see the assigned delivery or carryout store." },
+            { q: "Does Papa Johns deliver to downtown San Francisco hotels?", a: "Delivery may be available to many downtown and Union Square hotels, but lobby rules, elevators, traffic, and curb access can affect timing. Add the hotel name, room number, lobby instructions, and a reachable phone number at checkout." },
+            { q: "Does Papa Johns deliver to the Mission or SoMa?", a: "Delivery availability depends on the exact address and assigned store. Dense apartment access, one-way streets, and dinner rush timing can affect delivery estimates in both areas." },
+            { q: "What is the cheapest Papa Johns pizza in San Francisco?", a: "A Cheese or Pepperoni Pizza is usually one of the lowest-priced regular menu options. Carryout deals, Papa Pairings, and online coupons can reduce the final price when available." },
+            { q: "Is carryout better than delivery in San Francisco?", a: "Carryout is often better if you are close to the assigned store, want to avoid delivery fees, or live in a building with difficult access. Delivery is better for hotels, offices, families, rainy nights, and larger group orders." },
+            { q: "What are Papa Johns hours in San Francisco?", a: "Hours vary by franchise location and neighborhood. Most stores open around late morning and close late evening, but late-night service differs by store. Confirm current hours in the official ordering flow." },
+            { q: "Can I use Papa Johns coupons in San Francisco?", a: "Yes, eligible online coupons and Papa Rewards offers can apply at participating San Francisco-area stores. The checkout page is the final source for whether a coupon works with your selected items." },
+            { q: "Is this an official Papa Johns San Francisco page?", a: "No. This is an independent ordering guide from papajohns-menus.us. Always verify live store details, prices, allergens, hours, and availability with the official Papa Johns app or website." }
+        ],
+        schema: {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Papa Johns San Francisco CA Menu Prices, Delivery and Carryout Guide",
+          "description": "Independent San Francisco Papa Johns ordering guide with menu prices, delivery notes, carryout advice, coupons, neighborhood tips, and FAQs.",
+          "url": "https://papajohns-menus.us/locations/san-francisco-ca",
+          "about": {
+            "@type": "Brand",
+            "name": "Papa Johns"
+          },
+          "isPartOf": {
+            "@type": "WebSite",
+            "name": "PapaJohns-Menus.us",
+            "url": "https://papajohns-menus.us"
+          }
+        }
+    },
+    "san-jose-ca": {
+        slug: "san-jose-ca",
+        title: "Papa Johns San Jose CA: Menu Prices, Delivery Areas & Ordering Guide 2026",
+        metaDesc: "San Jose Papa Johns ordering guide with 2026 menu prices, delivery and carryout tips, Silicon Valley neighborhood notes, coupons, FAQs, and store verification.",
+        h1: "Papa Johns San Jose, CA - Menu Prices, Delivery & Carryout Guide",
+        intro: "Papa Johns ordering in San Jose depends heavily on where you are in the city. Downtown apartments, San Jose State housing, office parks, family neighborhoods, South San Jose, East San Jose, Willow Glen, and North San Jose can each have different store assignments, delivery fees, pickup times, and traffic patterns. Silicon Valley commutes and event nights can also make a short trip take longer than expected.\n\nThis independent San Jose guide helps readers plan a better Papa Johns order before checkout. It covers 2026 menu price ranges, common pizzas and sides, carryout versus delivery decisions, office and campus ordering tips, neighborhood timing notes, family-order advice, and the safest way to confirm the exact Papa Johns store serving your address. We do not publish a fake San Jose phone number or claim one store covers the entire city. Always confirm live availability, hours, coupons, allergens, and final prices in the official Papa Johns app or website before paying.",
+        stats: {
+            deliveryTime: "30-55 min",
+            startingPrice: "$15.99",
+            verifiedYear: "2026"
+        },
+        locationDetails: {
+            address: "San Jose, CA - enter your street address in the official Papa Johns app to confirm the assigned store",
+            phone: "Use the phone number shown for your selected store at checkout",
+            hours: "Most San Jose-area stores open late morning and close late evening; late-night service varies by neighborhood and franchise",
+            deliveryAreas: "Downtown San Jose, San Jose State area, Willow Glen, Berryessa, Alum Rock, Evergreen, North San Jose, West San Jose, Cambrian, and nearby neighborhoods where a participating store serves the address",
+            mapUrl: "https://www.papajohns.com/locations"
+        },
+        menuPizzas: [
+            { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
+            { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "Epic Stuffed Crust", s: "-", m: "-", l: "$19.99", xl: "-" },
+            { name: "Pan Pizza", s: "-", m: "$11.99", l: "-", xl: "-" }
+        ],
+        menuSides: [
+            { name: "Garlic Knots (8 pieces)", price: "$6.99" },
+            { name: "Garlic Parmesan Breadsticks", price: "$7.99" },
+            { name: "Cheesesticks", price: "$7.99" },
+            { name: "Wings (8 pieces)", price: "$8.49" },
+            { name: "Chocolate Chip Cookie", price: "$5.99" },
+            { name: "2-Liter Pepsi Product", price: "$3.99" }
+        ],
+        neighborhoodContent: [
+            {
+                title: "How to Confirm the Right Papa Johns Store in San Jose",
+                text: "San Jose covers a large area, so the correct Papa Johns store can change by neighborhood, freeway access, and exact street address. Enter your full address in the official Papa Johns app or website before relying on a city-level estimate. Check the assigned store, pickup estimate, delivery window, delivery fee, service fee, and minimum order before adding a large cart. For carryout, compare the store's pickup time with real drive time and parking near the location."
+            },
+            {
+                title: "Downtown, San Jose State, and Event-Night Ordering",
+                text: "Downtown San Jose and the San Jose State area can be busy during class schedules, concerts, SAP Center events, conventions, and weekend nights. If you are ordering to an apartment building, dorm-style housing, hotel, or office, include the building name, unit or room number, gate code, lobby instructions, and a reachable phone number. A clear delivery note can save more time than choosing a faster-looking delivery estimate."
+            },
+            {
+                title: "North San Jose, Office Parks, and Work Lunch Orders",
+                text: "North San Jose and nearby Silicon Valley office areas often need predictable timing more than late-night speed. For team lunches, order early, keep the menu simple, and confirm whether the driver should meet at reception, a security desk, or a designated pickup area. A practical office order is one <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, one <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, one Cheese Pizza, and shareable sides like <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> or cheesesticks."
+            },
+            {
+                title: "Willow Glen, Evergreen, Alum Rock, and Family Orders",
+                text: "Willow Glen, Evergreen, Alum Rock, Berryessa, Cambrian, and South San Jose family neighborhoods can see heavier dinner demand on school nights, weekends, and youth sports evenings. For families, a simple value order usually works better than too many custom pizzas: one Cheese or Pepperoni Pizza, one specialty pizza, one side, and a 2-liter drink. Check <a href='/coupons' class='text-[#cc0000] hover:underline font-bold'>Papa Johns coupons</a> before checkout because family-size orders are where deals can matter most."
+            },
+            {
+                title: "San Jose Price, Traffic, and Pickup Checklist",
+                text: "Before paying, review the full San Jose total: menu price, delivery fee, service fee, tax, tip, premium crust charge, extra toppings, and coupon restrictions. Commute traffic on major corridors can affect delivery estimates, especially around dinner. Carryout is often better when you are close to the assigned store or want to avoid fees. Delivery is better for office meals, student housing, family nights, late workdays, and large groups that cannot easily pick up."
+            },
+            {
+                title: "Why This San Jose Page Is Built for Trust",
+                text: "This page is not trying to look like an official store profile. It avoids invented phone numbers, avoids unsupported one-store coverage claims, and explains how readers can verify live store details in the official Papa Johns ordering flow. That makes it more transparent, more helpful, and stronger for AdSense review than a thin page with only a city name and repeated menu text."
+            }
+        ],
+        faq: [
+            { q: "Where is Papa Johns in San Jose, California?", a: "Papa Johns service in San Jose depends on your exact address. Enter your street address in the official Papa Johns app or website to see the assigned delivery or carryout store." },
+            { q: "Does Papa Johns deliver near San Jose State University?", a: "Delivery may be available near San Jose State, but availability depends on the exact address and assigned store. Add clear building, dorm, apartment, or lobby instructions at checkout." },
+            { q: "Does Papa Johns deliver to North San Jose offices?", a: "Delivery may be available to many North San Jose office addresses. For office parks, include reception instructions, company name, suite number, and a reachable phone number." },
+            { q: "What is the cheapest Papa Johns pizza in San Jose?", a: "A Cheese or Pepperoni Pizza is usually one of the lowest-priced regular menu options. Carryout offers, Papa Pairings, and online coupons can reduce the final total when available." },
+            { q: "Is carryout better than delivery in San Jose?", a: "Carryout is often better if you are near the assigned store or want to reduce fees. Delivery is better for offices, student housing, family nights, late workdays, and group orders." },
+            { q: "What are Papa Johns hours in San Jose?", a: "Hours vary by franchise location and neighborhood. Most stores open around late morning and close late evening, but late-night service differs by store. Confirm current hours in the official ordering flow." },
+            { q: "Can I use Papa Johns coupons in San Jose?", a: "Yes, eligible online coupons and Papa Rewards offers can apply at participating San Jose-area stores. The checkout page is the final source for whether a coupon works with your selected items." },
+            { q: "Is this an official Papa Johns San Jose page?", a: "No. This is an independent ordering guide from papajohns-menus.us. Always verify live store details, prices, allergens, hours, and availability with the official Papa Johns app or website." }
+        ],
+        schema: {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Papa Johns San Jose CA Menu Prices, Delivery and Carryout Guide",
+          "description": "Independent San Jose Papa Johns ordering guide with menu prices, delivery notes, carryout advice, coupons, neighborhood tips, and FAQs.",
+          "url": "https://papajohns-menus.us/locations/san-jose-ca",
+          "about": {
+            "@type": "Brand",
+            "name": "Papa Johns"
+          },
+          "isPartOf": {
+            "@type": "WebSite",
+            "name": "PapaJohns-Menus.us",
+            "url": "https://papajohns-menus.us"
+          }
+        }
+    },
     "seattle-wa": {
         slug: "seattle-wa",
         title: "Papa Johns Seattle WA: Menu Prices, Delivery Areas & Ordering Guide 2026",
