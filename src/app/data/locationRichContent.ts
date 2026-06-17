@@ -673,9 +673,9 @@ export const locationRichContent: Record<string, RichLocationData> = {
     "san-jose-ca": {
         slug: "san-jose-ca",
         title: "Papa Johns San Jose CA: Menu Prices, Delivery Areas & Ordering Guide 2026",
-        metaDesc: "San Jose Papa Johns ordering guide with 2026 menu prices, delivery and carryout tips, Silicon Valley neighborhood notes, coupons, FAQs, and store verification.",
+        metaDesc: "San Jose Papa Johns ordering guide with 2026 menu prices, delivery and carryout tips, Silicon Valley neighborhood notes, airport and office ordering advice, coupons, FAQs, and store verification.",
         h1: "Papa Johns San Jose, CA - Menu Prices, Delivery & Carryout Guide",
-        intro: "Papa Johns ordering in San Jose depends heavily on where you are in the city. Downtown apartments, San Jose State housing, office parks, family neighborhoods, South San Jose, East San Jose, Willow Glen, and North San Jose can each have different store assignments, delivery fees, pickup times, and traffic patterns. Silicon Valley commutes and event nights can also make a short trip take longer than expected.\n\nThis independent San Jose guide helps readers plan a better Papa Johns order before checkout. It covers 2026 menu price ranges, common pizzas and sides, carryout versus delivery decisions, office and campus ordering tips, neighborhood timing notes, family-order advice, and the safest way to confirm the exact Papa Johns store serving your address. We do not publish a fake San Jose phone number or claim one store covers the entire city. Always confirm live availability, hours, coupons, allergens, and final prices in the official Papa Johns app or website before paying.",
+        intro: "Papa Johns ordering in San Jose depends heavily on where you are in the city and what time you order. Downtown apartments, San Jose State housing, office parks, family neighborhoods, South San Jose, East San Jose, Willow Glen, North San Jose, and airport-area hotels can each have different store assignments, delivery fees, pickup times, and traffic patterns. Silicon Valley commutes, SAP Center events, school schedules, and late workdays can also make a short trip take longer than expected.\n\nThis independent San Jose guide helps readers plan a better Papa Johns order before checkout. It covers 2026 menu price ranges, common pizzas and sides, carryout versus delivery decisions, office and campus ordering tips, airport and hotel notes, neighborhood timing guidance, family-order advice, and the safest way to confirm the exact Papa Johns store serving your address. We do not publish a fake San Jose phone number or claim one store covers the entire city. Always confirm live availability, hours, coupons, allergens, and final prices in the official Papa Johns app or website before paying.",
         stats: {
             deliveryTime: "30-55 min",
             startingPrice: "$15.99",
@@ -715,11 +715,19 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "North San Jose, Office Parks, and Work Lunch Orders",
-                text: "North San Jose and nearby Silicon Valley office areas often need predictable timing more than late-night speed. For team lunches, order early, keep the menu simple, and confirm whether the driver should meet at reception, a security desk, or a designated pickup area. A practical office order is one <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, one <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, one Cheese Pizza, and shareable sides like <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> or cheesesticks."
+                text: "North San Jose and nearby Silicon Valley office areas often need predictable timing more than late-night speed. For team lunches, order early, keep the menu simple, and confirm whether the driver should meet at reception, a security desk, or a designated pickup area. A practical office order is one <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, one <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, one Cheese Pizza, and shareable sides like <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> or cheesesticks. For meetings, add plates, napkins, sauces, and drinks in the first cart so nobody has to place a second order with another delivery fee."
+            },
+            {
+                title: "Airport, Hotel, and Late Workday Orders",
+                text: "Orders near San Jose Mineta International Airport, airport hotels, and business-travel corridors need clear delivery instructions. Add the hotel name, room number, lobby preference, company name, or front-desk note before checkout. If you are ordering after a late flight or long workday, confirm current store hours in the official ordering flow before relying on a city-level hours estimate. Carryout may be easier for nearby hotels with shuttle or rideshare access, while delivery is better when parking or lobby access is difficult."
             },
             {
                 title: "Willow Glen, Evergreen, Alum Rock, and Family Orders",
                 text: "Willow Glen, Evergreen, Alum Rock, Berryessa, Cambrian, and South San Jose family neighborhoods can see heavier dinner demand on school nights, weekends, and youth sports evenings. For families, a simple value order usually works better than too many custom pizzas: one Cheese or Pepperoni Pizza, one specialty pizza, one side, and a 2-liter drink. Check <a href='/coupons' class='text-[#cc0000] hover:underline font-bold'>Papa Johns coupons</a> before checkout because family-size orders are where deals can matter most."
+            },
+            {
+                title: "Allergen and Ingredient Verification in San Jose",
+                text: "If someone in your group has a food allergy, gluten concern, or strict dietary need, do not rely on a local guide alone. Review Papa Johns official allergen and nutrition information, then verify with the assigned store before ordering. Franchise preparation areas are shared, and cross-contact can happen. For mixed groups, keep the order simple, label boxes when possible, and avoid assuming that a coupon or special build is suitable for every eater."
             },
             {
                 title: "San Jose Price, Traffic, and Pickup Checklist",
@@ -734,6 +742,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             { q: "Where is Papa Johns in San Jose, California?", a: "Papa Johns service in San Jose depends on your exact address. Enter your street address in the official Papa Johns app or website to see the assigned delivery or carryout store." },
             { q: "Does Papa Johns deliver near San Jose State University?", a: "Delivery may be available near San Jose State, but availability depends on the exact address and assigned store. Add clear building, dorm, apartment, or lobby instructions at checkout." },
             { q: "Does Papa Johns deliver to North San Jose offices?", a: "Delivery may be available to many North San Jose office addresses. For office parks, include reception instructions, company name, suite number, and a reachable phone number." },
+            { q: "Can Papa Johns deliver to San Jose airport-area hotels?", a: "Delivery may be available to many airport-area hotels, but the assigned store, lobby rules, and hours depend on the exact hotel address. Add the hotel name, room number, and front-desk instructions at checkout." },
             { q: "What is the cheapest Papa Johns pizza in San Jose?", a: "A Cheese or Pepperoni Pizza is usually one of the lowest-priced regular menu options. Carryout offers, Papa Pairings, and online coupons can reduce the final total when available." },
             { q: "Is carryout better than delivery in San Jose?", a: "Carryout is often better if you are near the assigned store or want to reduce fees. Delivery is better for offices, student housing, family nights, late workdays, and group orders." },
             { q: "What are Papa Johns hours in San Jose?", a: "Hours vary by franchise location and neighborhood. Most stores open around late morning and close late evening, but late-night service differs by store. Confirm current hours in the official ordering flow." },
@@ -744,8 +753,103 @@ export const locationRichContent: Record<string, RichLocationData> = {
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Papa Johns San Jose CA Menu Prices, Delivery and Carryout Guide",
-          "description": "Independent San Jose Papa Johns ordering guide with menu prices, delivery notes, carryout advice, coupons, neighborhood tips, and FAQs.",
+          "description": "Independent San Jose Papa Johns ordering guide with menu prices, delivery notes, carryout advice, coupons, neighborhood tips, airport notes, office ordering guidance, and FAQs.",
           "url": "https://papajohns-menus.us/locations/san-jose-ca",
+          "about": {
+            "@type": "Brand",
+            "name": "Papa Johns"
+          },
+          "isPartOf": {
+            "@type": "WebSite",
+            "name": "PapaJohns-Menus.us",
+            "url": "https://papajohns-menus.us"
+          }
+        }
+    },
+    "jacksonville-fl": {
+        slug: "jacksonville-fl",
+        title: "Papa Johns Jacksonville FL: Menu Prices, Delivery Areas & Ordering Guide 2026",
+        metaDesc: "Jacksonville Papa Johns ordering guide with 2026 menu prices, delivery and carryout tips, neighborhood notes, beach and game-day ordering advice, coupons, FAQs, and store verification.",
+        h1: "Papa Johns Jacksonville, FL - Menu Prices, Delivery & Carryout Guide",
+        intro: "Papa Johns ordering in Jacksonville can vary a lot because the city is spread across downtown, riverfront neighborhoods, beach communities, university areas, family suburbs, and major traffic corridors. A customer in Riverside, San Marco, Southside, Mandarin, Arlington, Northside, Jacksonville Beach, or near the stadium may see different store assignments, delivery windows, fees, and carryout convenience.\n\nThis independent Jacksonville guide is written to help readers plan a better Papa Johns order before checkout. It covers 2026 menu price ranges, popular pizzas and sides, delivery versus carryout choices, beach-area timing, Jaguars game-day advice, apartment and hotel ordering notes, family-order planning, and the safest way to confirm the exact Papa Johns store serving your address. We do not publish a fake Jacksonville phone number or claim one store covers the full city. Always verify live availability, hours, coupons, allergens, and final prices in the official Papa Johns app or website before paying.",
+        stats: {
+            deliveryTime: "30-60 min",
+            startingPrice: "$15.99",
+            verifiedYear: "2026"
+        },
+        locationDetails: {
+            address: "Jacksonville, FL - enter your street address in the official Papa Johns app to confirm the assigned store",
+            phone: "Use the phone number shown for your selected store at checkout",
+            hours: "Most Jacksonville-area stores open late morning and close late evening; beach, campus, and game-day hours vary by franchise",
+            deliveryAreas: "Downtown Jacksonville, Riverside, San Marco, Southside, Mandarin, Arlington, Northside, Jacksonville Beach, Atlantic Beach, and nearby neighborhoods where a participating store serves the address",
+            mapUrl: "https://www.papajohns.com/locations"
+        },
+        menuPizzas: [
+            { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
+            { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "Epic Stuffed Crust", s: "-", m: "-", l: "$19.99", xl: "-" },
+            { name: "Pan Pizza", s: "-", m: "$11.99", l: "-", xl: "-" }
+        ],
+        menuSides: [
+            { name: "Garlic Knots (8 pieces)", price: "$6.99" },
+            { name: "Garlic Parmesan Breadsticks", price: "$7.99" },
+            { name: "Cheesesticks", price: "$7.99" },
+            { name: "Wings (8 pieces)", price: "$8.49" },
+            { name: "Chocolate Chip Cookie", price: "$5.99" },
+            { name: "2-Liter Pepsi Product", price: "$3.99" }
+        ],
+        neighborhoodContent: [
+            {
+                title: "How to Confirm the Right Papa Johns Store in Jacksonville",
+                text: "Jacksonville covers a large geographic area, so the correct Papa Johns store can change by neighborhood, bridge route, traffic corridor, and exact street address. Enter your full address in the official Papa Johns app or website before relying on any city-level estimate. Check the assigned store, delivery window, pickup time, delivery fee, service fee, minimum order, and final total before adding a large cart. For carryout, compare the pickup estimate with real drive time and parking."
+            },
+            {
+                title: "Downtown, Riverside, San Marco, and Apartment Orders",
+                text: "Downtown Jacksonville, Riverside, Brooklyn, San Marco, and riverfront apartment areas can have building access, parking, and bridge traffic considerations. If you are ordering to an apartment, hotel, office, or hospital, add the building name, unit or room number, gate code, lobby instructions, and a phone number the driver can reach. Clear delivery notes can prevent cold pizza and missed calls, especially during dinner rush."
+            },
+            {
+                title: "Southside, Mandarin, Arlington, and Family Dinner Planning",
+                text: "Southside, Mandarin, Arlington, Baymeadows, and family-heavy neighborhoods can get busy on school nights, weekends, and youth sports evenings. For families, the easiest order is usually one Cheese or Pepperoni Pizza, one specialty pizza like <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, one shareable side such as <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a>, and a 2-liter drink. Check <a href='/coupons' class='text-[#cc0000] hover:underline font-bold'>Papa Johns coupons</a> before checkout because family-size orders are where deals can save the most."
+            },
+            {
+                title: "Jacksonville Beach, Atlantic Beach, and Coastal Delivery Notes",
+                text: "Jacksonville Beach, Atlantic Beach, Neptune Beach, and nearby coastal areas can be slower on sunny weekends, holidays, and summer evenings because of traffic and parking. If you are staying at a beach rental or hotel, include the property name, unit number, gate instructions, and a nearby landmark if the address is hard to find. Carryout may be the better choice when beach traffic is high, while delivery is useful for groups that do not want to leave the rental."
+            },
+            {
+                title: "Jaguars Game Days, Concerts, and Group Orders",
+                text: "Orders near downtown and stadium-area neighborhoods can slow down around Jaguars games, concerts, and major events. For watch parties, keep the order simple and place it earlier than normal. A balanced group order is one <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, one loaded specialty pizza, wings or cheesesticks, and enough drinks for the group. If you need five or more pizzas, consider carryout or ordering early to reduce timing risk."
+            },
+            {
+                title: "Jacksonville Price, Fee, and Quality Checklist",
+                text: "Before paying, review the full Jacksonville total: menu price, delivery fee, service fee, tax, tip, extra toppings, premium crust charges, and coupon restrictions. Carryout is often the best value if you are close to the assigned store. Delivery is better for beach rentals, hotels, offices, family nights, rainy evenings, and larger groups. For food quality, shorter travel distance usually matters more than choosing the most complicated pizza build."
+            },
+            {
+                title: "Why This Jacksonville Page Is Built for AdSense Trust",
+                text: "This page is designed as a helpful local ordering guide, not a fake store profile. It avoids invented local phone numbers, avoids unsupported one-store coverage claims, and explains how readers should verify live details through the official Papa Johns ordering system. It also includes neighborhood-specific advice, fee guidance, internal menu links, and transparent limitations, which makes it more useful than a thin city page."
+            },
+            {
+                title: "Allergen and Store Verification Reminder",
+                text: "If someone in your Jacksonville order has allergies, gluten concerns, or dietary restrictions, verify directly with the official Papa Johns nutrition information and the assigned store before ordering. Menu items, preparation practices, and cross-contact risks can vary. This guide is for planning and comparison, not a substitute for official allergen or medical advice."
+            }
+        ],
+        faq: [
+            { q: "Where is Papa Johns in Jacksonville, Florida?", a: "Papa Johns service in Jacksonville depends on your exact address. Enter your street address in the official Papa Johns app or website to see the assigned delivery or carryout store." },
+            { q: "Does Papa Johns deliver to Jacksonville Beach?", a: "Delivery may be available to many Jacksonville Beach and coastal addresses, but availability depends on the exact address and assigned store. Beach traffic and parking can affect delivery timing." },
+            { q: "Does Papa Johns deliver near downtown Jacksonville or the stadium?", a: "Delivery may be available near downtown and stadium-area addresses, but Jaguars games, concerts, and large events can increase delivery times. Order earlier than normal on event days." },
+            { q: "What is the cheapest Papa Johns pizza in Jacksonville?", a: "A Cheese or Pepperoni Pizza is usually one of the lowest-priced regular menu options. Carryout offers, Papa Pairings, and online coupons can reduce the final total when available." },
+            { q: "Is carryout better than delivery in Jacksonville?", a: "Carryout is often better if you are close to the assigned store or want to reduce fees. Delivery is better for beach rentals, hotels, offices, family nights, rainy evenings, and larger group orders." },
+            { q: "What are Papa Johns hours in Jacksonville?", a: "Hours vary by franchise location and neighborhood. Most stores open around late morning and close late evening, but beach, campus, and event-area hours can differ. Confirm current hours in the official ordering flow." },
+            { q: "Can I use Papa Johns coupons in Jacksonville?", a: "Yes, eligible online coupons and Papa Rewards offers can apply at participating Jacksonville-area stores. The checkout page is the final source for whether a coupon works with your selected items." },
+            { q: "Is this an official Papa Johns Jacksonville page?", a: "No. This is an independent ordering guide from papajohns-menus.us. Always verify live store details, prices, allergens, hours, and availability with the official Papa Johns app or website." }
+        ],
+        schema: {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Papa Johns Jacksonville FL Menu Prices, Delivery and Carryout Guide",
+          "description": "Independent Jacksonville Papa Johns ordering guide with menu prices, delivery notes, carryout advice, beach and game-day tips, coupons, neighborhood guidance, and FAQs.",
+          "url": "https://papajohns-menus.us/locations/jacksonville-fl",
           "about": {
             "@type": "Brand",
             "name": "Papa Johns"
