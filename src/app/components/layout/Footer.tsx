@@ -152,7 +152,7 @@ export default function Footer() {
                             </span>
                         </Link>
                         <p>
-                            &copy; {currentYear} PapaJohns-Menu.us — An Independent Fan Guide. Not affiliated with Papa John's.
+                            &copy; {currentYear} PapaJohns-Menus.us — An Independent Fan Guide. Not affiliated with Papa John's.
                         </p>
                     </div>
 

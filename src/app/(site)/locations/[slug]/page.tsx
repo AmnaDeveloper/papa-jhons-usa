@@ -99,6 +99,17 @@ export async function generateStaticParams() {
     }));
 }
 
+function formatCityFromSlug(slug: string) {
+    const parts = slug.split('-');
+    const stateCode = parts.at(-1);
+    const cityParts = parts.length > 1 ? parts.slice(0, -1) : parts;
+    const cityName = cityParts
+        .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+        .join(' ');
+
+    return stateCode === 'dc' ? `${cityName} DC` : cityName;
+}
+
 export default async function LocationPage({ params }: Props) {
     const { slug } = await params;
     const richData = locationRichContent[slug];
@@ -203,6 +214,7 @@ export default async function LocationPage({ params }: Props) {
 
 // ── RICH TEMPLATE COMPONENT ──
 function RichTemplate({ data, month }: { data: RichLocationData; month: string }) {
+    const cityName = formatCityFromSlug(data.slug);
     const faqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -310,7 +322,7 @@ function RichTemplate({ data, month }: { data: RichLocationData; month: string }
                         <div className="mt-16 pt-16 border-t border-gray-100">
                             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-10">
                                 <h3 className="text-3xl font-black text-[#1A3D17] uppercase tracking-tighter">
-                                    All {data.slug.split('-')[0].replace(/^\w/, c => c.toUpperCase())} Locations
+                                    All {cityName} Locations
                                 </h3>
                                 <span className="inline-block bg-[#cc0000] text-white text-[10px] font-black px-4 py-2 rounded-full uppercase tracking-widest">
                                     {data.locationDetails.additionalLocations.length + 1} Stores Found
@@ -341,7 +353,7 @@ function RichTemplate({ data, month }: { data: RichLocationData; month: string }
                 <div className="container mx-auto px-4 max-w-5xl">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl font-black text-[#1A3D17] uppercase mb-4 tracking-tighter">
-                            Papa Johns Menu & <span className="text-[#cc0000]">Prices</span> in {data.slug.split('-')[0].replace(/^\w/, c => c.toUpperCase())}
+                            Papa Johns Menu & <span className="text-[#cc0000]">Prices</span> in {cityName}
                         </h2>
                         <p className="text-gray-500 font-bold uppercase tracking-widest text-[10px]">Verified 2026 pricing for this location</p>
                     </div>
