@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import posts from "../data/posts.json";
-import { ArrowRight, Calculator, Percent } from "lucide-react";
+import { ArrowRight, Calculator, Percent, ShieldCheck, Users } from "lucide-react";
 import HeroSection from "../components/HeroSection";
 import dynamic from "next/dynamic";
 import DynamicSections from "../components/DynamicSections";
@@ -27,6 +27,39 @@ export async function generateMetadata() {
 }
 
 export default function Home() {
+    const featuredHomeGuides = [
+        {
+            slug: "best-papa-johns-pizzas-for-families",
+            href: "/posts/best-papa-johns-pizzas-for-families",
+            title: "Best Papa Johns Pizzas for Families (June 2026)",
+            excerpt: "Sarah Jenkins shares what she would actually order for family pizza night, from The Works and build-your-own pies to stuffed crust and sides that stretch the meal.",
+            author: "Sarah Jenkins",
+            updated: "Updated June 2026",
+            image: "/classic-pizzas.png",
+            imageAlt: "Best Papa Johns Pizzas for Families",
+            badge: "Family Guide",
+            tags: [
+                { icon: Users, label: "Family Orders", tone: "lime" },
+                { icon: Calculator, label: "Meal Planning", tone: "green" },
+            ],
+        },
+        {
+            slug: "papa-johns-gluten-free-guide",
+            href: "/posts/papa-johns-gluten-free-guide",
+            title: "Papa Johns Gluten-Free Guide (June 2026)",
+            excerpt: "Linda Torres explains the gluten-free crust, shared-kitchen cross-contact risk, celiac warning, safer ordering choices, and what to ask before ordering.",
+            author: "Linda Torres",
+            updated: "Updated June 2026",
+            image: "/papa-johns-nutrition-guide-2026-calories-allergens.webp",
+            imageAlt: "Papa Johns gluten-free guide with nutrition and allergen information",
+            badge: "Dietary Guide",
+            tags: [
+                { icon: ShieldCheck, label: "Allergen Safety", tone: "lime" },
+                { icon: Percent, label: "Nutrition Notes", tone: "green" },
+            ],
+        },
+    ];
+
     const faqSchema = {
       "@context": "https://schema.org",
       "@type": "FAQPage",
@@ -262,8 +295,68 @@ export default function Home() {
                         </div>
                     </div>
 
+                    <div className="max-w-4xl mx-auto mb-16 grid grid-cols-1 gap-8">
+                        {featuredHomeGuides.map((guide) => (
+                            <div key={guide.slug} className="bg-white border border-gray-100 rounded-[2.5rem] p-6 md:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 relative overflow-hidden group">
+                                <div className="absolute top-0 right-0 w-48 h-48 bg-[#CCEE18]/10 rounded-full -mr-20 -mt-20 pointer-events-none"></div>
+                                <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#cc0000]/5 rounded-full -ml-20 -mb-20 pointer-events-none"></div>
+
+                                <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center relative z-10">
+                                    <div className="md:col-span-5 aspect-[4/3] w-full rounded-2xl overflow-hidden relative shadow-md bg-gray-50 border border-gray-100">
+                                        <div className="absolute top-3 left-3 z-10 bg-[#cc0000] text-white text-[9px] font-black uppercase tracking-widest px-4 py-1.5 rounded-full shadow">
+                                            {guide.badge}
+                                        </div>
+                                        <Image
+                                            src={guide.image}
+                                            alt={guide.imageAlt}
+                                            fill
+                                            sizes="(max-width: 768px) 100vw, 30vw"
+                                            className="object-cover group-hover:scale-105 transition-transform duration-500"
+                                        />
+                                    </div>
+
+                                    <div className="md:col-span-7 space-y-4">
+                                        <div className="flex flex-wrap gap-2 text-[10px] font-black uppercase tracking-widest text-[#1A3D17]">
+                                            {guide.tags.map((tag) => {
+                                                const Icon = tag.icon;
+                                                return (
+                                                    <span
+                                                        key={tag.label}
+                                                        className={`${tag.tone === "lime" ? "bg-[#CCEE18]/30" : "bg-[#1A3D17]/10"} px-3 py-1 rounded-full flex items-center gap-1`}
+                                                    >
+                                                        <Icon size={12} /> {tag.label}
+                                                    </span>
+                                                );
+                                            })}
+                                        </div>
+
+                                        <h3 className="text-xl md:text-2xl font-black text-[#1A3D17] uppercase tracking-tight leading-tight group-hover:text-[#cc0000] transition-colors" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                                            {guide.title}
+                                        </h3>
+
+                                        <p className="text-gray-500 font-bold text-sm leading-relaxed">
+                                            {guide.excerpt}
+                                        </p>
+
+                                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pt-2">
+                                            <span className="text-[10px] text-gray-400 font-black uppercase tracking-widest">
+                                                By {guide.author} • {guide.updated}
+                                            </span>
+                                            <Link
+                                                href={guide.href}
+                                                className="inline-flex items-center justify-center gap-2 bg-[#1A3D17] hover:bg-[#cc0000] text-white font-black py-3 px-6 rounded-full transition-colors uppercase tracking-wider text-[10px] shadow active:scale-95"
+                                            >
+                                                Read Guide <ArrowRight size={12} />
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
-                        {posts.filter(p => p.slug !== 'how-to-save-money-at-papa-johns').slice(0, 6).map((post) => (
+                        {posts.filter(p => !['how-to-save-money-at-papa-johns', 'best-papa-johns-pizzas-for-families', 'papa-johns-gluten-free-guide'].includes(p.slug)).slice(0, 6).map((post) => (
                             <Link href={post.slug === 'best-pizza-delivery-near-me' ? `/${post.slug}` : `/posts/${post.slug}`} key={post.id} className="bg-white rounded-[2rem] p-6 shadow-md hover:shadow-2xl hover:border-[#CCEE18] border-2 border-transparent transition-all duration-300 group flex flex-col h-full relative overflow-hidden">
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-[#CCEE18] rounded-bl-full -mr-16 -mt-16 opacity-0 group-hover:opacity-10 transition-opacity"></div>
                                 
