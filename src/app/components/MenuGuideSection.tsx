@@ -2,7 +2,7 @@ import React from 'react';
 
 const MenuGuideSection = () => {
     return (
-        <section className="py-20 bg-white w-full">
+        <section className="pt-0 pb-20 bg-white w-full">
             <div className="w-full max-w-[1100px] mx-auto px-4 menu-guide-container">
                 <style dangerouslySetInnerHTML={{ __html: `
                     .menu-guide-container { 
@@ -135,11 +135,6 @@ const MenuGuideSection = () => {
                         .table-outer { overflow-x: auto; }
                     }
                 ` }} />
-
-                <div className="menu-guide-header">
-                    <h1>Papa Johns Complete Menu <br/><span className="text-[#cc0000]">with Prices 2026</span></h1>
-                    <p>Last Updated: April 2026 | All prices in USD | papajohns-menus.us</p>
-                </div>
 
                 {/* 1. PIZZAS */}
                 <h2>🍕 1. Pizza Menu — All Sizes & Prices</h2>

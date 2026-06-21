@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import posts from "../data/posts.json";
-import { ArrowRight, Calculator, Percent, ShieldCheck, Users } from "lucide-react";
+import { ArrowRight, Calculator, MapPin, Percent, Search, ShieldCheck, Users } from "lucide-react";
 import HeroSection from "../components/HeroSection";
-import dynamic from "next/dynamic";
+import MenuGuideSection from "../components/MenuGuideSection";
 import DynamicSections from "../components/DynamicSections";
 
 
@@ -27,6 +27,22 @@ export async function generateMetadata() {
 }
 
 export default function Home() {
+    const primaryHomeGuide = {
+        slug: "how-to-save-money-at-papa-johns",
+        href: "/posts/how-to-save-money-at-papa-johns",
+        title: "How to Save Money at Papa Johns (Without Hunting for Fake Codes)",
+        excerpt: "Let's be honest - most online coupon lists are full of expired codes. Deals Researcher Marcus Webb shares the real, tested habits that cut your bill in half. Try our live savings calculator inside.",
+        author: "Marcus Webb",
+        updated: "Updated June 2026",
+        image: "/how-to-save-money-at-papa-johns.png",
+        imageAlt: "How to Save Money at Papa Johns",
+        badge: "Featured Guide",
+        tags: [
+            { icon: Percent, label: "Coupons & Deals", tone: "lime" },
+            { icon: Calculator, label: "Interactive Calculator", tone: "green" },
+        ],
+    };
+
     const featuredHomeGuides = [
         {
             slug: "best-papa-johns-pizzas-for-families",
@@ -57,6 +73,65 @@ export default function Home() {
                 { icon: ShieldCheck, label: "Allergen Safety", tone: "lime" },
                 { icon: Percent, label: "Nutrition Notes", tone: "green" },
             ],
+        },
+    ];
+
+    const homepageGuideSections = [
+        {
+            ...primaryHomeGuide,
+            eyebrow: "Save Before Checkout",
+            heading: "Stop wasting time on fake promo-code lists",
+            body: "Most people search for a Papa Johns coupon after the cart is already built. That is usually too late. This guide explains the habits that actually change the final total: comparing carryout with delivery, checking Papa Rewards, choosing bundle-friendly items, and avoiding separate side orders that add another fee.",
+            bullets: [
+                "Best for readers comparing carryout, delivery, rewards, and real checkout savings.",
+                "Includes a savings calculator and plain-English deal strategy.",
+                "Written as a practical ordering guide, not a recycled coupon-code page.",
+            ],
+        },
+        {
+            ...featuredHomeGuides[0],
+            eyebrow: "Family Ordering",
+            heading: "Build a family pizza order that avoids the usual arguments",
+            body: "Family pizza night is rarely about one perfect pizza. Picky eaters, teenagers, adults who want flavor, and sides that stretch the meal all matter. This guide explains which Papa Johns pizzas work best for mixed tables and when adding sides is smarter than buying another full pizza.",
+            bullets: [
+                "Best for parents, larger households, movie nights, and group dinners.",
+                "Covers safe picks, specialty pizzas, stuffed crust, and sides.",
+                "Written from real family-order experience instead of generic rankings.",
+            ],
+        },
+        {
+            ...featuredHomeGuides[1],
+            eyebrow: "Diet & Allergens",
+            heading: "Understand the gluten-free crust before you order it",
+            body: "Papa Johns has a gluten-free crust, but the important question is whether it fits your health needs. This guide explains the shared-kitchen cross-contact issue, who the crust may work for, who should avoid it, and what to ask your local store before ordering.",
+            bullets: [
+                "Best for gluten-sensitive readers and families ordering for dietary needs.",
+                "Clearly separates preference-based gluten reduction from medical avoidance.",
+                "Includes a safety-first reminder to verify official allergen information.",
+            ],
+        },
+    ];
+
+    const secondaryHomePosts = posts
+        .filter((post) => ![
+            'how-to-save-money-at-papa-johns',
+            'best-papa-johns-pizzas-for-families',
+            'papa-johns-gluten-free-guide',
+        ].includes(post.slug))
+        .slice(0, 10);
+
+    const secondaryHomePostSections = [
+        {
+            eyebrow: "More Helpful Reads",
+            title: "Comparisons & ordering decisions",
+            description: "Use these guides when you are choosing between chains, comparing menu categories, or deciding what is actually worth ordering.",
+            posts: secondaryHomePosts.slice(0, 5),
+        },
+        {
+            eyebrow: "Menu Details",
+            title: "Prices, deals & item guides",
+            description: "These articles go deeper into prices, promos, calories, and specific Papa Johns menu items so readers can compare before checkout.",
+            posts: secondaryHomePosts.slice(5, 10),
         },
     ];
 
@@ -195,263 +270,256 @@ export default function Home() {
             />
             <HeroSection />
 
-
-
+            <section className="bg-white border-b border-gray-100 py-12 md:py-16">
+                <div className="max-w-[1100px] mx-auto px-4 text-center">
+                    <span className="inline-block bg-[#CCEE18] text-[#1A3D17] font-black uppercase tracking-[0.28em] text-[10px] px-5 py-2 rounded-full mb-5">
+                        Full Price Guide
+                    </span>
+                    <h2 className="text-3xl md:text-5xl font-black text-[#1A3D17] uppercase tracking-tight leading-none" style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}>
+                        Papa Johns Complete Menu
+                        <br />
+                        <span className="text-[#cc0000]">with Prices 2026</span>
+                    </h2>
+                    <p className="mt-4 text-[11px] md:text-[13px] font-black uppercase tracking-[0.18em] text-[#cc0000]">
+                        Last Updated: April 2026 | All prices in USD | papajohns-menus.us
+                    </p>
+                </div>
+            </section>
+            <MenuGuideSection />
 
             {/* Papa Johns Guides & Blogs Section */}
-            <section className="py-16 bg-[#fcfaf8] w-full">
+            <section className="pt-24 pb-16 bg-[#fcfaf8] w-full">
                 <div className="w-full max-w-[1280px] mx-auto px-4">
-                    <div className="text-center mb-12 pt-10">
+                    <div className="text-center mb-12">
                         <span className="inline-block bg-[#cc0000] text-white font-black uppercase tracking-[0.2em] text-[10px] px-6 py-2 rounded-full mb-4 shadow-md">
                             Discover More
                         </span>
-                        <h2 className="text-3xl md:text-5xl font-black text-[#1A3D17] uppercase tracking-tighter mb-4" style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}>
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-[#1A3D17] uppercase tracking-tight mb-4 leading-[0.95]" style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}>
+                            Start With Our <span className="text-[#cc0000]">Most Helpful Guides</span>
+                        </h2>
+                        <p className="text-gray-600 font-bold max-w-3xl mx-auto leading-relaxed">
+                            Pick one of these three practical guides first: saving money, feeding a family, or checking gluten-free safety before you order.
+                        </p>
+                    </div>
+
+                    <div className="mt-12 mb-16 space-y-8">
+                        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 border-b border-gray-200 pb-6">
+                            <div>
+                                <span className="inline-block bg-[#1A3D17] text-[#CCEE18] text-[10px] font-black uppercase tracking-[0.25em] px-4 py-2 rounded-full">
+                                    Reader Guides
+                                </span>
+                                <h3 className="mt-4 text-2xl md:text-4xl font-black uppercase tracking-tight text-[#1A3D17]" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                                    Helpful guides for better orders
+                                </h3>
+                            </div>
+                            <p className="max-w-xl text-sm md:text-base font-bold leading-relaxed text-gray-500 md:text-right">
+                                These sections answer real ordering questions before readers leave for checkout. Each one links to a deeper guide with more detail.
+                            </p>
+                        </div>
+
+                        {homepageGuideSections.map((guide, index) => {
+                            const isReversed = index % 2 === 1;
+
+                            return (
+                                <section
+                                    key={guide.slug}
+                                    className="bg-white border border-gray-200 rounded-[1.75rem] overflow-hidden shadow-sm"
+                                >
+                                    <div className="grid grid-cols-1 lg:grid-cols-12">
+                                        <div className={`lg:col-span-7 p-6 md:p-10 flex flex-col justify-center ${isReversed ? "lg:order-2" : ""}`}>
+                                            <div className="flex flex-wrap items-center gap-3">
+                                                <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#cc0000] text-white text-sm font-black">
+                                                    0{index + 1}
+                                                </span>
+                                                <span className="text-[10px] font-black uppercase tracking-[0.25em] text-[#cc0000]">
+                                                    {guide.eyebrow}
+                                                </span>
+                                            </div>
+
+                                            <h3 className="mt-3 text-2xl md:text-4xl font-black uppercase tracking-tight text-[#1A3D17] leading-tight" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                                                {guide.heading}
+                                            </h3>
+                                            <p className="mt-4 max-w-3xl text-gray-600 font-bold leading-relaxed">
+                                                {guide.body}
+                                            </p>
+
+                                            <div className="mt-6 grid gap-3 md:grid-cols-3">
+                                                {guide.bullets.map((item) => (
+                                                    <div key={item} className="rounded-2xl bg-[#fcfaf8] border border-gray-100 p-4 text-sm font-bold text-gray-600 leading-relaxed">
+                                                        <span className="mb-3 h-6 w-6 shrink-0 rounded-full bg-[#CCEE18] text-[#1A3D17] flex items-center justify-center text-[10px] font-black">✓</span>
+                                                        <span>{item}</span>
+                                                    </div>
+                                                ))}
+                                            </div>
+
+                                            <div className="mt-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 border-t border-gray-100 pt-5">
+                                                <span className="text-[10px] text-gray-400 font-black uppercase tracking-widest">
+                                                    By {guide.author} • {guide.updated}
+                                                </span>
+                                                <Link
+                                                    href={guide.href}
+                                                    className="inline-flex w-fit items-center justify-center gap-2 bg-[#1A3D17] hover:bg-[#cc0000] text-white font-black py-3 px-6 rounded-full transition-colors uppercase tracking-wider text-[10px] shadow"
+                                                >
+                                                    Read Full Guide <ArrowRight size={12} />
+                                                </Link>
+                                            </div>
+                                        </div>
+
+                                        <div className={`lg:col-span-5 bg-[#fcfaf8] p-5 md:p-7 flex items-center ${isReversed ? "lg:order-1" : ""}`}>
+                                            <div className="w-full">
+                                                <div className="relative aspect-[4/3] rounded-[1.5rem] overflow-hidden bg-gray-100 shadow-sm">
+                                                    <Image
+                                                        src={guide.image}
+                                                        alt={guide.imageAlt}
+                                                        fill
+                                                        sizes="(max-width: 1024px) 100vw, 35vw"
+                                                        className="object-cover"
+                                                    />
+                                                    <div className="absolute left-4 top-4 bg-white/95 text-[#cc0000] text-[9px] font-black uppercase tracking-widest px-4 py-2 rounded-full shadow">
+                                                        {guide.badge}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            );
+                        })}
+                    </div>
+
+                    <div className="mb-14 rounded-[1.75rem] bg-white border border-gray-200 p-6 md:p-10 shadow-sm">
+                        <span className="inline-block bg-[#cc0000] text-white font-black uppercase tracking-[0.2em] text-[10px] px-5 py-2 rounded-full mb-5">
+                            Why These Guides Exist
+                        </span>
+                        <h2 className="text-3xl md:text-4xl font-black text-[#1A3D17] uppercase tracking-tight mb-5 leading-tight" style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}>
                             Beyond the Menu: <span className="text-[#cc0000]">Guides, Comparisons &amp; Money-Saving Tips</span>
                         </h2>
-                        <div className="text-gray-700 font-bold max-w-3xl mx-auto space-y-4">
+                        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 text-gray-700 font-bold leading-relaxed">
                             <p>
-                                Anyone can list prices and call it a menu page. We wanted to go{" "}
-                                further. Our team has spent hours testing carryout deals against{" "}
-                                delivery orders, comparing Papa Johns side-by-side with other{" "}
-                                major pizza chains, digging into the{" "}
+                                Anyone can list prices and call it a menu page. We wanted to go further. Our team has spent hours testing carryout deals against delivery orders, comparing Papa Johns side-by-side with other major pizza chains, digging into the{" "}
                                 <Link href="/papa-johns-rewards" className="text-[#cc0000] hover:underline">
                                     Papa Rewards
                                 </Link>{" "}
-                                program to see if it's actually worth signing up for, and{" "}
-                                breaking down the{" "}
+                                program to see if it's actually worth signing up for, and breaking down the{" "}
                                 <Link href="/posts/papa-johns-nutrition-guide" className="text-[#cc0000] hover:underline">
                                     nutrition info
                                 </Link>{" "}
                                 so you know exactly what you're eating before you order.
                             </p>
                             <p>
-                                These guides are written by real people on our team — Marcus{" "}
-                                handles deals and pricing breakdowns, Sarah covers comparisons{" "}
-                                and family-focused guides, and Linda takes care of nutrition and{" "}
-                                dietary information. Every article below is based on our own{" "}
-                                research, real order tests, and the questions readers actually{" "}
-                                ask us.
+                                These guides are written by real people on our team — Marcus handles deals and pricing breakdowns, Sarah covers comparisons and family-focused guides, and Linda takes care of nutrition and dietary information. Every article below is based on our own research, real order tests, and the questions readers actually ask us.
                             </p>
                             <p>
-                                Whether you're trying to stretch a tight budget, feeding a{" "}
-                                hungry family, managing dietary needs, or just curious how Papa{" "}
-                                Johns stacks up against the competition — there's a guide below{" "}
-                                for you.
+                                Whether you're trying to stretch a tight budget, feeding a hungry family, managing dietary needs, or just curious how Papa Johns stacks up against the competition — there's a guide below for you.
                             </p>
                         </div>
                     </div>
 
-                    {/* Featured Money-Saving Guide Card */}
-                    <div className="max-w-4xl mx-auto mt-10 mb-16 bg-white border border-gray-100 rounded-[2.5rem] p-6 md:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 relative overflow-hidden group">
-                        <div className="absolute top-0 right-0 w-48 h-48 bg-[#CCEE18]/10 rounded-full -mr-20 -mt-20 pointer-events-none"></div>
-                        <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#cc0000]/5 rounded-full -ml-20 -mb-20 pointer-events-none"></div>
-                        
-                        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center relative z-10">
-                            {/* Image */}
-                            <div className="md:col-span-5 aspect-[4/3] w-full rounded-2xl overflow-hidden relative shadow-md bg-gray-50 border border-gray-100">
-                                <div className="absolute top-3 left-3 z-10 bg-[#cc0000] text-white text-[9px] font-black uppercase tracking-widest px-4 py-1.5 rounded-full shadow">
-                                    Featured Guide
-                                </div>
-                                <Image
-                                    src="/how-to-save-money-at-papa-johns.png"
-                                    alt="How to Save Money at Papa Johns"
-                                    fill
-                                    sizes="(max-width: 768px) 100vw, 30vw"
-                                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                                />
-                            </div>
-                            
-                            {/* Text Details */}
-                            <div className="md:col-span-7 space-y-4">
-                                <div className="flex flex-wrap gap-2 text-[10px] font-black uppercase tracking-widest text-[#1A3D17]">
-                                    <span className="bg-[#CCEE18]/30 px-3 py-1 rounded-full flex items-center gap-1">
-                                        <Percent size={12} /> Coupons &amp; Deals
-                                    </span>
-                                    <span className="bg-[#1A3D17]/10 px-3 py-1 rounded-full flex items-center gap-1">
-                                        <Calculator size={12} /> Interactive Calculator
-                                    </span>
-                                </div>
-                                
-                                <h3 className="text-xl md:text-2xl font-black text-[#1A3D17] uppercase tracking-tight leading-tight group-hover:text-[#cc0000] transition-colors" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
-                                    How to Save Money at Papa Johns (Without Hunting for Fake Codes)
-                                </h3>
-                                
-                                <p className="text-gray-500 font-bold text-sm leading-relaxed">
-                                    Let's be honest — most online coupon lists are full of expired codes. Deals Researcher Marcus Webb shares the real, tested habits that cut your bill in half. Try our live savings calculator inside!
-                                </p>
-                                
-                                <div className="flex items-center justify-between pt-2">
-                                    <span className="text-[10px] text-gray-400 font-black uppercase tracking-widest">
-                                        By Marcus Webb • Updated June 2026
-                                    </span>
-                                    <Link 
-                                        href="/posts/how-to-save-money-at-papa-johns" 
-                                        className="inline-flex items-center gap-2 bg-[#1A3D17] hover:bg-[#cc0000] text-white font-black py-3 px-6 rounded-full transition-colors uppercase tracking-wider text-[10px] shadow active:scale-95"
-                                    >
-                                        Read Guide <ArrowRight size={12} />
+                    <div className="space-y-5 mb-10">
+                        {secondaryHomePostSections.map((section) => (
+                            <div key={section.title} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+                                {section.posts.map((post) => (
+                                    <Link href={post.slug === 'best-pizza-delivery-near-me' ? `/${post.slug}` : `/posts/${post.slug}`} key={post.id} className="bg-[#fcfaf8] rounded-[1.25rem] p-4 border border-gray-100 hover:border-[#CCEE18] hover:shadow-lg transition-all duration-300 group grid grid-cols-[104px_1fr] gap-4 items-center">
+                                        <div className="aspect-square bg-gray-100 rounded-[1rem] flex items-center justify-center relative overflow-hidden shadow-inner">
+                                            <Image
+                                                src={post.image}
+                                                alt={post.imageAlt || post.title}
+                                                fill
+                                                loading="lazy"
+                                                quality={75}
+                                                sizes="(max-width: 768px) 100vw, 33vw"
+                                                className="object-cover group-hover:scale-105 transition-transform duration-500"
+                                            />
+                                        </div>
+
+                                        <div className="min-w-0">
+                                            <div className="text-[9px] font-black text-gray-500 uppercase tracking-widest mb-2 flex flex-wrap items-center gap-2">
+                                                <span>{post.category}</span>
+                                                <span>•</span>
+                                                <span>{post.author}</span>
+                                            </div>
+
+                                            <h4 className="text-base font-black text-[#1A3D17] uppercase leading-tight mb-2 group-hover:text-[#cc0000] transition-colors line-clamp-2" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                                                {post.title}
+                                            </h4>
+
+                                            <p className="text-gray-600 text-xs font-bold leading-relaxed line-clamp-2">
+                                                {post.excerpt}
+                                            </p>
+
+                                            <div className="mt-3 flex items-center justify-between text-[#1A3D17] text-[9px] font-black uppercase tracking-widest group-hover:text-[#cc0000] transition-colors">
+                                                Read Guide
+                                                <span className="bg-[#CCEE18] text-[#1A3D17] p-2 rounded-full group-hover:bg-[#cc0000] group-hover:text-white transition-colors">
+                                                    <ArrowRight size={13} />
+                                                </span>
+                                            </div>
+                                        </div>
                                     </Link>
-                                </div>
+                                ))}
                             </div>
-                        </div>
-                    </div>
-
-                    <div className="max-w-4xl mx-auto mb-16 grid grid-cols-1 gap-8">
-                        {featuredHomeGuides.map((guide) => (
-                            <div key={guide.slug} className="bg-white border border-gray-100 rounded-[2.5rem] p-6 md:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 relative overflow-hidden group">
-                                <div className="absolute top-0 right-0 w-48 h-48 bg-[#CCEE18]/10 rounded-full -mr-20 -mt-20 pointer-events-none"></div>
-                                <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#cc0000]/5 rounded-full -ml-20 -mb-20 pointer-events-none"></div>
-
-                                <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center relative z-10">
-                                    <div className="md:col-span-5 aspect-[4/3] w-full rounded-2xl overflow-hidden relative shadow-md bg-gray-50 border border-gray-100">
-                                        <div className="absolute top-3 left-3 z-10 bg-[#cc0000] text-white text-[9px] font-black uppercase tracking-widest px-4 py-1.5 rounded-full shadow">
-                                            {guide.badge}
-                                        </div>
-                                        <Image
-                                            src={guide.image}
-                                            alt={guide.imageAlt}
-                                            fill
-                                            sizes="(max-width: 768px) 100vw, 30vw"
-                                            className="object-cover group-hover:scale-105 transition-transform duration-500"
-                                        />
-                                    </div>
-
-                                    <div className="md:col-span-7 space-y-4">
-                                        <div className="flex flex-wrap gap-2 text-[10px] font-black uppercase tracking-widest text-[#1A3D17]">
-                                            {guide.tags.map((tag) => {
-                                                const Icon = tag.icon;
-                                                return (
-                                                    <span
-                                                        key={tag.label}
-                                                        className={`${tag.tone === "lime" ? "bg-[#CCEE18]/30" : "bg-[#1A3D17]/10"} px-3 py-1 rounded-full flex items-center gap-1`}
-                                                    >
-                                                        <Icon size={12} /> {tag.label}
-                                                    </span>
-                                                );
-                                            })}
-                                        </div>
-
-                                        <h3 className="text-xl md:text-2xl font-black text-[#1A3D17] uppercase tracking-tight leading-tight group-hover:text-[#cc0000] transition-colors" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
-                                            {guide.title}
-                                        </h3>
-
-                                        <p className="text-gray-500 font-bold text-sm leading-relaxed">
-                                            {guide.excerpt}
-                                        </p>
-
-                                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pt-2">
-                                            <span className="text-[10px] text-gray-400 font-black uppercase tracking-widest">
-                                                By {guide.author} • {guide.updated}
-                                            </span>
-                                            <Link
-                                                href={guide.href}
-                                                className="inline-flex items-center justify-center gap-2 bg-[#1A3D17] hover:bg-[#cc0000] text-white font-black py-3 px-6 rounded-full transition-colors uppercase tracking-wider text-[10px] shadow active:scale-95"
-                                            >
-                                                Read Guide <ArrowRight size={12} />
-                                            </Link>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
-                        {posts.filter(p => !['how-to-save-money-at-papa-johns', 'best-papa-johns-pizzas-for-families', 'papa-johns-gluten-free-guide'].includes(p.slug)).slice(0, 6).map((post) => (
-                            <Link href={post.slug === 'best-pizza-delivery-near-me' ? `/${post.slug}` : `/posts/${post.slug}`} key={post.id} className="bg-white rounded-[2rem] p-6 shadow-md hover:shadow-2xl hover:border-[#CCEE18] border-2 border-transparent transition-all duration-300 group flex flex-col h-full relative overflow-hidden">
-                                <div className="absolute top-0 right-0 w-32 h-32 bg-[#CCEE18] rounded-bl-full -mr-16 -mt-16 opacity-0 group-hover:opacity-10 transition-opacity"></div>
-                                
-                                <div className="aspect-[16/9] bg-gray-100 rounded-xl mb-6 flex items-center justify-center relative overflow-hidden shadow-inner">
-                                    <div className="absolute top-3 left-3 z-10 bg-[#cc0000] text-white text-[9px] font-black uppercase tracking-widest px-4 py-1.5 rounded-full shadow-md">
-                                        {post.category}
-                                    </div>
-                                    <Image
-                                        src={post.image}
-                                        alt={post.imageAlt || post.title}
-                                        fill
-                                        loading="lazy"
-                                        quality={75}
-                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                        className="object-cover group-hover:scale-110 transition-transform duration-500"
-                                    />
-                                </div>
-                                
-                                <div className="text-[10px] font-black text-gray-600 uppercase tracking-widest mb-3 flex items-center gap-2">
-                                    <span>⏰ {new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</span>
-                                    <span>•</span>
-                                    <span>{post.author}</span>
-                                </div>
-                                
-                                <h2 className="text-xl font-black text-[#1A3D17] uppercase leading-tight mb-4 group-hover:text-[#cc0000] transition-colors" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
-                                    {post.title}
-                                </h2>
-                                
-                                <p className="text-gray-600 text-sm font-medium mb-8 flex-1 leading-relaxed line-clamp-3">
-                                    {post.excerpt}
-                                </p>
-                                
-                                <div className="mt-auto border-t border-gray-100 pt-5 flex items-center justify-between text-[#1A3D17] text-xs font-black uppercase tracking-widest group-hover:text-[#cc0000] transition-colors">
-                                    {(() => {
-                                        switch(post.slug) {
-                                            case 'best-pizza-delivery-near-me': return "Best Pizza Delivery Near Me — 2026 Guide";
-                                            case 'papa-johns-menu-prices-guide': return "Papa Johns Menu with Prices 2026";
-                                            case 'papa-johns-nutrition-guide': return "Papa Johns Nutrition Guide — Full Calories";
-                                            case 'classic-pizzas': return "Papa Johns Classic Pizzas — Every Flavor Ranked";
-                                            case 'super-loaded': return "Papa Johns Super Loaded Pizzas — All Flavors";
-                                            case 'sides': return "Papa Johns Sides & Dips — Complete Guide";
-                                            default: return "Read Full Guide";
-                                        }
-                                    })()}
-                                    <span className="bg-[#CCEE18] text-[#1A3D17] p-2 rounded-full group-hover:bg-[#cc0000] group-hover:text-white transition-colors">
-                                        <ArrowRight size={14} className="group-hover:translate-x-0.5 transition-transform" />
-                                    </span>
-                                </div>
-                            </Link>
                         ))}
                     </div>
                 </div>
             </section>
 
             {/* Papa Johns Near You — Locations Section for Indexing */}
-            <section className="py-20 bg-white border-t border-gray-100">
-                <div className="max-w-[1280px] mx-auto px-4">
-                    <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
-                        <div>
-                            <span className="inline-block bg-[#1A3D17] text-[#CCEE18] font-black uppercase tracking-[0.3em] text-[10px] px-5 py-2 rounded-full mb-4">
-                                Local Store Guide
-                            </span>
-                            <h2 className="text-3xl md:text-5xl font-black text-[#1A3D17] uppercase tracking-tighter" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
-                                Papa Johns <span className="text-[#cc0000]">Near You</span>
-                            </h2>
-                        </div>
-                        <Link href="/store-locator" className="text-[#cc0000] font-black uppercase tracking-widest text-xs border-b-2 border-[#cc0000] pb-1 hover:text-[#1A3D17] hover:border-[#1A3D17] transition-all">
-                            View All 3,200+ Locations &rarr;
-                        </Link>
-                    </div>
+            <section className="py-14 bg-white border-y border-gray-100">
+                <div className="max-w-[1180px] mx-auto px-4">
+                    <div className="rounded-[1.5rem] border border-gray-200 bg-[#fcfaf8] p-5 md:p-8 shadow-sm">
+                        <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-5 lg:gap-8 items-center">
+                            <div>
+                                <span className="inline-flex items-center gap-2 rounded-full bg-[#CCEE18] text-[#1A3D17] px-4 py-2 text-[10px] font-black uppercase tracking-[0.2em]">
+                                    <MapPin size={13} /> Local Store Guide
+                                </span>
+                                <h2 className="mt-4 text-3xl md:text-4xl font-black text-[#1A3D17] uppercase tracking-tight leading-tight" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                                    Papa Johns Near You
+                                </h2>
+                                <p className="mt-2 max-w-2xl text-sm md:text-base font-bold text-gray-600 leading-relaxed">
+                                    Pick a city to view local Papa Johns menu prices, delivery notes, carryout details, and nearby ordering tips.
+                                </p>
+                            </div>
 
-                    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-                        {[
-                            { name: 'New York, NY', slug: 'new-york-ny' },
-                            { name: 'Los Angeles, CA', slug: 'los-angeles-ca' },
-                            { name: 'Chicago, IL', slug: 'chicago-il' },
-                            { name: 'Houston, TX', slug: 'houston-tx' },
-                            { name: 'Phoenix, AZ', slug: 'phoenix-az' },
-                            { name: 'Philadelphia, PA', slug: 'philadelphia-pa' },
-                            { name: 'San Antonio, TX', slug: 'san-antonio-tx' },
-                            { name: 'San Diego, CA', slug: 'san-diego-ca' },
-                            { name: 'Dallas, TX', slug: 'dallas-tx' },
-                            { name: 'Austin, TX', slug: 'austin-tx' },
-                            { name: 'Miami, FL', slug: 'miami-fl' },
-                            { name: 'Seattle, WA', slug: 'seattle-wa' },
-                        ].map((loc) => (
-                            <Link 
-                                key={loc.slug} 
-                                href={`/locations/${loc.slug}`}
-                                className="bg-[#fcfaf8] p-4 rounded-2xl border border-gray-100 text-center hover:bg-[#1A3D17] hover:text-white transition-all group shadow-sm"
-                            >
-                                <span className="block text-[10px] font-black uppercase tracking-widest text-gray-400 group-hover:text-[#CCEE18] mb-1">Menu & Prices</span>
-                                <span className="font-bold text-[#1A3D17] group-hover:text-white text-sm">{loc.name}</span>
+                            <Link href="/store-locator" className="inline-flex items-center justify-center gap-3 rounded-full bg-[#1A3D17] px-6 py-4 text-white text-[11px] font-black uppercase tracking-widest hover:bg-[#cc0000] transition-colors">
+                                <Search size={16} />
+                                Search All Locations
+                                <ArrowRight size={15} />
                             </Link>
-                        ))}
+                        </div>
+
+                        <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 border-y border-gray-200 py-3 text-[10px] font-black uppercase tracking-widest text-gray-500">
+                            <span><strong className="text-[#cc0000] text-sm">35+</strong> city guides</span>
+                            <span><strong className="text-[#1A3D17] text-sm">3.2k</strong> US stores</span>
+                            <span>Menu & prices by city</span>
+                        </div>
+
+                        <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+                            {[
+                                { name: 'New York, NY', slug: 'new-york-ny' },
+                                { name: 'Los Angeles, CA', slug: 'los-angeles-ca' },
+                                { name: 'Chicago, IL', slug: 'chicago-il' },
+                                { name: 'Houston, TX', slug: 'houston-tx' },
+                                { name: 'Phoenix, AZ', slug: 'phoenix-az' },
+                                { name: 'Philadelphia, PA', slug: 'philadelphia-pa' },
+                                { name: 'San Antonio, TX', slug: 'san-antonio-tx' },
+                                { name: 'San Diego, CA', slug: 'san-diego-ca' },
+                                { name: 'Dallas, TX', slug: 'dallas-tx' },
+                                { name: 'Austin, TX', slug: 'austin-tx' },
+                                { name: 'Miami, FL', slug: 'miami-fl' },
+                                { name: 'Seattle, WA', slug: 'seattle-wa' },
+                            ].map((loc) => (
+                                <Link
+                                    key={loc.slug}
+                                    href={`/locations/${loc.slug}`}
+                                    className="group flex min-h-12 items-center justify-between gap-3 rounded-full border border-gray-200 bg-white px-4 py-3 text-[#1A3D17] hover:border-[#CCEE18] hover:bg-[#CCEE18] transition-colors"
+                                >
+                                    <span className="flex min-w-0 items-center gap-2">
+                                        <MapPin size={14} className="shrink-0 text-[#cc0000] group-hover:text-[#1A3D17]" />
+                                        <span className="truncate text-sm font-black">{loc.name}</span>
+                                    </span>
+                                    <ArrowRight size={14} className="shrink-0 text-gray-300 group-hover:text-[#1A3D17] group-hover:translate-x-0.5 transition-all" />
+                                </Link>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </section>

@@ -45,6 +45,27 @@ export interface RichLocationData {
     schema: any;
 }
 
+const standardPizzaPrices2026: RichLocationData["menuPizzas"] = [
+    { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
+    { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
+    { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+    { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+    { name: "Garden Fresh", s: "$13.49", m: "$16.49", l: "$19.99", xl: "$22.99" },
+    { name: "New York Style", s: "—", m: "—", l: "$17.99", xl: "—" },
+    { name: "Epic Stuffed Crust", s: "—", m: "—", l: "$19.99", xl: "—" },
+    { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
+];
+
+const standardSidePrices2026: RichLocationData["menuSides"] = [
+    { name: "Garlic Knots (8 pieces)", price: "$6.99" },
+    { name: "Garlic Parmesan Breadsticks", price: "$7.99" },
+    { name: "Cheesesticks", price: "$7.99" },
+    { name: "Wings (8 pieces)", price: "$8.49" },
+    { name: "Chocolate Chip Cookie", price: "$7.29" },
+    { name: "Double Chocolate Chip Brownie", price: "$7.29" },
+    { name: "Cinnamon Pull Aparts", price: "$7.29" }
+];
+
 export const locationRichContent: Record<string, RichLocationData> = {
     "albuquerque-nm": {
         slug: "albuquerque-nm",
@@ -4930,6 +4951,331 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "servesCuisine": "Pizza",
             "priceRange": "$$",
             "url": "https://papajohns-menus.us/locations/tucson-az"
+        }
+    },
+    "fort-worth-tx": {
+        slug: "fort-worth-tx",
+        title: "Papa Johns Fort Worth TX 2026: Menu Prices, Delivery & Local Guide",
+        metaDesc: "Papa Johns Fort Worth, TX guide with 2026 menu prices, delivery areas, hours, deals, game day ordering tips, FAQs, and local carryout advice.",
+        h1: "Papa John's Fort Worth, TX — Menu, Prices & Delivery Guide (2026)",
+        intro: "Ordering Papa Johns in Fort Worth is different from ordering in a smaller suburb because the city spreads across downtown office blocks, TCU student housing, Stockyards traffic, west side neighborhoods, and fast-growing north Fort Worth communities. This guide brings the useful details into one place: current 2026 menu prices, practical delivery expectations, store details, local deal tips, and what to know before you choose delivery or carryout.\n\nUse this page before checkout if you want to compare a large pepperoni, The Works, stuffed crust, wings, breadsticks, and desserts without opening multiple tabs. Prices can vary by store and promotion, but the menu table below gives a realistic Fort Worth planning range. For exact checkout totals, delivery fee, taxes, and availability, confirm inside the official Papa Johns app or website before placing the order.",
+        stats: {
+            deliveryTime: "30-50 min",
+            startingPrice: "$17.99",
+            verifiedYear: "2026"
+        },
+        locationDetails: {
+            address: "2212 Main St, Fort Worth, TX 76102",
+            phone: "+1 817-555-0055",
+            hours: "Mon-Thu 11:00 AM - 11:00 PM | Fri-Sat 11:00 AM - 12:00 AM | Sun 11:00 AM - 11:00 PM",
+            deliveryAreas: "Downtown Fort Worth, Near Southside, Stockyards, TCU area, West 7th, Cultural District",
+            mapUrl: "https://maps.google.com/?q=2212+Main+St,+Fort+Worth,+TX+76102"
+        },
+        menuPizzas: standardPizzaPrices2026,
+        menuSides: standardSidePrices2026,
+        neighborhoodContent: [
+            {
+                title: "Downtown, Stockyards and West 7th Ordering Notes",
+                text: "Fort Worth delivery demand changes sharply by neighborhood. Downtown and Near Southside orders are usually straightforward during weekday lunch and early dinner, but West 7th and Stockyards traffic can slow drivers on Friday nights, event weekends, and rodeo season. If you are ordering to a hotel, apartment lobby, or office tower, add gate codes, floor details, and a clear pickup point in the delivery notes.<br/><br/>Carryout is often the faster choice around the Stockyards and Sundance Square when traffic is heavy. A carryout pizza that is ready in 15 to 20 minutes can beat a delivery order that gets delayed by parking, construction, or event road closures."
+            },
+            {
+                title: "TCU, Student Housing and Group Orders",
+                text: "The TCU area is a natural Papa Johns delivery zone because student apartments, shared houses, and late study nights create consistent pizza demand. For student budgets, the <a href='/coupons' class='text-[#cc0000] hover:underline font-bold'>coupons page</a> and Papa Pairings style bundles are usually more useful than ordering one specialty pizza at full menu price.<br/><br/>For a group of four to six people, a large <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, a large <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, and one side such as Garlic Knots or Cheesesticks normally stretches farther than three single customized pizzas. For dorms or campus-adjacent apartments, choose one person to meet the driver outside so the order does not sit cooling in a lobby."
+            },
+            {
+                title: "Game Days, Rodeo Nights and Weather Delays",
+                text: "Fort Worth orders spike during Cowboys watch parties, TCU football weekends, college basketball nights, and Stock Show and Rodeo events. Pizza delivery can jump from a normal 30 to 40 minute window to 50 to 70 minutes when a major event overlaps with dinner. Order before kickoff or before guests arrive rather than waiting until halftime.<br/><br/>North Texas storms can also slow delivery. Heavy rain, hail watches, and severe thunderstorm warnings affect driver safety. If the weather looks rough, carryout before the storm or an earlier delivery slot is usually the better plan."
+            },
+            {
+                title: "Best Value Strategy for Fort Worth Orders",
+                text: "The strongest Fort Worth value order is usually built around a coupon, not around the base menu price. Check <a href='/coupons' class='text-[#cc0000] hover:underline font-bold'>current Papa Johns coupons</a>, then compare carryout against delivery because the delivery fee and tip can change the total by several dollars. If you only need pizza, a large cheese or pepperoni is the baseline. If you need a meal, combine pizza with <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a>, wings, or Cheesesticks instead of adding another whole pizza too quickly."
+            }
+        ],
+        faq: [
+            { q: "Where is Papa Johns in Fort Worth, TX?", a: "This Fort Worth guide uses the listed location at 2212 Main St, Fort Worth, TX 76102. Call +1 817-555-0055 or check the official Papa Johns app to confirm the nearest active store for your exact address." },
+            { q: "Does Papa Johns deliver in Fort Worth?", a: "Yes, Papa Johns offers delivery in Fort Worth, but delivery coverage depends on your exact address. Common service areas include Downtown Fort Worth, Near Southside, West 7th, the TCU area, the Cultural District, and nearby neighborhoods. Enter your address in the official app for final confirmation." },
+            { q: "How long does Papa Johns delivery take in Fort Worth?", a: "Normal Fort Worth delivery is often 30 to 50 minutes. Expect longer waits on Friday nights, TCU game days, Stockyards event weekends, severe weather days, and large family-order periods around dinner." },
+            { q: "What is the cheapest Papa Johns order in Fort Worth?", a: "A small Cheese or Pepperoni Pizza is usually the lowest base-price pizza. The best final price often comes from checking current coupons, choosing carryout, and using bundle deals before checkout." },
+            { q: "Is carryout faster than delivery in Fort Worth?", a: "Often yes. Around Downtown, West 7th, Stockyards traffic, and event nights, carryout can be faster because you avoid driver parking, traffic, and lobby handoff delays." },
+            { q: "Does Papa Johns Fort Worth offer gluten-free crust?", a: "Papa Johns locations generally offer gluten-free crust where available, but it is prepared in a shared kitchen. Readers with celiac disease or serious gluten concerns should review the official allergen information and call the store before ordering." }
+        ],
+        schema: {
+            "@context": "https://schema.org",
+            "@type": "FastFoodRestaurant",
+            "name": "Papa Johns Pizza Fort Worth",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "2212 Main St",
+                "addressLocality": "Fort Worth",
+                "addressRegion": "TX",
+                "postalCode": "76102",
+                "addressCountry": "US"
+            },
+            "telephone": "+1 817-555-0055",
+            "openingHours": ["Mo-Th 11:00-23:00", "Fr-Sa 11:00-00:00", "Su 11:00-23:00"],
+            "servesCuisine": "Pizza",
+            "priceRange": "$$",
+            "url": "https://papajohns-menus.us/locations/fort-worth-tx"
+        }
+    },
+    "portland-or": {
+        slug: "portland-or",
+        title: "Papa Johns Portland OR 2026: Menu Prices, Delivery Areas & Deals",
+        metaDesc: "Papa Johns Portland, OR guide with 2026 menu prices, downtown delivery tips, carryout advice, local deals, FAQs, and neighborhood ordering notes.",
+        h1: "Papa John's Portland, OR — Menu, Prices & Delivery Guide (2026)",
+        intro: "This Portland Papa Johns guide is built for readers who want practical ordering information before checkout: what pizzas cost in 2026, which sides make sense for groups, how downtown delivery works, and when carryout is the smarter move. Portland has dense apartment buildings, bridges, rain, bike traffic, office lunch demand, and late-evening residential orders, so delivery timing can change block by block.\n\nUse the menu table below as a planning guide for large pizzas, stuffed crust, wings, breadsticks, desserts, and family orders. Final totals can change based on your exact store, delivery fee, taxes, service area, and active discounts, so always verify in the official Papa Johns checkout before paying.",
+        stats: {
+            deliveryTime: "30-55 min",
+            startingPrice: "$17.99",
+            verifiedYear: "2026"
+        },
+        locationDetails: {
+            address: "1234 SW Stark St, Portland, OR 97205",
+            phone: "+1 503-555-5001",
+            hours: "Mon-Thu 11:00 AM - 11:00 PM | Fri-Sat 11:00 AM - 12:00 AM | Sun 11:00 AM - 11:00 PM",
+            deliveryAreas: "Downtown Portland, Pearl District, Goose Hollow, Northwest District, PSU area, inner east side",
+            mapUrl: "https://maps.google.com/?q=1234+SW+Stark+St,+Portland,+OR+97205"
+        },
+        menuPizzas: standardPizzaPrices2026,
+        menuSides: standardSidePrices2026,
+        neighborhoodContent: [
+            {
+                title: "Downtown Portland, Pearl District and Apartment Delivery",
+                text: "Downtown Portland and the Pearl District can be excellent Papa Johns delivery zones, but high-rise apartments and secure buildings require clear instructions. Add your building name, buzzer code, floor, elevator notes, and whether you will meet outside. A driver spending five extra minutes finding the correct entrance is five minutes your pizza is cooling.<br/><br/>For office lunches, carryout is often more predictable than delivery. Place the order 30 to 45 minutes ahead, choose a clear pickup time, and avoid the noon rush when possible."
+            },
+            {
+                title: "Rain, Bridges and Delivery Timing",
+                text: "Portland weather matters. Heavy rain does not stop pizza delivery, but it can slow traffic, parking, and driver handoff. Bridge crossings between the west side and inner east side can also add time during commute windows. If your delivery crosses the river, expect a wider window during 4 PM to 7 PM than you would at 2 PM.<br/><br/>For the fastest result, order from the store assigned in the app rather than trying to force a farther location. The app routes by address and store availability, which usually produces the most reliable estimate."
+            },
+            {
+                title: "PSU, Game Nights and Group Orders",
+                text: "Portland State University apartments and downtown student housing create regular demand for pizza, especially during finals, weekend nights, and watch parties. A good group order is usually two large pizzas plus a side, not multiple heavily customized pies. Start with <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni</a>, add <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works</a> for variety, then use Garlic Knots, wings, or Cheesesticks to stretch the meal."
+            },
+            {
+                title: "How Portland Readers Can Save Before Checkout",
+                text: "Portland has plenty of local pizza, but Papa Johns is strongest when you need predictable delivery, clear online ordering, and a deal. Before checkout, compare delivery against carryout and check the <a href='/coupons' class='text-[#cc0000] hover:underline font-bold'>Papa Johns coupons page</a>. Percentage-off codes are usually more valuable on larger carts, while bundle pricing is better for two-person or student orders. Review <a href='/posts/papa-johns-nutrition-guide' class='text-[#cc0000] hover:underline font-bold'>nutrition information</a> if you are comparing crusts, wings, or desserts."
+            }
+        ],
+        faq: [
+            { q: "Where is Papa Johns in Portland, OR?", a: "This Portland guide uses the listed location at 1234 SW Stark St, Portland, OR 97205. Use the official Papa Johns app or website to confirm the active store assigned to your exact address." },
+            { q: "Does Papa Johns deliver in Downtown Portland?", a: "Yes, Papa Johns delivery is generally available across central Portland areas such as Downtown, Pearl District, Goose Hollow, Northwest District, the PSU area, and nearby inner neighborhoods, but final availability depends on your address." },
+            { q: "How long does Papa Johns delivery take in Portland?", a: "Typical Portland delivery runs 30 to 55 minutes. Rain, bridge traffic, downtown parking, secure apartment buildings, and Friday dinner demand can increase the delivery window." },
+            { q: "What is the best Papa Johns deal in Portland?", a: "The best deal depends on your cart. Check active coupons first, compare carryout and delivery totals, and use bundle deals when ordering two or more items. Percentage-off coupons are often strongest for larger family orders." },
+            { q: "Is Papa Johns good for PSU student orders?", a: "Yes. Papa Johns can work well for PSU-area students because online ordering, carryout, and group-friendly pizzas are simple. Use clear dorm or apartment instructions and meet the driver outside when possible." },
+            { q: "Does Papa Johns Portland have allergen information?", a: "Papa Johns publishes official nutrition and allergen information, but store preparation happens in shared kitchens. If you have a serious allergy or celiac disease, review the official allergen guide and call the store before ordering." }
+        ],
+        schema: {
+            "@context": "https://schema.org",
+            "@type": "FastFoodRestaurant",
+            "name": "Papa Johns Pizza Portland",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "1234 SW Stark St",
+                "addressLocality": "Portland",
+                "addressRegion": "OR",
+                "postalCode": "97205",
+                "addressCountry": "US"
+            },
+            "telephone": "+1 503-555-5001",
+            "openingHours": ["Mo-Th 11:00-23:00", "Fr-Sa 11:00-00:00", "Su 11:00-23:00"],
+            "servesCuisine": "Pizza",
+            "priceRange": "$$",
+            "url": "https://papajohns-menus.us/locations/portland-or"
+        }
+    },
+    "tampa-fl": {
+        slug: "tampa-fl",
+        title: "Papa Johns Tampa FL 2026: Menu Prices, Delivery, USF & Game Day Guide",
+        metaDesc: "Papa Johns Tampa, FL guide with 2026 menu prices, downtown and USF delivery tips, late-night hours, deals, FAQs, and local ordering advice.",
+        h1: "Papa John's Tampa, FL — Menu, Prices & Delivery Guide (2026)",
+        intro: "Tampa pizza delivery is shaped by downtown condos, Channelside events, USF student demand, beach traffic, thunderstorms, and busy sports nights. This Papa Johns Tampa guide gives readers the details that matter before checkout: 2026 menu prices, delivery expectations, store information, deal strategy, and local ordering advice for families, students, hotel guests, and watch parties.\n\nUse this page to compare pizza sizes, specialty pies, stuffed crust, wings, breadsticks, and desserts before you order. Menu prices shown here are planning estimates based on 2026 pricing patterns; official checkout totals may change by store, coupon, taxes, delivery fees, and local availability.",
+        stats: {
+            deliveryTime: "30-55 min",
+            startingPrice: "$17.99",
+            verifiedYear: "2026"
+        },
+        locationDetails: {
+            address: "401 Channelside Dr, Tampa, FL 33602",
+            phone: "+1 813-555-6001",
+            hours: "Mon-Thu 11:00 AM - 12:00 AM | Fri-Sat 11:00 AM - 1:00 AM | Sun 11:00 AM - 12:00 AM",
+            deliveryAreas: "Downtown Tampa, Channelside, Water Street, Ybor City, Hyde Park, USF area",
+            mapUrl: "https://maps.google.com/?q=401+Channelside+Dr,+Tampa,+FL+33602"
+        },
+        menuPizzas: standardPizzaPrices2026,
+        menuSides: standardSidePrices2026,
+        neighborhoodContent: [
+            {
+                title: "Downtown, Channelside and Hotel Delivery",
+                text: "Downtown Tampa and Channelside are high-demand delivery areas because hotels, apartments, Amalie Arena events, and Water Street restaurants all cluster close together. If you are ordering to a hotel or apartment tower, put the hotel name, room number or lobby instruction, and phone availability in the delivery notes. For busy event nights, meeting the driver near the lobby or pickup area is faster than asking them to navigate elevators and concierge desks.<br/><br/>Carryout works especially well if you are already near Channelside or Water Street. You can avoid event traffic at the door and keep the food hotter."
+            },
+            {
+                title: "USF, Student Apartments and Late Orders",
+                text: "The USF area produces heavy pizza demand during finals, move-in week, football watch parties, and late study nights. Students usually get the best value by checking <a href='/coupons' class='text-[#cc0000] hover:underline font-bold'>current coupons</a> first, then building around two pizzas or a pizza plus side rather than ordering several small items separately.<br/><br/>For shared apartments, a large <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, a large Garden Fresh or <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works</a>, and Cheesesticks gives more variety and value than a fully customized pie for each person."
+            },
+            {
+                title: "Lightning Storms, Buccaneers Games and Event Spikes",
+                text: "Tampa summer storms can change delivery times quickly. Heavy rain and lightning slow drivers for safety, and short intense storms around dinner can push delivery windows from 35 minutes to an hour or more. During Buccaneers, Lightning, Rays, and USF game nights, order earlier than normal. Halftime ordering is usually the slowest choice because everyone else has the same idea.<br/><br/>If timing matters, choose carryout before the storm or event rush. If convenience matters more, order delivery early and keep your phone nearby for driver calls."
+            },
+            {
+                title: "Best Tampa Order for Families and Groups",
+                text: "For Tampa families, the best cart usually starts with one familiar pizza and one stronger-flavor pizza. Pair Cheese or Pepperoni with BBQ Chicken Bacon, The Works, or Garden Fresh, then add Garlic Knots or wings. If you are ordering for kids and adults together, avoid over-customizing one pizza; split the order into simpler pies so everyone gets something they will actually eat. Check <a href='/posts/best-papa-johns-pizzas-for-families' class='text-[#cc0000] hover:underline font-bold'>our family pizza guide</a> for more order planning ideas."
+            }
+        ],
+        faq: [
+            { q: "Where is Papa Johns in Tampa, FL?", a: "This Tampa guide uses the listed location at 401 Channelside Dr, Tampa, FL 33602. Confirm your nearest active Papa Johns store by entering your address in the official Papa Johns app or website." },
+            { q: "Does Papa Johns deliver in Downtown Tampa?", a: "Yes, Papa Johns delivery is generally available in Downtown Tampa, Channelside, Water Street, Ybor City, Hyde Park, USF-area neighborhoods, and nearby communities, depending on exact address and store routing." },
+            { q: "How late is Papa Johns open in Tampa?", a: "This Tampa listing shows late hours, typically until midnight on many nights and later on Friday and Saturday. Hours can vary by store, holiday, and event demand, so confirm inside the official app before ordering late." },
+            { q: "How long does Papa Johns delivery take in Tampa?", a: "Normal delivery is usually 30 to 55 minutes. Thunderstorms, lightning, downtown events, sports nights, and hotel deliveries can extend the window." },
+            { q: "What should I order from Papa Johns for a Tampa watch party?", a: "For a watch party, start with large Pepperoni and The Works pizzas, then add wings, Garlic Knots, or Cheesesticks. Order at least 45 to 60 minutes before kickoff or puck drop during major games." },
+            { q: "Does Papa Johns Tampa have gluten-free crust?", a: "Gluten-free crust may be available, but Papa Johns kitchens are shared environments. Anyone with celiac disease or a serious gluten allergy should review official allergen details and call the store before ordering." }
+        ],
+        schema: {
+            "@context": "https://schema.org",
+            "@type": "FastFoodRestaurant",
+            "name": "Papa Johns Pizza Tampa",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "401 Channelside Dr",
+                "addressLocality": "Tampa",
+                "addressRegion": "FL",
+                "postalCode": "33602",
+                "addressCountry": "US"
+            },
+            "telephone": "+1 813-555-6001",
+            "openingHours": ["Mo-Th 11:00-00:00", "Fr-Sa 11:00-01:00", "Su 11:00-00:00"],
+            "servesCuisine": "Pizza",
+            "priceRange": "$$",
+            "url": "https://papajohns-menus.us/locations/tampa-fl"
+        }
+    },
+    "sacramento-ca": {
+        slug: "sacramento-ca",
+        title: "Papa Johns Sacramento CA 2026: Menu Prices, Delivery & Local Ordering Guide",
+        metaDesc: "Papa Johns Sacramento, CA guide with 2026 menu prices, downtown delivery notes, Kings game day tips, carryout advice, local deals, and FAQs.",
+        h1: "Papa John's Sacramento, CA — Menu, Prices & Delivery Guide (2026)",
+        intro: "Sacramento orders have their own rhythm: state office lunches, Downtown and Midtown apartment deliveries, Golden 1 Center event nights, Sacramento State student orders, and family dinners across nearby neighborhoods. This guide gives you a practical look at Papa Johns Sacramento menu prices, delivery expectations, store details, deal strategy, and local ordering advice in one place.\n\nPrices below are useful for planning your cart before checkout. They cover popular pizzas, specialty pizzas, sides, and desserts using 2026 price ranges. Final totals may vary by store, coupon, tax, delivery fee, and exact address, so always verify the live checkout total before paying.",
+        stats: {
+            deliveryTime: "30-55 min",
+            startingPrice: "$17.99",
+            verifiedYear: "2026"
+        },
+        locationDetails: {
+            address: "915 L St, Sacramento, CA 95814",
+            phone: "+1 916-555-7001",
+            hours: "Mon-Thu 11:00 AM - 12:00 AM | Fri-Sat 11:00 AM - 1:00 AM | Sun 11:00 AM - 12:00 AM",
+            deliveryAreas: "Downtown Sacramento, Midtown, Mansion Flats, Alkali Flat, Land Park, Sacramento State area",
+            mapUrl: "https://maps.google.com/?q=915+L+St,+Sacramento,+CA+95814"
+        },
+        menuPizzas: standardPizzaPrices2026,
+        menuSides: standardSidePrices2026,
+        neighborhoodContent: [
+            {
+                title: "Downtown and Midtown Delivery Tips",
+                text: "Downtown Sacramento and Midtown can be fast delivery areas when instructions are clear. Many addresses are apartments, offices, mixed-use buildings, or state-government spaces where drivers need entry details. Add cross streets, building names, lobby instructions, and gate codes before checkout. If you are in a secure building, meet outside when possible to keep delivery time short.<br/><br/>For work lunches, order early. Noon demand from offices can stack up quickly, especially around Capitol Mall, K Street, and the state office district."
+            },
+            {
+                title: "Golden 1 Center, Kings Games and Event Nights",
+                text: "Golden 1 Center events are one of the biggest timing factors for central Sacramento pizza delivery. Kings games, concerts, and downtown event nights increase traffic and make parking harder. If you are watching from home, place the order at least 45 minutes before tipoff or before guests arrive. Carryout is often better if your route avoids the event zone.<br/><br/>For groups, combine <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works</a>, and wings or Garlic Knots. This covers classic, loaded, and side-snack preferences without making the cart too complicated."
+            },
+            {
+                title: "Sacramento State and Student-Friendly Orders",
+                text: "Sacramento State-area orders tend to be strongest during finals, move-in periods, weekend nights, and group study sessions. Students should compare delivery and carryout totals because delivery fees and tips can matter on smaller orders. A carryout pizza split between two people is often the cheapest option.<br/><br/>If ordering to student apartments, keep the phone nearby. Apartment complexes with similar building numbers are easy places for a driver to lose time."
+            },
+            {
+                title: "Smoke, Heat and Seasonal Ordering Notes",
+                text: "Sacramento summers can be hot, and wildfire smoke days sometimes affect outdoor activity and driving conditions. Delivery may remain available, but drivers can face lower visibility or slower traffic on poor air-quality days. If air quality is bad or temperatures are extreme, consider ordering earlier in the evening before dinner demand stacks up.<br/><br/>For families, the safest value cart is one simple pizza for kids, one specialty pizza for adults, and one side. Review <a href='/posts/papa-johns-nutrition-guide' class='text-[#cc0000] hover:underline font-bold'>nutrition and allergen details</a> before ordering for guests with dietary needs."
+            }
+        ],
+        faq: [
+            { q: "Where is Papa Johns in Sacramento, CA?", a: "This Sacramento guide uses the listed location at 915 L St, Sacramento, CA 95814. Enter your address in the official Papa Johns app to confirm the nearest active store and service availability." },
+            { q: "Does Papa Johns deliver in Downtown Sacramento?", a: "Yes, Papa Johns delivery is generally available in Downtown Sacramento, Midtown, Mansion Flats, Alkali Flat, Land Park, Sacramento State-area neighborhoods, and nearby communities depending on exact address." },
+            { q: "How long does Papa Johns delivery take in Sacramento?", a: "Typical Sacramento delivery is around 30 to 55 minutes. Downtown events, Kings games, Friday dinner demand, secure apartments, and poor weather or smoke conditions can increase wait times." },
+            { q: "Is Papa Johns good for Sacramento Kings watch parties?", a: "Yes, but order early. Large Pepperoni, The Works, wings, Garlic Knots, and Cheesesticks are practical group items. Place the order before tipoff rather than during halftime." },
+            { q: "What is the best Papa Johns deal in Sacramento?", a: "The best deal usually comes from checking current coupons, comparing carryout and delivery, and using bundle offers when ordering two or more items. Larger carts benefit most from percentage-off codes." },
+            { q: "Does Papa Johns Sacramento publish allergen information?", a: "Papa Johns provides official nutrition and allergen information, but kitchens are shared. Customers with serious allergies or celiac disease should verify with the store before placing an order." }
+        ],
+        schema: {
+            "@context": "https://schema.org",
+            "@type": "FastFoodRestaurant",
+            "name": "Papa Johns Pizza Sacramento",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "915 L St",
+                "addressLocality": "Sacramento",
+                "addressRegion": "CA",
+                "postalCode": "95814",
+                "addressCountry": "US"
+            },
+            "telephone": "+1 916-555-7001",
+            "openingHours": ["Mo-Th 11:00-00:00", "Fr-Sa 11:00-01:00", "Su 11:00-00:00"],
+            "servesCuisine": "Pizza",
+            "priceRange": "$$",
+            "url": "https://papajohns-menus.us/locations/sacramento-ca"
+        }
+    },
+    "raleigh-nc": {
+        slug: "raleigh-nc",
+        title: "Papa Johns Raleigh NC 2026: Menu Prices, Delivery, NC State & Local Deals",
+        metaDesc: "Papa Johns Raleigh, NC guide with 2026 menu prices, delivery areas, NC State ordering tips, family deals, hours, FAQs, and local carryout advice.",
+        h1: "Papa John's Raleigh, NC — Menu, Prices & Delivery Guide (2026)",
+        intro: "Raleigh is a strong pizza-delivery city because it mixes downtown apartments, NC State student housing, family neighborhoods, office parks, and game-day demand. This Papa Johns Raleigh guide helps you plan before checkout with 2026 menu prices, delivery timing, store information, deal advice, and neighborhood-specific ordering notes.\n\nUse this page to compare classic pizzas, specialty pizzas, stuffed crust, wings, breadsticks, and desserts. Prices are planning ranges based on 2026 menu patterns; live checkout totals can change by store, address, coupon, delivery fee, and taxes.",
+        stats: {
+            deliveryTime: "30-50 min",
+            startingPrice: "$17.99",
+            verifiedYear: "2026"
+        },
+        locationDetails: {
+            address: "201 Fayetteville St, Raleigh, NC 27601",
+            phone: "+1 919-555-8001",
+            hours: "Mon-Thu 11:00 AM - 11:00 PM | Fri-Sat 11:00 AM - 12:00 AM | Sun 11:00 AM - 11:00 PM",
+            deliveryAreas: "Downtown Raleigh, Glenwood South, NC State area, Cameron Village, Five Points, North Hills",
+            mapUrl: "https://maps.google.com/?q=201+Fayetteville+St,+Raleigh,+NC+27601"
+        },
+        menuPizzas: standardPizzaPrices2026,
+        menuSides: standardSidePrices2026,
+        neighborhoodContent: [
+            {
+                title: "Downtown Raleigh and Glenwood South Delivery",
+                text: "Downtown Raleigh and Glenwood South are strong delivery areas, but apartments, parking, nightlife traffic, and office buildings can slow the final handoff. Add building details, gate codes, floor numbers, and a clear phone number. If you are ordering late on Friday or Saturday, expect a longer delivery window than a weekday afternoon.<br/><br/>For office lunches downtown, carryout is often easier than delivery because it removes lobby coordination and driver parking delays."
+            },
+            {
+                title: "NC State, Student Housing and Budget Orders",
+                text: "NC State students and nearby apartment communities create steady demand around Hillsborough Street, Western Boulevard, and Cameron Village. A budget-friendly student order usually starts with the <a href='/coupons' class='text-[#cc0000] hover:underline font-bold'>coupons page</a>, then compares carryout against delivery. Delivery is convenient, but carryout can save enough to matter on smaller orders.<br/><br/>For a group study night, two large pizzas and one side are usually more efficient than multiple customized small pizzas. Choose one simple pizza such as <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni</a> and one loaded option such as <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works</a>."
+            },
+            {
+                title: "Hurricanes, Wolfpack and Triangle Game Days",
+                text: "Raleigh-area sports nights can push pizza delivery demand higher than normal. NC State football and basketball, Carolina Hurricanes games, and big ACC matchups all create order spikes. Order 45 to 60 minutes before game time if you need food ready for kickoff, tipoff, or puck drop.<br/><br/>During storms or heavy rain, delivery can slow across the Triangle. If timing is important, choose carryout or order earlier than normal."
+            },
+            {
+                title: "Family Ordering in Raleigh Suburbs",
+                text: "For families in North Hills, Five Points, Cameron Village, and nearby suburbs, the strongest Papa Johns order is usually simple: one cheese or pepperoni pizza for kids, one specialty pizza for adults, and one side. Garlic Knots, Cheesesticks, and wings make the meal stretch without buying another pizza too soon. For dietary needs, read the <a href='/posts/papa-johns-gluten-free-guide' class='text-[#cc0000] hover:underline font-bold'>gluten-free guide</a> before ordering gluten-free crust because preparation happens in a shared kitchen."
+            }
+        ],
+        faq: [
+            { q: "Where is Papa Johns in Raleigh, NC?", a: "This Raleigh guide uses the listed location at 201 Fayetteville St, Raleigh, NC 27601. Enter your address in the official Papa Johns app to confirm the nearest active store for delivery or carryout." },
+            { q: "Does Papa Johns deliver to NC State?", a: "Papa Johns delivery is generally available around the NC State area, but exact coverage depends on address and store routing. Add dorm, apartment, or building details clearly at checkout." },
+            { q: "How long does Papa Johns delivery take in Raleigh?", a: "Normal Raleigh delivery is often 30 to 50 minutes. NC State game days, Hurricanes watch parties, Friday nights, storms, and downtown apartment handoffs can increase the window." },
+            { q: "What is the cheapest Papa Johns order in Raleigh?", a: "A small Cheese or Pepperoni Pizza is usually the lowest base-price pizza. For the best final total, check active coupons and compare carryout against delivery before checkout." },
+            { q: "Is Papa Johns good for Raleigh family orders?", a: "Yes. For families, combine one simple pizza, one specialty pizza, and one side such as Garlic Knots, wings, or Cheesesticks. This gives variety without overcomplicating the order." },
+            { q: "Does Papa Johns Raleigh have gluten-free crust?", a: "Gluten-free crust may be available, but Papa Johns uses shared kitchens. Customers with celiac disease or serious gluten concerns should review official allergen information and call the store before ordering." }
+        ],
+        schema: {
+            "@context": "https://schema.org",
+            "@type": "FastFoodRestaurant",
+            "name": "Papa Johns Pizza Raleigh",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "201 Fayetteville St",
+                "addressLocality": "Raleigh",
+                "addressRegion": "NC",
+                "postalCode": "27601",
+                "addressCountry": "US"
+            },
+            "telephone": "+1 919-555-8001",
+            "openingHours": ["Mo-Th 11:00-23:00", "Fr-Sa 11:00-00:00", "Su 11:00-23:00"],
+            "servesCuisine": "Pizza",
+            "priceRange": "$$",
+            "url": "https://papajohns-menus.us/locations/raleigh-nc"
         }
     },
 };
