@@ -4,7 +4,7 @@ import { generateArticleSEO } from '../../lib/seo-config';
 import { generateArticleSchema, generateBreadcrumbSchema } from '../../lib/seo/schema';
 import Link from 'next/link';
 import exactFaqSchemas from '../../data/faq-schemas.json';
-import { Heart, Share2, Info, Navigation, ArrowRight, Star } from 'lucide-react';
+import { Heart, Share2, Info, Navigation, ArrowRight } from 'lucide-react';
 import { getTodayFormatted, getMonthYear } from '../../../lib/utils/date';
 import LastUpdated from '../../components/LastUpdated';
 import PageComments from '../../components/PageComments';
@@ -195,8 +195,8 @@ export default async function BestPizzaDeliveryPage() {
                                         <span className="text-sm font-black text-white/90">Per Portion</span>
                                     </div>
                                     <div>
-                                        <span className="text-white/40 uppercase text-[9px] font-black tracking-[0.2em] block mb-1">User Rating</span>
-                                        <div className="flex text-[#CCEE18] text-sm"><Star size={12} fill="currentColor" /><Star size={12} fill="currentColor" /><Star size={12} fill="currentColor" /><Star size={12} fill="currentColor" /><Star size={12} fill="currentColor" /></div>
+                                        <span className="text-white/40 uppercase text-[9px] font-black tracking-[0.2em] block mb-1">Before Ordering</span>
+                                        <span className="text-sm font-black text-white/90">Check Local Price</span>
                                     </div>
                                 </div>
                             </div>

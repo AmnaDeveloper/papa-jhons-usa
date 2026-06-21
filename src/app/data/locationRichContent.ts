@@ -2215,7 +2215,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             },
             {
                 title: "Ordering Papa Johns on Cowboys / Rangers / Mavericks / Stars Game Days",
-                text: "Cowboys / Rangers / Mavericks / Stars games are among the busiest ordering times at Papa Johns Dallas locations. During Cowboys game days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are consistently the top-ordered combination during game nights in Dallas."
+                text: "Cowboys / Rangers / Mavericks / Stars games are among the busiest ordering times at Papa Johns Dallas locations. During Cowboys game days, delivery times can extend to 45–60 minutes. Order at least 45 minutes before kickoff/tip-off for on-time delivery. <a href='/menus-prices/the-works-pizza' class='text-[#cc0000] hover:underline font-bold'>The Works Pizza</a>, <a href='/menus-prices/pepperoni-pizza' class='text-[#cc0000] hover:underline font-bold'>Pepperoni Pizza</a>, and <a href='/posts/papa-johns-garlic-knots' class='text-[#cc0000] hover:underline font-bold'>Garlic Knots</a> are practical options for game-night groups that want a mix of meat, vegetables, and shareable sides."
             },
             {
                 title: "Best Neighborhoods for Papa Johns Delivery in Dallas",
@@ -4931,7 +4931,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             { q: "Is Papa Johns Pan Pizza available in Tucson?", a: "Yes. The <a href='/posts/papa-johns-pan-pizza' class='text-[#cc0000] hover:underline'>Papa Johns Pan Pizza</a> launched nationwide in January 2026 is available at Tucson locations at $11.99 for medium size. It features a six cheese blend with a garlic parmesan baked in crust bottom and is available in medium only. It's one of the better thick crust delivery options currently available in Tucson." },
             { q: "How long does Papa Johns delivery take in Tucson?", a: "Standard delivery in Tucson runs 30 to 45 minutes during non peak hours from most locations. During UA game days, finals week, and monsoon weather events, expect 45 to 70 minutes. The S Houghton Road and far east Tucson locations have slightly longer delivery times due to distance from the city center. Carryout is consistently ready in 15 to 20 minutes." },
             { q: "Does Papa Johns deliver to Marana and Oro Valley from Tucson?", a: "Yes. The N Thornydale Road location primarily serves Marana, and the N La Canada location serves Oro Valley and the northwest Tucson suburbs. Both are Tucson area Papa Johns locations. Enter your specific Marana or Oro Valley address in the Papa Johns app to confirm delivery availability and routing." },
-            { q: "Can I get Papa Johns delivered during Wildcats game days in Tucson?", a: "Yes, but plan ahead. University of Arizona football and basketball game days especially home football at Arizona Stadium and basketball at McKale Center create significant delivery demand at the Speedway Blvd location. Order at least one hour before kickoff or tip off, or choose carryout to guarantee your pizza arrives when you want it." },
+            { q: "Can I get Papa Johns delivered during Wildcats game days in Tucson?", a: "Yes, but plan ahead. University of Arizona football and basketball game days especially home football at Arizona Stadium and basketball at McKale Center create significant delivery demand at the Speedway Blvd location. Order at least one hour before kickoff or tip off, or choose carryout for more control over pickup timing." },
             { q: "Is there a Papa Johns near the Tucson airport?", a: "The W Valencia Road location (1610 W Valencia Rd) is the closest Papa Johns to Tucson International Airport, approximately 5 to 7 minutes by car. It's available for both delivery and carryout. This is also the primary location for South Tucson and Drexel Heights neighborhoods." }
         ],
         schema: {
@@ -5030,11 +5030,11 @@ export const locationRichContent: Record<string, RichLocationData> = {
             verifiedYear: "2026"
         },
         locationDetails: {
-            address: "1234 SW Stark St, Portland, OR 97205",
+            address: "Use the official Papa Johns store locator for the current Portland-area store assigned to your address",
             phone: "Verify with official store locator",
             hours: "Mon-Thu 11:00 AM - 11:00 PM | Fri-Sat 11:00 AM - 12:00 AM | Sun 11:00 AM - 11:00 PM",
             deliveryAreas: "Downtown Portland, Pearl District, Goose Hollow, Northwest District, PSU area, inner east side",
-            mapUrl: "https://maps.google.com/?q=1234+SW+Stark+St,+Portland,+OR+97205"
+            mapUrl: "https://www.papajohns.com/locations/"
         },
         menuPizzas: standardPizzaPrices2026,
         menuSides: standardSidePrices2026,
@@ -5057,7 +5057,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Portland, OR?", a: "This Portland guide uses the listed location at 1234 SW Stark St, Portland, OR 97205. Use the official Papa Johns app or website to confirm the active store assigned to your exact address." },
+            { q: "Where is Papa Johns in Portland, OR?", a: "Use the official Papa Johns app or website to confirm the active Portland-area store assigned to your exact address. Store coverage can change by delivery zone, carryout availability, and franchise routing." },
             { q: "Does Papa Johns deliver in Downtown Portland?", a: "Yes, Papa Johns delivery is generally available across central Portland areas such as Downtown, Pearl District, Goose Hollow, Northwest District, the PSU area, and nearby inner neighborhoods, but final availability depends on your address." },
             { q: "How long does Papa Johns delivery take in Portland?", a: "Typical Portland delivery runs 30 to 55 minutes. Rain, bridge traffic, downtown parking, secure apartment buildings, and Friday dinner demand can increase the delivery window." },
             { q: "What is the best Papa Johns deal in Portland?", a: "The best deal depends on your cart. Check active coupons first, compare carryout and delivery totals, and use bundle deals when ordering two or more items. Percentage-off coupons are often strongest for larger family orders." },
@@ -5066,21 +5066,15 @@ export const locationRichContent: Record<string, RichLocationData> = {
         ],
         schema: {
             "@context": "https://schema.org",
-            "@type": "FastFoodRestaurant",
-            "name": "Papa Johns Pizza Portland",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "1234 SW Stark St",
-                "addressLocality": "Portland",
-                "addressRegion": "OR",
-                "postalCode": "97205",
-                "addressCountry": "US"
-            },
-            "telephone": undefined,
-            "openingHours": ["Mo-Th 11:00-23:00", "Fr-Sa 11:00-00:00", "Su 11:00-23:00"],
-            "servesCuisine": "Pizza",
-            "priceRange": "$$",
-            "url": "https://papajohns-menus.us/locations/portland-or"
+            "@type": "WebPage",
+            "name": "Papa Johns Portland OR Menu and Delivery Guide",
+            "description": "Independent Portland, OR Papa Johns menu, delivery, carryout, and ordering guide for readers comparing prices before checkout.",
+            "url": "https://papajohns-menus.us/locations/portland-or",
+            "isPartOf": {
+                "@type": "WebSite",
+                "name": "PapaJohns-Menus.us",
+                "url": "https://papajohns-menus.us"
+            }
         }
     },
     "tampa-fl": {

@@ -78,11 +78,6 @@ export default async function MenuItemBlogPage({ params }: Props) {
             "lowPrice": item.sizes?.[0]?.price || item.price,
             "highPrice": item.sizes?.[item.sizes.length - 1]?.price || item.price,
             "offerCount": item.sizes?.length || 1
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": item.rating,
-          "reviewCount": item.reviewCount
         }
     };
 
@@ -111,7 +106,7 @@ export default async function MenuItemBlogPage({ params }: Props) {
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#CCEE18] rounded-full -mr-64 -mt-64 opacity-5 pointer-events-none"></div>
                 <div className="container mx-auto px-4 relative z-10">
                     <span className="inline-block bg-[#CCEE18] text-[#1A3D17] font-black uppercase tracking-[0.4em] text-[10px] px-6 py-2.5 rounded-full mb-6">
-                         Verified Menu & Price Guide {month.split(' ')[1]}
+                         Menu & Price Guide {month.split(' ')[1]}
                     </span>
                     <h1 className="text-4xl md:text-7xl font-black uppercase tracking-tighter mb-4" style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}>
                         {item.title.split(' 2026')[0]} ({month})
@@ -121,8 +116,8 @@ export default async function MenuItemBlogPage({ params }: Props) {
                     </p>
                     <div className="flex flex-wrap items-center justify-center gap-3 mb-10 text-[10px] font-black uppercase tracking-widest text-[#1A3D17]">
                         <span className="bg-white px-4 py-1.5 rounded-full shadow-lg">🔥 Approx {item.calories} Cals</span>
-                        <span className="bg-[#cc0000] text-white px-4 py-1.5 rounded-full shadow-lg">⭐ {item.rating} Rating</span>
-                        <span className="bg-[#CCEE18] px-4 py-1.5 rounded-full shadow-lg">⚡ {item.reviewCount} Reviews</span>
+                        <span className="bg-[#cc0000] text-white px-4 py-1.5 rounded-full shadow-lg">Check Local Price</span>
+                        <span className="bg-[#CCEE18] px-4 py-1.5 rounded-full shadow-lg">2026 Guide</span>
                     </div>
                     <Link href="/store-locator" className="bg-[#CCEE18] hover:bg-white text-[#1A3D17] font-black py-4 px-10 rounded-full transition-all uppercase tracking-widest text-sm shadow-xl active:scale-95 inline-block">
                         Order from Nearest Branch

@@ -5,7 +5,7 @@ import { generateArticleSchema, generateBreadcrumbSchema } from '../../../lib/se
 import InternalLinks from '../../../components/seo/InternalLinks';
 import Link from 'next/link';
 import exactFaqSchemas from '../../../data/faq-schemas.json';
-import { Heart, Share2, Info, Navigation, ArrowRight, Star } from 'lucide-react';
+import { Heart, Share2, Info, Navigation, ArrowRight } from 'lucide-react';
 import { getTodayFormatted, getMonthYear } from '../../../../lib/utils/date';
 import LastUpdated from '../../../components/LastUpdated';
 import AuthorBio from '../../../components/AuthorBio';
@@ -713,12 +713,12 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                                     </div>
                                     <div>
                                         <span className="text-white/40 uppercase text-[9px] font-black tracking-[0.2em] block mb-1">
-                                            {isGlutenFreeGuide ? 'Celiac Fit' : 'User Rating'}
+                                            {isGlutenFreeGuide ? 'Celiac Fit' : 'Planning Note'}
                                         </span>
                                         {isGlutenFreeGuide ? (
                                             <span className="text-sm font-black text-white/90">Not Recommended</span>
                                         ) : (
-                                            <div className="flex text-[#CCEE18] text-sm"><Star size={12} fill="currentColor" /><Star size={12} fill="currentColor" /><Star size={12} fill="currentColor" /><Star size={12} fill="currentColor" /><Star size={12} fill="currentColor" /></div>
+                                            <span className="text-sm font-black text-white/90">Check Local Details</span>
                                         )}
                                     </div>
                                 </div>

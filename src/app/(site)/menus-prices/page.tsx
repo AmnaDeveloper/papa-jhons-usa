@@ -3,7 +3,7 @@ import Link from 'next/link';
 import posts from '../../data/posts.json';
 import menuItems from '../../data/menu-items.json';
 import { generatePageSEO } from '../../lib/seo-config';
-import { ArrowRight, Star, Clock, MapPin, Tag, Menu } from 'lucide-react';
+import { ArrowRight, Tag, Menu } from 'lucide-react';
 import { getMonthYear } from '../../../lib/utils/date';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -255,11 +255,9 @@ export default function MenusAndPricesPage() {
                                             <span className="text-[#1A3D17] font-black text-[8px] uppercase tracking-widest opacity-60">
                                                 {item.type === 'item' ? 'Menu Item' : 'Guide'}
                                             </span>
-                                            {item.rating && (
-                                                <div className="flex items-center gap-0.5 text-yellow-500 text-[9px] font-black">
-                                                    <Star size={8} fill="currentColor" /> {item.rating}
-                                                </div>
-                                            )}
+                                            <span className="text-[9px] font-black text-[#1A3D17]/55 uppercase tracking-widest">
+                                                {item.type === 'item' ? 'Price Guide' : 'Read Guide'}
+                                            </span>
                                         </div>
                                         <h3 className="text-sm font-black text-[#1A3D17] uppercase leading-tight mb-3 group-hover:text-[#cc0000] transition-colors line-clamp-2" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
                                             {item.type === 'item' ? item.slug.split('-').join(' ') : item.title}

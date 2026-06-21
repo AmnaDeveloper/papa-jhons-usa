@@ -304,7 +304,7 @@ export default function SaveMoneyClient() {
                                 <Award className="text-[#cc0000]" size={18} /> Editorial Guarantee
                             </h3>
                             <p className="text-xs text-gray-600 font-bold leading-relaxed">
-                                Our deals researcher, Marcus Webb, manually tests orders at Papa Johns every week. We receive no sponsorship from Papa Johns. Every tip shared here is based on real purchase tests.
+                                Our deals researcher reviews Papa Johns public offers, rewards terms, menu-price examples, and checkout guidance for planning purposes. We receive no sponsorship from Papa Johns, and readers should confirm final prices and discounts in the official checkout before ordering.
                             </p>
                         </div>
 
@@ -332,7 +332,7 @@ export default function SaveMoneyClient() {
                             <div className="absolute top-6 right-8 text-gray-100 font-serif text-8xl leading-none select-none pointer-events-none">“</div>
                             
                             <p className="text-lg leading-relaxed text-gray-700 font-bold relative z-10">
-                                Let's be honest — most &quot;how to save money at Papa Johns&quot; articles online say the exact same thing. They list a bunch of promo codes, half of which expired months ago, and call it a day. I've spent the last two years tracking Papa Johns pricing for this site, and I can tell you that the codes are honestly the least reliable part of the whole equation.
+                                Let's be honest — many &quot;how to save money at Papa Johns&quot; articles online say the exact same thing. They list a bunch of promo codes, some of which may already be expired, and call it a day. After reviewing Papa Johns pricing patterns, rewards terms, and checkout examples for this site, the practical takeaway is that codes are often the least reliable part of the whole equation.
                             </p>
                             <p className="text-lg leading-relaxed text-gray-700 font-bold mt-6">
                                 So instead of giving you another list of codes that might not work by the time you read this, I want to walk you through the actual habits and order choices that consistently save money — the stuff that works whether or not there's a promo code floating around.

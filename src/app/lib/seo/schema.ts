@@ -47,7 +47,7 @@ export const generateMenuSchema = (sections: Array<{ name: string; url: string; 
     };
 };
 
-export const generateProductSchema = (name: string, price: string, image: string, description: string, url: string, ratingValue?: number, reviewCount?: number) => {
+export const generateProductSchema = (name: string, price: string, image: string, description: string, url: string) => {
     const schema: any = {
         "@context": "https://schema.org",
         "@type": "Product",
@@ -62,14 +62,6 @@ export const generateProductSchema = (name: string, price: string, image: string
             "availability": "https://schema.org/InStock"
         }
     };
-
-    if (ratingValue && reviewCount) {
-        schema.aggregateRating = {
-            "@type": "AggregateRating",
-            "ratingValue": ratingValue,
-            "reviewCount": reviewCount
-        };
-    }
 
     return schema;
 };

@@ -246,7 +246,7 @@ function RichTemplate({ data, month }: { data: RichLocationData; month: string }
             <div className="bg-[#1A3D17] border-b-8 border-[#cc0000] text-white py-16 md:py-24 text-center relative overflow-hidden">
                 <div className="container mx-auto px-4 relative z-10">
                     <span className="inline-block bg-[#CCEE18] text-[#1A3D17] font-black uppercase tracking-[0.4em] text-[10px] px-6 py-2.5 rounded-full mb-6 shadow-lg">
-                        Local Guide — Verified {month}
+                        Local Guide — Updated {month}
                     </span>
                     <h1 className="text-4xl md:text-7xl font-black uppercase tracking-tighter mb-6" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
                         {data.h1.split(' — ')[0]} — <span className="text-[#CCEE18]">{data.h1.split(' — ')[1]}</span>
@@ -365,7 +365,7 @@ function RichTemplate({ data, month }: { data: RichLocationData; month: string }
                         <h2 className="text-4xl font-black text-[#1A3D17] uppercase mb-4 tracking-tighter">
                             Papa Johns Menu & <span className="text-[#cc0000]">Prices</span> in {cityName}
                         </h2>
-                        <p className="text-gray-500 font-bold uppercase tracking-widest text-[10px]">Verified 2026 pricing for this location</p>
+                        <p className="text-gray-500 font-bold uppercase tracking-widest text-[10px]">2026 planning prices; confirm final totals at checkout</p>
                     </div>
                     
                     <div className="overflow-hidden rounded-[2.5rem] border border-gray-200 bg-white shadow-xl mb-12">

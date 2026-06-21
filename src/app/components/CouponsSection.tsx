@@ -8,9 +8,6 @@ interface Coupon {
     discount: string;
     title: string;
     code: string;
-    verified: boolean;
-    initialMinutes: number;
-    amountSaved: string;
     description: string;
 }
 
@@ -29,38 +26,12 @@ export default function CouponsSection() {
     const [currentDate, setCurrentDate] = useState('');
     const [mounted, setMounted] = useState(false);
     const [revealedCodes, setRevealedCodes] = useState<Record<number, boolean>>({});
-    const [dynamicMinutes, setDynamicMinutes] = useState<Record<number, number>>({});
 
     useEffect(() => {
         setMounted(true);
         const date = new Date();
         const options: Intl.DateTimeFormatOptions = { month: 'long', day: 'numeric', year: 'numeric' };
         setCurrentDate(date.toLocaleDateString('en-US', options));
-
-        // Initialize dynamic times
-        const initialTimes: Record<number, number> = {
-            1: 4,
-            2: 12,
-            3: 2,
-            4: 45
-        };
-        setDynamicMinutes(initialTimes);
-
-        // Update times every minute to make it truly dynamic
-        const interval = setInterval(() => {
-            setDynamicMinutes(prev => {
-                const next = { ...prev };
-                Object.keys(next).forEach(id => {
-                    const numId = parseInt(id);
-                    // Cycle minutes or increment
-                    if (next[numId] > 59) next[numId] = 1;
-                    else next[numId] += 1;
-                });
-                return next;
-            });
-        }, 60000);
-
-        return () => clearInterval(interval);
     }, []);
 
     const coupons: Coupon[] = [
@@ -69,40 +40,28 @@ export default function CouponsSection() {
             discount: '25%',
             title: '25% Off Regular Menu Price Orders',
             description: 'This Papa John\'s promo code example may reduce eligible regular menu price items when active for your store. Combine with our [Menu & Prices](/menus-prices) to compare value before checkout.',
-            code: 'CHOOSE25',
-            verified: true,
-            initialMinutes: 4,
-            amountSaved: '$8.42'
+            code: 'CHOOSE25'
         },
         {
             id: 2,
             discount: '50%',
             title: 'BOGO-Style Pizza Offer',
             description: 'BOGO-style pizza deals may discount a second pizza when the offer is active for your local store. Check [official terms](https://www.papajohns.com) for current availability.',
-            code: 'PAPA50',
-            verified: true,
-            initialMinutes: 12,
-            amountSaved: '$18.15'
+            code: 'PAPA50'
         },
         {
             id: 3,
             discount: '$10',
             title: '$10 Off Any Order of $30 or More',
             description: 'This example may reduce an eligible cart when the minimum order and local terms are met. Discover more [Featured Items](/#featured) while comparing your checkout total.',
-            code: 'SAVE10NOW',
-            verified: true,
-            initialMinutes: 2,
-            amountSaved: '$10.00'
+            code: 'SAVE10NOW'
         },
         {
             id: 4,
             discount: 'FREE',
             title: 'Free Side of Garlic Knots with Large Pizza',
             description: 'Some promotions include a side item with an eligible pizza purchase. Use the official checkout to confirm whether this offer is active for your store.',
-            code: 'FREESIDE',
-            verified: true,
-            initialMinutes: 45,
-            amountSaved: '$6.99'
+            code: 'FREESIDE'
         }
     ];
 
@@ -176,8 +135,6 @@ export default function CouponsSection() {
                         <div className="space-y-8">
                             {coupons.map((coupon) => {
                                 const isRevealed = revealedCodes[coupon.id];
-                                const mins = dynamicMinutes[coupon.id] || coupon.initialMinutes;
-                                
                                 return (
                                     <div key={coupon.id} className="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm transition-shadow hover:shadow-md">
                                         <div className="flex flex-col md:flex-row min-h-[160px]">
@@ -195,7 +152,7 @@ export default function CouponsSection() {
                                             {/* MIDDLE: Content Area */}
                                             <div className="flex-1 p-8">
                                                 <div className="flex items-center gap-2 mb-3">
-                                                     <span className="bg-[#1A3D17] text-[#CCEE18] text-[9px] font-black px-2 py-0.5 rounded-sm tracking-widest uppercase">Verified Deal</span>
+                                                     <span className="bg-[#1A3D17] text-[#CCEE18] text-[9px] font-black px-2 py-0.5 rounded-sm tracking-widest uppercase">Example Deal</span>
                                                      <span className="text-[10px] font-bold text-gray-600 uppercase tracking-widest leading-none">Check Terms</span>
                                                 </div>
                                                 <h4 className="text-2xl font-black text-[#1A3D17] leading-tight mb-3" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
@@ -232,11 +189,11 @@ export default function CouponsSection() {
                                             </div>
                                         </div>
 
-                                        {/* SOCIAL PROOF FOOTER (Dynamic) */}
+                                        {/* Checkout note */}
                                         <div className="bg-[#f2fcf4] px-8 py-3 flex items-center justify-between border-t border-[#e2f5e6]">
                                             <p className="text-[#1A3D17] text-xs font-bold italic flex items-center gap-2">
                                                 <span className="inline-flex h-2 w-2 rounded-full bg-[#1A3D17]"></span>
-                                                Verified Success: Someone just saved <span className="text-[#cc0000] font-black">{coupon.amountSaved}</span> using this Papa Johns promo code, {mins} minutes ago!
+                                                Test this example in the official checkout before ordering; availability can change by store, account, and date.
                                             </p>
                                             <button className="text-[10px] font-black text-[#1A3D17] uppercase tracking-widest hover:text-[#cc0000] transition-colors">See Details →</button>
                                         </div>
@@ -256,10 +213,10 @@ export default function CouponsSection() {
                              </h4>
                              <div className="space-y-5">
                                  {[
-                                     { label: 'Best Discount:', val: '50% OFF' },
-                                     { label: 'Active Promo Codes:', val: '19' },
-                                     { label: 'Total Verified Offers:', val: '21' },
-                                     { label: 'Avg. Customer Savings:', val: '$11.82' },
+                                     { label: 'Examples Reviewed:', val: '4' },
+                                     { label: 'Deal Types:', val: 'Codes + Bundles' },
+                                     { label: 'Best Next Step:', val: 'Check Cart' },
+                                     { label: 'Savings Rule:', val: 'Confirm First' },
                                  ].map((item, i) => (
                                      <div key={i} className="flex justify-between items-center bg-gray-50 hover:bg-[#eefcf2] px-4 py-3 rounded-xl transition-colors">
                                          <span className="text-gray-500 text-xs font-bold uppercase tracking-wider">{item.label}</span>
