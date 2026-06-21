@@ -107,7 +107,7 @@ export default function ContactPage() {
                                 <div className="space-y-12">
                                     <div className="group/item">
                                         <p className="text-white/30 text-[10px] font-black uppercase tracking-[0.3em] mb-4 ml-1 flex items-center gap-2">
-                                            <span className="w-4 h-[1px] bg-[#CCEE18]/30"></span> Official Order Support
+                                            <span className="w-4 h-[1px] bg-[#CCEE18]/30"></span> Papa Johns Direct Support
                                         </p>
                                         <div className="flex items-center gap-6">
                                             <div className="w-16 h-16 bg-white/5 rounded-3xl flex items-center justify-center text-3xl group-hover/item:bg-[#CCEE18] group-hover/item:text-[#1A3D17] transition-all duration-500 shadow-inner group-hover/item:scale-110">📞</div>

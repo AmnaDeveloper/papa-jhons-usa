@@ -80,7 +80,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "303 Roma Ave NW, Albuquerque, NM 87102",
-            phone: "(505) 555-3101",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 11:00 AM – 10:00 PM | Fri–Sat 11:00 AM – 11:00 PM | Sun 11:00 AM – 10:00 PM",
             deliveryAreas: "Downtown, Old Town, Huning Highland, Barelas",
             mapUrl: "https://maps.google.com/?q=303+Roma+Ave+NW,+Albuquerque,+NM+87102"
@@ -114,8 +114,8 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Albuquerque, New Mexico?", a: "Papa Johns Albuquerque is located at 303 Roma Ave NW, Albuquerque, NM 87102. Call (505) 555-3101 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Albuquerque, NM?", a: "Papa Johns Albuquerque is open Monday–Thursday 11:00 AM–10:00 PM, Friday–Saturday 11:00 AM–11:00 PM, and Sunday 11:00 AM–10:00 PM. Hours may vary on holidays — call (505) 555-3101 to confirm." },
+            { q: "Where is Papa Johns in Albuquerque, New Mexico?", a: "Papa Johns Albuquerque is located at 303 Roma Ave NW, Albuquerque, NM 87102. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Albuquerque, NM?", a: "Papa Johns Albuquerque is open Monday–Thursday 11:00 AM–10:00 PM, Friday–Saturday 11:00 AM–11:00 PM, and Sunday 11:00 AM–10:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Albuquerque?", a: "Yes. Papa Johns Albuquerque delivers to Downtown, Old Town, Huning Highland, Barelas. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Albuquerque?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Albuquerque deals." }
         ],
@@ -131,7 +131,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "87102",
             "addressCountry": "US"
           },
-          "telephone": "(505) 555-3101",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 11:00 AM-10:00 PM", "Fr-Sa 11:00 AM-11:00 PM", "Su 11:00 AM-10:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -151,7 +151,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "600 W 5th Ave, Anchorage, AK 99501",
-            phone: "(907) 555-0201",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 11:00 AM – 10:00 PM | Fri–Sat 11:00 AM – 11:00 PM | Sun 11:00 AM – 10:00 PM",
             deliveryAreas: "Downtown, Fairview, Mountain View, Spenard",
             mapUrl: "https://maps.google.com/?q=600+W+5th+Ave,+Anchorage,+AK+99501"
@@ -181,8 +181,8 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Anchorage, Alaska?", a: "Papa Johns Anchorage is located at 600 W 5th Ave, Anchorage, AK 99501. Call (907) 555-0201 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Anchorage, AK?", a: "Papa Johns Anchorage is open Monday–Thursday 11:00 AM–10:00 PM, Friday–Saturday 11:00 AM–11:00 PM, and Sunday 11:00 AM–10:00 PM. Hours may vary on holidays — call (907) 555-0201 to confirm." },
+            { q: "Where is Papa Johns in Anchorage, Alaska?", a: "Papa Johns Anchorage is located at 600 W 5th Ave, Anchorage, AK 99501. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Anchorage, AK?", a: "Papa Johns Anchorage is open Monday–Thursday 11:00 AM–10:00 PM, Friday–Saturday 11:00 AM–11:00 PM, and Sunday 11:00 AM–10:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Anchorage?", a: "Yes. Papa Johns Anchorage delivers to Downtown, Fairview, Mountain View, Spenard. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Anchorage?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Anchorage deals." }
         ],
@@ -198,7 +198,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "99501",
             "addressCountry": "US"
           },
-          "telephone": "(907) 555-0201",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 11:00 AM-10:00 PM", "Fr-Sa 11:00 AM-11:00 PM", "Su 11:00 AM-10:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -410,8 +410,8 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Austin, Texas?", a: "Papa Johns Austin is located at 512 Congress Ave, Austin, TX 78701. Call (512) 555-4203 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Austin, TX?", a: "Papa Johns Austin is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays — call (512) 555-4203 to confirm." },
+            { q: "Where is Papa Johns in Austin, Texas?", a: "Papa Johns Austin is located at 512 Congress Ave, Austin, TX 78701. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Austin, TX?", a: "Papa Johns Austin is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Austin?", a: "Yes. Papa Johns Austin delivers to Downtown, Bouldin Creek, Travis Heights, South Lamar. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Austin?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Austin deals." }
         ],
@@ -427,7 +427,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "78701",
             "addressCountry": "US"
           },
-          "telephone": "(512) 555-4203",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 11:00 AM-11:00 PM", "Fr-Sa 11:00 AM-1:00 AM", "Su 11:00 AM-11:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -1148,7 +1148,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "2800 10th Ave N, Billings, MT 59101",
-            phone: "(406) 555-2601",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 3:00 PM – 10:00 PM | Fri–Sat 3:00 PM – 11:00 PM | Sun 3:00 PM – 10:00 PM",
             deliveryAreas: "Downtown, North Side, Heights, Billings West End",
             mapUrl: "https://maps.google.com/?q=2800+10th+Ave+N,+Billings,+MT+59101"
@@ -1182,8 +1182,8 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Billings, Montana?", a: "Papa Johns Billings is located at 2800 10th Ave N, Billings, MT 59101. Call (406) 555-2601 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Billings, MT?", a: "Papa Johns Billings is open Monday–Thursday 3:00 PM–10:00 PM, Friday–Saturday 3:00 PM–11:00 PM, and Sunday 3:00 PM–10:00 PM. Hours may vary on holidays — call (406) 555-2601 to confirm." },
+            { q: "Where is Papa Johns in Billings, Montana?", a: "Papa Johns Billings is located at 2800 10th Ave N, Billings, MT 59101. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Billings, MT?", a: "Papa Johns Billings is open Monday–Thursday 3:00 PM–10:00 PM, Friday–Saturday 3:00 PM–11:00 PM, and Sunday 3:00 PM–10:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Billings?", a: "Yes. Papa Johns Billings delivers to Downtown, North Side, Heights, Billings West End. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Billings?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Billings deals." }
         ],
@@ -1199,7 +1199,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "59101",
             "addressCountry": "US"
           },
-          "telephone": "(406) 555-2601",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 3:00 PM-10:00 PM", "Fr-Sa 3:00 PM-11:00 PM", "Su 3:00 PM-10:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -1219,7 +1219,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "1800 5th Ave N, Birmingham, AL 35203",
-            phone: "(205) 555-0101",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 3:00 PM – 10:00 PM | Fri–Sat 3:00 PM – 11:00 PM | Sun 3:00 PM – 10:00 PM",
             deliveryAreas: "Downtown, Southside, Lakeview, Five Points South",
             mapUrl: "https://maps.google.com/?q=1800+5th+Ave+N,+Birmingham,+AL+35203"
@@ -1249,8 +1249,8 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Birmingham, Alabama?", a: "Papa Johns Birmingham is located at 1800 5th Ave N, Birmingham, AL 35203. Call (205) 555-0101 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Birmingham, AL?", a: "Papa Johns Birmingham is open Monday–Thursday 3:00 PM–10:00 PM, Friday–Saturday 3:00 PM–11:00 PM, and Sunday 3:00 PM–10:00 PM. Hours may vary on holidays — call (205) 555-0101 to confirm." },
+            { q: "Where is Papa Johns in Birmingham, Alabama?", a: "Papa Johns Birmingham is located at 1800 5th Ave N, Birmingham, AL 35203. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Birmingham, AL?", a: "Papa Johns Birmingham is open Monday–Thursday 3:00 PM–10:00 PM, Friday–Saturday 3:00 PM–11:00 PM, and Sunday 3:00 PM–10:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Birmingham?", a: "Yes. Papa Johns Birmingham delivers to Downtown, Southside, Lakeview, Five Points South. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Birmingham?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Birmingham deals." }
         ],
@@ -1266,7 +1266,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "35203",
             "addressCountry": "US"
           },
-          "telephone": "(205) 555-0101",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 3:00 PM-10:00 PM", "Fr-Sa 3:00 PM-11:00 PM", "Su 3:00 PM-10:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -1286,7 +1286,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "850 W Main St, Boise, ID 83702",
-            phone: "(208) 555-1201",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 3:00 PM – 10:00 PM | Fri–Sat 3:00 PM – 11:00 PM | Sun 3:00 PM – 10:00 PM",
             deliveryAreas: "Downtown, North End, Depot Bench, East End",
             mapUrl: "https://maps.google.com/?q=850+W+Main+St,+Boise,+ID+83702"
@@ -1320,8 +1320,8 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Boise, Idaho?", a: "Papa Johns Boise is located at 850 W Main St, Boise, ID 83702. Call (208) 555-1201 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Boise, ID?", a: "Papa Johns Boise is open Monday–Thursday 3:00 PM–10:00 PM, Friday–Saturday 3:00 PM–11:00 PM, and Sunday 3:00 PM–10:00 PM. Hours may vary on holidays — call (208) 555-1201 to confirm." },
+            { q: "Where is Papa Johns in Boise, Idaho?", a: "Papa Johns Boise is located at 850 W Main St, Boise, ID 83702. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Boise, ID?", a: "Papa Johns Boise is open Monday–Thursday 3:00 PM–10:00 PM, Friday–Saturday 3:00 PM–11:00 PM, and Sunday 3:00 PM–10:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Boise?", a: "Yes. Papa Johns Boise delivers to Downtown, North End, Depot Bench, East End. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Boise?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Boise deals." }
         ],
@@ -1337,7 +1337,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "83702",
             "addressCountry": "US"
           },
-          "telephone": "(208) 555-1201",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 3:00 PM-10:00 PM", "Fr-Sa 3:00 PM-11:00 PM", "Su 3:00 PM-10:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -1357,7 +1357,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "100 High St, Boston, MA 02110",
-            phone: "(617) 555-4001",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 11:00 AM – 11:00 PM | Fri–Sat 11:00 AM – 1:00 AM | Sun 11:00 AM – 11:00 PM",
             deliveryAreas: "Downtown, North End, Financial District, West End",
             mapUrl: "https://maps.google.com/?q=100+High+St,+Boston,+MA+02110"
@@ -1391,8 +1391,8 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Boston, Massachusetts?", a: "Papa Johns Boston is located at 100 High St, Boston, MA 02110. Call (617) 555-4001 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Boston, MA?", a: "Papa Johns Boston is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays — call (617) 555-4001 to confirm." },
+            { q: "Where is Papa Johns in Boston, Massachusetts?", a: "Papa Johns Boston is located at 100 High St, Boston, MA 02110. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Boston, MA?", a: "Papa Johns Boston is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Boston?", a: "Yes. Papa Johns Boston delivers to Downtown, North End, Financial District, West End. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Boston?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Boston deals." }
         ],
@@ -1408,7 +1408,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "02110",
             "addressCountry": "US"
           },
-          "telephone": "(617) 555-4001",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 11:00 AM-11:00 PM", "Fr-Sa 11:00 AM-1:00 AM", "Su 11:00 AM-11:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -1428,7 +1428,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "100 Court St, Brooklyn, NY 11201",
-            phone: "(718) 555-3001",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 11:00 AM – 11:00 PM | Fri–Sat 11:00 AM – 1:00 AM | Sun 11:00 AM – 11:00 PM",
             deliveryAreas: "Brooklyn Heights, DUMBO, Cobble Hill, Boerum Hill",
             mapUrl: "https://maps.google.com/?q=100+Court+St,+Brooklyn,+NY+11201"
@@ -1454,8 +1454,8 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Brooklyn, New York?", a: "Papa Johns Brooklyn is located at 100 Court St, Brooklyn, NY 11201. Call (718) 555-3001 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Brooklyn, NY?", a: "Papa Johns Brooklyn is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays — call (718) 555-3001 to confirm." },
+            { q: "Where is Papa Johns in Brooklyn, New York?", a: "Papa Johns Brooklyn is located at 100 Court St, Brooklyn, NY 11201. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Brooklyn, NY?", a: "Papa Johns Brooklyn is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Brooklyn?", a: "Yes. Papa Johns Brooklyn delivers to Brooklyn Heights, DUMBO, Cobble Hill, Boerum Hill. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Brooklyn?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Brooklyn deals." }
         ],
@@ -1471,7 +1471,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "11201",
             "addressCountry": "US"
           },
-          "telephone": "(718) 555-3001",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 11:00 AM-11:00 PM", "Fr-Sa 11:00 AM-1:00 AM", "Su 11:00 AM-11:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -1491,7 +1491,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "100 Main St, Buffalo, NY 14202",
-            phone: "(716) 555-5001",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 11:00 AM – 11:00 PM | Fri–Sat 11:00 AM – 1:00 AM | Sun 11:00 AM – 11:00 PM",
             deliveryAreas: "Downtown, Allentown, Elmwood Village, Waterfront",
             mapUrl: "https://maps.google.com/?q=100+Main+St,+Buffalo,+NY+14202"
@@ -1517,8 +1517,8 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Buffalo, New York?", a: "Papa Johns Buffalo is located at 100 Main St, Buffalo, NY 14202. Call (716) 555-5001 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Buffalo, NY?", a: "Papa Johns Buffalo is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays — call (716) 555-5001 to confirm." },
+            { q: "Where is Papa Johns in Buffalo, New York?", a: "Papa Johns Buffalo is located at 100 Main St, Buffalo, NY 14202. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Buffalo, NY?", a: "Papa Johns Buffalo is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Buffalo?", a: "Yes. Papa Johns Buffalo delivers to Downtown, Allentown, Elmwood Village, Waterfront. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Buffalo?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Buffalo deals." }
         ],
@@ -1534,7 +1534,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "14202",
             "addressCountry": "US"
           },
-          "telephone": "(716) 555-5001",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 11:00 AM-11:00 PM", "Fr-Sa 11:00 AM-1:00 AM", "Su 11:00 AM-11:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -1554,7 +1554,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "100 Main St, Burlington, VT 05401",
-            phone: "(802) 555-6001",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 11:00 AM – 10:00 PM | Fri–Sat 11:00 AM – 11:00 PM | Sun 11:00 AM – 10:00 PM",
             deliveryAreas: "Downtown, North End, South End, University",
             mapUrl: "https://maps.google.com/?q=100+Main+St,+Burlington,+VT+05401"
@@ -1580,8 +1580,8 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Burlington, Vermont?", a: "Papa Johns Burlington is located at 100 Main St, Burlington, VT 05401. Call (802) 555-6001 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Burlington, VT?", a: "Papa Johns Burlington is open Monday–Thursday 11:00 AM–10:00 PM, Friday–Saturday 11:00 AM–11:00 PM, and Sunday 11:00 AM–10:00 PM. Hours may vary on holidays — call (802) 555-6001 to confirm." },
+            { q: "Where is Papa Johns in Burlington, Vermont?", a: "Papa Johns Burlington is located at 100 Main St, Burlington, VT 05401. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Burlington, VT?", a: "Papa Johns Burlington is open Monday–Thursday 11:00 AM–10:00 PM, Friday–Saturday 11:00 AM–11:00 PM, and Sunday 11:00 AM–10:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Burlington?", a: "Yes. Papa Johns Burlington delivers to Downtown, North End, South End, University. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Burlington?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Burlington deals." }
         ],
@@ -1597,7 +1597,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "05401",
             "addressCountry": "US"
           },
-          "telephone": "(802) 555-6001",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 11:00 AM-10:00 PM", "Fr-Sa 11:00 AM-11:00 PM", "Su 11:00 AM-10:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -1617,7 +1617,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "100 Washington St E, Charleston, WV 25301",
-            phone: "(304) 555-7001",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 11:00 AM – 11:00 PM | Fri–Sat 11:00 AM – 1:00 AM | Sun 11:00 AM – 11:00 PM",
             deliveryAreas: "Downtown, Kanawha City, South Hills, West Side",
             mapUrl: "https://maps.google.com/?q=100+Washington+St+E,+Charleston,+WV+25301"
@@ -1643,8 +1643,8 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Charleston, West Virginia?", a: "Papa Johns Charleston is located at 100 Washington St E, Charleston, WV 25301. Call (304) 555-7001 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Charleston, WV?", a: "Papa Johns Charleston is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays — call (304) 555-7001 to confirm." },
+            { q: "Where is Papa Johns in Charleston, West Virginia?", a: "Papa Johns Charleston is located at 100 Washington St E, Charleston, WV 25301. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Charleston, WV?", a: "Papa Johns Charleston is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Charleston?", a: "Yes. Papa Johns Charleston delivers to Downtown, Kanawha City, South Hills, West Side. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Charleston?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Charleston deals." }
         ],
@@ -1660,7 +1660,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "25301",
             "addressCountry": "US"
           },
-          "telephone": "(304) 555-7001",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 11:00 AM-11:00 PM", "Fr-Sa 11:00 AM-1:00 AM", "Su 11:00 AM-11:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -1680,7 +1680,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "100 N Tryon St, Charlotte, NC 28202",
-            phone: "(704) 555-8001",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 11:00 AM – 11:00 PM | Fri–Sat 11:00 AM – 1:00 AM | Sun 11:00 AM – 11:00 PM",
             deliveryAreas: "Uptown, South End, Dilworth, Elizabeth",
             mapUrl: "https://maps.google.com/?q=100+N+Tryon+St,+Charlotte,+NC+28202"
@@ -1706,8 +1706,8 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Charlotte, North Carolina?", a: "Papa Johns Charlotte is located at 100 N Tryon St, Charlotte, NC 28202. Call (704) 555-8001 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Charlotte, NC?", a: "Papa Johns Charlotte is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays — call (704) 555-8001 to confirm." },
+            { q: "Where is Papa Johns in Charlotte, North Carolina?", a: "Papa Johns Charlotte is located at 100 N Tryon St, Charlotte, NC 28202. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Charlotte, NC?", a: "Papa Johns Charlotte is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Charlotte?", a: "Yes. Papa Johns Charlotte delivers to Uptown, South End, Dilworth, Elizabeth. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Charlotte?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Charlotte deals." }
         ],
@@ -1723,7 +1723,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "28202",
             "addressCountry": "US"
           },
-          "telephone": "(704) 555-8001",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 11:00 AM-11:00 PM", "Fr-Sa 11:00 AM-1:00 AM", "Su 11:00 AM-11:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -1743,7 +1743,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "2200 E Lincolnway, Cheyenne, WY 82001",
-            phone: "(307) 555-4901",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 3:00 PM – 10:00 PM | Fri–Sat 3:00 PM – 11:00 PM | Sun 3:00 PM – 10:00 PM",
             deliveryAreas: "Downtown, East Cheyenne, Lincolnway corridor, South Greeley Highway area",
             mapUrl: "https://maps.google.com/?q=2200+E+Lincolnway,+Cheyenne,+WY+82001"
@@ -1777,13 +1777,13 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Cheyenne, Wyoming?", a: "Papa Johns Cheyenne is located at 2200 E Lincolnway, Cheyenne, WY 82001. Call (307) 555-4901 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Cheyenne, WY?", a: "Papa Johns Cheyenne is open Monday–Thursday 3:00 PM–10:00 PM, Friday–Saturday 3:00 PM–11:00 PM, and Sunday 3:00 PM–10:00 PM. Hours may vary on holidays — call (307) 555-4901 to confirm." },
+            { q: "Where is Papa Johns in Cheyenne, Wyoming?", a: "Papa Johns Cheyenne is located at 2200 E Lincolnway, Cheyenne, WY 82001. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Cheyenne, WY?", a: "Papa Johns Cheyenne is open Monday–Thursday 3:00 PM–10:00 PM, Friday–Saturday 3:00 PM–11:00 PM, and Sunday 3:00 PM–10:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Cheyenne?", a: "Yes. Papa Johns Cheyenne delivers to Downtown, East Cheyenne, Lincolnway corridor, South Greeley Highway area. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Cheyenne?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Cheyenne deals." },
             { q: "Does Papa Johns Cheyenne accept online orders?", a: "Yes. All Cheyenne Papa Johns locations accept orders through papajohns.com and the Papa Johns app (iOS & Android) with Papa Track real-time order tracking." },
             { q: "Is Papa Johns Pan Pizza available in Cheyenne, WY?", a: "Yes. Papa Johns Pan Pizza launched January 29, 2026, and is available at the Cheyenne location. Priced at $11.99 for medium. See our Papa Johns Pan Pizza review." },
-            { q: "What is the phone number for Papa Johns in Cheyenne?", a: "The Papa Johns Cheyenne phone number is (307) 555-4901. You can call to place an order or confirm delivery availability." },
+            { q: "What is the phone number for Papa Johns in Cheyenne?", a: "Use the official Papa Johns locator or checkout flow to confirm the current phone number, delivery availability, and carryout options for Cheyenne." },
             { q: "How long does Papa Johns delivery take in Cheyenne?", a: "Average delivery time in Cheyenne is 30–45 minutes depending on your neighborhood and the time of day. During peak hours (evenings and weekends), allow 45–55 minutes." }
         ],
         schema: {
@@ -1798,7 +1798,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "82001",
             "addressCountry": "US"
           },
-          "telephone": "(307) 555-4901",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 3:00 PM-10:00 PM", "Fr-Sa 3:00 PM-11:00 PM", "Su 3:00 PM-10:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -1818,7 +1818,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "456 Michigan Ave, Chicago, IL 60601",
-            phone: "(312) 555-1301",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 10:00 AM – 11:00 PM | Fri–Sat 10:00 AM – 2:00 AM | Sun 10:00 AM – 11:00 PM",
             deliveryAreas: "The Loop, Streeterville, South Loop, River North",
             mapUrl: "https://maps.google.com/?q=456+Michigan+Ave,+Chicago,+IL+60601"
@@ -1852,13 +1852,13 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Chicago, Illinois?", a: "Papa Johns Chicago is located at 456 Michigan Ave, Chicago, IL 60601. Call (312) 555-1301 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Chicago, IL?", a: "Papa Johns Chicago is open Monday–Thursday 10:00 AM–11:00 PM, Friday–Saturday 10:00 AM–2:00 AM, and Sunday 10:00 AM–11:00 PM. Hours may vary on holidays — call (312) 555-1301 to confirm." },
+            { q: "Where is Papa Johns in Chicago, Illinois?", a: "Papa Johns Chicago is located at 456 Michigan Ave, Chicago, IL 60601. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Chicago, IL?", a: "Papa Johns Chicago is open Monday–Thursday 10:00 AM–11:00 PM, Friday–Saturday 10:00 AM–2:00 AM, and Sunday 10:00 AM–11:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Chicago?", a: "Yes. Papa Johns Chicago delivers to The Loop, Streeterville, South Loop, River North. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Chicago?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Chicago deals." },
             { q: "Does Papa Johns Chicago accept online orders?", a: "Yes. All Chicago Papa Johns locations accept orders through papajohns.com and the Papa Johns app (iOS & Android) with Papa Track real-time order tracking." },
             { q: "Is Papa Johns Pan Pizza available in Chicago, IL?", a: "Yes. Papa Johns Pan Pizza launched January 29, 2026, and is available at the Chicago location. Priced at $11.99 for medium. See our Papa Johns Pan Pizza review." },
-            { q: "What is the phone number for Papa Johns in Chicago?", a: "The Papa Johns Chicago phone number is (312) 555-1301. You can call to place an order or confirm delivery availability." },
+            { q: "What is the phone number for Papa Johns in Chicago?", a: "Use the official Papa Johns locator or checkout flow to confirm the current phone number, delivery availability, and carryout options for Chicago." },
             { q: "How long does Papa Johns delivery take in Chicago?", a: "Average delivery time in Chicago is 30–45 minutes depending on your neighborhood and the time of day. During peak hours (evenings and weekends), allow 45–55 minutes." }
         ],
         schema: {
@@ -1873,7 +1873,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "60601",
             "addressCountry": "US"
           },
-          "telephone": "(312) 555-1301",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 10:00 AM-11:00 PM", "Fr-Sa 10:00 AM-2:00 AM", "Su 10:00 AM-11:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -1893,7 +1893,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "100 Lakeside Ave, Cleveland, OH 44114",
-            phone: "(216) 555-3502",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 11:00 AM – 11:00 PM | Fri–Sat 11:00 AM – 12:00 AM | Sun 11:00 AM – 11:00 PM",
             deliveryAreas: "Downtown, The Flats, Warehouse District, Playhouse Square",
             mapUrl: "https://maps.google.com/?q=100+Lakeside+Ave,+Cleveland,+OH+44114"
@@ -1927,13 +1927,13 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Cleveland, Ohio?", a: "Papa Johns Cleveland is located at 100 Lakeside Ave, Cleveland, OH 44114. Call (216) 555-3502 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Cleveland, OH?", a: "Papa Johns Cleveland is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–12:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays — call (216) 555-3502 to confirm." },
+            { q: "Where is Papa Johns in Cleveland, Ohio?", a: "Papa Johns Cleveland is located at 100 Lakeside Ave, Cleveland, OH 44114. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Cleveland, OH?", a: "Papa Johns Cleveland is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–12:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Cleveland?", a: "Yes. Papa Johns Cleveland delivers to Downtown, The Flats, Warehouse District, Playhouse Square. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Cleveland?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Cleveland deals." },
             { q: "Does Papa Johns Cleveland accept online orders?", a: "Yes. All Cleveland Papa Johns locations accept orders through papajohns.com and the Papa Johns app (iOS & Android) with Papa Track real-time order tracking." },
             { q: "Is Papa Johns Pan Pizza available in Cleveland, OH?", a: "Yes. Papa Johns Pan Pizza launched January 29, 2026, and is available at the Cleveland location. Priced at $11.99 for medium. See our Papa Johns Pan Pizza review." },
-            { q: "What is the phone number for Papa Johns in Cleveland?", a: "The Papa Johns Cleveland phone number is (216) 555-3502. You can call to place an order or confirm delivery availability." },
+            { q: "What is the phone number for Papa Johns in Cleveland?", a: "Use the official Papa Johns locator or checkout flow to confirm the current phone number, delivery availability, and carryout options for Cleveland." },
             { q: "How long does Papa Johns delivery take in Cleveland?", a: "Average delivery time in Cleveland is 30–45 minutes depending on your neighborhood and the time of day. During peak hours (evenings and weekends), allow 45–55 minutes." }
         ],
         schema: {
@@ -1948,7 +1948,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "44114",
             "addressCountry": "US"
           },
-          "telephone": "(216) 555-3502",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 11:00 AM-11:00 PM", "Fr-Sa 11:00 AM-12:00 AM", "Su 11:00 AM-11:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -1968,7 +1968,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "14 S Nevada Ave, Colorado Springs, CO 80903",
-            phone: "(719) 555-0602",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 3:00 PM – 10:00 PM | Fri–Sat 3:00 PM – 11:00 PM | Sun 3:00 PM – 10:00 PM",
             deliveryAreas: "Downtown, Westside, Old Colorado City, North Nevada",
             mapUrl: "https://maps.google.com/?q=14+S+Nevada+Ave,+Colorado+Springs,+CO+80903"
@@ -1998,13 +1998,13 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Colorado Springs, Colorado?", a: "Papa Johns Colorado Springs is located at 14 S Nevada Ave, Colorado Springs, CO 80903. Call (719) 555-0602 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Colorado Springs, CO?", a: "Papa Johns Colorado Springs is open Monday–Thursday 3:00 PM–10:00 PM, Friday–Saturday 3:00 PM–11:00 PM, and Sunday 3:00 PM–10:00 PM. Hours may vary on holidays — call (719) 555-0602 to confirm." },
+            { q: "Where is Papa Johns in Colorado Springs, Colorado?", a: "Papa Johns Colorado Springs is located at 14 S Nevada Ave, Colorado Springs, CO 80903. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Colorado Springs, CO?", a: "Papa Johns Colorado Springs is open Monday–Thursday 3:00 PM–10:00 PM, Friday–Saturday 3:00 PM–11:00 PM, and Sunday 3:00 PM–10:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Colorado Springs?", a: "Yes. Papa Johns Colorado Springs delivers to Downtown, Westside, Old Colorado City, North Nevada. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Colorado Springs?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Colorado Springs deals." },
             { q: "Does Papa Johns Colorado Springs accept online orders?", a: "Yes. All Colorado Springs Papa Johns locations accept orders through papajohns.com and the Papa Johns app (iOS & Android) with Papa Track real-time order tracking." },
             { q: "Is Papa Johns Pan Pizza available in Colorado Springs, CO?", a: "Yes. Papa Johns Pan Pizza launched January 29, 2026, and is available at the Colorado Springs location. Priced at $11.99 for medium. See our Papa Johns Pan Pizza review." },
-            { q: "What is the phone number for Papa Johns in Colorado Springs?", a: "The Papa Johns Colorado Springs phone number is (719) 555-0602. You can call to place an order or confirm delivery availability." },
+            { q: "What is the phone number for Papa Johns in Colorado Springs?", a: "Use the official Papa Johns locator or checkout flow to confirm the current phone number, delivery availability, and carryout options for Colorado Springs." },
             { q: "How long does Papa Johns delivery take in Colorado Springs?", a: "Average delivery time in Colorado Springs is 30–45 minutes depending on your neighborhood and the time of day. During peak hours (evenings and weekends), allow 45–55 minutes." }
         ],
         schema: {
@@ -2019,7 +2019,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "80903",
             "addressCountry": "US"
           },
-          "telephone": "(719) 555-0602",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 3:00 PM-10:00 PM", "Fr-Sa 3:00 PM-11:00 PM", "Su 3:00 PM-10:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -2039,7 +2039,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "1350 Main St, Columbia, SC 29201",
-            phone: "(803) 555-4001",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 3:00 PM – 10:00 PM | Fri–Sat 3:00 PM – 11:00 PM | Sun 3:00 PM – 10:00 PM",
             deliveryAreas: "Downtown, Vista Arts District, North Main, Bull Street",
             mapUrl: "https://maps.google.com/?q=1350+Main+St,+Columbia,+SC+29201"
@@ -2073,13 +2073,13 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Columbia, South Carolina?", a: "Papa Johns Columbia is located at 1350 Main St, Columbia, SC 29201. Call (803) 555-4001 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Columbia, SC?", a: "Papa Johns Columbia is open Monday–Thursday 3:00 PM–10:00 PM, Friday–Saturday 3:00 PM–11:00 PM, and Sunday 3:00 PM–10:00 PM. Hours may vary on holidays — call (803) 555-4001 to confirm." },
+            { q: "Where is Papa Johns in Columbia, South Carolina?", a: "Papa Johns Columbia is located at 1350 Main St, Columbia, SC 29201. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Columbia, SC?", a: "Papa Johns Columbia is open Monday–Thursday 3:00 PM–10:00 PM, Friday–Saturday 3:00 PM–11:00 PM, and Sunday 3:00 PM–10:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Columbia?", a: "Yes. Papa Johns Columbia delivers to Downtown, Vista Arts District, North Main, Bull Street. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Columbia?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Columbia deals." },
             { q: "Does Papa Johns Columbia accept online orders?", a: "Yes. All Columbia Papa Johns locations accept orders through papajohns.com and the Papa Johns app (iOS & Android) with Papa Track real-time order tracking." },
             { q: "Is Papa Johns Pan Pizza available in Columbia, SC?", a: "Yes. Papa Johns Pan Pizza launched January 29, 2026, and is available at the Columbia location. Priced at $11.99 for medium. See our Papa Johns Pan Pizza review." },
-            { q: "What is the phone number for Papa Johns in Columbia?", a: "The Papa Johns Columbia phone number is (803) 555-4001. You can call to place an order or confirm delivery availability." },
+            { q: "What is the phone number for Papa Johns in Columbia?", a: "Use the official Papa Johns locator or checkout flow to confirm the current phone number, delivery availability, and carryout options for Columbia." },
             { q: "How long does Papa Johns delivery take in Columbia?", a: "Average delivery time in Columbia is 30–45 minutes depending on your neighborhood and the time of day. During peak hours (evenings and weekends), allow 45–55 minutes." }
         ],
         schema: {
@@ -2094,7 +2094,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "29201",
             "addressCountry": "US"
           },
-          "telephone": "(803) 555-4001",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 3:00 PM-10:00 PM", "Fr-Sa 3:00 PM-11:00 PM", "Su 3:00 PM-10:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -2114,7 +2114,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "50 W Broad St, Columbus, OH 43215",
-            phone: "(614) 555-3501",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 11:00 AM – 11:00 PM | Fri–Sat 11:00 AM – 1:00 AM | Sun 11:00 AM – 11:00 PM",
             deliveryAreas: "Downtown, Discovery District, Franklinton, Burnside",
             mapUrl: "https://maps.google.com/?q=50+W+Broad+St,+Columbus,+OH+43215"
@@ -2148,13 +2148,13 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Columbus, Ohio?", a: "Papa Johns Columbus is located at 50 W Broad St, Columbus, OH 43215. Call (614) 555-3501 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Columbus, OH?", a: "Papa Johns Columbus is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays — call (614) 555-3501 to confirm." },
+            { q: "Where is Papa Johns in Columbus, Ohio?", a: "Papa Johns Columbus is located at 50 W Broad St, Columbus, OH 43215. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Columbus, OH?", a: "Papa Johns Columbus is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Columbus?", a: "Yes. Papa Johns Columbus delivers to Downtown, Discovery District, Franklinton, Burnside. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Columbus?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Columbus deals." },
             { q: "Does Papa Johns Columbus accept online orders?", a: "Yes. All Columbus Papa Johns locations accept orders through papajohns.com and the Papa Johns app (iOS & Android) with Papa Track real-time order tracking." },
             { q: "Is Papa Johns Pan Pizza available in Columbus, OH?", a: "Yes. Papa Johns Pan Pizza launched January 29, 2026, and is available at the Columbus location. Priced at $11.99 for medium. See our Papa Johns Pan Pizza review." },
-            { q: "What is the phone number for Papa Johns in Columbus?", a: "The Papa Johns Columbus phone number is (614) 555-3501. You can call to place an order or confirm delivery availability." },
+            { q: "What is the phone number for Papa Johns in Columbus?", a: "Use the official Papa Johns locator or checkout flow to confirm the current phone number, delivery availability, and carryout options for Columbus." },
             { q: "How long does Papa Johns delivery take in Columbus?", a: "Average delivery time in Columbus is 30–45 minutes depending on your neighborhood and the time of day. During peak hours (evenings and weekends), allow 45–55 minutes." }
         ],
         schema: {
@@ -2169,7 +2169,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "43215",
             "addressCountry": "US"
           },
-          "telephone": "(614) 555-3501",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 11:00 AM-11:00 PM", "Fr-Sa 11:00 AM-1:00 AM", "Su 11:00 AM-11:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -2189,7 +2189,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "1000 Commerce St, Dallas, TX 75201",
-            phone: "(214) 555-4202",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 11:00 AM – 11:00 PM | Fri–Sat 11:00 AM – 1:00 AM | Sun 11:00 AM – 11:00 PM",
             deliveryAreas: "Downtown, East Dallas, Baylor Medical District, Exposition Park",
             mapUrl: "https://maps.google.com/?q=1000+Commerce+St,+Dallas,+TX+75201"
@@ -2223,13 +2223,13 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Dallas, Texas?", a: "Papa Johns Dallas is located at 1000 Commerce St, Dallas, TX 75201. Call (214) 555-4202 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Dallas, TX?", a: "Papa Johns Dallas is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays — call (214) 555-4202 to confirm." },
+            { q: "Where is Papa Johns in Dallas, Texas?", a: "Papa Johns Dallas is located at 1000 Commerce St, Dallas, TX 75201. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Dallas, TX?", a: "Papa Johns Dallas is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Dallas?", a: "Yes. Papa Johns Dallas delivers to Downtown, East Dallas, Baylor Medical District, Exposition Park. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Dallas?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Dallas deals." },
             { q: "Does Papa Johns Dallas accept online orders?", a: "Yes. All Dallas Papa Johns locations accept orders through papajohns.com and the Papa Johns app (iOS & Android) with Papa Track real-time order tracking." },
             { q: "Is Papa Johns Pan Pizza available in Dallas, TX?", a: "Yes. Papa Johns Pan Pizza launched January 29, 2026, and is available at the Dallas location. Priced at $11.99 for medium. See our Papa Johns Pan Pizza review." },
-            { q: "What is the phone number for Papa Johns in Dallas?", a: "The Papa Johns Dallas phone number is (214) 555-4202. You can call to place an order or confirm delivery availability." },
+            { q: "What is the phone number for Papa Johns in Dallas?", a: "Use the official Papa Johns locator or checkout flow to confirm the current phone number, delivery availability, and carryout options for Dallas." },
             { q: "How long does Papa Johns delivery take in Dallas?", a: "Average delivery time in Dallas is 30–45 minutes depending on your neighborhood and the time of day. During peak hours (evenings and weekends), allow 45–55 minutes." }
         ],
         schema: {
@@ -2244,7 +2244,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "75201",
             "addressCountry": "US"
           },
-          "telephone": "(214) 555-4202",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 11:00 AM-11:00 PM", "Fr-Sa 11:00 AM-1:00 AM", "Su 11:00 AM-11:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -2264,7 +2264,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "1600 Glenarm Pl, Denver, CO 80202",
-            phone: "(720) 555-0601",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 11:00 AM – 11:00 PM | Fri–Sat 11:00 AM – 1:00 AM | Sun 11:00 AM – 11:00 PM",
             deliveryAreas: "LoDo, Downtown, Capitol Hill, Five Points",
             mapUrl: "https://maps.google.com/?q=1600+Glenarm+Pl,+Denver,+CO+80202"
@@ -2298,13 +2298,13 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Denver, Colorado?", a: "Papa Johns Denver is located at 1600 Glenarm Pl, Denver, CO 80202. Call (720) 555-0601 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Denver, CO?", a: "Papa Johns Denver is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays — call (720) 555-0601 to confirm." },
+            { q: "Where is Papa Johns in Denver, Colorado?", a: "Papa Johns Denver is located at 1600 Glenarm Pl, Denver, CO 80202. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Denver, CO?", a: "Papa Johns Denver is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Denver?", a: "Yes. Papa Johns Denver delivers to LoDo, Downtown, Capitol Hill, Five Points. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Denver?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Denver deals." },
             { q: "Does Papa Johns Denver accept online orders?", a: "Yes. All Denver Papa Johns locations accept orders through papajohns.com and the Papa Johns app (iOS & Android) with Papa Track real-time order tracking." },
             { q: "Is Papa Johns Pan Pizza available in Denver, CO?", a: "Yes. Papa Johns Pan Pizza launched January 29, 2026, and is available at the Denver location. Priced at $11.99 for medium. See our Papa Johns Pan Pizza review." },
-            { q: "What is the phone number for Papa Johns in Denver?", a: "The Papa Johns Denver phone number is (720) 555-0601. You can call to place an order or confirm delivery availability." },
+            { q: "What is the phone number for Papa Johns in Denver?", a: "Use the official Papa Johns locator or checkout flow to confirm the current phone number, delivery availability, and carryout options for Denver." },
             { q: "How long does Papa Johns delivery take in Denver?", a: "Average delivery time in Denver is 30–45 minutes depending on your neighborhood and the time of day. During peak hours (evenings and weekends), allow 45–55 minutes." }
         ],
         schema: {
@@ -2319,7 +2319,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "80202",
             "addressCountry": "US"
           },
-          "telephone": "(720) 555-0601",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 11:00 AM-11:00 PM", "Fr-Sa 11:00 AM-1:00 AM", "Su 11:00 AM-11:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -2339,7 +2339,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "400 Locust St, Des Moines, IA 50309",
-            phone: "(515) 555-1501",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 3:00 PM – 10:00 PM | Fri–Sat 3:00 PM – 11:00 PM | Sun 3:00 PM – 10:00 PM",
             deliveryAreas: "Downtown, East Village, Drake neighborhood, Capitol Park",
             mapUrl: "https://maps.google.com/?q=400+Locust+St,+Des+Moines,+IA+50309"
@@ -2373,13 +2373,13 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Des Moines, Iowa?", a: "Papa Johns Des Moines is located at 400 Locust St, Des Moines, IA 50309. Call (515) 555-1501 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Des Moines, IA?", a: "Papa Johns Des Moines is open Monday–Thursday 3:00 PM–10:00 PM, Friday–Saturday 3:00 PM–11:00 PM, and Sunday 3:00 PM–10:00 PM. Hours may vary on holidays — call (515) 555-1501 to confirm." },
+            { q: "Where is Papa Johns in Des Moines, Iowa?", a: "Papa Johns Des Moines is located at 400 Locust St, Des Moines, IA 50309. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Des Moines, IA?", a: "Papa Johns Des Moines is open Monday–Thursday 3:00 PM–10:00 PM, Friday–Saturday 3:00 PM–11:00 PM, and Sunday 3:00 PM–10:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Des Moines?", a: "Yes. Papa Johns Des Moines delivers to Downtown, East Village, Drake neighborhood, Capitol Park. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Des Moines?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Des Moines deals." },
             { q: "Does Papa Johns Des Moines accept online orders?", a: "Yes. All Des Moines Papa Johns locations accept orders through papajohns.com and the Papa Johns app (iOS & Android) with Papa Track real-time order tracking." },
             { q: "Is Papa Johns Pan Pizza available in Des Moines, IA?", a: "Yes. Papa Johns Pan Pizza launched January 29, 2026, and is available at the Des Moines location. Priced at $11.99 for medium. See our Papa Johns Pan Pizza review." },
-            { q: "What is the phone number for Papa Johns in Des Moines?", a: "The Papa Johns Des Moines phone number is (515) 555-1501. You can call to place an order or confirm delivery availability." },
+            { q: "What is the phone number for Papa Johns in Des Moines?", a: "Use the official Papa Johns locator or checkout flow to confirm the current phone number, delivery availability, and carryout options for Des Moines." },
             { q: "How long does Papa Johns delivery take in Des Moines?", a: "Average delivery time in Des Moines is 30–45 minutes depending on your neighborhood and the time of day. During peak hours (evenings and weekends), allow 45–55 minutes." }
         ],
         schema: {
@@ -2394,7 +2394,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "50309",
             "addressCountry": "US"
           },
-          "telephone": "(515) 555-1501",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 3:00 PM-10:00 PM", "Fr-Sa 3:00 PM-11:00 PM", "Su 3:00 PM-10:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -2414,7 +2414,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "1 Woodward Ave, Detroit, MI 48226",
-            phone: "(313) 555-2201",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 11:00 AM – 11:00 PM | Fri–Sat 11:00 AM – 1:00 AM | Sun 11:00 AM – 11:00 PM",
             deliveryAreas: "Downtown, Rivertown, Bricktown, Lafayette Park",
             mapUrl: "https://maps.google.com/?q=1+Woodward+Ave,+Detroit,+MI+48226"
@@ -2448,13 +2448,13 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Detroit, Michigan?", a: "Papa Johns Detroit is located at 1 Woodward Ave, Detroit, MI 48226. Call (313) 555-2201 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Detroit, MI?", a: "Papa Johns Detroit is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays — call (313) 555-2201 to confirm." },
+            { q: "Where is Papa Johns in Detroit, Michigan?", a: "Papa Johns Detroit is located at 1 Woodward Ave, Detroit, MI 48226. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Detroit, MI?", a: "Papa Johns Detroit is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Detroit?", a: "Yes. Papa Johns Detroit delivers to Downtown, Rivertown, Bricktown, Lafayette Park. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Detroit?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Detroit deals." },
             { q: "Does Papa Johns Detroit accept online orders?", a: "Yes. All Detroit Papa Johns locations accept orders through papajohns.com and the Papa Johns app (iOS & Android) with Papa Track real-time order tracking." },
             { q: "Is Papa Johns Pan Pizza available in Detroit, MI?", a: "Yes. Papa Johns Pan Pizza launched January 29, 2026, and is available at the Detroit location. Priced at $11.99 for medium. See our Papa Johns Pan Pizza review." },
-            { q: "What is the phone number for Papa Johns in Detroit?", a: "The Papa Johns Detroit phone number is (313) 555-2201. You can call to place an order or confirm delivery availability." },
+            { q: "What is the phone number for Papa Johns in Detroit?", a: "Use the official Papa Johns locator or checkout flow to confirm the current phone number, delivery availability, and carryout options for Detroit." },
             { q: "How long does Papa Johns delivery take in Detroit?", a: "Average delivery time in Detroit is 30–45 minutes depending on your neighborhood and the time of day. During peak hours (evenings and weekends), allow 45–55 minutes." }
         ],
         schema: {
@@ -2469,7 +2469,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "48226",
             "addressCountry": "US"
           },
-          "telephone": "(313) 555-2201",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 11:00 AM-11:00 PM", "Fr-Sa 11:00 AM-1:00 AM", "Su 11:00 AM-11:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -2489,7 +2489,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "314 N Broadway, Fargo, ND 58102",
-            phone: "(701) 555-3401",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 3:00 PM – 10:00 PM | Fri–Sat 3:00 PM – 11:00 PM | Sun 3:00 PM – 10:00 PM",
             deliveryAreas: "Downtown, Downer, Oak Grove, Trollwood",
             mapUrl: "https://maps.google.com/?q=314+N+Broadway,+Fargo,+ND+58102"
@@ -2523,13 +2523,13 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Fargo, North Dakota?", a: "Papa Johns Fargo is located at 314 N Broadway, Fargo, ND 58102. Call (701) 555-3401 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Fargo, ND?", a: "Papa Johns Fargo is open Monday–Thursday 3:00 PM–10:00 PM, Friday–Saturday 3:00 PM–11:00 PM, and Sunday 3:00 PM–10:00 PM. Hours may vary on holidays — call (701) 555-3401 to confirm." },
+            { q: "Where is Papa Johns in Fargo, North Dakota?", a: "Papa Johns Fargo is located at 314 N Broadway, Fargo, ND 58102. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Fargo, ND?", a: "Papa Johns Fargo is open Monday–Thursday 3:00 PM–10:00 PM, Friday–Saturday 3:00 PM–11:00 PM, and Sunday 3:00 PM–10:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Fargo?", a: "Yes. Papa Johns Fargo delivers to Downtown, Downer, Oak Grove, Trollwood. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Fargo?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Fargo deals." },
             { q: "Does Papa Johns Fargo accept online orders?", a: "Yes. All Fargo Papa Johns locations accept orders through papajohns.com and the Papa Johns app (iOS & Android) with Papa Track real-time order tracking." },
             { q: "Is Papa Johns Pan Pizza available in Fargo, ND?", a: "Yes. Papa Johns Pan Pizza launched January 29, 2026, and is available at the Fargo location. Priced at $11.99 for medium. See our Papa Johns Pan Pizza review." },
-            { q: "What is the phone number for Papa Johns in Fargo?", a: "The Papa Johns Fargo phone number is (701) 555-3401. You can call to place an order or confirm delivery availability." },
+            { q: "What is the phone number for Papa Johns in Fargo?", a: "Use the official Papa Johns locator or checkout flow to confirm the current phone number, delivery availability, and carryout options for Fargo." },
             { q: "How long does Papa Johns delivery take in Fargo?", a: "Average delivery time in Fargo is 30–45 minutes depending on your neighborhood and the time of day. During peak hours (evenings and weekends), allow 45–55 minutes." }
         ],
         schema: {
@@ -2544,7 +2544,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "58102",
             "addressCountry": "US"
           },
-          "telephone": "(701) 555-3401",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 3:00 PM-10:00 PM", "Fr-Sa 3:00 PM-11:00 PM", "Su 3:00 PM-10:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -2564,7 +2564,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "50 Monroe Ave NW, Grand Rapids, MI 49503",
-            phone: "(616) 555-2202",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 3:00 PM – 10:00 PM | Fri–Sat 3:00 PM – 11:00 PM | Sun 3:00 PM – 10:00 PM",
             deliveryAreas: "Downtown, Monroe North, Heartside, South Heartside",
             mapUrl: "https://maps.google.com/?q=50+Monroe+Ave+NW,+Grand+Rapids,+MI+49503"
@@ -2598,13 +2598,13 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Grand Rapids, Michigan?", a: "Papa Johns Grand Rapids is located at 50 Monroe Ave NW, Grand Rapids, MI 49503. Call (616) 555-2202 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Grand Rapids, MI?", a: "Papa Johns Grand Rapids is open Monday–Thursday 3:00 PM–10:00 PM, Friday–Saturday 3:00 PM–11:00 PM, and Sunday 3:00 PM–10:00 PM. Hours may vary on holidays — call (616) 555-2202 to confirm." },
+            { q: "Where is Papa Johns in Grand Rapids, Michigan?", a: "Papa Johns Grand Rapids is located at 50 Monroe Ave NW, Grand Rapids, MI 49503. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Grand Rapids, MI?", a: "Papa Johns Grand Rapids is open Monday–Thursday 3:00 PM–10:00 PM, Friday–Saturday 3:00 PM–11:00 PM, and Sunday 3:00 PM–10:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Grand Rapids?", a: "Yes. Papa Johns Grand Rapids delivers to Downtown, Monroe North, Heartside, South Heartside. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Grand Rapids?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Grand Rapids deals." },
             { q: "Does Papa Johns Grand Rapids accept online orders?", a: "Yes. All Grand Rapids Papa Johns locations accept orders through papajohns.com and the Papa Johns app (iOS & Android) with Papa Track real-time order tracking." },
             { q: "Is Papa Johns Pan Pizza available in Grand Rapids, MI?", a: "Yes. Papa Johns Pan Pizza launched January 29, 2026, and is available at the Grand Rapids location. Priced at $11.99 for medium. See our Papa Johns Pan Pizza review." },
-            { q: "What is the phone number for Papa Johns in Grand Rapids?", a: "The Papa Johns Grand Rapids phone number is (616) 555-2202. You can call to place an order or confirm delivery availability." },
+            { q: "What is the phone number for Papa Johns in Grand Rapids?", a: "Use the official Papa Johns locator or checkout flow to confirm the current phone number, delivery availability, and carryout options for Grand Rapids." },
             { q: "How long does Papa Johns delivery take in Grand Rapids?", a: "Average delivery time in Grand Rapids is 30–45 minutes depending on your neighborhood and the time of day. During peak hours (evenings and weekends), allow 45–55 minutes." }
         ],
         schema: {
@@ -2619,7 +2619,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "49503",
             "addressCountry": "US"
           },
-          "telephone": "(616) 555-2202",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 3:00 PM-10:00 PM", "Fr-Sa 3:00 PM-11:00 PM", "Su 3:00 PM-10:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -2639,7 +2639,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "185 Asylum St, Hartford, CT 06103",
-            phone: "(860) 555-0701",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 11:00 AM – 11:00 PM | Fri–Sat 11:00 AM – 12:00 AM | Sun 11:00 AM – 11:00 PM",
             deliveryAreas: "Downtown, Frog Hollow, Blue Hills, South Green",
             mapUrl: "https://maps.google.com/?q=185+Asylum+St,+Hartford,+CT+06103"
@@ -2673,13 +2673,13 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Hartford, Connecticut?", a: "Papa Johns Hartford is located at 185 Asylum St, Hartford, CT 06103. Call (860) 555-0701 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Hartford, CT?", a: "Papa Johns Hartford is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–12:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays — call (860) 555-0701 to confirm." },
+            { q: "Where is Papa Johns in Hartford, Connecticut?", a: "Papa Johns Hartford is located at 185 Asylum St, Hartford, CT 06103. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Hartford, CT?", a: "Papa Johns Hartford is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–12:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Hartford?", a: "Yes. Papa Johns Hartford delivers to Downtown, Frog Hollow, Blue Hills, South Green. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Hartford?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Hartford deals." },
             { q: "Does Papa Johns Hartford accept online orders?", a: "Yes. All Hartford Papa Johns locations accept orders through papajohns.com and the Papa Johns app (iOS & Android) with Papa Track real-time order tracking." },
             { q: "Is Papa Johns Pan Pizza available in Hartford, CT?", a: "Yes. Papa Johns Pan Pizza launched January 29, 2026, and is available at the Hartford location. Priced at $11.99 for medium. See our Papa Johns Pan Pizza review." },
-            { q: "What is the phone number for Papa Johns in Hartford?", a: "The Papa Johns Hartford phone number is (860) 555-0701. You can call to place an order or confirm delivery availability." },
+            { q: "What is the phone number for Papa Johns in Hartford?", a: "Use the official Papa Johns locator or checkout flow to confirm the current phone number, delivery availability, and carryout options for Hartford." },
             { q: "How long does Papa Johns delivery take in Hartford?", a: "Average delivery time in Hartford is 30–45 minutes depending on your neighborhood and the time of day. During peak hours (evenings and weekends), allow 45–55 minutes." }
         ],
         schema: {
@@ -2694,7 +2694,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "06103",
             "addressCountry": "US"
           },
-          "telephone": "(860) 555-0701",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 11:00 AM-11:00 PM", "Fr-Sa 11:00 AM-12:00 AM", "Su 11:00 AM-11:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -2714,7 +2714,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "1450 Ala Moana Blvd, Honolulu, HI 96814",
-            phone: "(808) 555-1101",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 11:00 AM – 10:00 PM | Fri–Sat 11:00 AM – 11:00 PM | Sun 11:00 AM – 10:00 PM",
             deliveryAreas: "Downtown, Kakaako, Salt Lake, Moanalua",
             mapUrl: "https://maps.google.com/?q=1450+Ala+Moana+Blvd,+Honolulu,+HI+96814"
@@ -2748,13 +2748,13 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Honolulu, Hawaii?", a: "Papa Johns Honolulu is located at 1450 Ala Moana Blvd, Honolulu, HI 96814. Call (808) 555-1101 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Honolulu, HI?", a: "Papa Johns Honolulu is open Monday–Thursday 11:00 AM–10:00 PM, Friday–Saturday 11:00 AM–11:00 PM, and Sunday 11:00 AM–10:00 PM. Hours may vary on holidays — call (808) 555-1101 to confirm." },
+            { q: "Where is Papa Johns in Honolulu, Hawaii?", a: "Papa Johns Honolulu is located at 1450 Ala Moana Blvd, Honolulu, HI 96814. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Honolulu, HI?", a: "Papa Johns Honolulu is open Monday–Thursday 11:00 AM–10:00 PM, Friday–Saturday 11:00 AM–11:00 PM, and Sunday 11:00 AM–10:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Honolulu?", a: "Yes. Papa Johns Honolulu delivers to Downtown, Kakaako, Salt Lake, Moanalua. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Honolulu?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Honolulu deals." },
             { q: "Does Papa Johns Honolulu accept online orders?", a: "Yes. All Honolulu Papa Johns locations accept orders through papajohns.com and the Papa Johns app (iOS & Android) with Papa Track real-time order tracking." },
             { q: "Is Papa Johns Pan Pizza available in Honolulu, HI?", a: "Yes. Papa Johns Pan Pizza launched January 29, 2026, and is available at the Honolulu location. Priced at $11.99 for medium. See our Papa Johns Pan Pizza review." },
-            { q: "What is the phone number for Papa Johns in Honolulu?", a: "The Papa Johns Honolulu phone number is (808) 555-1101. You can call to place an order or confirm delivery availability." },
+            { q: "What is the phone number for Papa Johns in Honolulu?", a: "Use the official Papa Johns locator or checkout flow to confirm the current phone number, delivery availability, and carryout options for Honolulu." },
             { q: "How long does Papa Johns delivery take in Honolulu?", a: "Average delivery time in Honolulu is 30–45 minutes depending on your neighborhood and the time of day. During peak hours (evenings and weekends), allow 45–55 minutes." }
         ],
         schema: {
@@ -2769,7 +2769,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "96814",
             "addressCountry": "US"
           },
-          "telephone": "(808) 555-1101",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 11:00 AM-10:00 PM", "Fr-Sa 11:00 AM-11:00 PM", "Su 11:00 AM-10:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -2789,7 +2789,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "789 Main St, Houston, TX 77002",
-            phone: "(713) 555-4201",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 11:00 AM – 11:00 PM | Fri–Sat 11:00 AM – 1:00 AM | Sun 11:00 AM – 11:00 PM",
             deliveryAreas: "Downtown, Midtown, Museum District, Southside Place",
             mapUrl: "https://maps.google.com/?q=789+Main+St,+Houston,+TX+77002"
@@ -2823,13 +2823,13 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Houston, Texas?", a: "Papa Johns Houston is located at 789 Main St, Houston, TX 77002. Call (713) 555-4201 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Houston, TX?", a: "Papa Johns Houston is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays — call (713) 555-4201 to confirm." },
+            { q: "Where is Papa Johns in Houston, Texas?", a: "Papa Johns Houston is located at 789 Main St, Houston, TX 77002. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Houston, TX?", a: "Papa Johns Houston is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Houston?", a: "Yes. Papa Johns Houston delivers to Downtown, Midtown, Museum District, Southside Place. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Houston?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Houston deals." },
             { q: "Does Papa Johns Houston accept online orders?", a: "Yes. All Houston Papa Johns locations accept orders through papajohns.com and the Papa Johns app (iOS & Android) with Papa Track real-time order tracking." },
             { q: "Is Papa Johns Pan Pizza available in Houston, TX?", a: "Yes. Papa Johns Pan Pizza launched January 29, 2026, and is available at the Houston location. Priced at $11.99 for medium. See our Papa Johns Pan Pizza review." },
-            { q: "What is the phone number for Papa Johns in Houston?", a: "The Papa Johns Houston phone number is (713) 555-4201. You can call to place an order or confirm delivery availability." },
+            { q: "What is the phone number for Papa Johns in Houston?", a: "Use the official Papa Johns locator or checkout flow to confirm the current phone number, delivery availability, and carryout options for Houston." },
             { q: "How long does Papa Johns delivery take in Houston?", a: "Average delivery time in Houston is 30–45 minutes depending on your neighborhood and the time of day. During peak hours (evenings and weekends), allow 45–55 minutes." }
         ],
         schema: {
@@ -2844,7 +2844,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "77002",
             "addressCountry": "US"
           },
-          "telephone": "(713) 555-4201",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 11:00 AM-11:00 PM", "Fr-Sa 11:00 AM-1:00 AM", "Su 11:00 AM-11:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -2864,7 +2864,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "200 E Market St, Indianapolis, IN 46204",
-            phone: "(317) 555-1401",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 11:00 AM – 11:00 PM | Fri–Sat 11:00 AM – 1:00 AM | Sun 11:00 AM – 11:00 PM",
             deliveryAreas: "Downtown, Military Park, Fall Creek, Near Eastside",
             mapUrl: "https://maps.google.com/?q=200+E+Market+St,+Indianapolis,+IN+46204"
@@ -2898,13 +2898,13 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Indianapolis, Indiana?", a: "Papa Johns Indianapolis is located at 200 E Market St, Indianapolis, IN 46204. Call (317) 555-1401 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Indianapolis, IN?", a: "Papa Johns Indianapolis is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays — call (317) 555-1401 to confirm." },
+            { q: "Where is Papa Johns in Indianapolis, Indiana?", a: "Papa Johns Indianapolis is located at 200 E Market St, Indianapolis, IN 46204. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Indianapolis, IN?", a: "Papa Johns Indianapolis is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Indianapolis?", a: "Yes. Papa Johns Indianapolis delivers to Downtown, Military Park, Fall Creek, Near Eastside. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Indianapolis?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Indianapolis deals." },
             { q: "Does Papa Johns Indianapolis accept online orders?", a: "Yes. All Indianapolis Papa Johns locations accept orders through papajohns.com and the Papa Johns app (iOS & Android) with Papa Track real-time order tracking." },
             { q: "Is Papa Johns Pan Pizza available in Indianapolis, IN?", a: "Yes. Papa Johns Pan Pizza launched January 29, 2026, and is available at the Indianapolis location. Priced at $11.99 for medium. See our Papa Johns Pan Pizza review." },
-            { q: "What is the phone number for Papa Johns in Indianapolis?", a: "The Papa Johns Indianapolis phone number is (317) 555-1401. You can call to place an order or confirm delivery availability." },
+            { q: "What is the phone number for Papa Johns in Indianapolis?", a: "Use the official Papa Johns locator or checkout flow to confirm the current phone number, delivery availability, and carryout options for Indianapolis." },
             { q: "How long does Papa Johns delivery take in Indianapolis?", a: "Average delivery time in Indianapolis is 30–45 minutes depending on your neighborhood and the time of day. During peak hours (evenings and weekends), allow 45–55 minutes." }
         ],
         schema: {
@@ -2919,7 +2919,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "46204",
             "addressCountry": "US"
           },
-          "telephone": "(317) 555-1401",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 11:00 AM-11:00 PM", "Fr-Sa 11:00 AM-1:00 AM", "Su 11:00 AM-11:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -2939,7 +2939,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "200 S Lamar St, Jackson, MS 39201",
-            phone: "(601) 555-2401",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 3:00 PM – 10:00 PM | Fri–Sat 3:00 PM – 11:00 PM | Sun 3:00 PM – 10:00 PM",
             deliveryAreas: "Downtown, Capital Complex, Millsaps, Belhaven Heights",
             mapUrl: "https://maps.google.com/?q=200+S+Lamar+St,+Jackson,+MS+39201"
@@ -2973,13 +2973,13 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Jackson, Mississippi?", a: "Papa Johns Jackson is located at 200 S Lamar St, Jackson, MS 39201. Call (601) 555-2401 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Jackson, MS?", a: "Papa Johns Jackson is open Monday–Thursday 3:00 PM–10:00 PM, Friday–Saturday 3:00 PM–11:00 PM, and Sunday 3:00 PM–10:00 PM. Hours may vary on holidays — call (601) 555-2401 to confirm." },
+            { q: "Where is Papa Johns in Jackson, Mississippi?", a: "Papa Johns Jackson is located at 200 S Lamar St, Jackson, MS 39201. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Jackson, MS?", a: "Papa Johns Jackson is open Monday–Thursday 3:00 PM–10:00 PM, Friday–Saturday 3:00 PM–11:00 PM, and Sunday 3:00 PM–10:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Jackson?", a: "Yes. Papa Johns Jackson delivers to Downtown, Capital Complex, Millsaps, Belhaven Heights. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Jackson?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Jackson deals." },
             { q: "Does Papa Johns Jackson accept online orders?", a: "Yes. All Jackson Papa Johns locations accept orders through papajohns.com and the Papa Johns app (iOS & Android) with Papa Track real-time order tracking." },
             { q: "Is Papa Johns Pan Pizza available in Jackson, MS?", a: "Yes. Papa Johns Pan Pizza launched January 29, 2026, and is available at the Jackson location. Priced at $11.99 for medium. See our Papa Johns Pan Pizza review." },
-            { q: "What is the phone number for Papa Johns in Jackson?", a: "The Papa Johns Jackson phone number is (601) 555-2401. You can call to place an order or confirm delivery availability." },
+            { q: "What is the phone number for Papa Johns in Jackson?", a: "Use the official Papa Johns locator or checkout flow to confirm the current phone number, delivery availability, and carryout options for Jackson." },
             { q: "How long does Papa Johns delivery take in Jackson?", a: "Average delivery time in Jackson is 30–45 minutes depending on your neighborhood and the time of day. During peak hours (evenings and weekends), allow 45–55 minutes." }
         ],
         schema: {
@@ -2994,7 +2994,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "39201",
             "addressCountry": "US"
           },
-          "telephone": "(601) 555-2401",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 3:00 PM-10:00 PM", "Fr-Sa 3:00 PM-11:00 PM", "Su 3:00 PM-10:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -3014,7 +3014,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "1100 Main St, Kansas City, MO 64105",
-            phone: "(816) 555-2502",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 11:00 AM – 11:00 PM | Fri–Sat 11:00 AM – 1:00 AM | Sun 11:00 AM – 11:00 PM",
             deliveryAreas: "Downtown, Quality Hill, Westside, Columbus Park",
             mapUrl: "https://maps.google.com/?q=1100+Main+St,+Kansas+City,+MO+64105"
@@ -3048,13 +3048,13 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Kansas City, Missouri?", a: "Papa Johns Kansas City is located at 1100 Main St, Kansas City, MO 64105. Call (816) 555-2502 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Kansas City, MO?", a: "Papa Johns Kansas City is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays — call (816) 555-2502 to confirm." },
+            { q: "Where is Papa Johns in Kansas City, Missouri?", a: "Papa Johns Kansas City is located at 1100 Main St, Kansas City, MO 64105. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Kansas City, MO?", a: "Papa Johns Kansas City is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Kansas City?", a: "Yes. Papa Johns Kansas City delivers to Downtown, Quality Hill, Westside, Columbus Park. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Kansas City?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Kansas City deals." },
             { q: "Does Papa Johns Kansas City accept online orders?", a: "Yes. All Kansas City Papa Johns locations accept orders through papajohns.com and the Papa Johns app (iOS & Android) with Papa Track real-time order tracking." },
             { q: "Is Papa Johns Pan Pizza available in Kansas City, MO?", a: "Yes. Papa Johns Pan Pizza launched January 29, 2026, and is available at the Kansas City location. Priced at $11.99 for medium. See our Papa Johns Pan Pizza review." },
-            { q: "What is the phone number for Papa Johns in Kansas City?", a: "The Papa Johns Kansas City phone number is (816) 555-2502. You can call to place an order or confirm delivery availability." },
+            { q: "What is the phone number for Papa Johns in Kansas City?", a: "Use the official Papa Johns locator or checkout flow to confirm the current phone number, delivery availability, and carryout options for Kansas City." },
             { q: "How long does Papa Johns delivery take in Kansas City?", a: "Average delivery time in Kansas City is 30–45 minutes depending on your neighborhood and the time of day. During peak hours (evenings and weekends), allow 45–55 minutes." }
         ],
         schema: {
@@ -3069,7 +3069,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "64105",
             "addressCountry": "US"
           },
-          "telephone": "(816) 555-2502",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 11:00 AM-11:00 PM", "Fr-Sa 11:00 AM-1:00 AM", "Su 11:00 AM-11:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -3164,7 +3164,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "3800 S Las Vegas Blvd, Las Vegas, NV 89109",
-            phone: "(702) 555-2801",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 11:00 AM – 12:00 AM | Fri–Sat 11:00 AM – 2:00 AM | Sun 11:00 AM – 12:00 AM",
             deliveryAreas: "The Strip, Paradise, Winchester, Spring Valley",
             mapUrl: "https://maps.google.com/?q=3800+S+Las+Vegas+Blvd,+Las+Vegas,+NV+89109"
@@ -3198,13 +3198,13 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Las Vegas, Nevada?", a: "Papa Johns Las Vegas is located at 3800 S Las Vegas Blvd, Las Vegas, NV 89109. Call (702) 555-2801 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Las Vegas, NV?", a: "Papa Johns Las Vegas is open Monday–Thursday 11:00 AM–12:00 AM, Friday–Saturday 11:00 AM–2:00 AM, and Sunday 11:00 AM–12:00 AM. Hours may vary on holidays — call (702) 555-2801 to confirm." },
+            { q: "Where is Papa Johns in Las Vegas, Nevada?", a: "Papa Johns Las Vegas is located at 3800 S Las Vegas Blvd, Las Vegas, NV 89109. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Las Vegas, NV?", a: "Papa Johns Las Vegas is open Monday–Thursday 11:00 AM–12:00 AM, Friday–Saturday 11:00 AM–2:00 AM, and Sunday 11:00 AM–12:00 AM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Las Vegas?", a: "Yes. Papa Johns Las Vegas delivers to The Strip, Paradise, Winchester, Spring Valley. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Las Vegas?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Las Vegas deals." },
             { q: "Does Papa Johns Las Vegas accept online orders?", a: "Yes. All Las Vegas Papa Johns locations accept orders through papajohns.com and the Papa Johns app (iOS & Android) with Papa Track real-time order tracking." },
             { q: "Is Papa Johns Pan Pizza available in Las Vegas, NV?", a: "Yes. Papa Johns Pan Pizza launched January 29, 2026, and is available at the Las Vegas location. Priced at $11.99 for medium. See our Papa Johns Pan Pizza review." },
-            { q: "What is the phone number for Papa Johns in Las Vegas?", a: "The Papa Johns Las Vegas phone number is (702) 555-2801. You can call to place an order or confirm delivery availability." },
+            { q: "What is the phone number for Papa Johns in Las Vegas?", a: "Use the official Papa Johns locator or checkout flow to confirm the current phone number, delivery availability, and carryout options for Las Vegas." },
             { q: "How long does Papa Johns delivery take in Las Vegas?", a: "Average delivery time in Las Vegas is 30–45 minutes depending on your neighborhood and the time of day. During peak hours (evenings and weekends), allow 45–55 minutes." }
         ],
         schema: {
@@ -3219,7 +3219,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "89109",
             "addressCountry": "US"
           },
-          "telephone": "(702) 555-2801",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 11:00 AM-12:00 AM", "Fr-Sa 11:00 AM-2:00 AM", "Su 11:00 AM-12:00 AM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -3239,7 +3239,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "500 President Clinton Ave, Little Rock, AR 72201",
-            phone: "(501) 555-0401",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 3:00 PM – 10:00 PM | Fri–Sat 3:00 PM – 11:00 PM | Sun 3:00 PM – 10:00 PM",
             deliveryAreas: "Downtown, River Market, SoMa, Riverdale",
             mapUrl: "https://maps.google.com/?q=500+President+Clinton+Ave,+Little+Rock,+AR+72201"
@@ -3269,13 +3269,13 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Little Rock, Arkansas?", a: "Papa Johns Little Rock is located at 500 President Clinton Ave, Little Rock, AR 72201. Call (501) 555-0401 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Little Rock, AR?", a: "Papa Johns Little Rock is open Monday–Thursday 3:00 PM–10:00 PM, Friday–Saturday 3:00 PM–11:00 PM, and Sunday 3:00 PM–10:00 PM. Hours may vary on holidays — call (501) 555-0401 to confirm." },
+            { q: "Where is Papa Johns in Little Rock, Arkansas?", a: "Papa Johns Little Rock is located at 500 President Clinton Ave, Little Rock, AR 72201. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Little Rock, AR?", a: "Papa Johns Little Rock is open Monday–Thursday 3:00 PM–10:00 PM, Friday–Saturday 3:00 PM–11:00 PM, and Sunday 3:00 PM–10:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Little Rock?", a: "Yes. Papa Johns Little Rock delivers to Downtown, River Market, SoMa, Riverdale. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Little Rock?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Little Rock deals." },
             { q: "Does Papa Johns Little Rock accept online orders?", a: "Yes. All Little Rock Papa Johns locations accept orders through papajohns.com and the Papa Johns app (iOS & Android) with Papa Track real-time order tracking." },
             { q: "Is Papa Johns Pan Pizza available in Little Rock, AR?", a: "Yes. Papa Johns Pan Pizza launched January 29, 2026, and is available at the Little Rock location. Priced at $11.99 for medium. See our Papa Johns Pan Pizza review." },
-            { q: "What is the phone number for Papa Johns in Little Rock?", a: "The Papa Johns Little Rock phone number is (501) 555-0401. You can call to place an order or confirm delivery availability." },
+            { q: "What is the phone number for Papa Johns in Little Rock?", a: "Use the official Papa Johns locator or checkout flow to confirm the current phone number, delivery availability, and carryout options for Little Rock." },
             { q: "How long does Papa Johns delivery take in Little Rock?", a: "Average delivery time in Little Rock is 30–45 minutes depending on your neighborhood and the time of day. During peak hours (evenings and weekends), allow 45–55 minutes." }
         ],
         schema: {
@@ -3290,7 +3290,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "72201",
             "addressCountry": "US"
           },
-          "telephone": "(501) 555-0401",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 3:00 PM-10:00 PM", "Fr-Sa 3:00 PM-11:00 PM", "Su 3:00 PM-10:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -3310,7 +3310,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "123 Hollywood Blvd, Los Angeles, CA 90028",
-            phone: "(310) 555-0501",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 11:00 AM – 12:00 AM | Fri–Sat 11:00 AM – 2:00 AM | Sun 11:00 AM – 12:00 AM",
             deliveryAreas: "Hollywood, Los Feliz, East Hollywood, Thai Town",
             mapUrl: "https://maps.google.com/?q=123+Hollywood+Blvd,+Los+Angeles,+CA+90028"
@@ -3344,13 +3344,13 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Los Angeles, California?", a: "Papa Johns Los Angeles is located at 123 Hollywood Blvd, Los Angeles, CA 90028. Call (310) 555-0501 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Los Angeles, CA?", a: "Papa Johns Los Angeles is open Monday–Thursday 11:00 AM–12:00 AM, Friday–Saturday 11:00 AM–2:00 AM, and Sunday 11:00 AM–12:00 AM. Hours may vary on holidays — call (310) 555-0501 to confirm." },
+            { q: "Where is Papa Johns in Los Angeles, California?", a: "Papa Johns Los Angeles is located at 123 Hollywood Blvd, Los Angeles, CA 90028. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Los Angeles, CA?", a: "Papa Johns Los Angeles is open Monday–Thursday 11:00 AM–12:00 AM, Friday–Saturday 11:00 AM–2:00 AM, and Sunday 11:00 AM–12:00 AM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Los Angeles?", a: "Yes. Papa Johns Los Angeles delivers to Hollywood, Los Feliz, East Hollywood, Thai Town. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Los Angeles?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Los Angeles deals." },
             { q: "Does Papa Johns Los Angeles accept online orders?", a: "Yes. All Los Angeles Papa Johns locations accept orders through papajohns.com and the Papa Johns app (iOS & Android) with Papa Track real-time order tracking." },
             { q: "Is Papa Johns Pan Pizza available in Los Angeles, CA?", a: "Yes. Papa Johns Pan Pizza launched January 29, 2026, and is available at the Los Angeles location. Priced at $11.99 for medium. See our Papa Johns Pan Pizza review." },
-            { q: "What is the phone number for Papa Johns in Los Angeles?", a: "The Papa Johns Los Angeles phone number is (310) 555-0501. You can call to place an order or confirm delivery availability." },
+            { q: "What is the phone number for Papa Johns in Los Angeles?", a: "Use the official Papa Johns locator or checkout flow to confirm the current phone number, delivery availability, and carryout options for Los Angeles." },
             { q: "How long does Papa Johns delivery take in Los Angeles?", a: "Average delivery time in Los Angeles is 30–45 minutes depending on your neighborhood and the time of day. During peak hours (evenings and weekends), allow 45–55 minutes." }
         ],
         schema: {
@@ -3365,7 +3365,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "90028",
             "addressCountry": "US"
           },
-          "telephone": "(310) 555-0501",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 11:00 AM-12:00 AM", "Fr-Sa 11:00 AM-2:00 AM", "Su 11:00 AM-12:00 AM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -3385,7 +3385,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "500 W Jefferson St, Louisville, KY 40202",
-            phone: "(502) 555-1701",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 11:00 AM – 11:00 PM | Fri–Sat 11:00 AM – 1:00 AM | Sun 11:00 AM – 11:00 PM",
             deliveryAreas: "Downtown, Old Louisville, Phoenix Hill, Shelby Park",
             mapUrl: "https://maps.google.com/?q=500+W+Jefferson+St,+Louisville,+KY+40202"
@@ -3419,13 +3419,13 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Louisville, Kentucky?", a: "Papa Johns Louisville is located at 500 W Jefferson St, Louisville, KY 40202. Call (502) 555-1701 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Louisville, KY?", a: "Papa Johns Louisville is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays — call (502) 555-1701 to confirm." },
+            { q: "Where is Papa Johns in Louisville, Kentucky?", a: "Papa Johns Louisville is located at 500 W Jefferson St, Louisville, KY 40202. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Louisville, KY?", a: "Papa Johns Louisville is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Louisville?", a: "Yes. Papa Johns Louisville delivers to Downtown, Old Louisville, Phoenix Hill, Shelby Park. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Louisville?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Louisville deals." },
             { q: "Does Papa Johns Louisville accept online orders?", a: "Yes. All Louisville Papa Johns locations accept orders through papajohns.com and the Papa Johns app (iOS & Android) with Papa Track real-time order tracking." },
             { q: "Is Papa Johns Pan Pizza available in Louisville, KY?", a: "Yes. Papa Johns Pan Pizza launched January 29, 2026, and is available at the Louisville location. Priced at $11.99 for medium. See our Papa Johns Pan Pizza review." },
-            { q: "What is the phone number for Papa Johns in Louisville?", a: "The Papa Johns Louisville phone number is (502) 555-1701. You can call to place an order or confirm delivery availability." },
+            { q: "What is the phone number for Papa Johns in Louisville?", a: "Use the official Papa Johns locator or checkout flow to confirm the current phone number, delivery availability, and carryout options for Louisville." },
             { q: "How long does Papa Johns delivery take in Louisville?", a: "Average delivery time in Louisville is 30–45 minutes depending on your neighborhood and the time of day. During peak hours (evenings and weekends), allow 45–55 minutes." }
         ],
         schema: {
@@ -3440,7 +3440,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "40202",
             "addressCountry": "US"
           },
-          "telephone": "(502) 555-1701",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 11:00 AM-11:00 PM", "Fr-Sa 11:00 AM-1:00 AM", "Su 11:00 AM-11:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -3460,7 +3460,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "1000 Elm St, Manchester, NH 03101",
-            phone: "(603) 555-2901",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 3:00 PM – 10:00 PM | Fri–Sat 3:00 PM – 11:00 PM | Sun 3:00 PM – 10:00 PM",
             deliveryAreas: "Downtown, Millyard, Union Street, Amoskeag",
             mapUrl: "https://maps.google.com/?q=1000+Elm+St,+Manchester,+NH+03101"
@@ -3494,13 +3494,13 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Manchester, New Hampshire?", a: "Papa Johns Manchester is located at 1000 Elm St, Manchester, NH 03101. Call (603) 555-2901 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Manchester, NH?", a: "Papa Johns Manchester is open Monday–Thursday 3:00 PM–10:00 PM, Friday–Saturday 3:00 PM–11:00 PM, and Sunday 3:00 PM–10:00 PM. Hours may vary on holidays — call (603) 555-2901 to confirm." },
+            { q: "Where is Papa Johns in Manchester, New Hampshire?", a: "Papa Johns Manchester is located at 1000 Elm St, Manchester, NH 03101. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Manchester, NH?", a: "Papa Johns Manchester is open Monday–Thursday 3:00 PM–10:00 PM, Friday–Saturday 3:00 PM–11:00 PM, and Sunday 3:00 PM–10:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Manchester?", a: "Yes. Papa Johns Manchester delivers to Downtown, Millyard, Union Street, Amoskeag. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Manchester?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Manchester deals." },
             { q: "Does Papa Johns Manchester accept online orders?", a: "Yes. All Manchester Papa Johns locations accept orders through papajohns.com and the Papa Johns app (iOS & Android) with Papa Track real-time order tracking." },
             { q: "Is Papa Johns Pan Pizza available in Manchester, NH?", a: "Yes. Papa Johns Pan Pizza launched January 29, 2026, and is available at the Manchester location. Priced at $11.99 for medium. See our Papa Johns Pan Pizza review." },
-            { q: "What is the phone number for Papa Johns in Manchester?", a: "The Papa Johns Manchester phone number is (603) 555-2901. You can call to place an order or confirm delivery availability." },
+            { q: "What is the phone number for Papa Johns in Manchester?", a: "Use the official Papa Johns locator or checkout flow to confirm the current phone number, delivery availability, and carryout options for Manchester." },
             { q: "How long does Papa Johns delivery take in Manchester?", a: "Average delivery time in Manchester is 30–45 minutes depending on your neighborhood and the time of day. During peak hours (evenings and weekends), allow 45–55 minutes." }
         ],
         schema: {
@@ -3515,7 +3515,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "03101",
             "addressCountry": "US"
           },
-          "telephone": "(603) 555-2901",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 3:00 PM-10:00 PM", "Fr-Sa 3:00 PM-11:00 PM", "Su 3:00 PM-10:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -3731,7 +3731,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "790 N Water St, Milwaukee, WI 53202",
-            phone: "(414) 555-4801",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 11:00 AM – 11:00 PM | Fri–Sat 11:00 AM – 1:00 AM | Sun 11:00 AM – 11:00 PM",
             deliveryAreas: "Downtown, East Town, Yankee Hill, Kilbourn Town",
             mapUrl: "https://maps.google.com/?q=790+N+Water+St,+Milwaukee,+WI+53202"
@@ -3765,13 +3765,13 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Milwaukee, Wisconsin?", a: "Papa Johns Milwaukee is located at 790 N Water St, Milwaukee, WI 53202. Call (414) 555-4801 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Milwaukee, WI?", a: "Papa Johns Milwaukee is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays — call (414) 555-4801 to confirm." },
+            { q: "Where is Papa Johns in Milwaukee, Wisconsin?", a: "Papa Johns Milwaukee is located at 790 N Water St, Milwaukee, WI 53202. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Milwaukee, WI?", a: "Papa Johns Milwaukee is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Milwaukee?", a: "Yes. Papa Johns Milwaukee delivers to Downtown, East Town, Yankee Hill, Kilbourn Town. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Milwaukee?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Milwaukee deals." },
             { q: "Does Papa Johns Milwaukee accept online orders?", a: "Yes. All Milwaukee Papa Johns locations accept orders through papajohns.com and the Papa Johns app (iOS & Android) with Papa Track real-time order tracking." },
             { q: "Is Papa Johns Pan Pizza available in Milwaukee, WI?", a: "Yes. Papa Johns Pan Pizza launched January 29, 2026, and is available at the Milwaukee location. Priced at $11.99 for medium. See our Papa Johns Pan Pizza review." },
-            { q: "What is the phone number for Papa Johns in Milwaukee?", a: "The Papa Johns Milwaukee phone number is (414) 555-4801. You can call to place an order or confirm delivery availability." },
+            { q: "What is the phone number for Papa Johns in Milwaukee?", a: "Use the official Papa Johns locator or checkout flow to confirm the current phone number, delivery availability, and carryout options for Milwaukee." },
             { q: "How long does Papa Johns delivery take in Milwaukee?", a: "Average delivery time in Milwaukee is 30–45 minutes depending on your neighborhood and the time of day. During peak hours (evenings and weekends), allow 45–55 minutes." }
         ],
         schema: {
@@ -3786,7 +3786,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "53202",
             "addressCountry": "US"
           },
-          "telephone": "(414) 555-4801",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 11:00 AM-11:00 PM", "Fr-Sa 11:00 AM-1:00 AM", "Su 11:00 AM-11:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -3806,7 +3806,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "901 Nicollet Mall, Minneapolis, MN 55402",
-            phone: "(612) 555-2301",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 11:00 AM – 11:00 PM | Fri–Sat 11:00 AM – 1:00 AM | Sun 11:00 AM – 11:00 PM",
             deliveryAreas: "Downtown, North Loop, Mill District, Elliot Park",
             mapUrl: "https://maps.google.com/?q=901+Nicollet+Mall,+Minneapolis,+MN+55402"
@@ -3840,13 +3840,13 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Minneapolis, Minnesota?", a: "Papa Johns Minneapolis is located at 901 Nicollet Mall, Minneapolis, MN 55402. Call (612) 555-2301 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Minneapolis, MN?", a: "Papa Johns Minneapolis is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays — call (612) 555-2301 to confirm." },
+            { q: "Where is Papa Johns in Minneapolis, Minnesota?", a: "Papa Johns Minneapolis is located at 901 Nicollet Mall, Minneapolis, MN 55402. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Minneapolis, MN?", a: "Papa Johns Minneapolis is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Minneapolis?", a: "Yes. Papa Johns Minneapolis delivers to Downtown, North Loop, Mill District, Elliot Park. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Minneapolis?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Minneapolis deals." },
             { q: "Does Papa Johns Minneapolis accept online orders?", a: "Yes. All Minneapolis Papa Johns locations accept orders through papajohns.com and the Papa Johns app (iOS & Android) with Papa Track real-time order tracking." },
             { q: "Is Papa Johns Pan Pizza available in Minneapolis, MN?", a: "Yes. Papa Johns Pan Pizza launched January 29, 2026, and is available at the Minneapolis location. Priced at $11.99 for medium. See our Papa Johns Pan Pizza review." },
-            { q: "What is the phone number for Papa Johns in Minneapolis?", a: "The Papa Johns Minneapolis phone number is (612) 555-2301. You can call to place an order or confirm delivery availability." },
+            { q: "What is the phone number for Papa Johns in Minneapolis?", a: "Use the official Papa Johns locator or checkout flow to confirm the current phone number, delivery availability, and carryout options for Minneapolis." },
             { q: "How long does Papa Johns delivery take in Minneapolis?", a: "Average delivery time in Minneapolis is 30–45 minutes depending on your neighborhood and the time of day. During peak hours (evenings and weekends), allow 45–55 minutes." }
         ],
         schema: {
@@ -3861,7 +3861,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "55402",
             "addressCountry": "US"
           },
-          "telephone": "(612) 555-2301",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 11:00 AM-11:00 PM", "Fr-Sa 11:00 AM-1:00 AM", "Su 11:00 AM-11:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -3881,7 +3881,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "303 Adams Ave, Montgomery, AL 36104",
-            phone: "(334) 555-0102",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 3:00 PM – 10:00 PM | Fri–Sat 3:00 PM – 11:00 PM | Sun 3:00 PM – 10:00 PM",
             deliveryAreas: "Downtown, Capitol Hill, Old Cloverdale, Garden District",
             mapUrl: "https://maps.google.com/?q=303+Adams+Ave,+Montgomery,+AL+36104"
@@ -3907,13 +3907,13 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Montgomery, Alabama?", a: "Papa Johns Montgomery is located at 303 Adams Ave, Montgomery, AL 36104. Call (334) 555-0102 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Montgomery, AL?", a: "Papa Johns Montgomery is open Monday–Thursday 3:00 PM–10:00 PM, Friday–Saturday 3:00 PM–11:00 PM, and Sunday 3:00 PM–10:00 PM. Hours may vary on holidays — call (334) 555-0102 to confirm." },
+            { q: "Where is Papa Johns in Montgomery, Alabama?", a: "Papa Johns Montgomery is located at 303 Adams Ave, Montgomery, AL 36104. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Montgomery, AL?", a: "Papa Johns Montgomery is open Monday–Thursday 3:00 PM–10:00 PM, Friday–Saturday 3:00 PM–11:00 PM, and Sunday 3:00 PM–10:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Montgomery?", a: "Yes. Papa Johns Montgomery delivers to Downtown, Capitol Hill, Old Cloverdale, Garden District. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Montgomery?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Montgomery deals." },
             { q: "Does Papa Johns Montgomery accept online orders?", a: "Yes. All Montgomery Papa Johns locations accept orders through papajohns.com and the Papa Johns app (iOS & Android) with Papa Track real-time order tracking." },
             { q: "Is Papa Johns Pan Pizza available in Montgomery, AL?", a: "Yes. Papa Johns Pan Pizza launched January 29, 2026, and is available at the Montgomery location. Priced at $11.99 for medium. See our Papa Johns Pan Pizza review." },
-            { q: "What is the phone number for Papa Johns in Montgomery?", a: "The Papa Johns Montgomery phone number is (334) 555-0102. You can call to place an order or confirm delivery availability." },
+            { q: "What is the phone number for Papa Johns in Montgomery?", a: "Use the official Papa Johns locator or checkout flow to confirm the current phone number, delivery availability, and carryout options for Montgomery." },
             { q: "How long does Papa Johns delivery take in Montgomery?", a: "Average delivery time in Montgomery is 30–45 minutes depending on your neighborhood and the time of day. During peak hours (evenings and weekends), allow 45–55 minutes." }
         ],
         schema: {
@@ -3928,7 +3928,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "36104",
             "addressCountry": "US"
           },
-          "telephone": "(334) 555-0102",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 3:00 PM-10:00 PM", "Fr-Sa 3:00 PM-11:00 PM", "Su 3:00 PM-10:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -3948,7 +3948,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "75 W Jefferson Ave, Naperville, IL 60540",
-            phone: "(331) 555-1302",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 3:00 PM – 10:00 PM | Fri–Sat 3:00 PM – 11:00 PM | Sun 3:00 PM – 10:00 PM",
             deliveryAreas: "Downtown Naperville, Riverwalk area, Ogden Avenue corridor",
             mapUrl: "https://maps.google.com/?q=75+W+Jefferson+Ave,+Naperville,+IL+60540"
@@ -3978,13 +3978,13 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Naperville, Illinois?", a: "Papa Johns Naperville is located at 75 W Jefferson Ave, Naperville, IL 60540. Call (331) 555-1302 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Naperville, IL?", a: "Papa Johns Naperville is open Monday–Thursday 3:00 PM–10:00 PM, Friday–Saturday 3:00 PM–11:00 PM, and Sunday 3:00 PM–10:00 PM. Hours may vary on holidays — call (331) 555-1302 to confirm." },
+            { q: "Where is Papa Johns in Naperville, Illinois?", a: "Papa Johns Naperville is located at 75 W Jefferson Ave, Naperville, IL 60540. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Naperville, IL?", a: "Papa Johns Naperville is open Monday–Thursday 3:00 PM–10:00 PM, Friday–Saturday 3:00 PM–11:00 PM, and Sunday 3:00 PM–10:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Naperville?", a: "Yes. Papa Johns Naperville delivers to Downtown Naperville, Riverwalk area, Ogden Avenue corridor. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Naperville?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Naperville deals." },
             { q: "Does Papa Johns Naperville accept online orders?", a: "Yes. All Naperville Papa Johns locations accept orders through papajohns.com and the Papa Johns app (iOS & Android) with Papa Track real-time order tracking." },
             { q: "Is Papa Johns Pan Pizza available in Naperville, IL?", a: "Yes. Papa Johns Pan Pizza launched January 29, 2026, and is available at the Naperville location. Priced at $11.99 for medium. See our Papa Johns Pan Pizza review." },
-            { q: "What is the phone number for Papa Johns in Naperville?", a: "The Papa Johns Naperville phone number is (331) 555-1302. You can call to place an order or confirm delivery availability." },
+            { q: "What is the phone number for Papa Johns in Naperville?", a: "Use the official Papa Johns locator or checkout flow to confirm the current phone number, delivery availability, and carryout options for Naperville." },
             { q: "How long does Papa Johns delivery take in Naperville?", a: "Average delivery time in Naperville is 30–45 minutes depending on your neighborhood and the time of day. During peak hours (evenings and weekends), allow 45–55 minutes." }
         ],
         schema: {
@@ -3999,7 +3999,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "60540",
             "addressCountry": "US"
           },
-          "telephone": "(331) 555-1302",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 3:00 PM-10:00 PM", "Fr-Sa 3:00 PM-11:00 PM", "Su 3:00 PM-10:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -4094,7 +4094,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "701 Convention Center Blvd, New Orleans, LA 70130",
-            phone: "(504) 555-1801",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 11:00 AM – 12:00 AM | Fri–Sat 11:00 AM – 2:00 AM | Sun 11:00 AM – 12:00 AM",
             deliveryAreas: "CBD, French Quarter, Warehouse District, Treme",
             mapUrl: "https://maps.google.com/?q=701+Convention+Center+Blvd,+New+Orleans,+LA+70130"
@@ -4128,13 +4128,13 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in New Orleans, Louisiana?", a: "Papa Johns New Orleans is located at 701 Convention Center Blvd, New Orleans, LA 70130. Call (504) 555-1801 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in New Orleans, LA?", a: "Papa Johns New Orleans is open Monday–Thursday 11:00 AM–12:00 AM, Friday–Saturday 11:00 AM–2:00 AM, and Sunday 11:00 AM–12:00 AM. Hours may vary on holidays — call (504) 555-1801 to confirm." },
+            { q: "Where is Papa Johns in New Orleans, Louisiana?", a: "Papa Johns New Orleans is located at 701 Convention Center Blvd, New Orleans, LA 70130. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in New Orleans, LA?", a: "Papa Johns New Orleans is open Monday–Thursday 11:00 AM–12:00 AM, Friday–Saturday 11:00 AM–2:00 AM, and Sunday 11:00 AM–12:00 AM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in New Orleans?", a: "Yes. Papa Johns New Orleans delivers to CBD, French Quarter, Warehouse District, Treme. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in New Orleans?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current New Orleans deals." },
             { q: "Does Papa Johns New Orleans accept online orders?", a: "Yes. All New Orleans Papa Johns locations accept orders through papajohns.com and the Papa Johns app (iOS & Android) with Papa Track real-time order tracking." },
             { q: "Is Papa Johns Pan Pizza available in New Orleans, LA?", a: "Yes. Papa Johns Pan Pizza launched January 29, 2026, and is available at the New Orleans location. Priced at $11.99 for medium. See our Papa Johns Pan Pizza review." },
-            { q: "What is the phone number for Papa Johns in New Orleans?", a: "The Papa Johns New Orleans phone number is (504) 555-1801. You can call to place an order or confirm delivery availability." },
+            { q: "What is the phone number for Papa Johns in New Orleans?", a: "Use the official Papa Johns locator or checkout flow to confirm the current phone number, delivery availability, and carryout options for New Orleans." },
             { q: "How long does Papa Johns delivery take in New Orleans?", a: "Average delivery time in New Orleans is 30–45 minutes depending on your neighborhood and the time of day. During peak hours (evenings and weekends), allow 45–55 minutes." }
         ],
         schema: {
@@ -4149,7 +4149,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "70130",
             "addressCountry": "US"
           },
-          "telephone": "(504) 555-1801",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 11:00 AM-12:00 AM", "Fr-Sa 11:00 AM-2:00 AM", "Su 11:00 AM-12:00 AM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -4169,7 +4169,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "350 5th Ave, New York, NY 10118",
-            phone: "(212) 555-3201",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 10:00 AM – 12:00 AM | Fri–Sat 10:00 AM – 2:00 AM | Sun 10:00 AM – 12:00 AM",
             deliveryAreas: "Midtown, Murray Hill, Kips Bay, Turtle Bay",
             mapUrl: "https://maps.google.com/?q=350+5th+Ave,+New+York,+NY+10118"
@@ -4203,13 +4203,13 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in New York, New York?", a: "Papa Johns New York is located at 350 5th Ave, New York, NY 10118. Call (212) 555-3201 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in New York, NY?", a: "Papa Johns New York is open Monday–Thursday 10:00 AM–12:00 AM, Friday–Saturday 10:00 AM–2:00 AM, and Sunday 10:00 AM–12:00 AM. Hours may vary on holidays — call (212) 555-3201 to confirm." },
+            { q: "Where is Papa Johns in New York, New York?", a: "Papa Johns New York is located at 350 5th Ave, New York, NY 10118. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in New York, NY?", a: "Papa Johns New York is open Monday–Thursday 10:00 AM–12:00 AM, Friday–Saturday 10:00 AM–2:00 AM, and Sunday 10:00 AM–12:00 AM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in New York?", a: "Yes. Papa Johns New York delivers to Midtown, Murray Hill, Kips Bay, Turtle Bay. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in New York?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current New York deals." },
             { q: "Does Papa Johns New York accept online orders?", a: "Yes. All New York Papa Johns locations accept orders through papajohns.com and the Papa Johns app (iOS & Android) with Papa Track real-time order tracking." },
             { q: "Is Papa Johns Pan Pizza available in New York, NY?", a: "Yes. Papa Johns Pan Pizza launched January 29, 2026, and is available at the New York location. Priced at $11.99 for medium. See our Papa Johns Pan Pizza review." },
-            { q: "What is the phone number for Papa Johns in New York?", a: "The Papa Johns New York phone number is (212) 555-3201. You can call to place an order or confirm delivery availability." },
+            { q: "What is the phone number for Papa Johns in New York?", a: "Use the official Papa Johns locator or checkout flow to confirm the current phone number, delivery availability, and carryout options for New York." },
             { q: "How long does Papa Johns delivery take in New York?", a: "Average delivery time in New York is 30–45 minutes depending on your neighborhood and the time of day. During peak hours (evenings and weekends), allow 45–55 minutes." }
         ],
         schema: {
@@ -4224,7 +4224,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "10118",
             "addressCountry": "US"
           },
-          "telephone": "(212) 555-3201",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 10:00 AM-12:00 AM", "Fr-Sa 10:00 AM-2:00 AM", "Su 10:00 AM-12:00 AM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -4244,7 +4244,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "1 Raymond Plaza West, Newark, NJ 07102",
-            phone: "(973) 555-3001",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 11:00 AM – 11:00 PM | Fri–Sat 11:00 AM – 1:00 AM | Sun 11:00 AM – 11:00 PM",
             deliveryAreas: "Downtown, Ironbound area, Gateway District, University Heights",
             mapUrl: "https://maps.google.com/?q=1+Raymond+Plaza+West,+Newark,+NJ+07102"
@@ -4278,13 +4278,13 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Newark, New Jersey?", a: "Papa Johns Newark is located at 1 Raymond Plaza West, Newark, NJ 07102. Call (973) 555-3001 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Newark, NY?", a: "Papa Johns Newark is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays — call (973) 555-3001 to confirm." },
+            { q: "Where is Papa Johns in Newark, New Jersey?", a: "Papa Johns Newark is located at 1 Raymond Plaza West, Newark, NJ 07102. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Newark, NY?", a: "Papa Johns Newark is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Newark?", a: "Yes. Papa Johns Newark delivers to Downtown, Ironbound area, Gateway District, University Heights. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Newark?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Newark deals." },
             { q: "Does Papa Johns Newark accept online orders?", a: "Yes. All Newark Papa Johns locations accept orders through papajohns.com and the Papa Johns app (iOS & Android) with Papa Track real-time order tracking." },
             { q: "Is Papa Johns Pan Pizza available in Newark, NJ?", a: "Yes. Papa Johns Pan Pizza launched January 29, 2026, and is available at the Newark location. Priced at $11.99 for medium. See our Papa Johns Pan Pizza review." },
-            { q: "What is the phone number for Papa Johns in Newark?", a: "The Papa Johns Newark phone number is (973) 555-3001. You can call to place an order or confirm delivery availability." },
+            { q: "What is the phone number for Papa Johns in Newark?", a: "Use the official Papa Johns locator or checkout flow to confirm the current phone number, delivery availability, and carryout options for Newark." },
             { q: "How long does Papa Johns delivery take in Newark?", a: "Average delivery time in Newark is 30–45 minutes depending on your neighborhood and the time of day. During peak hours (evenings and weekends), allow 45–55 minutes." }
         ],
         schema: {
@@ -4299,7 +4299,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "07102",
             "addressCountry": "US"
           },
-          "telephone": "(973) 555-3001",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 11:00 AM-11:00 PM", "Fr-Sa 11:00 AM-1:00 AM", "Su 11:00 AM-11:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -4319,7 +4319,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "200 N Walker Ave, Oklahoma City, OK 73102",
-            phone: "(405) 555-3601",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 11:00 AM – 11:00 PM | Fri–Sat 11:00 AM – 12:00 AM | Sun 11:00 AM – 11:00 PM",
             deliveryAreas: "Downtown, Bricktown, SoSA, Deep Deuce",
             mapUrl: "https://maps.google.com/?q=200+N+Walker+Ave,+Oklahoma+City,+OK+73102"
@@ -4353,13 +4353,13 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Oklahoma City, Oklahoma?", a: "Papa Johns Oklahoma City is located at 200 N Walker Ave, Oklahoma City, OK 73102. Call (405) 555-3601 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Oklahoma City, OK?", a: "Papa Johns Oklahoma City is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–12:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays — call (405) 555-3601 to confirm." },
+            { q: "Where is Papa Johns in Oklahoma City, Oklahoma?", a: "Papa Johns Oklahoma City is located at 200 N Walker Ave, Oklahoma City, OK 73102. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Oklahoma City, OK?", a: "Papa Johns Oklahoma City is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–12:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Oklahoma City?", a: "Yes. Papa Johns Oklahoma City delivers to Downtown, Bricktown, SoSA, Deep Deuce. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Oklahoma City?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Oklahoma City deals." },
             { q: "Does Papa Johns Oklahoma City accept online orders?", a: "Yes. All Oklahoma City Papa Johns locations accept orders through papajohns.com and the Papa Johns app (iOS & Android) with Papa Track real-time order tracking." },
             { q: "Is Papa Johns Pan Pizza available in Oklahoma City, OK?", a: "Yes. Papa Johns Pan Pizza launched January 29, 2026, and is available at the Oklahoma City location. Priced at $11.99 for medium. See our Papa Johns Pan Pizza review." },
-            { q: "What is the phone number for Papa Johns in Oklahoma City?", a: "The Papa Johns Oklahoma City phone number is (405) 555-3601. You can call to place an order or confirm delivery availability." },
+            { q: "What is the phone number for Papa Johns in Oklahoma City?", a: "Use the official Papa Johns locator or checkout flow to confirm the current phone number, delivery availability, and carryout options for Oklahoma City." },
             { q: "How long does Papa Johns delivery take in Oklahoma City?", a: "Average delivery time in Oklahoma City is 30–45 minutes depending on your neighborhood and the time of day. During peak hours (evenings and weekends), allow 45–55 minutes." }
         ],
         schema: {
@@ -4374,7 +4374,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "73102",
             "addressCountry": "US"
           },
-          "telephone": "(405) 555-3601",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 11:00 AM-11:00 PM", "Fr-Sa 11:00 AM-12:00 AM", "Su 11:00 AM-11:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -4394,7 +4394,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "330 N 13th St, Omaha, NE 68102",
-            phone: "(402) 555-5201",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 11:00 AM – 10:00 PM | Fri–Sat 11:00 AM – 11:00 PM | Sun 11:00 AM – 10:00 PM",
             deliveryAreas: "Near Downtown, Midtown, Old Market, Market West",
             mapUrl: "https://maps.google.com/?q=330+N+13th+St,+Omaha,+NE+68102"
@@ -4424,13 +4424,13 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Omaha, Nebraska?", a: "Papa Johns Omaha is located at 330 N 13th St, Omaha, NE 68102. Call (402) 555-5201 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Omaha, NE?", a: "Papa Johns Omaha is open Monday–Thursday 11:00 AM–10:00 PM, Friday–Saturday 11:00 AM–11:00 PM, and Sunday 11:00 AM–10:00 PM. Hours may vary on holidays — call (402) 555-5201 to confirm." },
+            { q: "Where is Papa Johns in Omaha, Nebraska?", a: "Papa Johns Omaha is located at 330 N 13th St, Omaha, NE 68102. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Omaha, NE?", a: "Papa Johns Omaha is open Monday–Thursday 11:00 AM–10:00 PM, Friday–Saturday 11:00 AM–11:00 PM, and Sunday 11:00 AM–10:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Omaha?", a: "Yes. Papa Johns Omaha delivers to Near Downtown, Midtown, Old Market, Market West. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Omaha?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Omaha deals." },
             { q: "Does Papa Johns Omaha accept online orders?", a: "Yes. All Omaha Papa Johns locations accept orders through papajohns.com and the Papa Johns app (iOS & Android) with Papa Track real-time order tracking." },
             { q: "Is Papa Johns Pan Pizza available in Omaha, NE?", a: "Yes. Papa Johns Pan Pizza launched January 29, 2026, and is available at the Omaha location. Priced at $11.99 for medium. See our Papa Johns Pan Pizza review." },
-            { q: "What is the phone number for Papa Johns in Omaha?", a: "The Papa Johns Omaha phone number is (402) 555-5201. You can call to place an order or confirm delivery availability." },
+            { q: "What is the phone number for Papa Johns in Omaha?", a: "Use the official Papa Johns locator or checkout flow to confirm the current phone number, delivery availability, and carryout options for Omaha." },
             { q: "How long does Papa Johns delivery take in Omaha?", a: "Average delivery time in Omaha is 30–45 minutes depending on your neighborhood and the time of day. During peak hours (evenings and weekends), allow 45–55 minutes." }
         ],
         schema: {
@@ -4445,7 +4445,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "68102",
             "addressCountry": "US"
           },
-          "telephone": "(402) 555-5201",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 11:00 AM-10:00 PM", "Fr-Sa 11:00 AM-11:00 PM", "Su 11:00 AM-10:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -4465,7 +4465,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "100 S Eola Dr, Orlando, FL 32801",
-            phone: "(407) 555-7401",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 11:00 AM – 11:00 PM | Fri–Sat 11:00 AM – 1:00 AM | Sun 11:00 AM – 11:00 PM",
             deliveryAreas: "Downtown, Thornton Park, Lake Eola Heights, South Eola",
             mapUrl: "https://maps.google.com/?q=100+S+Eola+Dr,+Orlando,+FL+32801"
@@ -4495,13 +4495,13 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Orlando, Florida?", a: "Papa Johns Orlando is located at 100 S Eola Dr, Orlando, FL 32801. Call (407) 555-7401 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Orlando, FL?", a: "Papa Johns Orlando is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays — call (407) 555-7401 to confirm." },
+            { q: "Where is Papa Johns in Orlando, Florida?", a: "Papa Johns Orlando is located at 100 S Eola Dr, Orlando, FL 32801. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Orlando, FL?", a: "Papa Johns Orlando is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Orlando?", a: "Yes. Papa Johns Orlando delivers to Downtown, Thornton Park, Lake Eola Heights, South Eola. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Orlando?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Orlando deals." },
             { q: "Does Papa Johns Orlando accept online orders?", a: "Yes. All Orlando Papa Johns locations accept orders through papajohns.com and the Papa Johns app (iOS & Android) with Papa Track real-time order tracking." },
             { q: "Is Papa Johns Pan Pizza available in Orlando, FL?", a: "Yes. Papa Johns Pan Pizza launched January 29, 2026, and is available at the Orlando location. Priced at $11.99 for medium. See our Papa Johns Pan Pizza review." },
-            { q: "What is the phone number for Papa Johns in Orlando?", a: "The Papa Johns Orlando phone number is (407) 555-7401. You can call to place an order or confirm delivery availability." },
+            { q: "What is the phone number for Papa Johns in Orlando?", a: "Use the official Papa Johns locator or checkout flow to confirm the current phone number, delivery availability, and carryout options for Orlando." },
             { q: "How long does Papa Johns delivery take in Orlando?", a: "Average delivery time in Orlando is 30–45 minutes depending on your neighborhood and the time of day. During peak hours (evenings and weekends), allow 45–55 minutes." }
         ],
         schema: {
@@ -4516,7 +4516,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "32801",
             "addressCountry": "US"
           },
-          "telephone": "(407) 555-7401",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 11:00 AM-11:00 PM", "Fr-Sa 11:00 AM-1:00 AM", "Su 11:00 AM-11:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -4536,7 +4536,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "1500 Market St, Philadelphia, PA 19102",
-            phone: "(215) 555-4601",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 10:00 AM – 11:00 PM | Fri–Sat 10:00 AM – 1:00 AM | Sun 10:00 AM – 11:00 PM",
             deliveryAreas: "Center City, Rittenhouse Square, Logan Square, Market East",
             mapUrl: "https://maps.google.com/?q=1500+Market+St,+Philadelphia,+PA+19102"
@@ -4570,13 +4570,13 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Philadelphia, Pennsylvania?", a: "Papa Johns Philadelphia is located at 1500 Market St, Philadelphia, PA 19102. Call (215) 555-4601 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Philadelphia, PA?", a: "Papa Johns Philadelphia is open Monday–Thursday 10:00 AM–11:00 PM, Friday–Saturday 10:00 AM–1:00 AM, and Sunday 10:00 AM–11:00 PM. Hours may vary on holidays — call (215) 555-4601 to confirm." },
+            { q: "Where is Papa Johns in Philadelphia, Pennsylvania?", a: "Papa Johns Philadelphia is located at 1500 Market St, Philadelphia, PA 19102. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Philadelphia, PA?", a: "Papa Johns Philadelphia is open Monday–Thursday 10:00 AM–11:00 PM, Friday–Saturday 10:00 AM–1:00 AM, and Sunday 10:00 AM–11:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Philadelphia?", a: "Yes. Papa Johns Philadelphia delivers to Center City, Rittenhouse Square, Logan Square, Market East. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Philadelphia?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Philadelphia deals." },
             { q: "Does Papa Johns Philadelphia accept online orders?", a: "Yes. All Philadelphia Papa Johns locations accept orders through papajohns.com and the Papa Johns app (iOS & Android) with Papa Track real-time order tracking." },
             { q: "Is Papa Johns Pan Pizza available in Philadelphia, PA?", a: "Yes. Papa Johns Pan Pizza launched January 29, 2026, and is available at the Philadelphia location. Priced at $11.99 for medium. See our Papa Johns Pan Pizza review." },
-            { q: "What is the phone number for Papa Johns in Philadelphia?", a: "The Papa Johns Philadelphia phone number is (215) 555-4601. You can call to place an order or confirm delivery availability." },
+            { q: "What is the phone number for Papa Johns in Philadelphia?", a: "Use the official Papa Johns locator or checkout flow to confirm the current phone number, delivery availability, and carryout options for Philadelphia." },
             { q: "How long does Papa Johns delivery take in Philadelphia?", a: "Average delivery time in Philadelphia is 30–45 minutes depending on your neighborhood and the time of day. During peak hours (evenings and weekends), allow 45–55 minutes." }
         ],
         schema: {
@@ -4591,7 +4591,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "19102",
             "addressCountry": "US"
           },
-          "telephone": "(215) 555-4601",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 10:00 AM-11:00 PM", "Fr-Sa 10:00 AM-1:00 AM", "Su 10:00 AM-11:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -4611,7 +4611,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "2 N Central Ave, Phoenix, AZ 85004",
-            phone: "(602) 555-6801",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 11:00 AM – 11:00 PM | Fri–Sat 11:00 AM – 1:00 AM | Sun 11:00 AM – 11:00 PM",
             deliveryAreas: "Downtown, Central City, Roosevelt Row, Warehouse District",
             mapUrl: "https://maps.google.com/?q=2+N+Central+Ave,+Phoenix,+AZ+85004"
@@ -4645,13 +4645,13 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Phoenix, Arizona?", a: "Papa Johns Phoenix is located at 2 N Central Ave, Phoenix, AZ 85004. Call (602) 555-6801 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Phoenix, AZ?", a: "Papa Johns Phoenix is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays — call (602) 555-6801 to confirm." },
+            { q: "Where is Papa Johns in Phoenix, Arizona?", a: "Papa Johns Phoenix is located at 2 N Central Ave, Phoenix, AZ 85004. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Phoenix, AZ?", a: "Papa Johns Phoenix is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Phoenix?", a: "Yes. Papa Johns Phoenix delivers to Downtown, Central City, Roosevelt Row, Warehouse District. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Phoenix?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Phoenix deals." },
             { q: "Does Papa Johns Phoenix accept online orders?", a: "Yes. All Phoenix Papa Johns locations accept orders through papajohns.com and the Papa Johns app (iOS & Android) with Papa Track real-time order tracking." },
             { q: "Is Papa Johns Pan Pizza available in Phoenix, AZ?", a: "Yes. Papa Johns Pan Pizza launched January 29, 2026, and is available at the Phoenix location. Priced at $11.99 for medium. See our Papa Johns Pan Pizza review." },
-            { q: "What is the phone number for Papa Johns in Phoenix?", a: "The Papa Johns Phoenix phone number is (602) 555-6801. You can call to place an order or confirm delivery availability." },
+            { q: "What is the phone number for Papa Johns in Phoenix?", a: "Use the official Papa Johns locator or checkout flow to confirm the current phone number, delivery availability, and carryout options for Phoenix." },
             { q: "How long does Papa Johns delivery take in Phoenix?", a: "Average delivery time in Phoenix is 30–45 minutes depending on your neighborhood and the time of day. During peak hours (evenings and weekends), allow 45–55 minutes." }
         ],
         schema: {
@@ -4666,7 +4666,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "85004",
             "addressCountry": "US"
           },
-          "telephone": "(602) 555-6801",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 11:00 AM-11:00 PM", "Fr-Sa 11:00 AM-1:00 AM", "Su 11:00 AM-11:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -4686,7 +4686,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "300 Liberty Ave, Pittsburgh, PA 15222",
-            phone: "(412) 555-8201",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 11:00 AM – 11:00 PM | Fri–Sat 11:00 AM – 1:00 AM | Sun 11:00 AM – 11:00 PM",
             deliveryAreas: "Downtown, North Shore, Strip District, South Side Flats",
             mapUrl: "https://maps.google.com/?q=300+Liberty+Ave,+Pittsburgh,+PA+15222"
@@ -4720,13 +4720,13 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Pittsburgh, Pennsylvania?", a: "Papa Johns Pittsburgh is located at 300 Liberty Ave, Pittsburgh, PA 15222. Call (412) 555-8201 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Pittsburgh, PA?", a: "Papa Johns Pittsburgh is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays — call (412) 555-8201 to confirm." },
+            { q: "Where is Papa Johns in Pittsburgh, Pennsylvania?", a: "Papa Johns Pittsburgh is located at 300 Liberty Ave, Pittsburgh, PA 15222. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Pittsburgh, PA?", a: "Papa Johns Pittsburgh is open Monday–Thursday 11:00 AM–11:00 PM, Friday–Saturday 11:00 AM–1:00 AM, and Sunday 11:00 AM–11:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Pittsburgh?", a: "Yes. Papa Johns Pittsburgh delivers to Downtown, North Shore, Strip District, South Side Flats. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Pittsburgh?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Pittsburgh deals." },
             { q: "Does Papa Johns Pittsburgh accept online orders?", a: "Yes. All Pittsburgh Papa Johns locations accept orders through papajohns.com and the Papa Johns app (iOS & Android) with Papa Track real-time order tracking." },
             { q: "Is Papa Johns Pan Pizza available in Pittsburgh, PA?", a: "Yes. Papa Johns Pan Pizza launched January 29, 2026, and is available at the Pittsburgh location. Priced at $11.99 for medium. See our Papa Johns Pan Pizza review." },
-            { q: "What is the phone number for Papa Johns in Pittsburgh?", a: "The Papa Johns Pittsburgh phone number is (412) 555-8201. You can call to place an order or confirm delivery availability." },
+            { q: "What is the phone number for Papa Johns in Pittsburgh?", a: "Use the official Papa Johns locator or checkout flow to confirm the current phone number, delivery availability, and carryout options for Pittsburgh." },
             { q: "How long does Papa Johns delivery take in Pittsburgh?", a: "Average delivery time in Pittsburgh is 30–45 minutes depending on your neighborhood and the time of day. During peak hours (evenings and weekends), allow 45–55 minutes." }
         ],
         schema: {
@@ -4741,7 +4741,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "15222",
             "addressCountry": "US"
           },
-          "telephone": "(412) 555-8201",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 11:00 AM-11:00 PM", "Fr-Sa 11:00 AM-1:00 AM", "Su 11:00 AM-11:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -4761,7 +4761,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "100 Commercial St, Portland, ME 04101",
-            phone: "(207) 555-9001",
+            phone: "Verify with official store locator",
             hours: "Mon–Thu 11:00 AM – 10:00 PM | Fri–Sat 11:00 AM – 11:00 PM | Sun 11:00 AM – 10:00 PM",
             deliveryAreas: "Bayside, East End, Central Business District, Parkside",
             mapUrl: "https://maps.google.com/?q=100+Commercial+St,+Portland,+ME+04101"
@@ -4787,13 +4787,13 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Portland, Maine?", a: "Papa Johns Portland is located at 100 Commercial St, Portland, ME 04101. Call (207) 555-9001 for delivery or carryout orders." },
-            { q: "What are Papa Johns hours in Portland, ME?", a: "Papa Johns Portland is open Monday–Thursday 11:00 AM–10:00 PM, Friday–Saturday 11:00 AM–11:00 PM, and Sunday 11:00 AM–10:00 PM. Hours may vary on holidays — call (207) 555-9001 to confirm." },
+            { q: "Where is Papa Johns in Portland, Maine?", a: "Papa Johns Portland is located at 100 Commercial St, Portland, ME 04101. check the official Papa Johns locator for delivery or carryout orders." },
+            { q: "What are Papa Johns hours in Portland, ME?", a: "Papa Johns Portland is open Monday–Thursday 11:00 AM–10:00 PM, Friday–Saturday 11:00 AM–11:00 PM, and Sunday 11:00 AM–10:00 PM. Hours may vary on holidays; use the official Papa Johns locator or checkout flow to confirm current hours." },
             { q: "Does Papa Johns deliver in Portland?", a: "Yes. Papa Johns Portland delivers to Bayside, East End, Central Business District, Parkside. Enter your address on papajohns.com or in the app to confirm delivery to your specific address." },
             { q: "What is the cheapest Papa Johns pizza in Portland?", a: "A Small Cheese or Pepperoni Pizza starts at $11.49. Under the Papa Pairings deal, two medium pizzas can be ordered at $6.99 each for qualifying combinations. Visit our [Papa Johns Coupons](https://papajohns-menus.us/coupons) page for current Portland deals." },
             { q: "Does Papa Johns Portland accept online orders?", a: "Yes. All Portland Papa Johns locations accept orders through papajohns.com and the Papa Johns app (iOS & Android) with Papa Track real-time order tracking." },
             { q: "Is Papa Johns Pan Pizza available in Portland, ME?", a: "Yes. Papa Johns Pan Pizza launched January 29, 2026, and is available at the Portland location. Priced at $11.99 for medium. See our Papa Johns Pan Pizza review." },
-            { q: "What is the phone number for Papa Johns in Portland?", a: "The Papa Johns Portland phone number is (207) 555-9001. You can call to place an order or confirm delivery availability." },
+            { q: "What is the phone number for Papa Johns in Portland?", a: "Use the official Papa Johns locator or checkout flow to confirm the current phone number, delivery availability, and carryout options for Portland." },
             { q: "How long does Papa Johns delivery take in Portland?", a: "Average delivery time in Portland is 30–45 minutes depending on your neighborhood and the time of day. During peak hours (evenings and weekends), allow 45–55 minutes." }
         ],
         schema: {
@@ -4808,7 +4808,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             "postalCode": "04101",
             "addressCountry": "US"
           },
-          "telephone": "(207) 555-9001",
+          "telephone": undefined,
           "openingHours": ["Mo-Th 11:00 AM-10:00 PM", "Fr-Sa 11:00 AM-11:00 PM", "Su 11:00 AM-10:00 PM"],
           "servesCuisine": "Pizza",
           "priceRange": "$$",
@@ -4966,7 +4966,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "2212 Main St, Fort Worth, TX 76102",
-            phone: "+1 817-555-0055",
+            phone: "Verify with official store locator",
             hours: "Mon-Thu 11:00 AM - 11:00 PM | Fri-Sat 11:00 AM - 12:00 AM | Sun 11:00 AM - 11:00 PM",
             deliveryAreas: "Downtown Fort Worth, Near Southside, Stockyards, TCU area, West 7th, Cultural District",
             mapUrl: "https://maps.google.com/?q=2212+Main+St,+Fort+Worth,+TX+76102"
@@ -4992,7 +4992,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
             }
         ],
         faq: [
-            { q: "Where is Papa Johns in Fort Worth, TX?", a: "This Fort Worth guide uses the listed location at 2212 Main St, Fort Worth, TX 76102. Call +1 817-555-0055 or check the official Papa Johns app to confirm the nearest active store for your exact address." },
+            { q: "Where is Papa Johns in Fort Worth, TX?", a: "This Fort Worth guide uses the listed location at 2212 Main St, Fort Worth, TX 76102. check the official Papa Johns locator or check the official Papa Johns app to confirm the nearest active store for your exact address." },
             { q: "Does Papa Johns deliver in Fort Worth?", a: "Yes, Papa Johns offers delivery in Fort Worth, but delivery coverage depends on your exact address. Common service areas include Downtown Fort Worth, Near Southside, West 7th, the TCU area, the Cultural District, and nearby neighborhoods. Enter your address in the official app for final confirmation." },
             { q: "How long does Papa Johns delivery take in Fort Worth?", a: "Normal Fort Worth delivery is often 30 to 50 minutes. Expect longer waits on Friday nights, TCU game days, Stockyards event weekends, severe weather days, and large family-order periods around dinner." },
             { q: "What is the cheapest Papa Johns order in Fort Worth?", a: "A small Cheese or Pepperoni Pizza is usually the lowest base-price pizza. The best final price often comes from checking current coupons, choosing carryout, and using bundle deals before checkout." },
@@ -5011,7 +5011,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
                 "postalCode": "76102",
                 "addressCountry": "US"
             },
-            "telephone": "+1 817-555-0055",
+            "telephone": undefined,
             "openingHours": ["Mo-Th 11:00-23:00", "Fr-Sa 11:00-00:00", "Su 11:00-23:00"],
             "servesCuisine": "Pizza",
             "priceRange": "$$",
@@ -5031,7 +5031,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "1234 SW Stark St, Portland, OR 97205",
-            phone: "+1 503-555-5001",
+            phone: "Verify with official store locator",
             hours: "Mon-Thu 11:00 AM - 11:00 PM | Fri-Sat 11:00 AM - 12:00 AM | Sun 11:00 AM - 11:00 PM",
             deliveryAreas: "Downtown Portland, Pearl District, Goose Hollow, Northwest District, PSU area, inner east side",
             mapUrl: "https://maps.google.com/?q=1234+SW+Stark+St,+Portland,+OR+97205"
@@ -5076,7 +5076,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
                 "postalCode": "97205",
                 "addressCountry": "US"
             },
-            "telephone": "+1 503-555-5001",
+            "telephone": undefined,
             "openingHours": ["Mo-Th 11:00-23:00", "Fr-Sa 11:00-00:00", "Su 11:00-23:00"],
             "servesCuisine": "Pizza",
             "priceRange": "$$",
@@ -5096,7 +5096,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "401 Channelside Dr, Tampa, FL 33602",
-            phone: "+1 813-555-6001",
+            phone: "Verify with official store locator",
             hours: "Mon-Thu 11:00 AM - 12:00 AM | Fri-Sat 11:00 AM - 1:00 AM | Sun 11:00 AM - 12:00 AM",
             deliveryAreas: "Downtown Tampa, Channelside, Water Street, Ybor City, Hyde Park, USF area",
             mapUrl: "https://maps.google.com/?q=401+Channelside+Dr,+Tampa,+FL+33602"
@@ -5141,7 +5141,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
                 "postalCode": "33602",
                 "addressCountry": "US"
             },
-            "telephone": "+1 813-555-6001",
+            "telephone": undefined,
             "openingHours": ["Mo-Th 11:00-00:00", "Fr-Sa 11:00-01:00", "Su 11:00-00:00"],
             "servesCuisine": "Pizza",
             "priceRange": "$$",
@@ -5161,7 +5161,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "915 L St, Sacramento, CA 95814",
-            phone: "+1 916-555-7001",
+            phone: "Verify with official store locator",
             hours: "Mon-Thu 11:00 AM - 12:00 AM | Fri-Sat 11:00 AM - 1:00 AM | Sun 11:00 AM - 12:00 AM",
             deliveryAreas: "Downtown Sacramento, Midtown, Mansion Flats, Alkali Flat, Land Park, Sacramento State area",
             mapUrl: "https://maps.google.com/?q=915+L+St,+Sacramento,+CA+95814"
@@ -5206,7 +5206,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
                 "postalCode": "95814",
                 "addressCountry": "US"
             },
-            "telephone": "+1 916-555-7001",
+            "telephone": undefined,
             "openingHours": ["Mo-Th 11:00-00:00", "Fr-Sa 11:00-01:00", "Su 11:00-00:00"],
             "servesCuisine": "Pizza",
             "priceRange": "$$",
@@ -5226,7 +5226,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         },
         locationDetails: {
             address: "201 Fayetteville St, Raleigh, NC 27601",
-            phone: "+1 919-555-8001",
+            phone: "Verify with official store locator",
             hours: "Mon-Thu 11:00 AM - 11:00 PM | Fri-Sat 11:00 AM - 12:00 AM | Sun 11:00 AM - 11:00 PM",
             deliveryAreas: "Downtown Raleigh, Glenwood South, NC State area, Cameron Village, Five Points, North Hills",
             mapUrl: "https://maps.google.com/?q=201+Fayetteville+St,+Raleigh,+NC+27601"
@@ -5271,7 +5271,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
                 "postalCode": "27601",
                 "addressCountry": "US"
             },
-            "telephone": "+1 919-555-8001",
+            "telephone": undefined,
             "openingHours": ["Mo-Th 11:00-23:00", "Fr-Sa 11:00-00:00", "Su 11:00-23:00"],
             "servesCuisine": "Pizza",
             "priceRange": "$$",

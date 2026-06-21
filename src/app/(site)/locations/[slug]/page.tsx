@@ -125,29 +125,21 @@ export default async function LocationPage({ params }: Props) {
 
     // --- FALLBACK GENERIC TEMPLATE ---
     const baseUrl = 'https://papajohns-menus.us';
-    const localBusinessSchema = {
+    const locationGuideSchema = {
         "@context": "https://schema.org",
-        "@type": "Restaurant",
-        "name": `Papa John's ${location?.city}`,
-        "image": `${baseUrl}/hero-background.jpeg`,
+        "@type": "WebPage",
+        "name": `Papa Johns ${location?.city}, ${location?.state} Menu and Ordering Guide`,
         "url": `${baseUrl}/locations/${slug}`,
-        "telephone": location?.phone,
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": location?.address,
-          "addressLocality": location?.city,
-          "addressRegion": location?.state,
-          "postalCode": location?.address.split(', ').pop(),
-          "addressCountry": "US"
+        "description": location?.description,
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "PapaJohns-Menus.us",
+            "url": baseUrl
         },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 38.2527,
-          "longitude": -85.7585
-        },
-        "servesCuisine": "Pizza, Italian-American",
-        "priceRange": "$$",
-        "openingHours": "Mo-Su 11:00-00:00"
+        "about": {
+            "@type": "Thing",
+            "name": `Papa Johns menu and ordering options in ${location?.city}, ${location?.state}`
+        }
     };
 
     const faqSchema = {
@@ -159,7 +151,7 @@ export default async function LocationPage({ params }: Props) {
             "name": `Does Papa John's deliver in ${location?.city}?`,
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": `Yes, Papa John's offers fast and fresh pizza delivery across **${location?.city}, ${location?.state}**. You can order online for home delivery or carryout.`
+              "text": `Papa Johns delivery availability in ${location?.city}, ${location?.state} depends on your address and the nearest participating store. Use the official Papa Johns locator or checkout flow to confirm delivery or carryout for your exact location.`
             }
           },
           {
@@ -167,7 +159,7 @@ export default async function LocationPage({ params }: Props) {
             "name": `What are the Papa John's Hours in ${location?.city}?`,
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": `The Papa John's branch in ${location?.city} is typically open from **${location?.hours}**. Store hours may vary on holidays.`
+              "text": `Papa Johns hours in ${location?.city} can vary by store, day, and holiday. This guide lists typical hours for planning, but the official locator or checkout screen should be used for current store hours.`
             }
           }
         ]
@@ -175,7 +167,7 @@ export default async function LocationPage({ params }: Props) {
 
     return (
         <div className="bg-[#fcfaf8] min-h-screen font-sans pb-20">
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationGuideSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             <div className="bg-[#1A3D17] border-b-8 border-[#cc0000] text-white py-16 md:py-24 text-center relative overflow-hidden">
                 <div className="container mx-auto px-4 relative z-10">
@@ -198,11 +190,12 @@ export default async function LocationPage({ params }: Props) {
                 <div className="container mx-auto px-4">
                     <div className="max-w-4xl mx-auto bg-[#fcfaf8] rounded-3xl p-8 border-2 border-gray-100 shadow-sm flex flex-wrap items-center justify-between gap-8">
                         <div className="flex-1">
-                            <h2 className="text-xl font-black text-[#1A3D17] uppercase mb-4 tracking-tight">📍 Store Details: {location?.city}</h2>
+                            <h2 className="text-xl font-black text-[#1A3D17] uppercase mb-4 tracking-tight">📍 City Ordering Guide: {location?.city}</h2>
                             <div className="space-y-3 font-bold text-gray-600">
                                 <p><span className="text-[#cc0000]">Address:</span> {location?.address}</p>
                                 <p><span className="text-[#cc0000]">Phone:</span> {location?.phone}</p>
-                                <p><span className="text-[#cc0000]">Hours:</span> {location?.hours}</p>
+                                <p><span className="text-[#cc0000]">Typical Hours:</span> {location?.hours}</p>
+                                <p className="text-xs text-gray-500 leading-relaxed">PapaJohns-Menus.us is an independent guide. Confirm exact store address, phone number, delivery radius, and current hours on the official Papa Johns locator before ordering.</p>
                             </div>
                         </div>
                     </div>
@@ -215,6 +208,22 @@ export default async function LocationPage({ params }: Props) {
 // ── RICH TEMPLATE COMPONENT ──
 function RichTemplate({ data, month }: { data: RichLocationData; month: string }) {
     const cityName = formatCityFromSlug(data.slug);
+    const guideSchema = {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": data.h1,
+        "url": `https://papajohns-menus.us/locations/${data.slug}`,
+        "description": data.intro.split('\n\n')[0],
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "PapaJohns-Menus.us",
+            "url": "https://papajohns-menus.us"
+        },
+        "about": {
+            "@type": "Thing",
+            "name": `Papa Johns menu, prices, and ordering tips in ${cityName}`
+        }
+    };
     const faqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -230,7 +239,7 @@ function RichTemplate({ data, month }: { data: RichLocationData; month: string }
 
     return (
         <div className="bg-[#fcfaf8] min-h-screen font-sans pb-20">
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data.schema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(guideSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             
             {/* HERO */}
@@ -270,21 +279,22 @@ function RichTemplate({ data, month }: { data: RichLocationData; month: string }
                         <div className="bg-[#fcfaf8] rounded-[2.5rem] p-8 md:p-12 shadow-sm border border-gray-100 h-full">
                             <h2 className="text-2xl font-black text-[#1A3D17] uppercase mb-8 flex items-center gap-3">
                                 <span className="bg-[#cc0000] text-white w-10 h-10 rounded-full flex items-center justify-center text-lg">📍</span> 
-                                Store Location & Hours
+                                City Ordering Details
                             </h2>
                             <div className="space-y-6">
                                 <div className="space-y-1">
-                                    <div className="text-[10px] font-black uppercase tracking-widest text-gray-400">Main Address:</div>
+                                    <div className="text-[10px] font-black uppercase tracking-widest text-gray-400">Address Check:</div>
                                     <p className="font-bold text-[#1A3D17] text-xl leading-snug">{data.locationDetails.address}</p>
                                 </div>
                                 <div className="space-y-1">
-                                    <div className="text-[10px] font-black uppercase tracking-widest text-gray-400">Order by Phone:</div>
+                                    <div className="text-[10px] font-black uppercase tracking-widest text-gray-400">Phone Check:</div>
                                     <p className="text-[#cc0000] font-black text-2xl tracking-tighter">{data.locationDetails.phone}</p>
                                 </div>
                                 <div className="space-y-1">
-                                    <div className="text-[10px] font-black uppercase tracking-widest text-gray-400">Weekly Hours:</div>
+                                    <div className="text-[10px] font-black uppercase tracking-widest text-gray-400">Typical Hours:</div>
                                     <p className="text-sm font-bold text-gray-600 leading-relaxed italic">{data.locationDetails.hours}</p>
                                 </div>
+                                <p className="text-xs text-gray-500 font-bold leading-relaxed">PapaJohns-Menus.us is an independent guide. Use the official Papa Johns locator or checkout flow to confirm exact store address, phone number, delivery radius, and current hours.</p>
                                 <div className="pt-4">
                                     <Link 
                                         href={data.locationDetails.mapUrl} 

@@ -17,11 +17,11 @@ interface Coupon {
 const FAQ_ITEMS = [
     {
         q: "Does Papa John's have active promo codes today?",
-        a: "Yes, currently there are 19 verified Papa John's coupons and promo codes active. Our team checks these daily to ensure you get the best pizza deals available on [DATE]."
+        a: "Papa John's may show promo codes, app offers, rewards deals, and store-level specials. Availability changes by location and date, so test each code in the official checkout before ordering."
     },
     {
         q: "How do I use a Papa John's coupon code online?",
-        a: "To use a code, heading to the official Papa Johns website, add your favorite pizzas to the cart, and enter the promo code in the 'Enter Promo Code' box during checkout. Discounts are applied instantly to qualifying orders."
+        a: "To use a code, go to the official Papa Johns website or app, add your items, and enter the promo code during checkout. Confirm the discount appears in the order summary before paying."
     }
 ];
 
@@ -68,7 +68,7 @@ export default function CouponsSection() {
             id: 1,
             discount: '25%',
             title: '25% Off Regular Menu Price Orders',
-            description: 'Save 25% on your entire order when you use this Papa John\'s promo code. This verified discount applies to all regular menu price items. Combine with our [Menu & Prices](/menus-prices) for the best value.',
+            description: 'This Papa John\'s promo code example may reduce eligible regular menu price items when active for your store. Combine with our [Menu & Prices](/menus-prices) to compare value before checkout.',
             code: 'CHOOSE25',
             verified: true,
             initialMinutes: 4,
@@ -77,8 +77,8 @@ export default function CouponsSection() {
         {
             id: 2,
             discount: '50%',
-            title: '50% Off: Buy One Get One Free Pizza',
-            description: 'Get a second large pizza at 50% off or entirely free with the BOGO deal. Perfect for [Papa Rewards](/papa-rewards) members looking to maximize their dough. Check [official terms](https://www.papajohns.com) for local availability.',
+            title: 'BOGO-Style Pizza Offer',
+            description: 'BOGO-style pizza deals may discount a second pizza when the offer is active for your local store. Check [official terms](https://www.papajohns.com) for current availability.',
             code: 'PAPA50',
             verified: true,
             initialMinutes: 12,
@@ -88,7 +88,7 @@ export default function CouponsSection() {
             id: 3,
             discount: '$10',
             title: '$10 Off Any Order of $30 or More',
-            description: 'Take $10 off your total bill when you spend $30. This is one of the most popular Papa Johns coupons for families. Discover more [Featured Items](/#featured) that qualify for this discount.',
+            description: 'This example may reduce an eligible cart when the minimum order and local terms are met. Discover more [Featured Items](/#featured) while comparing your checkout total.',
             code: 'SAVE10NOW',
             verified: true,
             initialMinutes: 2,
@@ -98,7 +98,7 @@ export default function CouponsSection() {
             id: 4,
             discount: 'FREE',
             title: 'Free Side of Garlic Knots with Large Pizza',
-            description: 'Add a side of our famous Garlic Knots to your order for free. Use this verified Papa Johns coupon code with any large pizza purchase. View our [Contact Us](/contact) page if you have issues applying codes.',
+            description: 'Some promotions include a side item with an eligible pizza purchase. Use the official checkout to confirm whether this offer is active for your store.',
             code: 'FREESIDE',
             verified: true,
             initialMinutes: 45,
@@ -158,12 +158,12 @@ export default function CouponsSection() {
                             Papa John's <span className="text-[#cc0000]">Promo Codes</span> 2026
                         </h2>
                         <h1 className="text-lg md:text-xl font-bold text-gray-600 mt-2 max-w-3xl">
-                            Find the latest and verified Papa Johns coupons, pizza deals, and discount codes to save on your next delivery or carryout order.
+                            Review Papa Johns coupon examples, pizza deal notes, and discount-code tips before checking your official delivery or carryout cart.
                         </h1>
                         <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 mt-6">
                             <span className="bg-[#eefcf2] text-[#1A3D17] text-xs font-black px-4 py-1.5 rounded-full border border-[#1A3D17]/10 flex items-center gap-2">
                                 <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-                                19 CODES UPDATED FOR {currentDate.toUpperCase()}
+                                REVIEWED FOR {currentDate.toUpperCase()}
                             </span>
                         </div>
                     </div>
@@ -293,7 +293,7 @@ export default function CouponsSection() {
                             <div className="absolute top-0 right-0 w-24 h-24 bg-[#CCEE18] rounded-full -mr-12 -mt-12 opacity-10"></div>
                             <h4 className="text-2xl font-black mb-3 relative z-10" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>Looking for More Pizza Deals?</h4>
                             <p className="text-green-200/80 text-sm mb-6 relative z-10">
-                                Check our latest [Rewards Program](/papa-rewards) or visit the [Official Papa Johns Special Offers](https://www.papajohns.com/order/specials) page for regional discounts.
+                                Check our latest [Rewards Program](/papa-rewards) guide or visit the [Papa Johns Special Offers](https://www.papajohns.com/order/specials) page for regional discounts.
                             </p>
                             <Link href="/store-locator" className="bg-[#CCEE18] text-[#1A3D17] font-black py-4 px-6 rounded-xl text-xs uppercase tracking-widest inline-block w-full text-center hover:bg-white transition-colors relative z-10">
                                 Find Local Store Deals →

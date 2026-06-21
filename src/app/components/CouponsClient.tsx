@@ -226,32 +226,32 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
                     <article className="prose max-w-none text-gray-600 font-medium leading-[1.8] space-y-6 mb-16">
                         <h2 className="text-2xl font-black uppercase text-[#1A3D17] tracking-tighter">Complete Guide to Papa John's Savings in May 2026</h2>
                         <p>
-                            Papa John's is one of America's largest pizza chains, operating thousands of locations across the US. Unlike competitors who run random promotions, Papa John's runs a consistent set of deals year-round — meaning savvy customers can almost always find a working promo code or automatic discount before placing their order.
+                            Papa John's is one of America's largest pizza chains, operating thousands of locations across the US. Promotions can change by store and account, so the safest way to save is to compare the official deals tab, rewards account, and final checkout total before placing an order.
                         </p>
                         <h3 className="text-xl font-black uppercase text-[#1A3D17]">Best Papa John's Deals Right Now</h3>
                         <p>
-                            The standout deal this month is the <strong>BOGO free pizza offer</strong> using code BOGO4U — buy one large pizza and get a second one completely free. This is one of the best-value offers Papa John's runs and it comes around several times a year. If you prefer a simpler percentage discount, PIZZA25 takes 25% off your entire order with no minimum spend.
+                            BOGO-style pizza offers and percentage discounts may appear during some promo periods, but exact codes, eligible items, and minimum order rules vary. Treat any code on this page as an example to test in checkout, not a guaranteed discount.
                         </p>
                         <p>
                             For carryout customers, store-level carryout specials can be one of the strongest savings available. Exact discounts vary by location and date, so compare the carryout and delivery totals in the official checkout before paying.
                         </p>
                         <h3 className="text-xl font-black uppercase text-[#1A3D17]">How Papa Rewards Works</h3>
                         <p>
-                            Papa Rewards is Papa John's free loyalty program and one of the smartest ways to save on regular orders. For every dollar you spend, you earn one Papa Rewards point. Once you reach 75 points, you receive $10 in Papa Dough — a credit that can be applied to any order. That's effectively a 13% return on all spending for loyal customers.
+                            Papa Rewards is Papa John's free loyalty program and can be useful for regular orders. Rewards rules can change, so check your account for the current earn rate, redemption threshold, and any Papa Dough terms before planning an order around rewards.
                         </p>
                         <p>
-                            Rewards members also receive a free dessert on their birthday, early access to new menu items, and exclusive promo codes not available to non-members. You can join Papa Rewards for free on the <a href="https://www.papajohns.com" rel="nofollow noopener" target="_blank" className="text-[#cc0000] underline">official Papa John's website</a> or through the app.
+                            Rewards members may receive account-specific offers such as birthday perks, early access, or targeted promo codes. You can join Papa Rewards for free on the <a href="https://www.papajohns.com" rel="nofollow noopener" target="_blank" className="text-[#cc0000] underline">official Papa John's website</a> or through the app.
                         </p>
                         <h3 className="text-xl font-black uppercase text-[#1A3D17]">Papa John's App — Hidden Deals</h3>
                         <p>
-                            The Papa John's mobile app is arguably the best source of exclusive deals. When you log in and select your local store, the app surfaces location-specific offers that are often not advertised anywhere else. These include carryout-only specials, large order discounts, and limited-time promotions run by individual franchise locations.
+                            The Papa John's mobile app is often a useful place to check for location-specific offers. When you log in and select your local store, the app may show carryout specials, larger-order discounts, and limited-time promotions run by individual franchise locations.
                         </p>
                         <p>
                             The app can also send push notifications for limited-time offers. Turning on notifications for the Papa John's app is one way to catch short promotions before they expire.
                         </p>
                         <h3 className="text-xl font-black uppercase text-[#1A3D17]">Seasonal Deals and Holiday Promos</h3>
                         <p>
-                            Papa John's runs especially strong promotions around major US sporting events, including the NFL season, the Super Bowl, and college football playoffs. The Game Day bundle — two large 2-topping pizzas at $9.99 each — typically appears during these periods. Back-to-school season (August–September) and the holiday shopping period (November–December) also tend to bring larger-than-usual sitewide discounts.
+                            Papa John's may run stronger promotions around major US sporting events, back-to-school season, and holidays. Availability is not universal, so check the official deals tab for your selected store before assuming a seasonal discount applies.
                         </p>
                         <h3 className="text-xl font-black uppercase text-[#1A3D17]">Delivery vs. Carryout — Which Saves More?</h3>
                         <p>
@@ -262,7 +262,7 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
                         </p>
                         <h3 className="text-xl font-black uppercase text-[#1A3D17]">Can I Stack Papa John's Coupons?</h3>
                         <p>
-                            Officially, Papa John's only allows one promo code per order. If you enter a second code, only the most recently entered code is applied. However, you can combine a promo code with Papa Rewards Papa Dough in most cases — this is the closest thing to stacking deals available. Choose the code that gives you the highest percentage discount for your specific cart before applying.
+                            Papa John's typically limits checkout to one promo code per order. Rewards credits and promo codes may have separate rules, so review the official cart summary carefully before paying.
                         </p>
                         <p>
                             We review this page periodically and recommend confirming every deal in the official checkout before placing an order. You can also check the <Link href="/papa-johns-rewards" className="text-[#cc0000] underline">Papa Rewards page</Link> or the <Link href="/menus-prices" className="text-[#cc0000] underline">full menu with prices</Link> for more information.
@@ -304,7 +304,7 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
                             <div className="font-black text-[#1A3D17] uppercase tracking-widest text-xs mb-2">Editor & Verification</div>
                             <h4 className="text-lg font-black text-[#cc0000] uppercase mb-4">Deals Team — PapaJohns-Menus.us</h4>
                             <p className="text-sm text-gray-500 font-medium leading-relaxed">
-                                Our deals team verifies every coupon code on this page before publishing. We check codes daily and remove expired offers immediately. If you find a code that has stopped working, let us know via the contact page and we'll update it within 24 hours.
+                                Our deals team reviews coupon examples and savings notes periodically, then recommends confirming each code in the official checkout because availability can change by store, account, and date. If you find outdated information, let us know via the contact page so we can review it.
                             </p>
                         </div>
                     </div>
