@@ -118,20 +118,20 @@ export default function Home() {
             'best-papa-johns-pizzas-for-families',
             'papa-johns-gluten-free-guide',
         ].includes(post.slug))
-        .slice(0, 10);
+        .slice(0, 8);
 
     const secondaryHomePostSections = [
         {
             eyebrow: "More Helpful Reads",
             title: "Comparisons & ordering decisions",
             description: "Use these guides when you are choosing between chains, comparing menu categories, or deciding what is actually worth ordering.",
-            posts: secondaryHomePosts.slice(0, 5),
+            posts: secondaryHomePosts.slice(0, 4),
         },
         {
             eyebrow: "Menu Details",
             title: "Prices, deals & item guides",
             description: "These articles go deeper into prices, promos, calories, and specific Papa Johns menu items so readers can compare before checkout.",
-            posts: secondaryHomePosts.slice(5, 10),
+            posts: secondaryHomePosts.slice(4, 8),
         },
     ];
 
@@ -415,39 +415,39 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div className="space-y-5 mb-10">
+                    <div className="space-y-6 mb-10">
                         {secondaryHomePostSections.map((section) => (
-                            <div key={section.title} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                            <div key={section.title} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                                 {section.posts.map((post) => (
-                                    <Link href={post.slug === 'best-pizza-delivery-near-me' ? `/${post.slug}` : `/posts/${post.slug}`} key={post.id} className="bg-[#fcfaf8] rounded-[1.25rem] p-4 border border-gray-100 hover:border-[#CCEE18] hover:shadow-lg transition-all duration-300 group grid grid-cols-[112px_1fr] gap-4 items-center">
-                                        <div className="aspect-square bg-gray-100 rounded-[1rem] flex items-center justify-center relative overflow-hidden shadow-inner">
+                                    <Link href={post.slug === 'best-pizza-delivery-near-me' ? `/${post.slug}` : `/posts/${post.slug}`} key={post.id} className="bg-white rounded-[1.35rem] border border-gray-100 hover:border-[#CCEE18] hover:shadow-xl transition-all duration-300 group overflow-hidden flex flex-col min-h-[420px]">
+                                        <div className="relative aspect-[4/3] w-full bg-gray-100 overflow-hidden">
                                             <Image
                                                 src={post.image}
                                                 alt={post.imageAlt || post.title}
                                                 fill
                                                 loading="lazy"
                                                 quality={75}
-                                                sizes="(max-width: 768px) 100vw, 33vw"
+                                                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                                                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                                             />
                                         </div>
 
-                                        <div className="min-w-0">
-                                            <div className="text-[9px] font-black text-gray-500 uppercase tracking-widest mb-2 flex flex-wrap items-center gap-2">
+                                        <div className="p-5 flex flex-col flex-1">
+                                            <div className="text-[9px] font-black text-gray-500 uppercase tracking-widest mb-3 flex flex-wrap items-center gap-2">
                                                 <span>{post.category}</span>
                                                 <span>•</span>
                                                 <span>{post.author}</span>
                                             </div>
 
-                                            <h4 className="text-base font-black text-[#1A3D17] uppercase leading-tight mb-2 group-hover:text-[#cc0000] transition-colors line-clamp-2" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                                            <h4 className="text-xl font-black text-[#1A3D17] uppercase leading-tight mb-3 group-hover:text-[#cc0000] transition-colors line-clamp-3" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
                                                 {post.title}
                                             </h4>
 
-                                            <p className="text-gray-600 text-xs font-bold leading-relaxed line-clamp-2">
+                                            <p className="text-gray-600 text-sm font-bold leading-relaxed line-clamp-3">
                                                 {post.excerpt}
                                             </p>
 
-                                            <div className="mt-3 flex items-center justify-between text-[#1A3D17] text-[9px] font-black uppercase tracking-widest group-hover:text-[#cc0000] transition-colors">
+                                            <div className="mt-auto pt-5 flex items-center justify-between text-[#1A3D17] text-[10px] font-black uppercase tracking-widest group-hover:text-[#cc0000] transition-colors">
                                                 Read Guide
                                                 <span className="bg-[#CCEE18] text-[#1A3D17] p-2 rounded-full group-hover:bg-[#cc0000] group-hover:text-white transition-colors">
                                                     <ArrowRight size={13} />
