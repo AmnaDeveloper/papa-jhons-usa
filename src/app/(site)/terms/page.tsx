@@ -82,7 +82,7 @@ export default function TermsPage() {
                         <ul className="list-disc pl-6 space-y-2">
                             <li>Promo codes must be entered exactly as shown on the official checkout page.</li>
                             <li>Coupons cannot be combined with other offers unless explicitly stated in the [specials menu](/menus-prices).</li>
-                            <li>We do not guarantee the validity of codes found on third-party websites. For verified codes, visit our [Papa Johns Coupons](/coupons) section.</li>
+                            <li>We do not guarantee the validity of codes found on third-party websites. For coupon notes and checkout tips, visit our [Papa Johns Coupons](/coupons) section.</li>
                         </ul>
                     </section>
 

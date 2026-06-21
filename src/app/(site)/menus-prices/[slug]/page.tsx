@@ -175,7 +175,7 @@ export default async function MenuItemBlogPage({ params }: Props) {
                                         Papa Johns Pepsi Guide 2026
                                     </h3>
                                     <p className="text-gray-500 text-xs font-bold mb-4 leading-relaxed tracking-tight underline decoration-[#CCEE18] decoration-2 underline-offset-4">
-                                        Prices, Calories, Pizza Pairings & Nutrition. The complete guide to the most ordered drink at Papa Johns.
+                                        Prices, Calories, Pizza Pairings & Nutrition. A practical guide to a commonly ordered drink at Papa Johns.
                                     </p>
                                     <div className="border-t border-gray-100 pt-4 flex items-center justify-between text-[#1A3D17] text-[10px] font-black uppercase tracking-widest group-hover:text-[#cc0000] transition-colors">
                                         Read Article

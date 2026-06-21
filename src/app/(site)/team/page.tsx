@@ -49,7 +49,7 @@ export default function TeamPage() {
             alt: "Marcus Webb, Deals and Coupons Researcher",
             accentFrom: "#1A3D17",
             accentTo: "#2e6e29",
-            bio: "Marcus joined our team in 2024 with one obsession: saving people money on food. He monitors Papa Johns promotions, app-exclusive deals, loyalty program updates, and limited-time offers on a daily basis.",
+            bio: "Marcus joined our team in 2024 with one focus: helping readers compare Papa Johns prices, rewards, app offers, and checkout terms before they order.",
             detail: "Before joining PapaJohns-Menus.us, Marcus spent 3 years running a coupon and cashback blog where he helped thousands of families reduce their grocery and food delivery bills. He personally tests every coupon code before it goes live on our Deals page.",
             specialties: ["Coupon Verification", "Price Tracking", "Loyalty Programs", "Deal Analysis"],
             location: "Chicago, Illinois",
@@ -69,7 +69,7 @@ export default function TeamPage() {
     ];
 
     const editorialSteps = [
-        "Prices are verified directly against the Papa Johns official app and website",
+        "Prices are reviewed against public Papa Johns menu information and official checkout details where available",
         "Coupon codes are personally tested before being published",
         "Nutritional data is cross-checked with official Papa Johns nutrition information",
         "All articles are reviewed and updated at least once per month",
@@ -85,7 +85,7 @@ export default function TeamPage() {
                     Meet Our Editorial Team
                 </h1>
                 <p className="text-white text-lg max-w-3xl mx-auto opacity-90 font-medium leading-relaxed">
-                    The independent team dedicated to bringing you the most accurate Papa Johns menu information, honest reviews, and verified deals.
+                    The independent team dedicated to bringing you practical Papa Johns menu information, honest reviews, and checkout-aware deal notes.
                 </p>
                 <p className="text-[#CCEE18] text-sm mt-4 font-semibold max-w-2xl mx-auto opacity-80">
                     We are not affiliated with Papa Johns International. We are everyday Americans who love pizza and believe that finding accurate food information should be free, fast, and honest.

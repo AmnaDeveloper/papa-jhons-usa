@@ -16,7 +16,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
     return {
         title: `Papa Johns Drinks Menu with Prices (${month})`,
-        description: `Complete 2026 guide to Papa Johns drinks. Prices for all sizes ($2.99–$3.49), calorie counts, caffeine breakdown, and guest-verified pizza pairings — Updated ${date}.`,
+        description: `Complete 2026 guide to Papa Johns drinks. Prices for common sizes, calorie counts, caffeine notes, and pizza pairing ideas — Updated ${date}.`,
         alternates: {
             canonical: `https://papajohns-menus.us/drinks`,
         },
@@ -152,7 +152,7 @@ export default async function DrinksPage() {
                                     Pepsi Guide 2026
                                 </h3>
                                 <p className="text-gray-500 text-xs font-bold mb-4 leading-relaxed tracking-tight underline decoration-[#CCEE18] decoration-2 underline-offset-4">
-                                    The complete guide to the most ordered drink. Nutrition facts and the best pair for your pepperoni pizza.
+                                    A practical guide to a commonly ordered drink, nutrition facts, and pairing ideas for pepperoni pizza.
                                 </p>
                                 <div className="border-t border-gray-100 pt-4 flex items-center justify-between text-[#1A3D17] text-[10px] font-black uppercase tracking-widest group-hover:text-[#cc0000] transition-colors">
                                     Read Article
@@ -185,7 +185,7 @@ export default async function DrinksPage() {
                         {/* Internal Ranking Section */}
                         <div className="bg-[#fcfaf8] border-4 border-dashed border-[#1A3D17]/10 rounded-[2.5rem] p-8 md:p-12">
                              <h3 className="text-2xl font-black text-[#1A3D17] uppercase mb-6 flex items-center gap-3 tracking-tighteritalic"><Coffee size={24} className="text-[#cc0000]"/> More Menu Categories</h3>
-                             <p className="text-gray-500 font-bold mb-8 italic">Pair your drinks with these verified favorites for the ultimate Papa Johns experience.</p>
+                             <p className="text-gray-500 font-bold mb-8 italic">Pair your drinks with popular menu items and confirm current sizes in checkout.</p>
                              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                  <Link href="/posts/classic-pizzas" className="flex items-center justify-between p-5 bg-white rounded-2xl border-2 border-transparent hover:border-[#CCEE18] shadow-sm group transition-all">
                                     <span className="font-black text-[#1A3D17] uppercase text-xs tracking-widest group-hover:text-[#cc0000]">Classic Pizzas</span>

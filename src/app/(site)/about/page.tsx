@@ -223,7 +223,7 @@ export default function AboutPage() {
                         </div>
                         <ul className="space-y-4">
                             {[
-                                "All menu prices are verified against the official Papa Johns app and website before publishing",
+                                "Menu prices are reviewed against public Papa Johns menu information and official checkout details where available",
                                 "Nutritional information is cross-checked with official Papa Johns nutrition data",
                                 "Coupon codes are tested before being listed on our Deals page",
                                 "Articles are reviewed and updated at least once per month",

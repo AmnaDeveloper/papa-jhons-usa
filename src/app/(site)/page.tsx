@@ -407,7 +407,7 @@ export default function Home() {
                                 so you know exactly what you're eating before you order.
                             </p>
                             <p>
-                                These guides are written by real people on our team — Marcus handles deals and pricing breakdowns, Sarah covers comparisons and family-focused guides, and Linda takes care of nutrition and dietary information. Every article below is based on our own research, real order tests, and the questions readers actually ask us.
+                                These guides are written by real people on our team — Marcus handles deals and pricing breakdowns, Sarah covers comparisons and family-focused guides, and Linda takes care of nutrition and dietary information. Every article below is based on public menu research, official-source checks where available, checkout guidance, and the questions readers actually ask us.
                             </p>
                             <p>
                                 Whether you're trying to stretch a tight budget, feeding a hungry family, managing dietary needs, or just curious how Papa Johns stacks up against the competition — there's a guide below for you.
@@ -540,7 +540,7 @@ export default function Home() {
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {[
-                            { icon: "🍕", title: "Accurate Prices", desc: "We check Papa Johns prices weekly across multiple US locations so you always know what to expect before ordering." },
+                            { icon: "🍕", title: "Price Planning", desc: "We review public menu and checkout information so readers know what to verify before ordering." },
                             { icon: "💰", title: "Working Deals Only", desc: "No expired coupons. Our deals researcher Marcus Webb personally tests every promo code before it goes live." },
                             { icon: "🥗", title: "Real Nutrition Info", desc: "Calories, macros, and allergen details for every menu item — reviewed by our nutrition specialist Linda Torres." },
                             { icon: "📍", title: "Local Store Info", desc: "Find your nearest Papa Johns with hours, address, and current local deals in seconds." },

@@ -265,7 +265,7 @@ function RichTemplate({ data, month }: { data: RichLocationData; month: string }
                         </div>
                         <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 shadow-xl">
                             <div className="text-[#CCEE18] text-3xl font-black mb-1">{data.stats.verifiedYear}</div>
-                            <div className="text-[10px] uppercase font-black tracking-widest text-white/60">Pricing Verified</div>
+                            <div className="text-[10px] uppercase font-black tracking-widest text-white/60">Guide Year</div>
                         </div>
                     </div>
                 </div>

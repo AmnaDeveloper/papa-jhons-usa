@@ -744,6 +744,11 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                                     {post.title}
                                 </h2>
                                 <LastUpdated />
+                                <div className="mt-5 rounded-2xl border border-[#1A3D17]/10 bg-[#fcfaf8] p-5 text-sm leading-relaxed text-gray-700">
+                                    <p>
+                                        <strong className="text-[#1A3D17]">Editorial note:</strong> This guide is written for planning purposes by an independent Papa Johns menu site. We review public menu information, official brand resources where available, and reader corrections, but prices, deals, nutrition, and availability can change by location. Always confirm final details in the official Papa Johns app or with your local store before ordering.
+                                    </p>
+                                </div>
                                 <div className="blog-content mt-4">
                                     <div dangerouslySetInnerHTML={{ __html: post.content }} />
                                 </div>

@@ -105,7 +105,7 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
                             <Check size={16} strokeWidth={3} />
                         </div>
                         <p className="text-xs font-bold text-[#1A3D17]">
-                            Last verified: May 2, 2026 — reviewed by our dedicated deals team
+                            Last reviewed: May 2, 2026 — confirm every offer in the official checkout
                         </p>
                     </div>
 

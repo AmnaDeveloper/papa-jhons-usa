@@ -1,5 +1,5 @@
 import React from 'react';
-import { User, Twitter, Linkedin, Globe } from 'lucide-react';
+import { CheckCircle, ExternalLink } from 'lucide-react';
 
 interface AuthorBioProps {
   authorName: string;
@@ -9,21 +9,27 @@ const AuthorBio: React.FC<AuthorBioProps> = ({ authorName }) => {
   const authors: Record<string, any> = {
     "Deals Team": {
       name: "Deals Team",
-      role: "Price & Coupon Experts",
-      bio: "Our dedicated Deals Team monitors Papa Johns prices and verified promo codes daily. We are committed to helping pizza fans save money on every order.",
-      avatar: "🤝"
+      role: "Deals & Price Review",
+      bio: "We review Papa Johns deal examples, menu-price notes, rewards terms, and checkout guidance using public offers, official ordering pages, and reader correction reports. Promotions can change by store and account, so every article asks readers to confirm the final cart before paying.",
+      avatar: "🤝",
+      method: "Reviewed against public Papa Johns offer pages, app/checkout wording where available, and reader-submitted corrections.",
+      sources: ["PapaJohns.com deals and rewards pages", "Official checkout terms", "Reader corrections"]
     },
     "Sarah Jenkins": {
       name: "Sarah Jenkins",
-      role: "Senior Food Critic & Nutritionist",
-      bio: "Sarah is a food industry veteran with over 10 years of experience in menu analysis and nutritional research. She specializes in fast-food value comparisons.",
-      avatar: "👩‍🍳"
+      role: "Family & Menu Guide Editor",
+      bio: "Sarah writes practical ordering guides for families, group meals, and menu comparisons. Her articles focus on order planning, portion value, picky-eater choices, and when to verify item availability before checkout.",
+      avatar: "👩‍🍳",
+      method: "Reviewed using public menu information, official nutrition/allergen pages, and practical order-planning scenarios.",
+      sources: ["Papa Johns menu pages", "Official nutrition information", "Internal editorial review"]
     },
     "default": {
       name: authorName || "Editorial Team",
-      role: "Menu Contributor",
-      bio: "Our editorial team researches and verifies every piece of information to ensure you get the most accurate Papa Johns menu details.",
-      avatar: "🍕"
+      role: "Editorial Review",
+      bio: "Our editorial team maintains independent Papa Johns menu guides for planning purposes. We avoid presenting prices, coupons, nutrition, or store details as final because availability can change by location.",
+      avatar: "🍕",
+      method: "Reviewed against public menu information, official brand resources, and page-specific correction reports.",
+      sources: ["Official Papa Johns resources", "Public menu information", "Reader corrections"]
     }
   };
 
@@ -47,12 +53,18 @@ const AuthorBio: React.FC<AuthorBioProps> = ({ authorName }) => {
           <p className="text-gray-500 font-medium leading-relaxed mb-6 max-w-2xl">
             {author.bio}
           </p>
-          <div className="flex items-center justify-center md:justify-start gap-4">
-            <span className="text-[10px] font-black text-gray-400 uppercase tracking-widest">Follow Our Updates:</span>
-            <div className="flex gap-3">
-              <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center text-gray-400 hover:text-[#cc0000] border border-gray-100 cursor-pointer transition-colors shadow-sm"><Twitter size={14} /></div>
-              <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center text-gray-400 hover:text-[#cc0000] border border-gray-100 cursor-pointer transition-colors shadow-sm"><Linkedin size={14} /></div>
-              <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center text-gray-400 hover:text-[#cc0000] border border-gray-100 cursor-pointer transition-colors shadow-sm"><Globe size={14} /></div>
+          <div className="grid gap-4 md:grid-cols-2 text-left">
+            <div className="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm">
+              <div className="flex items-center gap-2 text-[10px] font-black text-[#1A3D17] uppercase tracking-widest mb-2">
+                <CheckCircle size={14} className="text-[#cc0000]" /> Review Method
+              </div>
+              <p className="text-xs font-bold text-gray-500 leading-relaxed">{author.method}</p>
+            </div>
+            <div className="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm">
+              <div className="flex items-center gap-2 text-[10px] font-black text-[#1A3D17] uppercase tracking-widest mb-2">
+                <ExternalLink size={14} className="text-[#cc0000]" /> Sources Checked
+              </div>
+              <p className="text-xs font-bold text-gray-500 leading-relaxed">{author.sources.join(' • ')}</p>
             </div>
           </div>
         </div>
