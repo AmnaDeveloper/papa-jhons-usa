@@ -128,7 +128,7 @@ export default function Footer() {
                             <li><Link href="/cookies" className="hover:text-white transition-colors">Cookies Policy</Link></li>
                         </ul>
 
-                        <h3 className="text-[#CCEE18] text-lg font-bold mb-6">Official Site</h3>
+                        <h3 className="text-[#CCEE18] text-lg font-bold mb-6">External Brand Site</h3>
                         <ul className="space-y-4 text-[13px]">
                             <li>
                                 <a href="https://www.papajohns.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-1.5 group">

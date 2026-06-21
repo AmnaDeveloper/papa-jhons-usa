@@ -119,14 +119,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${baseUrl}/posts/papa-johns-50-off-deal`,
       lastModified: '2026-05-02T00:00:00.000Z',
-      changeFrequency: 'daily',
-      priority: 0.95,
+      changeFrequency: 'weekly',
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/posts/papa-johns-free-delivery`,
       lastModified: '2026-05-02T00:00:00.000Z',
-      changeFrequency: 'daily',
-      priority: 0.95,
+      changeFrequency: 'weekly',
+      priority: 0.85,
     },
     {
       url: `${baseUrl}/posts/papa-johns-closing-stores-2026`,

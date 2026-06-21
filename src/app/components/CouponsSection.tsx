@@ -196,7 +196,7 @@ export default function CouponsSection() {
                                             <div className="flex-1 p-8">
                                                 <div className="flex items-center gap-2 mb-3">
                                                      <span className="bg-[#1A3D17] text-[#CCEE18] text-[9px] font-black px-2 py-0.5 rounded-sm tracking-widest uppercase">Verified Deal</span>
-                                                     <span className="text-[10px] font-bold text-gray-600 uppercase tracking-widest leading-none">Official Promo</span>
+                                                     <span className="text-[10px] font-bold text-gray-600 uppercase tracking-widest leading-none">Check Terms</span>
                                                 </div>
                                                 <h4 className="text-2xl font-black text-[#1A3D17] leading-tight mb-3" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
                                                     {coupon.title}

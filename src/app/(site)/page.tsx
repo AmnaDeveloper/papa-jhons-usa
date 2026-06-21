@@ -168,7 +168,7 @@ export default function Home() {
           "name": "What are the latest Papa John's promo codes and deals?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Papa John's regularly offers promo codes including 25% off your entire order, BOGO (Buy One Get One) pizza deals, and $10 off orders over $30. The best way to get active promo codes is to join Papa Rewards, check the Papa John's app, or visit papajohns-menus.us/coupons for verified deals updated daily."
+            "text": "Papa John's may offer promo codes, BOGO-style deals, carryout specials, or minimum-spend discounts depending on your location and current checkout terms. The best way to save is to join Papa Rewards, check the Papa John's app, and compare current offers before paying."
           }
         },
         {
@@ -593,7 +593,7 @@ export default function Home() {
                             },
                             {
                                 q: "What are the latest Papa John's promo codes and deals?",
-                                a: <>Papa John's regularly offers promo codes including 25% off your entire order, BOGO pizza deals, and $10 off orders over $30. The best way to save is to join Papa Rewards, use the Papa John's app, or check our verified <Link href="/coupons" className="text-[#cc0000] underline font-bold">Papa John's coupons page &rarr;</Link> &mdash; updated daily for April 2026.</>,
+                                a: <>Papa John's may offer promo codes, BOGO-style deals, carryout specials, or minimum-spend discounts depending on your location and current checkout terms. The best way to save is to join Papa Rewards, use the Papa John's app, and compare notes on our <Link href="/coupons" className="text-[#cc0000] underline font-bold">Papa John's coupons page &rarr;</Link> before paying.</>,
                             },
                             {
                                 q: "What is the Papa John's delivery fee in the USA?",

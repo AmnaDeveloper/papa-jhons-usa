@@ -142,7 +142,7 @@ export default function MenusAndPricesPage() {
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#CCEE18] rounded-full -mr-64 -mt-64 opacity-5 pointer-events-none"></div>
                 <div className="container mx-auto px-4 relative z-10">
                     <span className="inline-block bg-[#CCEE18] text-[#1A3D17] font-black uppercase tracking-[0.4em] text-[10px] px-6 py-2.5 rounded-full mb-6 shadow-lg">
-                        Official 2026 USA Directory
+                        Independent 2026 USA Menu Guide
                     </span>
                     <h1
                         className="text-4xl md:text-7xl font-black uppercase tracking-tighter mb-4"
@@ -161,7 +161,7 @@ export default function MenusAndPricesPage() {
                             Welcome to the complete <Link href="/" className="text-[#cc0000] underline font-black">Papa Johns menu directory</Link> for the USA — updated April 2026. Every pizza, side, drink, and specialty item is listed below with its current price and nutritional profile.
                         </p>
                         <p>
-                            Our data is verified across 5,000+ US locations to ensure you have the most accurate information before you order. Whether you&apos;re checking prices for a <Link href="/menus-prices/pepperoni-pizza" className="text-[#cc0000] underline font-black">Large Pepperoni Pizza</Link> ($17.99) or the new <Link href="/posts/papa-johns-pan-pizza" className="text-[#cc0000] underline font-black">Pan Pizza</Link> ($11.99), we have it all. Visit our <Link href="/coupons" className="text-[#cc0000] underline font-black">coupons page</Link> for the latest deals.
+                            Our data is reviewed against public menu information and official checkout examples so readers can estimate prices before they order. Whether you&apos;re checking prices for a <Link href="/menus-prices/pepperoni-pizza" className="text-[#cc0000] underline font-black">Large Pepperoni Pizza</Link> ($17.99) or the new <Link href="/posts/papa-johns-pan-pizza" className="text-[#cc0000] underline font-black">Pan Pizza</Link> ($11.99), use this page as a planning guide and confirm final totals at checkout. Visit our <Link href="/coupons" className="text-[#cc0000] underline font-black">coupons page</Link> for savings notes.
                         </p>
                     </div>
 
@@ -253,7 +253,7 @@ export default function MenusAndPricesPage() {
                                         </div>
                                         <div className="flex items-center justify-between mb-2">
                                             <span className="text-[#1A3D17] font-black text-[8px] uppercase tracking-widest opacity-60">
-                                                {item.type === 'item' ? 'Official Menu' : 'Guide'}
+                                                {item.type === 'item' ? 'Menu Item' : 'Guide'}
                                             </span>
                                             {item.rating && (
                                                 <div className="flex items-center gap-0.5 text-yellow-500 text-[9px] font-black">

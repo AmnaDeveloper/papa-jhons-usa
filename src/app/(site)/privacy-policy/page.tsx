@@ -5,8 +5,8 @@ import Link from 'next/link';
 import FAQJsonLd from '../../components/FAQJsonLd';
 
 export const metadata: Metadata = generatePageSEO(
-    "Privacy Policy - Official Papa John's Menu & Promotions",
-    "Read our Privacy Policy to understand how we collect, use, and protect your personal information when you use our Papa John's menu and promotion services.",
+    "Privacy Policy - PapaJohns-Menus.us",
+    "Read how PapaJohns-Menus.us, an independent informational guide, handles contact messages, analytics, cookies, and advertising data.",
     "/privacy-policy",
     "Papa Johns privacy policy, data protection, pizza menu privacy, customer information"
 );
@@ -71,12 +71,12 @@ export default function PrivacyPolicyPage() {
                             2. Information We Collect
                         </h2>
                         <p>
-                            We collect personal information that you provide to us such as name, address, contact information, passwords and security data, and payment information.
+                            We collect only limited information that readers voluntarily provide through the contact form or basic technical information collected through analytics, cookies, and security tools. We do not create customer accounts, process Papa Johns orders, collect payment card details, or store passwords for pizza purchases.
                         </p>
                         <ul className="list-disc pl-6 space-y-2 font-medium">
-                            <li><strong>Personal Information:</strong> We collect info you voluntarily provide when you subscribe to our [Coupons](/coupons) or contact us.</li>
-                            <li><strong>Device Information:</strong> Information such as your IP address and browser characteristics are collected automatically when you visit our site.</li>
-                            <li><strong>Cookies:</strong> We use cookies to improve your user experience and for analytics purposes.</li>
+                            <li><strong>Contact information:</strong> If you contact us, we may receive your name, email address, message content, and any details you choose to include.</li>
+                            <li><strong>Device and usage information:</strong> Analytics tools may collect information such as browser type, approximate location, pages viewed, and referring pages.</li>
+                            <li><strong>Cookies:</strong> We may use cookies for analytics, advertising, security, and basic site functionality.</li>
                         </ul>
                     </section>
 
@@ -88,10 +88,10 @@ export default function PrivacyPolicyPage() {
                             We use personal information collected via our website for a variety of business purposes described below. We process your personal information for these purposes in reliance on our legitimate business interests, in order to enter into or perform a contract with you, with your consent, and/or for compliance with our legal obligations.
                         </p>
                         <ul className="list-disc pl-6 space-y-3">
-                            <li><strong>To facilitate account creation:</strong> If you choose to link your account with us to a third-party account (such as your Google or Facebook account).</li>
-                            <li><strong>To send marketing communications:</strong> We may send you information about our [Latest Pizzas](/menus-prices) and [Special Offers](/coupons).</li>
-                            <li><strong>For Order Fulfillment:</strong> To process and deliver your pizza orders accurately.</li>
-                            <li><strong>To respond to user inquiries:</strong> To provide support and resolve issues related to our [Store Locator](/store-locator).</li>
+                            <li><strong>To respond to messages:</strong> We use contact form submissions to reply to reader questions, corrections, or feedback.</li>
+                            <li><strong>To improve the site:</strong> Analytics help us understand which menu guides, coupon pages, and location pages readers find useful.</li>
+                            <li><strong>To keep content accurate:</strong> Reader feedback may help us identify outdated prices, broken links, or unclear page sections.</li>
+                            <li><strong>For advertising and measurement:</strong> Advertising partners may use cookies or similar technologies as described in this policy.</li>
                         </ul>
                     </section>
 

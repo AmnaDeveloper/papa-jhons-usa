@@ -3,8 +3,8 @@ import CouponsClient from '../../components/CouponsClient';
 import { getMonthYear } from '../../../lib/utils/date';
 
 export const metadata: Metadata = {
-    title: "Papa John's Coupons & Promo Codes May 2026 – Up to 50% Off | PapaJohns-Menus.us",
-    description: "19+ verified Papa John's coupon codes updated daily for May 2026. Save up to 50% with working promo codes, BOGO deals, and free delivery codes.",
+    title: "Papa John's Coupons & Promo Codes May 2026 | PapaJohns-Menus.us",
+    description: "Recently reviewed Papa John's coupon notes, promo code examples, carryout deals, BOGO-style offers, and savings tips for May 2026. Availability varies by store.",
     keywords: "papa johns coupons, papa johns promo codes, papa johns discount code, papa johns deals 2026, papa johns coupon code today, papa johns free delivery code, papa johns bogo deal",
     authors: [{ name: "PapaJohns-Menus.us Deals Team" }],
     robots: "index, follow",
@@ -12,8 +12,8 @@ export const metadata: Metadata = {
         canonical: "https://papajohns-menus.us/coupons"
     },
     openGraph: {
-        title: "Papa John's Coupons & Promo Codes May 2026 – Up to 50% Off",
-        description: "19+ verified Papa John's coupon codes updated daily. BOGO deals, 25% off, free delivery codes for May 2026.",
+        title: "Papa John's Coupons & Promo Codes May 2026",
+        description: "Recently reviewed Papa John's coupon notes, BOGO-style offers, carryout deals, and savings tips for May 2026. Availability varies by location.",
         url: "https://papajohns-menus.us/coupons",
         type: "website",
         images: [
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Papa John's Coupons & Promo Codes May 2026 – Up to 50% Off",
-        description: "19+ verified Papa John's coupon codes updated daily. Get BOGO, 25% off & free delivery codes.",
+        title: "Papa John's Coupons & Promo Codes May 2026",
+        description: "Recently reviewed Papa John's coupon notes, promo examples, and ordering tips. Check official checkout for current eligibility.",
     }
 };
 
@@ -60,13 +60,13 @@ export default function CouponsPage() {
         },
         {
             id: 3,
-            discount: "50%",
+            discount: "SAVE",
             sub: "Carryout",
-            title: "50% Off All Pizzas — Carryout Only",
-            desc: "Get 50% off all regular menu-priced pizzas when you order carryout. Any size, any crust, any toppings. Discount applied automatically — no code needed.",
+            title: "Carryout Pizza Savings — Store Terms Vary",
+            desc: "Carryout orders may show pizza discounts or store-level specials. Check your official cart because availability, eligible items, and discount amounts vary by location.",
             code: null,
-            noCodeLabel: "Auto-Applied",
-            expiry: "Ongoing deal",
+            noCodeLabel: "Check Cart",
+            expiry: "Terms vary",
             tags: ["Carryout Only"],
             featured: false,
             color: "green"
@@ -143,11 +143,11 @@ export default function CouponsPage() {
         },
         {
             q: "What is the best Papa John's coupon code right now?",
-            a: "The best Papa John's deals for May 2026 are: BOGO4U for buy one get one free pizza, PIZZA25 for 25% off your entire order, and the 50% off carryout deal which applies automatically with no code needed. We update our codes daily."
+            a: "The best Papa John's deal depends on your location, cart, and whether you choose delivery or carryout. Check official checkout for live eligibility, then compare any BOGO-style offer, percentage-off code, and carryout special before paying."
         },
         {
             q: "Does Papa John's have a free delivery code?",
-            a: "Yes! Papa John's offers free delivery on orders of $40 or more — no code needed, it applies automatically. The standard delivery fee is $3.99–$5.99. You can also get exclusive free delivery codes by signing up for Papa John's email or text alerts."
+            a: "Free delivery offers may appear at participating locations or during limited promotions, but they are not guaranteed for every store or order. Check the official checkout page for the current delivery fee and any available free-delivery offer."
         },
         {
             q: "What is Papa Rewards and is it worth it?",
@@ -159,11 +159,11 @@ export default function CouponsPage() {
         },
         {
             q: "Does Papa John's do BOGO (Buy One Get One) deals?",
-            a: "Yes! Papa John's regularly offers BOGO deals. The current BOGO deal lets you buy one large pizza at full price and get a second large pizza free using code BOGO4U. These offers are limited-time so check back often."
+            a: "Papa John's sometimes offers BOGO-style deals, but terms vary by location and date. Always confirm the offer in the official Papa Johns checkout before relying on it."
         },
         {
             q: "What is the Papa John's carryout special?",
-            a: "Papa John's carryout deal gives you 50% off all regular menu-price pizzas when you order for carryout — regardless of size, crust, or toppings. No coupon code needed, the discount applies automatically when you select 'carryout' at checkout."
+            a: "Carryout specials can be one of the strongest ways to save, but exact discounts vary by store, time, and promotion. Compare carryout and delivery totals in the official checkout before placing the order."
         },
         {
             q: "Why is my Papa John's coupon code not working?",
@@ -186,7 +186,7 @@ export default function CouponsPage() {
                 "@type": "WebPage",
                 "@id": "https://papajohns-menus.us/coupons",
                 "name": "Papa John's Coupons & Promo Codes May 2026",
-                "description": "19+ verified Papa John's coupon codes and promo codes for May 2026. Updated daily by our deals team.",
+                "description": "Recently reviewed Papa John's coupon notes, promo examples, and ordering tips for May 2026. Availability varies by location and checkout terms.",
                 "url": "https://papajohns-menus.us/coupons",
                 "datePublished": "2026-01-01",
                 "dateModified": new Date().toISOString().split('T')[0],
@@ -212,7 +212,7 @@ export default function CouponsPage() {
             {
                 "@type": "ItemList",
                 "name": "Papa John's Coupon Codes May 2026",
-                "description": "Active Papa John's promo codes and deals",
+                "description": "Papa John's promo examples and deals to verify before checkout",
                 "itemListElement": coupons.map((c, i) => ({
                     "@type": "ListItem",
                     "position": i + 1,

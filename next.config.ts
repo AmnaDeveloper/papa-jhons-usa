@@ -29,7 +29,12 @@ const nextConfig: NextConfig = {
             key: "Strict-Transport-Security",
             value: "max-age=31536000; includeSubDomains",
           },
-          { key: "X-Robots-Tag", value: "all" },
+        ],
+      },
+      {
+        source: "/seo-tools",
+        headers: [
+          { key: "X-Robots-Tag", value: "noindex, nofollow, noarchive" },
         ],
       },
       {
@@ -112,6 +117,7 @@ const nextConfig: NextConfig = {
       { source: "/login", destination: "/", permanent: false },
       { source: "/auth", destination: "/", permanent: false },
       { source: "/admin", destination: "/", permanent: false },
+      { source: "/seo-tools", destination: "/", permanent: false },
       { source: '/menus-prices/desserts', destination: '/posts/papa-johns-desserts', permanent: true },
     ];
   },

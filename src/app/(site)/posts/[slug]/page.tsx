@@ -26,7 +26,6 @@ const familyPizzaExcerpt = "Sarah Jenkins shares what she would actually order f
 const familyPizzaAuthor = 'Sarah Jenkins';
 const familyPizzaDate = '2026-06-14T00:00:00Z';
 const familyPizzaImage = '/classic-pizzas.png';
-
 // Generate static params for all posts
 export async function generateStaticParams() {
     return posts.map((post) => ({
@@ -273,8 +272,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
             break;
         case 'papa-johns-50-off-deal':
             meta = {
-                title: `Papa Johns 50% Off Deal — How to Get It Today (${month})`,
-                description: `Get Papa Johns 50% off deals today — carryout special, BOGO pizza, promo codes, and every way to save 50% on your order right now. Updated daily.`,
+                title: `Papa Johns 50% Off Deal Guide: Carryout, BOGO & Promo Savings (${month})`,
+                description: `Understand Papa Johns 50% off deal searches, carryout savings, BOGO-style offers, and promo code checks. Confirm current terms in your local official cart.`,
             };
             break;
         case 'papa-johns-closing-stores-2026':

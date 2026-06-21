@@ -830,7 +830,7 @@
         "name": "Is there a Papa Johns 50% off deal today?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes — the Papa Johns carryout special gives you 50% off all regular menu-priced pizzas automatically when you choose carryout at checkout. No code needed. This deal is available every day at most US locations. For delivery orders, use the BOGO code BOGO4U for equivalent savings on two pizzas."
+          "text": "Papa Johns sometimes shows strong carryout discounts, BOGO-style offers, or store-level specials, but availability changes by location, date, and order type. Check the official checkout before paying to confirm the current discount and eligible items."
         }
       },
       {
@@ -838,7 +838,7 @@
         "name": "What is the Papa Johns 50% off carryout code?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No code is needed for the Papa Johns 50% off carryout deal. Simply select Carryout as your order type on PapaJohns.com or the app, add your pizzas, and the 50% discount applies automatically at checkout."
+          "text": "Some carryout offers do not require a code, while others depend on a visible promo, app offer, or local store deal. Select Carryout, review the official cart total, and only use the offer if the discount appears before checkout."
         }
       },
       {

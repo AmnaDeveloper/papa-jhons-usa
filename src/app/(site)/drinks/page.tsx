@@ -243,7 +243,7 @@ export default async function DrinksPage() {
                         <div className="md:w-1/3">
                             <span className="inline-block bg-[#cc0000] text-white font-black uppercase tracking-widest text-[10px] px-6 py-2 rounded-full mb-4">Safety & Health</span>
                             <h2 className="text-3xl md:text-5xl font-black text-[#1A3D17] uppercase tracking-tighter mb-6">Dietary <span className="text-[#cc0000]">Insights</span></h2>
-                            <p className="text-gray-500 font-bold leading-relaxed">Official PepsiCo nutrition breakdown for Papa Johns beverages. We prioritize clarity for our health-conscious guests.</p>
+                            <p className="text-gray-500 font-bold leading-relaxed">Beverage nutrition notes and pairing guidance for Papa Johns drinks. Always confirm ingredients and serving sizes with the official checkout or package label before ordering.</p>
                         </div>
                         <div className="md:w-2/3 grid grid-cols-2 lg:grid-cols-3 gap-4 w-full">
                             {(item.allergens || []).map((allergen) => (

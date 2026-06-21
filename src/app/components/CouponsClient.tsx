@@ -46,7 +46,7 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#CCEE18] rounded-full -mr-64 -mt-64 opacity-5 pointer-events-none"></div>
                 <div className="container mx-auto px-4 relative z-10">
                     <div className="inline-flex items-center gap-2 bg-[#CCEE18] text-[#1A3D17] font-black uppercase tracking-[0.2em] text-[10px] px-6 py-2.5 rounded-full mb-6 shadow-lg">
-                        <CheckCircle2 size={12} /> Verified & Updated Daily — May 2026
+                        <CheckCircle2 size={12} /> Recently Reviewed — May 2026
                     </div>
                     <h1
                         className="text-4xl md:text-7xl font-black uppercase tracking-tighter mb-4"
@@ -55,13 +55,13 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
                         Papa John's <span className="text-[#CCEE18]">Coupons &amp; Promo Codes</span>
                     </h1>
                     <p className="text-lg text-white/80 font-bold max-w-2xl mx-auto tracking-wide mb-6">
-                        19+ verified Papa John's coupon codes updated daily. Save up to 50% on pizzas, sides & delivery orders.
+                        Papa John's coupon notes, promo examples, and ordering tips. Availability changes by store, cart, and official checkout terms.
                     </p>
                     <div className="flex flex-wrap justify-center gap-6 text-sm text-white/70 font-bold uppercase tracking-widest">
-                        <span className="flex items-center gap-1"><Check size={14} className="text-[#CCEE18]" /> 19 Active Codes</span>
+                        <span className="flex items-center gap-1"><Check size={14} className="text-[#CCEE18]" /> Promo Examples</span>
                         <span className="flex items-center gap-1"><Check size={14} className="text-[#CCEE18]" /> Last checked: May 2, 2026</span>
-                        <span className="flex items-center gap-1"><Check size={14} className="text-[#CCEE18]" /> Up to 50% Off</span>
-                        <span className="flex items-center gap-1"><Check size={14} className="text-[#CCEE18]" /> Free Delivery Available</span>
+                        <span className="flex items-center gap-1"><Check size={14} className="text-[#CCEE18]" /> Store Terms Vary</span>
+                        <span className="flex items-center gap-1"><Check size={14} className="text-[#CCEE18]" /> Verify Before Checkout</span>
                     </div>
                 </div>
             </section>
@@ -71,10 +71,10 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
                 <div className="max-w-[1200px] mx-auto px-4">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                         {[
-                            { label: "Active Codes", val: "19", color: "text-[#cc0000]" },
-                            { label: "Max Discount", val: "50%", color: "text-[#1A3D17]" },
-                            { label: "Best Deal", val: "BOGO", color: "text-[#cc0000]" },
-                            { label: "Delivery", val: "Free", color: "text-[#1A3D17]" },
+                            { label: "Code Examples", val: "8", color: "text-[#cc0000]" },
+                            { label: "Best Check", val: "Cart", color: "text-[#1A3D17]" },
+                            { label: "Deal Type", val: "BOGO", color: "text-[#cc0000]" },
+                            { label: "Savings Tip", val: "Carryout", color: "text-[#1A3D17]" },
                         ].map((stat, i) => (
                             <div key={i} className="text-center">
                                 <div className={`text-3xl font-black ${stat.color} mb-1 transition-transform hover:scale-110 duration-300`}>{stat.val}</div>
@@ -208,7 +208,7 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
                             {[
                                 { icon: <Smartphone />, title: "Download the App", desc: "The Papa John's app has exclusive location-based deals not available on the website. Check it before every order." },
                                 { icon: <Star />, title: "Join Papa Rewards", desc: "Earn 1 point per $1 spent. Every 75 points = $10 in Papa Dough. Free to join — use your rewards on any order." },
-                                { icon: <Car />, title: "Choose Carryout", desc: "Carryout automatically gets 50% off all pizzas — no code needed. You save on delivery fees too." },
+                                { icon: <Car />, title: "Compare Carryout", desc: "Carryout often has stronger store-level deals and avoids delivery fees. Check your official cart before paying." },
                                 { icon: <Mail />, title: "Sign Up for Texts", desc: "Text JOIN to 47272 to get exclusive weekly discounts sent straight to your phone — not available anywhere else." },
                                 { icon: <Gift />, title: "Birthday Reward", desc: "Papa Rewards members get a free dessert on their birthday. Sign up at least a week before your birthday." },
                                 { icon: <Gamepad2 />, title: "Game Day Bundles", desc: "During major sporting events, Papa John's runs special bundle deals. Two large 2-topping pizzas for just $9.99 each." }
@@ -233,7 +233,7 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
                             The standout deal this month is the <strong>BOGO free pizza offer</strong> using code BOGO4U — buy one large pizza and get a second one completely free. This is one of the best-value offers Papa John's runs and it comes around several times a year. If you prefer a simpler percentage discount, PIZZA25 takes 25% off your entire order with no minimum spend.
                         </p>
                         <p>
-                            For carryout customers, the <strong>50% off all pizzas</strong> deal is the most consistent saving available — it requires no coupon code and applies automatically when you select carryout at checkout. On a large specialty pizza priced at $16.99, that's over $8 saved instantly.
+                            For carryout customers, store-level carryout specials can be one of the strongest savings available. Exact discounts vary by location and date, so compare the carryout and delivery totals in the official checkout before paying.
                         </p>
                         <h3 className="text-xl font-black uppercase text-[#1A3D17]">How Papa Rewards Works</h3>
                         <p>
@@ -247,7 +247,7 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
                             The Papa John's mobile app is arguably the best source of exclusive deals. When you log in and select your local store, the app surfaces location-specific offers that are often not advertised anywhere else. These include carryout-only specials, large order discounts, and limited-time promotions run by individual franchise locations.
                         </p>
                         <p>
-                            The app also sends push notifications for flash sales — deals that might only last a few hours. Turning on notifications for the Papa John's app is one of the easiest ways to catch a 40–50% off deal before it expires.
+                            The app can also send push notifications for limited-time offers. Turning on notifications for the Papa John's app is one way to catch short promotions before they expire.
                         </p>
                         <h3 className="text-xl font-black uppercase text-[#1A3D17]">Seasonal Deals and Holiday Promos</h3>
                         <p>
@@ -255,17 +255,17 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
                         </p>
                         <h3 className="text-xl font-black uppercase text-[#1A3D17]">Delivery vs. Carryout — Which Saves More?</h3>
                         <p>
-                            Choosing carryout over delivery almost always saves you more money at Papa John's. Here is why: the carryout deal gives you 50% off all pizzas automatically. On top of that, you avoid the delivery fee of $3.99–$5.99 and you are not expected to tip a driver. On a $25 pizza order, switching from delivery to carryout could save $16–$18 in total.
+                            Choosing carryout over delivery often saves money because you avoid the delivery fee and tip, and some stores show carryout-only offers. The exact savings depend on your cart, location, and current promotions.
                         </p>
                         <p>
-                            If you do need delivery, make sure your order reaches $40 to trigger free delivery or use a <Link href="/posts/papa-johns-free-delivery" className="text-[#cc0000] underline">Papa Johns free delivery code</Link>. Below that threshold, the delivery fee applies in full.
+                            If you do need delivery, check whether your store shows any free-delivery offer or minimum-order deal in checkout. Below any active threshold, the delivery fee usually applies.
                         </p>
                         <h3 className="text-xl font-black uppercase text-[#1A3D17]">Can I Stack Papa John's Coupons?</h3>
                         <p>
                             Officially, Papa John's only allows one promo code per order. If you enter a second code, only the most recently entered code is applied. However, you can combine a promo code with Papa Rewards Papa Dough in most cases — this is the closest thing to stacking deals available. Choose the code that gives you the highest percentage discount for your specific cart before applying.
                         </p>
                         <p>
-                            We verify every code on this page before publishing and update our list daily. If a code has stopped working, refresh this page — we'll have updated the listing. You can also check the <Link href="/papa-johns-rewards" className="text-[#cc0000] underline">Papa Rewards page</Link> or the <Link href="/menus-prices" className="text-[#cc0000] underline">full menu with prices</Link> for more information.
+                            We review this page periodically and recommend confirming every deal in the official checkout before placing an order. You can also check the <Link href="/papa-johns-rewards" className="text-[#cc0000] underline">Papa Rewards page</Link> or the <Link href="/menus-prices" className="text-[#cc0000] underline">full menu with prices</Link> for more information.
                         </p>
                     </article>
 

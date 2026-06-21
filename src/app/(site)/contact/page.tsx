@@ -5,8 +5,8 @@ import ContactForm from '../../components/ContactForm';
 import Link from 'next/link';
 
 export const metadata: Metadata = generatePageSEO(
-    "Contact Us - Official Papa John's Menu Support & Feedback",
-    "Have questions? Contact Papa John's for support regarding our menu, promo codes, or your recent orders. We're here to help you get the best pizza experience.",
+    "Contact PapaJohns-Menus.us - Independent Menu Guide",
+    "Contact the independent PapaJohns-Menus.us editorial team with corrections, menu price updates, coupon feedback, or questions about our guides.",
     "/contact",
     "Papa Johns contact, customer support, pizza feedback, help desk, contact info"
 );
@@ -21,7 +21,7 @@ export default function ContactPage() {
                 "name": "How do I contact Papa Johns customer service?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "You can contact Papa Johns customer service by calling their national support line at 1-800-PAPA-JOHNS (1-800-727-2564) or by using the contact form on their official website. Support is available 24/7 for order-related inquiries and feedback."
+                    "text": "For order issues, refunds, or store complaints, contact Papa Johns directly through their official website, app, or the store where you ordered. This page contacts PapaJohns-Menus.us, an independent informational guide."
                 }
             },
             {
@@ -29,7 +29,7 @@ export default function ContactPage() {
                 "name": "How do I report an issue with my Papa Johns order?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "For immediate issues with a current order, it's best to call the specific Papa Johns store where the order was placed. For general feedback or unresolved issues, you can submit a request through the 'Contact Us' page on the Papa Johns website."
+                    "text": "For immediate issues with a current order, call the specific Papa Johns store where the order was placed or use the official Papa Johns support channels. PapaJohns-Menus.us cannot access or change restaurant orders."
                 }
             },
             {
@@ -53,7 +53,7 @@ export default function ContactPage() {
                 "name": "How do I provide feedback on a recent Papa Johns experience?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "You can provide feedback by completing the online survey at papajohns.com/feedback or by filling out the contact form on the 'Contact Us' page. Your feedback helps Papa Johns maintain their 'Better Ingredients. Better Pizza.' standard."
+                    "text": "You can provide feedback to Papa Johns through their official website or app. You can use this page to send PapaJohns-Menus.us corrections, outdated price reports, broken links, or suggestions for our independent guides."
                 }
             }
         ]
@@ -84,7 +84,7 @@ export default function ContactPage() {
                         Contact <span className="text-[#CCEE18]">Us</span>
                     </h1>
                     <p className="text-white/80 text-lg md:text-2xl max-w-4xl mx-auto leading-relaxed font-bold tracking-tight">
-                        Got questions? We're all ears! Whether it's about our <Link href="/menus-prices" className="text-[#CCEE18] hover:underline decoration-2 underline-offset-8 transition-all">Menu</Link>, <Link href="/coupons" className="text-[#CCEE18] hover:underline decoration-2 underline-offset-8 transition-all">Promo Codes</Link>, or your <Link href="/papa-rewards" className="text-[#CCEE18] hover:underline decoration-2 underline-offset-8 transition-all">Rewards</Link>, our pizza experts are here 24/7.
+                        Send corrections, outdated price reports, broken links, or questions about our independent <Link href="/menus-prices" className="text-[#CCEE18] hover:underline decoration-2 underline-offset-8 transition-all">menu guides</Link>, <Link href="/coupons" className="text-[#CCEE18] hover:underline decoration-2 underline-offset-8 transition-all">coupon notes</Link>, and <Link href="/papa-johns-rewards" className="text-[#CCEE18] hover:underline decoration-2 underline-offset-8 transition-all">rewards guide</Link>. For order problems, contact Papa Johns directly.
                     </p>
                 </div>
             </div>
@@ -107,13 +107,13 @@ export default function ContactPage() {
                                 <div className="space-y-12">
                                     <div className="group/item">
                                         <p className="text-white/30 text-[10px] font-black uppercase tracking-[0.3em] mb-4 ml-1 flex items-center gap-2">
-                                            <span className="w-4 h-[1px] bg-[#CCEE18]/30"></span> Customer Support
+                                            <span className="w-4 h-[1px] bg-[#CCEE18]/30"></span> Official Order Support
                                         </p>
                                         <div className="flex items-center gap-6">
                                             <div className="w-16 h-16 bg-white/5 rounded-3xl flex items-center justify-center text-3xl group-hover/item:bg-[#CCEE18] group-hover/item:text-[#1A3D17] transition-all duration-500 shadow-inner group-hover/item:scale-110">📞</div>
                                             <div>
                                                 <a href="tel:1800727256" className="text-3xl font-black text-[#CCEE18] group-hover/item:text-white transition-colors tracking-tighter">1-800-PAPA</a>
-                                                <p className="text-[10px] text-white/20 mt-2 uppercase font-black tracking-widest">Available 24 Hours</p>
+                                                <p className="text-[10px] text-white/20 mt-2 uppercase font-black tracking-widest">Papa Johns direct line</p>
                                             </div>
                                         </div>
                                     </div>
@@ -125,8 +125,8 @@ export default function ContactPage() {
                                         <div className="flex items-center gap-6">
                                             <div className="w-16 h-16 bg-white/5 rounded-3xl flex items-center justify-center text-3xl group-hover/item:bg-[#CCEE18] group-hover/item:text-[#1A3D17] transition-all duration-500 shadow-inner group-hover/item:scale-110">📧</div>
                                             <div>
-                                                <a href="mailto:support@papajohns.com" className="text-2xl font-black text-white group-hover/item:text-[#CCEE18] transition-colors break-all tracking-tighter">help@papajohns.us</a>
-                                                <p className="text-[10px] text-white/20 mt-2 uppercase font-black tracking-widest">Global Support Team</p>
+                                                <a href="mailto:contact@papajohns-menus.us" className="text-2xl font-black text-white group-hover/item:text-[#CCEE18] transition-colors break-all tracking-tighter">contact@papajohns-menus.us</a>
+                                                <p className="text-[10px] text-white/20 mt-2 uppercase font-black tracking-widest">Independent guide inbox</p>
                                             </div>
                                         </div>
                                     </div>
@@ -143,10 +143,10 @@ export default function ContactPage() {
                             </Link>
                         </div>
 
-                        {/* Official Social Links (Premium Icons) */}
+                        {/* External Brand Links */}
                         <div className="bg-white rounded-[2.5rem] p-10 shadow-2xl border-2 border-gray-100">
                             <p className="text-[#1A3D17] font-black uppercase text-[10px] tracking-[0.4em] mb-8 text-center flex items-center justify-center gap-3">
-                                <span className="h-[1px] w-8 bg-gray-200"></span> Official Channels <span className="h-[1px] w-8 bg-gray-200"></span>
+                                <span className="h-[1px] w-8 bg-gray-200"></span> Papa Johns External Links <span className="h-[1px] w-8 bg-gray-200"></span>
                             </p>
                             <div className="grid grid-cols-4 gap-6">
                                 {[
