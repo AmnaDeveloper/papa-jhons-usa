@@ -417,9 +417,9 @@ export default function Home() {
 
                     <div className="space-y-5 mb-10">
                         {secondaryHomePostSections.map((section) => (
-                            <div key={section.title} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+                            <div key={section.title} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
                                 {section.posts.map((post) => (
-                                    <Link href={post.slug === 'best-pizza-delivery-near-me' ? `/${post.slug}` : `/posts/${post.slug}`} key={post.id} className="bg-[#fcfaf8] rounded-[1.25rem] p-4 border border-gray-100 hover:border-[#CCEE18] hover:shadow-lg transition-all duration-300 group grid grid-cols-[104px_1fr] gap-4 items-center">
+                                    <Link href={post.slug === 'best-pizza-delivery-near-me' ? `/${post.slug}` : `/posts/${post.slug}`} key={post.id} className="bg-[#fcfaf8] rounded-[1.25rem] p-4 border border-gray-100 hover:border-[#CCEE18] hover:shadow-lg transition-all duration-300 group grid grid-cols-[112px_1fr] gap-4 items-center">
                                         <div className="aspect-square bg-gray-100 rounded-[1rem] flex items-center justify-center relative overflow-hidden shadow-inner">
                                             <Image
                                                 src={post.image}
