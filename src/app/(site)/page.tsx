@@ -419,8 +419,8 @@ export default function Home() {
                         {secondaryHomePostSections.map((section) => (
                             <div key={section.title} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                                 {section.posts.map((post) => (
-                                    <Link href={post.slug === 'best-pizza-delivery-near-me' ? `/${post.slug}` : `/posts/${post.slug}`} key={post.id} className="bg-white rounded-[1.35rem] border border-gray-100 hover:border-[#CCEE18] hover:shadow-xl transition-all duration-300 group overflow-hidden flex flex-col min-h-[420px]">
-                                        <div className="relative aspect-[4/3] w-full bg-gray-100 overflow-hidden">
+                                    <Link href={post.slug === 'best-pizza-delivery-near-me' ? `/${post.slug}` : `/posts/${post.slug}`} key={post.id} className="bg-white rounded-[1.35rem] border border-gray-100 shadow-sm hover:-translate-y-2 hover:border-[#CCEE18] hover:shadow-2xl transition-all duration-300 group overflow-hidden flex flex-col min-h-[455px]">
+                                        <div className="relative aspect-[16/9] w-full bg-gray-100 overflow-hidden">
                                             <Image
                                                 src={post.image}
                                                 alt={post.imageAlt || post.title}
@@ -430,16 +430,19 @@ export default function Home() {
                                                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                                                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                                             />
+                                            <span className="absolute right-4 top-4 rounded-full bg-black/70 px-3 py-1.5 text-[9px] font-black uppercase tracking-wider text-white shadow-sm">
+                                                {post.category}
+                                            </span>
                                         </div>
 
                                         <div className="p-5 flex flex-col flex-1">
                                             <div className="text-[9px] font-black text-gray-500 uppercase tracking-widest mb-3 flex flex-wrap items-center gap-2">
-                                                <span>{post.category}</span>
-                                                <span>•</span>
                                                 <span>{post.author}</span>
+                                                <span>•</span>
+                                                <span>Guide</span>
                                             </div>
 
-                                            <h4 className="text-xl font-black text-[#1A3D17] uppercase leading-tight mb-3 group-hover:text-[#cc0000] transition-colors line-clamp-3" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                                            <h4 className="text-lg font-black text-[#1A3D17] uppercase leading-tight mb-3 group-hover:text-[#cc0000] transition-colors line-clamp-3" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
                                                 {post.title}
                                             </h4>
 
@@ -447,9 +450,12 @@ export default function Home() {
                                                 {post.excerpt}
                                             </p>
 
-                                            <div className="mt-auto pt-5 flex items-center justify-between text-[#1A3D17] text-[10px] font-black uppercase tracking-widest group-hover:text-[#cc0000] transition-colors">
-                                                Read Guide
-                                                <span className="bg-[#CCEE18] text-[#1A3D17] p-2 rounded-full group-hover:bg-[#cc0000] group-hover:text-white transition-colors">
+                                            <div className="mt-auto pt-5 border-t border-gray-100 flex items-center justify-between gap-4">
+                                                <span className="text-[#cc0000] text-xl font-black tracking-tight">
+                                                    2026
+                                                </span>
+                                                <span className="flex-1 inline-flex items-center justify-center gap-2 rounded-xl px-4 py-3 text-center text-[#1A3D17] text-[10px] font-black uppercase tracking-widest transition-all duration-300 group-hover:bg-[#1A3D17] group-hover:text-white group-hover:shadow-lg">
+                                                    View Guide
                                                     <ArrowRight size={13} />
                                                 </span>
                                             </div>
