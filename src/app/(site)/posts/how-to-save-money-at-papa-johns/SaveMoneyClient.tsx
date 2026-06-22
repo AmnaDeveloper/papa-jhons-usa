@@ -137,7 +137,7 @@ export default function SaveMoneyClient() {
                             </h1>
 
                             <p className="text-lg md:text-xl text-white/80 font-medium leading-relaxed max-w-2xl">
-                                Let's be honest — most &quot;how to save money&quot; articles are full of expired codes. Here is the actual guide on how to slash your bill every single time.
+                                Most &quot;how to save money&quot; articles focus on codes that may not work. This guide shows practical checkout checks that can help you compare the final total before paying.
                             </p>
 
                             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-2xl">
@@ -523,15 +523,15 @@ export default function SaveMoneyClient() {
                                 
                                 <div className="bg-red-50 border-l-4 border-[#cc0000] p-6 rounded-r-2xl my-6">
                                     <h4 className="text-sm font-black text-[#cc0000] uppercase tracking-wider mb-2 flex items-center gap-2">
-                                        <ShieldAlert size={16} /> Real Test Result
+                                        <ShieldAlert size={16} /> Checkout Comparison Note
                                     </h4>
                                     <p className="text-sm text-gray-700 italic">
-                                        &quot;I know, I know — delivery is convenient. But if you live within a five or ten minute drive of your local Papa Johns (and honestly, most people do at this point, there's one on practically every corner), the gas you spend driving over is usually less than what you'd pay in delivery fees and tip anyway. I tested this myself a few months back — ordered the same large specialty pizza twice, once for delivery and once for carryout. The carryout order came out to roughly half the price. Same pizza, same toppings, same store.&quot;
+                                        Delivery is convenient, but carryout can be meaningfully cheaper once delivery fees, service fees, and tips are included. Before paying, compare the same cart as delivery and carryout in the official checkout. The exact savings depend on your store, cart, distance, and current offers.
                                     </p>
                                 </div>
 
                                 <p>
-                                    If saving money is genuinely your priority and you've got the time to swing by, carryout is the move. It's not flashy, but it works every single time.
+                                    If saving money is genuinely your priority and you have time to pick up, carryout is often the first option worth checking. It is not flashy, but it removes several fees that can make delivery more expensive.
                                 </p>
                             </div>
                         </section>
@@ -552,7 +552,7 @@ export default function SaveMoneyClient() {
                                     This one drives me a little crazy because it's such an easy fix. A lot of people order their pizza, then go back later (or the next day) and order breadsticks or cheesesticks separately because they forgot, or because they wanted to &quot;keep the order simple.&quot;
                                 </p>
                                 <p>
-                                    Don't do that. Every time you place a separate order, you're paying a separate delivery fee — and depending on where you live, that's anywhere from four to six bucks just to get a side dish to your door. If you know you want breadsticks, add them to the same cart. You can compare side options in our <Link href="/posts/sides" className="text-[#cc0000] underline font-black">Papa Johns sides guide</Link>. It sounds obvious when I say it out loud, but I've watched people in my own family do this exact thing more times than I can count.
+                                    Don't do that. Every time you place a separate order, you may pay a separate delivery fee, service fee, or tip. If you know you want breadsticks, add them to the same cart. You can compare side options in our <Link href="/posts/sides" className="text-[#cc0000] underline font-black">Papa Johns sides guide</Link>. It sounds obvious, but it is an easy mistake when people build orders quickly.
                                 </p>
                             </div>
                         </section>
@@ -570,13 +570,13 @@ export default function SaveMoneyClient() {
 
                             <div className="pl-0 md:pl-14 space-y-6 text-gray-600 font-bold text-base leading-relaxed">
                                 <p>
-                                    I'll admit, loyalty programs usually feel like a waste of time. You sign up, you forget about it, six months later you delete the app because it's just sitting there taking up space on your phone.
+                                    Loyalty programs are easy to ignore if you only order once. But if you order Papa Johns repeatedly, Papa Rewards is worth checking because points and account-specific offers may change the final value.
                                 </p>
                                 <p>
-                                    Papa Rewards is a little different, mainly because there's zero cost to join and the points actually add up faster than you'd expect. Every dollar you spend earns points (Papa Johns calls this &quot;Papa Dough&quot;), and once you hit a certain threshold, you can redeem it for free pizza, sides, or desserts. If you're already ordering Papa Johns once or twice a month — and let's face it, if you're reading this, you probably are — you're leaving free food on the table by not signing up. You can also read our full <Link href="/papa-johns-rewards" className="text-[#cc0000] underline font-black">Papa Rewards breakdown</Link>.
+                                    Papa Rewards is free to join, and eligible orders can earn points toward future rewards. If you order Papa Johns more than occasionally, check whether signing in changes your available deals or reward balance before paying. You can also read our full <Link href="/papa-johns-rewards" className="text-[#cc0000] underline font-black">Papa Rewards breakdown</Link>.
                                 </p>
                                 <p>
-                                    There's also a birthday perk. It's not life-changing, but hey, free dessert on your birthday is free dessert on your birthday.
+                                    Some accounts may also receive birthday or targeted offers, but availability can vary by account and current program terms.
                                 </p>
                             </div>
                         </section>
@@ -633,7 +633,7 @@ export default function SaveMoneyClient() {
                                     If I had to boil this down to one piece of advice, it'd be this: <strong>carryout plus Papa Rewards is the combination that actually moves the needle.</strong> Everything else — codes, bundles, timing — is more of a bonus layer on top. For a broader price check, see our <Link href="/posts/papa-johns-menu-prices-guide" className="text-[#CCEE18] underline font-black">complete Papa Johns menu prices guide</Link>.
                                 </p>
                                 <p>
-                                    I'll keep updating this guide as I come across new patterns worth sharing, but the core advice above has held up consistently every time I've tested it. If you've found something that's worked well for you, feel free to reach out — I genuinely read every email that comes through our contact page, and reader tips are honestly one of the best sources for this kind of content.
+                                    We update this guide when public offers, rewards terms, or checkout patterns change. If you notice a local pricing issue or outdated deal note, send it through our contact page so we can review it.
                                 </p>
                             </div>
                         </section>

@@ -50,8 +50,8 @@ export default function TeamPage() {
             accentFrom: "#1A3D17",
             accentTo: "#2e6e29",
             bio: "Marcus joined our team in 2024 with one focus: helping readers compare Papa Johns prices, rewards, app offers, and checkout terms before they order.",
-            detail: "Before joining PapaJohns-Menus.us, Marcus spent 3 years running a coupon and cashback blog where he helped thousands of families reduce their grocery and food delivery bills. He personally tests every coupon code before it goes live on our Deals page.",
-            specialties: ["Coupon Verification", "Price Tracking", "Loyalty Programs", "Deal Analysis"],
+            detail: "Before joining PapaJohns-Menus.us, Marcus spent 3 years running a coupon and cashback blog focused on grocery and food delivery savings. His work here focuses on public offer research, checkout-term checks, rewards notes, and reader corrections.",
+            specialties: ["Coupon Research", "Price Tracking", "Loyalty Programs", "Deal Analysis"],
             location: "Chicago, Illinois",
         },
         {
@@ -85,7 +85,7 @@ export default function TeamPage() {
                     Meet Our Editorial Team
                 </h1>
                 <p className="text-white text-lg max-w-3xl mx-auto opacity-90 font-medium leading-relaxed">
-                    The independent team dedicated to bringing you practical Papa Johns menu information, honest reviews, and checkout-aware deal notes.
+                    The independent team dedicated to bringing you practical Papa Johns menu information, ordering notes, and checkout-aware deal guidance.
                 </p>
                 <p className="text-[#CCEE18] text-sm mt-4 font-semibold max-w-2xl mx-auto opacity-80">
                     We are not affiliated with Papa Johns International. We are everyday Americans who love pizza and believe that finding accurate food information should be free, fast, and honest.

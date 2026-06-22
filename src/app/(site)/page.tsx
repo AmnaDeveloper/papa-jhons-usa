@@ -31,7 +31,7 @@ export default function Home() {
         slug: "how-to-save-money-at-papa-johns",
         href: "/posts/how-to-save-money-at-papa-johns",
         title: "How to Save Money at Papa Johns (Without Hunting for Fake Codes)",
-        excerpt: "Let's be honest - most online coupon lists are full of expired codes. Deals Researcher Marcus Webb shares the real, tested habits that cut your bill in half. Try our live savings calculator inside.",
+        excerpt: "Most online coupon lists include codes that may not work. Deals researcher Marcus Webb explains practical checkout checks, rewards notes, bundle comparisons, and carryout planning.",
         author: "Marcus Webb",
         updated: "Updated June 2026",
         image: "/how-to-save-money-at-papa-johns.png",
@@ -544,10 +544,10 @@ export default function Home() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {[
                             { icon: "🍕", title: "Price Planning", desc: "We review public menu and checkout information so readers know what to verify before ordering." },
-                            { icon: "💰", title: "Working Deals Only", desc: "No expired coupons. Our deals researcher Marcus Webb personally tests every promo code before it goes live." },
-                            { icon: "🥗", title: "Real Nutrition Info", desc: "Calories, macros, and allergen details for every menu item — reviewed by our nutrition specialist Linda Torres." },
-                            { icon: "📍", title: "Local Store Info", desc: "Find your nearest Papa Johns with hours, address, and current local deals in seconds." },
-                            { icon: "⭐", title: "Honest Reviews", desc: "We compare Papa Johns to competitors, break down value, and tell you what is actually worth ordering." },
+                            { icon: "💰", title: "Deal Notes", desc: "We explain coupon examples, rewards terms, and checkout checks so readers can confirm offers before paying." },
+                            { icon: "🥗", title: "Nutrition Planning", desc: "Calories, macros, and allergen notes are written as planning help and should be confirmed with official nutrition resources." },
+                            { icon: "📍", title: "Local Store Checks", desc: "Use our city guides as a starting point, then confirm exact address, hours, delivery radius, and deals in the official locator." },
+                            { icon: "⭐", title: "Ordering Notes", desc: "We compare menu items, value, and competitors so readers can make a more informed order choice." },
                         ].map((item, i) => (
                             <div key={i} className="bg-white rounded-3xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                                 <div className="text-3xl mb-3">{item.icon}</div>

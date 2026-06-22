@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         dynamicDescription = `Complete guide to The Works™ pizza in ${month}. Prices, ingredient breakdown & comparison with The Meats — updated ${date}.`;
     } else if (slug === 'philly-cheesesteak-papadia') {
         dynamicTitle = `Papa Johns Philly Cheesesteak Papadia: Price & Review (${month})`;
-        dynamicDescription = `Everything about the Philly Cheesesteak Papadia in ${month}. Prices, calories, sauce pairings & honest review — updated ${date}.`;
+        dynamicDescription = `Everything about the Philly Cheesesteak Papadia in ${month}. Prices, calories, sauce pairings & ordering notes — updated ${date}.`;
     } else {
         // Default dynamic pattern for any other menu items
         dynamicTitle = `${item.title.split(' 2026')[0]} (${month})`;

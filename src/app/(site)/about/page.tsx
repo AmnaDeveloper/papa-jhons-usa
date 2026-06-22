@@ -66,7 +66,7 @@ export default function AboutPage() {
                                 If you have ever opened the Papa Johns app at 7 PM trying to find the best deal, only to end up confused by expired coupons, outdated prices, and scattered information, you know exactly why we built this site.
                             </p>
                             <p>
-                                <strong>PapaJohns-Menus.us</strong> was started in 2024 by a small team of food writers, budget-conscious families, and pizza obsessives who were tired of one thing: not being able to quickly find accurate Papa Johns menu prices, working promo codes, and honest reviews in one place.
+                                <strong>PapaJohns-Menus.us</strong> was started in 2024 by a small team of food writers, budget-conscious families, and pizza fans who wanted one place to compare Papa Johns menu prices, coupon notes, nutrition references, and ordering tips before checkout.
                             </p>
                             <p className="font-medium text-[#1A3D17]">
                                 So we built it ourselves.

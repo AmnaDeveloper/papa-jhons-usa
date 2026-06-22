@@ -15,7 +15,7 @@ import PageComments from '../../../components/PageComments';
 
 const saveMoneySlug = 'how-to-save-money-at-papa-johns';
 const saveMoneyTitle = 'How to Save Money at Papa Johns (Without Hunting for Fake Codes)';
-const saveMoneyExcerpt = "Let's be honest — most 'how to save money' articles list fake codes. Marcus Webb shares the real strategies to slash your Papa Johns bill every time.";
+const saveMoneyExcerpt = "Most 'how to save money' pages focus on codes that may not work. Marcus Webb explains practical checkout habits, carryout comparisons, rewards notes, and bundle checks.";
 const saveMoneyAuthor = 'Marcus Webb';
 const saveMoneyDate = '2026-06-01T00:00:00Z';
 const saveMoneyDateModified = '2026-06-14T00:00:00Z';
@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     if (post.slug === saveMoneySlug) {
         return {
             title: `How to Save Money at Papa Johns (${month}) — Without Fake Codes`,
-            description: `Slash your Papa Johns bill by up to 50% with real, tested strategies. Marcus Webb reveals carryout hacks, rewards tricks, and bundle deals. Updated ${date}.`,
+            description: `Compare Papa Johns carryout, delivery, rewards, bundles, and coupon examples before checkout. Practical savings guide updated ${date}.`,
             keywords: [
                 'how to save money at Papa Johns',
                 'Papa Johns coupons',
@@ -71,7 +71,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
             },
             openGraph: {
                 title: `How to Save Money at Papa Johns (${month})`,
-                description: `Real tested money-saving strategies at Papa Johns. Forget fake promo codes. Carryout discounts, rewards secrets & bundle hacks.`,
+                description: `Practical Papa Johns savings notes: compare carryout, delivery, rewards, bundles, and coupon examples before checkout.`,
                 url: `https://papajohns-menus.us/posts/${saveMoneySlug}`,
                 images: [
                     {
@@ -89,7 +89,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
             twitter: {
                 card: 'summary_large_image',
                 title: `How to Save Money at Papa Johns (${month})`,
-                description: `Real tested money-saving strategies at Papa Johns. Forget fake promo code lists and learn the habits that actually lower the bill.`,
+                description: `Practical Papa Johns savings notes for carryout, delivery, rewards, bundles, and checkout comparisons.`,
                 images: [`https://papajohns-menus.us${saveMoneyImage}`],
             }
         };
@@ -171,7 +171,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         case 'classic-pizzas':
             meta = {
                 title: `Papa Johns Classic Pizzas: Every Flavor Ranked & Priced (${month})`,
-                description: `All Papa Johns classic pizzas in ${month} — Pepperoni, Cheese, Sausage. Full prices, calories, honest reviews & which one to order.`,
+                description: `All Papa Johns classic pizzas in ${month} — Pepperoni, Cheese, Sausage. Full prices, calories, practical notes & which one to order.`,
             };
             break;
         case 'super-loaded':
@@ -249,7 +249,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         case 'papa-johns-spicy-italian-pizza':
             meta = {
                 title: `Papa Johns Spicy Italian Pizza: Price, Calories & Review (${month})`,
-                description: `Full guide to Papa Johns Spicy Italian Pizza ${month} toppings, exact prices by size, calories per slice, spice level, honest review & best crust to order it on. Updated ${date}.`,
+                description: `Full guide to Papa Johns Spicy Italian Pizza ${month} toppings, prices by size, calories per slice, spice level, ordering notes & best crust to order it on. Updated ${date}.`,
             };
             break;
         case 'papa-johns-mountain-dew-drink':
