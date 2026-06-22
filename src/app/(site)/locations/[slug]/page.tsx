@@ -110,6 +110,17 @@ function formatCityFromSlug(slug: string) {
     return stateCode === 'dc' ? `${cityName} DC` : cityName;
 }
 
+function needsOfficialLocatorCheck(value?: string) {
+    if (!value) return false;
+    return !/official|verify|confirm|enter your street|checkout|locator/i.test(value);
+}
+
+function officialLocatorNote(value?: string) {
+    return needsOfficialLocatorCheck(value)
+        ? ' Confirm this detail in the official Papa Johns locator before ordering.'
+        : '';
+}
+
 export default async function LocationPage({ params }: Props) {
     const { slug } = await params;
     const richData = locationRichContent[slug];
@@ -182,7 +193,7 @@ export default async function LocationPage({ params }: Props) {
                         <Link href="/menus-prices" className="text-[#CCEE18] underline hover:text-white transition-colors">
                             Papa John's menu with prices
                         </Link>{' '}
-                        and exclusive local deals for 2026.
+                        and local deal examples for 2026. Confirm final prices, delivery, and store details in the official checkout.
                     </p>
                 </div>
             </div>
@@ -192,8 +203,8 @@ export default async function LocationPage({ params }: Props) {
                         <div className="flex-1">
                             <h2 className="text-xl font-black text-[#1A3D17] uppercase mb-4 tracking-tight">📍 City Ordering Guide: {location?.city}</h2>
                             <div className="space-y-3 font-bold text-gray-600">
-                                <p><span className="text-[#cc0000]">Address:</span> {location?.address}</p>
-                                <p><span className="text-[#cc0000]">Phone:</span> {location?.phone}</p>
+                                <p><span className="text-[#cc0000]">Address to confirm:</span> {location?.address}{officialLocatorNote(location?.address)}</p>
+                                <p><span className="text-[#cc0000]">Phone to confirm:</span> {location?.phone}{officialLocatorNote(location?.phone)}</p>
                                 <p><span className="text-[#cc0000]">Typical Hours:</span> {location?.hours}</p>
                                 <p className="text-xs text-gray-500 leading-relaxed">PapaJohns-Menus.us is an independent guide. Confirm exact store address, phone number, delivery radius, and current hours on the official Papa Johns locator before ordering.</p>
                             </div>
@@ -284,11 +295,11 @@ function RichTemplate({ data, month }: { data: RichLocationData; month: string }
                             <div className="space-y-6">
                                 <div className="space-y-1">
                                     <div className="text-[10px] font-black uppercase tracking-widest text-gray-400">Address Check:</div>
-                                    <p className="font-bold text-[#1A3D17] text-xl leading-snug">{data.locationDetails.address}</p>
+                                    <p className="font-bold text-[#1A3D17] text-xl leading-snug">{data.locationDetails.address}{officialLocatorNote(data.locationDetails.address)}</p>
                                 </div>
                                 <div className="space-y-1">
                                     <div className="text-[10px] font-black uppercase tracking-widest text-gray-400">Phone Check:</div>
-                                    <p className="text-[#cc0000] font-black text-2xl tracking-tighter">{data.locationDetails.phone}</p>
+                                    <p className="text-[#cc0000] font-black text-2xl tracking-tighter">{data.locationDetails.phone}{officialLocatorNote(data.locationDetails.phone)}</p>
                                 </div>
                                 <div className="space-y-1">
                                     <div className="text-[10px] font-black uppercase tracking-widest text-gray-400">Typical Hours:</div>
@@ -332,17 +343,17 @@ function RichTemplate({ data, month }: { data: RichLocationData; month: string }
                         <div className="mt-16 pt-16 border-t border-gray-100">
                             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-10">
                                 <h3 className="text-3xl font-black text-[#1A3D17] uppercase tracking-tighter">
-                                    All {cityName} Locations
+                                    {cityName} Location Options to Verify
                                 </h3>
                                 <span className="inline-block bg-[#cc0000] text-white text-[10px] font-black px-4 py-2 rounded-full uppercase tracking-widest">
-                                    {data.locationDetails.additionalLocations.length + 1} Stores Found
+                                    Confirm in Official Locator
                                 </span>
                             </div>
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                                 {data.locationDetails.additionalLocations.map((loc, idx) => (
                                     <div key={idx} className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300">
                                         <h4 className="font-black text-[#1A3D17] uppercase text-lg mb-3 tracking-tight">{loc.title}</h4>
-                                        <p className="text-gray-500 font-bold text-sm mb-4 leading-relaxed">{loc.address}</p>
+                                        <p className="text-gray-500 font-bold text-sm mb-4 leading-relaxed">{loc.address}{officialLocatorNote(loc.address)}</p>
                                         {loc.deliveryAreas && (
                                             <div className="mt-auto">
                                                 <span className="text-[10px] font-black uppercase tracking-widest text-white bg-[#1A3D17] px-3 py-1 rounded-full">

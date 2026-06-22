@@ -70,7 +70,7 @@ export default function TeamPage() {
 
     const editorialSteps = [
         "Prices are reviewed against public Papa Johns menu information and official checkout details where available",
-        "Coupon codes are personally tested before being published",
+        "Coupon examples are reviewed against public offer pages and checkout wording where available",
         "Nutritional data is cross-checked with official Papa Johns nutrition information",
         "All articles are reviewed and updated at least once per month",
         "Major price changes are reflected on our site within 48 hours",

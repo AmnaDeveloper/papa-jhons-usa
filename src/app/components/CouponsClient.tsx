@@ -110,15 +110,15 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
                     </div>
 
                     <div className="mb-6">
-                        <h2 className="text-2xl font-black uppercase text-[#1A3D17] tracking-tighter mb-2">Active Papa John's Coupon Codes</h2>
-                        <p className="text-sm text-gray-500 font-medium">Click any code to copy it. Paste at checkout on PapaJohns.com or the app.</p>
+                        <h2 className="text-2xl font-black uppercase text-[#1A3D17] tracking-tighter mb-2">Papa John's Coupon Examples to Check</h2>
+                        <p className="text-sm text-gray-500 font-medium">Use these notes to compare your official cart. Offers may be available by store, account, date, and checkout terms.</p>
                     </div>
 
                     {/* Disclaimer Notice */}
                     <div className="bg-amber-50 border border-amber-200 rounded-2xl px-5 py-4 mb-8 flex gap-3 items-start">
                         <span className="text-amber-500 text-lg mt-0.5">ℹ️</span>
                         <p className="text-xs text-amber-800 font-medium leading-relaxed">
-                            <strong>Heads up:</strong> Papa John's promo codes are location-specific and change frequently. Enter any code at checkout to verify it works for your store. No-code deals (marked Auto-Applied) apply automatically when you select carryout or meet the minimum order — no code needed.
+                            <strong>Heads up:</strong> Papa John's promo codes are location-specific and change frequently. Treat these as examples and confirm any discount in the official checkout before payment. No-code deals should only be trusted when your cart clearly shows the discount.
                         </p>
                     </div>
 
@@ -331,15 +331,15 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
                     </div>
 
                     <div className="bg-white rounded-[32px] p-8 border border-gray-100 shadow-sm">
-                        <h3 className="text-sm font-black text-[#1A3D17] uppercase tracking-widest mb-6">Today's Best Deals</h3>
+                        <h3 className="text-sm font-black text-[#1A3D17] uppercase tracking-widest mb-6">Examples to Check</h3>
                         <div className="space-y-4">
                             {[
-                                { name: "BOGO Pizza", val: "50% off" },
-                                { name: "Code PIZZA25", val: "25% off" },
-                                { name: "Carryout Special", val: "50% off" },
-                                { name: "Free Delivery", val: "On $40+" },
-                                { name: "Code SAVE10", val: "$10 off $40" },
-                                { name: "Code HOTEL25", val: "30% off" },
+                                { name: "BOGO-Style Offer", val: "May vary" },
+                                { name: "Percentage Code", val: "Check cart" },
+                                { name: "Carryout Special", val: "Store terms" },
+                                { name: "Free Delivery", val: "If shown" },
+                                { name: "Minimum Spend", val: "Check terms" },
+                                { name: "App Offer", val: "Account-based" },
                             ].map((deal, i) => (
                                 <div key={i} className="flex items-center justify-between py-2 border-b border-gray-50 last:border-0">
                                     <span className="text-xs font-bold text-gray-700">{deal.name}</span>

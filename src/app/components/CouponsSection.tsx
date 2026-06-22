@@ -13,7 +13,7 @@ interface Coupon {
 
 const FAQ_ITEMS = [
     {
-        q: "Does Papa John's have active promo codes today?",
+        q: "Does Papa John's have promo code examples today?",
         a: "Papa John's may show promo codes, app offers, rewards deals, and store-level specials. Availability changes by location and date, so test each code in the official checkout before ordering."
     },
     {
@@ -38,30 +38,30 @@ export default function CouponsSection() {
         {
             id: 1,
             discount: '25%',
-            title: '25% Off Regular Menu Price Orders',
+            title: '25% Off Regular Menu Price Example',
             description: 'This Papa John\'s promo code example may reduce eligible regular menu price items when active for your store. Combine with our [Menu & Prices](/menus-prices) to compare value before checkout.',
-            code: 'CHOOSE25'
+            code: 'CHECKOUT'
         },
         {
             id: 2,
             discount: '50%',
             title: 'BOGO-Style Pizza Offer',
             description: 'BOGO-style pizza deals may discount a second pizza when the offer is active for your local store. Check [official terms](https://www.papajohns.com) for current availability.',
-            code: 'PAPA50'
+            code: 'VERIFY'
         },
         {
             id: 3,
             discount: '$10',
-            title: '$10 Off Any Order of $30 or More',
+            title: '$10 Off $30+ Example',
             description: 'This example may reduce an eligible cart when the minimum order and local terms are met. Discover more [Featured Items](/#featured) while comparing your checkout total.',
-            code: 'SAVE10NOW'
+            code: 'CHECKCART'
         },
         {
             id: 4,
             discount: 'FREE',
-            title: 'Free Side of Garlic Knots with Large Pizza',
+            title: 'Free Side Example with Eligible Pizza',
             description: 'Some promotions include a side item with an eligible pizza purchase. Use the official checkout to confirm whether this offer is active for your store.',
-            code: 'FREESIDE'
+            code: 'SEEAPP'
         }
     ];
 
@@ -122,7 +122,7 @@ export default function CouponsSection() {
                         <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 mt-6">
                             <span className="bg-[#eefcf2] text-[#1A3D17] text-xs font-black px-4 py-1.5 rounded-full border border-[#1A3D17]/10 flex items-center gap-2">
                                 <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-                                REVIEWED FOR {currentDate.toUpperCase()}
+                                REVIEWED NOTES — {currentDate.toUpperCase()}
                             </span>
                         </div>
                     </div>

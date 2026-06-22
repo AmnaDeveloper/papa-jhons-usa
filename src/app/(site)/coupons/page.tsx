@@ -40,10 +40,11 @@ export default function CouponsPage() {
             id: 1,
             discount: "BOGO",
             sub: "Free Pizza",
-            title: "Buy One Large Pizza, Get One FREE",
-            desc: "Buy any large pizza at full menu price and get a second large pizza absolutely free. Works on all sizes and crusts.",
-            code: "BOGO4U",
-            expiry: "May 31, 2026",
+            title: "BOGO-Style Pizza Offer Example",
+            desc: "BOGO-style offers may appear for some stores, accounts, or promo periods. Confirm eligible sizes, crusts, and final discount in the official checkout before ordering.",
+            code: null,
+            noCodeLabel: "Check Official Cart",
+            expiry: "Terms vary",
             tags: ["Popular", "Online + App"],
             featured: true
         },
@@ -51,10 +52,11 @@ export default function CouponsPage() {
             id: 2,
             discount: "25%",
             sub: "OFF",
-            title: "25% Off Your Entire Order",
-            desc: "Apply this code at checkout to get 25% off your entire Papa John's order. Works on pizzas, sides, desserts and drinks.",
-            code: "PIZZA25",
-            expiry: "May 31, 2026",
+            title: "25% Off Order Example",
+            desc: "A percentage-off code may reduce eligible full menu-priced items when active for your store. Test the code in the official checkout before relying on it.",
+            code: null,
+            noCodeLabel: "Check Official Cart",
+            expiry: "Terms vary",
             tags: ["Sitewide"],
             featured: false
         },
@@ -75,10 +77,11 @@ export default function CouponsPage() {
             id: 4,
             discount: "$10",
             sub: "OFF $40+",
-            title: "$10 Off Orders of $40 or More",
-            desc: "Save $10 on any order over $40. Perfect for family meal nights or group orders. Works on delivery and carryout.",
-            code: "SAVE10",
-            expiry: "May 31, 2026",
+            title: "$10 Off $40+ Example",
+            desc: "This type of offer may appear when your cart meets a minimum spend and local terms. Confirm whether delivery, carryout, and discounted items qualify in checkout.",
+            code: null,
+            noCodeLabel: "Check Official Cart",
+            expiry: "Terms vary",
             tags: ["Min. Spend $40"],
             featured: false
         },
@@ -86,10 +89,11 @@ export default function CouponsPage() {
             id: 5,
             discount: "20%",
             sub: "OFF",
-            title: "20% Off Full Menu-Priced Orders",
-            desc: "Take 20% off your full menu-priced order. Excludes promotional or already-discounted items.",
-            code: "PIZZA20",
-            expiry: "May 31, 2026",
+            title: "20% Off Full Menu-Priced Order Example",
+            desc: "A 20% code may apply to eligible full menu-priced items when active. Exclusions and minimums vary, so check the official cart summary before paying.",
+            code: null,
+            noCodeLabel: "Check Official Cart",
+            expiry: "Terms vary",
             tags: ["Online Only"],
             featured: false
         },
@@ -97,11 +101,11 @@ export default function CouponsPage() {
             id: 6,
             discount: "FREE",
             sub: "Delivery",
-            title: "Free Delivery on Orders $40+",
-            desc: "Free delivery automatically applied on all orders of $40 or more. Standard delivery fee is $3.99–$5.99. No code needed.",
+            title: "Free Delivery Offer Example",
+            desc: "Free-delivery offers may appear for some stores or minimum-order periods. Check your official cart for the current delivery fee and any active threshold.",
             code: null,
-            noCodeLabel: "Auto-Applied",
-            expiry: "Ongoing",
+            noCodeLabel: "Check Cart",
+            expiry: "Terms vary",
             tags: ["Delivery"],
             featured: false,
             color: "green"
@@ -110,8 +114,8 @@ export default function CouponsPage() {
             id: 7,
             discount: "$7.99",
             sub: "Large Pizza",
-            title: "Large 1-Topping Pizza for $7.99 — Carryout",
-            desc: "Order any large 1-topping pizza for just $7.99 on carryout. That's about 50% off the regular price. Select from deals menu at checkout.",
+            title: "Large 1-Topping Carryout Example",
+            desc: "Some stores may show a carryout-only large 1-topping pizza special. Final price and discount amount vary, so select the deal in the official cart to confirm.",
             code: null,
             noCodeLabel: "Select in Cart",
             expiry: "Limited time",
@@ -123,10 +127,11 @@ export default function CouponsPage() {
             id: 8,
             discount: "30%",
             sub: "OFF",
-            title: "30% Off Sitewide",
-            desc: "Save 30% on your entire order — one of the biggest sitewide discounts available. Apply at checkout before paying.",
-            code: "HOTEL25",
-            expiry: "May 31, 2026",
+            title: "30% Off Order Example",
+            desc: "Higher percentage-off codes may appear during some promo periods. They may exclude discounted items or require a minimum spend, so confirm terms in checkout.",
+            code: null,
+            noCodeLabel: "Check Official Cart",
+            expiry: "Terms vary",
             tags: ["Min. Spend $30"],
             featured: false
         }
@@ -135,14 +140,14 @@ export default function CouponsPage() {
     const faqs = [
         {
             q: "How do I use a Papa John's promo code?",
-            a: "To use a Papa John's promo code: 1) Add your items to the cart on PapaJohns.com or the app. 2) Go to checkout. 3) Find the 'Promo Code' or 'Coupon Code' field at the top of the checkout page. 4) Enter your code and click 'Apply'. 5) Your discount will be applied automatically before payment."
+            a: "To use a Papa John's promo code: 1) Add your items to the cart on PapaJohns.com or the app. 2) Go to checkout. 3) Find the promo code field. 4) Enter the code and click Apply. 5) Confirm the discount appears in the order summary before payment."
         },
         {
             q: "Can I use multiple Papa John's coupon codes at once?",
-            a: "No, Papa John's only allows one promo code per order. Choose the code that gives you the highest savings. However, you can combine a promo code with Papa Rewards points (Papa Dough) on most orders."
+            a: "Papa John's typically limits checkout to one promo code per order. Rewards credits may have separate rules, so compare the final cart summary before paying."
         },
         {
-            q: "What is the best Papa John's coupon code right now?",
+            q: "What is the best Papa John's coupon code to check?",
             a: "The best Papa John's deal depends on your location, cart, and whether you choose delivery or carryout. Check official checkout for live eligibility, then compare any BOGO-style offer, percentage-off code, and carryout special before paying."
         },
         {
@@ -151,11 +156,11 @@ export default function CouponsPage() {
         },
         {
             q: "What is Papa Rewards and is it worth it?",
-            a: "Papa Rewards is Papa John's free loyalty program. You earn 1 point for every $1 spent. After 75 points you get $10 in Papa Dough to spend on any order. You also get a free birthday dessert and early access to exclusive deals. For regular customers, it is absolutely worth joining."
+            a: "Papa Rewards is Papa John's free loyalty program. Eligible orders can earn points toward Papa Dough rewards. Birthday or targeted offers may vary by account, so check current terms in your rewards profile."
         },
         {
             q: "How do I get Papa John's app-only deals?",
-            a: "Download the Papa John's app from the App Store or Google Play. Log in, select your local store, and you'll see exclusive app-only deals tailored to your area. App deals often include bigger discounts than the main website and change regularly."
+            a: "Download the Papa John's app from the App Store or Google Play. Log in, select your local store, and check the Deals tab. App-only offers may vary by account, store, and date."
         },
         {
             q: "Does Papa John's do BOGO (Buy One Get One) deals?",
@@ -167,15 +172,15 @@ export default function CouponsPage() {
         },
         {
             q: "Why is my Papa John's coupon code not working?",
-            a: "Common reasons a Papa John's code may not work: 1) The code has expired. 2) Your order doesn't meet the minimum spend requirement. 3) The code only applies to specific items. 4) You already have another promo applied (only one per order). 5) Typo in the code — always copy-paste. Check the terms on each coupon carefully."
+            a: "Common reasons a Papa John's code may not work: 1) The code has expired. 2) Your order does not meet the minimum spend requirement. 3) The code applies only to specific items. 4) Another promo is already applied. 5) The code was typed incorrectly. Check the official cart terms carefully."
         },
         {
             q: "Does Papa John's offer a student or military discount?",
-            a: "Papa John's offers a military discount at participating locations — availability and discount amount vary by store. There is no official nationwide student discount, but you can sign up for Papa John's text alerts (text JOIN to 47272) to receive exclusive discounts not available elsewhere."
+            a: "Military, student, or text-alert offers may vary by location, account, and promotion period. Check official Papa Johns channels or your selected store for current eligibility."
         },
         {
             q: "Can I use Papa John's promo codes on third-party delivery apps?",
-            a: "No. Papa John's promo codes can only be applied when ordering directly through PapaJohns.com or the official Papa John's app. If you order through DoorDash, Grubhub or Uber Eats, Papa John's promo codes will not work. Order directly for the best prices and full access to deals."
+            a: "Papa John's promo codes generally apply to direct orders through PapaJohns.com or the official app, not third-party delivery platforms. Compare direct checkout and third-party totals before ordering."
         }
     ];
 
