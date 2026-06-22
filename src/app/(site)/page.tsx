@@ -288,7 +288,7 @@ export default function Home() {
             <MenuGuideSection />
 
             {/* Papa Johns Guides & Blogs Section */}
-            <section className="pt-24 pb-16 bg-[#fcfaf8] w-full">
+            <section className="pt-24 pb-16 bg-[#F9FAFB] w-full">
                 <div className="w-full max-w-[1280px] mx-auto px-4">
                     <div className="text-center mb-12">
                         <span className="inline-block bg-[#cc0000] text-white font-black uppercase tracking-[0.2em] text-[10px] px-6 py-2 rounded-full mb-4 shadow-md">
@@ -450,11 +450,8 @@ export default function Home() {
                                                 {post.excerpt}
                                             </p>
 
-                                            <div className="mt-auto pt-5 border-t border-gray-100 flex items-center justify-between gap-4">
-                                                <span className="text-[#cc0000] text-xl font-black tracking-tight">
-                                                    2026
-                                                </span>
-                                                <span className="flex-1 inline-flex items-center justify-center gap-2 rounded-xl px-4 py-3 text-center text-[#1A3D17] text-[10px] font-black uppercase tracking-widest transition-all duration-300 group-hover:bg-[#1A3D17] group-hover:text-white group-hover:shadow-lg">
+                                            <div className="mt-auto pt-5 border-t border-gray-100 flex justify-end">
+                                                <span className="inline-flex w-[52%] items-center justify-center gap-2 rounded-xl px-4 py-3 text-center text-[#1A3D17] text-[10px] font-black uppercase tracking-widest transition-all duration-300 group-hover:w-full group-hover:bg-[#1A3D17] group-hover:text-white group-hover:shadow-lg">
                                                     View Guide
                                                     <ArrowRight size={13} />
                                                 </span>
