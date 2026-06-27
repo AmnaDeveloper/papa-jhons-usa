@@ -148,3 +148,33 @@ p {
   font-weight: 800;
   color: #1A3D17;
 }
+
+/* Site-wide typography standard */
+h1 {
+  font-family: var(--font-poppins), Poppins, Arial, sans-serif !important;
+  font-size: 48px !important;
+  font-weight: 900 !important;
+}
+
+h2 {
+  font-family: var(--font-poppins), Poppins, Arial, sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+}
+
+h3,
+h4,
+h5,
+h6,
+strong,
+b {
+  font-family: var(--font-poppins), Poppins, Arial, sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+}
+
+th {
+  font-family: var(--font-poppins), Poppins, Arial, sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+}
