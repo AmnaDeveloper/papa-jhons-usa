@@ -28,7 +28,6 @@ const menuItems = [
 ];
 
 const mainLinks = [
-    { name: 'Nutrition', href: '/nutrition' },
     { name: 'Deals & Coupons', href: '/coupons' },
     { name: 'All Blogs', href: '/posts' },
     { name: 'Store Locator', href: '/store-locator' },
@@ -49,7 +48,7 @@ type ScoredSearchItem = SearchItem & {
 const staticSearchItems: SearchItem[] = [
     { title: 'Home', href: '/', category: 'Page', keywords: 'home papa johns menu deals prices' },
     { title: 'Full Menu & Prices', href: '/menus-prices', category: 'Menu', keywords: 'menu prices pizza sides drinks desserts papadias' },
-    { title: 'Nutrition', href: '/nutrition', category: 'Guide', keywords: 'nutrition calories allergens food facts' },
+    { title: 'Nutrition Guide', href: '/posts/papa-johns-nutrition-guide', category: 'Guide', keywords: 'nutrition calories allergens food facts' },
     { title: 'Deals & Coupons', href: '/coupons', category: 'Deals', keywords: 'coupons deals promo codes discounts' },
     { title: 'Store Locator', href: '/store-locator', category: 'Store', keywords: 'store locator near me locations delivery carryout' },
     { title: 'Papa Rewards', href: '/papa-johns-rewards', category: 'Rewards', keywords: 'rewards papa dough points loyalty' },
@@ -164,7 +163,7 @@ export default function Header() {
                 </div>
             </div>
 
-            <div className="border-b border-gray-200 bg-[#fcfaf8]">
+            <div className="relative z-[70] border-b border-gray-200 bg-[#fcfaf8]">
                 <div className="mx-auto grid min-h-[92px] max-w-[1760px] grid-cols-[auto_1fr] items-center gap-5 px-6 md:px-10 lg:grid-cols-[auto_auto_1fr_auto] lg:px-16">
                     <button
                         type="button"
@@ -206,17 +205,22 @@ export default function Header() {
                         </form>
 
                         {searchFocused && normalizedQuery && (
-                            <div className="absolute left-0 right-0 top-[calc(100%+10px)] z-[80] overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-2xl">
+                            <div className="absolute left-0 right-0 top-[calc(100%+10px)] z-[200] max-h-[560px] overflow-y-auto rounded-2xl border border-gray-200 bg-white shadow-2xl">
                                 {searchResults.length > 0 ? (
                                     searchResults.map((result) => (
                                         <Link
                                             key={`${result.href}-${result.title}`}
                                             href={result.href}
                                             onMouseDown={() => setSearchFocused(false)}
-                                            className="block border-b border-gray-100 px-5 py-4 transition-colors last:border-b-0 hover:bg-[#fcfaf8]"
+                                            className="block border-b border-gray-100 px-5 py-3 transition-colors last:border-b-0 hover:bg-[#fcfaf8]"
                                         >
-                                            <span className="block text-xs font-black uppercase text-[#cc0000]">{result.category}</span>
-                                            <span className="mt-1 block text-sm font-black text-[#1f2937] md:text-base">{result.title}</span>
+                                            <span className="block text-[11px] font-black uppercase tracking-wide text-[#cc0000]">{result.category}</span>
+                                            <span
+                                                className="mt-1 block leading-snug text-[#1f2937]"
+                                                style={{ fontFamily: 'Poppins, sans-serif', fontSize: '13px', fontWeight: 500 }}
+                                            >
+                                                {result.title}
+                                            </span>
                                         </Link>
                                     ))
                                 ) : (
@@ -242,8 +246,12 @@ export default function Header() {
                 </div>
             </div>
 
-            <div className="border-b border-gray-200 bg-[#fcfaf8]">
-                <nav className="mx-auto flex h-16 max-w-[1760px] items-center justify-center gap-8 overflow-visible px-6 text-base font-black text-[#374151] md:px-10 lg:px-16" aria-label="Main navigation">
+            <div className="relative z-[40] border-b border-gray-200 bg-[#fcfaf8]">
+                <nav
+                    className="mx-auto flex h-16 max-w-[1760px] items-center justify-center gap-8 overflow-visible px-6 text-[#374151] md:px-10 lg:px-16"
+                    style={{ fontFamily: 'Poppins, sans-serif', fontSize: '13px', fontWeight: 500 }}
+                    aria-label="Main navigation"
+                >
                     <details className="group relative">
                         <summary className="flex cursor-pointer list-none items-center gap-2 whitespace-nowrap transition-colors hover:text-[#cc0000]">
                             Menu & Prices
@@ -252,7 +260,8 @@ export default function Header() {
                         <div className="absolute left-1/2 top-full z-50 mt-4 w-64 -translate-x-1/2 rounded-xl border border-gray-200 bg-white p-3 shadow-2xl">
                             <Link
                                 href="/menus-prices"
-                                className="block rounded-lg px-4 py-3 text-sm font-black text-[#1A3D17] hover:bg-[#fcfaf8] hover:text-[#cc0000]"
+                                className="block rounded-lg px-4 py-3 text-[#1A3D17] hover:bg-[#fcfaf8] hover:text-[#cc0000]"
+                                style={{ fontFamily: 'Poppins, sans-serif', fontSize: '13px', fontWeight: 500 }}
                             >
                                 Full Menu
                             </Link>
@@ -260,7 +269,8 @@ export default function Header() {
                                 <Link
                                     key={item.href}
                                     href={item.href}
-                                    className="block rounded-lg px-4 py-3 text-sm font-bold text-[#5b6472] hover:bg-[#fcfaf8] hover:text-[#cc0000]"
+                                    className="block rounded-lg px-4 py-3 text-[#5b6472] hover:bg-[#fcfaf8] hover:text-[#cc0000]"
+                                    style={{ fontFamily: 'Poppins, sans-serif', fontSize: '13px', fontWeight: 500 }}
                                 >
                                     {item.name}
                                 </Link>
@@ -325,7 +335,8 @@ export default function Header() {
                                     key={item.href}
                                     href={item.href}
                                     onClick={closeDrawer}
-                                    className="block border-b border-gray-100 px-11 py-4 text-base font-semibold text-[#5b6472] transition-colors hover:text-[#cc0000]"
+                                    className="block border-b border-gray-100 px-11 py-4 text-[#5b6472] transition-colors hover:text-[#cc0000]"
+                                    style={{ fontFamily: 'Poppins, sans-serif', fontSize: '13px', fontWeight: 500 }}
                                 >
                                     {item.name}
                                 </Link>

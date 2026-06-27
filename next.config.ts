@@ -125,6 +125,7 @@ const nextConfig: NextConfig = {
       { source: "/auth", destination: "/", permanent: false },
       { source: "/admin", destination: "/", permanent: false },
       { source: "/seo-tools", destination: "/", permanent: false },
+      { source: "/nutrition", destination: "/posts/papa-johns-nutrition-guide", permanent: true },
       { source: '/menus-prices/desserts', destination: '/posts/papa-johns-desserts', permanent: true },
     ];
   },
