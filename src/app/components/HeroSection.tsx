@@ -5,7 +5,7 @@ import { getTodayFormatted } from '@/lib/utils/date';
 
 const poppins = Poppins({
     subsets: ['latin'],
-    weight: '700',
+    weight: ['700', '900'],
     display: 'swap',
 });
 
@@ -39,10 +39,10 @@ export default function HeroSection() {
                 </p>
 
                 <h1
-                    className={`${poppins.className} mb-8 max-w-5xl uppercase tracking-normal text-white`}
+                    className={`${poppins.className} hero-main-heading mb-8 max-w-5xl uppercase tracking-normal text-white`}
                     style={{
                         fontSize: '60px',
-                        fontWeight: 700,
+                        fontWeight: 900,
                         lineHeight: 1.08,
                         textShadow: '0 6px 24px rgba(0,0,0,0.35)',
                     }}

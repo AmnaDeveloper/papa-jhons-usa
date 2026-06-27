@@ -192,7 +192,7 @@ export default function Header() {
                                 onChange={(event) => setSearchQuery(event.target.value)}
                                 onFocus={() => setSearchFocused(true)}
                                 placeholder="Search menus, prices, and deals..."
-                                className="min-w-0 flex-1 bg-transparent text-base font-semibold text-[#1f2937] outline-none placeholder:text-gray-400 md:text-xl"
+                                className="min-w-0 flex-1 bg-transparent text-[16px] font-normal text-[#1f2937] outline-none placeholder:text-gray-400"
                                 autoComplete="off"
                             />
                             <button
