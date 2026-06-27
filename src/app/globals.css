@@ -33,6 +33,12 @@ body {
   font-weight: 500;
 }
 
+p {
+  font-family: var(--font-poppins), Poppins, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
 /* Header nav link hover */
 .nav-link-header {
   border-bottom: 2px solid transparent;
@@ -60,6 +66,12 @@ body {
 
 .blog-content p {
   @apply text-lg leading-relaxed text-gray-600 mb-8 font-semibold;
+}
+
+.blog-content p {
+  font-family: var(--font-poppins), Poppins, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .blog-content strong {
@@ -136,4 +148,3 @@ body {
   font-weight: 800;
   color: #1A3D17;
 }
-
