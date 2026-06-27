@@ -5,8 +5,13 @@ export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const path = searchParams.get('path');
   const secret = searchParams.get('secret');
+  const revalidateSecret = process.env.REVALIDATE_SECRET;
 
-  if (secret !== 'papa2026') {
+  if (!revalidateSecret) {
+    return NextResponse.json({ message: 'Not found' }, { status: 404 });
+  }
+
+  if (secret !== revalidateSecret) {
     return NextResponse.json({ message: 'Invalid token' }, { status: 401 });
   }
 

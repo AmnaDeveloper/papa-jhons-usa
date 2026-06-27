@@ -2,9 +2,9 @@
 
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
-import { locations, Location } from '../../data/locations';
+import { locations } from '../../data/locations';
 import InternalLinks from '../../components/seo/InternalLinks';
-import { Search, MapPin, Phone, Clock, Navigation, Zap, Bike } from 'lucide-react';
+import { Search, MapPin, Phone, Clock, Navigation, Zap, Bike, ShieldCheck } from 'lucide-react';
 
 export default function StoreLocatorClient() {
     const faqSchema = {
@@ -16,7 +16,7 @@ export default function StoreLocatorClient() {
                 "name": "How do I find a Papa Johns location near me?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "The fastest way to find a Papa Johns is through our store locator at papajohns.com. Enter your city or zip code to see all nearby stores along with their specific address, phone number, and hours."
+                    "text": "Use this independent guide to browse city pages, then confirm the exact address, phone number, hours, and ordering availability in the official Papa Johns locator before placing an order."
                 }
             },
             {
@@ -24,7 +24,7 @@ export default function StoreLocatorClient() {
                 "name": "How many Papa Johns locations are there in the United States?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Papa Johns has over 5,000 locations across the United States. Our store locator covers all 50 states, ensuring you can find your favorite pizza almost anywhere in the country."
+                    "text": "Papa Johns operates thousands of restaurants across the United States, but store counts and open locations change over time. For the current official list, use the Papa Johns locator."
                 }
             },
             {
@@ -32,7 +32,7 @@ export default function StoreLocatorClient() {
                 "name": "How can I check if a Papa Johns store is open right now?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "You can check real-time store hours using the Papa Johns store locator. Each location's status is updated instantly to show if they are currently open for delivery or carryout."
+                    "text": "Check the official Papa Johns locator or app for real-time store status. Hours shown on this independent guide are planning notes and should be verified before ordering."
                 }
             },
             {
@@ -40,7 +40,7 @@ export default function StoreLocatorClient() {
                 "name": "Does the store locator show delivery and carryout availability?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes, our store locator clearly indicates whether each store offers delivery services, carryout (pickup), or both. Most Papa Johns locations provide both for customer convenience."
+                    "text": "This guide helps you find city-level location pages. Delivery and carryout availability can change by address, store staffing, and time of day, so confirm availability in the official checkout."
                 }
             },
             {
@@ -48,7 +48,7 @@ export default function StoreLocatorClient() {
                 "name": "How do I find the phone number for my local Papa Johns?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Use the store locator to find your nearest Papa Johns. The direct phone number for the store is listed in the results so you can call for orders or inquiries directly."
+                    "text": "If this guide shows a phone number, confirm it in the official Papa Johns locator before calling because local store details can change."
                 }
             }
         ]
@@ -73,13 +73,8 @@ export default function StoreLocatorClient() {
         });
     }, [searchQuery, selectedState]);
 
-    // Simple function to check if a store is open (mocked logic based on current hour)
-    const getStoreStatus = (hoursStr: string) => {
-        const now = new Date();
-        const hour = now.getHours();
-        // Very basic mock: open if between 11 AM and 10 PM
-        if (hour >= 11 && hour < 22) return { label: 'Open Now', color: 'text-emerald-500 bg-emerald-50' };
-        return { label: 'Closed', color: 'text-red-500 bg-red-50' };
+    const getStoreStatus = () => {
+        return { label: 'Verify Officially', color: 'text-[#1A3D17] bg-[#CCEE18]/20' };
     };
 
     return (
@@ -104,7 +99,7 @@ export default function StoreLocatorClient() {
                         Find Papa John's Near Me — <span className="text-[#CCEE18]">Store Locator</span>
                     </h1>
                     <p className="text-white/90 text-base md:text-lg max-w-4xl mx-auto leading-relaxed font-medium">
-                        Looking for Papa John's near me? You've come to the right place. Use our Papa Johns store locator to quickly find Papa Johns locations across the United States. Whether you're searching for papa johns delivery near me or want to carry out your favorite pizza, we've got every location covered. From big cities to small towns, finding your nearest Papa Johns has never been easier. Simply browse by state or search your city below to find papa johns near me, check store hours, get directions, and place your order today.
+                        Looking for Papa John's near me? Use this independent location guide to browse city pages, compare nearby areas, and plan delivery or carryout. Store addresses, phone numbers, hours, delivery zones, and ordering availability can change, so confirm every exact store detail in the official Papa Johns locator or checkout before you order.
                     </p>
                 </div>
             </div>
@@ -116,8 +111,11 @@ export default function StoreLocatorClient() {
                         <div className="lg:col-span-12 mb-4">
                              <h2 className="text-xl font-black text-[#1A3D17] uppercase tracking-tighter flex items-center gap-3">
                                  <span className="w-8 h-8 bg-[#CCEE18] rounded-lg flex items-center justify-center text-sm">📍</span>
-                                 Search Your Neighborhood
+                                 Search City Guides
                              </h2>
+                             <p className="text-xs text-gray-500 font-bold mt-3 leading-relaxed">
+                                 This is not the official Papa Johns locator. Exact addresses, phone numbers, hours, and delivery availability should be verified with Papa Johns before ordering.
+                             </p>
                         </div>
                         
                         <div className="lg:col-span-6">
@@ -165,7 +163,7 @@ export default function StoreLocatorClient() {
             <div className="max-w-[1440px] mx-auto px-4 md:px-12 pb-32">
                 <div className="flex items-center justify-between mb-12 border-b border-gray-200 pb-6">
                     <p className="text-[#1A3D17] font-black uppercase text-[10px] tracking-[0.3em]">
-                        Showing <span className="text-[#cc0000]">{filteredLocations.length}</span> Papa John's Stores
+                        Showing <span className="text-[#cc0000]">{filteredLocations.length}</span> Papa John's Location Guides
                     </p>
                     <div className="flex gap-4">
                          <div className="flex items-center gap-2 text-[10px] font-black text-gray-400 uppercase tracking-widest bg-white px-4 py-2 rounded-full border border-gray-100">
@@ -180,7 +178,7 @@ export default function StoreLocatorClient() {
                 {filteredLocations.length > 0 ? (
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {filteredLocations.map((loc) => {
-                            const status = getStoreStatus(loc.hours);
+                            const status = getStoreStatus();
                             return (
                                 <div 
                                     key={loc.id} 
@@ -197,7 +195,7 @@ export default function StoreLocatorClient() {
                                         </h3>
                                         <div className="flex items-start gap-3 text-gray-400 group-hover:text-gray-600 transition-colors">
                                             <MapPin size={16} className="mt-1 shrink-0 text-[#1A3D17]" />
-                                            <p className="text-sm font-bold leading-relaxed">{loc.address}</p>
+                                            <p className="text-sm font-bold leading-relaxed">{loc.address} <span className="text-xs text-gray-400">(verify in official locator)</span></p>
                                         </div>
                                     </div>
 
@@ -205,16 +203,20 @@ export default function StoreLocatorClient() {
                                         <div className="flex items-center justify-between p-4 rounded-2xl bg-gray-50 group-hover:bg-[#CCEE18]/10 transition-colors border border-transparent group-hover:border-[#CCEE18]/20">
                                             <div className="flex items-center gap-3">
                                                 <Phone size={16} className="text-[#1A3D17]" />
-                                                <span className="text-[10px] font-black text-gray-600 uppercase tracking-widest">Call Store</span>
+                                                <span className="text-[10px] font-black text-gray-600 uppercase tracking-widest">Phone to Verify</span>
                                             </div>
                                             <a href={`tel:${loc.phone}`} className="text-sm font-black text-[#1A3D17] hover:text-[#cc0000]">{loc.phone}</a>
                                         </div>
                                         <div className="flex items-center justify-between p-4 rounded-2xl bg-gray-50 group-hover:bg-[#CCEE18]/10 transition-colors border border-transparent group-hover:border-[#CCEE18]/20">
                                             <div className="flex items-center gap-3">
                                                 <Clock size={16} className="text-[#1A3D17]" />
-                                                <span className="text-[10px] font-black text-gray-600 uppercase tracking-widest">Today's Hours</span>
+                                                <span className="text-[10px] font-black text-gray-600 uppercase tracking-widest">Hours to Verify</span>
                                             </div>
                                             <span className="text-sm font-black text-[#1A3D17]">{loc.hours}</span>
+                                        </div>
+                                        <div className="flex items-start gap-3 p-4 rounded-2xl bg-[#fff7ed] border border-orange-100 text-orange-900">
+                                            <ShieldCheck size={16} className="mt-0.5 shrink-0" />
+                                            <p className="text-xs font-bold leading-relaxed">Confirm this store's current address, phone, hours, delivery radius, and online ordering availability in the official Papa Johns locator.</p>
                                         </div>
                                     </div>
 
@@ -227,10 +229,11 @@ export default function StoreLocatorClient() {
                                             <Navigation size={14} /> Directions
                                         </Link>
                                         <Link 
-                                            href={`https://www.papajohns.com/order/menu?storeIdentifier=${loc.id}`}
+                                            href="https://www.papajohns.com/locations"
+                                            target="_blank"
                                             className="flex items-center justify-center gap-2 bg-[#CCEE18] text-[#1A3D17] py-4 rounded-2xl font-black uppercase text-[10px] tracking-widest hover:bg-[#1A3D17] hover:text-white transition-all shadow-lg active:scale-95"
                                         >
-                                            <Zap size={14} /> Order Now
+                                            <Zap size={14} /> Verify & Order
                                         </Link>
                                     </div>
                                 </div>

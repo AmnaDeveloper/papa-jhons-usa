@@ -1,7 +1,17 @@
 import { NextResponse } from 'next/server';
 import { notifyCouponUpdates } from '../../lib/googleIndexing';
 
-export async function GET() {
+export async function POST(request: Request) {
+    const adminSecret = process.env.ADMIN_API_SECRET;
+    if (!adminSecret) {
+        return NextResponse.json({ error: 'Not found' }, { status: 404 });
+    }
+
+    const authHeader = request.headers.get('authorization');
+    if (authHeader !== `Bearer ${adminSecret}`) {
+        return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+    }
+
     try {
         // 1. In a real scenario, this would use @google/generative-ai (Gemini) 
         //    or a scraper to fetch the latest Papa John's deals and update a database.
@@ -32,4 +42,8 @@ export async function GET() {
             { status: 500 }
         );
     }
+}
+
+export async function GET() {
+    return NextResponse.json({ error: 'Not found' }, { status: 404 });
 }

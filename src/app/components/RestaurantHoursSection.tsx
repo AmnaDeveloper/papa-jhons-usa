@@ -1,28 +1,10 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import { locations, getUniqueStates, type Location, type DayHours } from '../data/locations';
 
 const DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-
-function isOpenNow(loc: Location): boolean {
-    const now = new Date();
-    const dayName = DAYS[now.getDay()];
-    const dayHours = loc.weeklyHours.find((h: DayHours) => h.day === dayName);
-    if (!dayHours) return false;
-    const toMinutes = (timeStr: string): number => {
-        const [time, period] = timeStr.split(' ');
-        const parts = time.split(':').map(Number);
-        let h: number = parts[0];
-        const m: number = parts[1];
-        if (period === 'PM' && h !== 12) h += 12;
-        if (period === 'AM' && h === 12) h = 0;
-        return h * 60 + m;
-    };
-    const nowMinutes = now.getHours() * 60 + now.getMinutes();
-    return nowMinutes >= toMinutes(dayHours.open) && nowMinutes < toMinutes(dayHours.close);
-}
 
 function getTodayName(): string {
     return DAYS[new Date().getDay()];
@@ -31,19 +13,10 @@ function getTodayName(): string {
 export default function RestaurantHoursSection() {
     const states = getUniqueStates();
     const [selectedState, setSelectedState] = useState(states[0]?.code || '');
-    const [openStatuses, setOpenStatuses] = useState<Record<string, boolean>>({});
     const todayName = getTodayName();
 
     const filteredLocations = locations.filter((loc: Location) => loc.stateCode === selectedState);
     const selectedStateName = states.find((s: { name: string; code: string }) => s.code === selectedState)?.name || '';
-
-    useEffect(() => {
-        const statuses: Record<string, boolean> = {};
-        filteredLocations.forEach((loc: Location) => {
-            statuses[loc.id] = isOpenNow(loc);
-        });
-        setOpenStatuses(statuses);
-    }, [selectedState]);
 
     return (
         <section className="w-full py-14 md:py-20" style={{ background: 'linear-gradient(135deg, #0f2b0c 0%, #1A3D17 50%, #0f2b0c 100%)' }}>
@@ -67,7 +40,7 @@ export default function RestaurantHoursSection() {
                                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#1A3D17] opacity-60"></span>
                                     <span className="relative inline-flex rounded-full h-2 w-2 bg-[#1A3D17]"></span>
                                 </span>
-                                LIVE HOURS — UPDATED DAILY
+                                HOURS NOTES — VERIFY OFFICIAL
                             </span>
                         </div>
 
@@ -78,9 +51,9 @@ export default function RestaurantHoursSection() {
                             Papa John's <span className="text-[#CCEE18]">Hours</span><br className="hidden md:block" /> & Locations
                         </h2>
                         <p className="mt-3 text-green-200/80 text-sm max-w-lg leading-relaxed">
-                            Select your state to find the nearest{' '}
+                            Select your state to browse nearby{' '}
                             <Link href="/store-locator" className="text-[#CCEE18] underline-offset-2 hover:underline hover:text-white transition-colors font-bold">Papa John's location</Link>{' '}
-                            and view up-to-date operating hours.
+                            guides, then confirm current hours, address, phone number, and delivery availability in the official Papa Johns locator before ordering.
                         </p>
                     </div>
 
@@ -127,7 +100,6 @@ export default function RestaurantHoursSection() {
                 {filteredLocations.length > 0 ? (
                     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
                         {filteredLocations.map((loc: Location) => {
-                            const isOpen = openStatuses[loc.id] || false;
                             return (
                                 <div
                                     key={loc.id}
@@ -153,17 +125,17 @@ export default function RestaurantHoursSection() {
                                             <p className="text-green-400/70 text-[10px] font-semibold mt-0.5">{loc.stateCode} · {loc.zipCode}</p>
                                         </div>
                                         <span
-                                            className={`flex items-center gap-1 text-[9px] font-black uppercase px-2.5 py-1 rounded-full ${isOpen ? 'text-emerald-300' : 'text-red-300'}`}
-                                            style={{ background: isOpen ? 'rgba(52,211,153,0.15)' : 'rgba(248,113,113,0.15)', border: isOpen ? '1px solid rgba(52,211,153,0.3)' : '1px solid rgba(248,113,113,0.3)' }}
+                                            className="flex items-center gap-1 text-[9px] font-black uppercase px-2.5 py-1 rounded-full text-[#CCEE18]"
+                                            style={{ background: 'rgba(204,238,24,0.12)', border: '1px solid rgba(204,238,24,0.3)' }}
                                         >
-                                            <span className={`w-1.5 h-1.5 rounded-full ${isOpen ? 'bg-emerald-400 animate-pulse' : 'bg-red-400'}`}></span>
-                                            {isOpen ? 'Open Now' : 'Closed'}
+                                            <span className="w-1.5 h-1.5 rounded-full bg-[#CCEE18]"></span>
+                                            Verify Hours
                                         </span>
                                     </div>
 
                                     {/* Address + Phone */}
                                     <div className="px-4 py-2.5 flex flex-col gap-1" style={{ borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
-                                        <p className="text-green-200/70 text-[11px] leading-snug">📍 {loc.address}</p>
+                                        <p className="text-green-200/70 text-[11px] leading-snug">📍 {loc.address} · verify officially</p>
                                         <a
                                             href={`tel:${loc.phone.replace(/[^0-9]/g, '')}`}
                                             className="text-[#CCEE18] text-[11px] font-bold hover:text-white transition-colors"
@@ -174,7 +146,7 @@ export default function RestaurantHoursSection() {
 
                                     {/* Hours Table */}
                                     <div className="px-4 pt-2.5 pb-3 flex-1">
-                                        <p className="text-[#CCEE18]/70 text-[9px] font-black uppercase tracking-widest mb-2">Operating Hours</p>
+                                        <p className="text-[#CCEE18]/70 text-[9px] font-black uppercase tracking-widest mb-2">Hours to confirm</p>
                                         <div className="space-y-0.5">
                                             {loc.weeklyHours.map((dayHour: DayHours) => {
                                                 const isToday = dayHour.day === todayName;
