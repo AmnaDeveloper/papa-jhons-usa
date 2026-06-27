@@ -1,13 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
-import posts from "../data/posts.json";
+import posts from "./data/posts.json";
 import { ArrowRight, Calculator, MapPin, Percent, Search, ShieldCheck, Users } from "lucide-react";
-import HeroSection from "../components/HeroSection";
-import MenuGuideSection from "../components/MenuGuideSection";
-import DynamicSections from "../components/DynamicSections";
+import HeroSection from "./components/HeroSection";
+import MenuGuideSection from "./components/MenuGuideSection";
+import DynamicSections from "./components/DynamicSections";
+import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
 
 
-import { generateFAQSchema } from "../lib/seo/schema"; // kept if needed elsewhere, otherwise safe to ignore
+import { generateFAQSchema } from "./lib/seo/schema"; // kept if needed elsewhere, otherwise safe to ignore
 import { getTodayFormatted, getMonthYear } from '@/lib/utils/date';
 
 export const revalidate = 86400; // 24 hours ISR
@@ -263,7 +265,9 @@ export default function Home() {
     };
 
     return (
-        <div className="w-full">
+        <div className="flex min-h-screen flex-col">
+            <Header />
+            <main className="w-full flex-1 shrink-0">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -680,16 +684,8 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* Papa Rewards CTA */}
-            <section className="bg-red-700 text-white py-16">
-                <div className="container mx-auto px-4 text-center max-w-3xl">
-                    <h2 className="text-4xl font-bold mb-4">Papa Rewards®</h2>
-                    <p className="text-lg mb-8">Earn Papa Dough® toward free pizza, sides, and more.</p>
-                    <Link href="/papa-johns-rewards" className="bg-white text-red-700 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition-colors inline-block text-lg">
-                        Join Now
-                    </Link>
-                </div>
-            </section>
+            </main>
+            <Footer />
         </div>
     );
 }
