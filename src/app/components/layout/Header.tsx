@@ -135,11 +135,11 @@ export default function Header() {
     return (
         <header className="sticky top-0 z-50 w-full font-sans shadow-sm">
             <div className="bg-[#111111] text-[#a5abb5]">
-                <div className="mx-auto flex h-11 max-w-[1760px] items-center justify-between px-6 text-sm font-bold md:px-10 lg:px-16">
+                <div className="mx-auto flex h-11 max-w-[1760px] items-center justify-between px-6 md:px-10 lg:px-16">
                     <nav className="flex items-center gap-4" aria-label="Top quick links">
                         {topLeftLinks.map((link, index) => (
                             <div key={link.href} className="flex items-center gap-4">
-                                <Link href={link.href} className="transition-colors hover:text-white">
+                                <Link href={link.href} className={`font-header-menu transition-colors hover:text-white`}>
                                     {link.name}
                                 </Link>
                                 {index < topLeftLinks.length - 1 && <span className="h-5 w-px bg-white/15" aria-hidden="true" />}
@@ -149,13 +149,13 @@ export default function Header() {
 
                     <nav className="hidden items-center gap-4 md:flex" aria-label="Top secondary links">
                         {topRightLinks.map((link) => (
-                            <Link key={link.href} href={link.href} className="transition-colors hover:text-white">
+                            <Link key={link.href} href={link.href} className={`font-header-menu transition-colors hover:text-white`}>
                                 {link.name}
                             </Link>
                         ))}
                         <Link
                             href="/coupons"
-                            className="rounded-md bg-[#cc0000] px-5 py-2 text-sm font-black text-white transition-colors hover:bg-[#1A3D17]"
+                            className={`font-header-menu rounded-md bg-[#cc0000] px-5 py-2 text-white transition-colors hover:bg-[#1A3D17]`}
                         >
                             Coupons & Deals
                         </Link>
@@ -216,8 +216,7 @@ export default function Header() {
                                         >
                                             <span className="block text-[11px] font-black uppercase tracking-wide text-[#cc0000]">{result.category}</span>
                                             <span
-                                                className="mt-1 block leading-snug text-[#1f2937]"
-                                                style={{ fontFamily: 'Poppins, sans-serif', fontSize: '13px', fontWeight: 500 }}
+                                                className={`font-header-menu mt-1 block leading-snug text-[#1f2937]`}
                                             >
                                                 {result.title}
                                             </span>
@@ -233,12 +232,12 @@ export default function Header() {
                     </div>
 
                     <div className="hidden items-center gap-5 lg:flex">
-                        <Link href="/contact" className="text-lg font-black text-[#374151] transition-colors hover:text-[#cc0000]">
+                        <Link href="/contact" className="font-header-menu text-[#374151] transition-colors hover:text-[#cc0000]">
                             Contact
                         </Link>
                         <Link
                             href="/coupons"
-                            className="rounded-full bg-[#cc0000] px-8 py-4 text-lg font-black text-white transition-colors hover:bg-[#1A3D17]"
+                            className="font-header-menu rounded-full bg-[#cc0000] px-8 py-4 text-white transition-colors hover:bg-[#1A3D17]"
                         >
                             Coupons & Deals
                         </Link>
@@ -248,8 +247,7 @@ export default function Header() {
 
             <div className="relative z-[40] border-b border-gray-200 bg-[#fcfaf8]">
                 <nav
-                    className="mx-auto flex h-16 max-w-[1760px] items-center justify-center gap-8 overflow-visible px-6 text-[#374151] md:px-10 lg:px-16"
-                    style={{ fontFamily: 'Poppins, sans-serif', fontSize: '13px', fontWeight: 500 }}
+                    className={`font-header-menu mx-auto flex h-16 max-w-[1760px] items-center justify-center gap-8 overflow-visible px-6 text-[#374151] md:px-10 lg:px-16`}
                     aria-label="Main navigation"
                 >
                     <details className="group relative">
@@ -260,8 +258,7 @@ export default function Header() {
                         <div className="absolute left-1/2 top-full z-50 mt-4 w-64 -translate-x-1/2 rounded-xl border border-gray-200 bg-white p-3 shadow-2xl">
                             <Link
                                 href="/menus-prices"
-                                className="block rounded-lg px-4 py-3 text-[#1A3D17] hover:bg-[#fcfaf8] hover:text-[#cc0000]"
-                                style={{ fontFamily: 'Poppins, sans-serif', fontSize: '13px', fontWeight: 500 }}
+                                className={`font-header-menu block rounded-lg px-4 py-3 text-[#1A3D17] hover:bg-[#fcfaf8] hover:text-[#cc0000]`}
                             >
                                 Full Menu
                             </Link>
@@ -269,8 +266,7 @@ export default function Header() {
                                 <Link
                                     key={item.href}
                                     href={item.href}
-                                    className="block rounded-lg px-4 py-3 text-[#5b6472] hover:bg-[#fcfaf8] hover:text-[#cc0000]"
-                                    style={{ fontFamily: 'Poppins, sans-serif', fontSize: '13px', fontWeight: 500 }}
+                                    className={`font-header-menu block rounded-lg px-4 py-3 text-[#5b6472] hover:bg-[#fcfaf8] hover:text-[#cc0000]`}
                                 >
                                     {item.name}
                                 </Link>
@@ -335,8 +331,7 @@ export default function Header() {
                                     key={item.href}
                                     href={item.href}
                                     onClick={closeDrawer}
-                                    className="block border-b border-gray-100 px-11 py-4 text-[#5b6472] transition-colors hover:text-[#cc0000]"
-                                    style={{ fontFamily: 'Poppins, sans-serif', fontSize: '13px', fontWeight: 500 }}
+                                    className={`font-header-menu block border-b border-gray-100 px-11 py-4 text-[#5b6472] transition-colors hover:text-[#cc0000]`}
                                 >
                                     {item.name}
                                 </Link>

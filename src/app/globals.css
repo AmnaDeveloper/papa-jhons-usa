@@ -27,6 +27,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.font-header-menu {
+  font-family: var(--font-poppins), Poppins, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+}
+
 /* Header nav link hover */
 .nav-link-header {
   border-bottom: 2px solid transparent;
@@ -130,5 +136,4 @@ body {
   font-weight: 800;
   color: #1A3D17;
 }
-
 
