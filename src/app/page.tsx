@@ -466,13 +466,19 @@ export default function Home() {
                         </div>
                     </section>
 
-                    <div className="space-y-28 mb-10">
+                    <div className="space-y-0 mb-24">
                         {secondaryHomePostSections.map((section, index) => (
-                            <section key={section.title} className={index > 0 ? "border-t border-gray-200 pt-20" : ""}>
+                            <section
+                                key={section.title}
+                                className={[
+                                    index === 0 ? "border-b border-gray-200 pb-24" : "",
+                                    index > 0 ? "pt-24" : "",
+                                ].join(" ")}
+                            >
                                 <div className="mb-7 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
                                     <div>
                                         <h2
-                                            className="leading-tight text-[#1A3D17]"
+                                            className="!text-[30px] !font-black leading-tight text-[#1A3D17]"
                                             style={{
                                                 fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif',
                                                 fontSize: '30px',
