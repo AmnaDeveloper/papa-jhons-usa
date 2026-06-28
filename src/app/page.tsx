@@ -4,7 +4,6 @@ import posts from "./data/posts.json";
 import { ArrowRight, Calculator, MapPin, Percent, Search, ShieldCheck, Users } from "lucide-react";
 import HeroSection from "./components/HeroSection";
 import MenuGuideSection from "./components/MenuGuideSection";
-import DynamicSections from "./components/DynamicSections";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 
@@ -563,9 +562,6 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-
-            {/* Dynamic Sections (Menu, Hours, Coupons) */}
-            <DynamicSections />
 
             {/* Why People Use This Site */}
             <section className="py-16 bg-[#fcfaf8] border-t border-gray-100">
