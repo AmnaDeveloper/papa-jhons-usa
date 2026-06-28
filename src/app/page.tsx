@@ -472,7 +472,7 @@ export default function Home() {
                                 key={section.title}
                                 className={[
                                     index === 0 ? "border-b border-gray-200 pb-24" : "",
-                                    index > 0 ? "pt-24" : "",
+                                    index > 0 ? "bg-white px-5 py-16 md:px-8 md:py-20" : "",
                                 ].join(" ")}
                             >
                                 <div className="mb-7 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
