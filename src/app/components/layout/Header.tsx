@@ -224,7 +224,7 @@ export default function Header() {
                                     ))
                                 ) : (
                                     <div className="px-5 py-4 text-sm font-bold text-gray-500">
-                                        No results found for "{searchQuery.trim()}"
+                                        No results found for &quot;{searchQuery.trim()}&quot;
                                     </div>
                                 )}
                             </div>
@@ -309,7 +309,7 @@ export default function Header() {
                         <Link
                             href="/menus-prices"
                             onClick={closeDrawer}
-                            className="px-7 py-5 text-lg font-black text-[#1f2937] transition-colors hover:text-[#cc0000]"
+                            className="font-header-menu px-7 py-5 text-[#1f2937] transition-colors hover:text-[#cc0000]"
                         >
                             Menu & Prices
                         </Link>
@@ -344,7 +344,7 @@ export default function Header() {
                             key={link.href}
                             href={link.href}
                             onClick={closeDrawer}
-                            className="block border-b border-gray-200 px-7 py-5 text-lg font-black text-[#1f2937] transition-colors hover:text-[#cc0000]"
+                            className="font-header-menu block border-b border-gray-200 px-7 py-5 text-[#1f2937] transition-colors hover:text-[#cc0000]"
                         >
                             {link.name}
                         </Link>
@@ -353,14 +353,14 @@ export default function Header() {
                     <Link
                         href="/contact"
                         onClick={closeDrawer}
-                        className="block border-b border-gray-200 px-11 py-4 text-base font-black text-[#374151] transition-colors hover:text-[#cc0000]"
+                        className="font-header-menu block border-b border-gray-200 px-11 py-4 text-[#374151] transition-colors hover:text-[#cc0000]"
                     >
                         Contact
                     </Link>
                     <Link
                         href="/privacy-policy"
                         onClick={closeDrawer}
-                        className="block border-b border-gray-200 px-11 py-4 text-base font-black text-[#374151] transition-colors hover:text-[#cc0000]"
+                        className="font-header-menu block border-b border-gray-200 px-11 py-4 text-[#374151] transition-colors hover:text-[#cc0000]"
                     >
                         Privacy Policy
                     </Link>
@@ -369,7 +369,7 @@ export default function Header() {
                         <Link
                             href="/coupons"
                             onClick={closeDrawer}
-                            className="flex h-16 items-center justify-center rounded-xl bg-[#cc0000] text-lg font-black text-white transition-colors hover:bg-[#1A3D17]"
+                            className="font-header-menu flex h-16 items-center justify-center rounded-xl bg-[#cc0000] text-white transition-colors hover:bg-[#1A3D17]"
                         >
                             Coupons & Deals
                         </Link>
