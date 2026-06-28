@@ -408,33 +408,61 @@ export default function Home() {
                         })}
                     </div>
 
-                    <div className="mb-14 rounded-[1.75rem] bg-white border border-gray-200 p-6 md:p-10 shadow-sm">
-                        <span className="inline-block bg-[#cc0000] text-white font-black uppercase tracking-[0.2em] text-[10px] px-5 py-2 rounded-full mb-5">
-                            Why These Guides Exist
-                        </span>
-                        <h2 className="text-3xl md:text-4xl font-black text-[#1A3D17] uppercase tracking-tight mb-5 leading-tight" style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}>
-                            Beyond the Menu: <span className="text-[#cc0000]">Guides, Comparisons &amp; Money-Saving Tips</span>
-                        </h2>
-                        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 text-gray-700 font-bold leading-relaxed">
-                            <p>
-                                Anyone can list prices and call it a menu page. We wanted to go further. Our team has spent hours testing carryout deals against delivery orders, comparing Papa Johns side-by-side with other major pizza chains, digging into the{" "}
-                                <Link href="/papa-johns-rewards" className="text-[#cc0000] hover:underline">
-                                    Papa Rewards
-                                </Link>{" "}
-                                program to see if it's actually worth signing up for, and breaking down the{" "}
-                                <Link href="/posts/papa-johns-nutrition-guide" className="text-[#cc0000] hover:underline">
-                                    nutrition info
-                                </Link>{" "}
-                                so you know exactly what you're eating before you order.
-                            </p>
-                            <p>
-                                These guides are written by real people on our team — Marcus handles deals and pricing breakdowns, Sarah covers comparisons and family-focused guides, and Linda takes care of nutrition and dietary information. Every article below is based on public menu research, official-source checks where available, checkout guidance, and the questions readers actually ask us.
-                            </p>
-                            <p>
-                                Whether you're trying to stretch a tight budget, feeding a hungry family, managing dietary needs, or just curious how Papa Johns stacks up against the competition — there's a guide below for you.
-                            </p>
+                    <section className="mb-16 grid grid-cols-1 items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
+                        <div>
+                            <span className="inline-block bg-[#cc0000] px-5 py-2 text-[10px] font-black uppercase tracking-[0.2em] text-white shadow-md">
+                                Why These Guides Exist
+                            </span>
+                            <div className="mt-6 max-w-2xl text-4xl font-black uppercase leading-tight text-[#1A3D17] md:text-5xl" style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}>
+                                Beyond the Menu: Guides, Comparisons &amp; Money-Saving Tips
+                            </div>
+
+                            <div className="mt-6 max-w-2xl space-y-5 text-gray-700">
+                                <p className="leading-relaxed">
+                                    Anyone can list prices and call it a menu page. We go further by checking carryout versus delivery, tracking checkout patterns, comparing Papa Johns with other pizza chains, and explaining the{" "}
+                                    <Link href="/papa-johns-rewards" className="font-bold text-[#cc0000] hover:underline">
+                                        Papa Rewards
+                                    </Link>{" "}
+                                    and{" "}
+                                    <Link href="/posts/papa-johns-nutrition-guide" className="font-bold text-[#cc0000] hover:underline">
+                                        nutrition info
+                                    </Link>{" "}
+                                    readers ask about before ordering.
+                                </p>
+                                <p className="leading-relaxed">
+                                    Marcus covers deals, Sarah writes family-focused guides, and Linda handles dietary notes. Each guide is based on public menu research, official-source checks where available, and practical ordering questions.
+                                </p>
+                                <p className="leading-relaxed">
+                                    Use these guides to compare prices, stretch a family order, avoid misleading coupon claims, and confirm details before checkout.
+                                </p>
+                            </div>
+
+                            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+                                <Link href="/menus-prices" className="inline-flex h-12 items-center justify-center gap-2 bg-[#1A3D17] px-6 text-[12px] font-black uppercase tracking-widest text-white transition-colors hover:bg-[#cc0000]">
+                                    Full Menu <ArrowRight size={15} />
+                                </Link>
+                                <Link href="/posts/papa-johns-nutrition-guide" className="inline-flex h-12 items-center justify-center border-2 border-[#1A3D17] px-6 text-[12px] font-black uppercase tracking-widest text-[#1A3D17] transition-colors hover:border-[#cc0000] hover:text-[#cc0000]">
+                                    Nutrition Guide
+                                </Link>
+                            </div>
                         </div>
-                    </div>
+
+                        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+                            {[
+                                { value: "89+ Items", label: "Menu coverage" },
+                                { value: "Deal Checks", label: "Coupons & rewards explained" },
+                                { value: "Family Guides", label: "Ordering help for groups" },
+                                { value: "Nutrition Notes", label: "Calories, allergens & more" },
+                            ].map((item) => (
+                                <div key={item.value} className="rounded-2xl border border-gray-200 bg-white p-6 text-center shadow-sm">
+                                    <div className="text-xl font-black text-[#1A3D17]" style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}>
+                                        {item.value}
+                                    </div>
+                                    <p className="mt-2 text-gray-500">{item.label}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </section>
 
                     <div className="space-y-6 mb-10">
                         {secondaryHomePostSections.map((section) => (
