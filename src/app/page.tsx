@@ -138,12 +138,14 @@ export default function Home() {
             eyebrow: "More Helpful Reads",
             title: "Comparisons & ordering decisions",
             description: "Use these guides when you are choosing between chains, comparing menu categories, or deciding what is actually worth ordering.",
+            ctaLabel: "All Comparisons",
             posts: secondaryHomePosts.slice(0, 4),
         },
         {
             eyebrow: "Menu Details",
             title: "Prices, deals & item guides",
             description: "These articles go deeper into prices, promos, calories, and specific Papa Johns menu items so readers can compare before checkout.",
+            ctaLabel: "All Item Guides",
             posts: secondaryHomePosts.slice(4, 8),
         },
     ];
@@ -413,7 +415,7 @@ export default function Home() {
                             <span className="inline-block bg-[#cc0000] px-5 py-2 text-[10px] font-black uppercase tracking-[0.2em] text-white shadow-md">
                                 Why These Guides Exist
                             </span>
-                            <div className="mt-6 max-w-2xl text-4xl font-black uppercase leading-tight text-[#1A3D17] md:text-5xl" style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}>
+                            <div className="mt-6 max-w-2xl text-[30px] font-black uppercase leading-tight text-[#1A3D17]" style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}>
                                 Beyond the Menu: Guides, Comparisons &amp; Money-Saving Tips
                             </div>
 
@@ -464,51 +466,68 @@ export default function Home() {
                         </div>
                     </section>
 
-                    <div className="space-y-6 mb-10">
+                    <div className="space-y-20 mb-10">
                         {secondaryHomePostSections.map((section) => (
-                            <div key={section.title} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                                {section.posts.map((post) => (
-                                    <Link href={post.slug === 'best-pizza-delivery-near-me' ? `/${post.slug}` : `/posts/${post.slug}`} key={post.id} className="bg-white rounded-[1.35rem] border border-gray-100 shadow-sm hover:-translate-y-2 hover:border-[#CCEE18] hover:shadow-2xl transition-all duration-300 group overflow-hidden flex flex-col min-h-[455px]">
-                                        <div className="relative aspect-[16/9] w-full bg-gray-100 overflow-hidden">
-                                            <Image
-                                                src={post.image}
-                                                alt={post.imageAlt || post.title}
-                                                fill
-                                                loading="lazy"
-                                                quality={75}
-                                                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                                                className="object-cover group-hover:scale-105 transition-transform duration-500"
-                                            />
-                                            <span className="absolute right-4 top-4 rounded-full bg-black/70 px-3 py-1.5 text-[9px] font-black uppercase tracking-wider text-white shadow-sm">
-                                                {post.category}
-                                            </span>
-                                        </div>
+                            <section key={section.title}>
+                                <div className="mb-7 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+                                    <div>
+                                        <h2 className="text-[30px] font-black leading-tight text-[#1A3D17]" style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}>
+                                            {section.title}
+                                        </h2>
+                                        <p className="mt-2 max-w-2xl text-gray-500">
+                                            {section.description}
+                                        </p>
+                                    </div>
+                                    <Link href="/posts" className="inline-flex items-center gap-2 text-[13px] font-black uppercase tracking-wide text-[#1A3D17] transition-colors hover:text-[#cc0000]">
+                                        {section.ctaLabel}
+                                        <ArrowRight size={16} />
+                                    </Link>
+                                </div>
 
-                                        <div className="p-5 flex flex-col flex-1">
-                                            <div className="text-[9px] font-black text-gray-500 uppercase tracking-widest mb-3 flex flex-wrap items-center gap-2">
-                                                <span>{post.author}</span>
-                                                <span>•</span>
-                                                <span>Guide</span>
-                                            </div>
-
-                                            <h4 className="text-lg font-black text-[#1A3D17] uppercase leading-tight mb-3 group-hover:text-[#cc0000] transition-colors line-clamp-3" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
-                                                {post.title}
-                                            </h4>
-
-                                            <p className="text-gray-600 text-sm font-bold leading-relaxed line-clamp-3">
-                                                {post.excerpt}
-                                            </p>
-
-                                            <div className="mt-auto pt-5 border-t border-gray-100 flex justify-end">
-                                                <span className="inline-flex w-[52%] items-center justify-center gap-2 rounded-xl px-4 py-3 text-center text-[#1A3D17] text-[10px] font-black uppercase tracking-widest transition-all duration-300 group-hover:w-full group-hover:bg-[#1A3D17] group-hover:text-white group-hover:shadow-lg">
-                                                    View Guide
-                                                    <ArrowRight size={13} />
+                                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                                    {section.posts.map((post) => (
+                                        <Link href={post.slug === 'best-pizza-delivery-near-me' ? `/${post.slug}` : `/posts/${post.slug}`} key={post.id} className="bg-white rounded-[1.35rem] border border-gray-100 shadow-sm hover:-translate-y-2 hover:border-[#CCEE18] hover:shadow-2xl transition-all duration-300 group overflow-hidden flex flex-col min-h-[455px]">
+                                            <div className="relative aspect-[16/9] w-full bg-gray-100 overflow-hidden">
+                                                <Image
+                                                    src={post.image}
+                                                    alt={post.imageAlt || post.title}
+                                                    fill
+                                                    loading="lazy"
+                                                    quality={75}
+                                                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                                                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                                                />
+                                                <span className="absolute right-4 top-4 rounded-full bg-black/70 px-3 py-1.5 text-[9px] font-black uppercase tracking-wider text-white shadow-sm">
+                                                    {post.category}
                                                 </span>
                                             </div>
-                                        </div>
-                                    </Link>
-                                ))}
-                            </div>
+
+                                            <div className="p-5 flex flex-col flex-1">
+                                                <div className="text-[9px] font-black text-gray-500 uppercase tracking-widest mb-3 flex flex-wrap items-center gap-2">
+                                                    <span>{post.author}</span>
+                                                    <span>•</span>
+                                                    <span>Guide</span>
+                                                </div>
+
+                                                <h4 className="text-lg font-black text-[#1A3D17] uppercase leading-tight mb-3 group-hover:text-[#cc0000] transition-colors line-clamp-3" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                                                    {post.title}
+                                                </h4>
+
+                                                <p className="text-gray-600 text-sm font-bold leading-relaxed line-clamp-3">
+                                                    {post.excerpt}
+                                                </p>
+
+                                                <div className="mt-auto pt-5 border-t border-gray-100 flex justify-end">
+                                                    <span className="inline-flex w-[52%] items-center justify-center gap-2 rounded-xl px-4 py-3 text-center text-[#1A3D17] text-[10px] font-black uppercase tracking-widest transition-all duration-300 group-hover:w-full group-hover:bg-[#1A3D17] group-hover:text-white group-hover:shadow-lg">
+                                                        View Guide
+                                                        <ArrowRight size={13} />
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    ))}
+                                </div>
+                            </section>
                         ))}
                     </div>
                 </div>
