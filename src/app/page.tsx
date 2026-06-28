@@ -334,25 +334,11 @@ export default function Home() {
                             Start With Our <span>Most Helpful Guides</span>
                         </h2>
                         <p className="text-gray-600 font-bold max-w-3xl mx-auto leading-relaxed">
-                            Pick one of these three practical guides first: saving money, feeding a family, or checking gluten-free safety before you order.
+                            Pick one of these three practical guides first: saving money, feeding a family, or checking gluten-free safety before you order. These sections answer real ordering questions before readers leave for checkout, and each one links to a deeper guide with more detail.
                         </p>
                     </div>
 
                     <div className="mt-12 mb-16 space-y-8">
-                        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 border-b border-gray-200 pb-6">
-                            <div>
-                                <span className="inline-block bg-[#1A3D17] text-[#CCEE18] text-[10px] font-black uppercase tracking-[0.25em] px-4 py-2 rounded-full">
-                                    Reader Guides
-                                </span>
-                                <h3 className="mt-4 text-2xl md:text-4xl font-black uppercase tracking-tight text-[#1A3D17]" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
-                                    Helpful guides for better orders
-                                </h3>
-                            </div>
-                            <p className="max-w-xl text-sm md:text-base font-bold leading-relaxed text-gray-500 md:text-right">
-                                These sections answer real ordering questions before readers leave for checkout. Each one links to a deeper guide with more detail.
-                            </p>
-                        </div>
-
                         {homepageGuideSections.map((guide, index) => {
                             const isReversed = index % 2 === 1;
 
