@@ -29,6 +29,7 @@ export async function generateMetadata() {
 
 export default function Home() {
     const quickMenuLinks = [
+        { name: "Papa's Rewards", href: "/papa-johns-rewards" },
         { name: "Super Loaded", href: "/posts/super-loaded" },
         { name: "Classic Pizzas", href: "/posts/classic-pizzas" },
         { name: "Papadias", href: "/posts/new-papadias-flavors-2026" },
@@ -285,19 +286,19 @@ export default function Home() {
             <HeroSection />
 
             <section className="border-b border-gray-200 bg-white">
-                <div className="mx-auto flex max-w-[1760px] items-center gap-2 overflow-x-auto px-4 py-3 md:px-10 lg:px-16">
+                <div className="mx-auto flex max-w-[1760px] items-center gap-1 overflow-x-auto px-3 py-3 md:px-8 lg:px-10">
                     {quickMenuLinks.map((item) => (
                         <Link
                             key={item.href}
                             href={item.href}
-                            className="font-header-menu flex h-11 shrink-0 items-center justify-center rounded-md px-5 uppercase tracking-[0.08em] text-[#374151] transition-colors hover:bg-[#f3f4f6] hover:text-[#cc0000]"
+                            className="font-header-menu flex h-11 shrink-0 items-center justify-center rounded-md px-3 uppercase tracking-[0.08em] text-[#374151] transition-colors hover:bg-[#f3f4f6] hover:text-[#cc0000]"
                         >
                             {item.name}
                         </Link>
                     ))}
                     <Link
                         href="/menus-prices"
-                        className="ml-auto flex h-11 shrink-0 items-center justify-center rounded-md bg-[#1A3D17] px-7 font-header-menu uppercase tracking-[0.08em] text-white transition-colors hover:bg-[#cc0000]"
+                        className="ml-auto flex h-11 shrink-0 items-center justify-center rounded-md bg-[#1A3D17] px-5 font-header-menu uppercase tracking-[0.08em] text-white transition-colors hover:bg-[#cc0000]"
                     >
                         View All
                     </Link>

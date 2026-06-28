@@ -175,7 +175,7 @@ export default function Header() {
                         <MenuIcon className="h-[30px] w-[30px]" />
                     </button>
 
-                    <Logo className="min-w-[160px]" />
+                    <Logo className="min-w-[140px]" />
 
                     <div className="relative col-span-2 row-start-2 lg:col-span-1 lg:row-auto">
                         <form
@@ -384,7 +384,7 @@ function Logo({ className }: { className?: string }) {
     return (
         <Link href="/" className={`inline-flex items-center ${className}`} aria-label="Papa Johns Menus home">
             <span
-                className="text-xl font-black italic uppercase leading-none tracking-tight md:text-2xl"
+                className="text-lg font-black italic uppercase leading-none tracking-tight md:text-xl"
                 style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}
             >
                 <span className="text-[#CCEE18]" style={{ textShadow: '0 2px 0 #1A3D17' }}>
