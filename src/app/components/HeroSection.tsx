@@ -20,7 +20,7 @@ export default function HeroSection() {
 
     return (
         <section
-            className="relative flex min-h-[760px] w-full items-center justify-center overflow-hidden px-4 py-24 text-white md:min-h-[820px] md:py-28"
+            className="relative flex min-h-[640px] w-full items-center justify-center overflow-hidden px-4 py-14 text-white md:min-h-[700px] md:py-16"
             style={{ backgroundColor: '#102d0f' }}
         >
             <div className="absolute inset-x-0 top-0 h-1 bg-[#cc0000]" aria-hidden="true" />

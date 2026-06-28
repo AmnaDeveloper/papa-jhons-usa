@@ -175,7 +175,7 @@ export default function Header() {
                         <MenuIcon className="h-[30px] w-[30px]" />
                     </button>
 
-                    <Logo className="min-w-[190px]" />
+                    <Logo className="min-w-[160px]" />
 
                     <div className="relative col-span-2 row-start-2 lg:col-span-1 lg:row-auto">
                         <form
@@ -292,7 +292,7 @@ export default function Header() {
             )}
 
             <aside className={`fixed left-0 top-0 z-[101] h-full w-[400px] max-w-[88vw] overflow-y-auto bg-white text-[#1f2937] shadow-2xl transition-transform duration-300 ${drawerOpen ? 'translate-x-0' : '-translate-x-full'}`}>
-                <div className="flex h-[88px] items-center justify-between border-b border-gray-200 px-7">
+                <div className="flex h-[76px] items-center justify-between border-b border-gray-200 px-7">
                     <Logo className="" />
                     <button
                         type="button"
@@ -365,11 +365,11 @@ export default function Header() {
                         Privacy Policy
                     </Link>
 
-                    <div className="px-6 pt-8">
+                    <div className="px-6 pt-6">
                         <Link
                             href="/coupons"
                             onClick={closeDrawer}
-                            className="font-header-menu flex h-16 items-center justify-center rounded-xl bg-[#cc0000] text-white transition-colors hover:bg-[#1A3D17]"
+                            className="font-header-menu flex h-12 items-center justify-center rounded-xl bg-[#cc0000] text-white transition-colors hover:bg-[#1A3D17]"
                         >
                             Coupons & Deals
                         </Link>
@@ -384,7 +384,7 @@ function Logo({ className }: { className?: string }) {
     return (
         <Link href="/" className={`inline-flex items-center ${className}`} aria-label="Papa Johns Menus home">
             <span
-                className="text-2xl font-black italic uppercase leading-none tracking-tight md:text-3xl"
+                className="text-xl font-black italic uppercase leading-none tracking-tight md:text-2xl"
                 style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}
             >
                 <span className="text-[#CCEE18]" style={{ textShadow: '0 2px 0 #1A3D17' }}>
