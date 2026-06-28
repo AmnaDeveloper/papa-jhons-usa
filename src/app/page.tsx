@@ -33,7 +33,11 @@ export default function Home() {
         { name: "Papa's Rewards", href: "/papa-johns-rewards" },
         { name: "Super Loaded", href: "/posts/super-loaded" },
         { name: "Classic Pizzas", href: "/posts/classic-pizzas" },
+        { name: "Vegetarian", href: "/posts/classic-pizzas" },
+        { name: "Papadias", href: "/posts/new-papadias-flavors-2026" },
+        { name: "Wings", href: "/posts/papa-johns-wings" },
         { name: "Sides", href: "/posts/sides" },
+        { name: "Papa Bowls", href: "/posts/papa-johns-menu-prices-guide" },
         { name: "Drinks", href: "/drinks" },
         { name: "Desserts", href: "/posts/papa-johns-desserts" },
     ];
