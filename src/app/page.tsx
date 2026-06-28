@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import posts from "./data/posts.json";
-import { ArrowRight, Calculator, MapPin, Percent, Search, ShieldCheck, Users } from "lucide-react";
+import { ArrowRight, Calculator, Percent, ShieldCheck, Users } from "lucide-react";
 import HeroSection from "./components/HeroSection";
 import MenuGuideSection from "./components/MenuGuideSection";
 import Header from "./components/layout/Header";
@@ -410,7 +410,7 @@ export default function Home() {
                         })}
                     </div>
 
-                    <section className="mb-16 grid grid-cols-1 items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
+                    <section className="mb-20 mt-8 grid grid-cols-1 items-center gap-10 border-y border-gray-100 bg-white px-5 py-14 md:px-8 md:py-16 lg:grid-cols-[1.05fr_0.95fr]">
                         <div>
                             <span className="inline-block bg-[#cc0000] px-5 py-2 text-[10px] font-black uppercase tracking-[0.2em] text-white shadow-md">
                                 Why These Guides Exist
@@ -542,68 +542,6 @@ export default function Home() {
                                 </div>
                             </section>
                         ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* Papa Johns Near You — Locations Section for Indexing */}
-            <section className="py-14 bg-white border-y border-gray-100">
-                <div className="max-w-[1180px] mx-auto px-4">
-                    <div className="rounded-[1.5rem] border border-gray-200 bg-[#fcfaf8] p-5 md:p-8 shadow-sm">
-                        <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-5 lg:gap-8 items-center">
-                            <div>
-                                <span className="inline-flex items-center gap-2 rounded-full bg-[#CCEE18] text-[#1A3D17] px-4 py-2 text-[10px] font-black uppercase tracking-[0.2em]">
-                                    <MapPin size={13} /> Local Store Guide
-                                </span>
-                                <h2 className="mt-4 text-3xl md:text-4xl font-black text-[#1A3D17] uppercase tracking-tight leading-tight" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
-                                    Papa Johns Near You
-                                </h2>
-                                <p className="mt-2 max-w-2xl text-sm md:text-base font-bold text-gray-600 leading-relaxed">
-                                    Pick a city to view local Papa Johns menu prices, delivery notes, carryout details, and nearby ordering tips.
-                                </p>
-                            </div>
-
-                            <Link href="/store-locator" className="inline-flex items-center justify-center gap-3 rounded-full bg-[#1A3D17] px-6 py-4 text-white text-[11px] font-black uppercase tracking-widest hover:bg-[#cc0000] transition-colors">
-                                <Search size={16} />
-                                Search All Locations
-                                <ArrowRight size={15} />
-                            </Link>
-                        </div>
-
-                        <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 border-y border-gray-200 py-3 text-[10px] font-black uppercase tracking-widest text-gray-500">
-                            <span><strong className="text-[#cc0000] text-sm">35+</strong> city guides</span>
-                            <span><strong className="text-[#1A3D17] text-sm">3.2k</strong> US stores</span>
-                            <span>Menu & prices by city</span>
-                        </div>
-
-                        <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-                            {[
-                                { name: 'New York, NY', slug: 'new-york-ny' },
-                                { name: 'Los Angeles, CA', slug: 'los-angeles-ca' },
-                                { name: 'Chicago, IL', slug: 'chicago-il' },
-                                { name: 'Houston, TX', slug: 'houston-tx' },
-                                { name: 'Phoenix, AZ', slug: 'phoenix-az' },
-                                { name: 'Philadelphia, PA', slug: 'philadelphia-pa' },
-                                { name: 'San Antonio, TX', slug: 'san-antonio-tx' },
-                                { name: 'San Diego, CA', slug: 'san-diego-ca' },
-                                { name: 'Dallas, TX', slug: 'dallas-tx' },
-                                { name: 'Austin, TX', slug: 'austin-tx' },
-                                { name: 'Miami, FL', slug: 'miami-fl' },
-                                { name: 'Seattle, WA', slug: 'seattle-wa' },
-                            ].map((loc) => (
-                                <Link
-                                    key={loc.slug}
-                                    href={`/locations/${loc.slug}`}
-                                    className="group flex min-h-12 items-center justify-between gap-3 rounded-full border border-gray-200 bg-white px-4 py-3 text-[#1A3D17] hover:border-[#CCEE18] hover:bg-[#CCEE18] transition-colors"
-                                >
-                                    <span className="flex min-w-0 items-center gap-2">
-                                        <MapPin size={14} className="shrink-0 text-[#cc0000] group-hover:text-[#1A3D17]" />
-                                        <span className="truncate text-sm font-black">{loc.name}</span>
-                                    </span>
-                                    <ArrowRight size={14} className="shrink-0 text-gray-300 group-hover:text-[#1A3D17] group-hover:translate-x-0.5 transition-all" />
-                                </Link>
-                            ))}
-                        </div>
                     </div>
                 </div>
             </section>
