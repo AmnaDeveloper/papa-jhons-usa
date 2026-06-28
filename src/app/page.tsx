@@ -29,6 +29,15 @@ export async function generateMetadata() {
 }
 
 export default function Home() {
+    const quickMenuLinks = [
+        { name: "Papa's Rewards", href: "/papa-johns-rewards" },
+        { name: "Super Loaded", href: "/posts/super-loaded" },
+        { name: "Classic Pizzas", href: "/posts/classic-pizzas" },
+        { name: "Sides", href: "/posts/sides" },
+        { name: "Drinks", href: "/drinks" },
+        { name: "Desserts", href: "/posts/papa-johns-desserts" },
+    ];
+
     const primaryHomeGuide = {
         slug: "how-to-save-money-at-papa-johns",
         href: "/posts/how-to-save-money-at-papa-johns",
@@ -274,15 +283,35 @@ export default function Home() {
             />
             <HeroSection />
 
+            <section className="border-b border-gray-200 bg-white">
+                <div className="mx-auto flex max-w-[1760px] items-center gap-2 overflow-x-auto px-4 py-3 md:px-10 lg:px-16">
+                    {quickMenuLinks.map((item) => (
+                        <Link
+                            key={item.href}
+                            href={item.href}
+                            className="font-header-menu flex h-11 shrink-0 items-center justify-center rounded-md px-5 uppercase tracking-[0.08em] text-[#374151] transition-colors hover:bg-[#f3f4f6] hover:text-[#cc0000]"
+                        >
+                            {item.name}
+                        </Link>
+                    ))}
+                    <Link
+                        href="/menus-prices"
+                        className="ml-auto flex h-11 shrink-0 items-center justify-center rounded-md bg-[#1A3D17] px-7 font-header-menu uppercase tracking-[0.08em] text-white transition-colors hover:bg-[#cc0000]"
+                    >
+                        View All
+                    </Link>
+                </div>
+            </section>
+
             <section className="bg-white border-b border-gray-100 py-12 md:py-16">
                 <div className="max-w-[1100px] mx-auto px-4 text-center">
                     <span className="inline-block bg-[#CCEE18] text-[#1A3D17] font-black uppercase tracking-[0.28em] text-[10px] px-5 py-2 rounded-full mb-5">
                         Full Price Guide
                     </span>
-                    <h2 className="text-3xl md:text-5xl font-black text-[#1A3D17] uppercase tracking-tight leading-none" style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}>
+                    <h2 className="section-mini-heading uppercase leading-tight">
                         Papa Johns Complete Menu
                         <br />
-                        <span className="text-[#cc0000]">with Prices 2026</span>
+                        <span>with Prices 2026</span>
                     </h2>
                     <p className="mt-4 text-[11px] md:text-[13px] font-black uppercase tracking-[0.18em] text-[#cc0000]">
                         Last Updated: April 2026 | All prices in USD | papajohns-menus.us
@@ -298,8 +327,8 @@ export default function Home() {
                         <span className="inline-block bg-[#cc0000] text-white font-black uppercase tracking-[0.2em] text-[10px] px-6 py-2 rounded-full mb-4 shadow-md">
                             Discover More
                         </span>
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-[#1A3D17] uppercase tracking-tight mb-4 leading-[0.95]" style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}>
-                            Start With Our <span className="text-[#cc0000]">Most Helpful Guides</span>
+                        <h2 className="section-mini-heading mb-4 uppercase leading-tight">
+                            Start With Our <span>Most Helpful Guides</span>
                         </h2>
                         <p className="text-gray-600 font-bold max-w-3xl mx-auto leading-relaxed">
                             Pick one of these three practical guides first: saving money, feeding a family, or checking gluten-free safety before you order.

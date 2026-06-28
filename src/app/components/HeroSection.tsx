@@ -51,20 +51,20 @@ export default function HeroSection() {
                 </h1>
 
                 <p className="max-w-5xl text-base font-bold leading-8 text-white/75 md:text-xl md:leading-9">
-                    Welcome to the ultimate guide for <strong>Papa John's menu deals, promo codes, and prices in USA for 2026</strong>. Whether you're searching for{' '}
-                    <Link href="/best-pizza-delivery-near-me" className="text-[#CCEE18] underline font-bold hover:text-white transition-colors">Papa John's pizza delivery near you</Link>,
+                    If you are searching for{' '}
+                    <Link href="/best-pizza-delivery-near-me" className="text-[#CCEE18] underline font-bold hover:text-white transition-colors">Papa John&apos;s pizza delivery near you</Link>,
                     {' '}looking to compare current{' '}
                     <Link href="/coupons" className="text-[#CCEE18] underline font-bold hover:text-white transition-colors">Papa Johns promo codes</Link>,
                     {' '}or exploring a fresh{' '}
-                    <Link href="/menus-prices" className="text-[#CCEE18] underline font-bold hover:text-white transition-colors">Papa John's full menu with prices</Link>
-                    {' '}— you're in the right place. Earn free food every time you order with{' '}
+                    <Link href="/menus-prices" className="text-[#CCEE18] underline font-bold hover:text-white transition-colors">Papa John&apos;s full menu with prices</Link>
+                    {' '}— you&apos;re in the right place. Earn free food every time you order with{' '}
                     <Link href="/papa-johns-rewards" className="text-[#CCEE18] underline font-bold hover:text-white transition-colors">Papa Rewards®</Link>,
                     {' '}discover our crowd-favorite{' '}
                     <Link href="/posts/classic-pizzas" className="text-[#CCEE18] underline font-bold hover:text-white transition-colors">Classic Pizzas</Link>
                     {' '}and new{' '}
                     <Link href="/posts/new-papadias-flavors-2026" className="text-[#CCEE18] underline font-bold hover:text-white transition-colors">Papadias Flavors 2026</Link>,
                     {' '}or locate your nearest branch instantly on the{' '}
-                    <Link href="/store-locator" className="text-[#CCEE18] underline font-bold hover:text-white transition-colors">Papa John's Store Locator</Link>.
+                    <Link href="/store-locator" className="text-[#CCEE18] underline font-bold hover:text-white transition-colors">Papa John&apos;s Store Locator</Link>.
                 </p>
 
                 <div className="mt-12 flex w-full max-w-6xl flex-wrap items-center justify-center gap-4">
