@@ -466,12 +466,19 @@ export default function Home() {
                         </div>
                     </section>
 
-                    <div className="space-y-20 mb-10">
-                        {secondaryHomePostSections.map((section) => (
-                            <section key={section.title}>
+                    <div className="space-y-28 mb-10">
+                        {secondaryHomePostSections.map((section, index) => (
+                            <section key={section.title} className={index > 0 ? "border-t border-gray-200 pt-20" : ""}>
                                 <div className="mb-7 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
                                     <div>
-                                        <h2 className="text-[30px] font-black leading-tight text-[#1A3D17]" style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}>
+                                        <h2
+                                            className="leading-tight text-[#1A3D17]"
+                                            style={{
+                                                fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif',
+                                                fontSize: '30px',
+                                                fontWeight: 900,
+                                            }}
+                                        >
                                             {section.title}
                                         </h2>
                                         <p className="mt-2 max-w-2xl text-gray-500">
