@@ -531,7 +531,7 @@ export default function Home() {
                                                 </p>
 
                                                 <div className="mt-auto pt-5 border-t border-gray-100 flex justify-end">
-                                                    <span className="inline-flex w-[52%] items-center justify-center gap-2 rounded-xl px-4 py-3 text-center text-[#1A3D17] text-[10px] font-black uppercase tracking-widest transition-all duration-300 group-hover:w-full group-hover:bg-[#1A3D17] group-hover:text-white group-hover:shadow-lg">
+                                                    <span className="inline-flex min-w-[145px] items-center justify-center gap-2 whitespace-nowrap rounded-xl px-4 py-3 text-center text-[#1A3D17] text-[10px] font-black uppercase tracking-widest transition-all duration-300 group-hover:min-w-full group-hover:bg-[#1A3D17] group-hover:text-white group-hover:shadow-lg">
                                                         View Guide
                                                         <ArrowRight size={13} />
                                                     </span>
@@ -547,28 +547,52 @@ export default function Home() {
             </section>
 
             {/* Why People Use This Site */}
-            <section className="py-16 bg-[#fcfaf8] border-t border-gray-100">
-                <div className="max-w-[1000px] mx-auto px-4">
-                    <div className="text-center mb-10">
-                        <span className="inline-block bg-[#1A3D17] text-[#CCEE18] font-black uppercase tracking-[0.2em] text-[10px] px-6 py-2 rounded-full mb-4 shadow-md">
-                            Why This Site
-                        </span>
-                        <h2 className="text-3xl md:text-5xl font-black text-[#1A3D17] uppercase tracking-tighter mb-4" style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}>
-                            Why People <span className="text-[#cc0000]">Use This Site</span>
+            <section className="bg-white py-20 border-t border-gray-100">
+                <div className="max-w-[1180px] mx-auto px-4">
+                    <div className="text-center mb-12">
+                        <h2
+                            className="text-[30px] font-black text-[#1A3D17] uppercase leading-tight"
+                            style={{
+                                fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif',
+                                fontSize: '30px',
+                                fontWeight: 900,
+                            }}
+                        >
+                            Why People Use This Site
                         </h2>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div className="mx-auto grid max-w-[980px] grid-cols-1 gap-6 md:grid-cols-3">
                         {[
-                            { icon: "🍕", title: "Price Planning", desc: "We review public menu and checkout information so readers know what to verify before ordering." },
-                            { icon: "💰", title: "Deal Notes", desc: "We explain coupon examples, rewards terms, and checkout checks so readers can confirm offers before paying." },
-                            { icon: "🥗", title: "Nutrition Planning", desc: "Calories, macros, and allergen notes are written as planning help and should be confirmed with official nutrition resources." },
-                            { icon: "📍", title: "Local Store Checks", desc: "Use our city guides as a starting point, then confirm exact address, hours, delivery radius, and deals in the official locator." },
-                            { icon: "⭐", title: "Ordering Notes", desc: "We compare menu items, value, and competitors so readers can make a more informed order choice." },
+                            {
+                                title: "Price Planning",
+                                desc: "We review public menu and checkout information so readers know what to verify before ordering.",
+                                cta: "Menu Guide",
+                                href: "/menus-prices",
+                            },
+                            {
+                                title: "Deal Notes",
+                                desc: "We explain coupon examples, rewards terms, and checkout checks so readers can confirm offers before paying.",
+                                cta: "Coupon Guide",
+                                href: "/coupons",
+                            },
+                            {
+                                title: "Nutrition Planning",
+                                desc: "Calories, macros, and allergen notes are written as planning help and should be confirmed with official nutrition resources.",
+                                cta: "Nutrition Guide",
+                                href: "/posts/papa-johns-nutrition-guide",
+                            },
                         ].map((item, i) => (
-                            <div key={i} className="bg-white rounded-3xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-                                <div className="text-3xl mb-3">{item.icon}</div>
-                                <h3 className="font-black text-[#1A3D17] text-lg mb-2">{item.title}</h3>
-                                <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
+                            <div key={i} className="flex min-h-[260px] flex-col rounded-[1.25rem] border border-gray-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md md:p-8">
+                                <h3 className="mb-4 text-lg font-black text-[#1A3D17]" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                                    {item.title}
+                                </h3>
+                                <p className="text-base font-medium leading-relaxed text-gray-600">
+                                    {item.desc}
+                                </p>
+                                <Link href={item.href} className="mt-auto inline-flex w-fit items-center gap-2 whitespace-nowrap pt-7 text-sm font-black text-[#cc0000] transition-colors hover:text-[#1A3D17]">
+                                    {item.cta}
+                                    <ArrowRight size={15} />
+                                </Link>
                             </div>
                         ))}
                     </div>
