@@ -135,10 +135,10 @@ export default function Header() {
     return (
         <header className="sticky top-0 z-50 w-full font-sans shadow-sm">
             <div className="bg-[#111111] text-[#a5abb5]">
-                <div className="mx-auto flex h-11 max-w-[1760px] items-center justify-between px-6 md:px-10 lg:px-16">
-                    <nav className="flex items-center gap-4" aria-label="Top quick links">
+                <div className="mx-auto flex h-9 max-w-[1760px] items-center justify-between px-4 md:h-11 md:px-10 lg:px-16">
+                    <nav className="flex items-center gap-2 md:gap-4" aria-label="Top quick links">
                         {topLeftLinks.map((link, index) => (
-                            <div key={link.href} className="flex items-center gap-4">
+                            <div key={link.href} className="flex items-center gap-2 md:gap-4">
                                 <Link href={link.href} className={`font-header-menu transition-colors hover:text-white`}>
                                     {link.name}
                                 </Link>
@@ -164,22 +164,22 @@ export default function Header() {
             </div>
 
             <div className="relative z-[70] border-b border-gray-200 bg-[#fcfaf8]">
-                <div className="mx-auto grid min-h-[92px] max-w-[1760px] grid-cols-[auto_1fr] items-center gap-5 px-6 md:px-10 lg:grid-cols-[auto_auto_1fr_auto] lg:px-16">
+                <div className="mx-auto grid min-h-[76px] max-w-[1760px] grid-cols-[auto_1fr] items-center gap-3 px-4 py-3 md:min-h-[92px] md:gap-5 md:px-10 md:py-0 lg:grid-cols-[auto_auto_1fr_auto] lg:px-16">
                     <button
                         type="button"
                         onClick={() => setDrawerOpen(true)}
-                        className="flex h-12 w-12 cursor-pointer items-center justify-center text-[#3d4654] transition-colors hover:text-[#cc0000]"
+                        className="flex h-10 w-10 cursor-pointer items-center justify-center text-[#3d4654] transition-colors hover:text-[#cc0000] md:h-12 md:w-12"
                         aria-label="Open menu"
                         aria-expanded={drawerOpen}
                     >
-                        <MenuIcon className="h-[30px] w-[30px]" />
+                        <MenuIcon className="h-[26px] w-[26px] md:h-[30px] md:w-[30px]" />
                     </button>
 
-                    <Logo className="min-w-[140px]" />
+                    <Logo className="min-w-[112px] md:min-w-[140px]" />
 
                     <div className="relative col-span-2 row-start-2 lg:col-span-1 lg:row-auto">
                         <form
-                            className="flex h-14 items-center rounded-full border border-gray-300 bg-white pl-6 shadow-sm"
+                            className="flex h-12 items-center rounded-full border border-gray-300 bg-white pl-4 shadow-sm md:h-14 md:pl-6"
                             onSubmit={submitSearch}
                         >
                             <label htmlFor="site-search" className="sr-only">
@@ -192,15 +192,15 @@ export default function Header() {
                                 onChange={(event) => setSearchQuery(event.target.value)}
                                 onFocus={() => setSearchFocused(true)}
                                 placeholder="Search menus, prices, and deals..."
-                                className="min-w-0 flex-1 bg-transparent text-[16px] font-normal text-[#1f2937] outline-none placeholder:text-gray-400"
+                                className="min-w-0 flex-1 bg-transparent text-[14px] font-normal text-[#1f2937] outline-none placeholder:text-gray-400 md:text-[16px]"
                                 autoComplete="off"
                             />
                             <button
                                 type="submit"
-                                className="mr-1 flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#cc0000] text-white transition-colors hover:bg-[#1A3D17]"
+                                className="mr-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#cc0000] text-white transition-colors hover:bg-[#1A3D17] md:h-12 md:w-12"
                                 aria-label="Search"
                             >
-                                <SearchIcon className="h-[22px] w-[22px]" />
+                                <SearchIcon className="h-[18px] w-[18px] md:h-[22px] md:w-[22px]" />
                             </button>
                         </form>
 
@@ -247,7 +247,7 @@ export default function Header() {
 
             <div className="relative z-[40] border-b border-gray-200 bg-[#fcfaf8]">
                 <nav
-                    className={`font-header-menu mx-auto flex h-16 max-w-[1760px] items-center justify-center gap-8 overflow-visible px-6 text-[#374151] md:px-10 lg:px-16`}
+                    className={`font-header-menu mx-auto flex h-12 max-w-[1760px] items-center justify-start gap-6 overflow-x-auto px-4 text-[#374151] md:h-16 md:justify-center md:gap-8 md:overflow-visible md:px-10 lg:px-16`}
                     aria-label="Main navigation"
                 >
                     <details className="group relative">
@@ -384,7 +384,7 @@ function Logo({ className }: { className?: string }) {
     return (
         <Link href="/" className={`inline-flex items-center ${className}`} aria-label="Papa Johns Menus home">
             <span
-                className="text-lg font-black italic uppercase leading-none tracking-tight md:text-xl"
+                className="text-base font-black italic uppercase leading-none tracking-tight md:text-xl"
                 style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}
             >
                 <span className="text-[#CCEE18]" style={{ textShadow: '0 2px 0 #1A3D17' }}>

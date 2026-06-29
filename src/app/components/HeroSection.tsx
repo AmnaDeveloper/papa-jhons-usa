@@ -34,14 +34,14 @@ export default function HeroSection() {
             />
 
             <div className="relative z-10 mx-auto flex max-w-6xl flex-col items-center text-center">
-                <p className="mb-5 text-xs font-black uppercase tracking-[0.35em] text-white/55 md:text-sm">
+                <p className="mb-4 text-[10px] font-black uppercase tracking-[0.28em] text-white/55 md:mb-5 md:text-sm md:tracking-[0.35em]">
                     UPDATED AT: {currentDate}
                 </p>
 
                 <h1
                     className={`${poppins.className} hero-main-heading mb-6 max-w-5xl uppercase tracking-normal text-white`}
                     style={{
-                        fontSize: '60px',
+                        fontSize: 'clamp(32px, 10vw, 60px)',
                         fontWeight: 900,
                         lineHeight: 1.08,
                         textShadow: '0 6px 24px rgba(0,0,0,0.35)',
@@ -50,7 +50,7 @@ export default function HeroSection() {
                     Papa John’s Menu Deals with Prices (Updated 2026)
                 </h1>
 
-                <p className="max-w-5xl text-base font-bold leading-8 text-white/75 md:text-xl md:leading-9">
+                <p className="max-w-5xl text-sm font-bold leading-7 text-white/75 md:text-xl md:leading-9">
                     If you are searching for{' '}
                     <Link href="/best-pizza-delivery-near-me" className="text-[#CCEE18] underline font-bold hover:text-white transition-colors">Papa John&apos;s pizza delivery near you</Link>,
                     {' '}looking to compare current{' '}
@@ -67,30 +67,29 @@ export default function HeroSection() {
                     <Link href="/store-locator" className="text-[#CCEE18] underline font-bold hover:text-white transition-colors">Papa John&apos;s Store Locator</Link>.
                 </p>
 
-                <div className="mt-8 flex w-full max-w-6xl flex-wrap items-center justify-center gap-4">
+                <div className="mt-7 flex w-full max-w-6xl flex-wrap items-center justify-center gap-3 md:mt-8 md:gap-4">
                     {featurePills.map((pill) => (
                         <div
                             key={pill}
-                            className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-6 text-sm font-black text-white/85 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] md:text-base"
-                            style={{ height: '58px' }}
+                            className="inline-flex min-h-11 items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-2 text-xs font-black text-white/85 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] md:min-h-[58px] md:px-6 md:text-base"
                         >
-                            <Check size={18} strokeWidth={4} className="shrink-0 text-[#CCEE18]" />
+                            <Check size={16} strokeWidth={4} className="h-4 w-4 shrink-0 text-[#CCEE18] md:h-[18px] md:w-[18px]" />
                             <span>{pill}</span>
                         </div>
                     ))}
                 </div>
 
-                <div className="flex w-full max-w-4xl flex-col items-stretch justify-center gap-4 sm:flex-row" style={{ marginTop: '34px' }}>
+                <div className="flex w-full max-w-4xl flex-col items-stretch justify-center gap-3 sm:flex-row md:gap-4" style={{ marginTop: '30px' }}>
                     <Link
                         href="/store-locator"
                         className={`${poppins.className} flex items-center justify-center bg-[#CCEE18] px-8 text-center uppercase tracking-[0.12em] transition-colors hover:bg-white`}
                         style={{
                             color: '#102d0f',
-                            fontSize: '16px',
+                            fontSize: 'clamp(14px, 2vw, 16px)',
                             fontStyle: 'normal',
                             fontVariant: 'normal',
                             fontWeight: 900,
-                            height: '56px',
+                            height: '52px',
                         }}
                     >
                         Find Papa Johns Near You
@@ -100,11 +99,11 @@ export default function HeroSection() {
                         href="/menus-prices"
                         className={`${poppins.className} flex items-center justify-center border-2 border-white bg-transparent px-8 text-center uppercase tracking-[0.12em] text-white transition-colors hover:border-[#CCEE18] hover:text-[#CCEE18]`}
                         style={{
-                            fontSize: '16px',
+                            fontSize: 'clamp(14px, 2vw, 16px)',
                             fontStyle: 'normal',
                             fontVariant: 'normal',
                             fontWeight: 900,
-                            height: '56px',
+                            height: '52px',
                         }}
                     >
                         View Full Menu
