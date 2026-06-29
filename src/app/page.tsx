@@ -551,11 +551,14 @@ export default function Home() {
                 <div className="max-w-[1180px] mx-auto px-4">
                     <div className="text-center mb-12">
                         <h2
-                            className="text-[30px] font-black text-[#1A3D17] uppercase leading-tight"
+                            className="!text-[30px] !font-black tracking-normal text-[#1A3D17] uppercase"
                             style={{
                                 fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif',
                                 fontSize: '30px',
                                 fontWeight: 900,
+                                lineHeight: '1.1',
+                                letterSpacing: '0',
+                                fontVariationSettings: '"wght" 900',
                             }}
                         >
                             Why People Use This Site
@@ -607,11 +610,14 @@ export default function Home() {
                             Frequently Asked Questions
                         </span>
                         <h2
-                            className="text-[30px] font-black text-[#1A3D17] uppercase leading-tight mb-4"
+                            className="!text-[30px] !font-black tracking-normal text-[#1A3D17] uppercase mb-4"
                             style={{
                                 fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif',
                                 fontSize: '30px',
                                 fontWeight: 900,
+                                lineHeight: '1.1',
+                                letterSpacing: '0',
+                                fontVariationSettings: '"wght" 900',
                             }}
                         >
                             Papa John's FAQ
