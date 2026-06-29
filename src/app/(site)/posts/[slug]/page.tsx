@@ -755,7 +755,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                                     className="!font-black text-[#1A3D17] mb-4 uppercase tracking-normal leading-tight"
                                     style={{
                                         fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif',
-                                        fontSize: 'clamp(24px, 7vw, 30px)',
+                                        fontSize: 'clamp(20px, 6vw, 30px)',
                                         fontWeight: 900,
                                         lineHeight: '1.08',
                                         letterSpacing: '0',
