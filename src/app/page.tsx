@@ -36,6 +36,7 @@ export default function Home() {
         { name: "Wings", href: "/posts/papa-johns-wings" },
         { name: "Sides", href: "/posts/sides" },
         { name: "Papa Bowls", href: "/posts/papa-johns-menu-prices-guide" },
+        { name: "Nutrition", href: "/posts/papa-johns-nutrition-guide" },
         { name: "Drinks", href: "/drinks" },
         { name: "Desserts", href: "/posts/papa-johns-desserts" },
     ];
@@ -300,7 +301,7 @@ export default function Home() {
                     ))}
                     <Link
                         href="/menus-prices"
-                        className="ml-auto flex h-11 shrink-0 items-center justify-center rounded-md bg-[#1A3D17] px-5 font-header-menu uppercase tracking-[0.08em] text-white transition-colors hover:bg-[#cc0000]"
+                        className="flex h-11 shrink-0 items-center justify-center rounded-md bg-[#1A3D17] px-5 font-header-menu uppercase tracking-[0.08em] text-white transition-colors hover:bg-[#cc0000]"
                     >
                         View All
                     </Link>
