@@ -29,14 +29,14 @@ export default function ContactForm() {
         <div className="bg-white rounded-[2.5rem] p-10 md:p-14 shadow-2xl border border-gray-100 flex flex-col justify-between">
             {status === 'success' && (
                 <div className="bg-emerald-50 border border-emerald-100 text-[#1A3D17] px-8 py-5 rounded-[2rem] mb-10 text-center font-black animate-bounce flex items-center justify-center gap-3">
-                    <span className="text-2xl">🔥</span>
+                    <span className="text-2xl"></span>
                     Hurray! Your message was sent successfully.
                 </div>
             )}
 
             {status === 'error' && (
                 <div className="bg-red-50 border border-red-100 text-[#cc0000] px-8 py-5 rounded-[2rem] mb-10 text-center font-black flex items-center justify-center gap-3">
-                    <span className="text-2xl">⚡</span>
+                    <span className="text-2xl"></span>
                     Oops! Something went wrong. Try again later.
                 </div>
             )}
@@ -108,7 +108,7 @@ export default function ContactForm() {
                     className="w-full bg-[#CCEE18] hover:bg-[#1A3D17] hover:text-white text-[#1A3D17] font-black py-6 rounded-[2rem] transition-all text-sm uppercase tracking-[0.3em] shadow-xl transform active:scale-95 disabled:opacity-50"
                     style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}
                 >
-                    {status === 'loading' ? '🚀 Dispatching Message...' : 'Send Message →'}
+                    {status === 'loading' ? ' Dispatching Message...' : 'Send Message →'}
                 </button>
             </form>
         </div>

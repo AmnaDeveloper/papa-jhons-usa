@@ -58,7 +58,7 @@ export default function HeroSection() {
                     {' '}or exploring a fresh{' '}
                     <Link href="/menus-prices" className="text-[#CCEE18] underline font-bold hover:text-white transition-colors">Papa John&apos;s full menu with prices</Link>
                     {' '}— you&apos;re in the right place. Earn free food every time you order with{' '}
-                    <Link href="/papa-johns-rewards" className="text-[#CCEE18] underline font-bold hover:text-white transition-colors">Papa Rewards®</Link>,
+                    <Link href="/papa-johns-rewards" className="text-[#CCEE18] underline font-bold hover:text-white transition-colors">Papa Rewards</Link>,
                     {' '}discover our crowd-favorite{' '}
                     <Link href="/posts/classic-pizzas" className="text-[#CCEE18] underline font-bold hover:text-white transition-colors">Classic Pizzas</Link>
                     {' '}and new{' '}

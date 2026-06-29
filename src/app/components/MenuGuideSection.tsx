@@ -5,29 +5,29 @@ const MenuGuideSection = () => {
         <section className="pt-0 pb-20 bg-white w-full">
             <div className="w-full max-w-[1100px] mx-auto px-4 menu-guide-container">
                 <style dangerouslySetInnerHTML={{ __html: `
-                    .menu-guide-container { 
-                        font-family: Arial, sans-serif; 
-                        color: #222; 
+                    .menu-guide-container {
+                        font-family: Arial, sans-serif;
+                        color: #222;
                         line-height: 1.5;
                     }
-                    .menu-guide-container h2 { 
+                    .menu-guide-container h2 {
                         font-family: "PapaSans-Heavy", "Arial Black", sans-serif;
-                        font-size: 28px; 
-                        color: #fff; 
-                        background: #cc0000; 
-                        padding: 15px 25px; 
-                        margin: 50px 0 0; 
+                        font-size: 28px;
+                        color: #fff;
+                        background: #cc0000;
+                        padding: 15px 25px;
+                        margin: 50px 0 0;
                         border-radius: 12px 12px 0 0;
                         text-transform: uppercase;
                         letter-spacing: -0.02em;
                     }
-                    .menu-guide-container h3 { 
+                    .menu-guide-container h3 {
                         font-family: "PapaSans-Heavy", sans-serif;
-                        font-size: 18px; 
-                        color: #1A3D17; 
-                        background: #fcfaf8; 
-                        padding: 14px 25px; 
-                        margin: 0; 
+                        font-size: 18px;
+                        color: #1A3D17;
+                        background: #fcfaf8;
+                        padding: 14px 25px;
+                        margin: 0;
                         border-left: 6px solid #1A3D17;
                         text-transform: uppercase;
                     }
@@ -38,17 +38,17 @@ const MenuGuideSection = () => {
                         box-shadow: 0 10px 40px rgba(0,0,0,0.07);
                         border-radius: 0 0 16px 16px;
                     }
-                    .menu-guide-container table { 
-                        width: 100%; 
-                        border-collapse: collapse; 
+                    .menu-guide-container table {
+                        width: 100%;
+                        border-collapse: collapse;
                         background: #fff;
                         border: none;
                     }
-                    .menu-guide-container thead th { 
-                        background: #1A3D17; 
-                        color: #CCEE18; 
-                        padding: 14px 20px; 
-                        text-align: left; 
+                    .menu-guide-container thead th {
+                        background: #1A3D17;
+                        color: #CCEE18;
+                        padding: 14px 20px;
+                        text-align: left;
                         font-size: 11px;
                         text-transform: uppercase;
                         letter-spacing: 0.1em;
@@ -58,37 +58,37 @@ const MenuGuideSection = () => {
                     }
                     .menu-guide-container tbody tr:nth-child(even) { background: #fcfcfc; }
                     .menu-guide-container tbody tr:hover { background: #fff1f1; }
-                    .menu-guide-container td { 
-                        padding: 14px 20px; 
-                        border: none; 
+                    .menu-guide-container td {
+                        padding: 14px 20px;
+                        border: none;
                         font-size: 14px;
                         vertical-align: middle;
                         font-weight: 600;
                     }
-                    .menu-guide-container td.price { 
-                        font-weight: 900; 
-                        color: #cc0000; 
-                        white-space: nowrap; 
+                    .menu-guide-container td.price {
+                        font-weight: 900;
+                        color: #cc0000;
+                        white-space: nowrap;
                         font-size: 16px;
                         font-family: "PapaSans-Heavy", sans-serif;
                     }
-                    .menu-guide-container td.cal { 
-                        color: #666; 
-                        font-size: 12px; 
-                        white-space: nowrap; 
+                    .menu-guide-container td.cal {
+                        color: #666;
+                        font-size: 12px;
+                        white-space: nowrap;
                         font-weight: 800;
                     }
-                    .menu-guide-container td.desc { 
-                        color: #555; 
-                        font-size: 13px; 
+                    .menu-guide-container td.desc {
+                        color: #555;
+                        font-size: 13px;
                         font-weight: 500;
                     }
-                    .menu-guide-container .note { 
-                        background: #fff8e1; 
-                        border: 1px solid #ffe082; 
-                        padding: 14px 25px; 
-                        font-size: 13px; 
-                        color: #7a5f00; 
+                    .menu-guide-container .note {
+                        background: #fff8e1;
+                        border: 1px solid #ffe082;
+                        padding: 14px 25px;
+                        font-size: 13px;
+                        color: #7a5f00;
                         margin: 10px 0;
                         border-radius: 8px;
                         font-weight: 700;
@@ -137,9 +137,9 @@ const MenuGuideSection = () => {
                 ` }} />
 
                 {/* 1. PIZZAS */}
-                <h2>🍕 1. Pizza Menu — All Sizes & Prices</h2>
+                <h2> 1. Pizza Menu — All Sizes & Prices</h2>
                 <div className="note"> Prices shown are for Original Crust. Epic Stuffed Crust adds +$3.00 | Garlic Stuffed Crust adds +$3.50 | Thin Crust & NY Style: same price as Original Crust | Gluten-Free Crust: add +$2.00</div>
-                
+
                 <div className="table-outer">
                     <h3>Classic Pizzas</h3>
                     <table>
@@ -216,7 +216,7 @@ const MenuGuideSection = () => {
                 </div>
 
                 {/* 2. PAPADIAS */}
-                <h2>🥙 2. Papadias Menu — Flatbread Sandwiches</h2>
+                <h2> 2. Papadias Menu — Flatbread Sandwiches</h2>
                 <div className="table-outer">
                     <table>
                         <thead>
@@ -233,7 +233,7 @@ const MenuGuideSection = () => {
                 </div>
 
                 {/* 3. WINGS */}
-                <h2>🍗 3. Wings Menu — Bone-In & Boneless</h2>
+                <h2> 3. Wings Menu — Bone-In & Boneless</h2>
                 <div className="table-outer">
                     <h3>Wings Pricing & Flavors</h3>
                     <table>
@@ -251,7 +251,7 @@ const MenuGuideSection = () => {
                 </div>
 
                 {/* 4. PAPA BITES */}
-                <h2>🧆 4. Papa Bites Menu</h2>
+                <h2> 4. Papa Bites Menu</h2>
                 <div className="table-outer">
                     <table>
                         <thead>
@@ -260,13 +260,13 @@ const MenuGuideSection = () => {
                         <tbody>
                             <tr><td>Jalapeño Papa Bites</td><td className="price">$6.99</td><td className="cal">80 cal/roll</td><td className="desc">Jalapeños, creamy Alfredo & cheese — served with ranch</td></tr>
                             <tr><td>Chicken Parmesan Papa Bites</td><td className="price">$6.99</td><td className="cal">110 cal/roll</td><td className="desc">Chicken & parmesan wrapped in original dough</td></tr>
-                            <tr><td>OREO® Cookie Papa Bites</td><td className="price">$6.99</td><td className="cal">100 cal/roll</td><td className="desc">OREO cookie pieces baked in sweet dough</td></tr>
+                            <tr><td>OREO Cookie Papa Bites</td><td className="price">$6.99</td><td className="cal">100 cal/roll</td><td className="desc">OREO cookie pieces baked in sweet dough</td></tr>
                         </tbody>
                     </table>
                 </div>
 
                 {/* 5. SIDES */}
-                <h2>🥖 5. Sides Menu</h2>
+                <h2> 5. Sides Menu</h2>
                 <div className="table-outer">
                     <table>
                         <thead>
@@ -283,7 +283,7 @@ const MenuGuideSection = () => {
                 </div>
 
                 {/* 6. PAPA BOWLS */}
-                <h2>🥣 6. Papa Bowls Menu</h2>
+                <h2> 6. Papa Bowls Menu</h2>
                 <div className="table-outer">
                     <table>
                         <thead>
@@ -298,7 +298,7 @@ const MenuGuideSection = () => {
                 </div>
 
                 {/* 7. DESSERTS */}
-                <h2>🍪 7. Desserts Menu</h2>
+                <h2> 7. Desserts Menu</h2>
                 <div className="table-outer">
                     <table>
                         <thead>
@@ -308,7 +308,7 @@ const MenuGuideSection = () => {
                             <tr><td>Chocolate Chip Cookie</td><td className="price">$7.29</td><td className="cal">190 cal/slice</td><td className="desc">Family-sized warm cookie, 8 slices</td></tr>
                             <tr><td>Double Chocolate Chip Brownie</td><td className="price">$7.29</td><td className="cal">240 cal/square</td><td className="desc">Rich, fudgy brownie — 9 squares</td></tr>
                             <tr><td>Cinnamon Pull Aparts</td><td className="price">$7.29</td><td className="cal">1,960 total</td><td className="desc">Sweet cinnamon dough rolls with icing</td></tr>
-                            <tr><td>OREO® Cookie Papa Bites</td><td className="price">$6.99</td><td className="cal">100 cal/roll</td><td className="desc">8 rolls — OREO cookie baked into sweet bites</td></tr>
+                            <tr><td>OREO Cookie Papa Bites</td><td className="price">$6.99</td><td className="cal">100 cal/roll</td><td className="desc">8 rolls — OREO cookie baked into sweet bites</td></tr>
                         </tbody>
                     </table>
                 </div>

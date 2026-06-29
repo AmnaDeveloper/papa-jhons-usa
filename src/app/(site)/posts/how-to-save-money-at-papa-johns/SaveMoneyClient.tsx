@@ -2,9 +2,9 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { 
-    ArrowRight, Star, 
-    Percent, Clock, DollarSign, CheckCircle2, 
+import {
+    ArrowRight, Star,
+    Percent, Clock, DollarSign, CheckCircle2,
     ChevronDown, ChevronUp, Calculator, ShieldAlert, Award,
     ExternalLink, ClipboardCheck, ReceiptText
 } from 'lucide-react';
@@ -14,7 +14,7 @@ export default function SaveMoneyClient() {
     const [orderType, setOrderType] = useState<'carryout' | 'delivery'>('carryout');
     const [subtotal, setSubtotal] = useState<number>(30);
     const [isRewardsMember, setIsRewardsMember] = useState<boolean>(true);
-    
+
     // FAQ States
     const [openFaq, setOpenFaq] = useState<number | null>(null);
 
@@ -181,9 +181,9 @@ export default function SaveMoneyClient() {
                                     <Star size={12} fill="currentColor" /> Featured Guide
                                 </div>
                                 <div className="rounded-[1.5rem] overflow-hidden aspect-square relative bg-gray-50 border border-gray-100">
-                                    <img 
-                                        src="/how-to-save-money-at-papa-johns.png" 
-                                        alt="How to Save Money at Papa Johns Pizza" 
+                                    <img
+                                        src="/how-to-save-money-at-papa-johns.png"
+                                        alt="How to Save Money at Papa Johns Pizza"
                                         className="w-full h-full object-cover"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
@@ -197,10 +197,10 @@ export default function SaveMoneyClient() {
             {/* Main Content Grid */}
             <main className="max-w-6xl mx-auto px-4 py-12 md:py-16">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
-                    
+
                     {/* Left side: Interactive Calculator & Sidebar (Sticky) */}
                     <div className="lg:col-span-4 lg:order-2 space-y-6 lg:sticky lg:top-8 self-start">
-                        
+
                         {/* 1. Interactive Savings Calculator */}
                         <div className="bg-white rounded-[1.5rem] p-6 shadow-xl border border-black/5 relative overflow-hidden">
                             <div className="absolute inset-x-0 top-0 h-1.5 bg-[#cc0000]"></div>
@@ -213,13 +213,13 @@ export default function SaveMoneyClient() {
                                 <div>
                                     <label className="block text-xs font-extrabold uppercase tracking-wider text-gray-500 mb-2">Order Method</label>
                                     <div className="grid grid-cols-2 gap-2 bg-gray-100 p-1 rounded-2xl">
-                                        <button 
+                                        <button
                                             onClick={() => setOrderType('carryout')}
                                             className={`py-3 px-4 rounded-xl font-extrabold text-xs uppercase transition-all ${orderType === 'carryout' ? 'bg-[#143414] text-white shadow-sm' : 'text-gray-600 hover:bg-white/70'}`}
                                         >
                                             Carryout
                                         </button>
-                                        <button 
+                                        <button
                                             onClick={() => setOrderType('delivery')}
                                             className={`py-3 px-4 rounded-xl font-extrabold text-xs uppercase transition-all ${orderType === 'delivery' ? 'bg-[#143414] text-white shadow-sm' : 'text-gray-600 hover:bg-white/70'}`}
                                         >
@@ -234,12 +234,12 @@ export default function SaveMoneyClient() {
                                         <label className="text-xs font-extrabold uppercase tracking-wider text-gray-500">Order Subtotal</label>
                                         <span className="text-sm font-black text-[#143414] bg-[#CCEE18]/40 px-3 py-0.5 rounded-full">${subtotal}</span>
                                     </div>
-                                    <input 
-                                        type="range" 
-                                        min="15" 
-                                        max="100" 
+                                    <input
+                                        type="range"
+                                        min="15"
+                                        max="100"
                                         step="5"
-                                        value={subtotal} 
+                                        value={subtotal}
                                         onChange={(e) => setSubtotal(Number(e.target.value))}
                                         className="w-full accent-[#1A3D17]"
                                     />
@@ -256,7 +256,7 @@ export default function SaveMoneyClient() {
                                         <span className="block text-xs font-black uppercase text-gray-700">Papa Rewards Member</span>
                                         <span className="text-[10px] text-gray-400 font-bold block">Earn points on every order</span>
                                     </div>
-                                    <input 
+                                    <input
                                         type="checkbox"
                                         checked={isRewardsMember}
                                         onChange={(e) => setIsRewardsMember(e.target.checked)}
@@ -269,7 +269,7 @@ export default function SaveMoneyClient() {
                                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,_var(--tw-gradient-stops))] from-white/5 via-transparent to-transparent pointer-events-none"></div>
                                     <span className="block text-xs uppercase tracking-widest text-[#CCEE18] font-black">Estimated Savings</span>
                                     <span className="block text-4xl md:text-5xl font-black text-white my-2 tracking-tight">${savingsData.total}</span>
-                                    
+
                                     <div className="border-t border-white/10 pt-4 mt-4 text-left space-y-2 text-xs font-bold text-gray-300">
                                         {orderType === 'carryout' && (
                                             <>
@@ -325,12 +325,12 @@ export default function SaveMoneyClient() {
 
                     {/* Right side: Main Article Content (Structured Layout) */}
                     <div className="lg:col-span-8 lg:order-1 space-y-8">
-                        
+
                         {/* Article Intro */}
                         <div className="bg-white rounded-[1.5rem] p-7 md:p-8 shadow-md border border-black/5 relative overflow-hidden">
                             {/* Quote Icon Background */}
                             <div className="absolute top-6 right-8 text-gray-100 font-serif text-8xl leading-none select-none pointer-events-none">“</div>
-                            
+
                             <p className="text-lg leading-relaxed text-gray-700 font-bold relative z-10">
                                 Let's be honest — many &quot;how to save money at Papa Johns&quot; articles online say the exact same thing. They list a bunch of promo codes, some of which may already be expired, and call it a day. After reviewing Papa Johns pricing patterns, rewards terms, and checkout examples for this site, the practical takeaway is that codes are often the least reliable part of the whole equation.
                             </p>
@@ -515,12 +515,12 @@ export default function SaveMoneyClient() {
                                     The Carryout Discount Is the One Thing Most People Skip
                                 </h2>
                             </div>
-                            
+
                             <div className="pl-0 md:pl-14 space-y-6 text-gray-600 font-bold text-base leading-relaxed">
                                 <p>
                                     Here's the thing nobody really talks about enough: if you choose carryout instead of delivery, Papa Johns automatically knocks the price down on regular menu-priced pizzas. No code, no app gymnastics, nothing to type in. You just pick &quot;carryout&quot; when you're checking out and the discount shows up on its own. For more location planning, use our <Link href="/store-locator" className="text-[#cc0000] underline font-black">store locator</Link> before you order.
                                 </p>
-                                
+
                                 <div className="bg-red-50 border-l-4 border-[#cc0000] p-6 rounded-r-2xl my-6">
                                     <h4 className="text-sm font-black text-[#cc0000] uppercase tracking-wider mb-2 flex items-center gap-2">
                                         <ShieldAlert size={16} /> Checkout Comparison Note
@@ -666,14 +666,14 @@ export default function SaveMoneyClient() {
                             <h2 className="text-2xl md:text-4xl font-black uppercase mb-8" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
                                 Money-Saving FAQs
                             </h2>
-                            
+
                             <div className="space-y-4">
                                 {faqData.map((faq, idx) => (
-                                    <div 
-                                        key={idx} 
+                                    <div
+                                        key={idx}
                                         className="border-b border-gray-100 pb-4"
                                     >
-                                        <button 
+                                        <button
                                             onClick={() => toggleFaq(idx)}
                                             className="w-full flex items-center justify-between text-left py-4 focus:outline-none group"
                                         >
@@ -684,8 +684,8 @@ export default function SaveMoneyClient() {
                                                 {openFaq === idx ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
                                             </span>
                                         </button>
-                                        
-                                        <div 
+
+                                        <div
                                             className={`transition-all duration-300 overflow-hidden ${openFaq === idx ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0 pointer-events-none'}`}
                                         >
                                             <p className="text-gray-500 font-medium text-sm md:text-base leading-relaxed pt-2">
@@ -707,14 +707,14 @@ export default function SaveMoneyClient() {
                                     Put these strategies to test. Head over to our Store Locator to find your closest store and order carryout now!
                                 </p>
                                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-                                    <Link 
-                                        href="/store-locator" 
+                                    <Link
+                                        href="/store-locator"
                                         className="w-full sm:w-auto bg-[#CCEE18] hover:bg-white text-[#1A3D17] font-black py-4 px-10 rounded-full transition-all uppercase tracking-widest text-xs shadow-xl active:scale-95"
                                     >
                                         Find Nearest Location
                                     </Link>
-                                    <Link 
-                                        href="/coupons" 
+                                    <Link
+                                        href="/coupons"
                                         className="w-full sm:w-auto bg-transparent border-2 border-white hover:bg-white hover:text-[#1A3D17] text-white font-black py-4 px-10 rounded-full transition-all uppercase tracking-widest text-xs shadow-xl active:scale-95"
                                     >
                                         Browse Active Coupons
@@ -724,7 +724,7 @@ export default function SaveMoneyClient() {
                         </div>
 
                     </div>
-                    
+
                 </div>
             </main>
         </div>

@@ -16,7 +16,7 @@ export const revalidate = 86400; // 24 hours ISR
 export async function generateMetadata() {
   const date = getTodayFormatted()
   const month = getMonthYear()
-  
+
   return {
     title: `Papa Johns Menu with Prices ${month}: Complete Guide`,
     description: `Discover the complete Papa Johns menu with prices, updated ${date}. Classic Pizzas from $10.99, Super Loaded from $14.99. Deals, coupons & nutrition guide.`,
@@ -369,7 +369,7 @@ export default function Home() {
                                             <div className="mt-6 grid gap-3 md:grid-cols-3">
                                                 {guide.bullets.map((item) => (
                                                     <div key={item} className="rounded-2xl bg-[#fcfaf8] border border-gray-100 p-4 text-sm font-bold text-gray-600 leading-relaxed">
-                                                        <span className="mb-3 h-6 w-6 shrink-0 rounded-full bg-[#CCEE18] text-[#1A3D17] flex items-center justify-center text-[10px] font-black">✓</span>
+                                                        <span className="mb-3 h-6 w-6 shrink-0 rounded-full bg-[#CCEE18] text-[#1A3D17] flex items-center justify-center text-[10px] font-black"></span>
                                                         <span>{item}</span>
                                                     </div>
                                                 ))}

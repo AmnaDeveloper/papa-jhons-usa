@@ -2,9 +2,9 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Papa Rewards® - Earn Points & Redeem Free Pizza | Papa John's USA",
+    title: "Papa Rewards - Earn Points & Redeem Free Pizza | Papa John's USA",
     description:
-        "Join Papa Rewards® and earn 1 point for every $1 spent at Papa John's. Redeem points for free Breadsticks, Wings, Medium Pizza, Large Pizza, and more. Sign up today and start earning Papa Dough!",
+        "Join Papa Rewards and earn 1 point for every $1 spent at Papa John's. Redeem points for free Breadsticks, Wings, Medium Pizza, Large Pizza, and more. Sign up today and start earning Papa Dough!",
     keywords: [
         "Papa Rewards",
         "Papa John's loyalty program",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
         "Papa Dough",
     ],
     openGraph: {
-        title: "Papa Rewards® — Earn Free Pizza at Papa John's",
+        title: "Papa Rewards — Earn Free Pizza at Papa John's",
         description:
             "Earn points on every Papa John's order and redeem them for free food — from Breadsticks to Large Pizzas. The best pizza loyalty program in the USA.",
         url: "https://papajohns-menus.us/papa-johns-rewards",
@@ -27,16 +27,16 @@ export const metadata: Metadata = {
 };
 
 const rewardItems = [
-    { points: 25,  item: 'Original Breadsticks',           icon: '🥖', desc: 'Classic baked breadsticks with garlic butter dip' },
-    { points: 25,  item: 'Potato Wedges',                  icon: '🍟', desc: 'Crispy golden seasoned potato wedges' },
-    { points: 50,  item: 'Banana Hazelnut Choco Roll',     icon: '🍫', desc: 'Sweet slow-baked chocolate hazelnut dessert roll' },
-    { points: 60,  item: 'Chicken Poppers (10 pcs)',        icon: '🍗', desc: 'Bite-sized crispy white-meat chicken poppers' },
-    { points: 75,  item: 'Cheesesticks',                   icon: '🧀', desc: '100% real mozzarella melted over fresh-baked dough' },
-    { points: 75,  item: 'Peri Peri Chicken Poppers',      icon: '🌶️', desc: 'Spicy peri peri glazed chicken bites (10 pcs)' },
-    { points: 80,  item: 'Wings (10 pcs)',                  icon: '🍗', desc: 'Bone-in or boneless wings in your favorite sauce' },
-    { points: 90,  item: 'Spicy Chicken Roll',             icon: '🌯', desc: 'Rolled in our signature spicy buffalo sauce' },
-    { points: 150, item: 'Medium Pizza (Any Flavor)',      icon: '🍕', desc: 'Choose any Medium pizza from the full menu' },
-    { points: 200, item: 'Large Pizza (Any Flavor)',       icon: '🔥', desc: 'Any Large pizza — all toppings of your choice!', popular: true },
+    { points: 25,  item: 'Original Breadsticks',           icon: '', desc: 'Classic baked breadsticks with garlic butter dip' },
+    { points: 25,  item: 'Potato Wedges',                  icon: '', desc: 'Crispy golden seasoned potato wedges' },
+    { points: 50,  item: 'Banana Hazelnut Choco Roll',     icon: '', desc: 'Sweet slow-baked chocolate hazelnut dessert roll' },
+    { points: 60,  item: 'Chicken Poppers (10 pcs)',        icon: '', desc: 'Bite-sized crispy white-meat chicken poppers' },
+    { points: 75,  item: 'Cheesesticks',                   icon: '', desc: '100% real mozzarella melted over fresh-baked dough' },
+    { points: 75,  item: 'Peri Peri Chicken Poppers',      icon: '', desc: 'Spicy peri peri glazed chicken bites (10 pcs)' },
+    { points: 80,  item: 'Wings (10 pcs)',                  icon: '', desc: 'Bone-in or boneless wings in your favorite sauce' },
+    { points: 90,  item: 'Spicy Chicken Roll',             icon: '', desc: 'Rolled in our signature spicy buffalo sauce' },
+    { points: 150, item: 'Medium Pizza (Any Flavor)',      icon: '', desc: 'Choose any Medium pizza from the full menu' },
+    { points: 200, item: 'Large Pizza (Any Flavor)',       icon: '', desc: 'Any Large pizza — all toppings of your choice!', popular: true },
 ];
 
 const howToEarnSteps = [
@@ -44,19 +44,19 @@ const howToEarnSteps = [
         step: '01',
         title: 'Create a Free Account',
         desc: "Sign up on Papa John's website or app in under 60 seconds. No credit card required — completely free to join!",
-        icon: '👤',
+        icon: '',
     },
     {
         step: '02',
         title: 'Order & Earn Points',
         desc: 'With every $1 spent on any qualifying delivery or carryout order, you automatically earn 1 reward point.',
-        icon: '🛒',
+        icon: '',
     },
     {
         step: '03',
         title: 'Redeem at Checkout',
         desc: 'Hit your target points and pick any item from the rewards menu. Points are applied instantly as Papa Dough at checkout.',
-        icon: '🎁',
+        icon: '',
     },
 ];
 
@@ -117,8 +117,8 @@ export default function PapaRewardsPage() {
             <div className="bg-[#1A3D17] border-b-8 border-[#cc0000] text-white py-16 md:py-24 text-center relative overflow-hidden mb-16">
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#CCEE18] rounded-full -mr-64 -mt-64 opacity-5 pointer-events-none"></div>
                 <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-[#cc0000] rounded-full -ml-40 -mb-40 opacity-5 pointer-events-none"></div>
-                <div className="absolute top-10 left-10 text-[#CCEE18] text-2xl opacity-20 animate-bounce">⭐</div>
-                <div className="absolute top-16 right-20 text-[#CCEE18] text-3xl opacity-15 animate-pulse">⭐</div>
+                <div className="absolute top-10 left-10 text-[#CCEE18] text-2xl opacity-20 animate-bounce"></div>
+                <div className="absolute top-16 right-20 text-[#CCEE18] text-3xl opacity-15 animate-pulse"></div>
 
                 <div className="container mx-auto px-4 relative z-10">
                     <span className="inline-block bg-[#CCEE18] text-[#1A3D17] font-black uppercase tracking-[0.4em] text-[10px] px-6 py-2.5 rounded-full mb-6 shadow-lg">
@@ -128,7 +128,7 @@ export default function PapaRewardsPage() {
                         className="text-4xl md:text-7xl font-black uppercase tracking-tighter mb-4"
                         style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}
                     >
-                        Papa <span className="text-[#CCEE18]">Rewards</span>®
+                        Papa <span className="text-[#CCEE18]">Rewards</span>
                     </h1>
                     <p className="text-lg md:text-xl text-white/80 font-bold max-w-3xl mx-auto leading-relaxed mb-8">
                         The most rewarding pizza loyalty program in the United States. Earn <strong className="text-[#CCEE18]">1 point</strong> for every $1 spent and redeem for free food starting at just <strong className="text-[#CCEE18]">25 Points</strong> — from Breadsticks to a full Large Pizza!
@@ -167,7 +167,7 @@ export default function PapaRewardsPage() {
             {/* ── SEO INTRO CONTENT ── */}
             <section className="max-w-[900px] mx-auto px-4 mb-20 text-center">
                 <p className="text-gray-600 text-lg leading-relaxed font-medium">
-                    The <strong>Papa Rewards® program</strong> is <a href="https://www.papajohns.com/papa-rewards/" target="_blank" rel="noopener noreferrer" className="text-[#cc0000] underline font-bold hover:text-[#1A3D17]">Papa John's official loyalty program</a>, designed to reward loyal customers across the USA with exclusive free food perks. Unlike other <a href="https://en.wikipedia.org/wiki/Loyalty_program" target="_blank" rel="noopener noreferrer" className="text-[#1A3D17] underline font-bold hover:text-[#cc0000]">loyalty programs</a>, Papa Rewards® covers your entire order — from our crowd-pleasing{' '}
+                    The <strong>Papa Rewards program</strong> is <a href="https://www.papajohns.com/papa-rewards/" target="_blank" rel="noopener noreferrer" className="text-[#cc0000] underline font-bold hover:text-[#1A3D17]">Papa John's official loyalty program</a>, designed to reward loyal customers across the USA with exclusive free food perks. Unlike other <a href="https://en.wikipedia.org/wiki/Loyalty_program" target="_blank" rel="noopener noreferrer" className="text-[#1A3D17] underline font-bold hover:text-[#cc0000]">loyalty programs</a>, Papa Rewards covers your entire order — from our crowd-pleasing{' '}
                     <Link href="/posts/classic-pizzas" className="text-[#cc0000] underline font-bold hover:text-[#1A3D17]">Classic Pizzas</Link> and{' '}
                     <Link href="/posts/super-loaded" className="text-[#cc0000] underline font-bold hover:text-[#1A3D17]">Specialty Pizzas</Link> to{' '}
                     <Link href="/posts/sides" className="text-[#cc0000] underline font-bold hover:text-[#1A3D17]">Sides & Dips</Link> and{' '}
@@ -190,7 +190,7 @@ export default function PapaRewardsPage() {
                             How to <span className="text-[#cc0000]">Earn Points?</span>
                         </h2>
                         <p className="text-gray-500 font-bold max-w-2xl mx-auto leading-relaxed">
-                            Earning Papa Rewards® points is incredibly simple. Every time you order{' '}
+                            Earning Papa Rewards points is incredibly simple. Every time you order{' '}
                             <Link href="/best-pizza-delivery-near-me" className="text-[#cc0000] underline font-bold">pizza delivery</Link>{' '}
                             or carryout in the US, points are added automatically to your account.
                         </p>
@@ -242,7 +242,7 @@ export default function PapaRewardsPage() {
                             >
                                 {reward.popular && (
                                     <div className="absolute -top-3 right-5 bg-[#cc0000] text-white text-[9px] font-black uppercase tracking-widest px-4 py-1.5 rounded-full shadow-md">
-                                        🔥 Best Reward
+                                         Best Reward
                                     </div>
                                 )}
                                 <div className="text-5xl mb-4">{reward.icon}</div>
@@ -274,7 +274,7 @@ export default function PapaRewardsPage() {
                         How to <span className="text-[#CCEE18]">Use My Points?</span>
                     </h2>
                     <p className="text-white/70 font-bold max-w-2xl mx-auto text-base leading-relaxed mb-12">
-                        Redeeming your Papa Rewards® points is just as easy as earning them. When you're ready to claim a reward, simply follow these three steps at checkout. No complicated forms, no waiting — just free food from your favorite{' '}
+                        Redeeming your Papa Rewards points is just as easy as earning them. When you're ready to claim a reward, simply follow these three steps at checkout. No complicated forms, no waiting — just free food from your favorite{' '}
                         <Link href="/menus-prices" className="text-[#CCEE18] underline font-bold hover:text-white">
                             Papa John's menu
                         </Link>
@@ -284,17 +284,17 @@ export default function PapaRewardsPage() {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-14">
                         {[
                             {
-                                icon: '🛒',
+                                icon: '',
                                 title: 'Add Reward to Cart',
                                 desc: 'Pick any item from our rewards catalogue and add it directly to your cart alongside your regular order.',
                             },
                             {
-                                icon: '💳',
+                                icon: '',
                                 title: 'Apply at Checkout',
                                 desc: 'On the payment screen, select "Redeem Points." Your balance updates instantly — no coupon codes needed.',
                             },
                             {
-                                icon: '🎉',
+                                icon: '',
                                 title: 'Enjoy Free Food!',
                                 desc: 'Your reward item appears in your order at $0 cost. Enjoy completely free food on us — every single time!',
                             },
@@ -312,7 +312,7 @@ export default function PapaRewardsPage() {
                             href="/contact"
                             className="inline-block bg-[#CCEE18] hover:bg-white text-[#1A3D17] font-black py-4 px-12 rounded-full transition-all uppercase tracking-widest text-xs shadow-xl active:scale-95"
                         >
-                            Join Papa Rewards® Free
+                            Join Papa Rewards Free
                         </Link>
                         <Link
                             href="/menus-prices"
@@ -335,22 +335,22 @@ export default function PapaRewardsPage() {
                             className="text-3xl md:text-5xl font-black text-[#1A3D17] uppercase tracking-tighter"
                             style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}
                         >
-                            Papa Rewards® <span className="text-[#cc0000]">FAQ</span>
+                            Papa Rewards <span className="text-[#cc0000]">FAQ</span>
                         </h2>
                     </div>
                     <div className="space-y-5">
                         {[
                             {
                                 q: 'How quickly do points appear in my account?',
-                                a: 'Points are credited to your Papa Rewards® account within 24 hours of a completed and delivered order.',
+                                a: 'Points are credited to your Papa Rewards account within 24 hours of a completed and delivered order.',
                             },
                             {
-                                q: 'Do Papa Rewards® points expire?',
+                                q: 'Do Papa Rewards points expire?',
                                 a: 'Yes, points expire after 12 months of account inactivity. Make sure to place at least one order per year to keep your balance active.',
                             },
                             {
                                 q: 'Can I use points on delivery and carryout orders?',
-                                a: 'Absolutely! Papa Rewards® points can be redeemed on both delivery and carryout orders placed through our website or app.',
+                                a: 'Absolutely! Papa Rewards points can be redeemed on both delivery and carryout orders placed through our website or app.',
                             },
                             {
                                 q: 'Can I earn points on discounted or coupon orders?',
@@ -385,7 +385,7 @@ export default function PapaRewardsPage() {
             <section className="py-10 bg-[#fcfaf8]">
                 <div className="max-w-3xl mx-auto px-4 text-center">
                     <p className="text-gray-400 text-xs font-medium leading-relaxed">
-                        *Papa Rewards® points are earned on qualifying orders only. Points expire after 12 months of inactivity. Rewards are non-transferable and cannot be exchanged for cash. Papa John's USA reserves the right to modify or terminate the program at any time without prior notice. Read our full{' '}
+                        *Papa Rewards points are earned on qualifying orders only. Points expire after 12 months of inactivity. Rewards are non-transferable and cannot be exchanged for cash. Papa John's USA reserves the right to modify or terminate the program at any time without prior notice. Read our full{' '}
                         <Link href="/terms" className="text-[#cc0000] underline font-bold">
                             Terms & Conditions
                         </Link>{' '}

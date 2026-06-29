@@ -48,7 +48,7 @@ export interface RichLocationData {
 const standardPizzaPrices2026: RichLocationData["menuPizzas"] = [
     { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
     { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-    { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+    { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
     { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
     { name: "Garden Fresh", s: "$13.49", m: "$16.49", l: "$19.99", xl: "$22.99" },
     { name: "New York Style", s: "—", m: "—", l: "$17.99", xl: "—" },
@@ -88,7 +88,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -159,7 +159,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -233,7 +233,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Garden Fresh", s: "$13.49", m: "$16.49", l: "$19.99", xl: "$22.99" },
             { name: "Spicy Italian", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
@@ -250,10 +250,10 @@ export const locationRichContent: Record<string, RichLocationData> = {
             { name: "Papa Bites (Oreo)", price: "$5.99" }
         ],
         neighborhoodContent: [
-            { title: "🏈 Game Day Orders", text: "During Atlanta Falcons, Hawks, Braves, and Atlanta United game days, expect delivery times of 45–60 minutes. Order at least 45 minutes before kickoff. <a href=\"/posts/papa-johns-the-works-pizza\" class=\"text-[#cc0000] hover:underline\">The Works Pizza</a>, <a href=\"/posts/papa-johns-pepperoni-pizza\" class=\"text-[#cc0000] hover:underline\">Pepperoni</a>, and <a href=\"/posts/papa-johns-garlic-knots\" class=\"text-[#cc0000] hover:underline\">Garlic Knots</a> are top game-day picks. Call your nearest location for large group orders of 5+ pizzas." },
-            { title: "🎓 Georgia Tech & GSU", text: "The State St NW location (404-872-5252) serves Georgia Tech and Georgia State. Delivery to on-campus addresses takes 25–40 minutes during non-peak hours. The Papa Pairings deal — two qualifying items at $6.99 each — is the best value for student budgets. Check our <a href=\"/coupons\" class=\"text-[#cc0000] hover:underline\">coupons page</a> for the latest student deals." },
-            { title: "🌙 Late Night Pizza Atlanta", text: "Most Atlanta Papa Johns locations are open until 1:00 AM on weekdays and 2:00 AM on Fridays and Saturdays — some of the latest hours of any pizza chain in Atlanta. Check the app for real-time availability at each location." },
-            { title: "🗺️ Delivery Areas in Atlanta", text: "Papa Johns delivers across these Atlanta neighborhoods (coverage varies by location): Downtown Atlanta, Midtown, Buckhead, Virginia-Highland, Inman Park, East Atlanta Village, Little Five Points, Old Fourth Ward, Ponce City Market, Castleberry Hill, Grant Park, Edgewood, Kirkwood, Ansley Park, Morningside, Druid Hills, Cascade Heights, Southwest Atlanta, Georgia Tech Area, and Brookhaven." }
+            { title: " Game Day Orders", text: "During Atlanta Falcons, Hawks, Braves, and Atlanta United game days, expect delivery times of 45–60 minutes. Order at least 45 minutes before kickoff. <a href=\"/posts/papa-johns-the-works-pizza\" class=\"text-[#cc0000] hover:underline\">The Works Pizza</a>, <a href=\"/posts/papa-johns-pepperoni-pizza\" class=\"text-[#cc0000] hover:underline\">Pepperoni</a>, and <a href=\"/posts/papa-johns-garlic-knots\" class=\"text-[#cc0000] hover:underline\">Garlic Knots</a> are top game-day picks. Call your nearest location for large group orders of 5+ pizzas." },
+            { title: " Georgia Tech & GSU", text: "The State St NW location (404-872-5252) serves Georgia Tech and Georgia State. Delivery to on-campus addresses takes 25–40 minutes during non-peak hours. The Papa Pairings deal — two qualifying items at $6.99 each — is the best value for student budgets. Check our <a href=\"/coupons\" class=\"text-[#cc0000] hover:underline\">coupons page</a> for the latest student deals." },
+            { title: " Late Night Pizza Atlanta", text: "Most Atlanta Papa Johns locations are open until 1:00 AM on weekdays and 2:00 AM on Fridays and Saturdays — some of the latest hours of any pizza chain in Atlanta. Check the app for real-time availability at each location." },
+            { title: " Delivery Areas in Atlanta", text: "Papa Johns delivers across these Atlanta neighborhoods (coverage varies by location): Downtown Atlanta, Midtown, Buckhead, Virginia-Highland, Inman Park, East Atlanta Village, Little Five Points, Old Fourth Ward, Ponce City Market, Castleberry Hill, Grant Park, Edgewood, Kirkwood, Ansley Park, Morningside, Druid Hills, Cascade Heights, Southwest Atlanta, Georgia Tech Area, and Brookhaven." }
         ],
         faq: [
             { q: "How many Papa Johns locations are in Atlanta, GA?", a: "There are 12 Papa Johns locations in Atlanta, Georgia. Major locations include 990 State St NW (near Georgia Tech), 468 Ponce De Leon Ave NE (Midtown), 1874 Piedmont Ave NE (Virginia-Highland), 590 Cascade Ave SW, 2900 Peachtree Road (Buckhead), and 1098 Moreland Ave (East Atlanta). Use the store locator to find the one closest to you." },
@@ -384,7 +384,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -455,7 +455,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Epic Stuffed Crust", s: "—", m: "—", l: "$19.99", xl: "—" },
             { name: "Pan Pizza", s: "—", m: "$11.99", l: "—", xl: "—" }
@@ -538,7 +538,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Epic Stuffed Crust", s: "—", m: "—", l: "$19.99", xl: "—" },
             { name: "Pan Pizza", s: "—", m: "$11.99", l: "—", xl: "—" }
@@ -1077,7 +1077,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Epic Stuffed Crust", s: "—", m: "—", l: "$19.99", xl: "—" },
             { name: "Pan Pizza", s: "—", m: "$11.99", l: "—", xl: "—" }
@@ -1156,7 +1156,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -1227,7 +1227,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -1294,7 +1294,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -1365,7 +1365,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -1436,7 +1436,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -1499,7 +1499,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -1562,7 +1562,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -1625,7 +1625,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -1688,7 +1688,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -1751,7 +1751,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -1826,7 +1826,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -1901,7 +1901,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -1976,7 +1976,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -2047,7 +2047,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -2122,7 +2122,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -2197,7 +2197,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -2272,7 +2272,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -2347,7 +2347,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -2422,7 +2422,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -2497,7 +2497,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -2572,7 +2572,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -2647,7 +2647,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -2722,7 +2722,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -2797,7 +2797,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -2872,7 +2872,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -2947,7 +2947,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -3022,7 +3022,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -3097,7 +3097,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -3172,7 +3172,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -3247,7 +3247,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -3318,7 +3318,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -3393,7 +3393,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -3468,7 +3468,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -3543,7 +3543,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -3739,7 +3739,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -3814,7 +3814,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -3889,7 +3889,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -3956,7 +3956,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -4027,7 +4027,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -4102,7 +4102,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -4177,7 +4177,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -4252,7 +4252,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -4327,7 +4327,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -4402,7 +4402,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -4473,7 +4473,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -4544,7 +4544,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -4619,7 +4619,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -4694,7 +4694,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],
@@ -4769,7 +4769,7 @@ export const locationRichContent: Record<string, RichLocationData> = {
         menuPizzas: [
             { name: "Pepperoni Pizza", s: "$11.49", m: "$14.49", l: "$17.99", xl: "$20.99" },
             { name: "Cheese Pizza", s: "$11.49", m: "$14.49", l: "$15.99", xl: "$18.99" },
-            { name: "The Works™", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
+            { name: "The Works", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "BBQ Chicken Bacon", s: "$14.49", m: "$17.49", l: "$20.99", xl: "$23.99" },
             { name: "Pan Pizza (new 2026)", s: "—", m: "$11.99", l: "—", xl: "—" }
         ],

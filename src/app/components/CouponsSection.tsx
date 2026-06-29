@@ -83,9 +83,9 @@ export default function CouponsSection() {
                 const url = match[2];
                 const isExternal = url.startsWith('http');
                 return (
-                    <Link 
-                        key={i} 
-                        href={url} 
+                    <Link
+                        key={i}
+                        href={url}
                         target={isExternal ? "_blank" : undefined}
                         className="text-[#cc0000] font-bold hover:underline"
                     >
@@ -102,7 +102,7 @@ export default function CouponsSection() {
     return (
         <section className="py-20 bg-[#fafafa] w-full border-t border-gray-100">
             <div className="max-w-[1400px] mx-auto px-4 md:px-8">
-                
+
                 {/* ── SEO Optimized Header ── */}
                 <div className="flex flex-col md:flex-row items-center md:items-start gap-8 mb-16">
                     <div className="bg-[#1A3D17] p-5 rounded-2xl flex flex-col items-center justify-center w-32 h-32 shadow-xl border-b-4 border-[#CCEE18]">
@@ -110,8 +110,8 @@ export default function CouponsSection() {
                          <span className="text-white text-xl font-black italic leading-none mt-1">JOHNS</span>
                     </div>
                     <div className="text-center md:text-left pt-2 flex-1">
-                        <h2 
-                            className="text-4xl md:text-6xl font-black text-[#1A3D17] uppercase tracking-tighter" 
+                        <h2
+                            className="text-4xl md:text-6xl font-black text-[#1A3D17] uppercase tracking-tighter"
                             style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}
                         >
                             Papa John's <span className="text-[#cc0000]">Promo Codes</span> 2026
@@ -129,7 +129,7 @@ export default function CouponsSection() {
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-                    
+
                     {/* ── Main Coupons List ── */}
                     <div className="lg:col-span-8">
                         <div className="space-y-8">
@@ -138,7 +138,7 @@ export default function CouponsSection() {
                                 return (
                                     <div key={coupon.id} className="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm transition-shadow hover:shadow-md">
                                         <div className="flex flex-col md:flex-row min-h-[160px]">
-                                            
+
                                             {/* LEFT: Discount Display */}
                                             <div className="md:w-[180px] p-8 bg-gray-50/80 flex flex-col items-center justify-center border-b md:border-b-0 md:border-r border-gray-200">
                                                 <div className="text-center">
@@ -165,7 +165,7 @@ export default function CouponsSection() {
 
                                             {/* RIGHT: Show Code Button Area */}
                                             <div className="md:w-[240px] p-8 flex items-center justify-center bg-white border-t md:border-t-0 md:border-l border-gray-100">
-                                                <button 
+                                                <button
                                                     onClick={() => handleReveal(coupon.id, coupon.code)}
                                                     className={`w-full h-16 rounded-xl flex flex-col items-center justify-center transition-all duration-300 transform ${isRevealed ? 'bg-gray-100 border-2 border-dashed border-[#1A3D17]/30' : 'bg-[#1A3D17] hover:bg-[#cc0000] text-white shadow-lg active:scale-95'}`}
                                                 >
@@ -205,7 +205,7 @@ export default function CouponsSection() {
 
                     {/* ── Improved Sidebar ── */}
                     <div className="lg:col-span-4 space-y-10">
-                        
+
                         {/* Coupon Highlights (SEO Optimized) */}
                         <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200">
                              <h4 className="text-xl font-black text-[#1A3D17] mb-6 uppercase tracking-tight border-b border-gray-50 pb-4" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>

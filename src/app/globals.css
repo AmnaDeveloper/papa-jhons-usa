@@ -191,3 +191,14 @@ th {
   font-size: 12px !important;
   font-weight: 700 !important;
 }
+
+/* /posts article heading standard */
+.blog-content h2,
+.blog-content .article-body h2,
+.blog-content h2.text-2xl {
+  font-family: var(--font-papa), "PapaSans-Heavy", "Arial Black", sans-serif !important;
+  font-size: 24px !important;
+  font-weight: 900 !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0 !important;
+}

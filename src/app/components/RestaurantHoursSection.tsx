@@ -63,7 +63,7 @@ export default function RestaurantHoursSection() {
                         style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(204,238,24,0.2)', boxShadow: '0 4px 24px rgba(0,0,0,0.25)' }}
                     >
                         <div className="flex items-center gap-2 mb-3">
-                            <div className="w-7 h-7 rounded-full bg-[#CCEE18] flex items-center justify-center text-sm">📍</div>
+                            <div className="w-7 h-7 rounded-full bg-[#CCEE18] flex items-center justify-center text-sm"></div>
                             <p className="text-[#CCEE18] text-xs font-black uppercase tracking-widest">Filter by State</p>
                         </div>
 
@@ -135,12 +135,12 @@ export default function RestaurantHoursSection() {
 
                                     {/* Address + Phone */}
                                     <div className="px-4 py-2.5 flex flex-col gap-1" style={{ borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
-                                        <p className="text-green-200/70 text-[11px] leading-snug">📍 {loc.address} · verify officially</p>
+                                        <p className="text-green-200/70 text-[11px] leading-snug"> {loc.address} · verify officially</p>
                                         <a
                                             href={`tel:${loc.phone.replace(/[^0-9]/g, '')}`}
                                             className="text-[#CCEE18] text-[11px] font-bold hover:text-white transition-colors"
                                         >
-                                            📞 {loc.phone}
+                                             {loc.phone}
                                         </a>
                                     </div>
 
@@ -157,7 +157,7 @@ export default function RestaurantHoursSection() {
                                                         style={isToday ? { background: 'rgba(204,238,24,0.12)', border: '1px solid rgba(204,238,24,0.25)' } : {}}
                                                     >
                                                         <span className={`${isToday ? 'text-[#CCEE18] font-black' : 'text-green-200/80 font-medium'}`}>
-                                                            {isToday ? `▶ ${dayHour.day}` : dayHour.day}
+                                                            {isToday ? ` ${dayHour.day}` : dayHour.day}
                                                         </span>
                                                         <span className={`font-mono text-[10px] ${isToday ? 'text-[#CCEE18] font-black' : 'text-white/60'}`}>
                                                             {dayHour.open} – {dayHour.close}

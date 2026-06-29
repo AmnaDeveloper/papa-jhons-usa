@@ -100,7 +100,7 @@ export default function ContactPage() {
                         <div className="bg-[#1A3D17] text-white p-10 md:p-14 rounded-[3rem] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] relative overflow-hidden ring-1 ring-white/10 hover:ring-[#CCEE18]/30 transition-all duration-500 group">
                             <div className="relative z-10">
                                 <h3 className="text-3xl font-black mb-10 uppercase tracking-tighter flex items-center gap-4" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
-                                    <span className="bg-[#CCEE18] text-[#1A3D17] w-12 h-12 rounded-2xl flex items-center justify-center text-xl shadow-lg ring-4 ring-[#CCEE18]/20">💬</span>
+                                    <span className="bg-[#CCEE18] text-[#1A3D17] w-12 h-12 rounded-2xl flex items-center justify-center text-xl shadow-lg ring-4 ring-[#CCEE18]/20"></span>
                                     Instant Help
                                 </h3>
 
@@ -110,7 +110,7 @@ export default function ContactPage() {
                                             <span className="w-4 h-[1px] bg-[#CCEE18]/30"></span> Papa Johns Direct Support
                                         </p>
                                         <div className="flex items-center gap-6">
-                                            <div className="w-16 h-16 bg-white/5 rounded-3xl flex items-center justify-center text-3xl group-hover/item:bg-[#CCEE18] group-hover/item:text-[#1A3D17] transition-all duration-500 shadow-inner group-hover/item:scale-110">📞</div>
+                                            <div className="w-16 h-16 bg-white/5 rounded-3xl flex items-center justify-center text-3xl group-hover/item:bg-[#CCEE18] group-hover/item:text-[#1A3D17] transition-all duration-500 shadow-inner group-hover/item:scale-110"></div>
                                             <div>
                                                 <a href="tel:1800727256" className="text-3xl font-black text-[#CCEE18] group-hover/item:text-white transition-colors tracking-tighter">1-800-PAPA</a>
                                                 <p className="text-[10px] text-white/20 mt-2 uppercase font-black tracking-widest">Papa Johns direct line</p>
@@ -123,7 +123,7 @@ export default function ContactPage() {
                                             <span className="w-4 h-[1px] bg-[#CCEE18]/30"></span> Write An Email
                                         </p>
                                         <div className="flex items-center gap-6">
-                                            <div className="w-16 h-16 bg-white/5 rounded-3xl flex items-center justify-center text-3xl group-hover/item:bg-[#CCEE18] group-hover/item:text-[#1A3D17] transition-all duration-500 shadow-inner group-hover/item:scale-110">📧</div>
+                                            <div className="w-16 h-16 bg-white/5 rounded-3xl flex items-center justify-center text-3xl group-hover/item:bg-[#CCEE18] group-hover/item:text-[#1A3D17] transition-all duration-500 shadow-inner group-hover/item:scale-110"></div>
                                             <div>
                                                 <a href="mailto:contact@papajohns-menus.us" className="text-2xl font-black text-white group-hover/item:text-[#CCEE18] transition-colors break-all tracking-tighter">contact@papajohns-menus.us</a>
                                                 <p className="text-[10px] text-white/20 mt-2 uppercase font-black tracking-widest">Independent guide inbox</p>
@@ -139,7 +139,7 @@ export default function ContactPage() {
                             <h4 className="text-2xl font-black text-[#1A3D17] mb-3 uppercase tracking-tighter" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>Store Issues?</h4>
                             <p className="text-gray-500 text-sm mb-8 font-bold leading-relaxed">For immediate help with your current pizza order, please contact your local Papa John's branch directly.</p>
                             <Link href="/store-locator" className="flex items-center justify-center gap-4 bg-[#1A3D17] text-white py-5 rounded-2xl transition-all font-black uppercase text-[10px] tracking-[0.3em] hover:bg-[#cc0000] shadow-xl transform active:scale-95">
-                                Open Store Locator <span className="text-xl">📍</span>
+                                Open Store Locator <span className="text-xl"></span>
                             </Link>
                         </div>
 

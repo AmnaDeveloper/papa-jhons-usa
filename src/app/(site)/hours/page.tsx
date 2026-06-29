@@ -70,12 +70,12 @@ export default function HoursPage() {
                 {/* Decorative Elements */}
                 <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#CCEE18] rounded-full -mr-72 -mt-72 opacity-[0.08] animate-pulse"></div>
                 <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#cc0000] rounded-full -ml-48 -mb-48 opacity-[0.08]"></div>
-                
+
                 <div className="container mx-auto px-4 relative z-10 text-center">
                     <span className="inline-block bg-[#CCEE18] text-[#1A3D17] font-black uppercase tracking-[0.4em] text-[10px] px-6 py-2.5 rounded-full mb-8 shadow-lg">
                         Business Hours
                     </span>
-                    <h1 
+                    <h1
                         className="text-4xl md:text-7xl font-black text-white uppercase tracking-tighter mb-8 leading-[0.9]"
                         style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}
                     >
@@ -89,7 +89,7 @@ export default function HoursPage() {
 
             {/* ── Main Content Area ── */}
             <div className="max-w-[1440px] mx-auto px-4 md:px-12 -mt-16 relative z-20 pb-32">
-                
+
                 {/* ── SEO CONTENT SECTION ── */}
                 <div className="bg-white rounded-[3rem] p-10 md:p-16 mb-20 shadow-2xl border border-gray-50">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -114,22 +114,22 @@ export default function HoursPage() {
                         </div>
                         <div className="grid grid-cols-2 gap-6">
                             <div className="bg-[#1A3D17] p-8 rounded-[2.5rem] text-center group hover:bg-[#CCEE18] transition-all duration-500 shadow-xl">
-                                <span className="text-4xl mb-4 block group-hover:scale-125 transition-transform">🕒</span>
+                                <span className="text-4xl mb-4 block group-hover:scale-125 transition-transform"></span>
                                 <h4 className="text-white group-hover:text-[#1A3D17] font-black uppercase text-[10px] tracking-widest mb-2">Late Night</h4>
                                 <p className="text-[#CCEE18] group-hover:text-[#1A3D17] text-xl font-black">Until 12 AM+</p>
                             </div>
                             <div className="bg-white p-8 rounded-[2.5rem] text-center border-2 border-gray-100 group hover:border-[#cc0000] transition-all duration-500 shadow-xl">
-                                <span className="text-4xl mb-4 block group-hover:scale-125 transition-transform">🎉</span>
+                                <span className="text-4xl mb-4 block group-hover:scale-125 transition-transform"></span>
                                 <h4 className="text-[#1A3D17] font-black uppercase text-[10px] tracking-widest mb-2">Weekends</h4>
                                 <p className="text-[#cc0000] text-xl font-black">All Day Open</p>
                             </div>
                             <div className="bg-white p-8 rounded-[2.5rem] text-center border-2 border-gray-100 group hover:border-[#CCEE18] transition-all duration-500 shadow-xl">
-                                <span className="text-4xl mb-4 block group-hover:scale-125 transition-transform">🚚</span>
+                                <span className="text-4xl mb-4 block group-hover:scale-125 transition-transform"></span>
                                 <h4 className="text-[#1A3D17] font-black uppercase text-[10px] tracking-widest mb-2">Delivery</h4>
                                 <p className="text-gray-400 font-black text-xs">24/7 Availability*</p>
                             </div>
                             <div className="bg-[#cc0000] p-8 rounded-[2.5rem] text-center group hover:bg-[#1A3D17] transition-all duration-500 shadow-xl">
-                                <span className="text-4xl mb-4 block group-hover:scale-125 transition-transform">🥡</span>
+                                <span className="text-4xl mb-4 block group-hover:scale-125 transition-transform"></span>
                                 <h4 className="text-white font-black uppercase text-[10px] tracking-widest mb-2">Carryout</h4>
                                 <p className="text-white text-xs font-black">Fast Pickup</p>
                             </div>

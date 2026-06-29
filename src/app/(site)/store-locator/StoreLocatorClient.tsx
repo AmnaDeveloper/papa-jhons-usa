@@ -64,7 +64,7 @@ export default function StoreLocatorClient() {
 
     const filteredLocations = useMemo(() => {
         return locations.filter(loc => {
-            const matchesSearch = 
+            const matchesSearch =
                 loc.city.toLowerCase().includes(searchQuery.toLowerCase()) ||
                 loc.zipCode.includes(searchQuery) ||
                 loc.address.toLowerCase().includes(searchQuery.toLowerCase());
@@ -87,12 +87,12 @@ export default function StoreLocatorClient() {
             <div className="bg-[#1A3D17] py-20 md:py-32 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#CCEE18] rounded-full -mr-64 -mt-64 opacity-[0.05] animate-pulse"></div>
                 <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#cc0000] rounded-full -ml-40 -mb-40 opacity-[0.05]"></div>
-                
+
                 <div className="container mx-auto px-4 relative z-10 text-center">
                     <span className="inline-block bg-[#CCEE18] text-[#1A3D17] font-black uppercase tracking-[0.4em] text-[10px] px-6 py-2.5 rounded-full mb-8 shadow-lg">
                         Find Us Nearby
                     </span>
-                    <h1 
+                    <h1
                         className="text-4xl md:text-6xl font-black text-white uppercase tracking-tighter mb-8 leading-[1.1]"
                         style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}
                     >
@@ -110,14 +110,14 @@ export default function StoreLocatorClient() {
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-end">
                         <div className="lg:col-span-12 mb-4">
                              <h2 className="text-xl font-black text-[#1A3D17] uppercase tracking-tighter flex items-center gap-3">
-                                 <span className="w-8 h-8 bg-[#CCEE18] rounded-lg flex items-center justify-center text-sm">📍</span>
+                                 <span className="w-8 h-8 bg-[#CCEE18] rounded-lg flex items-center justify-center text-sm"></span>
                                  Search City Guides
                              </h2>
                              <p className="text-xs text-gray-500 font-bold mt-3 leading-relaxed">
                                  This is not the official Papa Johns locator. Exact addresses, phone numbers, hours, and delivery availability should be verified with Papa Johns before ordering.
                              </p>
                         </div>
-                        
+
                         <div className="lg:col-span-6">
                             <label htmlFor="loc-search" className="block text-[10px] font-black text-gray-600 uppercase tracking-widest mb-3 ml-2">Location Search</label>
                             <div className="relative group">
@@ -152,7 +152,7 @@ export default function StoreLocatorClient() {
 
                         <div className="lg:col-span-2">
                             <button className="w-full bg-[#1A3D17] hover:bg-[#CCEE18] hover:text-[#1A3D17] text-white py-5 rounded-[1.5rem] font-black uppercase text-[10px] tracking-[0.2em] transition-all shadow-xl shadow-[#1A3D17]/10 active:scale-95">
-                                Search 
+                                Search
                             </button>
                         </div>
                     </div>
@@ -180,8 +180,8 @@ export default function StoreLocatorClient() {
                         {filteredLocations.map((loc) => {
                             const status = getStoreStatus();
                             return (
-                                <div 
-                                    key={loc.id} 
+                                <div
+                                    key={loc.id}
                                     className="bg-white rounded-[2.5rem] p-8 md:p-10 shadow-lg border border-gray-100 flex flex-col hover:shadow-2xl hover:border-[#CCEE18] transition-all duration-500 group relative overflow-hidden"
                                 >
                                     {/* Corner Badge */}
@@ -221,14 +221,14 @@ export default function StoreLocatorClient() {
                                     </div>
 
                                     <div className="grid grid-cols-2 gap-4 mt-auto">
-                                        <Link 
-                                            href={loc.mapsUrl} 
+                                        <Link
+                                            href={loc.mapsUrl}
                                             target="_blank"
                                             className="flex items-center justify-center gap-2 bg-[#1A3D17] text-white py-4 rounded-2xl font-black uppercase text-[10px] tracking-widest hover:bg-black transition-all shadow-lg active:scale-95"
                                         >
                                             <Navigation size={14} /> Directions
                                         </Link>
-                                        <Link 
+                                        <Link
                                             href="https://www.papajohns.com/locations"
                                             target="_blank"
                                             className="flex items-center justify-center gap-2 bg-[#CCEE18] text-[#1A3D17] py-4 rounded-2xl font-black uppercase text-[10px] tracking-widest hover:bg-[#1A3D17] hover:text-white transition-all shadow-lg active:scale-95"
@@ -242,10 +242,10 @@ export default function StoreLocatorClient() {
                     </div>
                 ) : (
                     <div className="text-center py-24 bg-white rounded-[3rem] border-2 border-dashed border-gray-100">
-                        <div className="text-6xl mb-6">🍕</div>
+                        <div className="text-6xl mb-6"></div>
                         <h2 className="text-3xl font-black text-[#1A3D17] uppercase tracking-tighter mb-4">No Stores Found</h2>
                         <p className="text-gray-400 font-bold mb-8 italic">We couldn't find any Papa John's in "{searchQuery}"</p>
-                        <button 
+                        <button
                             onClick={() => { setSearchQuery(''); setSelectedState('All States'); }}
                             className="text-[#cc0000] font-black uppercase text-[10px] tracking-[0.3em] border-b-2 border-[#cc0000] pb-1 hover:text-[#1A3D17] hover:border-[#1A3D17] transition-all"
                         >

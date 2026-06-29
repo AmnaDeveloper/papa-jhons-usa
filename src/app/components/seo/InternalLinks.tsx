@@ -12,7 +12,7 @@ export default function InternalLinks() {
                         href="/menus-prices"
                         className="text-red-700 hover:text-red-800 hover:underline transition-colors flex items-center gap-2"
                     >
-                        <span>🍕</span> Full Menu & Prices
+                        <span></span> Full Menu & Prices
                     </Link>
                 </li>
                 <li>
@@ -20,7 +20,7 @@ export default function InternalLinks() {
                         href="/coupons"
                         className="text-red-700 hover:text-red-800 hover:underline transition-colors flex items-center gap-2"
                     >
-                        <span>🎟️</span> Current Coupons & Deals
+                        <span></span> Current Coupons & Deals
                     </Link>
                 </li>
                 <li>
@@ -28,7 +28,7 @@ export default function InternalLinks() {
                         href="/store-locator"
                         className="text-red-700 hover:text-red-800 hover:underline transition-colors flex items-center gap-2"
                     >
-                        <span>📍</span> Find Papa John's Locations
+                        <span></span> Find Papa John's Locations
                     </Link>
                 </li>
                 <li>
@@ -36,7 +36,7 @@ export default function InternalLinks() {
                         href="/hours"
                         className="text-red-700 hover:text-red-800 hover:underline transition-colors flex items-center gap-2"
                     >
-                        <span>🕒</span> Store Operating Hours
+                        <span></span> Store Operating Hours
                     </Link>
                 </li>
                 <li>
@@ -44,7 +44,7 @@ export default function InternalLinks() {
                         href="/posts"
                         className="text-red-700 hover:text-red-800 hover:underline transition-colors flex items-center gap-2"
                     >
-                        <span>📰</span> Pizza Blog & News
+                        <span></span> Pizza Blog & News
                     </Link>
                 </li>
                 <li>
@@ -52,7 +52,7 @@ export default function InternalLinks() {
                         href="/papa-johns-rewards"
                         className="text-red-700 hover:text-red-800 hover:underline transition-colors flex items-center gap-2"
                     >
-                        <span>⭐</span> Papa Rewards Program
+                        <span></span> Papa Rewards Program
                     </Link>
                 </li>
             </ul>

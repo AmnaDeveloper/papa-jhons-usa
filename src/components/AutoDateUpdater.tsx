@@ -13,7 +13,7 @@ export default function AutoDateUpdater() {
             const day = today.getDate();
             const year = today.getFullYear();
             const dateStr = `${month} ${day}, ${year}`;
-            
+
             // Text walker to safely find and replace text nodes without breaking React hydration
             const walk = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null);
             let node;

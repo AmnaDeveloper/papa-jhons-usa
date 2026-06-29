@@ -55,7 +55,7 @@ export default function MenusAndPricesPage() {
 
     // Grouping everything into the 6 target categories
     const groupedContent: Record<string, { items: any[], posts: any[] }> = {};
-    
+
     // Initialize groups
     targetCategories.forEach(cat => {
         groupedContent[cat] = { items: [], posts: [] };
@@ -78,7 +78,7 @@ export default function MenusAndPricesPage() {
         if (post.slug.toLowerCase().includes('papadia')) targetCat = "Papadias";
         if (post.slug.toLowerCase().includes('papa-bites')) targetCat = "Papa Bites";
         if (post.slug.toLowerCase().includes('papa-bowls')) targetCat = "Papa Bowls";
-        
+
         if (groupedContent[targetCat]) {
             groupedContent[targetCat].posts.push(post);
         }
@@ -136,7 +136,7 @@ export default function MenusAndPricesPage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
             />
-            
+
             {/* ── HERO SECTION ── */}
             <div className="bg-[#1A3D17] border-b-8 border-[#cc0000] text-white py-16 md:py-20 text-center relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#CCEE18] rounded-full -mr-64 -mt-64 opacity-5 pointer-events-none"></div>
@@ -197,7 +197,7 @@ export default function MenusAndPricesPage() {
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
                     {targetCategories.map((cat) => (
-                        <a 
+                        <a
                             key={cat}
                             href={`#${cat.toLowerCase().replace(/\s+/g, '-')}`}
                             className="bg-white border border-gray-200 hover:border-[#cc0000] hover:text-[#cc0000] text-[#1A3D17] font-black text-xs uppercase py-4 px-2 rounded-2xl text-center transition-all shadow-sm hover:shadow-md active:scale-95 flex items-center justify-center whitespace-nowrap"
@@ -212,7 +212,7 @@ export default function MenusAndPricesPage() {
             <div className="max-w-[1400px] mx-auto px-4 pb-20">
                 {targetCategories.map((category) => {
                     const { items, posts: catPosts } = groupedContent[category];
-                    
+
                     const unifiedContent = [
                         ...items.map(i => ({ ...i, type: 'item' })),
                         ...catPosts
@@ -223,8 +223,8 @@ export default function MenusAndPricesPage() {
                     if (unifiedContent.length === 0) return null;
 
                     return (
-                        <section 
-                            key={category} 
+                        <section
+                            key={category}
                             id={category.toLowerCase().replace(/\s+/g, '-')}
                             className="mb-20 scroll-mt-24"
                         >
@@ -239,16 +239,16 @@ export default function MenusAndPricesPage() {
 
                             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
                                 {unifiedContent.map((item: any) => (
-                                    <Link 
-                                        key={item.id} 
+                                    <Link
+                                        key={item.id}
                                         href={getContentHref(item)}
                                         className="bg-white rounded-3xl p-4 shadow-sm border border-gray-100 hover:border-[#CCEE18] hover:shadow-lg transition-all group flex flex-col relative overflow-hidden"
                                     >
                                         <div className="aspect-video w-full bg-[#fcfaf8] rounded-2xl mb-4 relative overflow-hidden flex items-center justify-center">
-                                            <img 
-                                                src={item.image} 
-                                                alt={item.title} 
-                                                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
+                                            <img
+                                                src={item.image}
+                                                alt={item.title}
+                                                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                                             />
                                         </div>
                                         <div className="flex items-center justify-between mb-2">

@@ -53,7 +53,7 @@ export default function CookiesPage() {
             {/* Content Section */}
             <div className="max-w-[1000px] mx-auto px-4 md:px-8 py-16">
                 <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-10">
-                    
+
                     <section>
                         <h2 className="text-3xl font-black text-[#1A3D17] uppercase tracking-tight mb-4 border-l-4 border-[#cc0000] pl-4">
                             1. What Are Cookies?

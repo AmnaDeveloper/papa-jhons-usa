@@ -26,10 +26,10 @@ export async function GET(request: NextRequest) {
   if (authHeader !== `Bearer ${cronSecret}`) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   }
-  
+
   try {
     await submitBatchUrls(PRIORITY_PAGES)
-    
+
     return NextResponse.json({
       success: true,
       message: `Successfully submitted ${PRIORITY_PAGES.length} URLs`,

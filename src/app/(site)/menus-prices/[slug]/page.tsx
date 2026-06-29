@@ -30,8 +30,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         dynamicTitle = `Papa Johns Cheese Pizza 2026: Price, Calories & Review (${month})`;
         dynamicDescription = `Full guide to Papa Johns Cheese Pizza in ${month}. Prices ($11.49–$18.99), calories, vegetarian info & ordering guide — updated ${date}.`;
     } else if (slug === 'the-works-pizza') {
-        dynamicTitle = `Papa Johns The Works™ Pizza: Prices & Calories (${month})`;
-        dynamicDescription = `Complete guide to The Works™ pizza in ${month}. Prices, ingredient breakdown & comparison with The Meats — updated ${date}.`;
+        dynamicTitle = `Papa Johns The Works Pizza: Prices & Calories (${month})`;
+        dynamicDescription = `Complete guide to The Works pizza in ${month}. Prices, ingredient breakdown & comparison with The Meats — updated ${date}.`;
     } else if (slug === 'philly-cheesesteak-papadia') {
         dynamicTitle = `Papa Johns Philly Cheesesteak Papadia: Price & Review (${month})`;
         dynamicDescription = `Everything about the Philly Cheesesteak Papadia in ${month}. Prices, calories, sauce pairings & ordering notes — updated ${date}.`;
@@ -65,7 +65,7 @@ export default async function MenuItemBlogPage({ params }: Props) {
     if (!item) notFound();
 
     const baseUrl = 'https://papajohns-menus.us';
-    
+
     const menuItemSchema = {
         "@context": "https://schema.org",
         "@type": "Product",
@@ -115,7 +115,7 @@ export default async function MenuItemBlogPage({ params }: Props) {
                         {item.description}
                     </p>
                     <div className="flex flex-wrap items-center justify-center gap-3 mb-10 text-[10px] font-black uppercase tracking-widest text-[#1A3D17]">
-                        <span className="bg-white px-4 py-1.5 rounded-full shadow-lg">🔥 Approx {item.calories} Cals</span>
+                        <span className="bg-white px-4 py-1.5 rounded-full shadow-lg"> Approx {item.calories} Cals</span>
                         <span className="bg-[#cc0000] text-white px-4 py-1.5 rounded-full shadow-lg">Check Local Price</span>
                         <span className="bg-[#CCEE18] px-4 py-1.5 rounded-full shadow-lg">2026 Guide</span>
                     </div>
@@ -186,7 +186,7 @@ export default async function MenuItemBlogPage({ params }: Props) {
                             <ul className="space-y-4">
                                 {item.ingredients?.map(ing => (
                                     <li key={ing} className="flex items-center gap-3 text-sm font-bold text-gray-600 border-b border-gray-50 pb-3 uppercase">
-                                        <span className="text-[#CCEE18] bg-[#1A3D17] w-6 h-6 rounded-full flex items-center justify-center text-[10px]">✓</span> {ing}
+                                        <span className="text-[#CCEE18] bg-[#1A3D17] w-6 h-6 rounded-full flex items-center justify-center text-[10px]"></span> {ing}
                                     </li>
                                 ))}
                             </ul>

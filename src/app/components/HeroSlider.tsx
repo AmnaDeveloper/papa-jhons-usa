@@ -7,7 +7,7 @@ import Image from 'next/image';
 const slides = [
     {
         id: 1,
-        image: "/slider-1.webp", 
+        image: "/slider-1.webp",
         fallbackColor: "bg-[#185F34]",
         alt: "Create your own pizza at Papa Johns",
         link: "/menus-prices"
@@ -22,7 +22,7 @@ const slides = [
     {
         id: 3,
         image: "/slider-3.webp",
-        fallbackColor: "bg-[#1f2937]", 
+        fallbackColor: "bg-[#1f2937]",
         alt: "Pizzas, Wings, Desserts at Papa Johns",
         link: "/menus-prices/pizzas"
     }
@@ -49,14 +49,14 @@ export default function HeroSlider() {
     return (
         <div className="relative w-full overflow-hidden bg-gray-900 group h-[60vh] md:h-[75vh] xl:h-[85vh]">
             {/* Slider Container */}
-            <div 
+            <div
                 className="flex transition-transform duration-500 ease-in-out h-full"
                 style={{ transform: `translateX(-${currentSlide * 100}%)` }}
             >
                 {slides.map((slide, index) => (
                     <div key={slide.id} className={`w-full min-w-full h-full shrink-0 relative ${slide.fallbackColor} flex items-center justify-center overflow-hidden`}>
                         <Link href={slide.link} className="absolute inset-0 z-10 w-full h-full cursor-pointer" aria-label={slide.alt}></Link>
-                        
+
                         <Image
                             src={slide.image}
                             alt={slide.alt}
@@ -72,14 +72,14 @@ export default function HeroSlider() {
             </div>
 
             {/* Navigation Arrows */}
-            <button 
+            <button
                 onClick={prevSlide}
                 className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/80 text-white rounded-full p-3 opacity-0 group-hover:opacity-100 transition-opacity z-20"
                 aria-label="Previous slide"
             >
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M15 19l-7-7 7-7" /></svg>
             </button>
-            <button 
+            <button
                 onClick={nextSlide}
                 className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/80 text-white rounded-full p-3 opacity-0 group-hover:opacity-100 transition-opacity z-20"
                 aria-label="Next slide"

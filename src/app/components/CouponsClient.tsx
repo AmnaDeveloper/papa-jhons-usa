@@ -2,17 +2,17 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { 
-    Check, 
-    Clock, 
-    Copy, 
-    ChevronDown, 
-    Zap, 
-    Smartphone, 
-    Star, 
-    Car, 
-    Mail, 
-    Gift, 
+import {
+    Check,
+    Clock,
+    Copy,
+    ChevronDown,
+    Zap,
+    Smartphone,
+    Star,
+    Car,
+    Mail,
+    Gift,
     Gamepad2,
     CheckCircle2,
     Info,
@@ -95,10 +95,10 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
             </div>
 
             <div className="max-w-[1200px] mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-8">
-                
+
                 {/* ── LEFT COLUMN ── */}
                 <main className="lg:col-span-8">
-                    
+
                     {/* E-E-A-T Signal */}
                     <div className="bg-green-50 border border-green-100 rounded-2xl p-4 mb-10 flex items-center gap-3">
                         <div className="bg-[#1A3D17] p-2 rounded-full text-white">
@@ -116,7 +116,7 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
 
                     {/* Disclaimer Notice */}
                     <div className="bg-amber-50 border border-amber-200 rounded-2xl px-5 py-4 mb-8 flex gap-3 items-start">
-                        <span className="text-amber-500 text-lg mt-0.5">ℹ️</span>
+                        <span className="text-amber-500 text-lg mt-0.5"></span>
                         <p className="text-xs text-amber-800 font-medium leading-relaxed">
                             <strong>Heads up:</strong> Papa John's promo codes are location-specific and change frequently. Treat these as examples and confirm any discount in the official checkout before payment. No-code deals should only be trusted when your cart clearly shows the discount.
                         </p>
@@ -125,7 +125,7 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
                     {/* ── COUPON GRID ── */}
                     <div className="space-y-4 mb-16">
                         {coupons.map((coupon) => (
-                            <div 
+                            <div
                                 key={coupon.id}
                                 className={`bg-white rounded-[32px] overflow-hidden border-2 transition-all hover:shadow-xl ${coupon.featured ? 'border-[#cc0000]' : 'border-gray-100'}`}
                             >
@@ -144,7 +144,7 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
                                             ))}
                                         </div>
                                         <p className="text-sm text-gray-500 mb-6 leading-relaxed font-medium">{coupon.desc}</p>
-                                        
+
                                         <div className="flex flex-wrap items-center justify-between gap-4">
                                             {coupon.code ? (
                                                 <div className="flex items-center gap-2">
@@ -152,7 +152,7 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
                                                         {coupon.code}
                                                         <div className="absolute inset-0 bg-[#CCEE18] opacity-0 group-hover:opacity-10 transition-opacity rounded-xl"></div>
                                                     </div>
-                                                    <button 
+                                                    <button
                                                         onClick={() => copyToClipboard(coupon.code)}
                                                         className={`flex items-center gap-2 px-6 py-3 rounded-xl font-black uppercase tracking-widest text-[10px] transition-all ${copiedCode === coupon.code ? 'bg-[#1A3D17] text-white' : 'bg-[#cc0000] text-white hover:bg-[#1A3D17]'}`}
                                                     >
@@ -169,7 +169,7 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
                                             </div>
                                         </div>
                                         <p className="text-[10px] text-gray-400 mt-3 font-medium">
-                                            ⚠️ Availability may vary by location. Enter code at checkout to verify.
+                                             Availability may vary by location. Enter code at checkout to verify.
                                         </p>
                                     </div>
                                 </div>
@@ -278,7 +278,7 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
                         <div className="space-y-3">
                             {faqs.map((faq, i) => (
                                 <div key={i} className="bg-white rounded-3xl border border-gray-100 overflow-hidden shadow-sm">
-                                    <button 
+                                    <button
                                         onClick={() => toggleFaq(i)}
                                         className="w-full flex items-center justify-between p-6 text-left"
                                     >
@@ -313,7 +313,7 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
 
                 {/* ── RIGHT COLUMN: SIDEBAR ── */}
                 <aside className="lg:col-span-4 space-y-6">
-                    
+
                     <div className="bg-[#cc0000] rounded-[32px] p-8 text-white shadow-xl relative overflow-hidden group">
                         <div className="absolute top-0 right-0 w-32 h-32 bg-white opacity-5 rounded-full -mr-16 -mt-16 group-hover:scale-110 transition-transform duration-700"></div>
                         <h3 className="text-xl font-black uppercase tracking-tight mb-4 flex items-center gap-2">
@@ -322,7 +322,7 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
                         <p className="text-sm font-bold text-white/80 mb-8 leading-relaxed">
                             Earn $10 Papa Dough for every 75 points. 1 point per $1 spent. Free birthday dessert included.
                         </p>
-                        <Link 
+                        <Link
                             href="/papa-johns-rewards"
                             className="block w-full bg-white text-[#cc0000] font-black uppercase tracking-widest text-xs py-4 rounded-2xl text-center transition-all hover:bg-[#CCEE18] hover:text-[#1A3D17]"
                         >
@@ -353,17 +353,17 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
                         <h3 className="text-sm font-black text-[#1A3D17] uppercase tracking-widest mb-6">Quick Links</h3>
                         <div className="space-y-2">
                             {[
-                                { label: "🍕 Full Menu & Prices", href: "/menus-prices" },
-                                { label: "📍 Find a Store Near Me", href: "/store-locator" },
-                                { label: "🕐 Store Hours", href: "/hours" },
-                                { label: "⭐ Papa Rewards Program", href: "/papa-johns-rewards" },
-                                { label: "🍕 Classic Pizzas", href: "/posts/classic-pizzas" },
-                                { label: "🍗 Sides & Dips", href: "/posts/sides" },
-                                { label: "🥤 Drinks", href: "/drinks" },
-                                { label: "🍰 Desserts", href: "/posts/papa-johns-desserts" },
-                                { label: "🚚 Free Delivery Codes", href: "/posts/papa-johns-free-delivery" },
+                                { label: " Full Menu & Prices", href: "/menus-prices" },
+                                { label: " Find a Store Near Me", href: "/store-locator" },
+                                { label: " Store Hours", href: "/hours" },
+                                { label: " Papa Rewards Program", href: "/papa-johns-rewards" },
+                                { label: " Classic Pizzas", href: "/posts/classic-pizzas" },
+                                { label: " Sides & Dips", href: "/posts/sides" },
+                                { label: " Drinks", href: "/drinks" },
+                                { label: " Desserts", href: "/posts/papa-johns-desserts" },
+                                { label: " Free Delivery Codes", href: "/posts/papa-johns-free-delivery" },
                             ].map((link, i) => (
-                                <Link 
+                                <Link
                                     key={i}
                                     href={link.href}
                                     className="flex items-center gap-3 p-3 rounded-2xl hover:bg-gray-50 transition-all text-xs font-bold text-gray-600 hover:text-[#cc0000]"
@@ -394,15 +394,15 @@ export default function CouponsClient({ month, coupons, faqs }: CouponsClientPro
 }
 
 const MapPin = ({ size }: { size: number }) => (
-    <svg 
-        xmlns="http://www.w3.org/2000/svg" 
-        width={size} 
-        height={size} 
-        viewBox="0 0 24 24" 
-        fill="none" 
-        stroke="currentColor" 
-        strokeWidth="2" 
-        strokeLinecap="round" 
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width={size}
+        height={size}
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
         strokeLinejoin="round"
     >
         <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>

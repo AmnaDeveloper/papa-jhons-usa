@@ -55,11 +55,11 @@ export default function AboutPage() {
             {/* Content Section */}
             <div className="max-w-[1000px] mx-auto px-4 md:px-8 py-16">
                 <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-16">
-                    
+
                     {/* Why We Built This Site */}
                     <section className="bg-gradient-to-br from-[#1A3D17]/5 to-[#CCEE18]/5 p-8 md:p-12 rounded-[2.5rem] border border-[#1A3D17]/10">
                         <h2 className="text-3xl font-black text-[#1A3D17] uppercase tracking-tight mb-6 flex items-center gap-3">
-                            <span className="text-[#cc0000]">💡</span> Why We Built This Site
+                            <span className="text-[#cc0000]"></span> Why We Built This Site
                         </h2>
                         <div className="space-y-4 text-lg">
                             <p className="font-semibold text-gray-800">
@@ -84,7 +84,7 @@ export default function AboutPage() {
                                 We are an independent editorial team, not affiliated with Papa Johns International in any way. We are everyday Americans who genuinely love pizza and believe that finding good food at a fair price should be simple.
                             </p>
                         </div>
-                        
+
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                             {/* Sarah */}
                             <div className="bg-white rounded-3xl p-6 border border-gray-100 shadow-xl shadow-gray-100/50 hover:shadow-2xl hover:shadow-gray-200/50 transition-all duration-300 flex flex-col h-full relative overflow-hidden group">
@@ -170,7 +170,7 @@ export default function AboutPage() {
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm flex items-start gap-4">
-                                <div className="text-2xl bg-green-50 p-3 rounded-xl text-green-600">✅</div>
+                                <div className="text-2xl bg-green-50 p-3 rounded-xl text-green-600"></div>
                                 <div>
                                     <h3 className="font-bold text-gray-900 text-lg uppercase mb-1">We Update Daily</h3>
                                     <p className="text-gray-600 text-sm">
@@ -180,7 +180,7 @@ export default function AboutPage() {
                             </div>
 
                             <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm flex items-start gap-4">
-                                <div className="text-2xl bg-green-50 p-3 rounded-xl text-green-600">✅</div>
+                                <div className="text-2xl bg-green-50 p-3 rounded-xl text-green-600"></div>
                                 <div>
                                     <h3 className="font-bold text-gray-900 text-lg uppercase mb-1">We Are Honest</h3>
                                     <p className="text-gray-600 text-sm">
@@ -190,7 +190,7 @@ export default function AboutPage() {
                             </div>
 
                             <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm flex items-start gap-4">
-                                <div className="text-2xl bg-green-50 p-3 rounded-xl text-green-600">✅</div>
+                                <div className="text-2xl bg-green-50 p-3 rounded-xl text-green-600"></div>
                                 <div>
                                     <h3 className="font-bold text-gray-900 text-lg uppercase mb-1">We Are Independent</h3>
                                     <p className="text-gray-600 text-sm">
@@ -200,7 +200,7 @@ export default function AboutPage() {
                             </div>
 
                             <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm flex items-start gap-4">
-                                <div className="text-2xl bg-green-50 p-3 rounded-xl text-green-600">✅</div>
+                                <div className="text-2xl bg-green-50 p-3 rounded-xl text-green-600"></div>
                                 <div>
                                     <h3 className="font-bold text-gray-900 text-lg uppercase mb-1">We Research Thoroughly</h3>
                                     <p className="text-gray-600 text-sm">
@@ -256,7 +256,7 @@ export default function AboutPage() {
                     {/* Important Disclaimer */}
                     <section className="bg-[#fff5f5] p-8 rounded-3xl border border-[#ffcccc]">
                         <h2 className="text-xl font-black text-[#cc0000] uppercase tracking-tight mb-4 flex items-center gap-2">
-                            ⚠️ Important Disclaimer
+                             Important Disclaimer
                         </h2>
                         <div className="text-sm space-y-4 text-gray-700 font-medium">
                             <p>
@@ -278,21 +278,21 @@ export default function AboutPage() {
                         </p>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 font-bold text-gray-800">
                             <div className="bg-white p-5 rounded-2xl border border-gray-100 flex items-center gap-3">
-                                <span className="text-2xl">📧</span>
+                                <span className="text-2xl"></span>
                                 <div>
                                     <span className="block text-xs uppercase text-gray-400 font-bold">Email</span>
                                     <a href="mailto:contact@papajohns-menus.us" className="text-[#cc0000] hover:underline">contact@papajohns-menus.us</a>
                                 </div>
                             </div>
                             <div className="bg-white p-5 rounded-2xl border border-gray-100 flex items-center gap-3">
-                                <span className="text-2xl">🌐</span>
+                                <span className="text-2xl"></span>
                                 <div>
                                     <span className="block text-xs uppercase text-gray-400 font-bold">Website</span>
                                     <Link href="/" className="text-[#cc0000] hover:underline">papajohns-menus.us</Link>
                                 </div>
                             </div>
                             <div className="bg-white p-5 rounded-2xl border border-gray-100 flex items-center gap-3">
-                                <span className="text-2xl">⏱️</span>
+                                <span className="text-2xl"></span>
                                 <div>
                                     <span className="block text-xs uppercase text-gray-400 font-bold">Response Time</span>
                                     <span className="text-gray-700">Within 48 hours</span>

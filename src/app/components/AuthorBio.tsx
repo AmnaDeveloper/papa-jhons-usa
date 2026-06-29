@@ -11,7 +11,7 @@ const AuthorBio: React.FC<AuthorBioProps> = ({ authorName }) => {
       name: "Deals Team",
       role: "Deals & Price Review",
       bio: "We review Papa Johns deal examples, menu-price notes, rewards terms, and checkout guidance using public offers, official ordering pages, and reader correction reports. Promotions can change by store and account, so every article asks readers to confirm the final cart before paying.",
-      avatar: "🤝",
+      avatar: "",
       method: "Reviewed against public Papa Johns offer pages, app/checkout wording where available, and reader-submitted corrections.",
       sources: ["PapaJohns.com deals and rewards pages", "Official checkout terms", "Reader corrections"]
     },
@@ -19,7 +19,7 @@ const AuthorBio: React.FC<AuthorBioProps> = ({ authorName }) => {
       name: "Sarah Jenkins",
       role: "Family & Menu Guide Editor",
       bio: "Sarah writes practical ordering guides for families, group meals, and menu comparisons. Her articles focus on order planning, portion value, picky-eater choices, and when to verify item availability before checkout.",
-      avatar: "👩‍🍳",
+      avatar: "",
       method: "Reviewed using public menu information, official nutrition/allergen pages, and practical order-planning scenarios.",
       sources: ["Papa Johns menu pages", "Official nutrition information", "Internal editorial review"]
     },
@@ -27,7 +27,7 @@ const AuthorBio: React.FC<AuthorBioProps> = ({ authorName }) => {
       name: authorName || "Editorial Team",
       role: "Editorial Review",
       bio: "Our editorial team maintains independent Papa Johns menu guides for planning purposes. We avoid presenting prices, coupons, nutrition, or store details as final because availability can change by location.",
-      avatar: "🍕",
+      avatar: "",
       method: "Reviewed against public menu information, official brand resources, and page-specific correction reports.",
       sources: ["Official Papa Johns resources", "Public menu information", "Reader corrections"]
     }

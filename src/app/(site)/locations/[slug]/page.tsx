@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const location = locations.find((l) => l.slug === slug);
     const canonicalUrl = `https://papajohns-menus.us/locations/${slug}`;
     const ogImage = "https://papajohns-menus.us/og-image.jpg";
-    
+
     if (!location && !richData) return { title: 'Location Not Found' };
 
     if (richData) {
@@ -201,7 +201,7 @@ export default async function LocationPage({ params }: Props) {
                 <div className="container mx-auto px-4">
                     <div className="max-w-4xl mx-auto bg-[#fcfaf8] rounded-3xl p-8 border-2 border-gray-100 shadow-sm flex flex-wrap items-center justify-between gap-8">
                         <div className="flex-1">
-                            <h2 className="text-xl font-black text-[#1A3D17] uppercase mb-4 tracking-tight">📍 City Ordering Guide: {location?.city}</h2>
+                            <h2 className="text-xl font-black text-[#1A3D17] uppercase mb-4 tracking-tight"> City Ordering Guide: {location?.city}</h2>
                             <div className="space-y-3 font-bold text-gray-600">
                                 <p><span className="text-[#cc0000]">Address to confirm:</span> {location?.address}{officialLocatorNote(location?.address)}</p>
                                 <p><span className="text-[#cc0000]">Phone to confirm:</span> {location?.phone}{officialLocatorNote(location?.phone)}</p>
@@ -252,7 +252,7 @@ function RichTemplate({ data, month }: { data: RichLocationData; month: string }
         <div className="bg-[#fcfaf8] min-h-screen font-sans pb-20">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(guideSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-            
+
             {/* HERO */}
             <div className="bg-[#1A3D17] border-b-8 border-[#cc0000] text-white py-16 md:py-24 text-center relative overflow-hidden">
                 <div className="container mx-auto px-4 relative z-10">
@@ -263,7 +263,7 @@ function RichTemplate({ data, month }: { data: RichLocationData; month: string }
                         {data.h1.split(' — ')[0]} — <span className="text-[#CCEE18]">{data.h1.split(' — ')[1]}</span>
                     </h1>
                     <div className="text-lg md:text-xl text-white/90 font-medium max-w-4xl mx-auto leading-relaxed mb-8 prose prose-invert" dangerouslySetInnerHTML={{ __html: data.intro.replace(/\n\n/g, '<br/><br/>') }} />
-                    
+
                     {/* STATS */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto mt-12">
                         <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 shadow-xl">
@@ -289,7 +289,7 @@ function RichTemplate({ data, month }: { data: RichLocationData; month: string }
                         {/* Primary Location / Location Info */}
                         <div className="bg-[#fcfaf8] rounded-[2.5rem] p-8 md:p-12 shadow-sm border border-gray-100 h-full">
                             <h2 className="text-2xl font-black text-[#1A3D17] uppercase mb-8 flex items-center gap-3">
-                                <span className="bg-[#cc0000] text-white w-10 h-10 rounded-full flex items-center justify-center text-lg">📍</span> 
+                                <span className="bg-[#cc0000] text-white w-10 h-10 rounded-full flex items-center justify-center text-lg"></span>
                                 City Ordering Details
                             </h2>
                             <div className="space-y-6">
@@ -307,8 +307,8 @@ function RichTemplate({ data, month }: { data: RichLocationData; month: string }
                                 </div>
                                 <p className="text-xs text-gray-500 font-bold leading-relaxed">PapaJohns-Menus.us is an independent guide. Use the official Papa Johns locator or checkout flow to confirm exact store address, phone number, delivery radius, and current hours.</p>
                                 <div className="pt-4">
-                                    <Link 
-                                        href={data.locationDetails.mapUrl} 
+                                    <Link
+                                        href={data.locationDetails.mapUrl}
                                         target="_blank"
                                         className="inline-block bg-[#1A3D17] text-white px-10 py-4 rounded-full font-black uppercase tracking-widest text-[10px] hover:bg-black transition-all shadow-lg"
                                     >
@@ -321,7 +321,7 @@ function RichTemplate({ data, month }: { data: RichLocationData; month: string }
                         {/* Store Hours List or Additional Context */}
                         <div className="bg-white rounded-[2.5rem] p-8 md:p-12 border border-gray-200 shadow-sm h-full">
                             <h3 className="text-xl font-black text-[#1A3D17] uppercase mb-6 flex items-center gap-2">
-                                <span className="bg-[#CCEE18] p-2 rounded-lg text-xs">🚗</span> {data.slug === 'austin-tx' ? 'Delivery Zones' : 'Store Hours'}
+                                <span className="bg-[#CCEE18] p-2 rounded-lg text-xs"></span> {data.slug === 'austin-tx' ? 'Delivery Zones' : 'Store Hours'}
                             </h3>
                             <div className="space-y-4">
                                 {data.locationDetails.hours.split('|').map((period, idx) => (
@@ -378,7 +378,7 @@ function RichTemplate({ data, month }: { data: RichLocationData; month: string }
                         </h2>
                         <p className="text-gray-500 font-bold uppercase tracking-widest text-[10px]">2026 planning prices; confirm final totals at checkout</p>
                     </div>
-                    
+
                     <div className="overflow-hidden rounded-[2.5rem] border border-gray-200 bg-white shadow-xl mb-12">
                         <table className="w-full text-left text-sm">
                             <thead className="bg-[#1A3D17] text-[#CCEE18]">
@@ -407,7 +407,7 @@ function RichTemplate({ data, month }: { data: RichLocationData; month: string }
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
                         <div className="bg-white rounded-[2rem] p-8 border border-gray-100 shadow-sm">
                             <h4 className="font-black text-[#1A3D17] uppercase mb-6 flex items-center gap-2">
-                                <span className="bg-[#CCEE18] p-2 rounded-lg text-sm">🍟</span> Sides & Dips
+                                <span className="bg-[#CCEE18] p-2 rounded-lg text-sm"></span> Sides & Dips
                             </h4>
                             <div className="space-y-4">
                                 {data.menuSides.map((s, i) => (
@@ -426,7 +426,7 @@ function RichTemplate({ data, month }: { data: RichLocationData; month: string }
                                     Start Ordering
                                 </Link>
                              </div>
-                             <div className="absolute top-0 right-0 p-8 opacity-10 text-8xl">🍕</div>
+                             <div className="absolute top-0 right-0 p-8 opacity-10 text-8xl"></div>
                         </div>
                     </div>
                 </div>
@@ -463,7 +463,7 @@ function RichTemplate({ data, month }: { data: RichLocationData; month: string }
                     <h3 className="text-2xl font-black uppercase text-center mb-12 tracking-tighter">Explore More <span className="text-[#CCEE18]">Menu Details</span></h3>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto text-center">
                         <Link href="/menus-prices/pepperoni-pizza" className="bg-white/5 border border-white/10 p-6 rounded-2xl hover:bg-[#CCEE18] hover:text-[#1A3D17] transition-all font-black uppercase text-[10px] tracking-widest">Pepperoni Pizza</Link>
-                        <Link href="/menus-prices/the-works-pizza" className="bg-white/5 border border-white/10 p-6 rounded-2xl hover:bg-[#CCEE18] hover:text-[#1A3D17] transition-all font-black uppercase text-[10px] tracking-widest">The Works™</Link>
+                        <Link href="/menus-prices/the-works-pizza" className="bg-white/5 border border-white/10 p-6 rounded-2xl hover:bg-[#CCEE18] hover:text-[#1A3D17] transition-all font-black uppercase text-[10px] tracking-widest">The Works</Link>
                         <Link href="/posts/papa-johns-garlic-knots" className="bg-white/5 border border-white/10 p-6 rounded-2xl hover:bg-[#CCEE18] hover:text-[#1A3D17] transition-all font-black uppercase text-[10px] tracking-widest">Garlic Knots</Link>
                         <Link href="/posts/papa-johns-nutrition-guide" className="bg-white/5 border border-white/10 p-6 rounded-2xl hover:bg-[#CCEE18] hover:text-[#1A3D17] transition-all font-black uppercase text-[10px] tracking-widest">Nutrition Guide</Link>
                     </div>

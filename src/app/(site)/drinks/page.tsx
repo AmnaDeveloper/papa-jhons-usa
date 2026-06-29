@@ -29,7 +29,7 @@ export default async function DrinksPage() {
     if (!item) notFound();
 
     const baseUrl = 'https://papajohns-menus.us';
-    
+
     const menuItemSchema = {
         "@context": "https://schema.org",
         "@type": "Product",
@@ -134,7 +134,7 @@ export default async function DrinksPage() {
                                     </span>
                                 </div>
                             </Link>
-                            
+
                             <Link href="/posts/papa-johns-pepsi-drink" className="bg-white rounded-[2rem] p-6 shadow-md hover:shadow-2xl hover:border-[#CCEE18] border-2 border-dashed border-[#1A3D17]/10 transition-all duration-300 group flex flex-col relative overflow-hidden bg-gradient-to-br from-white to-[#fcfaf8]">
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-[#CCEE18] rounded-bl-full -mr-16 -mt-16 opacity-0 group-hover:opacity-10 transition-opacity"></div>
                                 <div className="aspect-[16/9] bg-gray-100 rounded-xl mb-6 flex items-center justify-center relative overflow-hidden shadow-inner font-sans">
@@ -163,7 +163,7 @@ export default async function DrinksPage() {
                             <ul className="space-y-4">
                                 {item.ingredients?.map(ing => (
                                     <li key={ing} className="flex items-center gap-3 text-sm font-bold text-gray-600 border-b border-gray-50 pb-3 uppercase">
-                                        <span className="text-[#CCEE18] bg-[#1A3D17] w-6 h-6 rounded-full flex items-center justify-center text-[10px]">✓</span> {ing}
+                                        <span className="text-[#CCEE18] bg-[#1A3D17] w-6 h-6 rounded-full flex items-center justify-center text-[10px]"></span> {ing}
                                     </li>
                                 ))}
                             </ul>
@@ -266,7 +266,7 @@ export default async function DrinksPage() {
                         {item.faqs?.map((faq, idx) => (
                             <div key={idx} className="bg-white hover:bg-[#1A3D17] group transition-colors duration-300 p-8 rounded-3xl shadow-md border border-gray-100 text-left">
                                 <h4 className="font-black text-gray-900 group-hover:text-white transition-colors mb-2 text-xl italic flex items-center gap-3">
-                                    <span className="text-[#cc0000] group-hover:text-[#CCEE18]">❓</span> {faq.question}
+                                    <span className="text-[#cc0000] group-hover:text-[#CCEE18]"></span> {faq.question}
                                 </h4>
                                 <p className="text-gray-500 group-hover:text-gray-300 transition-colors leading-relaxed font-medium" dangerouslySetInnerHTML={{ __html: faq.answer }} />
                             </div>

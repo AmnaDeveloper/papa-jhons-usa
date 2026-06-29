@@ -4,7 +4,7 @@ import type { NextRequest } from "next/server";
 export function middleware(request: NextRequest) {
     // 1. Log all requests with timestamp
     const now = new Date().toISOString();
-    console.log(`🌐 [${now}] ${request.method} ${request.nextUrl.pathname}`);
+    console.log(` [${now}] ${request.method} ${request.nextUrl.pathname}`);
 
     // 2. Setup response
     const response = NextResponse.next();

@@ -7,7 +7,7 @@ function getAuthClient() {
   const projectId = process.env.GOOGLE_PROJECT_ID || 'swift-rite-492505-d2';
 
   if (!email || !key) {
-    throw new Error(`Missing Credentials: EMAIL=${email ? '✅' : '❌'} KEY=${key ? '✅' : '❌'}`);
+    throw new Error(`Missing Credentials: EMAIL=${email ? '' : ''} KEY=${key ? '' : ''}`);
   }
 
   return new GoogleAuth({
@@ -26,7 +26,7 @@ export async function submitUrlToGoogle(url: string): Promise<boolean> {
     const auth = getAuthClient();
     const client = await auth.getClient()
     const accessToken = await client.getAccessToken()
-    
+
     const response = await fetch(
       'https://indexing.googleapis.com/v3/urlNotifications:publish',
       {
@@ -41,10 +41,10 @@ export async function submitUrlToGoogle(url: string): Promise<boolean> {
         }),
       }
     )
-    
+
     return response.ok;
   } catch (error) {
-    console.error(`❌ Error submitting ${url}:`, error)
+    console.error(` Error submitting ${url}:`, error)
     return false
   }
 }
@@ -62,7 +62,7 @@ export async function submitUrlWithDetails(url: string): Promise<{ success: bool
     const auth = getAuthClient();
     const client = await auth.getClient()
     const accessToken = await client.getAccessToken()
-    
+
     const response = await fetch(
       'https://indexing.googleapis.com/v3/urlNotifications:publish',
       {
@@ -77,23 +77,23 @@ export async function submitUrlWithDetails(url: string): Promise<{ success: bool
         }),
       }
     )
-    
+
     const data = await response.json()
-    
+
     if (response.ok) {
       return { success: true, message: 'Successfully submitted' }
     } else {
-      return { 
-        success: false, 
-        message: 'Google API Error', 
-        error: data.error?.message || 'Unknown error' 
+      return {
+        success: false,
+        message: 'Google API Error',
+        error: data.error?.message || 'Unknown error'
       }
     }
   } catch (error: any) {
-    return { 
-      success: false, 
-      message: 'Auth Error', 
-      error: error.message || 'Failed to authenticate' 
+    return {
+      success: false,
+      message: 'Auth Error',
+      error: error.message || 'Failed to authenticate'
     }
   }
 }

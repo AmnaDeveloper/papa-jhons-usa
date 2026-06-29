@@ -106,8 +106,8 @@ export default async function BestPizzaDeliveryPage() {
                 <div className="bg-[#1A3D17] border-b-8 border-[#cc0000] text-white py-12 md:py-20 text-center relative overflow-hidden">
                     <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#CCEE18] rounded-full -mr-64 -mt-64 opacity-5 pointer-events-none"></div>
                     <div className="container mx-auto px-4 relative z-10">
-                        <h1 
-                            className="text-3xl md:text-5xl font-black uppercase tracking-tighter mb-4" 
+                        <h1
+                            className="text-3xl md:text-5xl font-black uppercase tracking-tighter mb-4"
                             style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}
                         >
                             {post.title}
@@ -120,20 +120,20 @@ export default async function BestPizzaDeliveryPage() {
                         </p>
 
                         <div className="flex flex-wrap items-center justify-center gap-3 mb-10 text-[10px] font-black uppercase tracking-widest text-[#1A3D17]">
-                            <span className="bg-[#CCEE18] px-4 py-1.5 rounded-full shadow-lg">🔥 Popular Choice</span>
-                            <span className="bg-white px-4 py-1.5 rounded-full shadow-lg">⚡ {post.calories || '670 Calories'}</span>
-                            <span className="bg-[#cc0000] text-white px-4 py-1.5 rounded-full shadow-lg">⭐ Top Rated</span>
+                            <span className="bg-[#CCEE18] px-4 py-1.5 rounded-full shadow-lg"> Popular Choice</span>
+                            <span className="bg-white px-4 py-1.5 rounded-full shadow-lg"> {post.calories || '670 Calories'}</span>
+                            <span className="bg-[#cc0000] text-white px-4 py-1.5 rounded-full shadow-lg"> Top Rated</span>
                         </div>
 
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                            <Link 
-                                href="/store-locator" 
+                            <Link
+                                href="/store-locator"
                                 className="w-full sm:w-auto bg-[#CCEE18] hover:bg-white text-[#1A3D17] font-black py-4 px-10 rounded-full transition-all uppercase tracking-widest text-sm shadow-xl active:scale-95 border-2 border-[#CCEE18] hover:border-white"
                             >
                                 Find Location & Order
                             </Link>
-                            <Link 
-                                href="/menus-prices" 
+                            <Link
+                                href="/menus-prices"
                                 className="w-full sm:w-auto bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#1A3D17] font-black py-4 px-10 rounded-full transition-all uppercase tracking-widest text-sm shadow-xl active:scale-95"
                             >
                                 View Full Menu
@@ -145,26 +145,26 @@ export default async function BestPizzaDeliveryPage() {
                 {/* ── 2. MAIN LAYOUT GRID ── */}
                 <div className="max-w-[1280px] mx-auto px-4 md:px-8 py-16">
                     <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
-                        
+
                         {/* LEFT COLUMN: STICKY SIDEBAR */}
                         <div className="lg:w-[48%] lg:sticky lg:top-32 lg:self-start space-y-8">
                             {/* Product Image Card */}
                             <div className="bg-white rounded-[2rem] p-3 shadow-2xl relative border border-gray-200 overflow-hidden group">
                                 <div className="absolute top-5 left-5 z-10 bg-[#CCEE18] text-[#1A3D17] text-[10px] font-black uppercase tracking-widest px-4 py-2 rounded-full shadow-lg">
-                                    ⭐ Popular
+                                     Popular
                                 </div>
                                 <div className="absolute top-5 right-5 z-10 bg-[#cc0000] text-white text-[10px] font-black uppercase tracking-widest px-4 py-2 rounded-full shadow-lg">
                                     New
                                 </div>
                                 <div className="relative w-full h-auto rounded-3xl overflow-hidden shadow-inner border border-gray-100 text-center bg-gray-50">
-                                    <img 
-                                        src={post.image || '/logo.webp'} 
+                                    <img
+                                        src={post.image || '/logo.webp'}
                                         alt={post.imageAlt || post.title}
                                         className="inline-block w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/5 to-transparent pointer-events-none"></div>
                                 </div>
-                                
+
                                 <div className="flex justify-center gap-3 mt-6 p-2">
                                     <button className="flex-1 bg-gray-50 hover:bg-red-50 text-gray-500 hover:text-[#cc0000] font-black uppercase tracking-widest py-3 rounded-xl transition-all flex items-center justify-center gap-2 border border-gray-100 hover:border-red-100 text-[10px] shadow-sm">
                                         <Heart size={14} /> Favorite
@@ -233,7 +233,7 @@ export default async function BestPizzaDeliveryPage() {
                 <div className="bg-gray-50 py-24 border-y border-gray-200">
                     <div className="max-w-[1280px] mx-auto px-4 lg:px-8">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-                            
+
                             {/* LEFT: FAQ Accordions */}
                             <div>
                                 <div className="mb-10">
@@ -259,7 +259,7 @@ export default async function BestPizzaDeliveryPage() {
                                                     <h4 className="font-black text-gray-900 group-hover:text-white transition-colors mb-2 text-xl leading-snug">
                                                         {faq.question}
                                                     </h4>
-                                                    <p 
+                                                    <p
                                                         className="text-gray-500 group-hover:text-gray-300 transition-colors text-base leading-relaxed font-medium"
                                                         dangerouslySetInnerHTML={{ __html: faq.answer }}
                                                     />
@@ -283,15 +283,15 @@ export default async function BestPizzaDeliveryPage() {
                                         Detailed estimated prices for popular items.
                                     </p>
                                 </div>
-                                
+
                                 <div className="w-full bg-[#fcfaf8] rounded-[3rem] p-6 md:p-12 border-2 border-[#1A3D17]/5 relative overflow-hidden">
                                     <div className="absolute top-0 right-0 w-64 h-64 bg-[#CCEE18]/10 rounded-full -mr-32 -mt-32 blur-3xl"></div>
-                                    
+
                                     <div className="relative z-10 overflow-x-auto">
                                         <div className="min-w-[500px]">
                                             <div className="flex items-center gap-4 mb-10">
                                                 <div className="w-14 h-14 bg-[#1A3D17] rounded-2xl flex items-center justify-center shadow-lg transform -rotate-3">
-                                                    <span className="text-2xl">📊</span>
+                                                    <span className="text-2xl"></span>
                                                 </div>
                                                 <div>
                                                     <h2 className="text-2xl md:text-3xl font-black text-[#1A3D17] uppercase tracking-tighter leading-none">
@@ -313,8 +313,8 @@ export default async function BestPizzaDeliveryPage() {
                                                         <tr key={idx} className={`hover:bg-gray-50 transition-colors ${row.popular ? 'bg-[#CCEE18]/10 group' : ''}`}>
                                                             <td className={`py-6 px-6 md:px-8 font-bold flex items-center gap-4 ${row.popular ? 'text-[#1A3D17]' : 'text-gray-800'}`}>
                                                                 <span className={`text-2xl p-2 rounded-xl shadow-sm ${row.popular ? 'bg-white group-hover:scale-110 transition-transform' : 'bg-gray-100'}`}>
-                                                                    {row.icon || '🍕'}
-                                                                </span> 
+                                                                    {row.icon || ''}
+                                                                </span>
                                                                 <div>
                                                                     {row.item}
                                                                     {row.popular && <span className="block text-[10px] text-[#cc0000] uppercase tracking-widest mt-1">Most Popular</span>}
@@ -372,7 +372,7 @@ export default async function BestPizzaDeliveryPage() {
                                     <span className="text-[#cc0000] flex items-center gap-1">View Details <ArrowRight size={14} /></span>
                                 </div>
                             </Link>
-                            
+
                             <Link href="/posts/sides" className="bg-white rounded-[2rem] p-6 shadow-md border hover:border-[#CCEE18] transition-all group hover:shadow-xl">
                                 <div className="aspect-video bg-gray-100 rounded-xl mb-4 overflow-hidden relative">
                                     <img src="/new-papadias-flavors-2026.webp" alt="Sides and Dips" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
@@ -416,7 +416,7 @@ export default async function BestPizzaDeliveryPage() {
                     <div className="bg-[#cc0000] rounded-[3rem] p-12 md:p-16 text-center shadow-2xl relative overflow-hidden">
                         <div className="absolute top-0 right-0 w-64 h-64 bg-[#8b0000] rounded-full blur-3xl opacity-50 mix-blend-multiply"></div>
                         <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#8b0000] rounded-full blur-3xl opacity-50 mix-blend-multiply"></div>
-                        
+
                         <div className="relative z-10">
                             <h2 className="text-3xl md:text-5xl font-black text-white uppercase tracking-tighter mb-4" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
                                 Ready to Experience <span className="text-[#CCEE18]">{post.title}</span>?
@@ -425,14 +425,14 @@ export default async function BestPizzaDeliveryPage() {
                                 Find your nearest Papa John's location and taste the legend for yourself!
                             </p>
                             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                                <Link 
-                                    href="/store-locator" 
+                                <Link
+                                    href="/store-locator"
                                     className="bg-[#CCEE18] hover:bg-white text-[#1A3D17] font-black py-4 px-10 rounded-full transition-all uppercase tracking-widest text-xs shadow-xl active:scale-95"
                                 >
                                     Find Location & Order
                                 </Link>
-                                <Link 
-                                    href="/coupons" 
+                                <Link
+                                    href="/coupons"
                                     className="bg-[#8b0000] border-2 border-[#8b0000] hover:border-white hover:bg-transparent text-white font-black py-4 px-10 rounded-full transition-all uppercase tracking-widest text-xs shadow-xl"
                                 >
                                     Get Coupons Offers
@@ -458,7 +458,7 @@ export default async function BestPizzaDeliveryPage() {
                                         <img src={guide.image} alt={guide.imageAlt || guide.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                                     </div>
                                     <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-2 flex items-center gap-2">
-                                        <span>⏰ {new Date(guide.date).toLocaleDateString()}</span>
+                                        <span> {new Date(guide.date).toLocaleDateString()}</span>
                                     </div>
                                     <h4 className="text-lg font-black text-[#1A3D17] uppercase leading-snug mb-3 group-hover:text-[#cc0000] transition-colors">
                                         {guide.title}
@@ -472,9 +472,9 @@ export default async function BestPizzaDeliveryPage() {
                                 </Link>
                             ))}
                         </div>
-                        
-                        <Link 
-                            href="/posts" 
+
+                        <Link
+                            href="/posts"
                             className="inline-flex items-center gap-3 bg-[#CCEE18] hover:bg-[#1A3D17] hover:text-white text-[#1A3D17] font-black py-4 px-10 rounded-full transition-all uppercase tracking-widest text-[10px] shadow-lg"
                         >
                             View All Important Guides <ArrowRight size={14} />
@@ -483,7 +483,7 @@ export default async function BestPizzaDeliveryPage() {
                 </div>
                 <PageComments pagePath="/best-pizza-delivery-near-me" />
             </div>
-            
+
         </>
     );
 }

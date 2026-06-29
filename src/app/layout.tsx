@@ -76,7 +76,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  
+
   // Advanced Global Schema — SEO Blueprint Standard (USA)
   const jsonLd = {
     "@context": "https://schema.org",
@@ -179,31 +179,31 @@ export default function RootLayout({
                 function loadAds() {
                   if (adsLoaded) return;
                   adsLoaded = true;
-                  
+
                   // Load AdSense
                   var script = document.createElement('script');
                   script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3533142117898792';
                   script.async = true;
                   script.crossOrigin = 'anonymous';
                   document.head.appendChild(script);
-                  
+
                   // Clean up events
                   window.removeEventListener('scroll', loadAds);
                   window.removeEventListener('mousemove', loadAds);
                   window.removeEventListener('touchstart', loadAds);
                 }
-                
+
                 // Check if user agent is a search crawler or AdSense bot to load immediately
                 var ua = navigator.userAgent || '';
                 var isBot = /googlebot|mediapartners-google|adsbot-google|bingbot|yandexbot|duckduckbot/i.test(ua);
-                
+
                 if (isBot) {
                   loadAds();
                 } else {
                   window.addEventListener('scroll', loadAds, { passive: true });
                   window.addEventListener('mousemove', loadAds, { passive: true });
                   window.addEventListener('touchstart', loadAds, { passive: true });
-                  
+
                   // Fallback for slower interactions
                   setTimeout(loadAds, 5000);
                 }

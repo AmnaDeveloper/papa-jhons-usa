@@ -13,7 +13,7 @@ export async function POST(request: Request) {
     }
 
     try {
-        // 1. In a real scenario, this would use @google/generative-ai (Gemini) 
+        // 1. In a real scenario, this would use @google/generative-ai (Gemini)
         //    or a scraper to fetch the latest Papa John's deals and update a database.
         console.log('Fetching latest Papa John\'s coupons using Gemini AI / Web Scraper...');
 

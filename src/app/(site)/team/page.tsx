@@ -135,7 +135,7 @@ export default function TeamPage() {
                                     </div>
                                 </div>
                                 <p className="text-xs text-gray-400 font-semibold uppercase tracking-widest">
-                                    📍 Based in: {member.location}
+                                     Based in: {member.location}
                                 </p>
                             </div>
                         </div>
@@ -207,7 +207,7 @@ export default function TeamPage() {
                         Found an error? Want to suggest a topic? Have a question for our editors?
                     </p>
                     <p className="text-[#CCEE18] font-bold text-base mb-1">
-                        📧 contact@papajohns-menus.us
+                         contact@papajohns-menus.us
                     </p>
                     <p className="text-white opacity-60 text-sm mb-8 flex items-center justify-center gap-2">
                         <Clock size={14} /> Response Time: Within 48 hours
