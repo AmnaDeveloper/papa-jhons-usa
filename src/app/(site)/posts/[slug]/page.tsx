@@ -752,10 +752,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                         <div className="lg:w-[52%] space-y-10">
                             <div>
                                 <h2
-                                    className="!text-[36px] !font-black text-[#1A3D17] mb-4 uppercase tracking-normal leading-tight"
+                                    className="!text-[30px] !font-black text-[#1A3D17] mb-4 uppercase tracking-normal leading-tight"
                                     style={{
                                         fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif',
-                                        fontSize: '36px',
+                                        fontSize: '30px',
                                         fontWeight: 900,
                                         lineHeight: '1.08',
                                         letterSpacing: '0',
@@ -909,27 +909,30 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
                             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
                                 {section.items.map((item) => (
-                                    <Link href={postHref(item.slug)} key={item.id} className="group flex min-h-[420px] flex-col overflow-hidden rounded-[1.35rem] border border-gray-100 bg-white shadow-sm transition-all hover:-translate-y-1 hover:border-[#CCEE18] hover:shadow-xl">
-                                        <div className="relative aspect-[16/9] w-full overflow-hidden bg-gray-100">
+                                    <Link href={postHref(item.slug)} key={item.id} className="bg-white rounded-[1.35rem] border border-[#CCEE18] shadow-2xl transition-all duration-300 group overflow-hidden flex flex-col min-h-[405px]">
+                                        <div className="relative aspect-[16/9] w-full bg-gray-100 overflow-hidden">
                                             <img src={item.image} alt={item.imageAlt || item.title} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
                                             <span className="absolute right-4 top-4 rounded-full bg-black/70 px-3 py-1.5 text-[9px] font-black uppercase tracking-wider text-white shadow-sm">
                                                 {item.category}
                                             </span>
                                         </div>
-                                        <div className="flex flex-1 flex-col p-5">
-                                            <h3 className="mb-3 text-lg font-black leading-tight text-[#1A3D17] line-clamp-2" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                                        <div className="p-5 flex flex-col flex-1">
+                                            <div className="text-[9px] font-black text-gray-500 uppercase tracking-widest mb-3 flex flex-wrap items-center gap-2">
+                                                <span>{item.author}</span>
+                                                <span>•</span>
+                                                <span>Guide</span>
+                                            </div>
+                                            <h3 className="text-lg font-black text-[#cc0000] uppercase leading-tight mb-3 transition-colors line-clamp-2" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
                                                 {item.title}
                                             </h3>
-                                            <p className="text-sm font-medium leading-relaxed text-gray-500 line-clamp-2">
+                                            <p className="text-gray-600 text-sm font-bold leading-relaxed line-clamp-2">
                                                 {item.excerpt}
                                             </p>
-                                            <div className="mt-auto border-t border-gray-100 pt-4">
-                                                <div className="mb-5 flex items-center justify-between gap-4 text-sm">
-                                                    <span className="text-2xl font-black text-[#cc0000]">{item.price || 'See guide'}</span>
-                                                    <span className="text-gray-400">{item.calories || 'Details'}</span>
-                                                </div>
-                                                <span className="inline-flex w-full items-center justify-center gap-2 text-sm font-black text-[#1A3D17] transition-colors group-hover:text-[#cc0000]">
-                                                    View Details <ArrowRight size={15} />
+
+                                            <div className="mt-4 flex justify-end">
+                                                <span className="inline-flex min-w-full items-center justify-center gap-2 whitespace-nowrap rounded-xl bg-[#1A3D17] px-4 py-3 text-center text-white text-[10px] font-black uppercase tracking-widest shadow-lg transition-colors duration-300 hover:bg-[#cc0000]">
+                                                    View Guide
+                                                    <ArrowRight size={13} />
                                                 </span>
                                             </div>
                                         </div>
