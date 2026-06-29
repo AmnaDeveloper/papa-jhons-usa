@@ -29,10 +29,10 @@ export default function Footer() {
                     <div className="flex items-center justify-center md:justify-start">
                         <Link href="/" aria-label="Papa Johns Menus home" className="inline-flex items-center">
                             <span
-                                className="text-2xl font-black italic uppercase leading-none tracking-tighter sm:text-3xl"
+                                className="text-xl font-black italic uppercase leading-none tracking-tighter sm:text-2xl"
                                 style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}
                             >
-                                <span className="text-[#CCEE18]" style={{ textShadow: '0 2px 0 #1A3D17' }}>
+                                <span className="text-[#CCEE18]" style={{ textShadow: '0 1px 0 #1A3D17' }}>
                                     PAPA
                                 </span>{' '}
                                 <span className="text-[#1A3D17]">JOHNS</span>

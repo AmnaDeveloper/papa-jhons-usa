@@ -499,7 +499,7 @@ export default function Home() {
 
                                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                                     {section.posts.map((post) => (
-                                        <Link href={post.slug === 'best-pizza-delivery-near-me' ? `/${post.slug}` : `/posts/${post.slug}`} key={post.id} className="bg-white rounded-[1.35rem] border border-[#CCEE18] shadow-2xl transition-all duration-300 group overflow-hidden flex flex-col min-h-[455px]">
+                                        <Link href={post.slug === 'best-pizza-delivery-near-me' ? `/${post.slug}` : `/posts/${post.slug}`} key={post.id} className="bg-white rounded-[1.35rem] border border-[#CCEE18] shadow-2xl transition-all duration-300 group overflow-hidden flex flex-col min-h-[405px]">
                                             <div className="relative aspect-[16/9] w-full bg-gray-100 overflow-hidden">
                                                 <Image
                                                     src={post.image}
@@ -530,7 +530,7 @@ export default function Home() {
                                                     {post.excerpt}
                                                 </p>
 
-                                                <div className="mt-auto pt-6 flex justify-end">
+                                                <div className="mt-4 flex justify-end">
                                                     <span className="inline-flex min-w-full items-center justify-center gap-2 whitespace-nowrap rounded-xl bg-[#1A3D17] px-4 py-3 text-center text-white text-[10px] font-black uppercase tracking-widest shadow-lg transition-colors duration-300 hover:bg-[#cc0000]">
                                                         View Guide
                                                         <ArrowRight size={13} />
