@@ -25,11 +25,11 @@ export default function Footer() {
     return (
         <footer className="font-sans">
             <div className="bg-[#fcfaf8] text-[#121827]">
-                <div className="mx-auto grid max-w-[1440px] grid-cols-1 gap-10 px-6 py-14 md:grid-cols-3 md:px-10 lg:px-16">
+                <div className="mx-auto grid max-w-[1440px] grid-cols-1 gap-6 px-6 py-8 md:grid-cols-3 md:px-10 lg:px-16">
                     <div className="flex items-center justify-center md:justify-start">
                         <Link href="/" aria-label="Papa Johns Menus home" className="inline-flex items-center">
                             <span
-                                className="text-3xl font-black italic uppercase leading-none tracking-tighter sm:text-4xl"
+                                className="text-2xl font-black italic uppercase leading-none tracking-tighter sm:text-3xl"
                                 style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}
                             >
                                 <span className="text-[#CCEE18]" style={{ textShadow: '0 2px 0 #1A3D17' }}>
@@ -42,15 +42,15 @@ export default function Footer() {
 
                     <nav
                         aria-label="Footer about links"
-                        className="border-t border-[#d2c6ba] pt-8 md:border-l md:border-t-0 md:pl-12 md:pt-0"
+                        className="border-t border-[#d2c6ba] pt-5 md:border-l md:border-t-0 md:pl-10 md:pt-0"
                     >
-                        <h2 className="mb-6 text-lg font-black text-[#111827]">About</h2>
-                        <ul className="space-y-5">
+                        <h2 className="mb-3 text-base font-black text-[#111827]">About</h2>
+                        <ul className="space-y-3">
                             {aboutLinks.map((link) => (
                                 <li key={link.href}>
                                     <Link
                                         href={link.href}
-                                        className="text-lg font-medium text-[#596273] transition-colors hover:text-[#1A3D17]"
+                                        className="text-base font-medium text-[#596273] transition-colors hover:text-[#1A3D17]"
                                     >
                                         {link.label}
                                     </Link>
@@ -61,15 +61,15 @@ export default function Footer() {
 
                     <nav
                         aria-label="Footer contact links"
-                        className="border-t border-[#d2c6ba] pt-8 md:border-l md:border-t-0 md:pl-12 md:pt-0"
+                        className="border-t border-[#d2c6ba] pt-5 md:border-l md:border-t-0 md:pl-10 md:pt-0"
                     >
-                        <h2 className="mb-6 text-lg font-black text-[#111827]">Contact</h2>
-                        <ul className="space-y-5">
+                        <h2 className="mb-3 text-base font-black text-[#111827]">Contact</h2>
+                        <ul className="space-y-3">
                             {contactLinks.map((link) => (
                                 <li key={link.href}>
                                     <Link
                                         href={link.href}
-                                        className="text-lg font-medium text-[#596273] transition-colors hover:text-[#1A3D17]"
+                                        className="text-base font-medium text-[#596273] transition-colors hover:text-[#1A3D17]"
                                     >
                                         {link.label}
                                     </Link>
@@ -81,9 +81,9 @@ export default function Footer() {
             </div>
 
             <div className="bg-[#cc0000] text-red-100">
-                <div className="mx-auto max-w-[1440px] px-6 py-8 md:px-10 lg:px-16">
-                    <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-3">
-                        <div className="flex flex-wrap items-center justify-center gap-5 text-sm font-semibold md:justify-start">
+                <div className="mx-auto max-w-[1440px] px-6 py-5 md:px-10 lg:px-16">
+                    <div className="grid grid-cols-1 items-center gap-4 md:grid-cols-3">
+                        <div className="flex flex-wrap items-center justify-center gap-4 text-xs font-semibold md:justify-start">
                             <Link href="/privacy-policy" className="transition-colors hover:text-white">
                                 Privacy Policy
                             </Link>
@@ -93,7 +93,7 @@ export default function Footer() {
                             </Link>
                         </div>
 
-                        <div className="flex justify-center gap-4">
+                        <div className="flex justify-center gap-3">
                             {socialLinks.map((link) => (
                                 <a
                                     key={link.label}
@@ -101,19 +101,19 @@ export default function Footer() {
                                     target="_blank"
                                     rel="noopener noreferrer nofollow"
                                     aria-label={link.label}
-                                    className="flex h-11 w-11 items-center justify-center rounded-full bg-white/15 text-sm font-black uppercase text-white transition-colors hover:bg-[#CCEE18] hover:text-[#1A3D17]"
+                                    className="flex h-9 w-9 items-center justify-center rounded-full bg-white/15 text-xs font-black uppercase text-white transition-colors hover:bg-[#CCEE18] hover:text-[#1A3D17]"
                                 >
                                     {link.text}
                                 </a>
                             ))}
                         </div>
 
-                        <p className="text-center text-sm font-semibold md:text-right">
+                        <p className="text-center text-xs font-semibold md:text-right">
                             &copy; {currentYear} papajohns-menus.us
                         </p>
                     </div>
 
-                    <p className="mt-8 text-center text-sm font-semibold leading-relaxed text-red-100/85">
+                    <p className="mt-4 text-center text-xs font-semibold leading-relaxed text-red-100/85">
                         Disclaimer: We are not affiliated with Papa Johns International, Inc. All trademarks belong to their respective owners.
                     </p>
                 </div>

@@ -499,7 +499,7 @@ export default function Home() {
 
                                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                                     {section.posts.map((post) => (
-                                        <Link href={post.slug === 'best-pizza-delivery-near-me' ? `/${post.slug}` : `/posts/${post.slug}`} key={post.id} className="bg-white rounded-[1.35rem] border border-gray-100 shadow-sm hover:-translate-y-2 hover:border-[#CCEE18] hover:shadow-2xl transition-all duration-300 group overflow-hidden flex flex-col min-h-[455px]">
+                                        <Link href={post.slug === 'best-pizza-delivery-near-me' ? `/${post.slug}` : `/posts/${post.slug}`} key={post.id} className="bg-white rounded-[1.35rem] border border-[#CCEE18] shadow-2xl transition-all duration-300 group overflow-hidden flex flex-col min-h-[455px]">
                                             <div className="relative aspect-[16/9] w-full bg-gray-100 overflow-hidden">
                                                 <Image
                                                     src={post.image}
@@ -522,7 +522,7 @@ export default function Home() {
                                                     <span>Guide</span>
                                                 </div>
 
-                                                <h4 className="text-lg font-black text-[#1A3D17] uppercase leading-tight mb-3 group-hover:text-[#cc0000] transition-colors line-clamp-3" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                                                <h4 className="text-lg font-black text-[#cc0000] uppercase leading-tight mb-3 transition-colors line-clamp-3" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
                                                     {post.title}
                                                 </h4>
 
@@ -530,8 +530,8 @@ export default function Home() {
                                                     {post.excerpt}
                                                 </p>
 
-                                                <div className="mt-auto pt-5 border-t border-gray-100 flex justify-end">
-                                                    <span className="inline-flex min-w-[145px] items-center justify-center gap-2 whitespace-nowrap rounded-xl px-4 py-3 text-center text-[#1A3D17] text-[10px] font-black uppercase tracking-widest transition-all duration-300 group-hover:min-w-full group-hover:bg-[#1A3D17] group-hover:text-white group-hover:shadow-lg">
+                                                <div className="mt-auto pt-6 flex justify-end">
+                                                    <span className="inline-flex min-w-full items-center justify-center gap-2 whitespace-nowrap rounded-xl bg-[#1A3D17] px-4 py-3 text-center text-white text-[10px] font-black uppercase tracking-widest shadow-lg transition-colors duration-300 hover:bg-[#cc0000]">
                                                         View Guide
                                                         <ArrowRight size={13} />
                                                     </span>
@@ -607,10 +607,14 @@ export default function Home() {
                             Frequently Asked Questions
                         </span>
                         <h2
-                            className="text-3xl md:text-5xl font-black text-[#1A3D17] uppercase tracking-tighter mb-4"
-                            style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}
+                            className="text-[30px] font-black text-[#1A3D17] uppercase leading-tight mb-4"
+                            style={{
+                                fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif',
+                                fontSize: '30px',
+                                fontWeight: 900,
+                            }}
                         >
-                            Papa John's <span className="text-[#cc0000]">FAQ</span>
+                            Papa John's FAQ
                         </h2>
                         <p className="text-gray-500 font-bold max-w-xl mx-auto">
                             Everything you need to know about ordering, promo codes, locations, and more.
