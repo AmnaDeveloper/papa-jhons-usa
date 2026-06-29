@@ -20,7 +20,7 @@ export default function HeroSection() {
 
     return (
         <section
-            className="relative flex min-h-[640px] w-full items-center justify-center overflow-hidden px-4 py-14 text-white md:min-h-[700px] md:py-16"
+            className="relative flex min-h-[540px] w-full items-center justify-center overflow-hidden px-4 py-10 text-white md:min-h-[590px] md:py-12"
             style={{ backgroundColor: '#102d0f' }}
         >
             <div className="absolute inset-x-0 top-0 h-1 bg-[#cc0000]" aria-hidden="true" />
@@ -34,12 +34,12 @@ export default function HeroSection() {
             />
 
             <div className="relative z-10 mx-auto flex max-w-6xl flex-col items-center text-center">
-                <p className="mb-8 text-xs font-black uppercase tracking-[0.35em] text-white/55 md:text-sm">
+                <p className="mb-5 text-xs font-black uppercase tracking-[0.35em] text-white/55 md:text-sm">
                     UPDATED AT: {currentDate}
                 </p>
 
                 <h1
-                    className={`${poppins.className} hero-main-heading mb-8 max-w-5xl uppercase tracking-normal text-white`}
+                    className={`${poppins.className} hero-main-heading mb-6 max-w-5xl uppercase tracking-normal text-white`}
                     style={{
                         fontSize: '60px',
                         fontWeight: 900,
@@ -67,7 +67,7 @@ export default function HeroSection() {
                     <Link href="/store-locator" className="text-[#CCEE18] underline font-bold hover:text-white transition-colors">Papa John&apos;s Store Locator</Link>.
                 </p>
 
-                <div className="mt-12 flex w-full max-w-6xl flex-wrap items-center justify-center gap-4">
+                <div className="mt-8 flex w-full max-w-6xl flex-wrap items-center justify-center gap-4">
                     {featurePills.map((pill) => (
                         <div
                             key={pill}
@@ -80,7 +80,7 @@ export default function HeroSection() {
                     ))}
                 </div>
 
-                <div className="flex w-full max-w-4xl flex-col items-stretch justify-center gap-5 sm:flex-row" style={{ marginTop: '52px' }}>
+                <div className="flex w-full max-w-4xl flex-col items-stretch justify-center gap-4 sm:flex-row" style={{ marginTop: '34px' }}>
                     <Link
                         href="/store-locator"
                         className={`${poppins.className} flex items-center justify-center bg-[#CCEE18] px-8 text-center uppercase tracking-[0.12em] transition-colors hover:bg-white`}
@@ -90,7 +90,7 @@ export default function HeroSection() {
                             fontStyle: 'normal',
                             fontVariant: 'normal',
                             fontWeight: 900,
-                            height: '78px',
+                            height: '56px',
                         }}
                     >
                         Find Papa Johns Near You
@@ -104,7 +104,7 @@ export default function HeroSection() {
                             fontStyle: 'normal',
                             fontVariant: 'normal',
                             fontWeight: 900,
-                            height: '78px',
+                            height: '56px',
                         }}
                     >
                         View Full Menu
