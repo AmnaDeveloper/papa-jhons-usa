@@ -522,11 +522,11 @@ export default function Home() {
                                                     <span>Guide</span>
                                                 </div>
 
-                                                <h4 className="text-lg font-black text-[#cc0000] uppercase leading-tight mb-3 transition-colors line-clamp-3" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                                                <h4 className="text-lg font-black text-[#cc0000] uppercase leading-tight mb-3 transition-colors line-clamp-2" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
                                                     {post.title}
                                                 </h4>
 
-                                                <p className="text-gray-600 text-sm font-bold leading-relaxed line-clamp-3">
+                                                <p className="text-gray-600 text-sm font-bold leading-relaxed line-clamp-2">
                                                     {post.excerpt}
                                                 </p>
 

@@ -570,13 +570,17 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         { name: post.title, url: postUrl }
     ]);
 
-    // Mock Data for "Popular Items"
-    const popularItems = [
-        { name: "Epic Stuffed Crust", price: "$18.99", cals: "350 cal", img: "/epic-stuffed-crust-pizza.webp", alt: "Papa Johns Epic Stuffed Crust Pizza with gooey cheese" },
-        { name: "Garlic Parmesan Breadsticks", price: "$6.99", cals: "150 cal", img: "/garlic-parmesan-breadsticks.webp", alt: "Papa Johns Garlic Parmesan Breadsticks baked golden brown" },
-        { name: "Oreo Cookie Papa Bites", price: "$5.99", cals: "110 cal", img: "/oreo-cookie-papa-bites.webp", alt: "Papa Johns Oreo Cookie Papa Bites sweet dessert" },
-        { name: "Super Hawaiian Pizza", price: "$16.99", cals: "280 cal", img: "/super-hawaiian-pizza.webp", alt: "Papa Johns Super Hawaiian Pizza with pineapple and ham" }
-    ];
+    const postHref = (slug: string) => slug === 'best-pizza-delivery-near-me' ? `/${slug}` : `/posts/${slug}`;
+    const moreSpecialties = posts
+        .filter((item) => item.slug !== post.slug && item.category === post.category)
+        .slice(0, 4);
+    const fallbackSpecialties = posts
+        .filter((item) => item.slug !== post.slug && !moreSpecialties.some((specialty) => specialty.slug === item.slug))
+        .slice(0, Math.max(0, 4 - moreSpecialties.length));
+    const specialtyCards = [...moreSpecialties, ...fallbackSpecialties].slice(0, 4);
+    const popularCards = posts
+        .filter((item) => item.slug !== post.slug && !specialtyCards.some((specialty) => specialty.slug === item.slug))
+        .slice(0, 4);
 
     const faqSchema = post.faqs ? {
         "@context": "https://schema.org",
@@ -887,184 +891,53 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                     </div>
                 </div>
 
-                {/* ── 4. MORE FROM CATEGORY & POPULAR ── */}
-                <div className="max-w-[1280px] mx-auto px-4 py-20">
-                    <div className="mb-20">
-                        <div className="text-center mb-10">
-                            <h2 className="text-2xl font-black text-[#1A3D17] uppercase tracking-tighter mb-2" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
-                                More from {post.category}
-                            </h2>
-                            <p className="text-gray-400 font-bold text-sm">Discover other delicious options in this category</p>
-                        </div>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                            {post.category === 'Drinks' ? (
-                                <>
-                                    <Link href="/posts/papa-johns-mountain-dew-drink" className="bg-white rounded-[2rem] p-6 shadow-md border hover:border-[#CCEE18] transition-all group hover:shadow-xl">
-                                        <div className="aspect-video bg-gray-100 rounded-xl mb-4 overflow-hidden relative">
-                                            <img src="/papa-johns-mountain-dew.webp" alt="Papa Johns Mountain Dew Price and Calories 2026" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                                        </div>
-                                        <h4 className="font-black text-[#1A3D17] uppercase text-xl mb-2">Mountain Dew</h4>
-                                        <div className="flex justify-between items-center text-sm font-bold text-gray-500">
-                                            <span>From $2.99</span>
-                                            <span className="text-[#cc0000] flex items-center gap-1">View Details <ArrowRight size={14} /></span>
-                                        </div>
-                                    </Link>
-
-                                    <Link href="/drinks" className="bg-white rounded-[2rem] p-6 shadow-md border hover:border-[#CCEE18] transition-all group hover:shadow-xl">
-                                        <div className="aspect-video bg-gray-100 rounded-xl mb-4 overflow-hidden relative">
-                                            <img src="/papa-johns-drinks-menu.webp" alt="Papa Johns Drinks Menu 2026 all beverages" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                                        </div>
-                                        <h4 className="font-black text-[#1A3D17] uppercase text-xl mb-2">All Drinks Menu</h4>
-                                        <div className="flex justify-between items-center text-sm font-bold text-gray-500">
-                                            <span>From $2.99</span>
-                                            <span className="text-[#cc0000] flex items-center gap-1">View Details <ArrowRight size={14} /></span>
-                                        </div>
-                                    </Link>
-
-                                    <Link href="/posts/classic-pizzas" className="bg-white rounded-[2rem] p-6 shadow-md border hover:border-[#CCEE18] transition-all group hover:shadow-xl">
-                                        <div className="aspect-video bg-gray-100 rounded-xl mb-4 overflow-hidden relative">
-                                            <img src="/best-pizza-delivery-near-me.webp" alt="Papa Johns Classic Pizzas to pair with drinks" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                                        </div>
-                                        <h4 className="font-black text-[#1A3D17] uppercase text-xl mb-2">Classic Pizzas</h4>
-                                        <div className="flex justify-between items-center text-sm font-bold text-gray-500">
-                                            <span>From $10.99</span>
-                                            <span className="text-[#cc0000] flex items-center gap-1">View Details <ArrowRight size={14} /></span>
-                                        </div>
-                                    </Link>
-                                </>
-                            ) : (
-                                <>
-                                    <Link href="/posts/classic-pizzas" className="bg-white rounded-[2rem] p-6 shadow-md border hover:border-[#CCEE18] transition-all group hover:shadow-xl">
-                                        <div className="aspect-video bg-gray-100 rounded-xl mb-4 overflow-hidden relative">
-                                            <img src="/best-pizza-delivery-near-me.webp" alt="Classic Pizzas" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                                        </div>
-                                        <h4 className="font-black text-[#1A3D17] uppercase text-xl mb-2">Classic Pizzas</h4>
-                                        <div className="flex justify-between items-center text-sm font-bold text-gray-500">
-                                            <span>From $10.99</span>
-                                            <span className="text-[#cc0000] flex items-center gap-1">View Details <ArrowRight size={14} /></span>
-                                        </div>
-                                    </Link>
-
-                                    <Link href="/posts/super-loaded" className="bg-white rounded-[2rem] p-6 shadow-md border hover:border-[#CCEE18] transition-all group hover:shadow-xl">
-                                        <div className="aspect-video bg-gray-100 rounded-xl mb-4 overflow-hidden relative">
-                                            <img src="/papa-johns-menu-prices-guide.webp" alt="Super Loaded Pizzas" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                                        </div>
-                                        <h4 className="font-black text-[#1A3D17] uppercase text-xl mb-2">Super Loaded</h4>
-                                        <div className="flex justify-between items-center text-sm font-bold text-gray-500">
-                                            <span>From $15.99</span>
-                                            <span className="text-[#cc0000] flex items-center gap-1">View Details <ArrowRight size={14} /></span>
-                                        </div>
-                                    </Link>
-
-                                    <Link href="/posts/sides" className="bg-white rounded-[2rem] p-6 shadow-md border hover:border-[#CCEE18] transition-all group hover:shadow-xl">
-                                        <div className="aspect-video bg-gray-100 rounded-xl mb-4 overflow-hidden relative">
-                                            <img src="/new-papadias-flavors-2026.webp" alt="Sides and Dips" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                                        </div>
-                                        <h4 className="font-black text-[#1A3D17] uppercase text-xl mb-2">Sides & Dips</h4>
-                                        <div className="flex justify-between items-center text-sm font-bold text-gray-500">
-                                            <span>From $4.99</span>
-                                            <span className="text-[#cc0000] flex items-center gap-1">View Details <ArrowRight size={14} /></span>
-                                        </div>
-                                    </Link>
-                                </>
-                            )}
-                        </div>
-                    </div>
-
-                    <div>
-                        <div className="text-center mb-10">
-                            <h2 className="text-2xl font-black text-[#1A3D17] uppercase tracking-tighter mb-2" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
-                                Popular Menu Items
-                            </h2>
-                            <p className="text-gray-400 font-bold text-sm">Customer favorites you might also enjoy</p>
-                        </div>
-                        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-                            {popularItems.map((item, i) => (
-                                <div key={i} className="bg-white rounded-3xl p-5 shadow-md border hover:border-[#CCEE18] transition-colors group">
-                                    <div className="aspect-[4/3] w-full bg-gray-100 rounded-2xl mb-4 overflow-hidden relative group-hover:shadow-md transition-shadow">
-                                        <img src={item.img} alt={item.alt} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                                        <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent pointer-events-none"></div>
-                                    </div>
-                                    <h4 className="font-black text-[#1A3D17] uppercase text-sm mb-2 h-10">{item.name}</h4>
-                                    <div className="flex justify-between items-center text-xs font-bold text-gray-400 border-t border-gray-100 pt-3">
-                                        <span>{item.cals}</span>
-                                        <span className="text-[#cc0000] text-sm">{item.price}</span>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-
-                {/* ── 5. RED CTA BANNER ── */}
-                <div className="max-w-[1100px] mx-auto px-4 mb-20">
-                    <div className="bg-[#cc0000] rounded-[3rem] p-12 md:p-16 text-center shadow-2xl relative overflow-hidden">
-                        <div className="absolute top-0 right-0 w-64 h-64 bg-[#8b0000] rounded-full blur-3xl opacity-50 mix-blend-multiply"></div>
-                        <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#8b0000] rounded-full blur-3xl opacity-50 mix-blend-multiply"></div>
-
-                        <div className="relative z-10">
-                            <h2 className="text-3xl md:text-5xl font-black text-white uppercase tracking-tighter mb-4" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
-                                Ready to Experience <span className="text-[#CCEE18]">{post.title}</span>?
-                            </h2>
-                            <p className="text-white/80 font-bold text-lg max-w-2xl mx-auto mb-10">
-                                Find your nearest Papa John's location and taste the legend for yourself!
-                            </p>
-                            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                                <Link
-                                    href="/store-locator"
-                                    className="bg-[#CCEE18] hover:bg-white text-[#1A3D17] font-black py-4 px-10 rounded-full transition-all uppercase tracking-widest text-xs shadow-xl active:scale-95"
-                                >
-                                    Find Location & Order
-                                </Link>
-                                <Link
-                                    href="/coupons"
-                                    className="bg-[#8b0000] border-2 border-[#8b0000] hover:border-white hover:bg-transparent text-white font-black py-4 px-10 rounded-full transition-all uppercase tracking-widest text-xs shadow-xl"
-                                >
-                                    Get Coupons Offers
+                <div className="max-w-[1280px] mx-auto px-4 py-20 space-y-20">
+                    {[
+                        { title: 'More Specialties', cta: 'All Specialties', href: '/posts', items: specialtyCards },
+                        { title: 'Also Popular at Papa Johns', cta: 'Full Menu', href: '/menus-prices', items: popularCards },
+                    ].map((section) => (
+                        <section key={section.title}>
+                            <div className="mb-8 flex items-center justify-between gap-4">
+                                <h2 className="text-[30px] font-black text-[#1A3D17] tracking-normal" style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}>
+                                    {section.title}
+                                </h2>
+                                <Link href={section.href} className="inline-flex items-center gap-2 text-sm font-black text-[#1A3D17] transition-colors hover:text-[#cc0000]">
+                                    {section.cta}
+                                    <ArrowRight size={16} />
                                 </Link>
                             </div>
-                        </div>
-                    </div>
-                </div>
 
-                {/* ── 6. MORE GUIDES LATEST POSTS ── */}
-                <div className="bg-[#f0ece6] py-20">
-                    <div className="max-w-[1280px] mx-auto px-4 text-center">
-                        <h2 className="text-3xl font-black text-[#1A3D17] uppercase tracking-tighter mb-4" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
-                            More Papa John's Guides
-                        </h2>
-                        <p className="text-gray-500 font-bold mb-12">Discover more helpful guides and insider tips.</p>
-
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left mb-12">
-                            {posts.slice(0, 3).map((guide) => (
-                                <Link href={guide.slug === 'best-pizza-delivery-near-me' ? `/${guide.slug}` : `/posts/${guide.slug}`} key={guide.id} className="bg-white rounded-[2rem] p-6 shadow-md hover:shadow-xl transition-shadow group flex flex-col h-full">
-                                    <div className="aspect-[16/9] bg-gray-200 rounded-xl mb-6 flex items-center justify-center relative overflow-hidden">
-                                        <div className="absolute top-3 left-3 z-10 bg-[#cc0000] text-white text-[9px] font-black uppercase tracking-widest px-3 py-1 rounded-full shadow">{guide.category}</div>
-                                        <img src={guide.image} alt={guide.imageAlt || guide.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                                    </div>
-                                    <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-2 flex items-center gap-2">
-                                        <span>{new Date(guide.date).toLocaleDateString()}</span>
-                                    </div>
-                                    <h4 className="text-lg font-black text-[#1A3D17] uppercase leading-snug mb-3 group-hover:text-[#cc0000] transition-colors">
-                                        {guide.title}
-                                    </h4>
-                                    <p className="text-gray-500 text-sm font-medium mb-6 line-clamp-2">
-                                        {guide.excerpt}
-                                    </p>
-                                    <div className="mt-auto flex items-center justify-between text-[#cc0000] text-xs font-black uppercase tracking-widest">
-                                        Read More <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-                                    </div>
-                                </Link>
-                            ))}
-                        </div>
-
-                        <Link
-                            href="/posts"
-                            className="inline-flex items-center gap-3 bg-[#CCEE18] hover:bg-[#1A3D17] hover:text-white text-[#1A3D17] font-black py-4 px-10 rounded-full transition-all uppercase tracking-widest text-[10px] shadow-lg"
-                        >
-                            View All Important Guides <ArrowRight size={14} />
-                        </Link>
-                    </div>
+                            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                                {section.items.map((item) => (
+                                    <Link href={postHref(item.slug)} key={item.id} className="group flex min-h-[420px] flex-col overflow-hidden rounded-[1.35rem] border border-gray-100 bg-white shadow-sm transition-all hover:-translate-y-1 hover:border-[#CCEE18] hover:shadow-xl">
+                                        <div className="relative aspect-[16/9] w-full overflow-hidden bg-gray-100">
+                                            <img src={item.image} alt={item.imageAlt || item.title} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                                            <span className="absolute right-4 top-4 rounded-full bg-black/70 px-3 py-1.5 text-[9px] font-black uppercase tracking-wider text-white shadow-sm">
+                                                {item.category}
+                                            </span>
+                                        </div>
+                                        <div className="flex flex-1 flex-col p-5">
+                                            <h3 className="mb-3 text-lg font-black leading-tight text-[#1A3D17] line-clamp-2" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                                                {item.title}
+                                            </h3>
+                                            <p className="text-sm font-medium leading-relaxed text-gray-500 line-clamp-2">
+                                                {item.excerpt}
+                                            </p>
+                                            <div className="mt-auto border-t border-gray-100 pt-4">
+                                                <div className="mb-5 flex items-center justify-between gap-4 text-sm">
+                                                    <span className="text-2xl font-black text-[#cc0000]">{item.price || 'See guide'}</span>
+                                                    <span className="text-gray-400">{item.calories || 'Details'}</span>
+                                                </div>
+                                                <span className="inline-flex w-full items-center justify-center gap-2 text-sm font-black text-[#1A3D17] transition-colors group-hover:text-[#cc0000]">
+                                                    View Details <ArrowRight size={15} />
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </Link>
+                                ))}
+                            </div>
+                        </section>
+                    ))}
                 </div>
                 <PageComments pagePath={`/posts/${post.slug}`} />
             </div>
