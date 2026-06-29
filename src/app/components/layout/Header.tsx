@@ -72,7 +72,7 @@ const searchItems: SearchItem[] = [
     })),
     ...(postsData as Array<{ title: string; slug: string; category?: string; excerpt?: string }>).map((post) => ({
         title: post.title,
-        href: `/posts/${post.slug}`,
+        href: post.slug === 'best-pizza-delivery-near-me' ? `/${post.slug}` : `/posts/${post.slug}`,
         category: post.category || 'Blog',
         keywords: `${post.title} ${post.category || ''} ${post.excerpt || ''}`,
     })),
@@ -128,8 +128,15 @@ export default function Header() {
 
         if (topResult) {
             setSearchFocused(false);
+            setSearchQuery('');
             router.push(topResult.href);
         }
+    };
+
+    const openSearchResult = (href: string) => {
+        setSearchFocused(false);
+        setSearchQuery('');
+        router.push(href);
     };
 
     return (
@@ -175,7 +182,7 @@ export default function Header() {
                         <MenuIcon className="h-[26px] w-[26px] md:h-[30px] md:w-[30px]" />
                     </button>
 
-                    <Logo className="min-w-[112px] md:min-w-[140px]" />
+                    <Logo className="min-w-[112px] justify-self-end md:min-w-[140px] lg:justify-self-start" />
 
                     <div className="relative col-span-2 row-start-2 lg:col-span-1 lg:row-auto">
                         <form
@@ -211,7 +218,14 @@ export default function Header() {
                                         <Link
                                             key={`${result.href}-${result.title}`}
                                             href={result.href}
-                                            onMouseDown={() => setSearchFocused(false)}
+                                            onMouseDown={(event) => {
+                                                event.preventDefault();
+                                                openSearchResult(result.href);
+                                            }}
+                                            onClick={(event) => {
+                                                event.preventDefault();
+                                                openSearchResult(result.href);
+                                            }}
                                             className="block border-b border-gray-100 px-5 py-3 transition-colors last:border-b-0 hover:bg-[#fcfaf8]"
                                         >
                                             <span className="block text-[11px] font-black uppercase tracking-wide text-[#cc0000]">{result.category}</span>

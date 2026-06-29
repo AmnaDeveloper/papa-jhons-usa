@@ -33,7 +33,7 @@ export default function HeroSection() {
                 aria-hidden="true"
             />
 
-            <div className="relative z-10 mx-auto flex max-w-6xl flex-col items-center text-center">
+            <div className="relative z-10 mx-auto flex max-w-6xl flex-col items-start text-left md:items-center md:text-center">
                 <p className="mb-4 text-[10px] font-black uppercase tracking-[0.28em] text-white/55 md:mb-5 md:text-sm md:tracking-[0.35em]">
                     UPDATED AT: {currentDate}
                 </p>
@@ -67,7 +67,7 @@ export default function HeroSection() {
                     <Link href="/store-locator" className="text-[#CCEE18] underline font-bold hover:text-white transition-colors">Papa John&apos;s Store Locator</Link>.
                 </p>
 
-                <div className="mt-7 flex w-full max-w-6xl flex-wrap items-center justify-center gap-3 md:mt-8 md:gap-4">
+                <div className="mt-7 flex w-full max-w-6xl flex-wrap items-center justify-start gap-3 md:mt-8 md:justify-center md:gap-4">
                     {featurePills.map((pill) => (
                         <div
                             key={pill}
@@ -79,7 +79,7 @@ export default function HeroSection() {
                     ))}
                 </div>
 
-                <div className="flex w-full max-w-4xl flex-col items-stretch justify-center gap-3 sm:flex-row md:gap-4" style={{ marginTop: '30px' }}>
+                <div className="flex w-full max-w-4xl flex-col items-stretch justify-start gap-3 sm:flex-row md:justify-center md:gap-4" style={{ marginTop: '30px' }}>
                     <Link
                         href="/store-locator"
                         className={`${poppins.className} flex items-center justify-center bg-[#CCEE18] px-8 text-center uppercase tracking-[0.12em] transition-colors hover:bg-white`}
