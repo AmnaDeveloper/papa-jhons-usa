@@ -150,7 +150,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta name="google-adsense-account" content="ca-pub-3533142117898792" />
+        <meta name="google-adsense-account" content="ca-pub-7176456641838512" />
         {/* Google tag (gtag.js) */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-R9S73NBFKL"
@@ -182,7 +182,7 @@ export default function RootLayout({
 
                   // Load AdSense
                   var script = document.createElement('script');
-                  script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3533142117898792';
+                  script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7176456641838512';
                   script.async = true;
                   script.crossOrigin = 'anonymous';
                   document.head.appendChild(script);
