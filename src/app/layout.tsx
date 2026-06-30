@@ -151,11 +151,10 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="google-adsense-account" content="ca-pub-7176456641838512" />
-        <Script
+        <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7176456641838512"
           crossOrigin="anonymous"
-          strategy="afterInteractive"
         />
         {/* Google tag (gtag.js) */}
         <Script
