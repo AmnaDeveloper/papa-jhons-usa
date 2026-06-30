@@ -171,7 +171,7 @@ export default function RestaurantHoursSection() {
                                     {/* Get Directions Button */}
                                     <div className="px-4 pt-3 pb-4">
                                         <a
-                                            href={loc.mapsUrl}
+                                            href="https://www.papajohns.com/locations"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="block w-full text-center text-[#1A3D17] font-black py-2.5 rounded-lg transition-all hover:-translate-y-0.5 uppercase text-xs tracking-wide"

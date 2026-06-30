@@ -222,8 +222,9 @@ export default function StoreLocatorClient() {
 
                                     <div className="grid grid-cols-2 gap-4 mt-auto">
                                         <Link
-                                            href={loc.mapsUrl}
+                                            href="https://www.papajohns.com/locations"
                                             target="_blank"
+                                            rel="noopener noreferrer"
                                             className="flex items-center justify-center gap-2 bg-[#1A3D17] text-white py-4 rounded-2xl font-black uppercase text-[10px] tracking-widest hover:bg-black transition-all shadow-lg active:scale-95"
                                         >
                                             <Navigation size={14} /> Directions

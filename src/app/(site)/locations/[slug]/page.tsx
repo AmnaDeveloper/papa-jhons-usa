@@ -308,8 +308,9 @@ function RichTemplate({ data, month }: { data: RichLocationData; month: string }
                                 <p className="text-xs text-gray-500 font-bold leading-relaxed">PapaJohns-Menus.us is an independent guide. Use the official Papa Johns locator or checkout flow to confirm exact store address, phone number, delivery radius, and current hours.</p>
                                 <div className="pt-4">
                                     <Link
-                                        href={data.locationDetails.mapUrl}
+                                        href="https://www.papajohns.com/locations"
                                         target="_blank"
+                                        rel="noopener noreferrer"
                                         className="inline-block bg-[#1A3D17] text-white px-10 py-4 rounded-full font-black uppercase tracking-widest text-[10px] hover:bg-black transition-all shadow-lg"
                                     >
                                         Get Directions
