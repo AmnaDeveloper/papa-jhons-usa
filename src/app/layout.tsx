@@ -151,6 +151,12 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="google-adsense-account" content="ca-pub-7176456641838512" />
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7176456641838512"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
         {/* Google tag (gtag.js) */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-R9S73NBFKL"
@@ -165,49 +171,6 @@ export default function RootLayout({
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', 'G-R9S73NBFKL');
-            `,
-          }}
-        />
-        {/* Delay AdSense until user interaction or load instantly for bots */}
-        <Script
-          id="adsense-loader"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function() {
-                var adsLoaded = false;
-                function loadAds() {
-                  if (adsLoaded) return;
-                  adsLoaded = true;
-
-                  // Load AdSense
-                  var script = document.createElement('script');
-                  script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7176456641838512';
-                  script.async = true;
-                  script.crossOrigin = 'anonymous';
-                  document.head.appendChild(script);
-
-                  // Clean up events
-                  window.removeEventListener('scroll', loadAds);
-                  window.removeEventListener('mousemove', loadAds);
-                  window.removeEventListener('touchstart', loadAds);
-                }
-
-                // Check if user agent is a search crawler or AdSense bot to load immediately
-                var ua = navigator.userAgent || '';
-                var isBot = /googlebot|mediapartners-google|adsbot-google|bingbot|yandexbot|duckduckbot/i.test(ua);
-
-                if (isBot) {
-                  loadAds();
-                } else {
-                  window.addEventListener('scroll', loadAds, { passive: true });
-                  window.addEventListener('mousemove', loadAds, { passive: true });
-                  window.addEventListener('touchstart', loadAds, { passive: true });
-
-                  // Fallback for slower interactions
-                  setTimeout(loadAds, 5000);
-                }
-              })();
             `,
           }}
         />
