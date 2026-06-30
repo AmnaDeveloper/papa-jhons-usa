@@ -213,7 +213,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         case 'papa-johns-bbq-chicken-bacon-pizza':
             meta = {
                 title: `Papa Johns BBQ Chicken Bacon Pizza (${month}): Toppings, Price, Calories & Honest Review`,
-                description: `Full guide to the sweet and smoky Papa Johns BBQ Chicken Bacon Pizza. Exact prices, calorie comparisons, ingredient breakdown, and best crus... updated ${date}.`,
+                description: `Full guide to the sweet and smoky Papa Johns BBQ Chicken Bacon Pizza with estimated price notes, calorie comparisons, ingredient breakdown, and crust guidance updated ${date}.`,
             };
             break;
         case 'papa-johns-desserts':
@@ -237,13 +237,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         case 'papa-johns-small-pizza':
             meta = {
                 title: `Papa Johns Small Pizza Price 2026: Cost, Size & Is It Worth It? (${month})`,
-                description: `Papa Johns small pizza (10") costs $8.99–$12.99 in ${month} 2026. Get exact prices by topping, calories per slice, size comparison vs medium & large, and best deals.`,
+                description: `Papa Johns small pizza (10") commonly appears around $8.99–$12.99 in ${month} 2026. Compare estimated topping prices, calories per slice, sizes, and checkout notes.`,
             };
             break;
         case 'papa-johns-stuffed-crust-pizza':
             meta = {
                 title: `Papa Johns Stuffed Crust Pizza: Price, Calories & Review (${month})`,
-                description: `Everything about Papa Johns Stuffed Crust Pizza in ${month} — Epic vs Garlic vs Cheesy Calzone, exact prices, calories per slice, review... updated ${date}.`,
+                description: `Everything about Papa Johns Stuffed Crust Pizza in ${month} — Epic vs Garlic vs Cheesy Calzone, estimated prices, calories per slice, and review notes updated ${date}.`,
             };
             break;
         case 'papa-johns-spicy-italian-pizza':

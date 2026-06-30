@@ -19,10 +19,10 @@ export async function generateMetadata() {
 
   return {
     title: `Papa Johns Menu with Prices ${month}: Complete Guide`,
-    description: `Discover the complete Papa Johns menu with prices, updated ${date}. Classic Pizzas from $10.99, Super Loaded from $14.99. Deals, coupons & nutrition guide.`,
+    description: `Compare Papa Johns menu price examples updated ${date}. Classic Pizzas from about $10.99, Super Loaded from about $14.99. Verify final prices in checkout.`,
     openGraph: {
       title: `Papa Johns Menu with Prices ${month}: Complete Guide`,
-      description: `Updated ${date} — Full Papa Johns menu, prices, deals & store locator.`,
+      description: `Updated ${date} — Papa Johns menu price examples, deal notes & store locator reminders.`,
     }
   }
 }
@@ -319,7 +319,7 @@ export default function Home() {
                         <span>with Prices 2026</span>
                     </h2>
                     <p className="mt-4 text-[11px] md:text-[13px] font-black uppercase tracking-[0.18em] text-[#cc0000]">
-                        Last Updated: April 2026 | All prices in USD | papajohns-menus.us
+                        Last Updated: April 2026 | Estimated USD prices | verify final checkout
                     </p>
                 </div>
             </section>
@@ -631,7 +631,7 @@ export default function Home() {
                         {[
                             {
                                 q: "What is on the Papa John's menu with prices in 2026?",
-                                a: <>The Papa John's 2026 menu includes Classic Pizzas starting from $10.99, Super Loaded Specialty Pizzas from $14.99, Papadias from $8.99, Sides &amp; Dips from $4.99, and Desserts from $5.99. All pizzas are available in Small (10"), Medium (12"), Large (14"), and Extra Large (16"). <Link href="/menus-prices" className="text-[#cc0000] underline font-bold">View the complete Papa John's menu with prices &rarr;</Link></>,
+                                a: <>Papa John's menu prices can vary by store, delivery type, tax, and active offers. This guide lists planning examples such as Classic Pizzas from about $10.99, Super Loaded Specialty Pizzas from about $14.99, Papadias from about $8.99, Sides &amp; Dips from about $4.99, and Desserts from about $5.99. <Link href="/menus-prices" className="text-[#cc0000] underline font-bold">View Papa John's menu price examples &rarr;</Link></>,
                             },
                             {
                                 q: "What desserts does Papa John's have?",

@@ -250,7 +250,7 @@ export default function CouponsSection() {
                             <div className="absolute top-0 right-0 w-24 h-24 bg-[#CCEE18] rounded-full -mr-12 -mt-12 opacity-10"></div>
                             <h4 className="text-2xl font-black mb-3 relative z-10" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>Looking for More Pizza Deals?</h4>
                             <p className="text-green-200/80 text-sm mb-6 relative z-10">
-                                Check our latest [Rewards Program](/papa-rewards) guide or visit the [Papa Johns Special Offers](https://www.papajohns.com/order/specials) page for regional discounts.
+                                Check our latest [Rewards Program](/papa-johns-rewards) guide or visit the [Papa Johns Special Offers](https://www.papajohns.com/order/specials) page for regional discounts.
                             </p>
                             <Link href="/store-locator" className="bg-[#CCEE18] text-[#1A3D17] font-black py-4 px-6 rounded-xl text-xs uppercase tracking-widest inline-block w-full text-center hover:bg-white transition-colors relative z-10">
                                 Find Local Store Deals →

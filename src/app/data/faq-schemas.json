@@ -304,7 +304,7 @@
         "name": "Are Papa Johns menu prices the same at every location?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Papa Johns menu prices are generally consistent but may vary slightly by location due to local taxes, franchise pricing, and regional differences. Always check your local Papa Johns app or website for exact prices in your area."
+          "text": "Papa Johns menu prices are generally consistent but may vary slightly by location due to local taxes, franchise pricing, and regional differences. Always check your local Papa Johns app or website for final prices in your area."
         }
       }
     ]
