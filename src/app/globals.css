@@ -171,7 +171,7 @@ h1 {
 }
 
 .post-article-title {
-  font-size: 20px !important;
+  font-size: 25px !important;
   font-weight: 800 !important;
   line-height: 1.14 !important;
 }
@@ -184,9 +184,9 @@ h1 {
   }
 
   .post-article-title {
-    font-size: 30px !important;
-    font-weight: 900 !important;
-    line-height: 1.08 !important;
+    font-size: 25px !important;
+    font-weight: 800 !important;
+    line-height: 1.14 !important;
   }
 }
 
@@ -228,4 +228,12 @@ th {
   font-weight: 900 !important;
   line-height: 1.2 !important;
   letter-spacing: 0 !important;
+}
+
+/* Final /posts title override; keep after generic h2 rules. */
+.post-article-title {
+  font-family: "PapaSans-Heavy", "Arial Black", sans-serif !important;
+  font-size: 25px !important;
+  font-weight: 800 !important;
+  line-height: 1.14 !important;
 }
