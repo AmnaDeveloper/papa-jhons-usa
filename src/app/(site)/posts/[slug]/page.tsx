@@ -624,14 +624,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                     <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#CCEE18] rounded-full -mr-64 -mt-64 opacity-5 pointer-events-none"></div>
                     <div className="container mx-auto px-4 relative z-10">
                         <h1 
-                            className="!text-[48px] !font-black uppercase tracking-normal mb-4 leading-tight" 
+                            className="post-hero-title uppercase tracking-normal mb-4"
                             style={{
                                 fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif',
-                                fontSize: '48px',
-                                fontWeight: 900,
-                                lineHeight: '1.08',
                                 letterSpacing: '0',
-                                fontVariationSettings: '"wght" 900',
                             }}
                         >
                             {post.title}
@@ -706,7 +702,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                             {/* Quick Stats Sidebar Box */}
                             <div className="bg-[#1A3D17] text-white rounded-[2rem] p-8 shadow-xl relative overflow-hidden">
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-[#CCEE18]/10 rounded-full -mr-16 -mt-16"></div>
-                                <h3 className="text-xl font-black uppercase tracking-tighter mb-8 border-b border-white/10 pb-4 flex items-center gap-3">
+                                <h3 className="post-sidebar-heading uppercase tracking-normal mb-8 border-b border-white/10 pb-4 flex items-center gap-3">
                                     <Info size={18} className="text-[#CCEE18]" /> {isGlutenFreeGuide ? 'Safety Snapshot' : 'Nutrition Stats'}
                                 </h3>
                                 <div className="grid grid-cols-2 gap-y-8 gap-x-6">
@@ -737,7 +733,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
                             {/* Explore More Sidebar Box */}
                             <div className="bg-[#fcfaf8] border-2 border-dashed border-[#1A3D17]/10 rounded-[2rem] p-8">
-                                <h3 className="text-lg font-black text-[#1A3D17] uppercase tracking-tighter mb-6 flex items-center gap-2">
+                                <h3 className="post-sidebar-heading text-[#1A3D17] uppercase tracking-normal mb-6 flex items-center gap-2">
                                     <Navigation size={18} className="text-[#cc0000]" /> Related Links
                                 </h3>
                                 <ul className="space-y-4">
@@ -786,7 +782,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                                     <span className="inline-block bg-[#cc0000]/10 text-[#cc0000] font-black uppercase tracking-[0.3em] text-[10px] px-6 py-2 rounded-full mb-4">
                                         Got Questions?
                                     </span>
-                                    <h2 className="text-2xl md:text-4xl font-black text-[#1A3D17] uppercase tracking-tighter mb-4" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                                    <h2 className="post-section-heading text-[#1A3D17] uppercase tracking-normal mb-4" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
                                         Frequently Asked Questions
                                     </h2>
                                     <p className="text-gray-500 font-bold text-lg">
@@ -802,7 +798,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                                                     ?
                                                 </div>
                                                 <div>
-                                                    <h4 className="font-black text-gray-900 group-hover:text-white transition-colors mb-2 text-xl leading-snug">
+                                                    <h4 className="post-faq-question text-gray-900 group-hover:text-white transition-colors mb-2">
                                                         {faq.question}
                                                     </h4>
                                                     <p
@@ -822,7 +818,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                                     <span className="inline-block bg-[#1A3D17]/10 text-[#1A3D17] font-black uppercase tracking-[0.3em] text-[10px] px-6 py-2 rounded-full mb-4">
                                         Menu Value
                                     </span>
-                                    <h2 className="text-2xl md:text-4xl font-black text-[#cc0000] uppercase tracking-tighter mb-4" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                                    <h2 className="post-section-heading text-[#cc0000] uppercase tracking-normal mb-4" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
                                         Current Pricing
                                     </h2>
                                     <p className="text-gray-500 font-bold text-lg">
@@ -840,7 +836,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                                                     <span className="text-xs font-black uppercase tracking-widest text-[#CCEE18]">Info</span>
                                                 </div>
                                                 <div>
-                                                    <h2 className="text-2xl md:text-3xl font-black text-[#1A3D17] uppercase tracking-tighter leading-none">
+                                                    <h2 className="post-table-heading text-[#1A3D17] uppercase tracking-normal">
                                                         Data & Insights
                                                     </h2>
                                                     <p className="text-[#1A3D17]/60 text-xs font-bold uppercase tracking-widest mt-1">Live Nutrition & Deals</p>
@@ -894,7 +890,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                     ].map((section) => (
                         <section key={section.title}>
                             <div className="mb-8 flex items-center justify-between gap-4">
-                                <h2 className="text-[30px] font-black text-[#1A3D17] tracking-normal" style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}>
+                                <h2 className="post-related-heading text-[#1A3D17] tracking-normal" style={{ fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif' }}>
                                     {section.title}
                                 </h2>
                                 <Link href={section.href} className="inline-flex items-center gap-2 text-sm font-black text-[#1A3D17] transition-colors hover:text-[#cc0000]">
@@ -918,7 +914,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                                                 <span>•</span>
                                                 <span>Guide</span>
                                             </div>
-                                            <h3 className="text-lg font-black text-[#cc0000] uppercase leading-tight mb-3 transition-colors line-clamp-2" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
+                                            <h3 className="post-related-card-heading text-[#cc0000] uppercase mb-3 transition-colors line-clamp-2" style={{ fontFamily: '"PapaSans-Heavy", sans-serif' }}>
                                                 {item.title}
                                             </h3>
                                             <p className="text-gray-600 text-sm font-bold leading-relaxed line-clamp-2">
