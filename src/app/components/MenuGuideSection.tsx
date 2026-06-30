@@ -2,7 +2,7 @@ import React from 'react';
 
 const MenuGuideSection = () => {
     return (
-        <section className="pt-0 pb-20 bg-white w-full">
+        <section className="pt-10 pb-20 bg-white w-full md:pt-14">
             <div className="w-full max-w-[1100px] mx-auto px-4 menu-guide-container">
                 <style dangerouslySetInnerHTML={{ __html: `
                     .menu-guide-container {

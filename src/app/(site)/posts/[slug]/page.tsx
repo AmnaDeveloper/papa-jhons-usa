@@ -752,14 +752,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                         <div className="lg:w-[52%] space-y-10">
                             <div>
                                 <h2
-                                    className="!font-black text-[#1A3D17] mb-4 uppercase tracking-normal leading-tight"
+                                    className="post-article-title text-[#1A3D17] mb-4 uppercase tracking-normal"
                                     style={{
                                         fontFamily: '"PapaSans-Heavy", "Arial Black", sans-serif',
-                                        fontSize: 'clamp(20px, 6vw, 30px)',
-                                        fontWeight: 900,
-                                        lineHeight: '1.08',
                                         letterSpacing: '0',
-                                        fontVariationSettings: '"wght" 900',
                                     }}
                                 >
                                     {post.title}

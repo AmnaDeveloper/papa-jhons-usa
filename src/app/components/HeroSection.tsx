@@ -41,9 +41,6 @@ export default function HeroSection() {
                 <h1
                     className={`${poppins.className} hero-main-heading mb-6 max-w-5xl uppercase tracking-normal text-white`}
                     style={{
-                        fontSize: 'clamp(20px, 6vw, 60px)',
-                        fontWeight: 900,
-                        lineHeight: 1.08,
                         textShadow: '0 6px 24px rgba(0,0,0,0.35)',
                     }}
                 >

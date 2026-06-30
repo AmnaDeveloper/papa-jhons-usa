@@ -165,8 +165,35 @@ h1 {
 }
 
 .hero-main-heading {
-  font-size: 60px !important;
-  font-weight: 900 !important;
+  font-size: 20px !important;
+  font-weight: 800 !important;
+  line-height: 1.14 !important;
+}
+
+.post-article-title {
+  font-size: 20px !important;
+  font-weight: 800 !important;
+  line-height: 1.14 !important;
+}
+
+@media (min-width: 768px) {
+  .hero-main-heading {
+    font-size: 48px !important;
+    font-weight: 900 !important;
+    line-height: 1.08 !important;
+  }
+
+  .post-article-title {
+    font-size: 30px !important;
+    font-weight: 900 !important;
+    line-height: 1.08 !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-main-heading {
+    font-size: 60px !important;
+  }
 }
 
 h2 {
